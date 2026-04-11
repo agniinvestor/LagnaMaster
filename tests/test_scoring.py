@@ -46,12 +46,12 @@ class TestScoringEngine:
                 f"H{h} score {hs.final_score} out of [-10, 10]"
             )
 
-    def test_22_rules_per_house(self, india_chart):
+    def test_23_rules_per_house(self, india_chart):
         from src.scoring import score_chart
 
         result = score_chart(india_chart)
         for h, hs in result.houses.items():
-            assert len(hs.rules) == 22, f"H{h} has {len(hs.rules)} rules, expected 22"
+            assert len(hs.rules) == 23, f"H{h} has {len(hs.rules)} rules, expected 23"
 
     def test_h1_bhavesh_is_venus_for_taurus(self, india_chart):
         """Taurus lagna → H1 Bhavesh = Venus."""
@@ -222,7 +222,7 @@ class TestAPI:
         assert len(body["houses"]) == 12
         # Each house has 22 rules
         h1 = body["houses"]["1"]
-        assert len(h1["rules"]) == 22
+        assert len(h1["rules"]) == 23
         assert h1["bhavesh"] == "Venus"
 
     def test_list_charts(self, client):

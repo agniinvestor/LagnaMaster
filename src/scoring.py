@@ -16,7 +16,7 @@ from src.calculations.house_lord import (
     is_trikona,
     is_dusthana,
 )
-from src.calculations.dignity import compute_all_dignities
+from src.calculations.dignity import DIGNITY_SCORE, compute_all_dignities
 
 
 # ---------------------------------------------------------------------------
@@ -77,6 +77,7 @@ W = {
     "R19": -1.00,  # Bhavesh combust (-1.0; cazimi +0.5; Rx+combust -0.5)
     "R20": +0.50,  # Bhavesh in Dig Bala house
     "R22": +0.10,  # Bhavesh retrograde (context-dependent)
+    "R24": 1.00,  # Bhavesh dignity modifier (BUG-081)
 }
 
 WC_RULES = {"R03", "R05", "R07", "R14"}  # half weight in aggregate
@@ -559,6 +560,19 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
                 r22_score = W["R22"]
         rules.append(
             RuleResult("R22", "Bhavesh retrograde", r22_score, triggered=r22_score != 0)
+        )
+
+        # --- R24: Bhavesh dignity modifier (BUG-081) ---
+        r24_score = 0.0
+        if bhavesh in dignities:
+            r24_score = DIGNITY_SCORE.get(dignities[bhavesh].dignity, 0.0) * W["R24"]
+        rules.append(
+            RuleResult(
+                "R24",
+                f"Bhavesh {bhavesh} dignity modifier",
+                r24_score,
+                triggered=r24_score != 0.0,
+            )
         )
 
         # --- Aggregate ---

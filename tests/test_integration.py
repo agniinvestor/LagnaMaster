@@ -86,9 +86,9 @@ class TestSingleChartJourney:
         assert len(body["houses"]) == 12
         # H1 lord (Bhavesh) for Taurus lagna = Venus
         assert body["houses"]["1"]["bhavesh"] == "Venus"
-        # Each house has 22 rules
+        # Each house has 23 rules (R01-R22 + R24 dignity modifier)
         for h_str, hs in body["houses"].items():
-            assert len(hs["rules"]) == 22, f"H{h_str} has {len(hs['rules'])} rules"
+            assert len(hs["rules"]) == 23, f"H{h_str} has {len(hs['rules'])} rules"
             assert -10.0 <= hs["final_score"] <= 10.0
             assert hs["rating"] in {
                 "Excellent",
