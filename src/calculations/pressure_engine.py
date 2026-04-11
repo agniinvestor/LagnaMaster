@@ -97,7 +97,7 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
     Higher = more vulnerable chart structure.
     """
     from src.calculations.functional_roles import compute_functional_roles
-    from src.calculations.avastha import compute_lajjitadi
+    from src.calculations.avasthas import compute_lajjitadi, LajjitadiAvastha
     from src.calculations.dignity import compute_all_dignities, DignityLevel
     from src.calculations.house_lord import compute_house_map
     from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
@@ -171,14 +171,15 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
             score += 1.5
             drivers.append("H8 lord in H1 (transformation pressure)")
 
-    # Lajjitadi state of 5th lord
-    laj = compute_lajjitadi(chart)
-    if laj.state == "Lajjita":
+    # Lajjitadi state of 5th lord (using BPHS-verified avasthas.py)
+    fifth_lord = hmap.house_lord[4]  # 0-indexed: index 4 = H5
+    laj = compute_lajjitadi(fifth_lord, chart)
+    if laj == LajjitadiAvastha.LAJJITA:
         score += 2.0
-        drivers.append(f"5th lord {laj.fifth_lord} Lajjita: {', '.join(laj.triggers)}")
-    elif laj.state in {"Kshobhita", "Kshudhita"}:
+        drivers.append(f"5th lord {fifth_lord} Lajjita (ashamed)")
+    elif laj in {LajjitadiAvastha.KSHOBHITA, LajjitadiAvastha.KSHUDITA}:
         score += 1.0
-        drivers.append(f"5th lord {laj.fifth_lord} {laj.state}")
+        drivers.append(f"5th lord {fifth_lord} {laj.value}")
 
     return min(score, 10.0), drivers
 
