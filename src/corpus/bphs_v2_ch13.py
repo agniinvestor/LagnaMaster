@@ -214,7 +214,11 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 2, "house": [1, 4, 7, 10]},
-        {"type": "lord_in_house", "lord_of": 11, "house": [1, 5, 9]},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_in_house_from", "planet": "lord_of_11", "reference": "lord_of_2", "offset": 1, "mode": "occupies"},
+            {"type": "planet_in_house_from", "planet": "lord_of_11", "reference": "lord_of_2", "offset": 5, "mode": "occupies"},
+            {"type": "planet_in_house_from", "planet": "lord_of_11", "reference": "lord_of_2", "offset": 9, "mode": "occupies"},
+        ]},
     ],
     signal_group="h2_kendra_h11_trikona_wealth",
     direction="favorable", intensity="strong",
@@ -231,7 +235,10 @@ b.add(
     commentary_context=(
         "Santhanam notes: The lord of the 2nd should be in the ascendant, "
         "or 4th/7th/10th house. The 11th lord should be in the 5th/9th "
-        "counted from the house occupied by the 2nd lord. This is one of "
+        "counted from the house occupied by the 2nd lord. 'Trine thereof' "
+        "= 1st/5th/9th from the 2nd lord's position (relative houses, not "
+        "absolute from lagna). BUG-092 fix: was absolute {1,5,9}, now "
+        "planet_in_house_from with lord_of_2 reference. This is one of "
         "two alternative combinations for gaining wealth (see BPHS1307)."
     ),
     modifiers=[],

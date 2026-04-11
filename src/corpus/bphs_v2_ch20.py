@@ -163,16 +163,19 @@ b.add(conditions=[
           {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"},
           {"type": "dispositor_condition", "planet": "Rahu", "dispositor_state": "in_house", "house": 8},
       ],
-      signal_group="rahu_h9_no_fortune", direction="unfavorable", intensity="strong",
+      signal_group="rahu_h5_no_fortune", direction="unfavorable", intensity="strong",
       primary_domain="wealth",
       predictions=[{"entity": "native", "claim": "devoid_of_fortunes", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
       verse_ref="Ch.20 v.30",
       commentary_context=(
-          "Compound condition: Rahu in 9th + 9th lord in fall + Rahu's "
+          "Santhanam: 'If Rahu is in the 9th from the 9th (i.e. 5th from "
+          "the ascendant)'. 9th from 9th = house 5 from lagna. BUG-092 fix: "
+          "was house 9 (absolute), corrected to house 5 per BPHS derivation. "
+          "Compound condition: Rahu in 5th + 9th lord in fall + Rahu's "
           "dispositor in 8th. Dispositor condition promoted from modifier "
           "to first-class condition (Track 4)."
       ),
-      description="Rahu in 9th + 9th lord in fall + Rahu's dispositor in 8th: devoid of fortunes.")
+      description="Rahu in 5th (9th from 9th) + 9th lord in fall + Rahu's dispositor in 8th: devoid of fortunes.")
 
 # ═══ v.31: Begging ═══════════════════════════════════════════════════════════
 b.add(conditions=[
