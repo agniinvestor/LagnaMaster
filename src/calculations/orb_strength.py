@@ -51,21 +51,20 @@ def conjunction_strength(lon1: float, lon2: float) -> float:
     return round(max(0.0, 1.0 - orb / _CONJ_ORB_FULL), 4)
 
 
+_ASPECT_ANGLES = [0.0, 60.0, 90.0, 120.0, 180.0]
+
+
 def aspect_strength(p1_lon: float, p2_lon: float, aspect_type: str = "graha") -> float:
     """
-    Strength of a graha drishti aspect.
+    Strength of a graha drishti aspect based on proximity to actual aspect angles.
     aspect_type: 'graha' (7th full, 4th/8th Mars, 5th/9th Jupiter, 3rd/10th Saturn)
     """
     diff = _circular_diff(p1_lon, p2_lon)
-    # For 7th aspect: target is 180° ± orb
-    # We compute general orb from nearest aspect angle
-    int(diff / 30)
-    remainder = diff % 30
-    # Nearest aspect angle
-    nearest = min(remainder, 30 - remainder)
-    if nearest >= _ASPECT_ORB:
+    # Find nearest actual aspect angle
+    nearest_distance = min(abs(diff - angle) for angle in _ASPECT_ANGLES)
+    if nearest_distance >= _ASPECT_ORB:
         return 0.0
-    return round(max(0.0, 1.0 - nearest / _ASPECT_ORB), 4)
+    return round(max(0.0, 1.0 - nearest_distance / _ASPECT_ORB), 4)
 
 
 @dataclass
