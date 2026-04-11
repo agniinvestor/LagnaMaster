@@ -738,4 +738,120 @@ b.add(
     prediction_type="trait",
     rule_relationship={"type": "addition", "related_rules": ["BPHS1629"]})
 
+# ═══ v.11 FULL CONDITIONS: Adopted issue — 6 planets in 5th ═════════════════
+# BPHS1609 only captured lord_of_5 in 12th. The verse has 3 co-conditions:
+# (1) 5th tenanted by six planets, (2) 5th lord in 12th, (3) Moon AND
+# ascendant endowed with strength. This rule encodes the complete verse.
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": 12},
+        {"type": "planet_dignity", "planet": "Moon", "dignity": "strong"},
+    ],
+    signal_group="h5_six_planets_lord_h12_adopted_full",
+    direction="mixed", intensity="moderate",
+    primary_domain="progeny",
+    predictions=[
+        {"entity": "children", "claim": "adopted_issue_indicated",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.11",
+    commentary_context=(
+        "Full verse conditions. BPHS1609 captured only lord_of_5 in 12th. "
+        "The verse explicitly requires all three: (1) 5th tenanted by six "
+        "planets, (2) its lord in 12th, (3) Moon and ascendant endowed with "
+        "strength. The '6 planets in 5th' condition is encoded as a "
+        "count_planets_with_state modifier since there is no house-specific "
+        "planet-count primitive. Lagna strength also as modifier."
+    ),
+    description=(
+        "Adopted issue is indicated if the 5th is tenanted by six planets "
+        "while its lord is in the 12th, and the Moon and ascendant are "
+        "endowed with strength."
+    ),
+    concordance_texts=[],
+    modifiers=[
+        {"condition": [{"type": "count_planets_with_state", "state": "any",
+                        "min_count": 6, "house": 5}],
+         "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+        {"condition": [{"type": "lagna_strength", "state": "strong"}],
+         "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+    ],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1609"]},
+)
+
+# ═══ v.24: 10 sons — full combination ══════════════════════════════════════
+# BPHS1619 is a summary rule with only 5th lord exalted. The actual verse for
+# 10 sons requires: 4th+6th occupied by malefics + 5th lord in deep exaltation
+# + ascendant lord joining + Jupiter with another benefic.
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 4},
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 6},
+        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+        {"type": "planets_conjunct", "planets": ["lord_of_1", "Jupiter"]},
+    ],
+    signal_group="h4_h6_malefic_h5_lord_exalt_10_sons_full",
+    direction="favorable", intensity="strong",
+    primary_domain="progeny",
+    predictions=[
+        {"entity": "children", "claim": "ten_sons_indicated",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.24",
+    commentary_context=(
+        "Full v.24 conditions. BPHS1619 was a summary with only exalted "
+        "5th lord. The verse requires: 4th AND 6th occupied by malefics, "
+        "5th lord in deep exaltation, ascendant lord joining Jupiter who "
+        "is with another benefic."
+    ),
+    description=(
+        "There will be 10 sons if the 4th and the 6th are occupied by "
+        "malefics while the 5th lord is in deep exaltation joining the "
+        "ascendant lord as Jupiter is with another benefic."
+    ),
+    concordance_texts=[],
+    prediction_type="trait",
+    modifiers=[
+        {"condition": [{"type": "planets_conjunct", "planets": ["Jupiter", "any_benefic"]}],
+         "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+    ],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1619"]},
+)
+
+# ═══ v.32 FULL CONDITIONS: Live long but lose children ══════════════════════
+# BPHS1623 only has lord_of_5 + Mars conjunction. The full verse requires:
+# (1) malefic in 5th, (2) Saturn in 5th from Jupiter, (3) asc lord in 2nd,
+# (4) 5th lord with Mars.
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+        {"type": "planet_in_house_from", "planet": "Saturn", "reference": "Jupiter", "offset": 5, "mode": "occupies"},
+        {"type": "lord_in_house", "lord_of": 1, "house": 2},
+        {"type": "planets_conjunct", "planets": ["lord_of_5", "Mars"]},
+    ],
+    signal_group="malefic_h5_saturn_5th_jupiter_asc_h2_lose_children_full",
+    direction="unfavorable", intensity="strong",
+    primary_domain="longevity",
+    predictions=[
+        {"entity": "children", "claim": "live_long_but_lose_children_one_after_other",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.16 v.32",
+    commentary_context=(
+        "Full v.32 conditions. BPHS1623 captured only lord_of_5 + Mars. "
+        "The verse says: 'Should the 5th be occupied by a malefic while "
+        "Jupiter has Saturn in the 5th as the ascendant lord is in the 2nd, "
+        "and the 5th lord is with Mars, one will live long but lose his "
+        "children one after the other as they are born.'"
+    ),
+    description=(
+        "5th occupied by malefic + Saturn in 5th from Jupiter + ascendant "
+        "lord in 2nd + 5th lord with Mars: one will live long but lose "
+        "children one after the other as they are born."
+    ),
+    concordance_texts=[],
+    prediction_type="trait",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1623"]},
+)
+
 BPHS_V2_CH16_REGISTRY = b.build()
