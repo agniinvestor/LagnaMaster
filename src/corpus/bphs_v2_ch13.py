@@ -304,13 +304,12 @@ b.add(
     tags=["h2_lord", "venus", "wealth"],
 )
 
-# NOTE: v.5 aspect paths (Jupiter/Venus aspecting 2nd lord) are stated
-# in the text ("aspected by or conjunct by Jupiter and Venus") but cannot
-# be encoded with current engine primitives. planet_aspecting requires a
-# numeric house target, not a lord position reference. The conjunction
-# paths above (BPHS1307, BPHS1309) cover the conjunction variant. Aspect
-# paths require engine enhancement to planet_aspecting to resolve
-# "lord_of_N_position" targets. Tracked as known gap.
+# ENGINE GAP: 4 aspect-path rules deferred — needs planet_aspecting to resolve lord positions
+# v.5 says "aspected by or conjunct by Jupiter and Venus." Conjunction paths
+# are encoded (BPHS1307 Jupiter, BPHS1309 Venus). The 4 aspect paths
+# (Jupiter aspecting lord_of_2, Venus aspecting lord_of_2, and the reverse
+# directions) cannot be encoded because planet_aspecting requires a numeric
+# house target, not a lord position reference.
 
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKAS 6-7: Yogas for Poverty
