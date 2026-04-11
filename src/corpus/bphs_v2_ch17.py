@@ -19,7 +19,7 @@ b = V2ChapterBuilder(
 # ═══ v.2: 6th lord in ascendant/8th → ulcers/bruises ═════════════════════════
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 6, "house": [1, 8]}],
+    conditions=[{"type": "lord_in_house", "lord_of": 6, "house": [1, 6, 8]}],
     signal_group="h6_lord_asc_or_h8_ulcers",
     direction="unfavorable", intensity="moderate",
     primary_domain="health",
@@ -435,7 +435,7 @@ b.add(
 # v.22b: Urinary disorders at age 18 and 22
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 8, "house": [1, 4, 5, 7, 9, 10]},
+        {"type": "lord_in_house", "lord_of": 8, "house": [2, 4, 5, 11, 12]},
     ],
     signal_group="h8_lord_kendra_rahu_urinary_18_22",
     direction="unfavorable", intensity="moderate",

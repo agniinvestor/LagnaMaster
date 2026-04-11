@@ -135,7 +135,7 @@ b.add(conditions=[
       description="Rahu, Sun, Saturn and Mars all in 11th: cessation of duties.")
 
 # ═══ v.12: Gnana Yoga ════════════════════════════════════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 12}],
+b.add(conditions=[{"type": "planet_in_sign", "planet": "Jupiter", "sign": "Pisces"}],
       signal_group="jupiter_pisces_venus_gnana_yoga", direction="favorable", intensity="strong",
       primary_domain="character",
       predictions=[

@@ -98,8 +98,8 @@ _FATHER_DEATH = [
     ("Ch.20 v.14", "3_or_16", "9th lord in debilitation Navamsa",
      [{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
      {"type": "age_range", "value": [3, 16], "precision": "approximate"}),
-    ("Ch.20 v.15", "2_or_12", "Ascendant lord in 2nd as 8th lord in 8th",
-     [{"type": "lord_in_house", "lord_of": 1, "house": 2}],
+    ("Ch.20 v.15", "2_or_12", "Ascendant lord in 8th as 8th lord in 8th",
+     [{"type": "lord_in_house", "lord_of": 1, "house": 8}],
      {"type": "age_range", "value": [2, 12], "precision": "approximate"}),
     ("Ch.20 v.16", "16_or_18", "Rahu in 4th from ascendant + Sun in 5th from ascendant",
      [{"type": "planet_in_house", "planet": "Rahu", "house": 4}, {"type": "planet_in_house", "planet": "Sun", "house": 5}],
@@ -159,7 +159,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 9},
 
 # ═══ v.30: Lack of fortunes ══════════════════════════════════════════════════
 b.add(conditions=[
-          {"type": "planet_in_house", "planet": "Rahu", "house": 9},
+          {"type": "planet_in_house", "planet": "Rahu", "house": 5},
           {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"},
           {"type": "dispositor_condition", "planet": "Rahu", "dispositor_state": "in_house", "house": 8},
       ],
@@ -278,8 +278,8 @@ b.add(
 
 # v.29 gap: 9th lord in 9th + asc lord in asc + Jupiter in 7th → wealth/conveyances
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 9},
-                {"type": "lord_in_house", "lord_of": 1, "house": 1},
+    conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 9},
+                {"type": "lord_in_house", "lord_of": 9, "house": 1},
                 {"type": "planet_in_house", "planet": "Jupiter", "house": 7}],
     signal_group="h9_lord_h9_asc_lord_h1_jupiter_h7_wealth",
     direction="favorable", intensity="strong", primary_domain="wealth",

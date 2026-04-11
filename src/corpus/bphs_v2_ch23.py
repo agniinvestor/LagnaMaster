@@ -32,7 +32,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 12},
       verse_ref="Ch.23 v.9", commentary_context="Santhanam: The 12th house relates to fate after death — whether reincarnation or attaining Lotus Feet of the Lord. Four malefics there deny moksha.", description="Rahu + Mars + Saturn + Sun in 12th + 12th lord with Sun: native will go to hell.")
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "any_benefic", "house": 12},
-                   {"type": "planet_dignity", "planet": "any_benefic", "dignity": "exalted"}],
+                   {"type": "planet_dignity", "planet": "lord_of_12", "dignity": "exalted"}],
       signal_group="benefic_h12_exalted_moksha", direction="favorable", intensity="strong",
       primary_domain="spirituality",
       predictions=[{"entity": "native", "claim": "attain_final_emancipation_moksha", "domain": "spirituality", "direction": "favorable", "magnitude": 0.8}],

@@ -74,7 +74,10 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "weak"},
+        {"type": "or_group", "conditions": [
+            {"type": "planets_conjunct", "planets": ["lord_of_3", "any_malefic"]},
+            {"type": "planet_in_sign_type", "planet": "lord_of_3", "sign_type": "malefic_ruled"},
+        ]},
         {"type": "planets_conjunct", "planets": ["Mars", "lord_of_3"]},
     ],
     signal_group="h3_lord_malefic_coborn_death",
@@ -208,7 +211,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 3, "house": [1, 5, 9]},
-        {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "exalted"},
+        {"type": "planet_dignity", "planet": "Mars", "dignity": "exalted"},
     ],
     signal_group="h3_lord_exalted_trikona_12_coborn",
     direction="favorable", intensity="strong", primary_domain="progeny",

@@ -42,8 +42,11 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": [5]},
-        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
+        {"type": "or_group", "alternatives": [
+            {"type": "lord_in_house", "lord_of": 5, "house": [5]},
+            {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "own_navamsa"},
+            {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+        ]},
     ],
     signal_group="h5_lord_own_house_lands",
     direction="favorable", intensity="moderate",
@@ -53,7 +56,11 @@ b.add(
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.15 v.3",
-    commentary_context="No separate Santhanam note. The 5th lord (not 4th) is mentioned — likely a bhavat bhavam reference: 5th = 2nd from 4th (resources of the home).",
+    commentary_context=(
+        "No separate Santhanam note. The 5th lord (not 4th) is mentioned — "
+        "likely a bhavat bhavam reference: 5th = 2nd from 4th (resources of "
+        "the home). Verse uses OR: own house OR own Navamsa OR exaltation."
+    ),
     description=(
         "5th lord in own house or own Navamsa or in exaltation: endowed "
         "with comforts related to lands, conveyances, houses etc. and "

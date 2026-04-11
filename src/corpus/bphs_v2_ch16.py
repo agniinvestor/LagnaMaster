@@ -20,7 +20,14 @@ b = V2ChapterBuilder(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": [1, 4, 5, 7, 9, 10]},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "own_sign"},
+            {"type": "lord_in_house", "lord_of": 1, "house": [1, 4, 5, 7, 9, 10]},
+        ]},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "own_sign"},
+            {"type": "lord_in_house", "lord_of": 5, "house": [1, 4, 5, 7, 9, 10]},
+        ]},
     ],
     signal_group="h5_lord_kendra_children",
     direction="favorable", intensity="strong",
@@ -39,7 +46,9 @@ b.add(
         "an adjective does not exclude a female issue for it means 'begotten'. "
         "The conjunction of the 5th lord with the ascendant lord in a good "
         "house will ensure early obtainment of children apart from happiness "
-        "through them."
+        "through them. BUG-091: was missing lord_of_1 condition and 'own sign' "
+        "alternative. Verse requires BOTH lords, each in own sign OR kendra OR "
+        "trikona."
     ),
     concordance_texts=["Saravali", "Phaladeepika"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1601"]},
@@ -321,8 +330,11 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": [2, 5, 9]},
-        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+            {"type": "lord_in_house", "lord_of": 5, "house": [2, 5, 9]},
+            {"type": "planets_conjunct", "planets": ["lord_of_5", "Jupiter"]},
+        ]},
     ],
     signal_group="h5_lord_exalted_trikona_children",
     direction="favorable", intensity="strong",
@@ -341,7 +353,9 @@ b.add(
         "lord in exaltation, 2) 5th lord in 2nd/5th/9th, 3) 5th lord "
         "related to Jupiter by aspect or conjunction. Even though Jupiter "
         "may be ruler of the 6th or 8th or 12th, his association with the "
-        "5th lord will ensure obtainment of children."
+        "5th lord will ensure obtainment of children. BUG-091: was encoded "
+        "as AND (requiring both exalted AND in 2/5/9); corrected to OR per "
+        "Santhanam's explicit 'Anyone of 3 states' note."
     ),
     concordance_texts=["Saravali"],
     convergence_signals=["jupiter_aspecting_5th", "h5_lord_strong"],
