@@ -694,3 +694,12 @@ Root cause of 103 CI failures identified and fixed:
   - Tests: 22 avasthas coverage tests, 15 float→pytest.approx, 9 list-condition tests,
     list-valued planet_not_in_house bug fix in rule_firing.py (BUG-097,098,103)
   - 14530 tests (213 removed with dead modules), 0 regressions, 26 bugs remaining (6 deferred to encoding)
+- S318 (Final Sweep): 20 code bugs + 3 security issues fixed via 6 parallel agents (98/104 total)
+  - Shadbala: Tribhaga/Drekkana/Hora/Chesta Bala per BPHS Ch.27, Yuddha Bala added (BUG-041,042)
+  - Divisional charts: D3/D4/D7/D10/D16/D20/D24/D45/D60 formulas per BPHS Ch.6 (BUG-022,023,026,027)
+  - Kundali Milan: all 4 bugs verified already correct (BUG-059,060,061,062)
+  - Computation: Jupiter aspect off-by-one, Arudha Pada +10, orb_strength actual aspects, KP weekday (BUG-018,019,020,021)
+  - Aspects: graded strengths 0.25/0.50/0.75/1.0 per BPHS Ch.26 (BUG-038)
+  - Moolatrikona: degree-bounded via dignity.py MOOLTRIKONA_RANGES (BUG-063)
+  - Security: JWT secret env-only, CORS restricted, version 3.0.0 (SEC-01,02,03)
+  - 14564 tests (+34), 32 regression tests, 0 regressions. 6 corpus bugs remain (BUG-089-094)

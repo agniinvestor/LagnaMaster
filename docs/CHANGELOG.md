@@ -1657,3 +1657,59 @@ Dispatched 4 parallel agents (worktree-isolated) to clear remaining non-corpus b
 ### What remains (26 bugs)
 - 20 structural bugs (weight discrepancies, duplication, consolidation)
 - 6 corpus data bugs (BUG-089-094) — deferred to encoding sessions requiring BPHS PDF verification
+
+## S318 (Final Sweep) — 2026-04-11 — Close All Remaining Code Bugs
+
+### Summary
+Dispatched 6 parallel agents (worktree-isolated) to fix all 20 remaining code bugs + 3 security issues. 13 commits cherry-picked and merged. S318 audit now **98/104 fixed** — only 6 corpus data bugs remain (deferred to encoding).
+
+### What was fixed (13 commits, 6 parallel agents)
+
+**Agent A — Shadbala (BUG-041, 042):**
+- Tribhaga Bala: sunrise-based (not midnight), Jupiter unconditionally 20 virupas, night sequence Venus/Moon/Mars
+- Drekkana Bala: female→2nd drekkana, neutral→3rd drekkana (was reversed)
+- Hora Bala: sunrise-based planetary hours
+- Chesta Bala: 8-state motion classification (Vakra/Anuvakra/Vikala/Manda/Mandatara/Sama/Chara/Atichara) replacing elongation/3
+- Yuddha Bala: new — planetary war detection (within 1°), Chesta Bala transfer winner↔loser
+
+**Agent B — Divisional Charts (BUG-022, 023, 026, 027):**
+- D3 Drekkana: trikona formula (si + k*4), D4 Chaturthamsa: kendra formula (si + k*3)
+- D7: zero-falsy bug fixed (proper if/else), D10: odd/even from self vs 9th
+- D16/D20/D24/D45: modality-based starts corrected per BPHS Ch.6
+- D60: even-sign offset aligned with varga.py. 5000-sample cross-validation all match.
+
+**Agent C — Kundali Milan (BUG-059, 060, 061, 062):**
+- All 4 bugs verified already correct from prior fixes. Mrigashira=serpent, Ardra=dog, Moon-Jupiter=Neutral, Tara scoring correct. Added Rohini Gana dispute comment.
+
+**Agent D — Computation (BUG-018, 019, 020, 021):**
+- Jupiter aspect off-by-one: (jup_h - 1 + N) % 12 + 1 for 1-indexed houses
+- Arudha Pada exception: adds 10 signs (not 9) when distance = 1 or 7
+- orb_strength: actual aspect angles [0, 60, 90, 120, 180] replacing 30° multiples
+- KP weekday: ["Moon", "Mars", ...] matching Python weekday() convention
+
+**Agent E — Aspects + Moolatrikona (BUG-038, 063):**
+- Graded aspect strengths: base 0.25/0.50/0.75/1.0 per house offset, special aspects override to 1.0
+- Moolatrikona: degree-bounded check using MOOLTRIKONA_RANGES from dignity.py (canonical source)
+
+**Agent F — Security (SEC-01, 02, 03):**
+- JWT secret: hardcoded fallback removed, RuntimeError if JWT_SECRET env var missing
+- CORS: wildcard → configurable CORS_ORIGINS env var (defaults localhost:3000)
+- Version: 0.1.0 → 3.0.0
+
+### Tests
+- Baseline: 14530 passed → Final: 14564 passed (+34 new tests, 0 regressions)
+- 32 new regression tests in test_s318_final_regressions.py
+- JWT test fixtures updated for SEC-01 env var requirement
+
+### Three-lens analysis
+- **Tech:** 6 parallel agents completed in ~7 min wall-clock. 3 merge conflicts resolved (all in files the fixing agent owned). No regressions. Security hardening prevents JWT/CORS misconfig in production.
+- **Astrology:** Shadbala now follows BPHS Ch.27 precisely — sunrise-based time divisions, 8-state Chesta Bala, Yuddha Bala. Divisional charts aligned across both implementations. Moolatrikona respects degree ranges per Ch.3 v.51-54.
+- **Research:** orb_strength now measures proximity to real aspect angles, not arbitrary 30° boundaries. This affects every aspect-based feature in the scoring pipeline. Graded aspects mean partial aspects (sextile, trine, square) now contribute proportionally.
+
+### What remains (6 corpus data bugs — deferred to encoding)
+- BUG-089: 10 factual errors in V2 corpus
+- BUG-090: ~40 rules aspect/occupation confusion
+- BUG-091: OR-vs-AND logic in 3 rules
+- BUG-092: Relative→absolute house positions
+- BUG-093: 9 of 11 marriage timing rules incomplete
+- BUG-094: Ch.19 missing 9 of 15 slokas → use `/encode-chapter 19`
