@@ -390,4 +390,66 @@ b.add(
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1512"]},
 )
 
+# ═══ v.2 ALT PATH: Asc lord in 4th + benefic aspect → housing comforts ══════
+# Verse: "occupied by its lord or by the ascendant lord and be aspected by a
+# benefic." BPHS1500 encodes lord-in-own-house path. This encodes the
+# ascendant-lord-in-4th + benefic-aspect path.
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 1, "house": 4},
+        {"type": "planet_aspecting", "planet": "any_benefic", "house": 4},
+    ],
+    signal_group="h1_lord_h4_benefic_aspect_comfort",
+    direction="favorable", intensity="strong",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "residential_comforts_full_degree",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
+    ],
+    verse_ref="Ch.15 v.2",
+    commentary_context=(
+        "Alternative path of v.2. Verse says 'occupied by its lord OR by "
+        "the ascendant lord and be aspected by a benefic.' BPHS1500 encodes "
+        "4th lord in own house; this encodes ascendant lord in 4th with "
+        "benefic aspect."
+    ),
+    description=(
+        "Ascendant lord in the 4th house and the 4th aspected by a benefic: "
+        "one will have residential comforts in full degree."
+    ),
+    concordance_texts=["Saravali"],
+    tags=["h1_lord", "h4", "housing", "comfort", "benefic_aspect"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1500"]},
+)
+
+# ═══ v.10-14e ASPECT VARIANT: Benefic aspecting 4th → safe conveyances ═════
+# Santhanam: "A benefic be in the 4th, aspect the 4th, or aspect the lord of
+# the 4th house." BPHS1512 encodes benefic-in-4th. This encodes
+# benefic-aspecting-4th.
+
+b.add(
+    conditions=[{"type": "planet_aspecting", "planet": "any_benefic", "house": 4}],
+    signal_group="benefic_aspect_h4_safe_conveyance",
+    direction="favorable", intensity="moderate",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "happy_with_conveyances_free_from_accidents",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.15 v.10-14",
+    commentary_context=(
+        "Aspect path of v.10-14e. Santhanam: 'Should a benefic be in the "
+        "4th, aspect the 4th, or aspect the lord of the 4th house...' "
+        "BPHS1512 encodes benefic in 4th; this encodes benefic aspecting 4th."
+    ),
+    description=(
+        "A benefic aspecting the 4th house: the native will be happy with "
+        "conveyances and be free from accidents and dangers."
+    ),
+    concordance_texts=["Saravali"],
+    tags=["benefic", "h4", "conveyance", "aspect"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1512"]},
+)
+
 BPHS_V2_CH15_REGISTRY = b.build()

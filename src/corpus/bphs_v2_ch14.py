@@ -449,4 +449,35 @@ b.add(
     description="Mars in 3rd: adverse effect on native's character.",
     prediction_type="trait")
 
+# ═══ v.1 ASPECT VARIANT: Benefic aspecting 3rd → co-born and courage ════════
+# Verse says "aspected by or conjunct with a benefic" — above rule (BPHS1400)
+# encodes occupation; this encodes the aspect path.
+
+b.add(
+    conditions=[{"type": "planet_aspecting", "planet": "any_benefic", "house": 3}],
+    entity_target="general",
+    signal_group="benefic_h3_coborn_aspect", direction="favorable", intensity="moderate",
+    primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "endowed_with_coborn",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
+        {"entity": "native", "claim": "courageous",
+         "domain": "character", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.14 v.1",
+    description=(
+        "3rd house aspected by a benefic: the native will be endowed "
+        "with co-born (brothers/sisters) and be courageous."
+    ),
+    commentary_context=(
+        "Aspect path of v.1. Verse explicitly says 'aspected by or "
+        "conjunct with a benefic'. BPHS1400 encodes conjunction/occupation; "
+        "this rule encodes the aspect path."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Ch.32 v.32 Planetary Karakatvas"],
+    tags=["benefic", "h3", "coborn", "courage", "aspect"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1400"]},
+)
+
 BPHS_V2_CH14_REGISTRY = b.build()
