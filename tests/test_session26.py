@@ -111,7 +111,8 @@ class TestUserSchool:
 
 class TestSchoolRouter:
     @pytest.fixture(autouse=True)
-    def need_jwt(self):
+    def need_jwt(self, monkeypatch):
+        monkeypatch.setenv("JWT_SECRET", "test-secret-for-ci")
         try:
             pytest.importorskip("jwt", reason="pyjwt not installed")
         except BaseException:
