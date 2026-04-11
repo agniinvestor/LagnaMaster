@@ -452,4 +452,60 @@ b.add(
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1512"]},
 )
 
+# ═══ v.10-14e ASPECT VARIANT: Benefic aspecting LORD of 4th ══════════════════
+# Third path: benefic aspecting the lord of the 4th house.
+
+b.add(
+    conditions=[{"type": "planet_aspecting", "planet": "any_benefic", "target": "lord_of_4"}],
+    signal_group="benefic_aspect_h4_lord_safe_conveyance",
+    direction="favorable", intensity="moderate",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "happy_with_conveyances_free_from_accidents",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.15 v.10-14",
+    commentary_context=(
+        "Third aspect path of v.10-14e. Santhanam: 'Should a benefic be in "
+        "the 4th, aspect the 4th, or aspect the lord of the 4th house...' "
+        "BPHS1512 = benefic in 4th, BPHS1515 = benefic aspecting 4th. This "
+        "encodes benefic aspecting the lord of the 4th house."
+    ),
+    description=(
+        "A benefic aspecting the lord of the 4th house: the native will be "
+        "happy with conveyances and be free from accidents and dangers."
+    ),
+    concordance_texts=["Saravali"],
+    tags=["benefic", "h4_lord", "conveyance", "aspect"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1512", "BPHS1515"]},
+)
+
+# ═══ v.10-14f ASPECT VARIANT: Malefic aspecting 4th → accidents ═════════════
+# Contrary mirror of benefic aspecting 4th.
+
+b.add(
+    conditions=[{"type": "planet_aspecting", "planet": "any_malefic", "house": 4}],
+    signal_group="malefic_aspect_h4_vehicle_accidents",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "malefic_effects_on_conveyances_accidents",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.15 v.10-14",
+    commentary_context=(
+        "Contrary mirror of benefic aspecting 4th. Santhanam: "
+        "'A malefic replacing the said benefic will produce only malefic "
+        "effects in respect of conveyances and reduce one to severe "
+        "accidents.' BPHS1513 = malefic IN 4th; this = malefic ASPECTING 4th."
+    ),
+    description=(
+        "A malefic aspecting the 4th house will produce malefic effects "
+        "in respect of conveyances and reduce one to severe accidents."
+    ),
+    concordance_texts=["Saravali"],
+    tags=["malefic", "h4", "conveyance", "accidents", "aspect"],
+    rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1515"]},
+)
+
 BPHS_V2_CH15_REGISTRY = b.build()
