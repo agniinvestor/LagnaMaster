@@ -47,8 +47,11 @@ _SIGN_LORD: dict[int, str] = {
     9: "Saturn", 10: "Saturn", 11: "Jupiter",
 }
 
-# R01 — gentle / benefic-natured signs (Cancer, Taurus, Libra, Pisces, Sag)
-_GENTLE_SIGNS: frozenset[int] = frozenset({3, 1, 6, 11, 8})
+# R01 — gentle signs = even/feminine signs per BPHS (Taurus, Cancer, Virgo,
+# Scorpio, Capricorn, Pisces = sign indices 1,3,5,7,9,11)
+# BUG-051 fix: was {3,1,6,11,8} (wrong — included Virgo/6 as gentle but
+# used wrong sign indices). Corrected to match scoring.py canonical set.
+_GENTLE_SIGNS: frozenset[int] = frozenset({1, 3, 5, 7, 9, 11})
 
 # House-type placement scores for bhavesh (R04 house placement aspect)
 _HOUSE_TYPE_SCORE: dict[int, float] = {

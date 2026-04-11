@@ -41,7 +41,11 @@ _OWN_SIGNS = {"Sun": [4], "Moon": [3], "Mars": [0, 7], "Mercury": [2, 5],
 _MT_SIGNS = {"Sun": 4, "Moon": 1, "Mars": 0, "Mercury": 5,
              "Jupiter": 8, "Venus": 6, "Saturn": 10}
 
-_SPECIAL_ASPECTS = {"Mars": {3, 7}, "Jupiter": {4, 8}, "Saturn": {2, 9}}
+# Special aspects per BPHS Ch.26 v.9-12 (offsets from aspecting planet's house)
+# Mars: 4th and 8th; Jupiter: 5th and 9th; Saturn: 3rd and 10th
+# All planets also have 7th aspect (handled separately).
+# BUG FIX: was Mars:{3,7} Jupiter:{4,8} Saturn:{2,9} — ALL THREE WRONG.
+_SPECIAL_ASPECTS = {"Mars": {4, 8}, "Jupiter": {5, 9}, "Saturn": {3, 10}}
 
 # Career karakas (BPHS Ch.32)
 _H10_KARAKAS = {"Sun", "Saturn", "Mercury"}
