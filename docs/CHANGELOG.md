@@ -1712,4 +1712,35 @@ Dispatched 6 parallel agents (worktree-isolated) to fix all 20 remaining code bu
 - BUG-091: OR-vs-AND logic in 3 rules
 - BUG-092: Relative→absolute house positions
 - BUG-093: 9 of 11 marriage timing rules incomplete
-- BUG-094: Ch.19 missing 9 of 15 slokas → use `/encode-chapter 19`
+- ~~BUG-094: Ch.19 missing 9 of 15 slokas~~ → **FIXED** (see below)
+
+Run `/corpus-data-fixes` to resolve BUG-089-093.
+
+## S318 (Ch.19 Encoding) — 2026-04-11 — BPHS Ch.19 Complete Re-encode
+
+### Summary
+BUG-094 resolved. Ch.19 (8th House / Longevity) re-encoded from 6 rules to 18 rules, covering all 15 slokas. Previously only v.1-7 were encoded with sloka_count=7. All short-life combinations (v.8-13) and long-life yogas (v.14-15) were entirely absent.
+
+### What was encoded
+- **v.3 (split):** Saturn/10th lord short-life paths — was one vague rule, now two proper rules with conjunction conditions
+- **v.4 (split):** Three separate Viparita long-life yogas — was one merged rule
+- **v.7 (new):** Lords of 1st/8th/10th + Saturn in angles/trines/11th
+- **v.8 (new):** Medium life 20-32 years — weak ascendant lord + 8th lord in angle
+- **v.9 (new):** Short life — 8th lord debilitated + malefic in 8th + weak ascendant
+- **v.10 (new):** Death at birth — 8th house, 8th lord, 12th house all with malefics
+- **v.11 (new):** Immediate end — malefics in kendras, benefics in dusthanas, 8th lord fall in lagna
+- **v.12 (new):** Very brief life — 5th + 8th houses + 8th lord all with malefics
+- **v.13 (new):** Death within month — 8th lord in 8th + Moon afflicted by malefics
+- **v.14 (new):** Long life — ascendant lord exalted + Moon 11th + Jupiter 8th
+- **v.15 (new):** Long life — strong ascendant lord + benefic aspect from angle
+
+### Health-sensitive rules
+4 rules (v.10-13) marked `health_sensitive=True`, `safety_tier="restricted"` with benefic-aspect mitigation modifiers and exceptions referencing Ch.10 (Antidotes for Evils).
+
+### Three-lens analysis
+- **Tech:** V2 scorecard 0 errors, 0 warnings. Builder validation passed all T1 gates. timing_window types corrected to valid set (age, age_range). modifier effects use schema-valid tokens (attenuates, negates).
+- **Astrology:** Ch.19 is now the most complete longevity chapter in the corpus. The 4 infant mortality rules (v.10-13) are among the most important predictive rules in classical Jyotish — previously entirely absent. The 3-way split of v.4 Viparita yogas captures the distinct dusthana-lord exchange patterns.
+- **Research:** GPT review caught a real structural issue (conjunction modeling) and several non-issues (schema hallucination). The review pattern works but requires filtering for schema-awareness.
+
+### What remains
+5 corpus data bugs (BUG-089-093): `/corpus-data-fixes` command created to resolve them

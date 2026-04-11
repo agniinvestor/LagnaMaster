@@ -703,3 +703,10 @@ Root cause of 103 CI failures identified and fixed:
   - Moolatrikona: degree-bounded via dignity.py MOOLTRIKONA_RANGES (BUG-063)
   - Security: JWT secret env-only, CORS restricted, version 3.0.0 (SEC-01,02,03)
   - 14564 tests (+34), 32 regression tests, 0 regressions. 6 corpus bugs remain (BUG-089-094)
+- S318 (Ch.19 Encoding): BUG-094 resolved — Ch.19 re-encoded 6→18 rules, all 15 slokas
+  - 12 new rules: v.8-13 short-life (death at birth, infant mortality, 20-32yr life span),
+    v.14-15 long-life (exalted ascendant + Jupiter/Moon, strong lord + benefic aspect)
+  - Fixed v.3 under-encoding (split into Saturn + 10th lord paths), v.4-7 (5 rules from 2)
+  - 4 health_sensitive rules with safety_tier=restricted, benefic mitigation modifiers
+  - V2 scorecard: 0 errors, 0 warnings. /corpus-data-fixes command created for BUG-089-093
+  - S318 total: 99/104 bugs fixed. 5 corpus data bugs remain
