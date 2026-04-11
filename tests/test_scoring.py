@@ -132,6 +132,39 @@ class TestScoringEngine:
         assert "Self" in summary
 
 
+class TestDignityScoring:
+    """BUG-102: verify dignity actually affects house scores via R24."""
+
+    def test_r24_exists_in_rules(self, india_chart):
+        from src.scoring import score_chart
+
+        result = score_chart(india_chart)
+        for h, hs in result.houses.items():
+            r24_rules = [r for r in hs.rules if r.rule == "R24"]
+            assert len(r24_rules) == 1, f"H{h} missing R24 rule"
+
+    def test_r24_triggers_for_some_houses(self, india_chart):
+        from src.scoring import score_chart
+
+        result = score_chart(india_chart)
+        triggered = [h for h, hs in result.houses.items()
+                     if any(r.rule == "R24" and r.triggered for r in hs.rules)]
+        assert len(triggered) > 0, "R24 should trigger for at least one house"
+
+    def test_exalted_vs_debilitated_differ(self, india_chart):
+        from src.scoring import score_chart
+
+        result = score_chart(india_chart)
+        r24_scores = {}
+        for h, hs in result.houses.items():
+            for r in hs.rules:
+                if r.rule == "R24":
+                    r24_scores[h] = r.score
+        # Not all R24 scores should be 0 — dignity should create differentiation
+        nonzero = [s for s in r24_scores.values() if s != 0.0]
+        assert len(nonzero) >= 2, f"R24 should differentiate: {r24_scores}"
+
+
 # ===========================================================================
 # API tests
 # ===========================================================================

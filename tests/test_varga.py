@@ -248,19 +248,9 @@ class TestD7Saptamsha:
 
 
 class TestD9Navamsha:
-    def test_d9_lagna_matches_panchanga(self, india_chart, india_varga):
-        """D9 lagna from varga.py is deterministic."""
-        from src.calculations.divisional_charts import compute_divisional_signs
-
-        div = compute_divisional_signs(india_chart)
-        # D9 lagna: access via planets dict for lagna sign
-        try:
-            if hasattr(div, "planets") and "lagna" in div.planets:
-                div.planets["lagna"].get("D9", india_chart.lagna_sign_index)
-            else:
-                pass
-        except Exception:
-            pass
+    def test_d9_lagna_in_range(self, india_chart, india_varga):
+        """D9 lagna from varga.py is deterministic and in range."""
+        # BUG-104: removed dead try/except that swallowed cross-validation failures
         assert 0 <= india_varga.d9().varga_lagna_sign_index <= 11
 
     def test_d9_moon_matches_panchanga(self, india_chart, india_varga):

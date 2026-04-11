@@ -156,9 +156,6 @@ class TestMangal:
     def test_h7(self):
         assert has_mangal_dosha(self._mc(6, 0))
 
-    def test_h3(self):
-        assert (2 - 0) % 12 + 1 == 3 and 3 not in {1, 2, 4, 7, 8, 12}
-
     def test_cancel(self):
         r = compute_kundali_milan(self._mc(0, 0, 3, 1), self._mc(5, 5, 3, 1))
         if r.mangal_dosha_male and r.mangal_dosha_female:
