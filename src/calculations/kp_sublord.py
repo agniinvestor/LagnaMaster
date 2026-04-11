@@ -284,7 +284,7 @@ def compute_ruling_planets(chart, query_datetime=None) -> list[str]:
 
     # Add day lord if datetime provided
     if query_datetime is not None:
-        day_lords = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+        day_lords = ["Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Sun"]
         day_lord = day_lords[query_datetime.weekday() % 7]
         if day_lord not in ruling:
             ruling.append(day_lord)
