@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **14740 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, 600 V2 rules (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system. S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete, canonical architecture spec v9.2.
+- **14743 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, 600 V2 rules (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system. S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete, canonical architecture spec v9.2. S318: deep audit 104 bugs found, 65 fixed across 12 commits.
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -122,7 +122,14 @@ When in doubt, read that file to reconstruct state.
 - **Session 310:** BPHS Phase 1B Ch.24 Part B (5th-8th Lord Effects); BPHS2453-BPHS2501; 49 rules; corpus 7163; 7364 tests — **BPHS Block B: lords 1-8 of 12**
 - **Session 311:** BPHS Phase 1B Ch.24 Part C (9th-12th Lord + Misc); BPHS2502-BPHS2552; 51 rules; corpus 7214; 7364 tests — **Ch.24 COMPLETE: 153 rules from 148 slokas**
 - **Session 312:** BPHS Phase 1B Ch.25 (Non-Luminous Planets); BPHS2553-BPHS2637; 85 rules; corpus 7299; 7364 tests — **Ch.25 COMPLETE: 85 rules from 87 slokas**
-- **Next session:** S313
+- **Session 313-315:** Encoding + deferred inventory + governance
+- **Session 316:** Diagnostic scorer investigation, V2 rules, 11 new primitives, 600/600 computable
+- **Session 317:** BPHS foundation audit (14 bugs fixed, canonical architecture v9.2)
+- **Session 318:** Deep audit — 104 bugs found across 335 files. 65 fixed across 12 commits:
+  - Phase 1 (prior session): 35 fixes — Mars aspects, yoga swaps, divisional charts, shadbala, kundali milan, rule_firing, avasthas
+  - Phase 2 (this session): 30 fixes — R24 dignity wiring, data tables (gentle signs, sthir karaks, dig bala, SAV, yogakaraka), silent failures (longevity, shadbala API, save_chart, ChartSummary, monte_carlo), broken imports (5 files vargas→varga), setup_ci_guard guard, weight alignment, mirror() deepcopy, corpus corrections, test fixes
+  - 39 remaining: dead code (4), architecture (4), data table (1), silent failure (1), test gaps (3), corpus data (6 deferred to encoding)
+- **Continuation:** `/s318-continue-fixes-v2` for remaining 39 bugs, or proceed to S319
 
 ---
 

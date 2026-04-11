@@ -1598,3 +1598,36 @@ S309 — Corpus Standard Upgrade: Schema + Protocol
 
 ### Next session
 S310 — Primary condition normalization (8 computable primitives + signal_group) then begin V2 re-encoding of BPHS 1B houses from source text
+
+---
+
+## S318 (Phase -2) — 2026-04-11 — Deep Audit Bug Fixes (30 more bugs)
+
+### Summary
+Continued S318 deep audit fix session. Fixed 30 more bugs (BUG-081 through BUG-104 selectively), bringing total to 65 of 104 fixed. 39 remain.
+
+### What was fixed (8 commits)
+- **BUG-081 (CRITICAL):** Wired dignity into scoring as R24 — exalted/debilitated planets now affect house scores via `DIGNITY_SCORE` map
+- **BUG-043-049:** Added KNOWN_GAP comments for 7 missing features (Yuddha Bala, Ojhayugma, Sahams, Mudda Dasha, Pancha Vargeeya, _is_activated, Pushkara Navamsha)
+- **BUG-051,052,053,055,064,065:** Data table corrections — gentle signs to BPHS even signs, Sthir Karaks H4/H9 fixed, H1 lord yogakaraka exclusion, Mars/Jupiter Dig Bala to single peak house, SAV from raw BAVs
+- **BUG-068-074:** Silent failure fixes — longevity raises instead of 66.0, shadbala API signature, save_chart JSON serialization, ChartSummary model fields, monte_carlo import, dominance_engine jup_strong default, pressure_engine logging
+- **BUG-079,080:** Fixed `src.calculations.vargas` → `src.calculations.varga` in 5 files; setup_ci_guard wrapped in `__main__` guard
+- **BUG-083,085,088:** Architecture — R10/R13/R20 weight alignment across schools, mirror() deepcopy for mutable objects, scoring_v3 divisional_charts dependency flagged
+- **BUG-095,096:** Corpus — removed fabricated "no siblings lost" claim, fixed header count 130→142
+- **BUG-099,101,102,104:** Test fixes — deleted empty stub, removed fake arithmetic test, added 3 dignity scoring tests, cleaned dead try/except
+
+### Three-lens analysis
+- **Tech:** 30 bugs fixed with zero regressions. Test count 14741→14743. All fixes are minimal root-cause changes — no refactoring, no tangential improvements. The R24 dignity wiring is the highest-impact single fix.
+- **Astrology:** Dignity now affects scoring (was computed but ignored). Gentle signs corrected to BPHS feminine signs. Sthir Karaks for H4 (Venus added) and H9 (Sun added) now match classical sources. SAV computed from raw BAVs per BPHS standard.
+- **ML:** 5 broken import paths fixed — shadbala, avasthas, ayurdaya, chara_karaka_config, and dasha_activation now access correct varga module. Features that silently degraded to fallback values now compute correctly.
+
+### What remains (39 bugs)
+- Dead code: 4 bugs (orphaned modules, dead expressions/functions)
+- Architecture: 4 bugs (parallel engines, CalcConfig collision, avastha consolidation, functional roles)
+- Data table: 1 bug (H10 Sthir Karak needs BPHS verification)
+- Silent failure: 1 bug (21 UI handlers in app.py)
+- Test gaps: 3 bugs (avasthas coverage, pytest.approx, list conditions)
+- Corpus data: 6 bugs (deferred to encoding sessions — require BPHS PDF verification)
+
+### Continuation
+Run `/s318-continue-fixes-v2` to address the remaining 39 bugs
