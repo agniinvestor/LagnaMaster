@@ -99,7 +99,7 @@ b.add(
         "brings harm to that relative. Jupiter+11th lord → elder siblings; "
         "Venus+7th lord → spouse; Jupiter+5th lord → progeny; Sun+9th lord "
         "→ father; Moon+4th lord → mother. Verse also says happiness comes "
-        "if Mars or 3rd lord is in angle/trine/exaltation/friendly divisions."
+        "when Mars or 3rd lord is in angle/trine/exaltation/friendly divisions."
     ),
     concordance_texts=["Saravali"],
     cross_chapter_refs=[
@@ -564,7 +564,7 @@ b.add(
         "Santhanam: 'This should be known from the 3rd house being male or "
         "female sign & C.' Odd signs (Aries, Gemini, Leo, Libra, Sagittarius, "
         "Aquarius) are male signs. The 3rd lord's sign type serves as proxy for "
-        "3rd cusp sign type since no house_sign_type primitive exists. If the "
+        "3rd cusp sign type since no house_sign_type primitive exists. When the "
         "3rd house is occupied by a male planet as well as in a male sign, the "
         "contribution is strong — brothers indicated."
     ),
@@ -624,7 +624,7 @@ b.add(
         "Verse: 'Should it be of mixed nature, coborn of both sexes will be obtained.'"
     ),
     commentary_context=(
-        "Santhanam: If the 3rd house is occupied by a male planet as well as "
+        "Santhanam: Where the 3rd house is occupied by a male planet as well as "
         "a female planet, there will be brothers and sisters as well. This "
         "requires at least one male planet (Sun/Mars/Jupiter) AND at least one "
         "female planet (Venus/Moon) in the 3rd house simultaneously."

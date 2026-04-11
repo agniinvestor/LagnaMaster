@@ -493,7 +493,7 @@ b.add(
     ],
     verse_ref="Ch.29 v.26",
     description="Benefic or malefic exalted in 7th from Lagna Pada: native will be affluent and famous.",
-    commentary_context="Santhanam: Text says 'whether a benefic or a malefic if be exalted in the 7th' — exaltation state is the trigger, not planet identity. The planet's exalted status overrides natural benefic/malefic distinction. Exaltation is encoded as a structured condition (planet_dignity), not just a modifier. GPT review: this rule captures state + house, not planet identity.",
+    commentary_context="Santhanam: Text says 'whether a benefic or a malefic, being exalted in the 7th' — exaltation state is the trigger, not planet identity. The planet's exalted status overrides natural benefic/malefic distinction. Exaltation is encoded as a structured condition (planet_dignity), not just a modifier. GPT review: this rule captures state + house, not planet identity.",
     concordance_texts=[],
 )
 

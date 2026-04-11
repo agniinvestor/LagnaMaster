@@ -567,7 +567,7 @@ b.add(
     verse_ref="Ch.18 v.7-8",
     commentary_context=(
         "Santhanam: Jupiter in 7th = wife of a Brahmin or a pregnant female. "
-        "Jupiter in the 7th is also no exception to the general pattern of "
+        "Jupiter in the 7th is also no exemption from the general pattern of "
         "absence of sterlingness in character. Reflects ancient Indian social "
         "norms regarding caste and marital status."
     ),

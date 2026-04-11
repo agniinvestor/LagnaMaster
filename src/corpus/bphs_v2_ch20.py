@@ -168,7 +168,7 @@ b.add(conditions=[
       predictions=[{"entity": "native", "claim": "devoid_of_fortunes", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
       verse_ref="Ch.20 v.30",
       commentary_context=(
-          "Santhanam: 'If Rahu is in the 9th from the 9th (i.e. 5th from "
+          "Santhanam: 'When Rahu is in the 9th from the 9th (i.e. 5th from "
           "the ascendant)'. 9th from 9th = house 5 from lagna. BUG-092 fix: "
           "was house 9 (absolute), corrected to house 5 per BPHS derivation. "
           "Compound condition: Rahu in 5th + 9th lord in fall + Rahu's "

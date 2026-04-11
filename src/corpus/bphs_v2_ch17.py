@@ -301,7 +301,7 @@ b.add(
         "digestive disorders, dropsy, affections of ear, eczema, tumour of "
         "kidneys, disturbances of milk glands, fatty degeneration of muscles, "
         "plethoric and sthenic distentions, thoracic diathesis, pains in "
-        "vertebrae, diseases of viscera, liver and spleen. However, the "
+        "vertebrae, diseases of viscera, liver and spleen. That said, the "
         "verse text itself says Jupiter destroys disease in this position."
     ),
     concordance_texts=["Saravali"],
