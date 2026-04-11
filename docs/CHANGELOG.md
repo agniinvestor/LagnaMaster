@@ -1798,4 +1798,4 @@ Three-phase session: (1) spot-checked S319 bug fixes against PDF, (2) closed or_
 ### Three-lens analysis
 - **Tech:** 14776 tests (+182 from baseline), ruff clean, or_group validation now catches silent errors
 - **Astrology:** Disease rules now cover all 7 classical planets. Male/female planet sign-gender logic encoded. Spouse appearance/association rules per BPHS Ch.18.
-- **Research:** S318 deep audit gap inventory ~50 rules → 37 filled this session. Remaining gaps: ~13 rules in minor categories.
+- **Research:** S318 deep audit gap inventory ~41 rules → 37 filled this session. 8 remaining gaps: Ch.17 Rahu/Ketu disease rules (agent wrongly excluded — verse p.155 lists them explicitly), Ch.14 Saturn/Rahu male planet variant (needs investigation), Ch.12 possible 4th gap (may not exist), Ch.13 4 aspect-path rules (engine limitation — `planet_aspecting` can't resolve lord positions). Prompt `/s319-close-remaining-gaps` created to resolve.

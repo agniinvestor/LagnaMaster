@@ -722,3 +722,4 @@ Root cause of 103 CI failures identified and fixed:
   - BPHS1402: fixed or_group key + invalid sign_type + verse_ref
   - 37 new rules across Ch.12(+3), Ch.13(+1), Ch.14(+9), Ch.15(+4), Ch.16(+3), Ch.17(+6), Ch.18(+9), Ch.23(+2)
   - 14776 tests, ruff clean, 5 parallel encoding agents (2 batches)
+  - 8 remaining gaps: 2 encodable (Ch.17 Rahu/Ketu — agent wrongly excluded), 1 investigate (Ch.14), 1 maybe-not-real (Ch.12), 4 engine limitation (Ch.13 aspect paths)
