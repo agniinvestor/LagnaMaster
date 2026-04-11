@@ -710,3 +710,10 @@ Root cause of 103 CI failures identified and fixed:
   - 4 health_sensitive rules with safety_tier=restricted, benefic mitigation modifiers
   - V2 scorecard: 0 errors, 0 warnings. /corpus-data-fixes command created for BUG-089-093
   - S318 total: 99/104 bugs fixed. 5 corpus data bugs remain
+- S319: Corpus data fixes — BUG-089 through BUG-093 all CLOSED
+  - BUG-089: 10 factual errors corrected across Ch.14,15,17,20,21,23
+  - BUG-090: 3 aspect-path variant rules added (Ch.14,15)
+  - BUG-091: 3 AND→OR logic fixes (Ch.15,16)
+  - BUG-092: 2 relative house positions fixed (Ch.13,20)
+  - BUG-093: 10 marriage timing conditions completed (Ch.18 v.22-34)
+  - 14594 tests, 0 regressions. S318 audit: 104/104 bugs CLOSED

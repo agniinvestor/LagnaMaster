@@ -1744,3 +1744,25 @@ BUG-094 resolved. Ch.19 (8th House / Longevity) re-encoded from 6 rules to 18 ru
 
 ### What remains
 5 corpus data bugs (BUG-089-093): `/corpus-data-fixes` command created to resolve them
+
+---
+
+## S319 — 2026-04-11 — Corpus Data Fixes (BUG-089 through BUG-093)
+
+### Summary
+Fixed all 5 remaining corpus data bugs from the S318 deep audit using 5 parallel worktree-isolated agents. 9 corpus chapter files modified across Ch.12-23. All 104 S318 audit bugs now CLOSED.
+
+### What was fixed
+- **BUG-089 (10 factual errors):** BPHS1506 house 11→9, BPHS1700 houses [1,8]→[1,6,8], BPHS1715 houses replaced, BPHS2011 house 2→8, BPHS2021 house 9→5, BPHS2029 lords in own→exchange, BPHS2110 house→sign Pisces, BPHS2303 any_benefic→lord_of_12, BPHS1402 dignity=weak→or_group(malefic conj/sign), BPHS1407 lord_of_3→Mars
+- **BUG-090 (3 aspect variants):** BPHS1422 (Ch.14 v.1 aspect), BPHS1514 (Ch.15 v.2 aspect), BPHS1515 (Ch.15 v.10-14 aspect). Ch.18 v.3 correctly skipped (conjunction only, no "or aspected")
+- **BUG-091 (3 OR-vs-AND fixes):** BPHS1501 and→or_group (own house/navamsa/exalted), BPHS1611 and→or_group (exalted/2-5-9/conjunct Jupiter), BPHS1600 added lord_of_1 or_group + fixed lord_of_5 or_group
+- **BUG-092 (2 relative houses):** BPHS1306 absolute {1,5,9}→planet_in_house_from with lord_of_2 reference, BPHS2021 house 9→5 (9th from 9th)
+- **BUG-093 (10 marriage timing completions):** Ch.18 v.22-34 — added missing 2nd/3rd conditions to 10 rules (Venus dignity, dispositor conjunctions, lord placements, navamsa conditions)
+
+### Three-lens analysis
+- **Tech:** 14594 tests (+30), 0 regressions, ruff clean. V2 scorecard 8 warnings (all pre-existing). 5 parallel agents with worktree isolation.
+- **Astrology:** All 10 factual errors were PDF-verified. or_group correctly models BPHS "either...or" phrasing. planet_in_house_from captures relative positioning. Marriage timing rules now encode complete multi-planetary conditions.
+- **Research:** S318 audit 104/104 bugs CLOSED. Corpus accuracy improved across 9 chapter files.
+
+### Up next
+S320 — per ROADMAP.md

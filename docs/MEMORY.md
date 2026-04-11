@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **14564 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **612 V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system. S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete, canonical architecture spec v9.2. S318: deep audit 104 bugs found, **99 fixed** across 35 commits. Final Sweep fixed 20 code bugs + 3 security issues via 6 parallel agents. BUG-094 (Ch.19) encoded: 6→18 rules, all 15 slokas covered. 5 corpus data bugs (BUG-089-093) remain — use `/corpus-data-fixes` to resolve.
+- **14594 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **615+ V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system. S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete, canonical architecture spec v9.2. S318: deep audit 104 bugs found, **104/104 CLOSED** across 40+ commits. Final Sweep fixed 20 code bugs + 3 security issues via 6 parallel agents. BUG-094 (Ch.19) encoded: 6→18 rules. S319: BUG-089-093 corpus data fixes — 10 factual errors, 3 aspect variants, 3 OR-vs-AND, 2 relative houses, 10 marriage timing completions.
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
