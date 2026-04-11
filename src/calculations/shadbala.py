@@ -168,6 +168,9 @@ class ShadbalResult:
     # Drik Bala
     drik_bala: float = 0.0  # signed sum of aspects received
 
+    # Yuddha Bala (Planetary War) — BPHS Ch.27 v.20 (p.284)
+    yuddha_bala: float = 0.0  # positive for winner, negative for loser
+
     # Totals
     total: float = 0.0  # sum of all components
 
@@ -856,10 +859,60 @@ def compute_all_shadbala(
     birth_dt: Optional[datetime] = None,
 ) -> dict[str, ShadbalResult]:
     """Compute Shadbala for all 7 classical planets, including Yuddha Bala."""
-    return {
+    results = {
         planet: compute_shadbala(planet, chart, birth_dt)
         for planet in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
     }
+    # Apply Yuddha Bala (planetary war) adjustments — BPHS Ch.27 v.20 (p.284)
+    _apply_yuddha_bala(results, chart)
+    return results
+
+
+_YUDDHA_PLANETS = {"Mars", "Mercury", "Jupiter", "Venus", "Saturn"}
+
+
+def _apply_yuddha_bala(results: dict[str, "ShadbalResult"], chart) -> None:
+    """BPHS Ch.27 v.20 (p.284): Planetary War (Yuddha Bala).
+
+    When two planets are within 1° longitude, the planet with higher
+    ecliptic latitude wins. Winner gets loser's Chesta Bala added;
+    loser gets their own Chesta Bala subtracted.
+    Only applies to Mars, Mercury, Jupiter, Venus, Saturn.
+    """
+    war_planets = [p for p in _YUDDHA_PLANETS if p in chart.planets]
+
+    for i in range(len(war_planets)):
+        for j in range(i + 1, len(war_planets)):
+            p1, p2 = war_planets[i], war_planets[j]
+            pos1 = chart.planets[p1]
+            pos2 = chart.planets[p2]
+
+            # Check if within 1° of each other
+            sep = abs(pos1.longitude - pos2.longitude) % 360
+            if sep > 180:
+                sep = 360 - sep
+            if sep > 1.0:
+                continue
+
+            # Winner = planet with higher ecliptic latitude
+            lat1 = abs(getattr(pos1, "latitude", 0.0))
+            lat2 = abs(getattr(pos2, "latitude", 0.0))
+
+            if lat1 >= lat2:
+                winner, loser = p1, p2
+            else:
+                winner, loser = p2, p1
+
+            loser_chesta = results[loser].chesta_bala
+
+            # Winner gains loser's chesta bala
+            results[winner].yuddha_bala += loser_chesta
+            # Loser loses their own chesta bala
+            results[loser].yuddha_bala -= loser_chesta
+
+            # Recalculate totals
+            results[winner].total = round(results[winner].total + loser_chesta, 3)
+            results[loser].total = round(results[loser].total - loser_chesta, 3)
 
 
 # ── Backward-compatibility: old API positional args ──
