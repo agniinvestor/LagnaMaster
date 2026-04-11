@@ -97,10 +97,10 @@ class TestFixedTotals:
                 f"{p}: raw={raw}, expected={FIXED_TOTALS_RAW[p]} (±4 tol)"
             )
 
-    def test_sarva_total_equals_sum_of_planet_totals(self, india_av):
-        # sarva.raw_bindus[i] = sum of all 7 planet reduced bindus for sign i
+    def test_sarva_total_equals_sum_of_planet_raw_totals(self, india_av):
+        # BUG-065: SAV must be sum of RAW BAVs, not post-Shodhana bindus
         for si in range(12):
-            expected_sign = sum(india_av.planet_av[p].bindus[si] for p in _PLANETS)
+            expected_sign = sum(india_av.planet_av[p].raw_bindus[si] for p in _PLANETS)
             assert india_av.sarva.raw_bindus[si] == expected_sign, (
                 f"Sign {si}: sarva.raw={india_av.sarva.raw_bindus[si]}, sum={expected_sign}"
             )
@@ -125,10 +125,10 @@ class TestFixedTotals:
 
 
 class TestSarvaConsistency:
-    def test_sarva_equals_sum_of_planet_bindus(self, india_av):
-        """Sarva[sign] must equal sum of all 7 planet bindus for that sign."""
+    def test_sarva_equals_sum_of_planet_raw_bindus(self, india_av):
+        """Sarva[sign] must equal sum of all 7 planet RAW bindus (BUG-065)."""
         for si in range(12):
-            expected = sum(india_av.planet_av[p].bindus[si] for p in _PLANETS)
+            expected = sum(india_av.planet_av[p].raw_bindus[si] for p in _PLANETS)
             actual = india_av.sarva.raw_bindus[si]
             assert actual == expected, f"{SIGNS[si]}: sarva={actual}, sum={expected}"
 

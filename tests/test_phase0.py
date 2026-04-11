@@ -536,18 +536,18 @@ class TestAVShodhana:
         # Group (1,5,9): min(3,3,3)=3; all become 0
         assert result[1] == 0
 
-    def test_sarva_uses_reduced_tables(self):
-        """Sarva must be sum of reduced (not raw) tables."""
+    def test_sarva_uses_raw_tables(self):
+        """SAV must be sum of RAW BAV tables per BPHS (BUG-065)."""
         from src.calculations.ashtakavarga import compute_ashtakavarga
 
         chart = make_chart(INDIA_1947_LAGNA, **INDIA_1947_PLANETS)
         av = compute_ashtakavarga(chart)
 
-        # Sarva raw_bindus should equal sum of planet reduced bindus
+        # Sarva raw_bindus should equal sum of planet RAW bindus
         expected_sarva_raw = [0] * 12
         for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
             for i in range(12):
-                expected_sarva_raw[i] += av.planet_av[p].bindus[i]
+                expected_sarva_raw[i] += av.planet_av[p].raw_bindus[i]
         assert av.sarva.raw_bindus == expected_sarva_raw
 
     def test_av_fixed_totals_pre_shodhana(self):

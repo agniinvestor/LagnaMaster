@@ -270,8 +270,8 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
             total=sum(reduced),
         )
 
-    # Sarva: sum of all 7 reduced tables, then re-reduce
-    sarva_raw = [sum(planet_tables[p].bindus[i] for p in _PLANETS) for i in range(12)]
+    # Sarva: sum of all 7 RAW BAV tables (BUG-065: was using post-Shodhana bindus)
+    sarva_raw = [sum(planet_tables[p].raw_bindus[i] for p in _PLANETS) for i in range(12)]
     sarva_after_trikona = trikona_shodhana(sarva_raw)
     # Ekadhipatya on Sarva — all dual-ruled pairs
     sarva_reduced = list(sarva_after_trikona)

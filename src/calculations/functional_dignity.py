@@ -109,8 +109,15 @@ def compute_functional_classifications(
         rules_maraka = any(h in {2, 7} for h in houses)
         is_badhaka = planet == badhaka_lord
 
-        # Yogakaraka: rules BOTH a Kendra AND a Trikona (most powerful benefic)
-        is_yogakaraka = rules_kendra and rules_trikona
+        # Yogakaraka: rules BOTH a Kendra AND a Trikona through DIFFERENT houses.
+        # H1 is simultaneously kendra+trikona, so a planet ruling ONLY H1
+        # doesn't qualify — it needs a separate kendra AND separate trikona.
+        # BUG-055: H1 lord was always classified as yogakaraka.
+        kendra_houses = {h for h in houses if h in _KENDRA}
+        trikona_houses = {h for h in houses if h in _TRIKONA}
+        is_yogakaraka = bool(
+            kendra_houses and trikona_houses and kendra_houses != trikona_houses
+        )
 
         # Functional benefic: Trikona lord (H1/H5/H9) or Yogakaraka
         # Note: H1 lord is simultaneously Kendra+Trikona → always benefic

@@ -43,12 +43,12 @@ STHIR_KARAK: dict[int, list[str]] = {
     1: ["Sun"],
     2: ["Jupiter"],
     3: ["Mars"],
-    4: ["Moon"],
+    4: ["Moon", "Venus"],  # BUG-052: was [Moon] only; Venus = vehicles/comforts
     5: ["Jupiter"],
     6: ["Mars", "Saturn"],
     7: ["Venus"],
     8: ["Saturn"],
-    9: ["Jupiter"],
+    9: ["Jupiter", "Sun"],  # BUG-053: was [Jupiter] only; Sun = father karaka
     10: ["Sun", "Mercury", "Jupiter", "Saturn"],
     11: ["Jupiter"],
     12: ["Saturn"],
@@ -89,10 +89,9 @@ WC_RULES = {"R03", "R05", "R07", "R14"}  # half weight in aggregate
 
 _NATURAL_BENEFIC = {"Moon", "Mercury", "Jupiter", "Venus"}
 _NATURAL_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-_GENTLE_SIGNS = {1, 2, 3, 5, 8, 11}  # Taurus/Gem/Can/Vir/Sco/Aqu (0-indexed)
-# "Gentle" as per SCORE_H1 R01: Gemini/Cancer/Leo/Libra/Sagittarius/Pisces
-# REF_Zodiac row 17 — sign_idx 0-indexed: 2=Gem,3=Can,4=Leo,6=Lib,8=Sag,11=Pis
-_GENTLE_SIGN_IDX = {2, 3, 4, 6, 8, 11}
+# Gentle (even/feminine) signs per BPHS — 0-indexed:
+# Taurus=1, Cancer=3, Virgo=5, Scorpio=7, Capricorn=9, Pisces=11
+_GENTLE_SIGN_IDX = {1, 3, 5, 7, 9, 11}
 
 
 def _is_benefic(planet: str, chart: BirthChart) -> bool:
@@ -188,9 +187,9 @@ def _paap_kartari(sign_idx: int, house_map: HouseMap, chart: BirthChart) -> bool
 _DIG_BALA_PEAK_HOUSE: dict[str, list[int]] = {
     "Sun": [10],
     "Moon": [4],
-    "Mars": [10, 3],
+    "Mars": [10],
     "Mercury": [1],
-    "Jupiter": [1, 9],
+    "Jupiter": [1],
     "Venus": [4],
     "Saturn": [7],
 }
