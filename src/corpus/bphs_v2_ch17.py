@@ -172,6 +172,207 @@ b.add(
     prediction_type="trait",
 )
 
+# v.9-12: Moon — drowning, phlegmatic/lung disorders
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Moon", "house": [6, 8]},
+    ],
+    signal_group="moon_h6_h8_drowning_lung",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "drowning_phlegmatic_lung_disorders",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with the Moon: the native will "
+        "inflict dangers through water and phlegmatic disorders. The Moon in "
+        "such a conjunction will cause drowning, cough, tuberculosis, asthma "
+        "and other lung disorders."
+    ),
+    commentary_context=(
+        "Santhanam (Cornell): Moon — gaseous distention of abdomen, diseases "
+        "of alimentary canal, disorders of bladder, blindness, disorders of "
+        "bowels, bronchial disorders, cancer, carditis, catarrh, cellular "
+        "zymosis, worms in children, colds, conjuctivitis, rotten coughs, "
+        "delirium, diarrhoea, irregular menses, menstrual disorders, "
+        "dyspepsia, effusions, epilepsy, eruptions, disorders of eyes, gout "
+        "in feet, osmosis, leucorrhoea, hysteria, mental ill health, stone "
+        "in kidneys, obstruction of bowels and lungs, phthisis, premature "
+        "births, profluvial effusions, thin blood, vomitting etc."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
+# v.9-12: Mars — blood vessels, wounds, weapons
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Mars", "house": [6, 8]},
+    ],
+    signal_group="mars_h6_h8_blood_vessels_weapons",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "blood_vessel_diseases_and_wounds",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Mars: swelling and hardening "
+        "of blood vessels, wounds and hits by weapons."
+    ),
+    commentary_context=(
+        "Santhanam (Cornell): Mars — death by abortions, disorders of blood "
+        "vessels, boils, burns, bruises, carbuncles, chickenpox, cholera, "
+        "congestion of blood, consumption, contagious fevers, cutaneous "
+        "eruptions, fatty degeneration of heart, dysentery, epidemics, "
+        "fractures and falls, disorders of genito-urinary system, "
+        "gonorrhoea, haemoptysis, hernia, hysteria, itches, loss of blood, "
+        "hemorrhage of lungs, malaria, ulceration of penis, perityphlitis, "
+        "piles, semitertial fevers, syphilis, extreme heat in throat, "
+        "tonsils, vascular excitement, abscess of vulva, yellow jaundice etc."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
+# v.9-12: Mercury — bilious diseases, jaundice
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Mercury", "house": [6, 8]},
+    ],
+    signal_group="mercury_h6_h8_bilious_jaundice",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "bilious_diseases_jaundice",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Mercury: bilious diseases "
+        "like jaundice."
+    ),
+    commentary_context=(
+        "Santhanam (Cornell): Mercury — nervous complaints, asthma, apoplexy, "
+        "impure blood, disorders caused to brain by overwork, rapid breathing, "
+        "shortness of breathing, colic in bowels, cramps in arms, shoulders, "
+        "legs and feet, dumbness, falling fits, flatulent colic, "
+        "gastro-abdominal troubles, hyperasthesia, insomnia, neuralgia "
+        "in and obstruction of kidneys, paralysis of nervous system, "
+        "pulmonary diseases, quivering, gripings in stomach, suppression "
+        "of urine, heart tremours, lowering or exhausting of vital fluids "
+        "of nerves, worms in bowels etc."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
+# v.9-12: Jupiter — freedom from diseases
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Jupiter", "house": [6, 8]},
+    ],
+    signal_group="jupiter_h6_h8_freedom_from_disease",
+    direction="favorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "freedom_from_diseases",
+         "domain": "health", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Jupiter: the native will "
+        "enjoy freedom from ailments. Jupiter's presence confers protection "
+        "and good health."
+    ),
+    commentary_context=(
+        "Santhanam: Jupiter will not cause any disease by himself but when "
+        "afflicted in the figure by adverse heavenly bodies will cause "
+        "diseases. Santhanam (Cornell): Jupiter — adiposis, disorders of "
+        "adrenals, diseases from corrupt air, alterations in red blood "
+        "particles, disorders of arterial blood, disorders in back and "
+        "backbone, stone in bladder, cancer of breast, cerebral congestion, "
+        "digestive disorders, dropsy, affections of ear, eczema, tumour of "
+        "kidneys, disturbances of milk glands, fatty degeneration of muscles, "
+        "plethoric and sthenic distentions, thoracic diathesis, pains in "
+        "vertebrae, diseases of viscera, liver and spleen. However, the "
+        "verse text itself says Jupiter destroys disease in this position."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
+# v.9-12: Venus — diseases through sexual union
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Venus", "house": [6, 8]},
+    ],
+    signal_group="venus_h6_h8_sexual_diseases",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "diseases_caused_by_sexual_union",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Venus: diseases caused by "
+        "sexual union (venereal diseases)."
+    ),
+    commentary_context=(
+        "Santhanam (Cornell): Venus — comedo, disorders of bowels (like "
+        "distempers, flux and mucus in bowels), breathing disorders (caused "
+        "by tight lacing and indiscretions in dress), Bright's Disease, "
+        "poor circulation of venous blood, clogging of system, disorders "
+        "caused by wrong use of cosmetics, diabetes, diphtheria, enlarged "
+        "tonsils, humorous discharge from eyes, skin eruptions and diseases "
+        "in feet, bilious flatulency, hysteria, diseases of kidneys, "
+        "King's Evil, diseases of matrix, Night Losses, venereal disorders, "
+        "disorders of thorax, Typhus Fever, urine infection etc."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
+# v.9-12: Saturn — windy diseases, rheumatism, arthritis
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Saturn", "house": [6, 8]},
+    ],
+    signal_group="saturn_h6_h8_windy_rheumatism",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "windy_diseases_rheumatism_arthritis",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Saturn: windy diseases like "
+        "rheumatism, arthritis, paralysis etc."
+    ),
+    commentary_context=(
+        "Santhanam (Cornell): Saturn — antiperistalsis, arthritis, articular "
+        "rheumatism, black jaundice, fractures of and pains in bones, "
+        "chronic bronchitis, impotence, club feet, colds, deafness, "
+        "dyspnoea, typhoid, disorders of foetus and troubles during "
+        "conception, narrowing of passages, heart affected by poison, "
+        "depression in skull, lumpy and hard stools, ablation of tonsils, "
+        "dental diseases etc."
+    ),
+    concordance_texts=["Saravali"],
+    cross_chapter_refs=["Saravali Ch.47 (Notes on diseases)"],
+    prediction_type="trait",
+)
+
 # ═══ v.13-19½: TIMING OF ILLNESS — each age gets its own rule ════════════════
 
 # v.13: Illness throughout life
