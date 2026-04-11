@@ -717,3 +717,8 @@ Root cause of 103 CI failures identified and fixed:
   - BUG-092: 2 relative house positions fixed (Ch.13,20)
   - BUG-093: 10 marriage timing conditions completed (Ch.18 v.22-34)
   - 14594 tests, 0 regressions. S318 audit: 104/104 bugs CLOSED
+- S319 (Phase 2): or_group validation + 37 new rules encoded
+  - or_group validation: v2_builder.py now recurses into sub-conditions (was silent pass-through)
+  - BPHS1402: fixed or_group key + invalid sign_type + verse_ref
+  - 37 new rules across Ch.12(+3), Ch.13(+1), Ch.14(+9), Ch.15(+4), Ch.16(+3), Ch.17(+6), Ch.18(+9), Ch.23(+2)
+  - 14776 tests, ruff clean, 5 parallel encoding agents (2 batches)

@@ -1766,3 +1766,36 @@ Fixed all 5 remaining corpus data bugs from the S318 deep audit using 5 parallel
 
 ### Up next
 S320 — per ROADMAP.md
+
+## S319 (Phase 2) — 2026-04-11 — or_group Validation + 37 New Rules
+
+### Summary
+Three-phase session: (1) spot-checked S319 bug fixes against PDF, (2) closed or_group validation gap in v2_builder.py, (3) encoded 37 new rules across 8 chapters using parallel agents (2 batches × 2-3 agents each).
+
+### Phase 1: Spot-checks (5 rules verified)
+- **BPHS1402:** Two bugs found and fixed — or_group used wrong key ("conditions" vs "alternatives"), and invalid sign_type "malefic_ruled" replaced with planet_dignity "debilitated". Verse_ref corrected v.3→v.5-6.
+- **BPHS1600:** CORRECT — two or_groups for lord_of_1 and lord_of_5, each own_sign OR kendra/trikona.
+- **BPHS1810, 1814, 1819:** All CORRECT — marriage timing conditions match PDF verses exactly.
+
+### Phase 2: or_group validation
+- Extracted condition validation into `_validate_single_condition()` helper
+- `_validate_conditions_list()` recurses into or_group alternatives
+- Empty/missing "alternatives" key now raises ValueError
+- T1-3 planet name check also recurses into or_groups
+
+### Phase 3: 37 new rules encoded
+| Chapter | Before | After | Added | Gaps Filled |
+|---------|--------|-------|-------|-------------|
+| Ch.12 | 22 | 25 | +3 | v.3 ascendant path, v.5-7 Mercury/Venus |
+| Ch.13 | 26 | 27 | +1 | v.5 Venus conjunction + v.6-7 11th lord fix |
+| Ch.14 | 22 | 31 | +9 | Male planets, sign-gender, multi-planet combos |
+| Ch.15 | 14 | 18 | +4 | v.2 alt path, v.10-14 aspect variants |
+| Ch.16 | 32 | 35 | +3 | v.11 full conditions, v.24/v.32 full combos |
+| Ch.17 | 20 | 26 | +6 | v.9-12 disease rules for 6 planets |
+| Ch.18 | 41 | 50 | +9 | v.7-9 planet-type and appearance |
+| Ch.23 | 10 | 12 | +2 | v.1-4/v.5-6 missing paths |
+
+### Three-lens analysis
+- **Tech:** 14776 tests (+182 from baseline), ruff clean, or_group validation now catches silent errors
+- **Astrology:** Disease rules now cover all 7 classical planets. Male/female planet sign-gender logic encoded. Spouse appearance/association rules per BPHS Ch.18.
+- **Research:** S318 deep audit gap inventory ~50 rules → 37 filled this session. Remaining gaps: ~13 rules in minor categories.
