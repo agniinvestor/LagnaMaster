@@ -18,27 +18,42 @@ from dataclasses import dataclass
 from typing import Optional
 
 # ─── Aspect Strength ─────────────────────────────────────────────────────────
-# Source: BPHS Ch.26 v.3-5
-# All unspecified planet-house pairs = 1.0 (full strength)
+# Source: BPHS Ch.26 v.2-5
+# Base aspects (ALL planets): 3rd/10th=1/4, 5th/9th=1/2, 4th/8th=3/4, 7th=full
+# Special aspects ADD to base → full (1.0):
+#   Mars 4th+8th, Jupiter 5th+9th, Saturn 3rd+10th
 
-ASPECT_STRENGTH: dict[tuple[str, int], float] = {
-    ("Mars", 4): 0.75,
-    ("Mars", 8): 0.75,
-    ("Jupiter", 5): 0.75,
-    ("Jupiter", 9): 0.75,
-    ("Saturn", 3): 0.75,
-    ("Saturn", 10): 0.75,
+# Base partial aspects common to all planets
+_BASE_ASPECTS: dict[int, float] = {
+    3: 0.25,   # 1/4 aspect
+    4: 0.75,   # 3/4 aspect
+    5: 0.50,   # 1/2 aspect
+    7: 1.00,   # full aspect
+    8: 0.75,   # 3/4 aspect
+    9: 0.50,   # 1/2 aspect
+    10: 0.25,  # 1/4 aspect
+}
+
+# Special aspects override base to full (1.0)
+_SPECIAL_ASPECT_OVERRIDES: dict[str, set[int]] = {
+    "Mars": {4, 8},
+    "Jupiter": {5, 9},
+    "Saturn": {3, 10},
 }
 
 
 def get_aspect_strength(aspector: str, houses_away: int) -> float:
     """
-    Returns the fractional strength of an aspect.
+    Returns the fractional strength of an aspect per BPHS Ch.26 v.2-5.
+
     houses_away: 1-12, where 7 = opposition (full aspect for all planets).
+    Base aspects apply to ALL planets: 3rd/10th=0.25, 5th/9th=0.50, 4th/8th=0.75, 7th=1.0
+    Special aspects (Mars 4/8, Jupiter 5/9, Saturn 3/10) are full (1.0).
     """
-    if houses_away == 7:
+    # Special aspects override to full strength
+    if houses_away in _SPECIAL_ASPECT_OVERRIDES.get(aspector, set()):
         return 1.0
-    return ASPECT_STRENGTH.get((aspector, houses_away), 0.0)
+    return _BASE_ASPECTS.get(houses_away, 0.0)
 
 
 def aspect_hits(aspector_house: int, target_house: int) -> int:

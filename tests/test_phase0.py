@@ -324,45 +324,70 @@ class TestAspectStrength:
         for planet in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
             assert get_aspect_strength(planet, 7) == 1.0
 
-    def test_mars_4th_three_quarter(self):
+    def test_mars_4th_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Mars", 4) == 0.75
+        assert get_aspect_strength("Mars", 4) == 1.0  # special aspect → full
 
-    def test_mars_8th_three_quarter(self):
+    def test_mars_8th_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Mars", 8) == 0.75
+        assert get_aspect_strength("Mars", 8) == 1.0  # special aspect → full
 
-    def test_jupiter_5th_three_quarter(self):
+    def test_jupiter_5th_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Jupiter", 5) == 0.75
+        assert get_aspect_strength("Jupiter", 5) == 1.0  # special aspect → full
 
-    def test_jupiter_9th_three_quarter(self):
+    def test_jupiter_9th_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Jupiter", 9) == 0.75
+        assert get_aspect_strength("Jupiter", 9) == 1.0  # special aspect → full
 
-    def test_saturn_3rd_three_quarter(self):
+    def test_saturn_3rd_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Saturn", 3) == 0.75
+        assert get_aspect_strength("Saturn", 3) == 1.0  # special aspect → full
 
-    def test_saturn_10th_three_quarter(self):
+    def test_saturn_10th_special_full(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
-        assert get_aspect_strength("Saturn", 10) == 0.75
+        assert get_aspect_strength("Saturn", 10) == 1.0  # special aspect → full
 
     def test_mars_2nd_no_aspect(self):
         from src.calculations.scoring_patches import get_aspect_strength
 
         assert get_aspect_strength("Mars", 2) == 0.0
 
-    def test_moon_no_special_aspects(self):
+    def test_base_aspects_all_planets(self):
+        """BPHS Ch.26 v.2-5: all planets have base partial aspects."""
         from src.calculations.scoring_patches import get_aspect_strength
 
-        for h in [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]:
+        for planet in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+            assert get_aspect_strength(planet, 7) == 1.0    # full
+            # Non-special planets get base strengths
+            if planet not in ("Mars",):
+                assert get_aspect_strength(planet, 4) == 0.75  # 3/4
+                assert get_aspect_strength(planet, 8) == 0.75  # 3/4
+            if planet not in ("Jupiter",):
+                assert get_aspect_strength(planet, 5) == 0.50  # 1/2
+                assert get_aspect_strength(planet, 9) == 0.50  # 1/2
+            if planet not in ("Saturn",):
+                assert get_aspect_strength(planet, 3) == 0.25  # 1/4
+                assert get_aspect_strength(planet, 10) == 0.25  # 1/4
+
+    def test_moon_base_aspects(self):
+        """Moon has base partial aspects (not zero) per BPHS Ch.26."""
+        from src.calculations.scoring_patches import get_aspect_strength
+
+        assert get_aspect_strength("Moon", 3) == 0.25
+        assert get_aspect_strength("Moon", 4) == 0.75
+        assert get_aspect_strength("Moon", 5) == 0.50
+        assert get_aspect_strength("Moon", 8) == 0.75
+        assert get_aspect_strength("Moon", 9) == 0.50
+        assert get_aspect_strength("Moon", 10) == 0.25
+        # No aspect on non-aspect houses
+        for h in [1, 2, 6, 11, 12]:
             assert get_aspect_strength("Moon", h) == 0.0
 
 

@@ -168,18 +168,20 @@ class AspectResult:
     aspect_type: str  # "full" / "three_quarter" / "none"
 
 
-# House-based aspect strength table (BPHS Ch.26)
-# Keys: houses from aspector planet
+# House-based aspect strength table (BPHS Ch.26 v.2-5)
+# Base aspects (ALL planets): 3rd/10th=0.25, 5th/9th=0.50, 4th/8th=0.75, 7th=1.0
+# Special aspects override to full (1.0): Mars 4/8, Jupiter 5/9, Saturn 3/10
+_BASE_ASPECT = {3: 0.25, 4: 0.75, 5: 0.50, 7: 1.0, 8: 0.75, 9: 0.50, 10: 0.25}
 _ASPECT_TABLE: dict[str, dict[int, float]] = {
-    "Sun": {7: 1.0},
-    "Moon": {7: 1.0},
-    "Mars": {4: 0.75, 7: 1.0, 8: 0.75},
-    "Mercury": {7: 1.0},
-    "Jupiter": {5: 0.75, 7: 1.0, 9: 0.75},
-    "Venus": {7: 1.0},
-    "Saturn": {3: 0.75, 7: 1.0, 10: 0.75},
-    "Rahu": {7: 1.0, 5: 0.75, 9: 0.75},  # some schools give Rahu Jupiter-like aspects
-    "Ketu": {7: 1.0, 4: 0.75, 8: 0.75},  # Ketu Mars-like aspects per some schools
+    "Sun": {**_BASE_ASPECT},
+    "Moon": {**_BASE_ASPECT},
+    "Mars": {**_BASE_ASPECT, 4: 1.0, 8: 1.0},       # special 4th+8th → full
+    "Mercury": {**_BASE_ASPECT},
+    "Jupiter": {**_BASE_ASPECT, 5: 1.0, 9: 1.0},     # special 5th+9th → full
+    "Venus": {**_BASE_ASPECT},
+    "Saturn": {**_BASE_ASPECT, 3: 1.0, 10: 1.0},     # special 3rd+10th → full
+    "Rahu": {**_BASE_ASPECT, 5: 1.0, 9: 1.0},        # Rahu Jupiter-like specials per some schools
+    "Ketu": {**_BASE_ASPECT, 4: 1.0, 8: 1.0},        # Ketu Mars-like specials per some schools
 }
 
 # House-center degrees for orb calculation
