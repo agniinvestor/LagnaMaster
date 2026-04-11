@@ -1631,3 +1631,29 @@ Continued S318 deep audit fix session. Fixed 30 more bugs (BUG-081 through BUG-1
 
 ### Continuation
 Run `/s318-continue-fixes-v2` to address the remaining 39 bugs
+
+## S318 (Phase -3) — 2026-04-11 — Parallel Agent Bug Sweep (13 more bugs)
+
+### Summary
+Dispatched 4 parallel agents (worktree-isolated) to clear remaining non-corpus bugs. Fixed 13 bugs, bringing S318 total to 78 of 104 fixed. 26 remain (20 structural + 6 deferred corpus).
+
+### What was fixed (8 commits, 4 parallel agents)
+- **BUG-075-078 (dead code):** 2 remaining dead expressions removed (yoga_fructification.py, ishta_kashta.py). Most dead code already cleaned in prior phase.
+- **BUG-082:** Added DeprecationWarning to `score_all_axes()` — first step toward engine reconciliation
+- **BUG-084:** Renamed `CalcConfig` → `ToggleConfig` in config_toggles.py to resolve name collision
+- **BUG-086:** Redirected 5 consumers from functional_roles.py to KNOWN_FUNCTIONAL_MALEFICS in functional_dignity.py (BPHS-verified canonical source)
+- **BUG-087:** Changed pressure_engine.py from avastha.py (wrong Baladi) to avasthas.py (BPHS Ch.45 verified)
+- **BUG-054:** H10 Sthir Karak resolved — {Sun, Mercury, Saturn} per BPHS Ch.32 v34. Jupiter removed from scoring.py and scoring_v2.py.
+- **BUG-067:** 1 truly silent except:pass in app.py (Pushkara flags) → logger.exception. Other 20 handlers already had st.error/st.warning.
+- **BUG-097:** 22 new tests for avasthas.py (Baladi, Jagradadi, Lajjitadi) — previously 0 coverage
+- **BUG-098:** 15 fragile float assertions → pytest.approx across 6 test files
+- **BUG-103:** Fixed list-valued condition bug in rule_firing.py + 9 new tests. planet_not_in_house and planet_not_aspecting now check ALL houses in list, not just first.
+
+### Three-lens analysis
+- **Tech:** Parallel agent pattern successful — 4 agents, 3 worktrees merged cleanly. 213 tests removed (dead module tests) offset by 31 new tests. CalcConfig collision eliminated. Canonical malefic source established.
+- **Astrology:** H10 Sthir Karak corrected to BPHS. Avasthas module now has test coverage. Functional malefic classification now flows from BPHS-verified source (functional_dignity.py).
+- **Research:** List-valued condition bug in rule_firing meant planet_not_in_house only checked first house — rules with multi-house exclusions were incorrectly passing. Now fixed with regression tests.
+
+### What remains (26 bugs)
+- 20 structural bugs (weight discrepancies, duplication, consolidation)
+- 6 corpus data bugs (BUG-089-094) — deferred to encoding sessions requiring BPHS PDF verification

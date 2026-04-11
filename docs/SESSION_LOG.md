@@ -685,3 +685,12 @@ Root cause of 103 CI failures identified and fixed:
   - Broken imports fixed (5 files), dead code cleanup (2 bugs), architecture fixes (3 bugs)
   - Corpus corrections (2 bugs), test gap fixes (4 bugs)
   - 14743 tests, 0 regressions, 39 bugs remaining
+- S318 (Phase -3): Parallel agent bug sweep — 13 more bugs fixed (78/104 total)
+  - Dead code: 2 dead expressions removed (BUG-075-078 mostly done in prior phase)
+  - Architecture: deprecation warning on score_all_axes, CalcConfig→ToggleConfig rename,
+    canonical functional malefics source, pressure_engine→avasthas.py (BUG-082,084,086,087)
+  - Data: H10 Sthir Karak = {Sun,Mercury,Saturn} per BPHS Ch.32 v34 (BUG-054)
+  - Silent failure: app.py Pushkara except:pass → logger.exception (BUG-067)
+  - Tests: 22 avasthas coverage tests, 15 float→pytest.approx, 9 list-condition tests,
+    list-valued planet_not_in_house bug fix in rule_firing.py (BUG-097,098,103)
+  - 14530 tests (213 removed with dead modules), 0 regressions, 26 bugs remaining (6 deferred to encoding)
