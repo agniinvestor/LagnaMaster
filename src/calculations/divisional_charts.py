@@ -135,35 +135,35 @@ def _hora(longitude: float) -> int:
 
 
 def _d4(longitude: float) -> int:
-    """D4 Chaturthamsa — kendras from sign (BPHS Ch.6 v.9)."""
+    """D4 Chaturthamsha: kendras from sign (BPHS). k=0→same, k=1→+3, k=2→+6, k=3→+9."""
     si = int(longitude / 30) % 12
     k = int((longitude % 30) / 7.5)
-    return (si + k * 3) % 12  # same sign, 4th, 7th, 10th
+    return (si + k * 3) % 12
 
 
 def _d16(longitude: float) -> int:
-    """D16 Shodasamsa — movable→Aries, fixed→Leo, mutable→Sagittarius (BPHS Ch.6 v.16)."""
+    """D16 Shodasamsa: Movable→Aries, Fixed→Leo, Mutable→Sagittarius (BPHS Ch.6 v.16)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 16 / 30)
     modality = si % 3  # 0=movable, 1=fixed, 2=mutable
-    base = {0: 0, 1: 4, 2: 8}[modality]  # Aries, Leo, Sagittarius
-    return (base + div) % 12
+    bases = {0: 0, 1: 4, 2: 8}  # Aries, Leo, Sagittarius
+    return (bases[modality] + div) % 12
 
 
 def _d20(longitude: float) -> int:
-    """D20 Vimsamsa — movable→Aries, fixed→Sagittarius, mutable→Leo (BPHS Ch.6 v.17-21)."""
+    """D20 Vimsamsa: Movable→Aries, Fixed→Sagittarius, Mutable→Leo (BPHS Ch.6)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 20 / 30)
     modality = si % 3  # 0=movable, 1=fixed, 2=mutable
-    base = {0: 0, 1: 8, 2: 4}[modality]  # Aries, Sagittarius, Leo
-    return (base + div) % 12
+    bases = {0: 0, 1: 8, 2: 4}  # Aries, Sagittarius, Leo
+    return (bases[modality] + div) % 12
 
 
 def _d24(longitude: float) -> int:
-    """D24 Chaturvimsamsa — odd→Leo(4), even→Cancer(3) (BPHS Ch.6 v.22-23)."""
+    """D24 Chaturvimsamsa: odd signs→Leo(4), even signs→Cancer(3) (BPHS Ch.6)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 24 / 30)
-    base = 4 if si % 2 == 0 else 3  # Leo for odd, Cancer for even
+    base = 4 if si % 2 == 0 else 3  # odd sign→Leo, even sign→Cancer
     return (base + div) % 12
 
 
@@ -210,7 +210,7 @@ def _d40(longitude: float) -> int:
 
 
 def _d45(longitude: float) -> int:
-    """D45 Akshavedamsa — movable→Aries, fixed→Leo, mutable→Sagittarius (BPHS Ch.6 v.31-32)."""
+    """D45 Akshavedamsa: Movable→Aries, Fixed→Leo, Mutable→Sagittarius (BPHS Ch.6)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 45 / 30)
     modality = si % 3  # 0=movable, 1=fixed, 2=mutable
@@ -219,13 +219,14 @@ def _d45(longitude: float) -> int:
 
 
 def _d60(longitude: float) -> int:
-    """D60 Shashtiamsa — aligned with varga.py canonical source."""
+    """D60 Shashtyamsha: odd signs→Aries(k%12), even signs→Virgo(5+k)%12 (BPHS)."""
     si = int(longitude / 30) % 12
-    div = int((longitude % 30) * 2)  # 0-59
+    k = int((longitude % 30) * 2)  # 0-59
+    k = min(k, 59)
     if si % 2 == 0:  # odd sign
-        return div % 12
-    else:  # even sign — offset +5 (Virgo start, matching varga.py)
-        return (5 + div) % 12
+        return k % 12
+    else:  # even sign
+        return (5 + k) % 12
 
 
 def _d9(longitude: float) -> int:
@@ -236,9 +237,10 @@ def _d9(longitude: float) -> int:
 
 
 def _d10(longitude: float) -> int:
-    """D10 Dasamsa — odd from sign, even from 9th (BPHS Ch.6 v.13-14)."""
+    """D10 Dashamsha: odd signs from self, even signs from 9th (BPHS)."""
     si = int(longitude / 30) % 12
-    k = min(int((longitude % 30) / 3), 9)
+    k = int((longitude % 30) / 3)
+    k = min(k, 9)
     if si % 2 == 0:  # odd sign
         return (si + k) % 12
     else:  # even sign
@@ -246,16 +248,17 @@ def _d10(longitude: float) -> int:
 
 
 def _d3(longitude: float) -> int:
-    """D3 Drekkana — trikona-based (BPHS Ch.6 v.7-8)."""
+    """D3 Drekkana: trikona from sign (BPHS). k=0→same, k=1→5th, k=2→9th."""
     si = int(longitude / 30) % 12
     k = int((longitude % 30) / 10)
-    return (si + k * 4) % 12  # same sign, 5th, 9th
+    return (si + k * 4) % 12
 
 
 def _d7(longitude: float) -> int:
-    """D7 Saptamsa — odd from sign, even from 7th (BPHS Ch.6 v.10-11)."""
+    """D7 Saptamsha: odd signs from self, even signs from 7th (BPHS)."""
     si = int(longitude / 30) % 12
-    k = min(int((longitude % 30) * 7 / 30), 6)
+    k = int((longitude % 30) * 7 / 30)
+    k = min(k, 6)
     if si % 2 == 0:  # odd sign
         return (si + k) % 12
     else:  # even sign
