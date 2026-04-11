@@ -27,8 +27,11 @@ New in Session 19
 - Tabs 7-11 (S12, S15-S18) all new
 """
 
+import logging  # noqa: E402
 import sys  # noqa: E402
 import os  # noqa: E402
+
+logger = logging.getLogger(__name__)
 
 # ── Streamlit Cloud path fix ──────────────────────────────────────────────────
 # Streamlit Cloud runs src/ui/app.py and only adds src/ui/ to sys.path.
@@ -430,7 +433,7 @@ with tab_chart:
             try:
                 pushkara_flags = compute_pushkara(chart)
             except Exception:
-                pass
+                logger.exception("Failed to compute Pushkara flags")
 
         try:
             rows = []
