@@ -104,6 +104,7 @@ class TestMultiLagna:
 
 
 # ── Session 34: Multi-axis scoring ───────────────────────────────────────────
+@pytest.mark.filterwarnings("ignore::DeprecationWarning")
 class TestMultiAxisScoring:
     def test_score_all_axes_returns_5_axes(self, chart):
         from src.calculations.multi_axis_scoring import score_all_axes

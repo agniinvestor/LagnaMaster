@@ -22,6 +22,7 @@ Public API
 """
 
 from __future__ import annotations
+import warnings
 from dataclasses import dataclass
 from typing import Optional
 
@@ -563,6 +564,7 @@ def score_all_axes(
     chart, school: str = "parashari", strict_school: bool = False
 ) -> MultiAxisScores:
     """Score all 5 axes: D1, Chandra Lagna, Surya Lagna, D9, D10."""
+    warnings.warn("score_all_axes is deprecated, use score_chart", DeprecationWarning, stacklevel=2)
     from src.calculations.panchanga import compute_navamsha_chart
 
     d1_si = chart.lagna_sign_index
