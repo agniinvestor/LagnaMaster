@@ -622,7 +622,7 @@ _pada(2, "venus", "occupies", "pada_h2_venus_occ_poet_speaker",
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # DARA PADA MUTUAL POSITIONS — RELATIONSHIPS & STATUS (Slokas 30-37, pp.302-303)
-# These require a derived_house_relationship primitive not yet implemented.
+# Uses derived_points_relationship primitive (implemented S316, wired in rule_firing).
 # Encoded as L2 rules with descriptive conditions for corpus completeness.
 # ═══════════════════════════════════════════════════════════════════════════════
 

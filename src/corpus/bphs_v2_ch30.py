@@ -188,9 +188,7 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_exalted_occ_many_wives",
      ])
 
 # Gemini as 2nd from UP → many wives
-# NON-COMPUTABLE: requires derived_house_sign primitive (checking what sign
-# falls in the 2nd from Upa Pada). planet_in_sign is wrong — it checks
-# planet's sign anywhere, not the sign of a derived house.
+# Uses derived_house_sign primitive (implemented S316, wired in rule_firing).
 b.add(
     conditions=[
         {"type": "derived_house_sign", "derivation": "arudha_pada",
@@ -205,12 +203,12 @@ b.add(
     ],
     verse_ref="Ch.30 v.7-12",
     description="Gemini as 2nd from Upa Pada: there will be many wives.",
-    commentary_context="Santhanam: O excellent of the Brahmins, if Gemini happens to be the 2nd from Upa Pada, then also there will be many wives. NON-COMPUTABLE: requires derived_house_sign primitive to check what sign falls in a derived house position.",
+    commentary_context="Santhanam: O excellent of the Brahmins, when Gemini happens to be the 2nd from Upa Pada, then also there will be many wives. Uses derived_house_sign primitive (S316).",
     concordance_texts=[],
 )
 
 # 2nd lord from UP in own house → wife at advanced age
-# NON-COMPUTABLE: requires "lord of derived house in own sign" primitive
+# Uses lord_of_derived_house primitive (implemented S316, wired in rule_firing).
 b.add(
     conditions=[
         {"type": "lord_of_derived_house", "derivation": "arudha_pada",
@@ -225,7 +223,7 @@ b.add(
     ],
     verse_ref="Ch.30 v.7-12",
     description="Uparudha or 2nd therefrom occupied by own lord: wife will live to advanced age (spouse longevity).",
-    commentary_context="Santhanam: If the 2nd lord from Uparudha is in the 2nd itself or in his other own house, the spouse will live to advanced age. The native is protected from calamity. NON-COMPUTABLE: requires lord_of_derived_house primitive.",
+    commentary_context="Santhanam: The 2nd lord from Uparudha being in the 2nd itself or in his other own house indicates the spouse will live to advanced age. The native is protected from calamity. Uses lord_of_derived_house primitive (S316).",
     concordance_texts=[],
     entity_target="spouse",
 )
