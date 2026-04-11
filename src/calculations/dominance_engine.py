@@ -86,9 +86,9 @@ def compute_dominance_factors(
         # Jupiter aspects 5th and 9th from its position + 7th
         jup_aspects = {
             jup_h,
-            (jup_h + 4) % 12 + 1,
-            (jup_h + 6) % 12 + 1,
-            (jup_h + 8) % 12 + 1,
+            (jup_h - 1 + 4) % 12 + 1,
+            (jup_h - 1 + 6) % 12 + 1,
+            (jup_h - 1 + 8) % 12 + 1,
         }
         jup_aspects = {h for h in jup_aspects if 1 <= h <= 12}
         try:
