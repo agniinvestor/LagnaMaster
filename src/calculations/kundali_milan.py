@@ -185,7 +185,7 @@ _GA = [
     "Deva",
     "Manava",
     "Rakshasa",
-    "Deva",
+    "Deva",      # Rohini — Deva per Muhurta Chintamani; some South Indian sources say Manava (BUG-060 dispute, kept Deva)
     "Deva",
     "Manava",
     "Deva",
