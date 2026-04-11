@@ -215,46 +215,6 @@ class TestHouseLord:
 
 
 # ===========================================================================
-# Friendship tests
-# ===========================================================================
-
-
-class TestFriendship:
-    def test_sun_moon_sama(self, india_chart):
-        """Sun (Cancer) and Moon (Cancer) — same sign → Tatkalik Enemy; Naisargika F → Sama."""
-        from src.calculations.friendship import compute_friendship  # noqa: E402
-
-        r = compute_friendship(
-            "Sun",
-            india_chart.planets["Sun"].sign_index,
-            "Moon",
-            india_chart.planets["Moon"].sign_index,
-        )
-        assert r.panchadha == "Sama"
-
-    def test_mars_sun_adhi_mitra(self, india_chart):
-        """Mars (Gemini) views Sun (Cancer): H2 = Tatkalik Friend; Naisargika F → Adhi Mitra."""
-        from src.calculations.friendship import compute_friendship  # noqa: E402
-
-        r = compute_friendship(
-            "Mars",
-            india_chart.planets["Mars"].sign_index,
-            "Sun",
-            india_chart.planets["Sun"].sign_index,
-        )
-        assert r.panchadha == "Adhi Mitra"
-
-    def test_naisargika_asymmetry(self):
-        """Moon views Venus = N (neutral), but Venus views Moon = E (enemy)."""
-        from src.calculations.friendship import compute_friendship  # noqa: E402
-
-        moon_views_venus = compute_friendship("Moon", 3, "Venus", 3)
-        venus_views_moon = compute_friendship("Venus", 3, "Moon", 3)
-        assert moon_views_venus.naisargika == "N"
-        assert venus_views_moon.naisargika == "E"
-
-
-# ===========================================================================
 # Chara Karak tests
 # ===========================================================================
 

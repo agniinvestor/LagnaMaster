@@ -67,7 +67,7 @@ _STHIR_KARAK = {
     7: ["Venus"],
     8: ["Saturn"],
     9: ["Jupiter"],
-    10: ["Sun", "Mercury", "Jupiter", "Saturn"],
+    10: ["Sun", "Mercury", "Saturn"],  # BUG-054: removed Jupiter; BPHS Ch.32 v34 H10=Mercury
     11: ["Jupiter"],
     12: ["Saturn"],
 }
@@ -279,7 +279,6 @@ def score_chart_v2(chart) -> ChartScoresV2:
             rule("R06", "Bhavesh with func. benefic", 0, triggered=False)
 
         # R07 (WC) benefic aspects bhavesh sign
-        chart.planets[bhavesh].sign_index if bhavesh in chart.planets else -1
         bh_h_from_lagna = bh_house
         fb_asp_bh = [
             p
@@ -405,11 +404,4 @@ def score_chart_v2(chart) -> ChartScoresV2:
         houses=houses_out,
         engine_version=ENGINE_VERSION,
         yuddha_results=wars,
-    )
-
-
-def _house_lord_sanity(hmap) -> None:
-    """Assert house_lord list has exactly 12 entries (called once per score_chart_v2)."""
-    assert len(hmap.house_lord) == 12, (
-        f"house_lord has {len(hmap.house_lord)} entries — expected 12"
     )

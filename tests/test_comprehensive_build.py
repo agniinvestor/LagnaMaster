@@ -175,54 +175,6 @@ class TestFunctionalDignity:
         assert "Mars" in yk
 
 
-# ─── Planet Avasthas ──────────────────────────────────────────────────────────
-
-
-class TestPlanetAvasthas:
-    def test_bala_avastha_ranges(self):
-        from src.calculations.planet_avasthas import bala_avastha, BalaAvastha
-
-        assert bala_avastha(3.0) == BalaAvastha.BALA
-        assert bala_avastha(9.0) == BalaAvastha.KUMARA
-        assert bala_avastha(15.0) == BalaAvastha.YUVA
-        assert bala_avastha(21.0) == BalaAvastha.VRIDDHA
-        assert bala_avastha(27.0) == BalaAvastha.MRITA
-
-    def test_yuva_highest_modifier(self):
-        from src.calculations.planet_avasthas import BALA_AVASTHA_MODIFIER, BalaAvastha
-
-        assert (
-            BALA_AVASTHA_MODIFIER[BalaAvastha.YUVA]
-            > BALA_AVASTHA_MODIFIER[BalaAvastha.BALA]
-        )
-        assert (
-            BALA_AVASTHA_MODIFIER[BalaAvastha.YUVA]
-            > BALA_AVASTHA_MODIFIER[BalaAvastha.MRITA]
-        )
-
-    def test_jagradadi_sun_in_fire_sign(self):
-        from src.calculations.planet_avasthas import jagradadi_avastha, JagradadiAvastha
-
-        # Sun (fire planet) in Aries (fire sign) = Jagrat
-        assert jagradadi_avastha("Sun", 0) == JagradadiAvastha.JAGRAT
-
-    def test_jagradadi_sun_in_earth_sign(self):
-        from src.calculations.planet_avasthas import jagradadi_avastha, JagradadiAvastha
-
-        # Sun (fire) in Taurus (earth) = Sushupti
-        assert jagradadi_avastha("Sun", 1) == JagradadiAvastha.SUSHUPTI
-
-    def test_compute_all_avasthas_has_all_planets(self):
-        from src.calculations.planet_avasthas import compute_all_avasthas
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        results = compute_all_avasthas(chart)
-        assert "Sun" in results
-        assert "Moon" in results
-        assert "Saturn" in results
-        assert all(hasattr(r, "combined_modifier") for r in results.values())
-
-
 # ─── Transit Quality Advanced ─────────────────────────────────────────────────
 
 

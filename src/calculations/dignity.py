@@ -812,18 +812,6 @@ def compute_dignity_legacy(
 DignityLevel.DEEP_DEBIL = DignityLevel.DEBIL  # alias: no separate DEEP_DEBIL level
 
 
-# Asta Vakri (F-3) — retrograde planets have smaller combustion orbs
-# Source: Saravali Ch.3 v.14-16
-COMBUSTION_ORBS_RETROGRADE = {
-    "Moon": 12.0,
-    "Mars": 17.0,
-    "Mercury": 12.0,  # Rx Mercury: 12° not 14°
-    "Jupiter": 11.0,
-    "Venus": 8.0,
-    "Saturn": 15.0,  # Rx Venus: 8° not 10°
-}
-
-
 # S164: Graha Yuddha loser dignity override
 # Source: Saravali Ch.4 v.18-22 — loser debilitated throughout life
 def get_dignity_with_war_override(planet: str, chart):

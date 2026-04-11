@@ -128,7 +128,6 @@ def compute_full_promise(
     for h in range(1, 13):
         promise = compute_house_promise(chart, h)
         lord = hmap.house_lord[h - 1]
-        ph.get(lord, 0)
 
         # Dasha activation
         dasha_activated = active_md_lord in {

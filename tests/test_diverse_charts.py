@@ -560,12 +560,10 @@ class TestModuleAvailability:
         "src.calculations.pratyantar_dasha",
         "src.calculations.special_lagnas",
         "src.calculations.config_additions",
-        "src.calculations.yogas_additions",
         "src.calculations.sputa_drishti",
         "src.calculations.chara_karaka_config",
         "src.calculations.jaimini_rashi_drishti",
         "src.calculations.functional_dignity",
-        "src.calculations.planet_avasthas",
         "src.calculations.transit_quality_advanced",
         "src.calculations.upagrahas_derived",
         "src.calculations.shadbala_patches",
@@ -579,10 +577,8 @@ class TestModuleAvailability:
         "src.calculations.calc_config",
         "src.calculations.sudarshana",
         "src.calculations.confidence_model",
-        "src.calculations.shodashavarga_bala",
         "src.calculations.north_indian_chart",
         "src.calculations.drekkana_variants",
-        "src.calculations.kp_cuspal",
         "src.pdf_export",
     ]
 

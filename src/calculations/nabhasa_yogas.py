@@ -35,7 +35,6 @@ _EVEN = {1, 3, 5, 7, 9, 11}
 
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
-_UPACHAYA = {3, 6, 10, 11}
 
 
 @dataclass
@@ -97,7 +96,6 @@ def detect_nabhasa_yogas(chart) -> list[NabhasaYoga]:
     # ── GROUP B: Dala (2 yogas) ───────────────────────────────────────────────
     occ_houses = _occupied_houses(chart)
     all_kendra = all(h in _KENDRA for h in occ_houses)
-    all(h in {2, 5, 8, 11} for h in occ_houses)  # panapara
     all_apoklima = all(h in {3, 6, 9, 12} for h in occ_houses)
 
     yogas.append(

@@ -51,8 +51,6 @@ _SIGN_LORD = {
     10: "Saturn",
     11: "Jupiter",
 }
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 # Yogakaraka per lagna — from CALC_YogakarakaMap (workbook-verified)
 _YOGAKARAKA = {

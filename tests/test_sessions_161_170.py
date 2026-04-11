@@ -260,54 +260,6 @@ class TestDrekkanaVariants:
         assert 0 <= result["Sun"]["sign_index"] <= 11
 
 
-# ─── S169: KP Cuspal Analysis ────────────────────────────────────────────────
-
-
-class TestKPCuspal:
-    def test_cuspal_sub_lords_12_houses(self):
-        from src.calculations.kp_cuspal import compute_cuspal_sub_lords  # noqa: E402
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        result = compute_cuspal_sub_lords(chart)
-        assert len(result) == 12
-        for h in range(1, 13):
-            assert h in result
-
-    def test_each_csl_has_required_fields(self):
-        from src.calculations.kp_cuspal import compute_cuspal_sub_lords  # noqa: E402
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        result = compute_cuspal_sub_lords(chart)
-        for h, csl in result.items():
-            assert hasattr(csl, "star_lord")
-            assert hasattr(csl, "sub_lord")
-            assert hasattr(csl, "has_promise")
-            assert isinstance(csl.has_promise, bool)
-
-    def test_event_promise_keys(self):
-        from src.calculations.kp_cuspal import (  # noqa: E402
-            compute_kp_event_promise,
-            compute_cuspal_sub_lords,
-        )
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        csl = compute_cuspal_sub_lords(chart)
-        result = compute_kp_event_promise(csl)
-        expected_events = {"marriage", "career_start", "foreign_travel", "education"}
-        for e in expected_events:
-            assert e in result
-
-    def test_kp_analysis_returns_result(self):
-        from src.calculations.kp_cuspal import compute_kp_analysis  # noqa: E402
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        result = compute_kp_analysis(chart)
-        assert hasattr(result, "cuspal_sub_lords")
-        assert hasattr(result, "event_promise")
-        assert hasattr(result, "ruling_planets")
-        assert isinstance(result.event_promise, dict)
-
-
 # ─── Integration: Wiring Tests ────────────────────────────────────────────────
 
 

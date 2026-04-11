@@ -159,7 +159,6 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
     # Dusthana interlocking
     d6_lord = roles.house_lords.get(6, "")
     d8_lord = roles.house_lords.get(8, "")
-    roles.house_lords.get(12, "")
     if d6_lord in hmap.planet_house:
         if hmap.planet_house[d6_lord] in {8, 12}:
             score += 1.0
@@ -247,9 +246,7 @@ def transit_load(chart, on_date: date) -> tuple[float, str]:
     Real-time malefic transit pressure against the natal chart. [0..2]
     """
     from src.calculations.gochara import compute_gochara
-    from src.calculations.house_lord import compute_house_map
 
-    compute_house_map(chart)
     moon_natal_si = chart.planets["Moon"].sign_index
     lagna_si = chart.lagna_sign_index
 

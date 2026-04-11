@@ -49,7 +49,7 @@ STHIR_KARAK: dict[int, list[str]] = {
     7: ["Venus"],
     8: ["Saturn"],
     9: ["Jupiter", "Sun"],  # BUG-053: was [Jupiter] only; Sun = father karaka
-    10: ["Sun", "Mercury", "Jupiter", "Saturn"],
+    10: ["Sun", "Mercury", "Saturn"],  # BUG-054: removed Jupiter; BPHS Ch.32 v34 H10=Mercury
     11: ["Jupiter"],
     12: ["Saturn"],
 }
@@ -116,14 +116,6 @@ def _is_yogakaraka(planet: str, lagna_sign_idx: int) -> bool:
 # Graha Drishti (Parashari aspects) — house-based
 # All planets cast 7th aspect (full); Mars+4th+8th; Jupiter+5th+9th; Saturn+3rd+10th
 # ---------------------------------------------------------------------------
-
-
-def _houses_aspected_by(planet_house: int) -> set[int]:
-    """Return set of house numbers aspected by a planet in planet_house (1-12)."""
-    h = planet_house
-    # 7th aspect (all planets)
-    aspects = {(h - 1 + 6) % 12 + 1}  # h + 6, wrapping 1-12
-    return aspects
 
 
 def _planet_aspects_house(planet: str, planet_house: int, target_house: int) -> bool:
@@ -591,36 +583,4 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
             rating=_rating(final),
         )
 
-    return result
-
-
-# S186: School-aware score_chart wrapper
-# Source: Audit I-B — school-mixing resolution
-def score_chart_strict(chart, school: str = "parashari", query_date=None):
-    """
-    score_chart() with strict school enforcement.
-
-    When school="parashari" and strict=True, R17/R18 (Sthir Karak = Jaimini rules)
-    contributions are removed from the final house scores.
-
-    Source: src/calculations/school_rules.py · school_score_adjustment()
-    """
-    result = score_chart(chart, query_date=query_date)
-    if not result or not hasattr(result, "houses"):
-        return result
-    try:
-        from src.calculations.school_rules import school_score_adjustment
-
-        for h, house_score in result.houses.items():
-            rules = getattr(house_score, "rules", [])
-            raw = getattr(house_score, "raw_score", 0.0)
-            corrected = school_score_adjustment(raw, rules, school, strict=True)
-            # Update final_score if corrected differs from raw
-            if abs(corrected - raw) > 0.001:
-                try:
-                    object.__setattr__(house_score, "final_score", corrected)
-                except Exception:
-                    pass  # dataclass may be frozen
-    except Exception:
-        pass  # graceful fallback
     return result

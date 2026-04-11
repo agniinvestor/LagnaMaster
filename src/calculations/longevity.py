@@ -65,7 +65,6 @@ _DEBIL_LON = {
 def _strength_ratio(planet: str, longitude: float) -> float:
     """0.0 (debilitated) to 1.0 (exalted) based on longitude distance."""
     exalt = _EXALT_LON.get(planet)
-    _DEBIL_LON.get(planet)
     if exalt is None:
         return 0.5
     diff = abs(longitude - exalt) % 360

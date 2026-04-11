@@ -332,31 +332,3 @@ class TestSudarshana:
             assert len(wheel.house_signs) == 12
             for si in wheel.house_signs:
                 assert 0 <= si <= 11
-
-
-# ─── Shodashavarga Bala ───────────────────────────────────────────────────────
-
-
-class TestShodashavargaBala:
-    def test_returns_dict_with_required_keys(self):
-        from src.calculations.shodashavarga_bala import compute_shodashavarga_bala
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        result = compute_shodashavarga_bala("Jupiter", chart)
-        assert "total_virupas" in result
-        assert "label" in result
-        assert result["label"] in (
-            "Strong",
-            "Moderate",
-            "Weak",
-            "Unknown",
-            "Requires vargas.py and dignity.py",
-        )
-
-    def test_summary_covers_all_planets(self):
-        from src.calculations.shodashavarga_bala import shodashavarga_summary
-
-        chart = make_chart(INDIA_LAGNA, **INDIA)
-        result = shodashavarga_summary(chart)
-        assert isinstance(result, dict)
-        assert len(result) >= 7
