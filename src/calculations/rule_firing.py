@@ -498,10 +498,22 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
         elif ctype == "planet_aspecting":
             planet = cond.get("planet", "")
             target_house = cond.get("house", 0)
+            target_ref = cond.get("target", "")
+
+            # Resolve planet (can be "lord_of_N")
             if planet.startswith("lord_of_"):
                 house_num = int(planet.split("_")[-1])
                 planet = _lord_of_house(chart, house_num)
-            if not planet:
+
+            # Resolve target — lord position overrides fixed house
+            if target_ref.startswith("lord_of_"):
+                target_house_num = int(target_ref.split("_")[-1])
+                target_lord = _lord_of_house(chart, target_house_num)
+                if not target_lord:
+                    return False, 0
+                target_house = _planet_house(chart, target_lord)
+
+            if not planet or not target_house:
                 return False, 0
             if not _planet_aspects_house(chart, planet, target_house):
                 return False, 0
