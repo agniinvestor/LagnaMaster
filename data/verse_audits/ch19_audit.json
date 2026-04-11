@@ -1,29 +1,47 @@
 {
   "chapter": 19,
+  "title": "Effects of the Eighth House (Randhra Bhava Phala)",
   "source": "BPHS",
   "translator": "santhanam",
-  "auditor": "claude_s312_verified",
-  "audit_date": "2026-04-01",
+  "pages": "169-172",
+  "auditor": "claude_s318_final_sweep",
+  "audit_date": "2026-04-11",
   "status": "verified",
-  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.169-170. Brief chapter (7 slokas), all claims accounted for. 5 predictive claims, 5 encoded, 0 gaps.",
+  "sloka_count": 15,
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.169-172. Previous audit (S312) only covered v.1-7 (sloka_count=7). This re-audit covers all 15 slokas. 9 slokas (v.8-13, v.14-15) were entirely missing — all short-life combinations and late long-life yogas. Also found under-encoding in v.3 and v.4-7.",
   "verses": {
     "1": {
-      "page": "169-170",
+      "page": "169",
+      "sanskrit_incipit": "aayurbhavaphalam vaadav kapayaami dvijottama",
       "claims": [
         {
-          "claim": "8th lord in angle -> long life indicated",
+          "id": "C01",
+          "claim": "8th lord in an angle → long life indicated",
           "type": "condition",
-          "encoded": "BPHS1900"
+          "entity": "native",
+          "encoded": "BPHS1900",
+          "status": "already_encoded"
         }
       ]
     },
     "2": {
-      "page": "170",
+      "page": "169",
       "claims": [
         {
-          "claim": "8th lord joining ascendant lord or malefic in 8th itself -> short-lived",
+          "id": "C02",
+          "claim": "8th lord in 8th conjunct a malefic → short-lived",
           "type": "contrary",
-          "encoded": "BPHS1901"
+          "entity": "native",
+          "encoded": "BPHS1901",
+          "status": "already_encoded"
+        },
+        {
+          "id": "C03",
+          "claim": "8th lord in 8th conjunct ascendant lord → short-lived (alternative path)",
+          "type": "condition",
+          "entity": "native",
+          "encoded": "BPHS1902",
+          "status": "already_encoded"
         }
       ]
     },
@@ -31,26 +49,191 @@
       "page": "170",
       "claims": [
         {
-          "claim": "Saturn and 10th lord similarly affect longevity (10th lord in 8th with malefic -> short life)",
+          "id": "C04",
+          "claim": "Saturn joins malefic or ascendant lord in 8th house → short life (per Santhanam note: apply v.2 logic to Saturn)",
           "type": "condition",
-          "encoded": "BPHS1902"
+          "entity": "native",
+          "encoded": "BPHS1903",
+          "status": "already_encoded_but_under_specified",
+          "note": "Current BPHS1903 only has Saturn in house 8, missing the conjunction requirement with malefic/ascendant lord. Fix during encoding."
+        },
+        {
+          "id": "C05",
+          "claim": "10th lord in 8th with malefic or ascendant lord → short life (Santhanam note expands v.3)",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "Currently only in modifier text of BPHS1903, not a proper separate rule"
         }
       ]
     },
     "4-7": {
-      "page": "170-172",
+      "page": "170",
       "claims": [
         {
-          "claim": "6th lord in 12th (or 6th lord in 6th as 12th lord, or 6th+12th lords in 1st+8th) -> long life (Viparita yoga)",
+          "id": "C06",
+          "claim": "6th lord in 12th → long life (Viparita yoga 1)",
           "type": "condition",
-          "encoded": "BPHS1903"
+          "entity": "native",
+          "encoded": "BPHS1904",
+          "status": "already_encoded"
         },
         {
-          "claim": "5th/8th/ascendant lords in own navamsas/rasis/friendly signs -> long span of life; also lords of 1st/8th/10th + Saturn in angles/trines/11th -> long life",
+          "id": "C07",
+          "claim": "6th and 12th lords simultaneously in 6th and 12th → long life (yoga 2 from Santhanam note)",
           "type": "condition",
-          "encoded": "BPHS1904"
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "In BPHS1904 description but not encoded as separate condition"
+        },
+        {
+          "id": "C08",
+          "claim": "6th lord in ascendant while 12th lord in 8th → long life (yoga 3 from Santhanam note)",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "In BPHS1904 description but not encoded as separate condition"
+        },
+        {
+          "id": "C09",
+          "claim": "Lords of 5th, 8th, and ascendant in own navamsas/rasis/friendly signs → long span of life",
+          "type": "condition",
+          "entity": "native",
+          "encoded": "BPHS1905",
+          "status": "already_encoded"
+        },
+        {
+          "id": "C10",
+          "claim": "Lords of ascendant, 8th, 10th + Saturn all in angles/trines/11th → long life",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "In BPHS1905 description text but not encoded as separate rule"
+        }
+      ]
+    },
+    "8": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C11",
+          "claim": "Life span between 20 and 32 years if ascendant lord is weak while 8th lord is in an angle",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing"
+        }
+      ]
+    },
+    "9": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C12",
+          "claim": "Short-lived only if 8th lord is in fall while 8th has a malefic in it and ascendant lord bereft of strength",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing"
+        }
+      ]
+    },
+    "10": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C13",
+          "claim": "Death instant at birth if 8th house, 8th lord and 12th house are ALL conjunct malefics",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "health_sensitive=True, safety_tier=restricted. Extreme prediction."
+        }
+      ]
+    },
+    "11": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C14",
+          "claim": "Malefics in angles/trines AND benefics in 6th/8th AND 8th lord in fall in ascendant → immediate death",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "health_sensitive=True, safety_tier=restricted. Three simultaneous conditions required."
+        }
+      ]
+    },
+    "12": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C15",
+          "claim": "5th house, 8th house and 8th lord all conjunct malefics → life span very brief",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "health_sensitive=True, safety_tier=restricted"
+        }
+      ]
+    },
+    "13": {
+      "page": "171",
+      "claims": [
+        {
+          "id": "C16",
+          "claim": "8th lord in 8th while Moon conjunct malefics and bereft of benefic aspect → death within a month of birth",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "health_sensitive=True, safety_tier=restricted. Santhanam notes: 8th lord in 8th normally gives long life (v.1 logic), but Moon affliction overrides."
+        }
+      ]
+    },
+    "14": {
+      "page": "172",
+      "claims": [
+        {
+          "id": "C17",
+          "claim": "Long-lived if ascendant lord in exaltation while Moon in 11th and Jupiter in 8th from ascendant",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing"
+        }
+      ]
+    },
+    "15": {
+      "page": "172",
+      "claims": [
+        {
+          "id": "C18",
+          "claim": "Ascendant lord exceedingly strong AND aspected by benefic from angle → wealthy, virtuous, and long-lived",
+          "type": "condition",
+          "entity": "native",
+          "encoded": null,
+          "status": "missing",
+          "note": "Multiple outcome domains: longevity + wealth + character"
         }
       ]
     }
+  },
+  "summary": {
+    "total_verses": 15,
+    "total_claims": 18,
+    "already_encoded": 6,
+    "under_encoded": 1,
+    "missing": 11,
+    "entity_breakdown": {"native": 18},
+    "health_sensitive_claims": 4,
+    "critical_gaps": "v.8-13 (ALL short-life combinations), v.14-15 (long-life yogas). Also v.3 under-specified and v.4-7 missing alternative conditions."
   }
 }
