@@ -265,7 +265,7 @@ def compute_sayanadi(
 
     # n: navamsa position (1-9)
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
         d9_si = compute_varga_sign(lon, 9)
         n = (d9_si % 9) + 1  # 1-9 within the navamsa cycle
     except Exception:

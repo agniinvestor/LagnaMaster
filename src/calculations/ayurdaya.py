@@ -77,7 +77,7 @@ def compute_amsayu(chart) -> float:
     Source: BPHS Ch.44
     """
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
     except ImportError:
         return 0.0
 

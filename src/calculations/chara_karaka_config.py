@@ -130,7 +130,7 @@ def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
 
     ak_lon = chart.planets[ak].longitude
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
 
         return compute_varga_sign(ak_lon, 9)
     except Exception:
@@ -156,7 +156,7 @@ def is_swamsha(chart, chara_result: CharaKarakaResult) -> bool:
 
     ak_lon = chart.planets[ak].longitude
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
 
         d9_si = compute_varga_sign(ak_lon, 9)
     except Exception:

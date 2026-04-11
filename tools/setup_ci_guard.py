@@ -48,9 +48,10 @@ echo "✅ All tests passed — pushing."
 exit 0
 """
 
-HOOK.write_text(HOOK_SCRIPT)
-HOOK.chmod(HOOK.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
-print("  OK  .git/hooks/pre-push installed")
+if __name__ == "__main__":  # BUG-080: was module-level, overwrote hooks on import
+    HOOK.write_text(HOOK_SCRIPT)
+    HOOK.chmod(HOOK.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
+    print("  OK  .git/hooks/pre-push installed")
 
 # ─── 2. ci_watch.py ──────────────────────────────────────────────────────────
 CI_WATCH = ROOT / "tools/ci_watch.py"
@@ -274,58 +275,58 @@ if __name__ == "__main__":
     watch(args.run_id, args.fix)
 '''
 
-CI_WATCH.write_text(CI_WATCH_SCRIPT)
-CI_WATCH.chmod(CI_WATCH.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
-print("  OK  tools/ci_watch.py installed")
+    CI_WATCH.write_text(CI_WATCH_SCRIPT)
+    CI_WATCH.chmod(CI_WATCH.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
+    print("  OK  tools/ci_watch.py installed")
 
-# ─── 3. Improve GitHub Actions workflow ──────────────────────────────────────
-# Find the workflow file
-workflows = list((ROOT / ".github/workflows").glob("*.yml")) + list(
-    (ROOT / ".github/workflows").glob("*.yaml")
-)
+    # ─── 3. Improve GitHub Actions workflow ──────────────────────────────────
+    # Find the workflow file
+    workflows = list((ROOT / ".github/workflows").glob("*.yml")) + list(
+        (ROOT / ".github/workflows").glob("*.yaml")
+    )
 
-if workflows:
-    wf = workflows[0]
-    text = wf.read_text()
+    if workflows:
+        wf = workflows[0]
+        text = wf.read_text()
 
-    # Add --tb=short and structured summary if not already present
-    if "::error::" not in text:
-        old = "pytest tests/"
-        new = (
-            "pytest tests/ -q --tb=short 2>&1 | tee /tmp/pytest_out.txt; "
-            "STATUS=${PIPESTATUS[0]}; "
-            "if [ $STATUS -ne 0 ]; then "
-            "grep -E 'FAILED|ERROR|AssertionError' /tmp/pytest_out.txt | "
-            'while IFS= read -r line; do echo "::error::$line"; done; fi; '
-            "exit $STATUS"
-        )
-        if old in text:
-            text = text.replace(old, new)
-            wf.write_text(text)
-            print(f"  OK  {wf.name} — added ::error:: annotations")
+        # Add --tb=short and structured summary if not already present
+        if "::error::" not in text:
+            old = "pytest tests/"
+            new = (
+                "pytest tests/ -q --tb=short 2>&1 | tee /tmp/pytest_out.txt; "
+                "STATUS=${PIPESTATUS[0]}; "
+                "if [ $STATUS -ne 0 ]; then "
+                "grep -E 'FAILED|ERROR|AssertionError' /tmp/pytest_out.txt | "
+                'while IFS= read -r line; do echo "::error::$line"; done; fi; '
+                "exit $STATUS"
+            )
+            if old in text:
+                text = text.replace(old, new)
+                wf.write_text(text)
+                print(f"  OK  {wf.name} — added ::error:: annotations")
+            else:
+                print(f"  SKIP {wf.name} — pytest invocation not found in expected form")
         else:
-            print(f"  SKIP {wf.name} — pytest invocation not found in expected form")
+            print(f"  SKIP {wf.name} — already has error annotations")
     else:
-        print(f"  SKIP {wf.name} — already has error annotations")
-else:
-    print("  SKIP — no .github/workflows/*.yml found")
+        print("  SKIP — no .github/workflows/*.yml found")
 
-print()
-print("Setup complete. Workflow going forward:")
-print()
-print("  BEFORE PUSH (automatic):")
-print("    git push  →  pre-push hook runs pytest locally")
-print("               →  if tests fail: push is blocked, fix and retry")
-print("               →  if tests pass: push proceeds")
-print()
-print("  AFTER PUSH (if CI fails anyway):")
-print("    .venv/bin/python3 tools/ci_watch.py          # watch + print failures")
-print("    .venv/bin/python3 tools/ci_watch.py --fix    # watch + attempt auto-fix")
-print()
-print("  SKIP hook for emergencies (use sparingly):")
-print("    git push --no-verify")
-print()
-print("Commit with:")
-print("  git add .git/hooks/pre-push tools/ci_watch.py .github/workflows/")
-print("  git commit -m 'chore: pre-push test guard + ci_watch auto-fix tool'")
-print("  git push")
+    print()
+    print("Setup complete. Workflow going forward:")
+    print()
+    print("  BEFORE PUSH (automatic):")
+    print("    git push  →  pre-push hook runs pytest locally")
+    print("               →  if tests fail: push is blocked, fix and retry")
+    print("               →  if tests pass: push proceeds")
+    print()
+    print("  AFTER PUSH (if CI fails anyway):")
+    print("    .venv/bin/python3 tools/ci_watch.py          # watch + print failures")
+    print("    .venv/bin/python3 tools/ci_watch.py --fix    # watch + attempt auto-fix")
+    print()
+    print("  SKIP hook for emergencies (use sparingly):")
+    print("    git push --no-verify")
+    print()
+    print("Commit with:")
+    print("  git add .git/hooks/pre-push tools/ci_watch.py .github/workflows/")
+    print("  git commit -m 'chore: pre-push test guard + ci_watch auto-fix tool'")
+    print("  git push")

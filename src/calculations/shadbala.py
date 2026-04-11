@@ -270,7 +270,7 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
 
     # Navamsa sign
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
         d9_si = compute_varga_sign(chart.planets[planet].longitude, 9)
         is_odd_d9 = d9_si % 2 == 0
     except Exception:
@@ -576,7 +576,7 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     Source: BPHS Ch.27 v.1-20
     """
     try:
-        from src.calculations.vargas import compute_varga_sign  # noqa: F401
+        from src.calculations.varga import compute_varga_sign  # noqa: F401
     except ImportError:
         return 0.0
 

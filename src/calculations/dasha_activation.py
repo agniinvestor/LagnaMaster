@@ -289,7 +289,7 @@ def compute_triple_concordance(
     # D9 confirmation
     d9_str = "Unknown"
     try:
-        from src.calculations.vargas import compute_varga_sign
+        from src.calculations.varga import compute_varga_sign
 
         # Build pseudo D9 chart from main chart
         class _PseudoChart:
