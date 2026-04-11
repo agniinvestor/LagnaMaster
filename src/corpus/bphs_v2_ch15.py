@@ -185,7 +185,7 @@ b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Sun", "house": 4},
         {"type": "planet_in_house", "planet": "Moon", "house": 9},
-        {"type": "planet_in_house", "planet": "Saturn", "house": 11},
+        {"type": "planet_in_house", "planet": "Saturn", "house": 9},
         {"type": "planet_in_house", "planet": "Mars", "house": 11},
     ],
     signal_group="sun_h4_moon_h9_quadrupeds",
