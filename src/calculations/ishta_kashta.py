@@ -49,7 +49,6 @@ _MEAN_MOTION = {
 def _uchcha_bala(planet: str, longitude: float) -> float:
     """Uchcha Bala: 0–60 Virupas based on distance from exaltation/debilitation."""
     exalt = _EXALT_LON.get(planet)
-    _DEBIL_LON.get(planet)
     if exalt is None:
         return 30.0  # Rahu/Ketu: neutral
     # Angular distance from exaltation (shorter arc)

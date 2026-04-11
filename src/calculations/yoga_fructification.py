@@ -143,11 +143,9 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     # Condition 1: Free from functional malefic afflictions
     affliction_free = True
     from src.calculations.functional_roles import compute_functional_roles
-    from src.calculations.house_lord import compute_house_map
 
     try:
         fr = compute_functional_roles(chart)
-        compute_house_map(chart)
         func_malefics = fr.functional_malefics | fr.dusthana_lords
 
         for p in yoga_planets:
