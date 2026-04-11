@@ -725,4 +725,61 @@ b.add(
     tags=["mars", "h3", "garga", "sibling_death", "specific_count"],
 )
 
+# v.4 gap: Saturn in 3rd → brothers (male planet per Santhanam's notes)
+# Verse says "male planets" generically; Santhanam's note on p.139 classifies
+# Saturn and Rahu as male for sex determination. This is translator
+# classification, not verse text (Principle #8, L013). Confidence reduced.
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 3}],
+    signal_group="h3_saturn_male_brothers",
+    direction="neutral", intensity="weak", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "brothers_born_after_native",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.55},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "Saturn (treated as male planet) in 3rd: brothers born after native. "
+        "Saturn's male classification is from Santhanam's notes, not verse text."
+    ),
+    commentary_context=(
+        "Santhanam p.139: 'Saturn and Rahu be treated as males while Mercury "
+        "and Ketu are females.' This is translator classification for sex "
+        "determination context, not direct verse statement. The verse itself "
+        "names 'male planets' without enumerating which planets are male. "
+        "Sun/Mars/Jupiter are the primary male planets (BPHS1424). Saturn is "
+        "a secondary male classification per Santhanam. Confidence reduced by "
+        "0.05 per L013 (translator gloss ≠ verse text)."
+    ),
+    prediction_type="trait",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1424"]},
+    tags=["male_planet", "saturn", "h3", "brothers", "santhanam_note"],
+)
+
+# v.4 gap: Rahu in 3rd → brothers (male planet per Santhanam's notes)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 3}],
+    signal_group="h3_rahu_male_brothers",
+    direction="neutral", intensity="weak", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "brothers_born_after_native",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.55},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "Rahu (treated as male planet) in 3rd: brothers born after native. "
+        "Rahu's male classification is from Santhanam's notes, not verse text."
+    ),
+    commentary_context=(
+        "Santhanam p.139: 'Saturn and Rahu be treated as males while Mercury "
+        "and Ketu are females.' Same translator classification as Saturn rule. "
+        "Rahu does not own any house but is classified as male for sex "
+        "determination context per Santhanam's notes. Confidence reduced by "
+        "0.05 per L013."
+    ),
+    prediction_type="trait",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1424"]},
+    tags=["male_planet", "rahu", "h3", "brothers", "santhanam_note"],
+)
+
 BPHS_V2_CH14_REGISTRY = b.build()
