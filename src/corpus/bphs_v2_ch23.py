@@ -96,4 +96,33 @@ b.add(conditions=[],
       description="Planets in visible half of zodiac give explicit results; invisible half gives secret results.",
       prediction_type="trait")
 
+# ═══ v.5-6 POSITIVE PATH: 12th lord in kendra/trikona → bed pleasures ═══════
+# BPHS2301 encodes the negative path (12th lord in dusthana). Santhanam's
+# commentary explicitly states the contrary: "If in kendra/trikona = bed
+# pleasures manifest as happy marriage."
+b.add(conditions=[{"type": "lord_in_house", "lord_of": 12, "house": [1, 4, 5, 7, 9, 10]}],
+      signal_group="h12_lord_kendra_trikona_bed_pleasures", direction="favorable", intensity="moderate",
+      primary_domain="relationships",
+      predictions=[{"entity": "native", "claim": "happiness_from_wife_bed_pleasures", "domain": "relationships", "direction": "favorable", "magnitude": 0.6}],
+      verse_ref="Ch.23 v.5-6",
+      commentary_context="Positive path of v.5-6. Santhanam: 'If in kendra/trikona = bed pleasures manifest as happy marriage.' BPHS2301 encodes 12th lord in dusthana (negative); this encodes the kendra/trikona path (positive).",
+      description="12th lord in kendra or trikona: happiness from wife, bed pleasures, happy marriage.",
+      concordance_texts=["Saravali"],
+      rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2301"]})
+
+# ═══ v.1-4: Moon as 12th lord exalted → rich clothes specifically ═══════════
+# BPHS2300 covers 12th lord strong generally. Santhanam's commentary singles
+# out Moon as 12th lord exalted = specifically "rich clothes" — a distinct
+# claim not covered by the general "expenses on good accounts" prediction.
+b.add(conditions=[{"type": "planet_dignity", "planet": "Moon", "dignity": "exalted"}],
+      signal_group="moon_h12_lord_exalted_rich_clothes", direction="favorable", intensity="moderate",
+      primary_domain="wealth",
+      predictions=[{"entity": "native", "claim": "rich_clothes_and_luxurious_dress", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
+      verse_ref="Ch.23 v.1-4",
+      commentary_context="Santhanam singles out Moon as 12th lord exalted = 'rich clothes' specifically. Moon is 12th lord only for Leo ascendant (12th = Cancer, ruled by Moon). Lagna_scope restricts to Leo.",
+      description="Moon as 12th lord in exaltation: one will wear rich clothes and enjoy luxurious dress.",
+      concordance_texts=[],
+      lagna_scope=["Leo"],
+      rule_relationship={"type": "addition", "related_rules": ["BPHS2300"]})
+
 BPHS_V2_CH23_REGISTRY = b.build()
