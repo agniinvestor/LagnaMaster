@@ -222,7 +222,7 @@ b.add(
                   "domain": "longevity", "direction": "favorable", "magnitude": 0.7}],
     verse_ref="Ch.19 v.5-6",
     commentary_context=(
-        "Santhanam: If the lords of the 5th, 8th and ascendant are in "
+        "Santhanam: The lords of the 5th, 8th and ascendant being in "
         "their own navamsas, own Rasis or in friendly signs, the native "
         "will enjoy a long span of life. Strength and weakness of "
         "planets must be estimated in deciding longevity."
@@ -487,8 +487,8 @@ b.add(
         "8th from the ascendant."
     ),
     commentary_context=(
-        "Santhanam: Even if Jupiter is lonely well-placed in the 8th "
-        "house, it leads to a long span of life. If he is further helped "
+        "Santhanam: Even Jupiter alone well-placed in the 8th "
+        "house leads to a long span of life. When he is further helped "
         "by the Moon being in the 11th house and by the ascendant lord's "
         "exaltation, doubtlessly the life will be exceedingly lengthy."
     ),

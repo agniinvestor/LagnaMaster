@@ -264,7 +264,7 @@ _up(2, "any_benefic", "occupies", "upa_pada_h2_benefic_beautiful_wife",
        "domain": "relationships", "direction": "favorable", "magnitude": 0.7}],
      "Ch.30 v.13-15",
      "2nd from Upapada related to benefic: wife will be beautiful, fortunate and virtuous.",
-     "Santhanam: If the 2nd from Upapada is related to a benefic, the wife will be beautiful, fortunate and virtuous.",
+     "Santhanam: The 2nd from Upapada being related to a benefic, the wife will be beautiful, fortunate and virtuous.",
      entity_target="spouse")
 
 
@@ -487,7 +487,7 @@ b.add(
     ],
     verse_ref="Ch.30 v.25-28",
     description="Sun, Jupiter and Rahu in 9th from Upa Pada: son will be strong, valorous, greatly successful, and prevail over adversaries.",
-    commentary_context="Santhanam: The conjunction of Sun (authority), Jupiter (wisdom), and Rahu (amplification) in the 9th from the reference point produces exceptional male progeny.",
+    commentary_context="Santhanam: The conjunction of Sun (authority), Jupiter (wisdom), and Rahu (amplification) in the 9th from the reference point produces outstanding male progeny.",
     concordance_texts=[],
 )
 
@@ -676,7 +676,7 @@ _lp(3, "venus", "occupies", "lagna_pada_h3_venus_occ_abortion",
        "domain": "progeny", "direction": "unfavorable", "magnitude": 0.7}],
      "Ch.30 v.32",
      "Venus in 3rd/11th from Lagna Pada: there would have been an abortion earlier.",
-     "Santhanam: Venus in the 3rd or 11th from Lagna Pada indicates prior abortion/miscarriage. Same effect if Venus is in the 8th from natal ascendant or from Lagnarudha.")
+     "Santhanam: Venus in the 3rd or 11th from Lagna Pada indicates prior abortion/miscarriage. Same effect when Venus is in the 8th from natal ascendant or from Lagnarudha.")
 
 _lp(11, "venus", "occupies", "lagna_pada_h11_venus_occ_abortion",
      "unfavorable", "strong", "progeny",
@@ -704,7 +704,7 @@ _lp(3, "saturn", "occupies", "lagna_pada_h3_saturn_alone_coborn_die",
        "domain": "relationships", "direction": "unfavorable", "magnitude": 0.8}],
      "Ch.30 v.33-36",
      "Saturn alone in 3rd/11th from Lagna Pada: native will be spared while co-born will die.",
-     "Santhanam: If Saturn is alone in one of these houses (without Mars), the native survives but siblings do not.",
+     "Santhanam: Saturn alone in one of these houses (without Mars) — the native survives but siblings do not.",
      entity_target="siblings")
 
 # Ketu in 3rd/11th from LP → happiness from sisters
@@ -741,7 +741,7 @@ _lp(7, "rahu", "occupies", "lagna_pada_h7_rahu_occ_spiritual",
        "domain": "spirituality", "direction": "favorable", "magnitude": 0.8}],
      "Ch.30 v.38",
      "Rahu in 7th/12th from Lagna Pada or aspecting: endowed with spiritual knowledge and be very fortunate.",
-     "Santhanam: Rahu in the 7th or 12th from Lagna Pada, or aspecting one of these houses, grants spiritual wisdom and exceptional good fortune.")
+     "Santhanam: Rahu in the 7th or 12th from Lagna Pada, or aspecting one of these houses, grants spiritual wisdom and outstanding good fortune.")
 
 _lp(12, "rahu", "occupies", "lagna_pada_h12_rahu_occ_spiritual",
      "favorable", "strong", "spirituality",
