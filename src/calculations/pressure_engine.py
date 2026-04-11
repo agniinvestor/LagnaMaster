@@ -100,11 +100,14 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
     from src.calculations.avastha import compute_lajjitadi
     from src.calculations.dignity import compute_all_dignities, DignityLevel
     from src.calculations.house_lord import compute_house_map
+    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
     drivers = []
     score = 0.0
 
     roles = compute_functional_roles(chart)
+    # Use BPHS-verified canonical malefics instead of functional_roles computation
+    canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
     hmap = compute_house_map(chart)
     digs = compute_all_dignities(chart)
 
@@ -149,7 +152,7 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
             drivers.append(f"Badhaka lord {badhaka_lord} in lagna")
 
     # Functional malefics in H1/H4/H7/H10 (kendras)
-    for planet in roles.functional_malefics:
+    for planet in canonical_malefics:
         if planet in hmap.planet_house:
             h = hmap.planet_house[planet]
             if h in {1, 4, 7, 10}:
@@ -190,9 +193,11 @@ def dasha_activation_weight(chart, dashas: list, on_date: date) -> tuple[float, 
     from src.calculations.vimshottari_dasa import current_dasha
     from src.calculations.functional_roles import compute_functional_roles
     from src.calculations.house_lord import compute_house_map
+    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
     roles = compute_functional_roles(chart)
     hmap = compute_house_map(chart)
+    canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
 
     try:
         md, ad = current_dasha(dashas, on_date)
@@ -206,7 +211,7 @@ def dasha_activation_weight(chart, dashas: list, on_date: date) -> tuple[float, 
 
     for lord, kind in [(md.lord, "MD"), (ad.lord, "AD")]:
         # Functional malefic running dasha
-        if lord in roles.functional_malefics:
+        if lord in canonical_malefics:
             weight += 0.25
             notes.append(f"{lord} {kind} is func. malefic")
 

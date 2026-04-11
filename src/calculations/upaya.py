@@ -182,10 +182,10 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
     """Get remedy recommendations for all afflicted planets in a chart."""
     try:
         from src.calculations.dignity import compute_all_dignities
-        from src.calculations.functional_roles import compute_functional_roles
+        from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
         digs = compute_all_dignities(chart)
-        fr = compute_functional_roles(chart)
+        canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
     except Exception:
         return []
 
@@ -216,7 +216,7 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
                     affliction = "debilitated"
             except Exception:
                 pass
-        if planet in fr.functional_malefics:
+        if planet in canonical_malefics:
             if not affliction:
                 affliction = "functional_malefic"
 

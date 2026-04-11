@@ -64,11 +64,11 @@ def compute_dominance_factors(
         on_date = date.today()
 
     from src.calculations.house_lord import compute_house_map
-    from src.calculations.functional_roles import compute_functional_roles
     from src.calculations.multi_axis_scoring import score_all_axes
+    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
     hmap = compute_house_map(chart)
-    fr = compute_functional_roles(chart)
+    canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
     ph = hmap.planet_house
 
     try:
@@ -151,7 +151,7 @@ def compute_dominance_factors(
 
     # Severe affliction: functional malefic conjunct within tight orb
     for planet, pos in chart.planets.items():
-        if planet in fr.functional_malefics:
+        if planet in canonical_malefics:
             house = ph.get(planet, 0)
             if house in {6, 8, 12}:  # malefic in dusthana can be ok
                 continue

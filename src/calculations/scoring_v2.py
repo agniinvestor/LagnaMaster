@@ -150,6 +150,7 @@ def score_chart_v2(chart) -> ChartScoresV2:
     )
     from src.calculations.dignity import compute_all_dignities
     from src.calculations.functional_roles import compute_functional_roles
+    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
     from src.calculations.graha_yuddha import compute_graha_yuddha
 
     hmap = compute_house_map(chart)
@@ -178,7 +179,8 @@ def score_chart_v2(chart) -> ChartScoresV2:
         return roles.is_functional_benefic(planet)
 
     def is_func_malefic(planet: str) -> bool:
-        return roles.is_functional_malefic(planet)
+        lagna_si = chart.lagna_sign_index
+        return planet in KNOWN_FUNCTIONAL_MALEFICS.get(lagna_si, [])
 
     # Yuddha penalty: loser benefic rules score at 50%
     def yuddha_mult(planet: str, is_benefic_rule: bool) -> float:

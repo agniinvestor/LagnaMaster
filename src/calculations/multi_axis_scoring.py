@@ -455,6 +455,7 @@ class MultiAxisScores:
 def _make_frame_funcs(frame_lagna_si: int, chart, school: str):
     """Return is_func_benefic / is_func_malefic for any frame."""
     from src.calculations.functional_roles import compute_functional_roles
+    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
     # We recompute functional roles from the frame's lagna
     import types
@@ -478,7 +479,13 @@ def _make_frame_funcs(frame_lagna_si: int, chart, school: str):
         planets=chart.planets,  # noqa: F841
     )
     roles = compute_functional_roles(fake)
-    return roles.is_functional_benefic, roles.is_functional_malefic
+    # Use BPHS-verified KNOWN_FUNCTIONAL_MALEFICS as canonical malefic source
+    malefic_list = KNOWN_FUNCTIONAL_MALEFICS.get(frame_lagna_si, [])
+
+    def is_func_malefic(planet: str) -> bool:
+        return planet in malefic_list
+
+    return roles.is_functional_benefic, is_func_malefic
 
 
 def score_axis(
