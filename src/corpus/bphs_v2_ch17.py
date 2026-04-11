@@ -373,6 +373,65 @@ b.add(
     prediction_type="trait",
 )
 
+# v.9-12: Rahu — danger from low-caste men (social danger)
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Rahu", "house": [6, 8]},
+    ],
+    signal_group="rahu_h6_h8_social_danger",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "danger_from_lowcaste_men",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Rahu: danger from the "
+        "so called low-caste men. Rahu's 'disease' is social danger "
+        "rather than physical ailment."
+    ),
+    commentary_context=(
+        "Santhanam table on p.155 explicitly lists Rahu between Saturn "
+        "and Ketu in the disease table. Rahu is the main planet for "
+        "delirium according to Hindu astrology (noted under Moon entry). "
+        "Mars entry also notes 'malaria (also under Rahu), ulceration "
+        "of penis, perityphlitis.' Rahu's primary disease indication "
+        "is social/caste-related danger per the verse table."
+    ),
+    concordance_texts=["Saravali"],
+    prediction_type="trait",
+)
+
+# v.9-12: Ketu — diseases of the navel
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Ketu", "house": [6, 8]},
+    ],
+    signal_group="ketu_h6_h8_navel_disease",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "diseases_of_navel",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.17 v.9-12",
+    description=(
+        "Lords of 6th and 8th in ascendant with Ketu: diseases of the "
+        "navel. Ketu is explicitly listed in the verse disease table."
+    ),
+    commentary_context=(
+        "Santhanam table on p.155 lists Ketu → 'Diseases of the navel.' "
+        "The previous S319 agent excluded Rahu and Ketu saying 'they do "
+        "not own any house,' but the verse table on p.155 explicitly names "
+        "all 9 grahas including Rahu and Ketu. House ownership is "
+        "irrelevant — the condition is planet placement in 6th/8th, not "
+        "lordship."
+    ),
+    concordance_texts=["Saravali"],
+    prediction_type="trait",
+)
+
 # ═══ v.13-19½: TIMING OF ILLNESS — each age gets its own rule ════════════════
 
 # v.13: Illness throughout life
