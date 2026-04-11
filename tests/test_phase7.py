@@ -305,30 +305,30 @@ class TestConfigToggles:
         assert r22_modifier("Saturn", True, "classical") == 0.0
 
     def test_calc_config_defaults(self):
-        from src.calculations.config_toggles import CalcConfig
+        from src.calculations.config_toggles import ToggleConfig
 
-        c = CalcConfig()
+        c = ToggleConfig()
         assert c.school == "parashari"
         assert c.ayanamsha == "lahiri"
         assert c.ayanamsha_id == 1
         assert not c.use_true_node
 
     def test_calc_config_raman(self):
-        from src.calculations.config_toggles import CalcConfig
+        from src.calculations.config_toggles import ToggleConfig
 
-        c = CalcConfig(ayanamsha="raman")
+        c = ToggleConfig(ayanamsha="raman")
         assert c.ayanamsha_id == 3
 
     def test_calc_config_true_node(self):
-        from src.calculations.config_toggles import CalcConfig
+        from src.calculations.config_toggles import ToggleConfig
 
-        c = CalcConfig(node_type="true")
+        c = ToggleConfig(node_type="true")
         assert c.use_true_node
 
     def test_calc_config_to_dict_roundtrip(self):
-        from src.calculations.config_toggles import CalcConfig
+        from src.calculations.config_toggles import ToggleConfig
 
-        c = CalcConfig(school="kp", ayanamsha="raman")
+        c = ToggleConfig(school="kp", ayanamsha="raman")
         d = c.to_dict()
         assert d["school"] == "kp"
         assert d["ayanamsha"] == "raman"

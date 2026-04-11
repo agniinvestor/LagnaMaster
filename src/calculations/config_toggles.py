@@ -60,7 +60,7 @@ def use_true_node(node_type: str = "mean") -> bool:
     return node_type.lower() == "true"
 
 
-class CalcConfig:
+class ToggleConfig:
     """Live configuration object mirroring REF_Config toggles."""
 
     def __init__(
@@ -97,11 +97,11 @@ class CalcConfig:
         return {k: v for k, v in vars(self).items()}
 
     @classmethod
-    def from_dict(cls, d: dict) -> "CalcConfig":
+    def from_dict(cls, d: dict) -> "ToggleConfig":
         return cls(
             **{k: v for k, v in d.items() if k in cls.__init__.__code__.co_varnames}
         )
 
 
 # Default config singleton (Parashari, Lahiri, apply R22)
-DEFAULT_CONFIG = CalcConfig()
+DEFAULT_CONFIG = ToggleConfig()
