@@ -22,7 +22,14 @@ try:
 except BaseException:
     _JW = False
 
-_SEC = os.environ.get("JWT_SECRET", "dev-secret-change-in-production")
+def _get_jwt_secret() -> str:
+    """Return JWT secret from environment; raise if not configured."""
+    secret = os.environ.get("JWT_SECRET")
+    if not secret:
+        raise RuntimeError("JWT_SECRET environment variable required")
+    return secret
+
+
 _ALG = os.environ.get("JWT_ALGORITHM", "HS256")
 _ATT = int(os.environ.get("ACCESS_TTL_MIN", "15"))
 _RTT = int(os.environ.get("REFRESH_TTL_DAY", "7"))
@@ -94,7 +101,7 @@ def _hp(pw):
         import hmac
 
         return (
-            "sha256:" + hmac.new(_SEC.encode(), pw.encode(), hashlib.sha256).hexdigest()
+            "sha256:" + hmac.new(_get_jwt_secret().encode(), pw.encode(), hashlib.sha256).hexdigest()
         )
     return bcrypt.hashpw(pw.encode(), bcrypt.gensalt(rounds=12)).decode()
 
@@ -104,7 +111,7 @@ def _vp(pw, h):
         import hashlib
         import hmac
 
-        e = hmac.new(_SEC.encode(), pw.encode(), hashlib.sha256).hexdigest()
+        e = hmac.new(_get_jwt_secret().encode(), pw.encode(), hashlib.sha256).hexdigest()
         return hmac.compare_digest(e, h[7:])
     return _BC and bcrypt.checkpw(pw.encode(), h.encode())
 
@@ -115,7 +122,7 @@ def _mt(uid, kind, ttl):
     n = datetime.now(timezone.utc)
     return _jwt.encode(
         {"sub": str(uid), "kind": kind, "iat": n, "exp": n + timedelta(seconds=ttl)},
-        _SEC,
+        _get_jwt_secret(),
         algorithm=_ALG,
     )
 
@@ -124,7 +131,7 @@ def _dt(tok, kind):
     if not _JW:
         raise RuntimeError("pip install pyjwt")
     try:
-        p = _jwt.decode(tok, _SEC, algorithms=[_ALG])
+        p = _jwt.decode(tok, _get_jwt_secret(), algorithms=[_ALG])
     except _jwt.ExpiredSignatureError:
         raise ValueError("Token has expired")
     except _jwt.InvalidTokenError as e:
