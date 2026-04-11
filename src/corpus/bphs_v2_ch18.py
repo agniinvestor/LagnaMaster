@@ -533,4 +533,168 @@ b.add(
     ),
     description="Venus in dual sign + dispositor exalted + 7th lord strong: many wives.")
 
+# ═══ v.7-8½ GAP: Moon in 7th — type of female varies by sign ══════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7}],
+    entity_target="native",
+    signal_group="moon_h7_sign_dependent_female",
+    direction="mixed", intensity="moderate",
+    primary_domain="relationships",
+    predictions=[{"entity": "native",
+                  "claim": "associate_with_females_corresponding_to_7th_sign",
+                  "domain": "relationships", "direction": "mixed", "magnitude": 0.5}],
+    verse_ref="Ch.18 v.7-8",
+    commentary_context=(
+        "Santhanam: Moon in 7th — the kind of female corresponds to the sign "
+        "becoming the 7th house. Virgo = virgin, Libra = prostitutes, "
+        "Gemini = housewife, and so forth. Reflects ancient Indian social "
+        "categories; sign-specific outcomes not individually encodable."
+    ),
+    description="Moon in 7th: native associates with females corresponding to the sign on the 7th house (Virgo=virgin, Libra=prostitutes, Gemini=housewife, etc.).",
+    prediction_type="trait",
+)
+
+# ═══ v.7-8½ GAP: Jupiter in 7th — wife of Brahmin or pregnant female ═════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 7}],
+    entity_target="native",
+    signal_group="jupiter_h7_brahmin_wife_pregnant",
+    direction="mixed", intensity="moderate",
+    primary_domain="relationships",
+    predictions=[{"entity": "native",
+                  "claim": "associate_with_brahmin_wife_or_pregnant_female",
+                  "domain": "relationships", "direction": "mixed", "magnitude": 0.5}],
+    verse_ref="Ch.18 v.7-8",
+    commentary_context=(
+        "Santhanam: Jupiter in 7th = wife of a Brahmin or a pregnant female. "
+        "Jupiter in the 7th is also no exception to the general pattern of "
+        "absence of sterlingness in character. Reflects ancient Indian social "
+        "norms regarding caste and marital status."
+    ),
+    description="Jupiter in 7th: native will associate with wife of a Brahmin or a pregnant female.",
+    prediction_type="trait",
+)
+
+# ═══ v.7-8½ GAP: Saturn in 7th — base females ════════════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 7}],
+    entity_target="native",
+    signal_group="saturn_rahu_ketu_h7_base_females",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="relationships",
+    predictions=[{"entity": "native",
+                  "claim": "associate_with_base_females_attained_courses",
+                  "domain": "relationships", "direction": "unfavorable",
+                  "magnitude": 0.5}],
+    verse_ref="Ch.18 v.7-8",
+    commentary_context=(
+        "Santhanam: Saturn, Rahu or Ketu in 7th = base females and females "
+        "having attained their courses. Saturn variant. Same prediction for "
+        "all three nodes/malefics. Reflects ancient Indian social norms."
+    ),
+    description="Saturn in 7th: native associates with base females who have attained their courses.",
+    prediction_type="trait",
+)
+
+# ═══ v.7-8½ GAP: Rahu in 7th — base females ═════════════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 7}],
+    entity_target="native",
+    signal_group="saturn_rahu_ketu_h7_base_females",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="relationships",
+    predictions=[{"entity": "native",
+                  "claim": "associate_with_base_females_attained_courses",
+                  "domain": "relationships", "direction": "unfavorable",
+                  "magnitude": 0.5}],
+    verse_ref="Ch.18 v.7-8",
+    commentary_context=(
+        "Santhanam: Saturn, Rahu or Ketu in 7th = base females and females "
+        "having attained their courses. Rahu variant. Same prediction as "
+        "Saturn/Ketu variants. Reflects ancient Indian social norms."
+    ),
+    description="Rahu in 7th: native associates with base females who have attained their courses.",
+    prediction_type="trait",
+)
+
+# ═══ v.7-8½ GAP: Ketu in 7th — base females ═════════════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Ketu", "house": 7}],
+    entity_target="native",
+    signal_group="saturn_rahu_ketu_h7_base_females",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="relationships",
+    predictions=[{"entity": "native",
+                  "claim": "associate_with_base_females_attained_courses",
+                  "domain": "relationships", "direction": "unfavorable",
+                  "magnitude": 0.5}],
+    verse_ref="Ch.18 v.7-8",
+    commentary_context=(
+        "Santhanam: Saturn, Rahu or Ketu in 7th = base females and females "
+        "having attained their courses. Ketu variant. Same prediction as "
+        "Saturn/Rahu variants. Reflects ancient Indian social norms."
+    ),
+    description="Ketu in 7th: native associates with base females who have attained their courses.",
+    prediction_type="trait",
+)
+
+# ═══ v.9-9½ GAP: Saturn in 7th — sick and weak spouse ════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 7}],
+    signal_group="saturn_h7_spouse_sick_weak",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[{"entity": "spouse", "claim": "sick_and_weak_spouse",
+                  "domain": "health", "direction": "unfavorable",
+                  "magnitude": 0.5}],
+    verse_ref="Ch.18 v.9",
+    commentary_context=(
+        "Santhanam: Saturn indicates sick and weak spouse. Part of v.9-9½ "
+        "physical appearance block. This is a health prediction rather than "
+        "appearance. Reflects ancient Indian social norms."
+    ),
+    description="Saturn in 7th: spouse will be sick and weak.",
+    prediction_type="trait",
+)
+
+# ═══ v.9-9½ GAP: Jupiter in 7th — hard and prominent breasts ═════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 7}],
+    signal_group="jupiter_h7_spouse_appearance",
+    direction="neutral", intensity="moderate",
+    primary_domain="character",
+    predictions=[{"entity": "spouse",
+                  "claim": "spouse_with_hard_and_prominent_breasts",
+                  "domain": "character", "direction": "favorable",
+                  "magnitude": 0.4}],
+    verse_ref="Ch.18 v.9",
+    commentary_context=(
+        "Santhanam: Jupiter = spouse with hard and prominent breasts. Part "
+        "of v.9-9½ physical appearance block alongside Mars, Saturn, Venus. "
+        "Reflects ancient Indian social norms."
+    ),
+    description="Jupiter in 7th: spouse with hard and prominent breasts.",
+    prediction_type="trait",
+)
+
+# ═══ v.9-9½ GAP: Venus in 7th — bulky and excellent breasts ══════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 7}],
+    signal_group="venus_h7_spouse_appearance",
+    direction="neutral", intensity="moderate",
+    primary_domain="character",
+    predictions=[{"entity": "spouse",
+                  "claim": "spouse_with_bulky_and_excellent_breasts",
+                  "domain": "character", "direction": "favorable",
+                  "magnitude": 0.4}],
+    verse_ref="Ch.18 v.9",
+    commentary_context=(
+        "Santhanam: Venus = spouse with bulky and excellent breasts. Part "
+        "of v.9-9½ physical appearance block alongside Mars, Saturn, Jupiter. "
+        "Reflects ancient Indian social norms."
+    ),
+    description="Venus in 7th: spouse with bulky and excellent breasts.",
+    prediction_type="trait",
+)
+
 BPHS_V2_CH18_REGISTRY = b.build()
