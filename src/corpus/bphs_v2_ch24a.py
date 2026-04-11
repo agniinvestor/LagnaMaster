@@ -76,11 +76,11 @@ b.add(
     direction="favorable", intensity="moderate",
     primary_domain="character",
     predictions=[
-        {"entity": "native", "claim": "brave_valorous_intelligent_happy_no_siblings_lost",
+        {"entity": "native", "claim": "brave_valorous_intelligent_happy",
          "domain": "character", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.24 v.3",
-    description="Lagna lord in 3rd house: brave, no younger siblings lost, intelligent, happy. Equal to a king, respected by others.",
+    description="Lagna lord in 3rd house: brave, intelligent, happy. Equal to a king, respected by others.",  # BUG-095: removed fabricated "no siblings lost"
     commentary_context="Santhanam: Should the 3rd house contain the ascendant lord, one will be equal to a king, respected by others and will indulge in unnatural methods of sexual gratification.",
     concordance_texts=["Saravali"],
 )

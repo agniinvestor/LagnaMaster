@@ -1,6 +1,6 @@
 """src/corpus/saravali_signs_5.py — S285: Saravali Jupiter in 12 Signs (Ch.29).
 
-SAV1561–SAV1690 (130 rules).
+SAV1561–SAV1702 (142 rules).  # BUG-096: was 130
 Phase: 1B_matrix | Source: Saravali | School: parashari
 """
 from __future__ import annotations
