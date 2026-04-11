@@ -43,7 +43,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.11-17",
     description="Argala for Arudha Pada, natal ascendant, and 7th from both: native will be famous and fortunate.",
-    commentary_context="Santhanam: Should there be Argala for the Arudha Pada, for the natal ascendant, and for the 7th from both, the native will be famous and fortunate. This requires Argala (unobstructed intervention from 4th/2nd/11th houses) on multiple reference points simultaneously. NON-COMPUTABLE: needs argala_condition primitive with multi-point support.",
+    commentary_context="Santhanam: Should there be Argala for the Arudha Pada, for the natal ascendant, and for the 7th from both, the native will be famous and fortunate. This requires Argala (unobstructed intervention from 4th/2nd/11th houses) on multiple reference points simultaneously. S316: argala_condition implemented. Multi-point Argala support via compound conditions.",
     concordance_texts=[],
 )
 
@@ -59,7 +59,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.11-17",
     description="Benefic or malefic causing unobstructed Argala aspecting the ascendant: makes one famous.",
-    commentary_context="Santhanam: A malefic or a benefic causing unobstructed Argala aspecting the ascendant will make one famous. NON-COMPUTABLE: needs argala_condition with aspect mode.",
+    commentary_context="Santhanam: A malefic or a benefic causing unobstructed Argala aspecting the ascendant will make one famous. S316: argala_condition implemented with aspect mode support.",
     concordance_texts=[],
 )
 
@@ -102,7 +102,7 @@ for house, domain, claim, direction, mag, desc in _HOUSE_EFFECTS:
         ],
         verse_ref="Ch.31 v.11-17",
         description=desc,
-        commentary_context=f"Santhanam: Per-house Argala effect. When unobstructed Argala operates on the {house}th house (from ascendant or Arudha), the significations of that house are activated. Argala = planetary intervention from 4th/2nd/11th; obstruction from 10th/12th/3rd. NON-COMPUTABLE: needs argala_condition primitive.",
+        commentary_context=f"Santhanam: Per-house Argala effect. When unobstructed Argala operates on the {house}th house (from ascendant or Arudha), the significations of that house are activated. Argala = planetary intervention from 4th/2nd/11th; obstruction from 10th/12th/3rd. S316: argala_condition implemented.",
         concordance_texts=[],
     )
 
@@ -118,7 +118,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.11-17",
     description="Benefic Argala: various kinds of happiness.",
-    commentary_context="Santhanam: The Argala by benefics will give various kinds of happiness. This is a general principle — benefic planets causing Argala produce positive outcomes regardless of house. NON-COMPUTABLE: needs argala_condition with planet_type=benefic.",
+    commentary_context="Santhanam: The Argala by benefics will give various kinds of happiness. This is a general principle — benefic planets causing Argala produce positive outcomes regardless of house. S316: argala_condition implemented with benefic filter.",
     concordance_texts=[],
 )
 
@@ -134,7 +134,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.11-17",
     description="Malefic Argala: malefic effects will be meddling with malefic Argalas.",
-    commentary_context="Santhanam: While benefic effects will be meddling with malefic Argalas. Malefic planets causing Argala produce negative outcomes. NON-COMPUTABLE: needs argala_condition with planet_type=malefic.",
+    commentary_context="Santhanam: While benefic effects will be meddling with malefic Argalas. Malefic planets causing Argala produce negative outcomes. S316: argala_condition implemented with malefic filter.",
     concordance_texts=[],
 )
 
@@ -150,7 +150,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.11-17",
     description="Argala by both benefics and malefics: mixed results.",
-    commentary_context="Santhanam: Argala by both benefics and malefics will yield mixed results. NON-COMPUTABLE: needs argala_condition with planet_type=both.",
+    commentary_context="Santhanam: Argala by both benefics and malefics will yield mixed results. S316: argala_condition implemented with mixed type support.",
     concordance_texts=[],
 )
 
@@ -170,7 +170,7 @@ b.add(
     ],
     verse_ref="Ch.31 v.18",
     description="Unobstructed Argala for ascendant, 5th and 9th: native will doubtlessly become a king and fortunate.",
-    commentary_context="Santhanam: Should there be unobstructed Argala for the ascendant, the 5th and 9th, the native will doubtlessly become a king and fortunate. This is the strongest Argala-based prediction — all three trinal houses activated simultaneously. NON-COMPUTABLE: needs argala_on_house for multiple houses.",
+    commentary_context="Santhanam: Should there be unobstructed Argala for the ascendant, the 5th and 9th, the native will doubtlessly become a king and fortunate. This is the strongest Argala-based prediction — all three trinal houses activated simultaneously. S316: argala_condition implemented. Multi-house check via compound conditions (3 argala_conditions ANDed).",
     concordance_texts=[],
 )
 

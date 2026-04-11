@@ -267,9 +267,8 @@ b.add(
     commentary_context=(
         "Santhanam notes: Alternatively the 2nd lord should be related "
         "to Jupiter (and) or Venus by conjunction or by aspect. Both "
-        "the combinations are for gaining wealth. NOTE: aspect path "
-        "cannot be encoded with current engine primitives — conjunction "
-        "path only. See S319 gap note below."
+        "the combinations are for gaining wealth. Aspect path now "
+        "encoded separately (S321 — BPHS1310/BPHS1311)."
     ),
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1306"]},
     tags=["h2_lord", "jupiter", "wealth"],
@@ -297,19 +296,73 @@ b.add(
         "Santhanam: The verse says 'aspected by or conjunct by Jupiter "
         "and Venus.' Venus was previously only a modifier on Jupiter's "
         "rule — but the text treats Jupiter and Venus as co-equal "
-        "alternatives. S319 gap fill. NOTE: aspect path cannot be "
-        "encoded with current engine primitives — conjunction path only."
+        "alternatives. S319 gap fill. Aspect path now encoded "
+        "separately (S321 — BPHS1310/BPHS1311)."
     ),
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1307"]},
     tags=["h2_lord", "venus", "wealth"],
 )
 
-# ENGINE GAP: 4 aspect-path rules deferred — needs planet_aspecting to resolve lord positions
-# v.5 says "aspected by or conjunct by Jupiter and Venus." Conjunction paths
-# are encoded (BPHS1307 Jupiter, BPHS1309 Venus). The 4 aspect paths
-# (Jupiter aspecting lord_of_2, Venus aspecting lord_of_2, and the reverse
-# directions) cannot be encoded because planet_aspecting requires a numeric
-# house target, not a lord position reference.
+# v.5e: Jupiter aspecting lord_of_2 → wealthy (aspect path — S321 gap closure)
+b.add(
+    conditions=[
+        {"type": "planet_aspecting", "planet": "Jupiter", "target": "lord_of_2"},
+    ],
+    signal_group="h2_lord_jupiter_aspect_wealth",
+    direction="favorable", intensity="strong",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "wealthy_through_jupiter_aspect",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.13 v.5",
+    description=(
+        "2nd lord aspected by Jupiter: the subject will be wealthy. "
+        "Verse says 'aspected by or conjunct by Jupiter and Venus.' "
+        "This is the aspect path; conjunction is BPHS1307."
+    ),
+    commentary_context=(
+        "Santhanam p.133: 'the 2nd lord should be related to Jupiter "
+        "(and) or Venus by conjunction or by aspect.' S321 gap closure: "
+        "planet_aspecting now supports target='lord_of_N' to resolve "
+        "the lord's house position at runtime."
+    ),
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1307"]},
+    tags=["h2_lord", "jupiter", "aspect", "wealth"],
+)
+
+# v.5f: Venus aspecting lord_of_2 → wealthy (aspect path — S321 gap closure)
+b.add(
+    conditions=[
+        {"type": "planet_aspecting", "planet": "Venus", "target": "lord_of_2"},
+    ],
+    signal_group="h2_lord_venus_aspect_wealth",
+    direction="favorable", intensity="strong",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "wealthy_through_venus_aspect",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.13 v.5",
+    description=(
+        "2nd lord aspected by Venus: the subject will be wealthy. "
+        "Verse says 'aspected by or conjunct by Jupiter and Venus.' "
+        "This is the aspect path; conjunction is BPHS1309."
+    ),
+    commentary_context=(
+        "Santhanam p.133: Same verse as Jupiter aspect rule. Venus "
+        "aspecting the 2nd lord's position is an alternative wealth "
+        "combination. S321 gap closure."
+    ),
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1309"]},
+    tags=["h2_lord", "venus", "aspect", "wealth"],
+)
+
+# NOTE: The original ENGINE GAP comment mentioned "4 aspect paths" including
+# reverse directions (lord_of_2 aspecting Jupiter/Venus). The verse says
+# "aspected BY Jupiter and Venus" — Jupiter/Venus are the aspecting agents.
+# Reverse aspects are an inference, not verse text. Only 2 rules encoded per
+# source fidelity (Principle #8).
 
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKAS 6-7: Yogas for Poverty
