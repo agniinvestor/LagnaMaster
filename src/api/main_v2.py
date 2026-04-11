@@ -208,17 +208,17 @@ def list_charts(limit: int = 20) -> list[ChartSummary]:
     rows = db.list_charts(limit)
     summaries = []
     for row in rows:
-        cj = (
-            json.loads(row["chart_json"])
-            if isinstance(row["chart_json"], str)
-            else row["chart_json"]
-        )
         summaries.append(
             ChartSummary(
                 id=row["id"],
                 name=row.get("name"),
-                lagna_sign=cj["lagna_sign"],
                 created_at=str(row["created_at"]),
+                year=row["year"],  # BUG-073: was missing required fields
+                month=row["month"],
+                day=row["day"],
+                hour=row["hour"],
+                lat=row["lat"],
+                lon=row["lon"],
             )
         )
     return summaries

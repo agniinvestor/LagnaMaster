@@ -48,12 +48,11 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
     try:
         from src.calculations.shadbala import compute_shadbala
 
-        sb = compute_shadbala(chart)
-        planet_sb = sb.planets.get(planet)
-        if planet_sb:
-            total = planet_sb.total
+        # BUG-071: was compute_shadbala(chart) — wrong signature
+        sb = compute_shadbala(planet, chart)
+        if sb and sb.total > 0:
             # Normalize: avg = 400 Virupas, range ~0–800
-            shadbala_f = min(1.0, max(0.0, total / 600.0))
+            shadbala_f = min(1.0, max(0.0, sb.total / 600.0))
     except Exception:
         pass
 

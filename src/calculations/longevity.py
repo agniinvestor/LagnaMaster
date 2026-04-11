@@ -129,7 +129,9 @@ def compute_amsayu(chart) -> float:
 
         d9 = compute_navamsha_chart(chart)
     except Exception:
-        return 66.0  # fallback
+        import logging
+        logging.getLogger(__name__).exception("BUG-070: longevity D9 computation failed")
+        raise
 
     _PLANET_YEARS = {
         "Sun": 19,

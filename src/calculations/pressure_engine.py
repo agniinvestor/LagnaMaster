@@ -198,6 +198,8 @@ def dasha_activation_weight(chart, dashas: list, on_date: date) -> tuple[float, 
     try:
         md, ad = current_dasha(dashas, on_date)
     except Exception:
+        import logging
+        logging.getLogger(__name__).warning("BUG-068: dasha unavailable, returning neutral weight")
         return 1.0, "Dasha unavailable"
 
     weight = 1.0

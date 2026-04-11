@@ -72,7 +72,7 @@ except ImportError:
     _HAS_PUSHKARA = False
 
 try:
-    from src.montecarlo import monte_carlo_sensitivity  # noqa: E402
+    from src.montecarlo import compute_sensitivity as monte_carlo_sensitivity  # noqa: E402  # BUG-074
 
     _HAS_MC = True
 except ImportError:

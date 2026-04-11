@@ -105,8 +105,8 @@ def save_chart(
                 lon,
                 tz_offset,
                 ayanamsha,
-                json.dumps(chart_json),
-                json.dumps(scores_json) if scores_json else None,
+                chart_json if isinstance(chart_json, str) else json.dumps(chart_json),
+                (scores_json if isinstance(scores_json, str) else json.dumps(scores_json)) if scores_json else None,
             ),
         )
         return cur.lastrowid

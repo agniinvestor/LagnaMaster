@@ -120,6 +120,8 @@ def create_chart(req: BirthDataRequest):
         for h, hs in scores.houses.items()
     }
 
+    import json as _json
+
     chart_id = save_chart(
         year=req.year,
         month=req.month,
@@ -129,8 +131,8 @@ def create_chart(req: BirthDataRequest):
         lon=req.lon,
         tz_offset=req.tz_offset,
         ayanamsha=req.ayanamsha,
-        chart_json=chart_json,
-        scores_json=scores_json,
+        chart_json=_json.dumps(chart_json),  # BUG-072: was passing dict, PG expects str
+        scores_json=_json.dumps(scores_json),  # BUG-072: was passing dict
         name=req.name,
     )
 

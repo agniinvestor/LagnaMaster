@@ -97,7 +97,9 @@ def compute_dominance_factors(
             dig = compute_all_dignities(chart).get("Jupiter")
             jup_strong = not (dig and dig.combust)
         except Exception:
-            jup_strong = True
+            import logging
+            logging.getLogger(__name__).exception("BUG-069: dignity computation failed for Jupiter")
+            jup_strong = False  # BUG-069: was True — don't assume strong on error
         if jup_strong:
             factors.append(
                 DominanceFactor(
