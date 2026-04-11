@@ -13,6 +13,7 @@ Usage:
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from src.calculations.dignity import MOOLTRIKONA_RANGES as _MT_RANGES
 
 _MALEFICS = ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
 _BENEFICS = ("Jupiter", "Venus", "Mercury", "Moon")
@@ -265,12 +266,7 @@ _OWN_SIGNS = {
     "Jupiter": [8, 11], "Venus": [1, 6], "Saturn": [9, 10],
     "Rahu": [10], "Ketu": [7],
 }
-# BUG-037 fix: MT uses degree ranges (BPHS Ch.3 v.51-54)
-_MT_RANGES = {
-    "Sun": (4, 0.0, 20.0), "Moon": (1, 4.0, 30.0), "Mars": (0, 0.0, 12.0),
-    "Mercury": (5, 15.0, 20.0), "Jupiter": (8, 0.0, 10.0),
-    "Venus": (6, 0.0, 15.0), "Saturn": (10, 0.0, 20.0),
-}
+# Moolatrikona: degree-bounded via _MT_RANGES (imported from dignity.py at top)
 
 # ── Parashari graha drishti (7th always; Mars 4,8; Jupiter 5,9; Saturn 3,10) ──
 _SPECIAL_ASPECTS = {
