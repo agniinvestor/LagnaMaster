@@ -235,9 +235,7 @@ def compute_all_arudha_padas(chart) -> ArudhaPadaResult:
         final = raw
         # Exception: falls on same house or 7th from it
         if final == h or final == ((h + 5) % 12 + 1):
-            final = (raw + 9) % 12
-            if final == 0:
-                final = 12
+            final = (raw - 1 + 10) % 12 + 1  # add 10 signs (BPHS exception)
         si = (lsi + final - 1) % 12
         padas[h] = ArudhaPada(
             house=h,
