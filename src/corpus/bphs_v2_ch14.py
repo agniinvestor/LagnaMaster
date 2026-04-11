@@ -2,7 +2,7 @@
 
 Source: R. Santhanam, BPHS Vol 1, pp.137-141.
 Chapter: 14 — Effects of the Third House (Sahaj Bhava Phala)
-Slokas: 15. Rules: 13. V2 Completeness: 82.7%.
+Slokas: 15. Rules: 31. V2 Completeness: 95%+.
 Entity: siblings (all rules). Timing: all unspecified (no ages in text).
 """
 from __future__ import annotations
@@ -479,6 +479,250 @@ b.add(
     cross_chapter_refs=["Ch.32 v.32 Planetary Karakatvas"],
     tags=["benefic", "h3", "coborn", "courage", "aspect"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1400"]},
+)
+
+# ═══ GAP FILLS — S319 Ch.14 deep audit (male planets, sign-gender, combos) ════
+
+# v.4 gap: Moon in 3rd as female planet → sisters
+# Verse says "female planet" = Venus or Moon. BPHS1403 encodes Venus.
+# This rule encodes Moon as the other female planet in 3rd → sisters.
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 3}],
+    signal_group="h3_female_planet_moon_sisters",
+    direction="neutral", intensity="moderate", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "sisters_born_after_native",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "Moon (female planet) in 3rd house: sisters born after native. "
+        "Verse says female planet in 3rd or 3rd lord is female planet → sisters."
+    ),
+    commentary_context=(
+        "Santhanam: Venus and Moon are primary female planets. This is the "
+        "Moon path of v.4. BPHS1403 encodes Venus path. The verse treats both "
+        "Venus and Moon as female planets indicating sisters."
+    ),
+    prediction_type="trait",
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1403"]},
+    tags=["female_planet", "moon", "h3", "sisters"],
+)
+
+# v.4 gap: Male planet (Sun, Mars, Jupiter) in 3rd → brothers
+# Verse: "male planets will cause birth of brothers"
+# Sun, Mars, Jupiter are the three male planets per BPHS.
+b.add(
+    conditions=[
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_in_house", "planet": "Sun", "house": 3},
+            {"type": "planet_in_house", "planet": "Mars", "house": 3},
+            {"type": "planet_in_house", "planet": "Jupiter", "house": 3},
+        ]},
+    ],
+    signal_group="h3_male_planet_brothers",
+    direction="neutral", intensity="moderate", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "brothers_born_after_native",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "Male planet (Sun, Mars, or Jupiter) in 3rd: brothers born after native. "
+        "Male signs exclusively occupied by male planets → brothers."
+    ),
+    commentary_context=(
+        "Santhanam: Sun, Mars, Jupiter are male planets. Saturn and Rahu treated "
+        "as male for sex determination. Mercury and Ketu as female. This rule "
+        "encodes the three primary male planets per verse text. Saturn/Rahu "
+        "male treatment noted but not encoded as primary — they are neutral/"
+        "shadowy planets reclassified only for sex-determination context."
+    ),
+    prediction_type="trait",
+    tags=["male_planet", "h3", "brothers"],
+)
+
+# v.4 gap: 3rd house in odd sign (male sign) → male coborn tendency
+# Verse: "All odd signs are male signs and all even signs are female signs.
+# Male signs exclusively occupied by male planets will cause birth of brothers."
+b.add(
+    conditions=[
+        {"type": "planet_in_sign_type", "planet": "lord_of_3", "sign_type": "odd"},
+    ],
+    signal_group="h3_odd_sign_male_coborn",
+    direction="neutral", intensity="weak", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "male_coborn_tendency",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "3rd lord in odd (male) sign: tendency toward male co-born. "
+        "Verse says odd signs = male signs, even = female."
+    ),
+    commentary_context=(
+        "Santhanam: 'This should be known from the 3rd house being male or "
+        "female sign & C.' Odd signs (Aries, Gemini, Leo, Libra, Sagittarius, "
+        "Aquarius) are male signs. The 3rd lord's sign type serves as proxy for "
+        "3rd cusp sign type since no house_sign_type primitive exists. If the "
+        "3rd house is occupied by a male planet as well as in a male sign, the "
+        "contribution is strong — brothers indicated."
+    ),
+    prediction_type="trait",
+    tags=["sign_gender", "odd_sign", "male_coborn", "h3"],
+)
+
+# v.4 gap: 3rd house in even sign (female sign) → female coborn tendency
+b.add(
+    conditions=[
+        {"type": "planet_in_sign_type", "planet": "lord_of_3", "sign_type": "even"},
+    ],
+    signal_group="h3_even_sign_female_coborn",
+    direction="neutral", intensity="weak", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "female_coborn_tendency",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "3rd lord in even (female) sign: tendency toward female co-born. "
+        "Even signs = female signs per verse."
+    ),
+    commentary_context=(
+        "Contrary of odd-sign rule. Even signs (Taurus, Cancer, Virgo, Scorpio, "
+        "Capricorn, Pisces) are female signs. Female sign + female planet = "
+        "sisters. This is the sign-gender dimension; planet-gender is separate."
+    ),
+    prediction_type="trait",
+    rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1425"]},
+    tags=["sign_gender", "even_sign", "female_coborn", "h3"],
+)
+
+# v.4 gap: Mixed male + female planets in 3rd → coborn of both sexes
+# Verse: "Should it be of mixed nature, coborn of both sexes will be obtained."
+b.add(
+    conditions=[
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_in_house", "planet": "Sun", "house": 3},
+            {"type": "planet_in_house", "planet": "Mars", "house": 3},
+            {"type": "planet_in_house", "planet": "Jupiter", "house": 3},
+        ]},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_in_house", "planet": "Venus", "house": 3},
+            {"type": "planet_in_house", "planet": "Moon", "house": 3},
+        ]},
+    ],
+    signal_group="h3_mixed_planets_both_sexes",
+    direction="neutral", intensity="moderate", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "coborn_of_both_sexes",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.14 v.4",
+    description=(
+        "Both male and female planets in 3rd: co-born of both sexes. "
+        "Verse: 'Should it be of mixed nature, coborn of both sexes will be obtained.'"
+    ),
+    commentary_context=(
+        "Santhanam: If the 3rd house is occupied by a male planet as well as "
+        "a female planet, there will be brothers and sisters as well. This "
+        "requires at least one male planet (Sun/Mars/Jupiter) AND at least one "
+        "female planet (Venus/Moon) in the 3rd house simultaneously."
+    ),
+    prediction_type="trait",
+    tags=["mixed_planets", "h3", "both_sexes", "coborn"],
+)
+
+# v.12-13 gap: Full condition — 11th/12th lord joins Mars+Jupiter + Moon in 3rd → 7 coborn
+# Existing BPHS1408 only has Moon in 3rd. The full verse condition is more complex.
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Moon", "house": 3},
+        {"type": "planets_conjunct", "planets": ["Mars", "Jupiter"]},
+        {"type": "or_group", "alternatives": [
+            {"type": "planets_conjunct", "planets": ["lord_of_11", "Mars"]},
+            {"type": "planets_conjunct", "planets": ["lord_of_12", "Mars"]},
+        ]},
+    ],
+    signal_group="moon_h3_mars_jupiter_11_12_lord_7coborn",
+    direction="favorable", intensity="strong", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "seven_coborn_full_condition",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.14 v.12-13",
+    description=(
+        "11th or 12th lord joins Mars and Jupiter while Moon occupies 3rd: "
+        "7 co-born indicated. Full condition from verse (some texts read "
+        "12th lord instead of 11th)."
+    ),
+    commentary_context=(
+        "Verse: 'There will be 7 coborn if the 12th lord (some texts read "
+        "as the 11th lord) joins Mars and Jupiter while the 3rd is occupied "
+        "by the Moon.' BPHS1408 encodes the simpler Moon-in-3rd condition; "
+        "this encodes the full multi-planet combination."
+    ),
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1408"]},
+    tags=["moon", "mars", "jupiter", "h3", "7_coborn", "multi_planet"],
+)
+
+# v.12-13 gap: Moon alone in 3rd + male planet aspect → younger brothers
+# Existing BPHS1420 encodes Venus aspect → sisters. This is the male counterpart.
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Moon", "house": 3},
+        {"type": "or_group", "alternatives": [
+            {"type": "planet_aspecting", "planet": "Sun", "house": 3},
+            {"type": "planet_aspecting", "planet": "Mars", "house": 3},
+            {"type": "planet_aspecting", "planet": "Jupiter", "house": 3},
+        ]},
+    ],
+    signal_group="moon_h3_male_aspect_brothers",
+    direction="neutral", intensity="moderate", primary_domain="progeny",
+    predictions=[
+        {"entity": "siblings", "claim": "younger_brothers_indicated",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.14 v.12-13",
+    description=(
+        "Moon alone in 3rd with male planet (Sun/Mars/Jupiter) aspect: "
+        "younger brothers indicated."
+    ),
+    commentary_context=(
+        "Verse: 'If the Moon is lonely placed in the 3rd in aspect to male "
+        "planets, there will be younger brothers.' Male planets = Sun, Mars, "
+        "Jupiter. BPHS1420 encodes the Venus aspect → sisters counterpart."
+    ),
+    prediction_type="trait",
+    rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1420"]},
+    tags=["moon", "h3", "male_aspect", "younger_brothers"],
+)
+
+# v.14 gap: Mars in 3rd → 2 brothers + 2 sisters, all pass early (Garga Maharshi)
+# BPHS1411 encodes the general "both elder and younger destroyed" claim.
+# Garga Maharshi's specific prediction is a distinct claim with specific numbers.
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
+    signal_group="mars_h3_garga_4_siblings_early_death",
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
+    predictions=[
+        {"entity": "siblings", "claim": "two_brothers_two_sisters_pass_early",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.14 v.14",
+    description=(
+        "Mars in 3rd: Garga Maharshi says native will obtain two brothers "
+        "and two sisters, all four of whom will pass away early."
+    ),
+    commentary_context=(
+        "Santhanam: 'Regarding Mars in the 3rd, Garga Maharshi states that "
+        "the native will obtain two brothers and two sisters all the 4 of "
+        "whom will pass away early.' This is a specific numbered prediction "
+        "from Garga, distinct from the general claim in BPHS1411."
+    ),
+    concordance_texts=["Garga Samhita"],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1411"]},
+    tags=["mars", "h3", "garga", "sibling_death", "specific_count"],
 )
 
 BPHS_V2_CH14_REGISTRY = b.build()
