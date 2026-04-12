@@ -329,6 +329,102 @@ find . -name "*.md" -not -path "./.venv/*" -not -path "./.git/*" -not -path "./.
 
 For PROJECT_STRATEGY.md to be the golden source, you need to know WHICH documents it replaces and WHERE they contradict each other. This audit is the input for Section 2 (architecture reconciliation).
 
+### 0k. Comprehensive pending work inventory (CRITICAL for Section 3 of PROJECT_STRATEGY.md)
+
+The golden source document needs a COMPLETE list of all pending work. That work is scattered across 9+ sources. Extract ALL of it systematically.
+
+```bash
+# ── SOURCE 1: v11 execution plan incomplete stages ──────────────────────────
+# Read the status table at the top of the execution plan.
+# For each stage not marked DONE, extract: what remains, estimated effort.
+grep -A2 'not started\|Partial\|~[0-9]' docs/superpowers/specs/2026-04-07-v11-execution-plan.md | head -30
+
+# ── SOURCE 2: s318 deep audit — unfixed bugs ────────────────────────────────
+# The audit listed C01-C20 (critical bugs) and H01-H12 (handler categories).
+# v11 execution plan claims ~95% of Stage 1 (formula fixes) done.
+# Cross-reference: which C01-C20 bugs are still open?
+# Read docs/s318_deep_audit.md and for EACH C-bug, grep for the fix:
+for bug in C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20; do
+  fixed=$(git log --oneline --all | grep -i "$bug" | head -1)
+  echo "$bug: ${fixed:-NOT FOUND IN GIT}"
+done
+
+# ── SOURCE 3: Open bugs in BUGS.md ──────────────────────────────────────────
+grep -n 'OPEN\|❌\|unfixed\|remains\|not fixed' docs/BUGS.md
+# If no matches, check if all are marked fixed:
+grep -c '✅' docs/BUGS.md
+
+# ── SOURCE 4: Guardrails not enforced ───────────────────────────────────────
+# Read docs/GUARDRAILS.md. For EACH of the 24 guardrails:
+# Is there code that enforces it? (grep for G01, G02, etc. in src/ and tools/)
+# Record: guardrail ID, description, enforced (Y/N), where enforced
+for g in G01 G02 G03 G04 G05 G06 G07 G08 G09 G10 G11 G12 G13 G14 G15 G16 G17 G18 G19 G20 G21 G22 G23 G24; do
+  code_refs=$(grep -rn "$g" src/ tests/ tools/ --include='*.py' 2>/dev/null | grep -v __pycache__ | wc -l | tr -d ' ')
+  echo "$g: $code_refs code references"
+done
+
+# ── SOURCE 5: Lessons without code controls ─────────────────────────────────
+# Read lessons_learned.md. For EACH lesson, check: does "Control built:" say
+# "None" or "behavioral lesson"? Those are open loops per core principle #10.
+grep -A1 'Control built:' lessons_learned.md | grep -i 'none\|behavioral'
+
+# ── SOURCE 6: Encoding coverage gaps ────────────────────────────────────────
+# Read each coverage map. Count chapters encoded vs total.
+for f in docs/coverage_maps/*.md; do
+  total=$(grep -c '^|' "$f" 2>/dev/null)
+  done_count=$(grep -c '✅\|COMPLETE\|done' "$f" 2>/dev/null)
+  echo "$(basename $f): $done_count/$total rows marked complete"
+done
+# Also check BPHS encoding roadmap for chapter-level status
+grep -c '✅\|COMPLETE' docs/BPHS_ENCODING_ROADMAP.md 2>/dev/null
+grep -c '❌\|pending\|not started\|TO''DO' docs/BPHS_ENCODING_ROADMAP.md 2>/dev/null
+
+# ── SOURCE 7: condition_modifier_audit flags ─────────────────────────────────
+# Already run in Phase 0b. Record the count of unfixed flags.
+
+# ── SOURCE 8: v2_scorecard quality gaps ──────────────────────────────────────
+# Already run in Phase 0b. Record: rules missing predictions, rules with
+# bare {} timing, rules with no commentary, L2 rules needing L3 remediation.
+
+# ── SOURCE 9: .claude/commands (session-specific planned work) ──────────────
+# These represent work items that were scoped but may not have been completed.
+# For each command file, read the first 5 lines to understand its purpose:
+for f in .claude/commands/*.md; do
+  echo "=== $(basename $f) ==="
+  head -3 "$f"
+  echo ""
+done
+
+# ── SOURCE 10: Code task markers (deferred work tagged in source) ────────────
+grep -rn 'TO''DO\|FIX''ME\|HA''CK\|X''XX\|BUG-' src/ --include='*.py' | grep -v __pycache__
+
+# ── SOURCE 11: MEMORY.md known issues / gaps ─────────────────────────────────
+grep -n 'Known\|Gap\|Remaining\|Pending\|Blocked\|Issue\|Open' docs/MEMORY.md MEMORY.md 2>/dev/null
+
+# ── SOURCE 12: Shadbala audit gaps ───────────────────────────────────────────
+# Read docs/shadbala_audit_gaps.md — these are open gaps in a canonical module
+grep -c 'gap\|missing\|not implemented\|TO''DO' docs/shadbala_audit_gaps.md 2>/dev/null
+
+# ── SOURCE 13: Git history deferred items ────────────────────────────────────
+git log --oneline --all | grep -i 'defer\|blocked\|known issue\|skip\|partial\|stub' | head -20
+
+# ── SOURCE 14: ROADMAP.md pending sessions ───────────────────────────────────
+# Count sessions marked as pending/not started in the roadmap
+grep -c '🚧\|pending\|not started' docs/ROADMAP.md 2>/dev/null
+```
+
+**After running all 14 sources, produce a SINGLE consolidated pending work inventory:**
+
+| # | Source | Item | Severity | Effort | Blocks |
+|---|--------|------|----------|--------|--------|
+| 1 | v11 Stage 2 | Verification tags on 103 modules | LOW | 1 session | Nothing |
+| 2 | s318 C19 | av_transit.py AV lookup bug | HIGH | 1 fix | Scoring correctness |
+| ... | ... | ... | ... | ... | ... |
+
+This table becomes Section 3 of PROJECT_STRATEGY.md. **Every pending item from every source must appear in this table.** If an item appears in multiple sources, it gets ONE row with all sources cited.
+
+Items that are DONE should be explicitly marked DONE (with the session/commit that closed them) — this is how you clean up the staleness in MEMORY.md and BUGS.md.
+
 ---
 
 ## Phase 1: Read the strategic documents
