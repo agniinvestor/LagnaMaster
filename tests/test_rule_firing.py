@@ -349,3 +349,136 @@ def test_dispositor_in_house_wrong():
               "dispositor_state": "in_house", "house": wrong_house}]
     fires, _ = _check_compound_conditions(conds, chart)
     assert not fires
+
+
+# ═══ planet_in_sign_type tests ═══════════════════════════════════════════════
+
+def test_planet_in_sign_type_odd():
+    """Planet in odd sign fires for sign_type='odd'."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    chart = _get_india_1947()
+    # Find a planet in an odd sign (0,2,4,6,8,10)
+    for pname in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"):
+        pos = _find_planet(chart, pname)
+        if pos.sign_index % 2 == 0:  # odd sign (0-indexed)
+            conds = [{"type": "planet_in_sign_type", "planet": pname, "sign_type": "odd"}]
+            fires, _ = _check_compound_conditions(conds, chart)
+            assert fires, f"{pname} in sign_index {pos.sign_index} should be odd"
+            # Verify even returns False
+            conds_even = [{"type": "planet_in_sign_type", "planet": pname, "sign_type": "even"}]
+            fires_even, _ = _check_compound_conditions(conds_even, chart)
+            assert not fires_even, f"{pname} in odd sign should not match even"
+            return
+
+
+def test_planet_in_sign_type_lord_of():
+    """lord_of_N reference resolved correctly for sign type check."""
+    from src.calculations.rule_firing import _check_compound_conditions, _lord_of_house, _find_planet
+    chart = _get_india_1947()
+    lord3 = _lord_of_house(chart, 3)
+    pos = _find_planet(chart, lord3)
+    expected_movable = pos.sign_index in {0, 3, 6, 9}
+    conds = [{"type": "planet_in_sign_type", "planet": "lord_of_3", "sign_type": "movable"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires == expected_movable
+
+
+def test_planet_in_sign_type_element():
+    """Fire/earth/air/water sign types match correctly."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    chart = _get_india_1947()
+    mars = _find_planet(chart, "Mars")
+    si = mars.sign_index
+    elements = {
+        "fire": {0, 4, 8}, "earth": {1, 5, 9},
+        "air": {2, 6, 10}, "water": {3, 7, 11},
+    }
+    for elem, signs in elements.items():
+        conds = [{"type": "planet_in_sign_type", "planet": "Mars", "sign_type": elem}]
+        fires, _ = _check_compound_conditions(conds, chart)
+        assert fires == (si in signs), f"Mars si={si}, elem={elem}"
+
+
+def test_planet_in_sign_type_invalid():
+    """Invalid sign_type → does not fire."""
+    from src.calculations.rule_firing import _check_compound_conditions
+    chart = _get_india_1947()
+    conds = [{"type": "planet_in_sign_type", "planet": "Sun", "sign_type": "nonexistent"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert not fires
+
+
+# ═══ planet_in_derived_house tests ═══════════════════════════════════════════
+
+def test_planet_in_derived_house_arudha_pada():
+    """Arudha pada occupancy check works for known planet positions."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    from src.calculations.argala import compute_arudha
+    chart = _get_india_1947()
+    al_si = compute_arudha(chart, 1)
+    # Check if Sun is at AL sign
+    sun = _find_planet(chart, "Sun")
+    conds = [{"type": "planet_in_derived_house", "derivation": "arudha_pada",
+              "base_house": 1, "offset": 1, "planet": "Sun", "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires == (sun.sign_index == al_si)
+
+
+def test_planet_in_derived_house_offset():
+    """Offset from arudha pada checks the correct sign."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    from src.calculations.argala import compute_arudha
+    chart = _get_india_1947()
+    al_si = compute_arudha(chart, 1)
+    # Check each offset (1-12) for each planet
+    for offset in range(1, 13):
+        target_si = (al_si + offset - 1) % 12
+        for pname in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"):
+            pos = _find_planet(chart, pname)
+            if pos.sign_index == target_si:
+                conds = [{"type": "planet_in_derived_house", "derivation": "arudha_pada",
+                          "base_house": 1, "offset": offset, "planet": pname, "mode": "occupies"}]
+                fires, _ = _check_compound_conditions(conds, chart)
+                assert fires, f"{pname} at si={pos.sign_index} should fire for offset={offset} from AL={al_si}"
+                return
+
+
+def test_planet_in_derived_house_any_malefic():
+    """any_malefic at derived house fires if any malefic is there."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    from src.calculations.argala import compute_arudha
+    chart = _get_india_1947()
+    al_si = compute_arudha(chart, 1)
+    target_si = (al_si + 7 - 1) % 12
+    malefic_at_target = any(
+        _find_planet(chart, m).sign_index == target_si
+        for m in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
+        if _find_planet(chart, m)
+    )
+    conds = [{"type": "planet_in_derived_house", "derivation": "arudha_pada",
+              "base_house": 1, "offset": 7, "planet": "any_malefic", "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires == malefic_at_target
+
+
+def test_planet_in_derived_house_unsupported_derivation():
+    """Unsupported derivation → does not fire (graceful fallback)."""
+    from src.calculations.rule_firing import _check_compound_conditions
+    chart = _get_india_1947()
+    conds = [{"type": "planet_in_derived_house", "derivation": "karakamsa",
+              "base_house": 1, "offset": 1, "planet": "Sun", "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert not fires
+
+
+def test_planet_in_derived_house_upa_pada():
+    """upa_pada derivation uses arudha of 12th house."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    from src.calculations.argala import compute_arudha
+    chart = _get_india_1947()
+    up_si = compute_arudha(chart, 12)
+    sun = _find_planet(chart, "Sun")
+    conds = [{"type": "planet_in_derived_house", "derivation": "upa_pada",
+              "base_house": 1, "offset": 1, "planet": "Sun", "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires == (sun.sign_index == up_si)

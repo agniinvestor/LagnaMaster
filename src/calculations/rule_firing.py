@@ -1215,6 +1215,86 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                         return False, 0
             matched_house = matched_house or (target_house if isinstance(target_house, int) else target_house[0])
 
+        elif ctype == "planet_in_sign_type":
+            planet_spec = cond.get("planet", "")
+            sign_type = cond.get("sign_type", "")
+            # Resolve planet (may be lord_of_N)
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec:
+                return False, 0
+            pos = _find_planet(chart, planet_spec.title())
+            if not pos:
+                return False, 0
+            psi = pos.sign_index
+            SIGN_TYPES = {
+                "movable": {0, 3, 6, 9},
+                "fixed": {1, 4, 7, 10},
+                "dual": {2, 5, 8, 11},
+                "fire": {0, 4, 8},
+                "earth": {1, 5, 9},
+                "air": {2, 6, 10},
+                "water": {3, 7, 11},
+                "odd": {0, 2, 4, 6, 8, 10},
+                "even": {1, 3, 5, 7, 9, 11},
+            }
+            if psi not in SIGN_TYPES.get(sign_type, set()):
+                return False, 0
+            matched_house = matched_house or _planet_house(chart, planet_spec.title())
+
+        elif ctype == "planet_in_derived_house":
+            from src.calculations.argala import compute_arudha
+            derivation = cond.get("derivation", "")
+            base_house = cond.get("base_house", 1)
+            offset = cond.get("offset", 1)
+            planet_spec = cond.get("planet", "")
+            mode = cond.get("mode", "occupies")
+
+            # Compute derived point sign index based on derivation type
+            if derivation == "arudha_pada":
+                derived_si = compute_arudha(chart, base_house)
+            elif derivation == "upa_pada":
+                # Upa Pada = Arudha of 12th house
+                derived_si = compute_arudha(chart, 12)
+            else:
+                # Unsupported derivation — can't evaluate
+                return False, 0
+
+            # Target sign = offset from derived point (inclusive BPHS counting)
+            target_si = (derived_si + offset - 1) % 12
+            target_house = (target_si - chart.lagna_sign_index) % 12 + 1
+
+            # Resolve planet spec
+            if planet_spec == "any_malefic":
+                candidates = list(NATURAL_MALEFICS)
+            elif planet_spec == "any_benefic":
+                candidates = list(NATURAL_BENEFICS)
+            elif planet_spec.startswith("lord_of_"):
+                lh = int(planet_spec.split("_")[-1])
+                lord = _lord_of_house(chart, lh)
+                candidates = [lord] if lord else []
+            else:
+                candidates = [planet_spec.strip().title()]
+
+            valid_candidates = [c for c in candidates if _find_planet(chart, c)]
+            if not valid_candidates:
+                return False, 0
+
+            if mode == "aspects":
+                hit = any(
+                    _planet_aspects_house(chart, c, target_house)
+                    for c in valid_candidates
+                )
+            else:  # occupies
+                hit = any(
+                    _find_planet(chart, c).sign_index == target_si
+                    for c in valid_candidates
+                )
+            if not hit:
+                return False, 0
+            matched_house = matched_house or target_house
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0
