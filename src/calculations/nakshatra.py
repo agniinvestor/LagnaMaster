@@ -9,39 +9,12 @@ Session 113 fix: nakshatra index float error
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+from src.data.constants import SIGN_NAMES, NAKSHATRA_NAMES as _NAKSHATRA_NAMES_TUPLE
 from src.calculations.varga import _d9_sign_index
 from dataclasses import dataclass
 
-NAKSHATRA_NAMES = [
-    "Ashwini",
-    "Bharani",
-    "Krittika",
-    "Rohini",
-    "Mrigashira",
-    "Ardra",
-    "Punarvasu",
-    "Pushya",
-    "Ashlesha",
-    "Magha",
-    "Purva Phalguni",
-    "Uttara Phalguni",
-    "Hasta",
-    "Chitra",
-    "Swati",
-    "Vishakha",
-    "Anuradha",
-    "Jyeshtha",
-    "Mula",
-    "Purva Ashadha",
-    "Uttara Ashadha",
-    "Shravana",
-    "Dhanishtha",
-    "Shatabhisha",
-    "Purva Bhadrapada",
-    "Uttara Bhadrapada",
-    "Revati",
-]
+# Import from canonical source (constants.py stores as tuple); expose as list for compat
+NAKSHATRA_NAMES = list(_NAKSHATRA_NAMES_TUPLE)
 
 NAKSHATRA_LORDS = [
     "Ketu",
@@ -74,13 +47,6 @@ NAKSHATRA_LORDS = [
 ]
 
 GANDA_MOOL = {"Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"}
-
-# D9 start signs per element (Parasara method)
-# Fire signs (0,4,8) start D9 from Aries (0)
-# Earth signs (1,5,9) start from Capricorn (9)
-# Air signs  (2,6,10) start from Libra (6)
-# Water signs (3,7,11) start from Cancer (3)
-_D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
 
 # Nakshatra width: exactly 40/3 degrees = 800 arcminutes
 _NAK_WIDTH = 40.0 / 3.0  # 13.33333... degrees

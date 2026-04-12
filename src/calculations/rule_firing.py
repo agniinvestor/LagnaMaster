@@ -11,7 +11,14 @@ Usage:
     # result.feature_vector(): dict of ML-ready features
 """
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
+from src.data.constants import (
+    DEBILITATION_SIGN,
+    EXALTATION_SIGN,
+    NATURAL_BENEFICS,
+    NATURAL_MALEFICS,
+    OWN_SIGNS,
+    SIGN_LORDS,
+)
 
 from dataclasses import dataclass, field
 from src.calculations.dignity import MOOLTRIKONA_RANGES as _MT_RANGES
@@ -244,30 +251,13 @@ def _normalize_planet_name(name: str) -> str:
     return name.lower().replace(" ", "")
 
 
-# ── Sign lords (0=Aries → Mars, 1=Taurus → Venus, etc.) ──────────────────────
-
-# ── Exaltation/debilitation/own signs (from dignity.py, duplicated for perf) ──
-_EXALT_SIGN = {
-    "Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5,
-    "Jupiter": 3, "Venus": 11, "Saturn": 6, "Rahu": 1, "Ketu": 7,
-}
-_DEBIL_SIGN = {
-    "Sun": 6, "Moon": 7, "Mars": 3, "Mercury": 11,
-    "Jupiter": 9, "Venus": 5, "Saturn": 0, "Rahu": 7, "Ketu": 1,
-}
-_OWN_SIGNS = {
-    "Sun": [4], "Moon": [3], "Mars": [0, 7], "Mercury": [2, 5],
-    "Jupiter": [8, 11], "Venus": [1, 6], "Saturn": [9, 10],
-    "Rahu": [10], "Ketu": [7],
+# ── Exaltation/debilitation/own signs — canonical + Rahu/Ketu extensions ──
+_EXALT_SIGN = {**EXALTATION_SIGN, "Rahu": 1, "Ketu": 7}
+_DEBIL_SIGN = {**DEBILITATION_SIGN, "Rahu": 7, "Ketu": 1}
+_OWN_SIGNS: dict[str, list[int] | tuple[int, ...]] = {
+    **OWN_SIGNS, "Rahu": (10,), "Ketu": (7,),
 }
 # Moolatrikona: degree-bounded via _MT_RANGES (imported from dignity.py at top)
-
-# ── Parashari graha drishti (7th always; Mars 4,8; Jupiter 5,9; Saturn 3,10) ──
-_SPECIAL_ASPECTS = {
-    "Mars": {3, 7},      # 4th and 8th (0-indexed diffs: 3, 7)
-    "Jupiter": {4, 8},   # 5th and 9th
-    "Saturn": {2, 9},    # 3rd and 10th
-}
 
 
 def _lord_of_house(chart, house_num: int) -> str:
