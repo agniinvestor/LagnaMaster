@@ -1,27 +1,27 @@
 """
 src/scoring.py
 ===============
-22-rule scoring engine: evaluates each of 12 houses on BPHS rules.
-Score per house: clamped to [-10, +10].
-Source: LEGEND_ScoringRules + SCORE_H1..H12 (Excel).
+Thin wrapper around multi_axis_scoring.evaluate_house_detailed().
+Provides the ChartScores/HouseScore/RuleResult public API for D1 scoring.
+
+All rule evaluation logic lives in multi_axis_scoring.py (canonical).
+This module converts the raw evaluation results into the structured
+output format used by the API, UI, and worker.
 """
 
 from __future__ import annotations
 from dataclasses import dataclass, field
-from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
+from src.data.constants import SIGN_LORDS
 from src.ephemeris import BirthChart
-from src.calculations.house_lord import (
-    compute_house_map,
-    HouseMap,
-    is_kendra,
-    is_trikona,
-    is_dusthana,
+from src.calculations.multi_axis_scoring import (
+    evaluate_house_detailed,
+    _prepare_frame_context,
+    _aspects,
 )
-from src.calculations.dignity import DIGNITY_SCORE, compute_all_dignities
 
 
 # ---------------------------------------------------------------------------
-# House meta: life domain names + Sthir Karakas
+# House meta: life domain names
 # ---------------------------------------------------------------------------
 
 HOUSE_DOMAIN = {
@@ -40,121 +40,18 @@ HOUSE_DOMAIN = {
 }
 
 
-# Scoring weights (LEGEND_ScoringRules)
-W = {
-    "R01": +0.50,  # Shubh Rashi in house
-    "R02": +1.00,  # Benefic in house (+1.5 if Yogakaraka)
-    "R03": +0.75,  # Benefic aspects house  (WC)
-    "R04": +2.00,  # Bhavesh in Kendra/Trikon
-    "R05": +0.50,  # Bhavesh with Kendra/Trikon lord (WC)
-    "R06": +1.00,  # Bhavesh with benefic (+1.5 if Yogakaraka)
-    "R07": +0.50,  # Benefic aspects Bhavesh sign  (WC)
-    "R08": +0.75,  # Bhavesh in Shubh Kartari
-    "R09": -1.00,  # Malefic in house
-    "R10": -1.00,  # Malefic aspects house
-    "R11": -1.25,  # Dusthana lord in house
-    "R12": -0.75,  # House in Paap Kartari
-    "R13": -1.00,  # Bhavesh with malefic
-    "R14": -0.50,  # Malefic aspects Bhavesh sign  (WC)
-    "R15": -2.00,  # Bhavesh in Dusthana
-    "R16": -1.00,  # Bhavesh with Dusthana lord
-    "R17": +0.50,  # Sthir Karak in Kendra/Trikon
-    "R18": -0.50,  # Sthir Karak in Dusthana
-    "R19": -1.00,  # Bhavesh combust (-1.0; cazimi +0.5; Rx+combust -0.5)
-    "R20": +0.50,  # Bhavesh in Dig Bala house
-    "R22": +0.10,  # Bhavesh retrograde (context-dependent)
-    "R24": 1.00,  # Bhavesh dignity modifier (BUG-081)
-}
-
-WC_RULES = {"R03", "R05", "R07", "R14"}  # half weight in aggregate
-
-
 # ---------------------------------------------------------------------------
-# Planet classification helpers
-# ---------------------------------------------------------------------------
-
-
-
-def _is_benefic(planet: str, chart: BirthChart) -> bool:
-    return planet in NATURAL_BENEFICS
-
-
-def _is_malefic(planet: str, chart: BirthChart) -> bool:
-    return planet in NATURAL_MALEFICS
-
-
-def _is_yogakaraka(planet: str, lagna_sign_idx: int) -> bool:
-    """
-    Yogakaraka = planet ruling both a Kendra and Trikona simultaneously.
-    Most common: Saturn for Taurus/Libra Lagna; Mars for Cancer/Leo Lagna.
-    """
-    # Canonical yogakarakas — BPHS Ch.34 v.19-44
-    from src.calculations.functional_dignity import KNOWN_YOGAKARAKAS
-    return planet in KNOWN_YOGAKARAKAS.get(lagna_sign_idx, [])
-
-
-# ---------------------------------------------------------------------------
-# Graha Drishti (Parashari aspects) — house-based
-# All planets cast 7th aspect (full); Mars+4th+8th; Jupiter+5th+9th; Saturn+3rd+10th
+# Graha Drishti — re-exported for backward compatibility (tests import this)
 # ---------------------------------------------------------------------------
 
 
 def _planet_aspects_house(planet: str, planet_house: int, target_house: int) -> bool:
     """Return True if planet in planet_house casts a full aspect to target_house."""
-
-    def wrap(h):
-        return (h - 1) % 12 + 1
-
-    offsets = [6]  # 7th aspect (all planets)
-    if planet == "Mars":
-        offsets += [3, 7]  # 4th + 8th
-    elif planet == "Jupiter":
-        offsets += [4, 8]  # 5th + 9th
-    elif planet == "Saturn":
-        offsets += [2, 9]  # 3rd + 10th
-    # Rahu/Ketu: 5th+9th aspects per some schools; skip for Parashari base
-
-    aspected = {wrap(planet_house + o) for o in offsets}
-    return target_house in aspected
+    return _aspects(planet, planet_house, target_house)
 
 
 # ---------------------------------------------------------------------------
-# Kartari check (hemming)
-# ---------------------------------------------------------------------------
-
-
-def _shubh_kartari(sign_idx: int, house_map: HouseMap, chart: BirthChart) -> bool:
-    """True if sign is hemmed between benefics in adjacent signs."""
-    prev_sign = (sign_idx - 1) % 12
-    next_sign = (sign_idx + 1) % 12
-    prev_benefic = any(
-        p.sign_index == prev_sign and _is_benefic(name, chart)
-        for name, p in chart.planets.items()
-    )
-    next_benefic = any(
-        p.sign_index == next_sign and _is_benefic(name, chart)
-        for name, p in chart.planets.items()
-    )
-    return prev_benefic and next_benefic
-
-
-def _paap_kartari(sign_idx: int, house_map: HouseMap, chart: BirthChart) -> bool:
-    """True if sign is hemmed between malefics in adjacent signs."""
-    prev_sign = (sign_idx - 1) % 12
-    next_sign = (sign_idx + 1) % 12
-    prev_malefic = any(
-        p.sign_index == prev_sign and _is_malefic(name, chart)
-        for name, p in chart.planets.items()
-    )
-    next_malefic = any(
-        p.sign_index == next_sign and _is_malefic(name, chart)
-        for name, p in chart.planets.items()
-    )
-    return prev_malefic and next_malefic
-
-
-# ---------------------------------------------------------------------------
-# Rule result dataclass
+# Result dataclasses (public API)
 # ---------------------------------------------------------------------------
 
 
@@ -191,6 +88,11 @@ class ChartScores:
     lagna_sign: str
     houses: dict[int, HouseScore] = field(default_factory=dict)
 
+    @property
+    def house_scores(self):
+        """Alias for backward compatibility — returns list of HouseScore."""
+        return list(self.houses.values())
+
     def summary(self) -> str:
         lines = [
             f"Lagna: {self.lagna_sign}",
@@ -216,327 +118,49 @@ def _rating(score: float) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Main scoring engine
+# Main scoring entry point — delegates to multi_axis_scoring
 # ---------------------------------------------------------------------------
 
 
 def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
     """
-    Apply 22 BPHS rules across all 12 houses.
-    Returns ChartScores with per-house breakdown.
-    """
-    house_map = compute_house_map(chart)
-    dignities = compute_all_dignities(chart)
-    lagna_idx = chart.lagna_sign_index
-    dusthana = {6, 8, 12}
+    Apply BPHS rules across all 12 houses using functional benefic/malefic
+    classification. Returns ChartScores with per-house and per-rule breakdown.
 
-    # Dusthana lords (lords of houses 6, 8, 12)
-    dusthana_lords = {house_map.house_lord[h - 1] for h in dusthana}
-    # Kendra/Trikon lords
-    kendra_trikon_houses = {1, 4, 5, 7, 9, 10}
-    kt_lords = {house_map.house_lord[h - 1] for h in kendra_trikon_houses}
+    All rule evaluation is performed by evaluate_house_detailed() in
+    multi_axis_scoring.py — this function wraps the output.
+    """
+    lagna_si = chart.lagna_sign_index
+    school = "parashari"
+
+    yogakaraka, dusthana_lords, kendra_lords, trikona_lords, is_fb, is_fm, av_bindus = \
+        _prepare_frame_context(chart, lagna_si, school)
 
     result = ChartScores(lagna_sign=chart.lagna_sign)
 
     for house in range(1, 13):
-        house_sign_idx = house_map.house_sign[house - 1]
-        bhavesh = house_map.house_lord[house - 1]
-        bhavesh_house = house_map.planet_house[bhavesh]
-        bhavesh_sign_idx = chart.planets[bhavesh].sign_index
+        house_si = (lagna_si + house - 1) % 12
+        bhavesh = SIGN_LORDS[house_si]
+        bhavesh_house = (chart.planets[bhavesh].sign_index - lagna_si) % 12 + 1 if bhavesh in chart.planets else house
 
-        rules: list[RuleResult] = []
+        final_score, rule_tuples = evaluate_house_detailed(
+            house, lagna_si, chart, school,
+            av_bindus, yogakaraka, dusthana_lords, kendra_lords, trikona_lords,
+            is_fb, is_fm,
+        )
 
-        # --- R01: Shubh (Gentle) Rashi in house ---
-        r01_score = W["R01"] if house_sign_idx in GENTLE_SIGNS else 0.0
-        rules.append(
+        rules = [
             RuleResult(
-                "R01", "Gentle sign in house", r01_score, triggered=r01_score != 0
+                rule=name,
+                description=desc,
+                score=score,
+                is_wc=is_wc,
+                triggered=triggered,
             )
-        )
+            for name, desc, score, is_wc, triggered in rule_tuples
+        ]
 
-        # --- R02: Benefic in house ---
-        r02_score = 0.0
-        for pname, p in chart.planets.items():
-            if p.sign_index == house_sign_idx:
-                if _is_benefic(pname, chart):
-                    bonus = 1.5 if _is_yogakaraka(pname, lagna_idx) else 1.0
-                    r02_score += bonus
-        rules.append(
-            RuleResult("R02", "Benefic in house", r02_score, triggered=r02_score != 0)
-        )
-
-        # --- R03: Benefic aspects house (WC) ---
-        r03_score = 0.0
-        for pname, p in chart.planets.items():
-            if p.sign_index != house_sign_idx:  # not conjunct (that's R02)
-                if _is_benefic(pname, chart):
-                    ph = house_map.planet_house[pname]
-                    if _planet_aspects_house(pname, ph, house):
-                        r03_score += W["R03"]
-        rules.append(
-            RuleResult(
-                "R03",
-                "Benefic aspects house",
-                r03_score,
-                is_wc=True,
-                triggered=r03_score != 0,
-            )
-        )
-
-        # --- R04: Bhavesh in Kendra or Trikon ---
-        r04_score = 0.0
-        if (is_kendra(bhavesh_house) or is_trikona(bhavesh_house)) and not is_dusthana(
-            bhavesh_house
-        ):
-            r04_score = W["R04"]
-        rules.append(
-            RuleResult(
-                "R04", "Bhavesh in Kendra/Trikon", r04_score, triggered=r04_score != 0
-            )
-        )
-
-        # --- R05: Bhavesh with Kendra/Trikon lord (WC) ---
-        r05_score = 0.0
-        for pname, p in chart.planets.items():
-            if (
-                pname != bhavesh
-                and p.sign_index == bhavesh_sign_idx
-                and pname in kt_lords
-            ):
-                r05_score = W["R05"]
-                break
-        rules.append(
-            RuleResult(
-                "R05",
-                "Bhavesh with Kendra/Trikon lord",
-                r05_score,
-                is_wc=True,
-                triggered=r05_score != 0,
-            )
-        )
-
-        # --- R06: Bhavesh with benefic ---
-        r06_score = 0.0
-        for pname, p in chart.planets.items():
-            if pname != bhavesh and p.sign_index == bhavesh_sign_idx:
-                if _is_benefic(pname, chart):
-                    bonus = 1.5 if _is_yogakaraka(pname, lagna_idx) else 1.0
-                    r06_score += bonus
-        rules.append(
-            RuleResult(
-                "R06", "Bhavesh with benefic", r06_score, triggered=r06_score != 0
-            )
-        )
-
-        # --- R07: Benefic aspects Bhavesh sign (WC) ---
-        r07_score = 0.0
-        bhavesh_house_num = bhavesh_house
-        for pname, p in chart.planets.items():
-            if pname != bhavesh and _is_benefic(pname, chart):
-                ph = house_map.planet_house[pname]
-                if _planet_aspects_house(pname, ph, bhavesh_house_num):
-                    r07_score += W["R07"]
-        rules.append(
-            RuleResult(
-                "R07",
-                "Benefic aspects Bhavesh sign",
-                r07_score,
-                is_wc=True,
-                triggered=r07_score != 0,
-            )
-        )
-
-        # --- R08: Bhavesh in Shubh Kartari ---
-        r08_score = (
-            W["R08"] if _shubh_kartari(bhavesh_sign_idx, house_map, chart) else 0.0
-        )
-        rules.append(
-            RuleResult(
-                "R08", "Bhavesh in Shubh Kartari", r08_score, triggered=r08_score != 0
-            )
-        )
-
-        # --- R09: Malefic in house ---
-        r09_score = 0.0
-        for pname, p in chart.planets.items():
-            if p.sign_index == house_sign_idx and _is_malefic(pname, chart):
-                r09_score += W["R09"]
-        rules.append(
-            RuleResult("R09", "Malefic in house", r09_score, triggered=r09_score != 0)
-        )
-
-        # --- R10: Malefic aspects house ---
-        r10_score = 0.0
-        for pname, p in chart.planets.items():
-            if p.sign_index != house_sign_idx and _is_malefic(pname, chart):
-                ph = house_map.planet_house[pname]
-                if _planet_aspects_house(pname, ph, house):
-                    r10_score += W["R10"]
-        rules.append(
-            RuleResult(
-                "R10", "Malefic aspects house", r10_score, triggered=r10_score != 0
-            )
-        )
-
-        # --- R11: Dusthana lord in house ---
-        r11_score = 0.0
-        for pname, p in chart.planets.items():
-            if p.sign_index == house_sign_idx and pname in dusthana_lords:
-                r11_score += W["R11"]
-        rules.append(
-            RuleResult(
-                "R11", "Dusthana lord in house", r11_score, triggered=r11_score != 0
-            )
-        )
-
-        # --- R12: House in Paap Kartari ---
-        r12_score = W["R12"] if _paap_kartari(house_sign_idx, house_map, chart) else 0.0
-        rules.append(
-            RuleResult(
-                "R12", "House in Paap Kartari", r12_score, triggered=r12_score != 0
-            )
-        )
-
-        # --- R13: Bhavesh with malefic ---
-        r13_score = 0.0
-        for pname, p in chart.planets.items():
-            if (
-                pname != bhavesh
-                and p.sign_index == bhavesh_sign_idx
-                and _is_malefic(pname, chart)
-            ):
-                r13_score += W["R13"]
-        rules.append(
-            RuleResult(
-                "R13", "Bhavesh with malefic", r13_score, triggered=r13_score != 0
-            )
-        )
-
-        # --- R14: Malefic aspects Bhavesh sign (WC) ---
-        r14_score = 0.0
-        for pname, p in chart.planets.items():
-            if pname != bhavesh and _is_malefic(pname, chart):
-                ph = house_map.planet_house[pname]
-                if _planet_aspects_house(pname, ph, bhavesh_house_num):
-                    r14_score += W["R14"]
-        rules.append(
-            RuleResult(
-                "R14",
-                "Malefic aspects Bhavesh",
-                r14_score,
-                is_wc=True,
-                triggered=r14_score != 0,
-            )
-        )
-
-        # --- R15: Bhavesh in Dusthana ---
-        r15_score = W["R15"] if is_dusthana(bhavesh_house) else 0.0
-        rules.append(
-            RuleResult(
-                "R15", "Bhavesh in Dusthana", r15_score, triggered=r15_score != 0
-            )
-        )
-
-        # --- R16: Bhavesh with Dusthana lord ---
-        r16_score = 0.0
-        for pname, p in chart.planets.items():
-            if (
-                pname != bhavesh
-                and p.sign_index == bhavesh_sign_idx
-                and pname in dusthana_lords
-            ):
-                r16_score += W["R16"]
-        rules.append(
-            RuleResult(
-                "R16", "Bhavesh with Dusthana lord", r16_score, triggered=r16_score != 0
-            )
-        )
-
-        # --- R17/R18: Sthir Karak in Kendra/Trikon or Dusthana ---
-        r17_score = 0.0
-        r18_score = 0.0
-        for karak in STHIRA_KARAKA.get(house, []):
-            if karak in chart.planets:
-                kh = house_map.planet_house[karak]
-                if is_kendra(kh) or is_trikona(kh):
-                    r17_score += W["R17"]
-                if is_dusthana(kh):
-                    r18_score += W["R18"]
-        rules.append(
-            RuleResult(
-                "R17",
-                "Sthir Karak in Kendra/Trikon",
-                r17_score,
-                triggered=r17_score != 0,
-            )
-        )
-        rules.append(
-            RuleResult(
-                "R18", "Sthir Karak in Dusthana", r18_score, triggered=r18_score != 0
-            )
-        )
-
-        # --- R19: Bhavesh combust ---
-        r19_score = 0.0
-        if bhavesh in dignities:
-            d = dignities[bhavesh]
-            if d.cazimi:
-                r19_score = +0.5
-            elif d.combust and d.is_retrograde:
-                r19_score = -0.5  # Asta Vakri (reduced effect)
-            elif d.combust:
-                r19_score = W["R19"]
-        rules.append(
-            RuleResult("R19", "Bhavesh combust", r19_score, triggered=r19_score != 0)
-        )
-
-        # --- R20: Bhavesh in Dig Bala house ---
-        r20_score = 0.0
-        if bhavesh in DIG_BALA_PEAK:
-            if bhavesh_house == DIG_BALA_PEAK[bhavesh]:
-                r20_score = W["R20"]
-        rules.append(
-            RuleResult(
-                "R20", "Bhavesh in Dig Bala house", r20_score, triggered=r20_score != 0
-            )
-        )
-
-        # --- R21: Pushkara Navamsha ---
-        # KNOWN_GAP: BUG-049 — hardcoded to 0. Needs Pushkara Navamsha lookup
-        # (12 specific navamsas per BPHS Ch.8 that confer extra strength).
-        rules.append(
-            RuleResult("R21", "Bhavesh Pada in Pushkara Navamsha", 0.0, triggered=False)
-        )
-
-        # --- R22: Bhavesh retrograde ---
-        r22_score = 0.0
-        if bhavesh in chart.planets and chart.planets[bhavesh].is_retrograde:
-            if bhavesh in ("Jupiter", "Saturn"):
-                r22_score = +0.25  # introspective — slightly beneficial
-            elif bhavesh in ("Mercury", "Venus", "Mars"):
-                r22_score = -0.50  # delayed significations
-            else:
-                r22_score = W["R22"]
-        rules.append(
-            RuleResult("R22", "Bhavesh retrograde", r22_score, triggered=r22_score != 0)
-        )
-
-        # --- R24: Bhavesh dignity modifier (BUG-081) ---
-        r24_score = 0.0
-        if bhavesh in dignities:
-            r24_score = DIGNITY_SCORE.get(dignities[bhavesh].dignity, 0.0) * W["R24"]
-        rules.append(
-            RuleResult(
-                "R24",
-                f"Bhavesh {bhavesh} dignity modifier",
-                r24_score,
-                triggered=r24_score != 0.0,
-            )
-        )
-
-        # --- Aggregate ---
         raw = sum(r.score * (0.5 if r.is_wc else 1.0) for r in rules)
-        final = max(-10.0, min(10.0, raw))
 
         result.houses[house] = HouseScore(
             house=house,
@@ -545,8 +169,8 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
             bhavesh_house=bhavesh_house,
             rules=rules,
             raw_score=raw,
-            final_score=final,
-            rating=_rating(final),
+            final_score=final_score,
+            rating=_rating(final_score),
         )
 
     return result
