@@ -1,24 +1,10 @@
 """Jaimini Chara Dasha — sign-based predictive cycle (Session 14)."""
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 _MAIN_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 _ODD_SIGNS = {0, 2, 4, 6, 8, 10}
 
@@ -93,7 +79,7 @@ def compute_chara_dasha(chart, birth_date: date) -> list:
         end = _ay(cd, yrs)
         entries.append(
             CharaDashaEntry(
-                _SIGN_NAMES[si], si, cd, end, round(yrs, 4), _pis(si, chart)
+                SIGN_NAMES[si], si, cd, end, round(yrs, 4), _pis(si, chart)
             )
         )
         cd = end

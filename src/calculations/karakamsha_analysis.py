@@ -13,6 +13,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 
 # ─── Ishta Devata (Chosen Deity) from Karakamsha ─────────────────────────────
@@ -61,20 +62,6 @@ class KarakamshaResult:
     is_swamsha: bool  # AK in own sign or exalt in D9
 
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
@@ -136,7 +123,7 @@ def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
     return KarakamshaResult(
         atmakaraka=ak,
         karakamsha_sign=karakamsha_si,
-        karakamsha_sign_name=_SIGN_NAMES[karakamsha_si],
+        karakamsha_sign_name=SIGN_NAMES[karakamsha_si],
         ishta_devata=ishta_planet,
         ishta_deity_name=deity_info["deity"],
         ishta_mantra_seed=deity_info["mantra_seed"],
@@ -210,7 +197,7 @@ def compute_upapada_analysis(chart, upapada_sign: int) -> UpakadaResult:
 
     return UpakadaResult(
         upapada_sign=upapada_sign,
-        upapada_sign_name=_SIGN_NAMES[upapada_sign],
+        upapada_sign_name=SIGN_NAMES[upapada_sign],
         planets_in_upapada=in_upapada,
         planets_aspecting_upapada=aspecting,
         spouse_quality=spouse_quality,

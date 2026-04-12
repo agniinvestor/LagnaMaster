@@ -18,23 +18,10 @@ Source: PVRNR preface p8; BPHS Lagna Kendradi chapters.
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 @dataclass
@@ -91,7 +78,7 @@ def compute_lagna_kendradi_dasha(chart, birth_date: date) -> list[LagnaKendradiP
         end = current_date + timedelta(days=int(years * 365.25))
         periods.append(
             LagnaKendradiPeriod(
-                sign=_SIGN_NAMES[si],
+                sign=SIGN_NAMES[si],
                 sign_index=si,
                 group=group,
                 years=years,

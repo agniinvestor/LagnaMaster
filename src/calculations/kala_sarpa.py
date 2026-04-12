@@ -23,22 +23,9 @@ This is included as a "practitioner-expected" feature with appropriate disclaime
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 _KS_NAMES = [
     "Ananta",
@@ -88,8 +75,8 @@ def compute_kala_sarpa(chart) -> KalaSarpaResult:
             present=False,
             partial=False,
             yoga_name=None,
-            rahu_sign=_SIGN_NAMES[0],
-            ketu_sign=_SIGN_NAMES[6],
+            rahu_sign=SIGN_NAMES[0],
+            ketu_sign=SIGN_NAMES[6],
             planets_inside=[],
             planets_outside=[],
             is_reverse=False,
@@ -150,8 +137,8 @@ def compute_kala_sarpa(chart) -> KalaSarpaResult:
         present=present,
         partial=partial,
         yoga_name=yoga_name,
-        rahu_sign=_SIGN_NAMES[rahu_pos.sign_index % 12],
-        ketu_sign=_SIGN_NAMES[ketu_pos.sign_index % 12],
+        rahu_sign=SIGN_NAMES[rahu_pos.sign_index % 12],
+        ketu_sign=SIGN_NAMES[ketu_pos.sign_index % 12],
         planets_inside=inside,
         planets_outside=outside,
         is_reverse=is_reverse,

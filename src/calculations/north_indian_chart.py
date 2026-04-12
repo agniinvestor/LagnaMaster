@@ -15,6 +15,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 
 _SIGN_ABBREV = [
     "Ar",
@@ -31,20 +32,6 @@ _SIGN_ABBREV = [
     "Pi",
 ]
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 _PLANET_ABBREV = {
     "Sun": "Su",
@@ -176,7 +163,7 @@ def generate_north_indian_svg(
         f'role="img" aria-label="North Indian Birth Chart{" — " + title if title else ""}">',
         f"<title>North Indian Birth Chart{' — ' + title if title else ''}</title>",
         f"<desc>Vedic Jyotish birth chart in North Indian diamond style. "
-        f"Lagna (Ascendant): {_SIGN_NAMES[lagna_si]}. "
+        f"Lagna (Ascendant): {SIGN_NAMES[lagna_si]}. "
         f"Houses are fixed; signs rotate based on Lagna.</desc>",
         f'<rect width="600" height="{height}" fill="{bg_fill}"/>',
         "",

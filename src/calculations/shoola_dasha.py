@@ -19,23 +19,10 @@ for timing material success") and standard references.
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 @dataclass
@@ -99,7 +86,7 @@ def compute_shoola_dasha(chart, birth_date: date) -> list[ShoolarasiPeriod]:
         end = current_date + timedelta(days=int(years * 365.25))
         periods.append(
             ShoolarasiPeriod(
-                sign=_SIGN_NAMES[si],
+                sign=SIGN_NAMES[si],
                 sign_index=si,
                 years=years,
                 start_date=current_date,
@@ -147,7 +134,7 @@ def compute_sudasa(chart, birth_date: date) -> list[SudasaPeriod]:
         end = current_date + timedelta(days=int(years * 365.25))
         periods.append(
             SudasaPeriod(
-                sign=_SIGN_NAMES[si],
+                sign=SIGN_NAMES[si],
                 sign_index=si,
                 years=round(years, 1),
                 start_date=current_date,

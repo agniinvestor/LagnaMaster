@@ -5,25 +5,14 @@ Applied to both LagnaMaster and PyJHora outputs BEFORE diffing.
 Ensures formatting differences are never misclassified as bugs.
 """
 from __future__ import annotations
+from src.data.constants import NAKSHATRA_NAMES, SIGN_NAMES
 
 import math
 
-SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-]
 
 SIGN_LOOKUP = {s.lower(): s for s in SIGN_NAMES}
 SIGN_LOOKUP.update({str(i): s for i, s in enumerate(SIGN_NAMES)})
 
-NAKSHATRA_NAMES = [
-    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
-    "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni",
-    "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha", "Anuradha",
-    "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha", "Shravana",
-    "Dhanishta", "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada",
-    "Revati",
-]
 
 # Common transliteration variants → canonical name
 NAKSHATRA_VARIANTS: dict[str, str] = {

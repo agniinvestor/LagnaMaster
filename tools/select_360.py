@@ -11,6 +11,7 @@ Usage:
     .venv/bin/python tools/select_360.py [--input DIR] [--output PATH]
 """
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 
 import argparse
 import hashlib
@@ -24,10 +25,6 @@ sys.path.insert(0, str(ROOT))
 PYJHORA_DIR = ROOT / "tests" / "fixtures" / "pyjhora_computed"
 OUTPUT_PATH = ROOT / "tests" / "fixtures" / "verified_360.json"
 
-SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-]
 
 COMBUSTION_THRESHOLDS = {
     "Mercury": 14, "Venus": 10, "Mars": 17, "Jupiter": 11, "Saturn": 15,

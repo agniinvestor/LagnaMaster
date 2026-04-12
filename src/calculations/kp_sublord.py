@@ -14,20 +14,10 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import VIMSHOTTARI_YEARS
 from dataclasses import dataclass
 
 # ─── Vimshottari dasha years (classic sequence) ───────────────────────────────
-_DASHA_YEARS: dict[str, float] = {
-    "Ketu": 7,
-    "Venus": 20,
-    "Sun": 6,
-    "Moon": 10,
-    "Mars": 7,
-    "Rahu": 18,
-    "Jupiter": 16,
-    "Saturn": 19,
-    "Mercury": 17,
-}
 _DASHA_ORDER = [
     "Ketu",
     "Venus",
@@ -107,12 +97,12 @@ def _build_sublord_table() -> list[SubLordEntry]:
 
         for sub_idx in range(9):
             sl_planet = _DASHA_ORDER[(sl_start_idx + sub_idx) % 9]
-            sl_years = _DASHA_YEARS[sl_planet]
+            sl_years = VIMSHOTTARI_YEARS[sl_planet]
             sub_span = _NAK_SPAN * (sl_years / _TOTAL_YEARS)
 
             start = nak_start + sum(
                 _NAK_SPAN
-                * _DASHA_YEARS[_DASHA_ORDER[(sl_start_idx + i) % 9]]
+                * VIMSHOTTARI_YEARS[_DASHA_ORDER[(sl_start_idx + i) % 9]]
                 / _TOTAL_YEARS
                 for i in range(sub_idx)
             )

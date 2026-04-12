@@ -21,21 +21,12 @@ from dataclasses import dataclass  # noqa: F401
 from math import sqrt  # noqa: F401
 from datetime import datetime  # noqa: F401
 from typing import Optional  # noqa: F401
-from src.data.constants import DIG_BALA_PEAK
+from src.data.constants import DIG_BALA_PEAK, NAISARGIKA_BALA
 
 # ─── Constants ───────────────────────────────────────────────────────────────
 
 # Naisargika (Natural) Bala — fixed hierarchy, never changes
 # Source: BPHS Ch.27
-NAISARGIKA_BALA: dict[str, float] = {
-    "Sun": 60.0,
-    "Moon": 51.43,
-    "Venus": 42.86,
-    "Jupiter": 34.29,
-    "Mercury": 25.71,
-    "Mars": 17.14,
-    "Saturn": 8.57,
-}
 
 
 # Saptavargaja Bala Virupas — BPHS Ch.27 v.2-4 (p.265, Santhanam Vol 1)

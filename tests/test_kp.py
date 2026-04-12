@@ -4,11 +4,11 @@ tests/test_kp.py
 Test suite for src/calculations/kp.py — Session 17.
 
 22 tests covering:
-  - _SEQUENCE sums to 120 years
+  - VIMSHOTTARI_SEQUENCE sums to 120 years
   - _SUB_SPAN total equals nakshatra span (13.333°)
   - kp_sub_at() returns valid KPPosition for any longitude
   - Star lords match nakshatra lords from nakshatra.py
-  - Sub lord is always in _SEQUENCE
+  - Sub lord is always in VIMSHOTTARI_SEQUENCE
   - Sub degree range encloses the input longitude
   - 1947 India: Lagna (Taurus ~7.73°) known nakshatra = Krittika, SL = Sun
   - 1947 India: Moon (~93.98° = Cancer ~3.98°) → Pushya, SL = Saturn
@@ -59,9 +59,9 @@ def kp_chart(india_chart):
 
 class TestConstants:
     def test_sequence_length(self):
-        from src.calculations.kp import _SEQUENCE
+        from src.data.constants import VIMSHOTTARI_SEQUENCE
 
-        assert len(_SEQUENCE) == 9
+        assert len(VIMSHOTTARI_SEQUENCE) == 9
 
     def test_vimshottari_sum_120(self):
         from src.calculations.kp import _VIMSH_YEARS
@@ -115,20 +115,22 @@ class TestKpSubAt:
         assert pos.star_lord == "Mercury"
 
     def test_sub_lord_in_sequence(self):
-        from src.calculations.kp import kp_sub_at, _SEQUENCE
+        from src.calculations.kp import kp_sub_at
+        from src.data.constants import VIMSHOTTARI_SEQUENCE
 
         for lon in [0.5, 15.3, 90.7, 180.0, 270.5, 359.0]:
             pos = kp_sub_at(lon)
-            assert pos.sub_lord in _SEQUENCE, (
+            assert pos.sub_lord in VIMSHOTTARI_SEQUENCE, (
                 f"Sub lord {pos.sub_lord!r} not in sequence at {lon}"
             )
 
     def test_sub_sub_lord_in_sequence(self):
-        from src.calculations.kp import kp_sub_at, _SEQUENCE
+        from src.calculations.kp import kp_sub_at
+        from src.data.constants import VIMSHOTTARI_SEQUENCE
 
         for lon in [5.0, 47.3, 123.6, 300.1]:
             pos = kp_sub_at(lon)
-            assert pos.sub_sub_lord in _SEQUENCE
+            assert pos.sub_sub_lord in VIMSHOTTARI_SEQUENCE
 
     def test_sub_degree_range_encloses_longitude(self):
         from src.calculations.kp import kp_sub_at
@@ -169,9 +171,9 @@ class TestIndiaFixture:
         assert kp_chart.planets["Moon"].star_lord == "Saturn"
 
     def test_lagna_kp_sub_lord_is_planet(self, kp_chart):
-        from src.calculations.kp import _SEQUENCE
+        from src.data.constants import VIMSHOTTARI_SEQUENCE
 
-        assert kp_chart.lagna_kp.sub_lord in _SEQUENCE
+        assert kp_chart.lagna_kp.sub_lord in VIMSHOTTARI_SEQUENCE
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -198,11 +200,11 @@ class TestKpChartStructure:
         assert set(kp_chart.houses.keys()) == set(range(1, 13))
 
     def test_house_sub_lords_are_planets(self, kp_chart):
-        from src.calculations.kp import _SEQUENCE
+        from src.data.constants import VIMSHOTTARI_SEQUENCE
 
         for h in range(1, 13):
             sl = kp_chart.house_sub_lord(h)
-            assert sl in _SEQUENCE, f"House {h} sub lord {sl!r} not in sequence"
+            assert sl in VIMSHOTTARI_SEQUENCE, f"House {h} sub lord {sl!r} not in sequence"
 
     def test_house1_cusp_at_lagna_sign_start(self, india_chart, kp_chart):
         # Whole-sign: H1 cusp = lagna_sign_index × 30°

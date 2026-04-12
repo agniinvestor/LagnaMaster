@@ -10,34 +10,11 @@ Source: K.N. Rao, Timing Events Through Vimshottari Dasha
 """
 
 from __future__ import annotations
+from src.data.constants import VIMSHOTTARI_SEQUENCE, VIMSHOTTARI_YEARS
 from dataclasses import dataclass, field
 from datetime import date
 from dateutil.relativedelta import relativedelta
 from typing import Optional
-
-_SEQUENCE = [
-    "Ketu",
-    "Venus",
-    "Sun",
-    "Moon",
-    "Mars",
-    "Rahu",
-    "Jupiter",
-    "Saturn",
-    "Mercury",
-]
-
-VIMSHOTTARI_YEARS: dict[str, float] = {
-    "Ketu": 7,
-    "Venus": 20,
-    "Sun": 6,
-    "Moon": 10,
-    "Mars": 7,
-    "Rahu": 18,
-    "Jupiter": 16,
-    "Saturn": 19,
-    "Mercury": 17,
-}
 
 
 @dataclass
@@ -71,12 +48,12 @@ def compute_pratyantar_dashas(
     PD_years = md_years * ad_years * pd_lord_years / (120 * 120)
     """
     # Start sequence from the AD lord
-    start_idx = _SEQUENCE.index(ad_lord)
+    start_idx = VIMSHOTTARI_SEQUENCE.index(ad_lord)
     pratyantars = []
     current_start = ad_start
 
     for i in range(9):
-        pd_lord = _SEQUENCE[(start_idx + i) % 9]
+        pd_lord = VIMSHOTTARI_SEQUENCE[(start_idx + i) % 9]
         pd_lord_years = VIMSHOTTARI_YEARS[pd_lord]
         pd_years = ad_years * pd_lord_years / 120.0
 

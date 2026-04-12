@@ -23,7 +23,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -42,24 +42,6 @@ _SIGNS = [
 ]
 
 # Dignity lookups
-_EXALT = {
-    "Sun": 0,
-    "Moon": 1,
-    "Mars": 9,
-    "Mercury": 5,
-    "Jupiter": 3,
-    "Venus": 11,
-    "Saturn": 6,
-}
-_DEBIL = {
-    "Sun": 6,
-    "Moon": 7,
-    "Mars": 3,
-    "Mercury": 11,
-    "Jupiter": 9,
-    "Venus": 5,
-    "Saturn": 0,
-}
 _OWN = {
     "Sun": {4},
     "Moon": {3},
@@ -90,7 +72,7 @@ _NAT_ENEMY = {
 
 
 def _dignity_pct(planet: str, sign_idx: int) -> float:
-    if _EXALT.get(planet) == sign_idx:
+    if EXALTATION_SIGN.get(planet) == sign_idx:
         return 0.75
     if sign_idx in _OWN.get(planet, set()):
         return 1.0

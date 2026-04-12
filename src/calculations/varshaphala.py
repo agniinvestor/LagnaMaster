@@ -16,6 +16,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass, field
 from datetime import date
 
@@ -275,20 +276,6 @@ def _cast_varsha_chart(solar_return_jd: float, natal_lat: float, natal_lon: floa
 
 # ─── Muntha ────────────────────────────────────────────────────────────────────
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 def _compute_muntha(natal_lagna_si: int, years_elapsed: int) -> int:
@@ -461,9 +448,9 @@ def compute_varshaphala(
         solar_return_date=sr_date,
         varsha_chart=varsha_chart,
         varsha_lagna_sign_index=varsha_lagna_si,
-        varsha_lagna_sign=_SIGN_NAMES[varsha_lagna_si],
+        varsha_lagna_sign=SIGN_NAMES[varsha_lagna_si],
         muntha_sign_index=muntha_si,
-        muntha_sign=_SIGN_NAMES[muntha_si],
+        muntha_sign=SIGN_NAMES[muntha_si],
         varsha_pati=varsha_pati,
         tajika_aspects=aspects,
         year_quality="neutral",

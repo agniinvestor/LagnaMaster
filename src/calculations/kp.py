@@ -50,6 +50,7 @@ Data classes
 """
 
 from __future__ import annotations
+from src.data.constants import VIMSHOTTARI_SEQUENCE
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -58,17 +59,6 @@ if TYPE_CHECKING:
 
 # ── Vimshottari sequence and periods ─────────────────────────────────────────
 
-_SEQUENCE = [
-    "Ketu",
-    "Venus",
-    "Sun",
-    "Moon",
-    "Mars",
-    "Rahu",
-    "Jupiter",
-    "Saturn",
-    "Mercury",
-]
 
 _VIMSH_YEARS: dict[str, int] = {
     "Ketu": 7,
@@ -89,12 +79,12 @@ _NAK_SPAN_MIN = _NAK_SPAN * 60  # 800' arcminutes
 
 # Sub-span for each planet within one nakshatra (in degrees)
 _SUB_SPAN: dict[str, float] = {
-    p: _VIMSH_YEARS[p] / _TOTAL_YEARS * _NAK_SPAN for p in _SEQUENCE
+    p: _VIMSH_YEARS[p] / _TOTAL_YEARS * _NAK_SPAN for p in VIMSHOTTARI_SEQUENCE
 }
 # Verify total ≈ _NAK_SPAN
 assert abs(sum(_SUB_SPAN.values()) - _NAK_SPAN) < 1e-9
 
-# Nakshatra names and their lords (27 entries = _SEQUENCE × 3)
+# Nakshatra names and their lords (27 entries = VIMSHOTTARI_SEQUENCE × 3)
 _NAK_NAMES = [
     "Ashwini",
     "Bharani",
@@ -124,7 +114,7 @@ _NAK_NAMES = [
     "Uttara Bhadrapada",
     "Revati",
 ]
-_NAK_LORDS = (_SEQUENCE * 3)[:27]  # Ketu→Venus→Sun→Moon→Mars→Rahu→Jup→Sat→Mer × 3
+_NAK_LORDS = (VIMSHOTTARI_SEQUENCE * 3)[:27]  # Ketu→Venus→Sun→Moon→Mars→Rahu→Jup→Sat→Mer × 3
 
 
 # ── KP position lookup ────────────────────────────────────────────────────────
@@ -155,7 +145,7 @@ def kp_sub_at(longitude: float) -> KPPosition:
     2. Star lord = _NAK_LORDS[nak_idx]
     3. Within the nakshatra, the subs are laid out sequentially starting
        from the nakshatra lord's sub (not always Ketu).
-       Starting planet index = position of star_lord in _SEQUENCE.
+       Starting planet index = position of star_lord in VIMSHOTTARI_SEQUENCE.
     4. Walk through sub-spans until the longitude is enclosed.
     5. Apply the same logic recursively within the sub for sub-sub.
 
@@ -168,7 +158,7 @@ def kp_sub_at(longitude: float) -> KPPosition:
     pos_in_nak = lon - nak_start  # 0 … _NAK_SPAN
 
     star_lord = _NAK_LORDS[nak_idx]
-    start_idx = _SEQUENCE.index(star_lord)
+    start_idx = VIMSHOTTARI_SEQUENCE.index(star_lord)
 
     # Walk subs within nakshatra
     cursor = 0.0
@@ -176,7 +166,7 @@ def kp_sub_at(longitude: float) -> KPPosition:
     sub_start = 0.0
     sub_end = _NAK_SPAN
     for i in range(9):
-        planet = _SEQUENCE[(start_idx + i) % 9]
+        planet = VIMSHOTTARI_SEQUENCE[(start_idx + i) % 9]
         span = _SUB_SPAN[planet]
         if cursor + span > pos_in_nak or i == 8:
             sub_lord = planet
@@ -188,11 +178,11 @@ def kp_sub_at(longitude: float) -> KPPosition:
     # Sub-sub: same pattern within the sub
     pos_in_sub = lon - sub_start
     sub_span_total = sub_end - sub_start
-    sub2_start_idx = _SEQUENCE.index(sub_lord)
+    sub2_start_idx = VIMSHOTTARI_SEQUENCE.index(sub_lord)
     cursor2 = 0.0
     sub_sub_lord = sub_lord
     for i in range(9):
-        planet = _SEQUENCE[(sub2_start_idx + i) % 9]
+        planet = VIMSHOTTARI_SEQUENCE[(sub2_start_idx + i) % 9]
         frac = _VIMSH_YEARS[planet] / _TOTAL_YEARS
         span2 = frac * sub_span_total
         if cursor2 + span2 > pos_in_sub or i == 8:

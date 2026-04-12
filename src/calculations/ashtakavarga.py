@@ -16,23 +16,10 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 
 _PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 # ─── Dual-ruled sign pairs (for Ekadhipatya Shodhana) ───────────────────────
 # {planet: (sign_index_1, sign_index_2)}
@@ -147,7 +134,7 @@ class AshtakavargaTable:
         return self.bindus[sign_index % 12]
 
     def bindu_for_sign_name(self, sign_name: str) -> int:
-        idx = _SIGN_NAMES.index(sign_name)
+        idx = SIGN_NAMES.index(sign_name)
         return self.bindus[idx]
 
     def strength(self, sign_index: int) -> str:

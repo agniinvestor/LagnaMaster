@@ -44,6 +44,7 @@ Data classes
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -371,20 +372,6 @@ def vimshopak_grade(score: float) -> str:
     return "Very Weak"
 
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 # ── main public function ──────────────────────────────────────────────────────
@@ -419,7 +406,7 @@ def compute_vimshopak(chart) -> VimshopakResult:  # chart: BirthChart
         for div, weight in SAPTA_VARGA_WEIGHTS.items():
             fn = _VARGA_FN[div]
             si = fn(lon)
-            sign_name = _SIGN_NAMES[si]
+            sign_name = SIGN_NAMES[si]
             planet_key = (
                 subject if subject != "Lagna" else "Sun"
             )  # Lagna uses sign dignity table

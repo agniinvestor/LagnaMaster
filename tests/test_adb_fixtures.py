@@ -14,20 +14,6 @@ import os
 import pytest
 
 FIXTURES_DIR = "tests/fixtures/adb_charts"
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 def load_adb_fixture(key: str) -> dict:

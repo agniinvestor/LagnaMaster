@@ -15,28 +15,10 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
+from src.data.constants import DEBILITATION_SIGN, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 from dataclasses import dataclass
 from datetime import date
 
-_EXALT = {
-    "Sun": 0,
-    "Moon": 1,
-    "Mars": 9,
-    "Mercury": 5,
-    "Jupiter": 3,
-    "Venus": 11,
-    "Saturn": 6,
-}
-_DEBIL = {
-    "Sun": 6,
-    "Moon": 7,
-    "Mars": 3,
-    "Mercury": 11,
-    "Jupiter": 9,
-    "Venus": 5,
-    "Saturn": 0,
-}
 
 
 @dataclass
@@ -258,7 +240,7 @@ def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
         pos = chart.planets.get(p)
         if not pos:
             continue
-        debil_si = _DEBIL.get(p)
+        debil_si = DEBILITATION_SIGN.get(p)
         if pos.sign_index != debil_si:
             results.append(
                 YogaResult(
@@ -277,13 +259,13 @@ def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
         # Check 3 cancellation conditions
         dispositor = SIGN_LORDS[debil_si]
         disp_house = hmap.planet_house.get(dispositor, 0)
-        exalt_lord = SIGN_LORDS[_EXALT.get(p, debil_si)]
+        exalt_lord = SIGN_LORDS[EXALTATION_SIGN.get(p, debil_si)]
         exalt_lord_house = hmap.planet_house.get(exalt_lord, 0)
         from src.calculations.panchanga import compute_navamsha_chart
 
         d9_map = compute_navamsha_chart(chart)
         p_d9_si = d9_map.get(p, -1)
-        exalt_in_d9 = p_d9_si == _EXALT.get(p, -1)
+        exalt_in_d9 = p_d9_si == EXALTATION_SIGN.get(p, -1)
 
         cond1 = is_kendra(disp_house)
         cond2 = is_kendra(exalt_lord_house)

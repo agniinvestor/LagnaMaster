@@ -15,21 +15,8 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 def parasara_drekkana(longitude: float) -> int:
@@ -158,7 +145,7 @@ def drekkana_chart_positions(chart, method: str = "parasara") -> dict[str, dict]
         si = drekkana_sign(pd.longitude, method)
         result[planet] = {
             "sign_index": si,
-            "sign_name": _SIGN_NAMES[si],
+            "sign_name": SIGN_NAMES[si],
             "method": method,
         }
     return result

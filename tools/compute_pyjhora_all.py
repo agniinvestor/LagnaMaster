@@ -8,6 +8,7 @@ Usage:
     .venv/bin/python tools/compute_pyjhora_all.py [--limit N] [--output PATH]
 """
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 
 import argparse
 import json
@@ -29,10 +30,6 @@ import swisseph as swe  # noqa: E402
 ADB_DIR = ROOT / "tests" / "fixtures" / "adb_charts"
 OUTPUT_DIR = ROOT / "tests" / "fixtures" / "pyjhora_computed"
 
-SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-]
 
 # PyJHora uses Swiss Ephemeris planet constants:
 # 0=Sun, 1=Moon, 2=Mars, 3=Mercury, 4=Jupiter, 5=Venus, 6=Saturn, 7=Rahu, 8=Ketu

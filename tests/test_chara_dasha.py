@@ -11,8 +11,8 @@ from src.calculations.chara_dasha import (
     _sld,
     _pis,
     CharaDashaEntry,
-    _SIGN_NAMES,
 )
+from src.data.constants import SIGN_NAMES
 
 BD = date(1947, 8, 15)
 
@@ -58,7 +58,7 @@ class TestSequence:
         )
 
     def test_all_signs(self, ids):
-        assert {d.sign for d in ids} == set(_SIGN_NAMES)
+        assert {d.sign for d in ids} == set(SIGN_NAMES)
 
     def test_no_dupes(self, ids):
         signs = [d.sign for d in ids]

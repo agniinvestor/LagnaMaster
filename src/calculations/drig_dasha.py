@@ -21,23 +21,10 @@ Source: PVRNR preface p8; BPHS Ch.41-43.
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 # Standard rasi aspects: every sign aspects the 7th from it.
 # Special: Aries,Cancer,Libra,Capricorn also aspect 4th and 8th.
@@ -126,7 +113,7 @@ def compute_drig_dasha(chart, birth_date: date) -> list[DrigPeriod]:
         planets_in = [p for p, pos in chart.planets.items() if pos.sign_index == si]
         periods.append(
             DrigPeriod(
-                sign=_SIGN_NAMES[si],
+                sign=SIGN_NAMES[si],
                 sign_index=si,
                 years=years,
                 start_date=current_date,

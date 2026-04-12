@@ -14,7 +14,7 @@ Usage:
     .venv/bin/python tools/diff_engine.py [--charts-only CHART_ID,...]
 """
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import SIGN_LORDS, SIGN_NAMES
 
 import argparse
 import json
@@ -78,10 +78,6 @@ MANIFEST_PATH = ROOT / "tests" / "fixtures" / "verified_360.json"
 PYJHORA_DIR = ROOT / "tests" / "fixtures" / "pyjhora_computed"
 RESULTS_DIR = ROOT / "tests" / "fixtures" / "verified_360_results"
 
-SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-]
 
 PLANET_NAMES = [
     "Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus",

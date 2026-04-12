@@ -9,6 +9,7 @@ Session 113 fix: nakshatra index float error
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 
 NAKSHATRA_NAMES = [
@@ -97,20 +98,6 @@ class NakshatraPosition:
     longitude: float
 
 
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
 
 
 def nakshatra_index(longitude: float) -> int:
@@ -157,8 +144,8 @@ def nakshatra_position(longitude: float) -> NakshatraPosition:
         nakshatra_index=nak_idx,
         pada=pada,
         dasha_lord=lord,
-        navamsha_sign=_SIGN_NAMES[d9_si],
-        navamsha_sign_name=_SIGN_NAMES[d9_si],
+        navamsha_sign=SIGN_NAMES[d9_si],
+        navamsha_sign_name=SIGN_NAMES[d9_si],
         is_ganda_mool=(name in GANDA_MOOL),
         longitude=lon,
     )
