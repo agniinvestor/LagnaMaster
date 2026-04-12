@@ -19,10 +19,9 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES
 from dataclasses import dataclass
 
-_KENDRA = {1, 4, 7, 10}
-_DUSTHANA = {6, 8, 12}
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 
@@ -82,14 +81,14 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
         )
 
     # ── 2. No planets in kendra ───────────────────────────────────────────────
-    kendra_occupied = any(ph.get(p, 0) in _KENDRA for p in planets_7)
+    kendra_occupied = any(ph.get(p, 0) in KENDRA_HOUSES for p in planets_7)
     if not kendra_occupied:
         exceptions.append(
             ChartException(
                 "Empty Kendras",
                 "High",
                 "No planets in kendra houses — weak structural support, Mahapurusha yogas absent",
-                list(_KENDRA),
+                list(KENDRA_HOUSES),
                 True,
             )
         )
@@ -122,7 +121,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
 
     # ── 4. Dusthana lords all strong ─────────────────────────────────────────
     d_lords = [hmap.house_lord[h - 1] for h in [6, 8, 12]]
-    d_lords_strong = sum(1 for dl in d_lords if ph.get(dl, 0) in _KENDRA | {5, 9})
+    d_lords_strong = sum(1 for dl in d_lords if ph.get(dl, 0) in KENDRA_HOUSES | {5, 9})
     if d_lords_strong >= 2:
         exceptions.append(
             ChartException(
@@ -137,7 +136,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
     # ── 5. Moon severely afflicted ────────────────────────────────────────────
     moon_h = ph.get("Moon", 0)
     moon_malefics = [p for p in _NAT_MALEF if ph.get(p) == moon_h and p != "Moon"]
-    moon_in_dusthana = moon_h in _DUSTHANA
+    moon_in_dusthana = moon_h in DUSTHANA_HOUSES
     if len(moon_malefics) >= 2 or (moon_malefics and moon_in_dusthana):
         exceptions.append(
             ChartException(

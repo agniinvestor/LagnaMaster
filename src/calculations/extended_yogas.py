@@ -37,9 +37,6 @@ _DEBIL = {
     "Venus": 5,
     "Saturn": 0,
 }
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
 
 
 @dataclass

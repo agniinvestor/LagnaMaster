@@ -21,13 +21,12 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import KENDRA_HOUSES, TRIKONA_HOUSES
 from dataclasses import dataclass
 from datetime import date
 
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
 
 
 @dataclass
@@ -82,7 +81,7 @@ def compute_dominance_factors(
     # ── Benefic Override Rules ────────────────────────────────────────────────
     # Jupiter in kendra: aspects H1,H5,H7,H9 from its position
     jup_h = ph.get("Jupiter", 0)
-    if jup_h in _KENDRA:
+    if jup_h in KENDRA_HOUSES:
         # Jupiter aspects 5th and 9th from its position + 7th
         jup_aspects = {
             jup_h,
@@ -116,7 +115,7 @@ def compute_dominance_factors(
     ven_h = ph.get("Venus", 0)
     ven_si = chart.planets.get("Venus")
     _VEN_OWN = {1, 6}  # Taurus si=1, Libra si=6
-    if ven_h in _KENDRA | _TRIKONA and ven_si and ven_si.sign_index in _VEN_OWN:
+    if ven_h in KENDRA_HOUSES | TRIKONA_HOUSES and ven_si and ven_si.sign_index in _VEN_OWN:
         factors.append(
             DominanceFactor(
                 factor_type="Benefic Override",
@@ -183,7 +182,7 @@ def compute_dominance_factors(
             md_house = ph.get(md.lord, 0)
             md_d1 = d1_scores.get(md_house, 0.0)
             # Dasha lord in strong house = positive period
-            md_strong = md_house in _KENDRA | _TRIKONA
+            md_strong = md_house in KENDRA_HOUSES | TRIKONA_HOUSES
             md_score = md_d1
             dasha_priority = DominanceFactor(
                 factor_type="Dasha Priority",

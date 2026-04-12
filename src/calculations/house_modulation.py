@@ -24,13 +24,9 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, MARAKA_HOUSES, TRIKONA_HOUSES, UPACHAYA_HOUSES
 from dataclasses import dataclass
 
-_UPACHAYA = {3, 6, 10, 11}
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
-_MARAKA = {2, 7}
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 
@@ -57,15 +53,15 @@ def house_type_modifier(
     ph = hmap.planet_house
 
     # Determine house type
-    if house in _UPACHAYA:
+    if house in UPACHAYA_HOUSES:
         htype = "Upachaya"
-    elif house in _KENDRA:
+    elif house in KENDRA_HOUSES:
         htype = "Kendra"
-    elif house in _TRIKONA - {1}:
+    elif house in TRIKONA_HOUSES - {1}:
         htype = "Trikona"
-    elif house in _DUSTHANA:
+    elif house in DUSTHANA_HOUSES:
         htype = "Dusthana"
-    elif house in _MARAKA:
+    elif house in MARAKA_HOUSES:
         htype = "Maraka"
     else:
         htype = "Neutral"

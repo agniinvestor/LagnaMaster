@@ -18,6 +18,7 @@ Source: BPHS Ch.35; B.V. Raman "Three Hundred Important Combinations" (intro);
 """
 
 from __future__ import annotations
+from src.data.constants import KENDRA_HOUSES
 from dataclasses import dataclass, field
 
 _PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
@@ -33,8 +34,6 @@ _WATER = {3, 7, 11}
 _ODD = {0, 2, 4, 6, 8, 10}
 _EVEN = {1, 3, 5, 7, 9, 11}
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
 
 
 @dataclass
@@ -95,7 +94,7 @@ def detect_nabhasa_yogas(chart) -> list[NabhasaYoga]:
 
     # ── GROUP B: Dala (2 yogas) ───────────────────────────────────────────────
     occ_houses = _occupied_houses(chart)
-    all_kendra = all(h in _KENDRA for h in occ_houses)
+    all_kendra = all(h in KENDRA_HOUSES for h in occ_houses)
     all_apoklima = all(h in {3, 6, 9, 12} for h in occ_houses)
 
     yogas.append(

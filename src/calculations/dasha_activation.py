@@ -14,12 +14,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 from typing import Optional
-from src.data.constants import SIGN_LORDS
+from src.data.constants import KENDRA_HOUSES, SIGN_LORDS, TRIKONA_HOUSES
 
 # ─── Conditional Dasha Applicability ─────────────────────────────────────────
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
 
 
 def compute_applicable_dashas(chart) -> dict:
@@ -42,7 +40,7 @@ def compute_applicable_dashas(chart) -> dict:
     if "Rahu" in chart.planets:
         rahu_si = chart.planets["Rahu"].sign_index
         rahu_house = (rahu_si - lagna_si) % 12 + 1
-        if rahu_house not in (_KENDRA | _TRIKONA):
+        if rahu_house not in (KENDRA_HOUSES | TRIKONA_HOUSES):
             applicable.append("ashtottari")
 
     # Kalachakra: Moon in Pushya (index 7) nakshatra

@@ -16,9 +16,6 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
 
 
 @dataclass

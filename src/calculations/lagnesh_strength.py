@@ -19,7 +19,7 @@ India 1947: Venus (Lagnesh) in H3 (neutral), neutral dignity → 0.00 ✓
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, SIGN_LORDS, TRIKONA_HOUSES
 from dataclasses import dataclass
 
 _EXALT_SI = {
@@ -40,9 +40,6 @@ _DEBIL_SI = {
     "Venus": 5,
     "Saturn": 0,
 }
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
 
 
 @dataclass
@@ -80,10 +77,10 @@ def compute_lagnesh_strength(chart) -> LagneshStrengthResult:
         elif _DEBIL_SI.get(lagnesh) == si:
             dignity = "Debilitation"
 
-    in_kendra = house in _KENDRA
-    in_trikona = house in _TRIKONA
+    in_kendra = house in KENDRA_HOUSES
+    in_trikona = house in TRIKONA_HOUSES
     in_strong = in_kendra or in_trikona
-    in_dush = house in _DUSTHANA
+    in_dush = house in DUSTHANA_HOUSES
     is_exalt = dignity == "Exaltation"
     is_debil = dignity == "Debilitation"
 

@@ -19,12 +19,11 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import KENDRA_HOUSES, TRIKONA_HOUSES
 from dataclasses import dataclass
 from datetime import date
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_STRONG = _KENDRA | _TRIKONA
+_STRONG = KENDRA_HOUSES | TRIKONA_HOUSES
 
 
 @dataclass

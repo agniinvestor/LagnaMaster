@@ -25,7 +25,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
-from src.data.constants import DIG_BALA_PEAK, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA, TRIKONA_HOUSES
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -108,9 +108,6 @@ _WEIGHTS = {
 _YK_MULT = {"parashari": 1.5, "kp": 1.5, "jaimini": 1.25}
 _WC_RULES = {"R03", "R05", "R07", "R14"}
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
 
 
 # D10 formula: sign = (si*10 + floor(deg/3)) % 12  for odd sign
@@ -242,7 +239,7 @@ def _score_one_house(
         total += W["R03"] * 0.5  # WC = half weight
 
     # R04 bhavesh in kendra/trikona (not dusthana)
-    if (bh_house in _KENDRA or bh_house in _TRIKONA) and bh_house not in _DUSTHANA:
+    if (bh_house in KENDRA_HOUSES or bh_house in TRIKONA_HOUSES) and bh_house not in DUSTHANA_HOUSES:
         total += W["R04"]
 
     # R05 (WC) bhavesh with kendra/trikona lord
@@ -290,7 +287,7 @@ def _score_one_house(
             from src.calculations.dignity import _NAISARGIKA, EXALT_SIGN
             is_friendly = _NAISARGIKA.get((mc, bhavesh), "Neutral") == "Friend"
             is_exalted = EXALT_SIGN.get(mc) == mc_si
-            in_good_house = p_house.get(mc, 0) in _KENDRA or p_house.get(mc, 0) in _TRIKONA
+            in_good_house = p_house.get(mc, 0) in KENDRA_HOUSES or p_house.get(mc, 0) in TRIKONA_HOUSES
             if is_friendly or is_exalted or in_good_house:
                 mitigated = True
                 break
@@ -301,7 +298,7 @@ def _score_one_house(
         total += W["R14"] * 0.5
 
     # R15 bhavesh in dusthana
-    if bh_house in _DUSTHANA:
+    if bh_house in DUSTHANA_HOUSES:
         total += W["R15"]
 
     # R16 bhavesh with dusthana lord (6/8/12) — BPHS Ch.11 note (c), p.125
@@ -321,7 +318,7 @@ def _score_one_house(
             total += W["R17"]
         else:
             dist = (house - karak_house) % 12 + 1
-            if dist in _DUSTHANA:
+            if dist in DUSTHANA_HOUSES:
                 total += W["R18"]
 
     # R19 combustion
@@ -466,9 +463,9 @@ def score_axis(
     yogakaraka = yogakaraka_for_lagna(frame_lagna_si)
 
     # Build dusthana/kendra/trikona lord sets for this frame
-    dusthana_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _DUSTHANA}
-    kendra_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _KENDRA}
-    trikona_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _TRIKONA}
+    dusthana_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in DUSTHANA_HOUSES}
+    kendra_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in KENDRA_HOUSES}
+    trikona_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in TRIKONA_HOUSES}
 
     is_fb, is_fm = _make_frame_funcs(frame_lagna_si, chart, school)
 

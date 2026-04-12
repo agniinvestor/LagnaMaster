@@ -18,12 +18,10 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, TRIKONA_HOUSES
 from dataclasses import dataclass
 from datetime import date
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
 
 
 @dataclass
@@ -65,9 +63,9 @@ def compute_house_promise(chart, house: int) -> PromiseLevel:
     lord = hmap.house_lord[house - 1]
     lord_house = ph.get(lord, 0)
 
-    if lord_house in _KENDRA | _TRIKONA:
+    if lord_house in KENDRA_HOUSES | TRIKONA_HOUSES:
         key_factors.append(f"{lord} (lord) in strong house H{lord_house}")
-    if lord_house in _DUSTHANA:
+    if lord_house in DUSTHANA_HOUSES:
         key_factors.append(f"{lord} (lord) in dusthana H{lord_house}")
 
     # Benefics/malefics in the house

@@ -23,25 +23,7 @@ Additional rules:
 
 from __future__ import annotations
 from dataclasses import dataclass
-
-_SIGN_NAMES = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
-_DUSTHANA = {6, 8, 12}
-_KENDRA_TRIKONA = {1, 4, 5, 7, 9, 10}
-_NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+from src.data.constants import KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_NAMES, TRIKONA_HOUSES
 
 
 @dataclass
@@ -92,15 +74,15 @@ def compute_upapada(chart) -> UpapadaAnalysis:
 
     ul_lord = hmap.house_lord[(ul_si - lagna_si) % 12]
     ul_lord_house = ph.get(ul_lord, 0)
-    ul_lord_strong = ul_lord_house in _KENDRA_TRIKONA
+    ul_lord_strong = ul_lord_house in (KENDRA_HOUSES | TRIKONA_HOUSES)
 
     # 2nd from UL
     second_ul_si = (ul_si + 1) % 12
-    second_ul_sign = _SIGN_NAMES[second_ul_si]
+    second_ul_sign = SIGN_NAMES[second_ul_si]
     second_house = (second_ul_si - lagna_si) % 12 + 1
     planets_2nd = [p for p, h in ph.items() if h == second_house]
-    bens_2nd = [p for p in planets_2nd if p in _NAT_BENEF]
-    mals_2nd = [p for p in planets_2nd if p in _NAT_MALEF]
+    bens_2nd = [p for p in planets_2nd if p in NATURAL_BENEFICS]
+    mals_2nd = [p for p in planets_2nd if p in NATURAL_MALEFICS]
 
     notes = []
     if "Jupiter" in planets_2nd or "Jupiter" in [
@@ -131,7 +113,7 @@ def compute_upapada(chart) -> UpapadaAnalysis:
         longevity = "Possible challenges — mixed signals in 2nd from UL"
 
     return UpapadaAnalysis(
-        ul_sign=_SIGN_NAMES[ul_si],
+        ul_sign=SIGN_NAMES[ul_si],
         ul_sign_index=ul_si,
         ul_house=ul_from_lagna,
         ul_lord=ul_lord,

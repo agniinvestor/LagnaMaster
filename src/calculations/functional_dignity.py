@@ -18,14 +18,10 @@ Sources:
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, SIGN_LORDS, TRIKONA_HOUSES
 from dataclasses import dataclass
 
 
-_KENDRA = {1, 4, 7, 10}
-_TRIKONA = {1, 5, 9}
-_DUSTHANA = {6, 8, 12}
-_UPACHAYA = {3, 6, 10, 11}
 
 # Movable/Fixed/Dual Lagnas for Badhaka
 _MOVABLE_LAGNAS = {0, 3, 6, 9}  # Aries, Cancer, Libra, Capricorn
@@ -90,9 +86,9 @@ def compute_functional_classifications(
             )
             continue
 
-        rules_kendra = any(h in _KENDRA for h in houses)
-        rules_trikona = any(h in _TRIKONA for h in houses)
-        rules_dusthana = any(h in _DUSTHANA for h in houses)
+        rules_kendra = any(h in KENDRA_HOUSES for h in houses)
+        rules_trikona = any(h in TRIKONA_HOUSES for h in houses)
+        rules_dusthana = any(h in DUSTHANA_HOUSES for h in houses)
         rules_maraka = any(h in {2, 7} for h in houses)
         is_badhaka = planet == badhaka_lord
 
@@ -100,8 +96,8 @@ def compute_functional_classifications(
         # H1 is simultaneously kendra+trikona, so a planet ruling ONLY H1
         # doesn't qualify — it needs a separate kendra AND separate trikona.
         # BUG-055: H1 lord was always classified as yogakaraka.
-        kendra_houses = {h for h in houses if h in _KENDRA}
-        trikona_houses = {h for h in houses if h in _TRIKONA}
+        kendra_houses = {h for h in houses if h in KENDRA_HOUSES}
+        trikona_houses = {h for h in houses if h in TRIKONA_HOUSES}
         is_yogakaraka = bool(
             kendra_houses and trikona_houses and kendra_houses != trikona_houses
         )
