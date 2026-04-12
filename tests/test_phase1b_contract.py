@@ -239,5 +239,5 @@ def test_corpus_stats_display(capsys):
     print(f"  trait + dasha_dependent:       {trait_dasha}")
     print("=" * 60)
 
-    # This test always passes — it's informational
-    assert True
+    # Verify corpus is non-empty (if it's empty, stats are meaningless)
+    assert total > 0, "Corpus has no Phase 1b rules"
