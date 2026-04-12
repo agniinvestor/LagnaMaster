@@ -70,14 +70,13 @@ def tarabala(natal_nakshatra_idx: int, transit_nakshatra_idx: int) -> dict:
 CHANDRABALA_GOOD_POSITIONS = {
     1,
     3,
-    5,
     6,
     7,
     10,
     11,
-}  # transit Moon positions from natal Moon
-CHANDRABALA_BAD_POSITIONS = {4, 8, 12}
-# Note: H2, H9 are neutral; H6 is special (upachaya — challenging but growth)
+}  # transit Moon positions from natal Moon (Phaladeepika)
+CHANDRABALA_BAD_POSITIONS = {4, 5, 8, 12}
+# Note: H2, H9 are neutral; H5 is classically unfavorable per standard muhurtha texts
 
 
 def chandrabala(natal_moon_sign: int, transit_moon_sign: int) -> dict:
