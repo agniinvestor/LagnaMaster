@@ -110,10 +110,10 @@ The builder also blocks on entity_target mismatches, mixed-entity rules, and pre
 ## Session Protocol (MANDATORY)
 
 **At session START:**
-1. Read `lessons_learned.md` — check if any pattern is relevant to today's work
-2. Read `core_principles.md` — refresh the decision-making constraints
-3. Read `tools/INDEX.md` — know what tools exist. Do NOT rebuild existing tools.
-4. Read `docs/RULE_CONTRACT_V2.md` — the canonical V2 schema (encoding/audit sessions)
+1. Read `docs/PROJECT_STRATEGY.md` — the golden source for project state, architecture, work items, and decisions
+2. Read `tools/INDEX.md` — know what tools exist. Do NOT rebuild existing tools.
+3. If encoding: read `docs/RULE_CONTRACT_V2.md` — the canonical V2 schema
+4. Check `lessons_learned.md` for patterns relevant to today's work
 5. Verify all controls exist for the work you're about to do (Principle #4)
 
 **At session END:**
@@ -201,6 +201,36 @@ A session is shipped when:
 
 ---
 
+## Canonical Source Map (DO NOT duplicate — import from these)
+
+When a calculation exists in multiple files, one is canonical and others delegate.
+Before implementing any astrological calculation, check this map. If it exists, import — don't rewrite.
+
+| Calculation | Canonical module | Delegates/imports from it |
+|---|---|---|
+| **Constants: signs, nakshatras, exaltation, lords** | `src/data/constants.py` | nakshatra.py, rule_firing.py, ishta_kashta.py, longevity.py |
+| **Dignity (exalt/debil/own/MT/combustion)** | `src/calculations/dignity.py` | rule_firing.py, divisional_charts.py, sapta_varga.py |
+| **D9 Navamsha formula** | `src/calculations/varga.py:_d9_sign_index` | nakshatra.py, sapta_varga.py, divisional_charts.py |
+| **All varga sign computations (D1–D60)** | `src/calculations/varga.py` | divisional_charts.py, sapta_varga.py |
+| **Scoring (house score, rule evaluation)** | `src/calculations/multi_axis_scoring.py` | scoring.py (thin wrapper) |
+| **Aspect strength (sputa drishti)** | `src/calculations/sputa_drishti.py` | scoring_patches.py, rule_firing.py |
+| **Chara Karakas (7/8 planet ranking)** | `src/calculations/chara_karaka_config.py` | chara_karak.py (wraps as list[CharaKarak]) |
+| **Karakamsha (D9 of Atmakaraka)** | `src/calculations/multi_lagna.py:compute_karakamsha` | karakamsha_analysis.py |
+| **Nabhasa Yogas (32 BPHS Ch.35)** | `src/calculations/nabhasa_yogas.py` | yogas_extended.py (wraps as YogaResult) |
+| **Longevity (Pindayu/Nisargayu/Amsayu)** | `src/calculations/longevity.py` | ayurdaya.py (composite wrapper only) |
+| **Graha Yuddha (planetary war)** | `src/calculations/graha_yuddha.py` | planet_effectiveness.py |
+| **Tarabala/Chandrabala (transit quality)** | `src/calculations/transit_quality_advanced.py` | (detailed model; muhurtha_complete.py has independent binary model for muhurtha) |
+| **Vimshopaka (16-varga Shodasavarga)** | `src/calculations/divisional_charts.py` | scoring_v3.py |
+| **Vimshopak (7-varga Sapta Varga)** | `src/calculations/sapta_varga.py` | app.py (UI) |
+| **Derived house arithmetic** | `src/calculations/derived_house.py` | (all bhavat-bhavam goes here) |
+| **Source text registry** | `src/corpus/source_texts.py` | v2_builder.py |
+| **Rule schema (V2)** | `docs/RULE_CONTRACT_V2.md` | v2_builder.py enforces |
+
+**Convention:** canonical modules have `_canonical` naming in imports or docstrings saying "delegates to X".
+If you add a new calculation, add it to this map. If you find a calculation not in this map, check for duplicates before writing.
+
+---
+
 ## What NOT to do
 
 - Do not re-read `docs/MEMORY.md` mid-batch (stale relative to conversation context)
@@ -213,3 +243,4 @@ A session is shipped when:
 - Do not define rule fields outside `docs/RULE_CONTRACT_V2.md` — it is the single source of truth
 - Do not guess corpus structure — check `docs/CORPUS_MANIFEST.json` for file inventory
 - Do not rebuild infrastructure that exists. Read INDEX.md. If confused, grep before writing.
+- Do not reimplement calculations that have a canonical source. Check the Canonical Source Map above. Import, don't rewrite.
