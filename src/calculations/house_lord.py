@@ -8,28 +8,13 @@ Source: CALC_BhaveshMap, REF_Zodiac row 7 (sign lords).
 from __future__ import annotations
 from dataclasses import dataclass
 from src.ephemeris import BirthChart
+from src.data.constants import SIGN_LORDS
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.3 v.47-48", "session": "S317"}
 
-# Classical sign lords (index 0=Aries…11=Pisces)
-_SIGN_LORD = [
-    "Mars",
-    "Venus",
-    "Mercury",
-    "Moon",
-    "Sun",
-    "Mercury",
-    "Venus",
-    "Mars",
-    "Jupiter",
-    "Saturn",
-    "Saturn",
-    "Jupiter",
-]
-
 
 def sign_lord(sign_idx: int) -> str:
-    return _SIGN_LORD[sign_idx % 12]
+    return SIGN_LORDS[sign_idx % 12]
 
 
 @dataclass

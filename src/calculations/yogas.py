@@ -19,6 +19,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from src.ephemeris import BirthChart
 from src.calculations.house_lord import compute_house_map, is_kendra
+from src.calculations.dignity import EXALT_SIGN as _EXALTATION_SIGN, OWN_SIGNS as _OWN_SIGNS_LIST
 
 
 # ── Data class ─────────────────────────────────────────────────────────────────
@@ -37,27 +38,8 @@ class Yoga:
 
 # ── Dignity tables ─────────────────────────────────────────────────────────────
 
-# sign_index → planet that is exalted there
-_EXALTATION_SIGN: dict[str, int] = {
-    "Sun": 0,  # Aries
-    "Moon": 1,  # Taurus
-    "Mars": 9,  # Capricorn
-    "Mercury": 5,  # Virgo
-    "Jupiter": 3,  # Cancer
-    "Venus": 11,  # Pisces
-    "Saturn": 6,  # Libra
-}
 
-# Own signs per planet (sign_index)
-_OWN_SIGNS: dict[str, set[int]] = {
-    "Sun": {4},  # Leo
-    "Moon": {3},  # Cancer
-    "Mars": {0, 7},  # Aries, Scorpio
-    "Mercury": {2, 5},  # Gemini, Virgo
-    "Jupiter": {8, 11},  # Sagittarius, Pisces
-    "Venus": {1, 6},  # Taurus, Libra
-    "Saturn": {9, 10},  # Capricorn, Aquarius
-}
+_OWN_SIGNS: dict[str, set[int]] = {p: set(s) for p, s in _OWN_SIGNS_LIST.items()}
 
 # Pancha Mahapurusha names
 _PM_NAME = {

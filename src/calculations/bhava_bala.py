@@ -30,20 +30,7 @@ def compute_bhava_bala(
     """
     from src.calculations.house_lord import compute_house_map
 
-    _SIGN_LORDS_BB = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
+    from src.data.constants import SIGN_LORDS as _SIGN_LORDS_BB
 
     lagna_si = chart.lagna_sign_index
     hmap = compute_house_map(chart)

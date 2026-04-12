@@ -40,6 +40,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA
+from src.calculations.multi_axis_scoring import _aspects
 
 
 
@@ -329,7 +330,6 @@ def _extract_bhavesh_house_type(
 
 # ── S197 extractors ──────────────────────────────────────────────────────────
 
-from src.calculations.multi_axis_scoring import _aspects  # canonical aspect check
 
 
 def _extract_benefic_net_score(

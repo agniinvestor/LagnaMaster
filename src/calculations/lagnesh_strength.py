@@ -22,24 +22,7 @@ from __future__ import annotations
 from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, SIGN_LORDS, TRIKONA_HOUSES
 from dataclasses import dataclass
 
-_EXALT_SI = {
-    "Sun": 0,
-    "Moon": 1,
-    "Mars": 9,
-    "Mercury": 5,
-    "Jupiter": 3,
-    "Venus": 11,
-    "Saturn": 6,
-}
-_DEBIL_SI = {
-    "Sun": 6,
-    "Moon": 7,
-    "Mars": 3,
-    "Mercury": 11,
-    "Jupiter": 9,
-    "Venus": 5,
-    "Saturn": 0,
-}
+from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, DEBIL_SIGN as _DEBIL_SI
 
 
 @dataclass

@@ -24,6 +24,7 @@ Public API
 
 from __future__ import annotations
 from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
+from src.calculations.dignity import OWN_SIGNS as _OWN_LIST, _NAISARGIKA
 from dataclasses import dataclass
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.6 v.1-22", "session": "S318"}
@@ -43,34 +44,20 @@ _SIGNS = [
     "Pisces",
 ]
 
-# Dignity lookups
-_OWN = {
-    "Sun": {4},
-    "Moon": {3},
-    "Mars": {0, 7},
-    "Mercury": {2, 5},
-    "Jupiter": {8, 11},
-    "Venus": {1, 6},
-    "Saturn": {9, 10},
-}
-_NAT_FRIEND = {
-    "Sun": {"Moon", "Mars", "Jupiter"},
-    "Moon": {"Sun", "Mercury"},
-    "Mars": {"Sun", "Moon", "Jupiter"},
-    "Mercury": {"Sun", "Venus"},
-    "Jupiter": {"Sun", "Moon", "Mars"},
-    "Venus": {"Mercury", "Saturn"},
-    "Saturn": {"Mercury", "Venus"},
-}
-_NAT_ENEMY = {
-    "Sun": {"Venus", "Saturn"},
-    "Moon": {"None"},
-    "Mars": {"Mercury"},
-    "Mercury": {"Moon"},
-    "Jupiter": {"Mercury", "Venus"},
-    "Venus": {"Sun", "Moon"},
-    "Saturn": {"Sun", "Moon", "Mars"},
-}
+# Dignity lookups — from canonical sources
+
+_OWN = {p: set(s) for p, s in _OWN_LIST.items()}
+
+# Build friend/enemy sets from canonical _NAISARGIKA
+_NAT_FRIEND: dict[str, set[str]] = {}
+_NAT_ENEMY: dict[str, set[str]] = {}
+for (p1, p2), rel in _NAISARGIKA.items():
+    if p1 in ("Rahu", "Ketu") or p2 in ("Rahu", "Ketu"):
+        continue
+    if rel == "Friend":
+        _NAT_FRIEND.setdefault(p1, set()).add(p2)
+    elif rel == "Enemy":
+        _NAT_ENEMY.setdefault(p1, set()).add(p2)
 
 
 def _dignity_pct(planet: str, sign_idx: int) -> float:

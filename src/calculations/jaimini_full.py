@@ -17,6 +17,7 @@ Public API
 
 from __future__ import annotations
 from src.data.constants import SIGN_LORDS
+from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, OWN_SIGNS as _OWN_LIST
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -33,24 +34,8 @@ _SIGNS = [
     "Aquarius",
     "Pisces",
 ]
-_EXALT_SI = {
-    "Sun": 0,
-    "Moon": 1,
-    "Mars": 9,
-    "Mercury": 5,
-    "Jupiter": 3,
-    "Venus": 11,
-    "Saturn": 6,
-}
-_OWN = {
-    "Sun": {4},
-    "Moon": {3},
-    "Mars": {0, 7},
-    "Mercury": {2, 5},
-    "Jupiter": {8, 11},
-    "Venus": {1, 6},
-    "Saturn": {9, 10},
-}
+
+_OWN = {p: set(s) for p, s in _OWN_LIST.items()}
 
 
 @dataclass

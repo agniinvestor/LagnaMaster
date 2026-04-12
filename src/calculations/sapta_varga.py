@@ -45,6 +45,8 @@ Data classes
 
 from __future__ import annotations
 from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
+from src.calculations.dignity import EXALT_SIGN as _EXALT, DEBIL_SIGN as _DEBIL, OWN_SIGNS, _NAISARGIKA
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -80,33 +82,10 @@ _DIGNITY_FRACTION = {
 
 # sign indices: Ar=0 Ta=1 Ge=2 Cn=3 Le=4 Vi=5 Li=6 Sc=7 Sg=8 Cp=9 Aq=10 Pi=11
 
-_EXALT: dict[str, int] = {
-    "Sun": 0,
-    "Moon": 1,
-    "Mars": 9,
-    "Mercury": 5,
-    "Jupiter": 3,
-    "Venus": 11,
-    "Saturn": 6,
-}
-_DEBIL: dict[str, int] = {
-    "Sun": 6,
-    "Moon": 7,
-    "Mars": 3,
-    "Mercury": 11,
-    "Jupiter": 9,
-    "Venus": 5,
-    "Saturn": 0,
-}
-_OWN: dict[str, set[int]] = {
-    "Sun": {4},
-    "Moon": {3},
-    "Mars": {0, 7},
-    "Mercury": {2, 5},
-    "Jupiter": {8, 11},
-    "Venus": {1, 6},
-    "Saturn": {9, 10},
-}
+
+# Convert OWN_SIGNS (list format) to set format used by _sign_dignity
+_OWN: dict[str, set[int]] = {p: set(s) for p, s in OWN_SIGNS.items()}
+
 _MOOLTRIKONA: dict[str, int] = {
     # Only the sign matters here (degree range irrelevant for varga analysis)
     "Sun": 4,  # Leo
@@ -118,91 +97,13 @@ _MOOLTRIKONA: dict[str, int] = {
     "Saturn": 10,  # Aquarius
 }
 
-# Naisargika (permanent) friendship table: True = Friend, None = Neutral, False = Enemy
-# Rows = planet, Cols = sign lord encountered (Sun/Moon/Mars/Mercury/Jupiter/Venus/Saturn)
-# Only used when Rahu/Ketu or a planet encounters another's sign.
-_NAI: dict[str, dict[str, str]] = {
-    #           Sun     Moon    Mars    Mercury Jupiter Venus   Saturn
-    "Sun": {
-        "Sun": "F",
-        "Moon": "F",
-        "Mars": "F",
-        "Mercury": "N",
-        "Jupiter": "F",
-        "Venus": "E",
-        "Saturn": "E",
-    },
-    "Moon": {
-        "Sun": "F",
-        "Moon": "F",
-        "Mars": "N",
-        "Mercury": "F",
-        "Jupiter": "F",
-        "Venus": "F",
-        "Saturn": "N",
-    },
-    "Mars": {
-        "Sun": "F",
-        "Moon": "N",
-        "Mars": "F",
-        "Mercury": "E",
-        "Jupiter": "F",
-        "Venus": "E",
-        "Saturn": "N",
-    },
-    "Mercury": {
-        "Sun": "F",
-        "Moon": "E",
-        "Mars": "E",
-        "Mercury": "F",
-        "Jupiter": "N",
-        "Venus": "F",
-        "Saturn": "N",
-    },
-    "Jupiter": {
-        "Sun": "F",
-        "Moon": "F",
-        "Mars": "F",
-        "Mercury": "E",
-        "Jupiter": "F",
-        "Venus": "E",
-        "Saturn": "N",
-    },
-    "Venus": {
-        "Sun": "E",
-        "Moon": "N",
-        "Mars": "N",
-        "Mercury": "F",
-        "Jupiter": "N",
-        "Venus": "F",
-        "Saturn": "F",
-    },
-    "Saturn": {
-        "Sun": "E",
-        "Moon": "E",
-        "Mars": "N",
-        "Mercury": "F",
-        "Jupiter": "N",
-        "Venus": "F",
-        "Saturn": "F",
-    },
-}
+# Build abbreviated friendship lookup from canonical _NAISARGIKA
+_NAI_MAP = {"Friend": "F", "Neutral": "N", "Enemy": "E"}
+_NAI: dict[str, dict[str, str]] = {}
+for (p1, p2), rel in _NAISARGIKA.items():
+    _NAI.setdefault(p1, {})[p2] = _NAI_MAP.get(rel, "N")
 
-# Sign lords for all 12 signs (Rahu/Ketu have no lordship in Parashari)
-_SIGN_LORD: list[str] = [
-    "Mars",  # Aries 0
-    "Venus",  # Taurus 1
-    "Mercury",  # Gemini 2
-    "Moon",  # Cancer 3
-    "Sun",  # Leo 4
-    "Mercury",  # Virgo 5
-    "Venus",  # Libra 6
-    "Mars",  # Scorpio 7
-    "Jupiter",  # Sagittarius 8
-    "Saturn",  # Capricorn 9
-    "Saturn",  # Aquarius 10
-    "Jupiter",  # Pisces 11
-]
+_SIGN_LORD: list[str] = [SIGN_LORDS[i] for i in range(12)]
 
 _ALL_PLANETS = list(SEVEN_PLANETS) + ["Rahu", "Ketu"]
 

@@ -12,6 +12,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.calculations.dignity import _NAISARGIKA
 
 # ─── Shadbala Minimum Thresholds ─────────────────────────────────────────────
 # Source: PVRNR · BPHS Ch.27 v.76-80
@@ -47,50 +48,6 @@ def shadbala_strength_label(planet: str, total_virupas: float) -> str:
 # Source: PVRNR · BPHS Ch.15; BV Raman · Hindu Predictive Astrology Ch.3
 #
 # Permanent (Naisargika) friendship:
-_NAISARGIKA: dict[tuple[str, str], str] = {
-    ("Sun", "Moon"): "Friend",
-    ("Sun", "Mars"): "Friend",
-    ("Sun", "Jupiter"): "Friend",
-    ("Sun", "Mercury"): "Neutral",
-    ("Sun", "Venus"): "Enemy",
-    ("Sun", "Saturn"): "Enemy",
-    ("Moon", "Sun"): "Friend",
-    ("Moon", "Mercury"): "Friend",
-    ("Moon", "Mars"): "Neutral",
-    ("Moon", "Jupiter"): "Neutral",
-    ("Moon", "Venus"): "Neutral",
-    ("Moon", "Saturn"): "Neutral",
-    ("Mars", "Sun"): "Friend",
-    ("Mars", "Moon"): "Friend",
-    ("Mars", "Jupiter"): "Friend",
-    ("Mars", "Mercury"): "Enemy",
-    ("Mars", "Venus"): "Neutral",
-    ("Mars", "Saturn"): "Neutral",
-    ("Mercury", "Sun"): "Friend",
-    ("Mercury", "Venus"): "Friend",
-    ("Mercury", "Moon"): "Enemy",
-    ("Mercury", "Mars"): "Neutral",
-    ("Mercury", "Jupiter"): "Neutral",
-    ("Mercury", "Saturn"): "Neutral",
-    ("Jupiter", "Sun"): "Friend",
-    ("Jupiter", "Moon"): "Friend",
-    ("Jupiter", "Mars"): "Friend",
-    ("Jupiter", "Mercury"): "Enemy",
-    ("Jupiter", "Venus"): "Enemy",
-    ("Jupiter", "Saturn"): "Neutral",
-    ("Venus", "Mercury"): "Friend",
-    ("Venus", "Saturn"): "Friend",
-    ("Venus", "Sun"): "Enemy",
-    ("Venus", "Moon"): "Enemy",
-    ("Venus", "Mars"): "Neutral",
-    ("Venus", "Jupiter"): "Neutral",
-    ("Saturn", "Mercury"): "Friend",
-    ("Saturn", "Venus"): "Friend",
-    ("Saturn", "Sun"): "Enemy",
-    ("Saturn", "Moon"): "Enemy",
-    ("Saturn", "Mars"): "Enemy",
-    ("Saturn", "Jupiter"): "Neutral",
-}
 
 # Tatkalika friendship: planets in signs 2/3/4/10/11/12 from given planet = temporary friend
 _TEMP_FRIEND_POSITIONS = {2, 3, 4, 10, 11, 12}

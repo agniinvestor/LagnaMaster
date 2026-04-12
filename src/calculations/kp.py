@@ -51,6 +51,7 @@ Data classes
 
 from __future__ import annotations
 from src.data.constants import VIMSHOTTARI_SEQUENCE
+from src.data.constants import SIGN_LORDS as _SIGN_LORDS_DICT
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -260,35 +261,9 @@ class KPHouseSignificator:
     significators: list[str]  # ranked: occupants → star lords → house lord
 
 
-_SIGN_LORDS = [
-    "Mars",
-    "Venus",
-    "Mercury",
-    "Moon",
-    "Sun",
-    "Mercury",
-    "Venus",
-    "Mars",
-    "Jupiter",
-    "Saturn",
-    "Saturn",
-    "Jupiter",
-]
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+# kp.py uses list indexing; build from canonical dict
+_SIGN_LORDS = [_SIGN_LORDS_DICT[i] for i in range(12)]
 
 _ALL_PLANETS = [
     "Sun",

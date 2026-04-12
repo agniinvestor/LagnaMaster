@@ -18,35 +18,12 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 from typing import Optional
+from src.calculations.dignity import OWN_SIGNS as _OWN_SIGNS
 
 logger = logging.getLogger(__name__)
 
 # ─── Parivartana Yoga ────────────────────────────────────────────────────────
 
-_OWN_SIGNS: dict[str, list[int]] = {
-    "Sun": [4],
-    "Moon": [3],
-    "Mars": [0, 7],
-    "Mercury": [2, 5],
-    "Jupiter": [8, 11],
-    "Venus": [1, 6],
-    "Saturn": [9, 10],
-}
-
-_SIGN_LORDS: dict[int, str] = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 
 @dataclass
