@@ -298,11 +298,44 @@ git log --oneline --all | grep -i 'docs\|plan\|roadmap\|memory\|changelog' | wc 
 
 Record ALL results in a dashboard table before proceeding.
 
+### 0j. Document sprawl audit
+
+The project has 10+ overlapping documents. Before reading them, map the contradictions:
+
+```bash
+# Two MEMORY.md files — which is current?
+echo "Root MEMORY.md: $(wc -l < MEMORY.md) lines, last modified: $(stat -f %Sm MEMORY.md)"
+echo "docs/MEMORY.md: $(wc -l < docs/MEMORY.md) lines, last modified: $(stat -f %Sm docs/MEMORY.md)"
+
+# Two CHANGELOG.md files
+echo "Root CHANGELOG.md: $(wc -l < CHANGELOG.md) lines"
+echo "docs/CHANGELOG.md: $(wc -l < docs/CHANGELOG.md) lines"
+
+# Two rule contracts
+echo "RULE_CONTRACT_V2.md: $(wc -l < docs/RULE_CONTRACT_V2.md) lines"
+echo "PHASE1B_RULE_CONTRACT.md: $(wc -l < docs/PHASE1B_RULE_CONTRACT.md) lines"
+diff <(grep "^#" docs/RULE_CONTRACT_V2.md) <(grep "^#" docs/PHASE1B_RULE_CONTRACT.md) 2>/dev/null | head -20
+
+# Two architecture documents (ARCHITECTURE.md vs v11)
+echo "ARCHITECTURE.md: $(wc -l < docs/ARCHITECTURE.md) lines"
+echo "v11: $(wc -l < docs/superpowers/specs/2026-04-07-canonical-architecture-v11.md) lines"
+
+# ENCODING_PROTOCOL_V2 vs CLAUDE.md encoding section
+echo "ENCODING_PROTOCOL_V2.md: $(wc -l < docs/ENCODING_PROTOCOL_V2.md) lines"
+
+# Total doc count
+find . -name "*.md" -not -path "./.venv/*" -not -path "./.git/*" -not -path "./.claude/worktrees/*" -not -path "./.pytest_cache/*" | wc -l
+```
+
+For PROJECT_STRATEGY.md to be the golden source, you need to know WHICH documents it replaces and WHERE they contradict each other. This audit is the input for Section 2 (architecture reconciliation).
+
 ---
 
 ## Phase 1: Read the strategic documents
 
 Read EVERY ONE of these. Do not skim. Do not paraphrase from memory.
+
+**IMPORTANT: There are ~35 potentially relevant documents. You MUST read all of them listed below. The document sprawl IS the problem this session solves — you cannot consolidate what you haven't read.**
 
 | Document | What to extract |
 |----------|----------------|
@@ -312,13 +345,45 @@ Read EVERY ONE of these. Do not skim. Do not paraphrase from memory.
 | `docs/superpowers/specs/2026-04-07-canonical-architecture-v11.md` | **THE LATEST ARCHITECTURE.** 5-layer pipeline (Astronomy→Conventions→Derived Facts→Rule Evaluation→Aggregation). C→A→B phasing. Phase -1 with 8 stages. Canonical primitives model. 20 quality criteria with honest 55/100 self-score. READ THIS ENTIRE FILE. |
 | `docs/superpowers/specs/2026-04-07-v11-execution-plan.md` | **THE LATEST EXECUTION PLAN.** Stage-by-stage contracts with status table. Shows which stages are DONE/PARTIAL/NOT STARTED. Stage 7 scoring resolution. Testing strategy. READ THIS ENTIRE FILE. |
 | `docs/GUARDRAILS.md` | All 24 guardrails, their status, which have code enforcement |
-| `docs/RULE_CONTRACT_V2.md` | The encoding schema — what makes a rule "V2 compliant" |
+| `docs/RULE_CONTRACT_V2.md` | Encoding schema — what makes a rule "V2 compliant" |
+| `docs/PHASE1B_RULE_CONTRACT.md` | **SEPARATE from above.** Phase 1B-specific rule contract. Note overlap/contradictions with RULE_CONTRACT_V2.md. |
 | `docs/ENCODING_GRANULARITY.md` | What constitutes one rule — granularity definition |
+| `docs/ENCODING_PROTOCOL_V2.md` | V2 encoding protocol — overlaps with CLAUDE.md encoding section? |
 | `docs/CORPUS_MANIFEST.json` | Parse the JSON — rule count per source text, per chapter |
+| `docs/CLASSICAL_CORPUS.md` | **CRITICAL.** Phase 1A vs 1B distinction. The 5.7x undershooting finding. Real corpus state. What "7,466 rules" actually means. |
+| `docs/BPHS_ENCODING_ROADMAP.md` | BPHS-specific encoding plan and chapter priorities |
+| `docs/coverage_maps/bphs.md` | Which BPHS chapters are encoded vs not — the ground truth on encoding progress |
+| `docs/coverage_maps/saravali.md` | Saravali encoding coverage |
+| `docs/coverage_maps/laghu_parashari.md` | Laghu Parashari encoding coverage |
+| `docs/coverage_maps/bhavartha_ratnakara.md` | Bhavartha Ratnakara encoding coverage |
+| `docs/s318_deep_audit.md` | **CRITICAL (1241 lines).** THE master bug list. C01-C20 bugs, H01-H12 handler categories, dead code inventory. v11's Phase -1 is built on this. Read to verify what's been fixed vs what remains. |
+| `docs/s317_full_audit.md` | Earlier audit (read S318 references to understand what S317 found vs missed) |
+| `docs/BUGS.md` | Open bug tracker — are any still open? |
+| `docs/PHASE1B_CONCORDANCE_WORKFLOW.md` | How concordance is supposed to work — critical for Layer I strategy |
+| `docs/CROSS_TEXT_GOVERNANCE.md` | Cross-text rules — critical for concordance scoring |
+| `docs/KPIS.md` | What metrics exist, what targets, what's measured vs aspirational |
+| `docs/GUARDRAILS.md` | All 24 guardrails, their status, which have code enforcement |
 | `lessons_learned.md` | Every lesson (L001-L018+), which have controls, which are behavioral-only |
 | `core_principles.md` | The 10+ governing principles — are they reflected in code? |
-| `docs/MEMORY.md` | What it claims the current state is |
-| `docs/CHANGELOG.md` | Last 10-15 session entries — what was actually done recently |
+| `docs/MEMORY.md` | State tracker #1. Note: there is ALSO a root-level `MEMORY.md` (261 lines) — read both, note contradictions |
+| `MEMORY.md` | State tracker #2 (root level). Compare to `docs/MEMORY.md` for drift. |
+| `docs/CHANGELOG.md` | Last 10-15 session entries — what was actually done recently. Note: there is ALSO a root-level `CHANGELOG.md`. |
+| `CHANGELOG.md` | Root-level changelog. Compare to `docs/CHANGELOG.md` for drift. |
+| `tools/INDEX.md` | Tool inventory — what exists, prevents rebuilding |
+| `docs/PHASE1B_OUTCOME_TAXONOMY.md` | Prediction type definitions for encoding. Critical for understanding what the corpus encodes. |
+| `docs/s318_consolidation_plan.md` | The consolidation plan that v11 Stage 5 implements |
+| `docs/s317_baseline.md` | Baseline measurements before S317-S324 fixes |
+| `docs/DATA_GOVERNANCE_FRAMEWORK.md` | Data handling decisions (714 lines) — feeds into guardrails |
+| `docs/shadbala_audit_gaps.md` | Open gaps in Shadbala (a key canonical module) |
+| `docs/SESSION_LOG.md` | Session history (739 lines) — shows actual work pattern over time |
+| `AUDIT.md` | Root-level audit doc |
+| `docs/AUDIT_S305.md` | S305 audit — earlier audit baseline |
+| `PLAN.md` | Current plan state (if any) |
+| `DOCS.md` | Canonical API reference (672 lines). ARCHITECTURE.md references this. |
+| `CLAUDE.md` | Session protocol, encoding protocol, project context. This is what every session reads FIRST. The golden source must align with or replace relevant sections. |
+| `.claude/memory/MEMORY.md` | Auto-memory index — persistent cross-session memory entries |
+| `.claude/memory/feedback_*.md` | All feedback memories — user preferences and corrections. Read each one. |
+| `.claude/memory/project_*.md` | All project memories — decisions and findings. Read each one. |
 | `src/scoring.py` | Read the ACTUAL scoring logic — what 22 rules does it apply? What data does it consume? |
 | `src/calculations/multi_axis_scoring.py` | Read the extended scorer — what modules does it orchestrate? Compare to ARCHITECTURE.md Layer I list |
 | `src/calculations/scoring_v3.py` | Read the v3 orchestrator — its imports ARE the actual Layer I. Compare to designed Layer I |
