@@ -137,9 +137,90 @@ grep -n 'from src\.\|import src\.' src/calculations/scoring_v3.py | head -20
 
 **This table is the single most important output of the entire assessment.** It tells you exactly where the architecture broke down and what the minimal fix is.
 
-### 0f. The 10-layer build status
+### 0f. v11 Execution Plan stage status (THE CURRENT PLAN)
 
-Read `docs/PREDICTION_PIPELINE.md` and for each of the 10 build layers, check if the module exists AND is wired:
+The v11 execution plan (`docs/superpowers/specs/2026-04-07-v11-execution-plan.md`) has 8 stages with a status table at the top. But that table was last updated S324. Verify each stage's CLAIMED status against actual code:
+
+```bash
+# Stage 1: Fix wrong formulas (claimed ~95%)
+# Check: are Mars aspects fixed? Is Cancer yogakaraka fixed?
+grep -n 'Mars.*3.*7\|3, 7' src/calculations/sputa_drishti.py | head -3
+grep -n 'Cancer\|yogakaraka' src/scoring.py | head -3
+
+# Stage 2: Tag verification levels (claimed partial)
+grep -rL "_VERIFICATION" src/calculations/*.py 2>/dev/null | wc -l  # files WITHOUT tags
+
+# Stage 3: Module registry + enforcer (claimed DONE)
+ls -la src/MODULE_REGISTRY.py tools/import_boundary_check.py 2>/dev/null
+
+# Stage 4: Silent exception handlers (claimed ~84%)
+# You already measured this in Phase 0h
+
+# Stage 5: Consolidate to canonical primitives (claimed DONE)
+PYTHONPATH=. .venv/bin/python tools/validate_constants.py
+
+# Stage 6: Delete dead code (claimed ~10%)
+# You already measured this via reachability analysis
+
+# Stage 7: Wire missing connections (claimed DONE)
+# CRITICAL: v11 says "R24 dignity wiring" and "score_all_axes deprecated"
+grep -n 'R24\|dignity' src/scoring.py | head -5
+grep -n 'DeprecationWarning\|deprecated' src/calculations/multi_axis_scoring.py | head -3
+
+# Stage 8: Runtime invariant checker (claimed DONE)
+ls -la src/invariants.py 2>/dev/null
+grep -n 'check_chart_invariants\|invariants' src/ephemeris.py | head -3
+```
+
+Produce a verified stage status table:
+
+| Stage | v11 claims | Actual code shows | Verified status |
+|-------|-----------|-------------------|----------------|
+| 1. Fix formulas | ~95% | ? | ? |
+| 2. Verification tags | Partial | ? | ? |
+| ... | ... | ... | ... |
+
+### 0f-b. v11 20-criteria self-score verification
+
+v11 self-scored 55/100. For the 5 criteria the plan scored lowest (2/5), verify:
+
+```bash
+# Criterion 5 (Prediction Quality, scored 2/5): Does dignity affect house scores?
+grep -n 'dignity\|R24' src/scoring.py | head -10
+
+# Criterion 12 (Observability, scored 2/5): Is DEBUG logging in canonical primitives?
+grep -rn 'logger.debug' src/calculations/house_lord.py src/calculations/dignity.py src/calculations/shadbala.py | wc -l
+
+# Criterion 19 (Versioning, scored 2/5): Is corpus_version tracked?
+grep -rn 'corpus_version\|ENGINE_VERSION' src/ --include='*.py' | grep -v __pycache__ | head -5
+
+# Criterion 20 (Runtime Correctness, scored 2/5): Does invariant checker run?
+grep -rn 'check_chart_invariants\|validate_chart' src/ephemeris.py src/scoring.py | head -5
+
+# Criterion 8 (Evolvability, scored 2/5): Do ADDING_A_TEXT.md and ADDING_A_SCHOOL.md exist?
+ls docs/ADDING_A_TEXT.md docs/ADDING_A_SCHOOL.md 2>/dev/null
+```
+
+Update the 20-criteria score based on what the code shows NOW (post-surgery, post S324).
+
+### 0f-c. Reconcile the TWO architecture documents
+
+There are TWO architectures documented:
+1. **ARCHITECTURE.md + PREDICTION_PIPELINE.md**: 3 convergence layers, 10 build layers, anti-prediction zone, Bayesian posteriors
+2. **v11 spec**: 5-layer pipeline, canonical primitives model, C→A→B phasing, 20 quality criteria
+
+Questions to answer:
+- Are these complementary (v11 = implementation strategy for the convergence model)?
+- Or contradictory (v11 replaces the convergence model)?
+- Does v11's 5-layer pipeline map to the 3-convergence-layer model? If so, how?
+- v11 says Phase C needs exactly 3 things: canonical primitives, a rule engine, validation gates. Does the current codebase have all 3?
+- The convergence model talks about concordance scoring, anti-prediction zones, Bayesian posteriors. v11 says these are Phase A/B concerns. Which framing is correct for deciding NEXT STEPS?
+
+**This reconciliation determines whether the assessment follows v11's roadmap or the convergence model's roadmap. They may prescribe different next steps.**
+
+### 0f-d. The older 10-layer build status (PREDICTION_PIPELINE.md)
+
+After reading PREDICTION_PIPELINE.md, check each of the 10 build layers. But note: v11 may explicitly defer some of these to Phase A/B.
 
 ```bash
 # L1: Birth time sensitivity
@@ -226,8 +307,10 @@ Read EVERY ONE of these. Do not skim. Do not paraphrase from memory.
 | Document | What to extract |
 |----------|----------------|
 | `docs/ROADMAP.md` | Phase structure, session targets, gate criteria, current phase |
-| `docs/ARCHITECTURE.md` | 3-layer convergence model, Layer→Module mapping, the "critical architectural principle" at line ~127 |
-| `docs/PREDICTION_PIPELINE.md` | 10 build layers, 3 convergence layers, the anti-prediction zone, the FULL designed formula |
+| `docs/ARCHITECTURE.md` | OLDER architecture: 3-layer convergence model, Layer→Module mapping, "critical architectural principle" at line ~127. Note: may be SUPERSEDED by v11. |
+| `docs/PREDICTION_PIPELINE.md` | OLDER pipeline: 10 build layers, 3 convergence layers, anti-prediction zone. Note: may be SUPERSEDED by v11. |
+| `docs/superpowers/specs/2026-04-07-canonical-architecture-v11.md` | **THE LATEST ARCHITECTURE.** 5-layer pipeline (Astronomy→Conventions→Derived Facts→Rule Evaluation→Aggregation). C→A→B phasing. Phase -1 with 8 stages. Canonical primitives model. 20 quality criteria with honest 55/100 self-score. READ THIS ENTIRE FILE. |
+| `docs/superpowers/specs/2026-04-07-v11-execution-plan.md` | **THE LATEST EXECUTION PLAN.** Stage-by-stage contracts with status table. Shows which stages are DONE/PARTIAL/NOT STARTED. Stage 7 scoring resolution. Testing strategy. READ THIS ENTIRE FILE. |
 | `docs/GUARDRAILS.md` | All 24 guardrails, their status, which have code enforcement |
 | `docs/RULE_CONTRACT_V2.md` | The encoding schema — what makes a rule "V2 compliant" |
 | `docs/ENCODING_GRANULARITY.md` | What constitutes one rule — granularity definition |
@@ -267,13 +350,20 @@ Produce a comparison table:
 
 ### B. Architecture-to-implementation gap (THE critical dimension)
 
-Use the Phase 0e link-tracing table as the foundation. For each link:
-- What does the architecture DESIGN as the connection path?
-- Is that path IMPLEMENTED in code?
-- If broken, WHERE exactly does it break? (specific file, specific missing import/call)
-- What is the MINIMAL fix to reconnect it? (1 import? A new function? A rewrite?)
+**Two architecture documents exist. You must reconcile them first (Phase 0f-c).**
 
-**The architecture is not wrong — it describes a sound system.** The question is: which links in the designed chain were never built, and what is the cost to build them now vs later?
+v11 says Phase C needs exactly 3 things:
+1. Canonical primitives (one implementation per concept, BPHS-verified)
+2. A rule engine that evaluates encoded rules against charts
+3. Validation gates that prevent encoding errors
+
+Use the Phase 0e link-tracing table AND the Phase 0f stage status table. For each designed component:
+- Does it exist in code?
+- Is it wired into the production path?
+- If broken, WHERE exactly does it break?
+- What is the MINIMAL fix?
+
+Then: does the PREDICTION_PIPELINE.md convergence model add requirements beyond v11's 3 things? If so, are those requirements Phase C or Phase A/B? This determines whether concordance scoring, anti-prediction zones, and Bayesian posteriors are prerequisites for the next step or future work.
 
 ### C. Convergence layer status (measured against PREDICTION_PIPELINE.md)
 For each of the 3 convergence layers AND each of the 10 build layers:
