@@ -53,52 +53,118 @@ PYTHONPATH=. .venv/bin/python tools/ob3_calibrate.py --report 2>&1 | head -50
 # If ob3 requires data files that don't exist, note it — that's a finding.
 ```
 
-### 0e. The corpus→engine disconnect probe (CRITICAL)
+### 0e. Trace the DESIGNED architecture path (CRITICAL)
 
-This is the most important diagnostic. It answers: "Does encoding more rules produce any effect on chart scoring?"
+The architecture (ARCHITECTURE.md, PREDICTION_PIPELINE.md) proposes a specific data flow. This section traces that path through actual code to find where it breaks.
 
-```bash
-# 1. Does scoring.py import ANYTHING from src/corpus/?
-grep -rn 'corpus\|rule_firing\|build_corpus\|FiredRule' src/scoring.py
-
-# 2. Does multi_axis_scoring.py import ANYTHING from src/corpus/?
-grep -rn 'corpus\|rule_firing\|build_corpus\|FiredRule' src/calculations/multi_axis_scoring.py
-
-# 3. Does scoring_v3.py import ANYTHING from src/corpus/?
-grep -rn 'corpus\|rule_firing\|build_corpus\|FiredRule' src/calculations/scoring_v3.py
-
-# 4. What DOES rule_firing.py do, and who calls it?
-grep -rn 'from src.calculations.rule_firing\|import.*rule_firing' src/ --include='*.py' | grep -v __pycache__ | grep -v rule_firing.py
-
-# 5. Does rule_firing load the corpus and fire rules against a chart?
-grep -n 'build_corpus\|combined_corpus\|evaluate_chart' src/calculations/rule_firing.py | head -10
-
-# 6. Is inference.py (which imports rule_firing) called by any scoring path?
-grep -rn 'from src.calculations.inference\|import.*inference' src/ --include='*.py' | grep -v __pycache__ | grep -v inference.py
-
-# 7. Is concordance_score computed and USED anywhere?
-grep -rn 'concordance_score\|concordance_weight' src/ --include='*.py' | grep -v __pycache__
-
-# 8. What is the actual scoring pipeline?
-# Trace: app.py → score_chart() → scoring.py → what rules does it apply?
-grep -n 'def score_chart\|def score_house' src/scoring.py | head -5
-# Then read scoring.py to see: does it use hardcoded R01-R22 weights or corpus rules?
+**Read FIRST (mandatory before running any grep):**
+```
+docs/ARCHITECTURE.md          — Convergence Layer → Module Mapping (lines ~82-133)
+docs/PREDICTION_PIPELINE.md   — The Three Convergence Layers + 10 Build Layers
 ```
 
-If the answers to #1-#3 are all empty, that means: **the 7,466 encoded rules have zero effect on chart scoring.** Record this finding prominently.
+These documents claim a specific wiring:
+- corpus rules → rule_firing.py → inference.py → scoring_v3.py → API/UI
+- Layer I concordance computed across Parashari/KP/Jaimini schools
+- Layer II promise/capacity/delivery gates activation timing
+- Layer III empirical feedback calibrates Layer I weights
 
-### 0f. Layer implementation check
+Now trace each link in the chain. For each, answer: EXISTS / BROKEN / NOT BUILT.
 
 ```bash
-# Layer I: Classical Concordance — is concordance COMPUTED?
-grep -rn 'concordance' src/ --include='*.py' | grep -v __pycache__ | grep -v 'corpus/' | grep -v 'test'
+# ── LINK 1: Corpus → rule_firing.py ──────────────────────────────────────────
+# Does rule_firing.py load and fire corpus rules against a chart?
+grep -n 'build_corpus\|combined_corpus\|evaluate_chart\|fire_rules\|def evaluate' src/calculations/rule_firing.py | head -15
+# READ rule_firing.py:evaluate_chart() — what does it do? Does it return fired rules?
 
-# Layer II: Structural Activation — is Promise/Capacity/Delivery wired into scoring?
-grep -rn 'promise_engine\|compute_promise\|capacity\|delivery' src/scoring.py src/calculations/scoring_v3.py src/calculations/multi_axis_scoring.py
+# ── LINK 2: rule_firing.py → inference.py ────────────────────────────────────
+# Does inference.py import and call rule_firing?
+grep -n 'rule_firing\|evaluate_chart\|FiredRule' src/calculations/inference.py | head -15
+# READ inference.py:aggregate_domains() — what does it produce?
 
-# Layer III: Empirical Convergence — does feedback flow back?
-grep -rn 'feedback\|bayesian_update\|empirical.*update' src/ --include='*.py' | grep -v __pycache__ | grep -v test
+# ── LINK 3: inference.py → scoring pipeline (THE BREAK POINT?) ──────────────
+# Does scoring.py use inference or rule_firing?
+grep -rn 'corpus\|rule_firing\|inference\|build_corpus\|FiredRule' src/scoring.py
+# Does multi_axis_scoring.py use inference or rule_firing?
+grep -rn 'corpus\|rule_firing\|inference\|build_corpus\|FiredRule' src/calculations/multi_axis_scoring.py
+# Does scoring_v3.py use inference or rule_firing?
+grep -rn 'corpus\|rule_firing\|inference\|build_corpus\|FiredRule' src/calculations/scoring_v3.py
+# WHO calls inference.py in production?
+grep -rn 'from src.calculations.inference\|import.*inference' src/ --include='*.py' | grep -v __pycache__ | grep -v inference.py | grep -v test
+
+# ── LINK 4: Concordance computation ─────────────────────────────────────────
+# ARCHITECTURE.md says Layer I produces concordance scores across schools.
+# PREDICTION_PIPELINE.md says concordance < 0.35 = SUPPRESS (anti-prediction zone).
+# Is concordance_score computed? Populated? Used in any scoring path?
+grep -rn 'concordance_score\|concordance_weight\|anti.prediction\|concordance.*0\.35' src/ --include='*.py' | grep -v __pycache__
+# Is there a school_concordance field in HouseScore or any output dataclass?
+grep -rn 'school_concordance\|multi_school\|concordance' src/scoring.py src/calculations/scoring_v3.py src/calculations/multi_axis_scoring.py src/calculations/lpi.py
+
+# ── LINK 5: Layer II Promise/Capacity/Delivery ──────────────────────────────
+# ARCHITECTURE.md maps promise_engine.py L1=promise_present, L2=capacity, L3=delivery
+# Is promise_engine called by any scoring path?
+grep -rn 'promise_engine\|compute_promise\|compute_house_promise\|compute_full_promise' src/scoring.py src/calculations/scoring_v3.py src/calculations/multi_axis_scoring.py
+# WHO calls promise_engine in production?
+grep -rn 'from src.calculations.promise_engine' src/ --include='*.py' | grep -v __pycache__ | grep -v test | grep -v promise_engine.py
+
+# ── LINK 6: Layer III feedback loop ──────────────────────────────────────────
+grep -rn 'feedback\|bayesian_update\|empirical.*update\|posterior.*update\|user_prior_prob' src/ --include='*.py' | grep -v __pycache__ | grep -v test
+
+# ── LINK 7: What scoring.py ACTUALLY does ───────────────────────────────────
+# Read the 22 hardcoded rules:
+grep -n 'def score_chart\|def score_house\|R01\|R02\|R03' src/scoring.py | head -20
+# This is the ACTUAL scoring engine. Compare to what ARCHITECTURE.md claims.
+
+# ── LINK 8: What scoring_v3 ACTUALLY does ───────────────────────────────────
+# Read the imports — what modules does it orchestrate?
+grep -n 'from src\.\|import src\.' src/calculations/scoring_v3.py | head -20
+# Compare this list to the ARCHITECTURE.md Layer I module mapping.
+# Which Layer I modules are LISTED but NOT IMPORTED?
+# Which Layer II modules are LISTED but NOT IMPORTED?
 ```
+
+**For each link, produce a verdict table:**
+
+| Link | Architecture says | Code shows | Status |
+|------|-------------------|-----------|--------|
+| 1. Corpus → rule_firing | rule_firing loads corpus and fires rules | ? | EXISTS / BROKEN / NOT BUILT |
+| 2. rule_firing → inference | inference calls evaluate_chart | ? | EXISTS / BROKEN / NOT BUILT |
+| 3. inference → scoring | scoring_v3 uses inference output | ? | EXISTS / BROKEN / NOT BUILT |
+| 4. Concordance scoring | Multi-school concordance computed | ? | EXISTS / BROKEN / NOT BUILT |
+| 5. Promise/Capacity/Delivery | promise_engine feeds scoring | ? | EXISTS / BROKEN / NOT BUILT |
+| 6. Empirical feedback | Layer III calibrates Layer I | ? | EXISTS / BROKEN / NOT BUILT |
+| 7. Hardcoded vs corpus | scoring.py uses corpus rules | ? | HARDCODED / CORPUS / HYBRID |
+
+**This table is the single most important output of the entire assessment.** It tells you exactly where the architecture broke down and what the minimal fix is.
+
+### 0f. The 10-layer build status
+
+Read `docs/PREDICTION_PIPELINE.md` and for each of the 10 build layers, check if the module exists AND is wired:
+
+```bash
+# L1: Birth time sensitivity
+grep -rn 'confidence_model\|birth_time_sensitivity' src/calculations/scoring_v3.py src/scoring.py
+
+# L2: 20Q personality verification
+find src/ -name '*personality*' -o -name '*20q*' -o -name '*verification_protocol*' 2>/dev/null
+
+# L3: Conditional weight functions
+grep -rn 'conditional_weights\|W(' src/calculations/multi_axis_scoring.py | head -5
+
+# L4: Multi-school concordance
+grep -rn 'concordance\|school_concordance\|multi_school' src/calculations/scoring_v3.py src/calculations/lpi.py
+
+# L5: Bayesian posterior distributions
+grep -rn 'posterior\|bayesian\|HouseScore.*std\|HouseScore.*p10' src/ --include='*.py' | grep -v test | grep -v __pycache__
+
+# L6: Dasha temporal model
+grep -rn 'dasha_scoring\|apply_dasha_scoring' src/calculations/scoring_v3.py
+
+# L7-L10: All Phase 3+ (expected NOT BUILT)
+echo "L7-L10: Phase 3+ — expected not built yet"
+```
+
+Produce a 10-row status table: BUILT+WIRED / BUILT+UNWIRED / NOT BUILT
 
 ### 0g. Guardrail enforcement audit
 
@@ -160,7 +226,8 @@ Read EVERY ONE of these. Do not skim. Do not paraphrase from memory.
 | Document | What to extract |
 |----------|----------------|
 | `docs/ROADMAP.md` | Phase structure, session targets, gate criteria, current phase |
-| `docs/ARCHITECTURE.md` | 3-layer convergence model, canonical data flow, what's supposed to exist |
+| `docs/ARCHITECTURE.md` | 3-layer convergence model, Layer→Module mapping, the "critical architectural principle" at line ~127 |
+| `docs/PREDICTION_PIPELINE.md` | 10 build layers, 3 convergence layers, the anti-prediction zone, the FULL designed formula |
 | `docs/GUARDRAILS.md` | All 24 guardrails, their status, which have code enforcement |
 | `docs/RULE_CONTRACT_V2.md` | The encoding schema — what makes a rule "V2 compliant" |
 | `docs/ENCODING_GRANULARITY.md` | What constitutes one rule — granularity definition |
@@ -169,9 +236,13 @@ Read EVERY ONE of these. Do not skim. Do not paraphrase from memory.
 | `core_principles.md` | The 10+ governing principles — are they reflected in code? |
 | `docs/MEMORY.md` | What it claims the current state is |
 | `docs/CHANGELOG.md` | Last 10-15 session entries — what was actually done recently |
-| `src/scoring.py` | Read the ACTUAL scoring logic — what 22 rules does it apply? |
-| `src/calculations/rule_firing.py` | Read the corpus→engine bridge — is it used? |
-| `src/calculations/inference.py` | Read the inference engine — is it called? |
+| `src/scoring.py` | Read the ACTUAL scoring logic — what 22 rules does it apply? What data does it consume? |
+| `src/calculations/multi_axis_scoring.py` | Read the extended scorer — what modules does it orchestrate? Compare to ARCHITECTURE.md Layer I list |
+| `src/calculations/scoring_v3.py` | Read the v3 orchestrator — its imports ARE the actual Layer I. Compare to designed Layer I |
+| `src/calculations/rule_firing.py` | Read the corpus→engine bridge — does evaluate_chart() work? What does it return? |
+| `src/calculations/inference.py` | Read the inference engine — does aggregate_domains() produce something scoring could consume? |
+| `src/calculations/promise_engine.py` | Read Layer II — does it compute Promise/Capacity/Delivery? Who calls it? |
+| `src/calculations/lpi.py` | Read the 7-layer LPI — does it include concordance? Compare to PREDICTION_PIPELINE Layer 4 |
 
 For each document, note:
 1. What it CLAIMS the current state is
@@ -194,25 +265,32 @@ Produce a comparison table:
 - How many source texts have verse audits?
 - **KEY: Do any of the 7,466 rules affect chart scoring?** If not, state this clearly.
 
-### B. Engine-corpus connection (THE critical question)
-- The scoring engine (scoring.py, multi_axis_scoring.py) uses hardcoded R01-R22 rules.
-- The corpus has 7,466 encoded rules in src/corpus/.
-- rule_firing.py can fire corpus rules against charts.
-- **Is rule_firing.py called by the scoring pipeline? Or is it orphaned?**
-- If the scoring engine and the corpus are disconnected, then encoding more rules produces zero effect on the product. State this finding clearly.
-- What would it take to connect them?
+### B. Architecture-to-implementation gap (THE critical dimension)
 
-### C. Convergence layer status
-- Layer I (Classical Concordance): Is concordance_score populated? Computed? Used?
-- Layer II (Structural Activation): Is promise/capacity/delivery flowing into scoring?
-- Layer III (Empirical Convergence): Is any feedback mechanism operational?
-- **How many of the 3 layers are actually implemented vs just documented?**
+Use the Phase 0e link-tracing table as the foundation. For each link:
+- What does the architecture DESIGN as the connection path?
+- Is that path IMPLEMENTED in code?
+- If broken, WHERE exactly does it break? (specific file, specific missing import/call)
+- What is the MINIMAL fix to reconnect it? (1 import? A new function? A rewrite?)
 
-### D. Architecture alignment
-- Does the codebase match the canonical architecture in ARCHITECTURE.md?
-- How many condition primitives exist vs are used?
-- What features does the engine have that the corpus doesn't use?
-- What features does the corpus need that the engine doesn't have?
+**The architecture is not wrong — it describes a sound system.** The question is: which links in the designed chain were never built, and what is the cost to build them now vs later?
+
+### C. Convergence layer status (measured against PREDICTION_PIPELINE.md)
+For each of the 3 convergence layers AND each of the 10 build layers:
+- Does the module exist?
+- Is it wired into the scoring pipeline that produces user-visible output?
+- If unwired, what is the designed consumer (per ARCHITECTURE.md)?
+- What would wiring it require?
+
+**Do not conflate "module exists" with "module is wired."** A module that passes tests but isn't called by the scoring path produces zero product value.
+
+### D. The scoring engine's actual decision surface
+- scoring.py uses 22 hardcoded rules (R01-R22). Read them. What do they evaluate?
+- multi_axis_scoring.py extends this with school gates and penalties. What additional signals?
+- scoring_v3.py orchestrates multi-axis + LPI + avasthas. What's its full input set?
+- **How does THIS compare to what the architecture says Layer I should do?**
+- **What signals does the architecture claim but the engine doesn't compute?**
+- This gap between "what the engine evaluates" and "what the architecture designs" is the actionable finding. Size it: how many missing signals? How complex to add?
 
 ### E. Test reliability
 - 14,800+ tests pass. What percentage test production-reachable code?
@@ -236,32 +314,38 @@ Evaluate EACH candidate. For each, state: what it produces, what it depends on, 
 
 ### Candidates
 
+Use the Phase 0e link-tracing table to inform which candidates are viable.
+
 1. **Resume BPHS encoding** (Ch.24+ → more L3 rules)
-   - But: do more L3 rules matter if the scoring engine doesn't use them?
+   - But: trace Link 3. If inference/rule_firing output doesn't reach scoring, more rules are inert data.
 
 2. **Re-encode 6,807 L1 rules to L3** (make existing rules computable)
-   - But: computable by what? If rule_firing isn't wired into scoring, computable rules are still inert.
+   - But: computable by rule_firing. If Link 3 is broken, computable rules still don't score.
 
-3. **Wire rule_firing.py into scoring_v3** (make corpus rules affect scores)
-   - This is the bridge. Without it, encoding is academic. With it, every new rule changes the product.
-   - But: does rule_firing work correctly? Has it been validated?
+3. **Close the broken links in the architecture chain** (restore the designed path)
+   - Use the 0e table. For each BROKEN link, estimate the fix. This may be the ONLY candidate that makes all other candidates productive.
+   - But: how much of the chain exists? Is it 1 missing import or a 2000-line rewrite?
 
-4. **Build concordance scoring** (Layer I completion)
-   - But: concordance requires multiple texts to encode the same verse. How many cross-text overlaps exist?
+4. **Build concordance scoring** (Layer I / Build Layer 4 completion)
+   - PREDICTION_PIPELINE.md says concordance < 0.35 = SUPPRESS. This is the anti-prediction zone.
+   - But: concordance requires multiple texts encoding the same verse. How many cross-text overlaps exist in the current 654 V2 rules? If zero, concordance is uncomputable regardless.
 
 5. **Run OB-3 calibration** (empirical signal measurement)
-   - But: if the scoring engine uses 22 hardcoded rules, OB-3 measures those 22 rules, not the corpus.
+   - But: OB-3 measures whatever scoring.py computes. If that's 22 hardcoded rules, OB-3 tests those 22 rules, not the corpus. Running OB-3 AFTER wiring the corpus would measure something different.
 
 6. **Implement missing guardrails G01-G05** (consumer safety)
-   - But: there are no consumers yet. Safety before product?
+   - But: guardrails gate consumer output. If the scoring engine doesn't use the corpus, consumer output is based on 22 rules regardless. Safety of what?
 
-7. **Wire corpus rules into scoring** AND THEN encode more rules
-   - This is the "connect then fill" strategy. Wire the bridge first, then every encoding session produces measurable product improvement.
+7. **Wire corpus into scoring AND THEN encode** ("connect then fill")
+   - Close the broken links first. Then every encoding session produces measurable score changes. This is the architecture's designed operating mode.
+   - But: is the bridge (rule_firing → inference → scoring) validated? Does it produce sensible scores?
 
-8. **Validate the 654 V2 rules end-to-end** (fire them against test charts, verify scores change)
-   - Before encoding thousands more, prove the existing 654 actually work when wired.
+8. **Validate 654 V2 rules end-to-end** (fire them, verify scores change)
+   - Smallest possible proof-of-concept: wire the bridge, fire 654 rules against India 1947 fixture, compare scores to hardcoded baseline. If scores improve, the architecture works. If they don't, encoding more rules is the wrong strategy.
+   - This is the cheapest experiment that resolves the strategic question.
 
-9. **Something else** — what do the diagnostics reveal?
+9. **Something the diagnostics reveal that nobody anticipated**
+   - The 0e table may show that some links are ALREADY CONNECTED but just not called from the right entry point. That changes the estimate dramatically.
 
 **Make one recommendation. Defend it with specific numbers from the diagnostics.**
 
