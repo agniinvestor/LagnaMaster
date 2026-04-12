@@ -952,14 +952,9 @@ def full_analysis(chart_id: int, on_date: str | None = None):
     available.append("bhava_chalita")
 
     # ── Longevity ────────────────────────────────────────────────────────────
-    from src.calculations.ayurdaya import compute_pindayu
+    from src.calculations.longevity import compute_pindayu
 
-    results["ayurdaya_pindayu"] = _run_analysis("ayurdaya_pindayu", compute_pindayu, chart)
-    available.append("ayurdaya_pindayu")
-
-    from src.calculations.longevity import compute_pindayu as longevity_pindayu
-
-    results["longevity"] = _run_analysis("longevity", longevity_pindayu, chart)
+    results["longevity"] = _run_analysis("longevity", compute_pindayu, chart)
     available.append("longevity")
 
     # ── House analysis ───────────────────────────────────────────────────────
