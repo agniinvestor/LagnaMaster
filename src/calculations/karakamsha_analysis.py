@@ -72,12 +72,13 @@ def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
     Source: Sanjay Rath · Crux of Vedic Astrology Ch.8; PVRNR · BPHS Ch.32
     """
     from src.calculations.jaimini_rashi_drishti import has_rashi_drishti
-    from src.calculations.chara_karaka_config import compute_karakamsha, is_swamsha
+    from src.calculations.multi_lagna import compute_karakamsha as _compute_kk
+    from src.calculations.chara_karaka_config import is_swamsha
 
     ak = chara_karaka_result.atmakaraka
 
-    # Karakamsha Lagna = D9 sign of AK
-    karakamsha_si = compute_karakamsha(chart, chara_karaka_result)
+    # Karakamsha Lagna = D9 sign of AK (canonical impl in multi_lagna)
+    karakamsha_si = _compute_kk(chart).ak_d9_sign_index
 
     # Planets with Rashi Drishti to Karakamsha sign
     aspecting = []

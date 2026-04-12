@@ -116,31 +116,6 @@ def compute_chara_karakas(
     )
 
 
-# ─── Karakamsha ───────────────────────────────────────────────────────────────
-
-
-def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
-    """
-    Karakamsha Lagna: the D9 (navamsha) sign of the Atma Karaka.
-    Source: Jaimini Sutras Adhyaya 1 Pada 2
-    """
-    ak = chara_result.atma_karaka
-    if not ak or ak not in chart.planets:
-        return chart.lagna_sign_index
-
-    ak_lon = chart.planets[ak].longitude
-    try:
-        from src.calculations.varga import compute_varga_sign
-
-        return compute_varga_sign(ak_lon, 9)
-    except ImportError:
-        # Fallback
-        si = int(ak_lon / 30) % 12
-        pada = int((ak_lon % 30) * 9 / 30)
-        D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
-        return (D9_START[si % 4] + pada) % 12
-
-
 # ─── Swamsha ─────────────────────────────────────────────────────────────────
 
 
