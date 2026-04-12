@@ -413,17 +413,96 @@ git log --oneline --all | grep -i 'defer\|blocked\|known issue\|skip\|partial\|s
 grep -c '🚧\|pending\|not started' docs/ROADMAP.md 2>/dev/null
 ```
 
-**After running all 14 sources, produce a SINGLE consolidated pending work inventory:**
+**After running all 14 sources, you will have a RAW list of items that documents CLAIM are pending. Many of these may already be delivered. The documents are stale. You MUST verify each one.**
 
-| # | Source | Item | Severity | Effort | Blocks |
-|---|--------|------|----------|--------|--------|
-| 1 | v11 Stage 2 | Verification tags on 103 modules | LOW | 1 session | Nothing |
-| 2 | s318 C19 | av_transit.py AV lookup bug | HIGH | 1 fix | Scoring correctness |
-| ... | ... | ... | ... | ... | ... |
+### 0k-verify. Verify every extracted item against actual code and git
 
-This table becomes Section 3 of PROJECT_STRATEGY.md. **Every pending item from every source must appear in this table.** If an item appears in multiple sources, it gets ONE row with all sources cited.
+For EACH item extracted from the 14 sources above, determine its ACTUAL status by checking the codebase — not by trusting the document that listed it.
 
-Items that are DONE should be explicitly marked DONE (with the session/commit that closed them) — this is how you clean up the staleness in MEMORY.md and BUGS.md.
+**Verification methods by item type:**
+
+```bash
+# ── For bugs (s318 C-bugs, BUGS.md items) ────────────────────────────────────
+# Method: grep for the fix in code, check git for the fixing commit
+# Example: C01 says Mars aspects are wrong in multi_axis_scoring.py
+grep -n 'Mars.*3.*7\|Mars.*4.*8' src/calculations/multi_axis_scoring.py
+# If the code shows the CORRECT value, the bug is FIXED regardless of what s318 says.
+
+# ── For guardrails (G01-G24) ─────────────────────────────────────────────────
+# Method: don't just count references — READ the code that references the guardrail
+# and determine if it ENFORCES or merely DOCUMENTS
+# Example: G06 may be referenced in a comment but not enforced by a check
+for g in G01 G02 G03 G04 G05 G06; do
+  echo "=== $g ==="
+  grep -rn "$g" src/ tools/ --include='*.py' | grep -v __pycache__ | head -3
+  # For each match: is it a comment, an assertion, a runtime check, or a gate?
+done
+
+# ── For v11 stages ───────────────────────────────────────────────────────────
+# Method: the execution plan was last updated S324. This session may be S325+.
+# Run the ACTUAL diagnostic for each stage:
+# Stage 1 (formula fixes): run tests that verify correct formulas
+# Stage 2 (verification tags): count files with/without _VERIFICATION
+# Stage 4 (silent handlers): count actual silent handlers (already done in 0h)
+# Stage 6 (dead code): run reachability analysis (already done in 0a)
+# Don't trust the status table — verify against code.
+
+# ── For lessons without controls ─────────────────────────────────────────────
+# Method: the lesson says "behavioral lesson, no control built."
+# But a control MAY have been built in a later session without updating the lesson.
+# For each "no control" lesson, grep for related enforcement:
+# Example: L012 "don't add parallel infrastructure" — is there a lint check?
+# Example: L015 "never defer without approval" — is there a pre-commit check?
+
+# ── For encoding coverage gaps ───────────────────────────────────────────────
+# Method: coverage maps may be stale. Count actual rules per chapter:
+# For BPHS chapters listed as not encoded in the coverage map:
+PYTHONPATH=. python3 -c "
+from src.corpus.combined_corpus import build_corpus
+corpus = build_corpus()
+chapters = {}
+for r in corpus.all():
+    ch = getattr(r, 'chapter', 'unknown')
+    chapters[ch] = chapters.get(ch, 0) + 1
+for ch in sorted(chapters.keys()):
+    print(f'  {ch}: {chapters[ch]} rules')
+" 2>/dev/null | head -40
+
+# ── For .claude/commands ─────────────────────────────────────────────────────
+# Method: these are session-scoped commands. Many may have been executed.
+# Check git log for commits referencing each session:
+for f in .claude/commands/s3*.md; do
+  session=$(basename "$f" .md | sed 's/-.*//;s/^s/S/')
+  commits=$(git log --oneline --all | grep -i "$session" | wc -l | tr -d ' ')
+  echo "$(basename $f): $commits commits found for $session"
+done
+
+# ── For MEMORY.md known issues ───────────────────────────────────────────────
+# Method: each "known issue" may have been resolved. Check:
+# - Is the gap/issue still reproducible?
+# - Was there a commit that fixed it?
+# - Does the current code still exhibit the issue?
+```
+
+**Verification principle: a document saying X is pending does NOT mean X is pending. Only code and git are authoritative. Documents are claims. Code is truth.**
+
+**After verification, produce the SINGLE consolidated inventory:**
+
+| # | Source | Item | Doc says | Code shows | ACTUAL status | Closed by |
+|---|--------|------|----------|-----------|---------------|-----------|
+| 1 | v11 Stage 2 | Verification tags on 103 modules | Partial | 9 tagged, 103 untagged | OPEN | — |
+| 2 | s318 C01 | Mars aspects wrong in 3 files | Open | multi_axis_scoring.py has {3,7} | DONE | commit abc123 |
+| 3 | GUARDRAILS G01 | Language framing enforcement | Not built | No code references | OPEN | — |
+| 4 | L012 | No parallel infra lint check | No control | import_boundary_check.py exists | DONE | S323 |
+| ... | ... | ... | ... | ... | ... | ... |
+
+**This verified table is the ground truth.** It replaces every "known issues" section in every document. It becomes Section 3 of PROJECT_STRATEGY.md.
+
+For each row:
+- **DONE**: The item was delivered. Record what closed it. The source document is stale.
+- **OPEN**: The item is genuinely pending. Record severity, effort estimate, and what it blocks.
+- **OBSOLETE**: The item no longer applies (e.g., a bug in a deleted module). Record why.
+- **SUPERSEDED**: The item was replaced by a different approach. Record what replaced it.
 
 ---
 
