@@ -757,15 +757,25 @@ Reconcile v11 and the convergence model into ONE coherent description:
 
 This section REPLACES: ARCHITECTURE.md, PREDICTION_PIPELINE.md, the v11 spec's architecture sections.
 
-**Section 3: What the system needs (the work, prioritized)**
+**Section 3: What the system needs (the work, prioritized and sequenced)**
 
-Not a 1000-session roadmap. A prioritized list of concrete work items, each with:
+The foundation is the verified pending work table from Phase 0k-verify. Every OPEN item from that table appears here. Additionally, the strategic analysis from Phase 3 may add items not found in any existing document (e.g., "wire corpus into scoring" if that's the recommendation).
+
+For each item:
 - What it is (1 sentence)
 - Why it matters (what breaks or stays broken without it)
-- What it depends on (prerequisites)
-- What it unblocks (what becomes possible after)
+- What it depends on (prerequisite items by number)
+- What it unblocks (downstream items by number)
 - Estimated effort (sessions, not hours)
 - Status (NOT STARTED / IN PROGRESS / DONE)
+
+**Then produce a dependency-ordered sequence.** Not a flat list — a DAG. Items with no dependencies come first. Items that unblock the most downstream work have highest priority among equally-ready items. Show the critical path explicitly: which chain of dependencies determines the earliest possible completion of the strategic objective?
+
+**Also include a STOP list:** work that should be explicitly NOT done, with reasoning:
+- Work from ROADMAP.md that is now obsolete or superseded
+- Governance tasks that don't produce deliverables
+- Encoding work that should wait until the corpus→engine bridge is wired
+- Documents that should not be updated (because PROJECT_STRATEGY.md replaces them)
 
 This section REPLACES: ROADMAP.md session tables, v11 execution plan stages, the various "next steps" scattered across docs.
 
@@ -804,11 +814,41 @@ This section captures WHY so subsequent sessions don't re-litigate settled quest
 - A document that requires reading other documents to understand. This IS the other document.
 - Aspirational descriptions of things that don't exist. Every claim in Sections 1-2 is backed by a diagnostic command that verifies it.
 
+### Success criteria for PROJECT_STRATEGY.md
+
+Before declaring this document complete, verify ALL of these:
+
+1. **Self-contained:** A session reading ONLY PROJECT_STRATEGY.md + CLAUDE.md can start productive work without opening any other document. Test this mentally: pick any work item in Section 3 — can someone execute it from the information in this document alone?
+2. **Verified, not claimed:** Every number in Section 1 has a diagnostic command that produced it. Every item in Section 3 was verified against code in Phase 0k-verify. No "I believe" or "should be" — only "diagnostic X returned Y."
+3. **Decisive:** Section 6 answers every Phase 4 question with a DECISION, not "it depends" or "further analysis needed."
+4. **Sequenced:** Section 3 has a dependency-ordered critical path, not a flat list.
+5. **Bounded:** The document is under 1500 lines. If it's longer, consolidate.
+6. **Actionable STOP list:** Section 3 explicitly lists what NOT to do.
+7. **Architecture reconciled:** Section 2 presents ONE architecture, not "v11 says X but PREDICTION_PIPELINE says Y."
+8. **No stale references:** The document never says "see ROADMAP.md for details" — it contains the details or doesn't reference them.
+
 ### After writing PROJECT_STRATEGY.md
 
 1. Update CLAUDE.md's "At session START" protocol: replace the 5-file read list with `Read docs/PROJECT_STRATEGY.md`
 2. Add a header to each superseded doc pointing to PROJECT_STRATEGY.md as the golden source
 3. Do NOT delete the old docs — they have historical value. But they are no longer authoritative.
+
+### Context budget warning
+
+This prompt requires reading ~47 documents, ~7 source files, running ~15 diagnostic commands, extracting and verifying a pending work inventory, and then synthesizing all of it into a 1500-line document. This is aggressive for a single session.
+
+**If context runs out before PROJECT_STRATEGY.md is written:**
+1. Commit all diagnostic outputs as `docs/strategy_diagnostics.md` (the raw findings)
+2. Commit the verified pending work table as `docs/strategy_pending_work.md`
+3. Leave a clear note: "Phase 0 and Phase 1 complete. Phase 2-4 analysis and PROJECT_STRATEGY.md synthesis remaining."
+4. The continuation session reads the two committed artifacts and picks up at Phase 2.
+
+**Priority order if you must triage:**
+1. Phase 0 diagnostics (numbers are the foundation — without them, everything is speculation)
+2. Phase 0k + 0k-verify (pending work inventory — this is the biggest gap in current documentation)
+3. Phase 1 reads of v11 + execution plan + scoring.py + rule_firing.py (the architecture chain)
+4. PROJECT_STRATEGY.md Sections 1, 3, 6 (facts, work list, decisions — the highest-value sections)
+5. Everything else
 
 ---
 
