@@ -16,9 +16,13 @@ Sources:
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+import logging
 from dataclasses import dataclass, field
 from datetime import date
+
+from src.data.constants import SIGN_NAMES
+
+logger = logging.getLogger(__name__)
 
 # ─── Tajika Aspect Types ───────────────────────────────────────────────────────
 # Format: (name, exact_angle, max_orb_degrees)
@@ -220,6 +224,7 @@ def _compute_solar_return_jd(
         return (jd_low + jd_high) / 2.0
 
     except Exception:
+        logger.exception("Solar return JD computation failed, using approximation")
         # Fallback: approximate solar return JD from birth_jd
         days_per_year = 365.25636  # sidereal year
         birth_year_approx = int(2000 + (birth_jd - 2451545.0) / 365.25)
@@ -234,6 +239,7 @@ def _jd_to_date(jd: float) -> date:
         y, m, d, _ = swe.revjul(jd)
         return date(int(y), int(m), int(d))
     except Exception:
+        logger.exception("swisseph revjul failed, using manual JD conversion")
         # Fallback: JD to Gregorian conversion
         # Simple JD to date using reference point
         jd_int = int(jd + 0.5)
@@ -271,6 +277,7 @@ def _cast_varsha_chart(solar_return_jd: float, natal_lat: float, natal_lon: floa
             ayanamsha="lahiri",
         )
     except Exception:
+        logger.exception("Varsha chart casting failed")
         return None
 
 
@@ -416,6 +423,7 @@ def compute_varshaphala(
         swe.set_sid_mode(swe.SIDM_LAHIRI)
         birth_jd = swe.julday(birth_year, 8, 15, 0.0)
     except Exception:
+        logger.exception("swisseph julday failed, using J2000 epoch fallback")
         birth_jd = 2451545.0 + (birth_year - 2000) * 365.25  # J2000 epoch fallback
 
     # Compute solar return JD

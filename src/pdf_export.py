@@ -11,9 +11,13 @@ Source: Standard professional Jyotish consultation deliverable format.
 """
 
 from __future__ import annotations  # noqa: F401
-from src.data.constants import SIGN_NAMES
-import os  # noqa: F401
 import datetime  # noqa: F401
+import logging
+import os  # noqa: F401
+
+from src.data.constants import SIGN_NAMES
+
+logger = logging.getLogger(__name__)
 
 
 _PLANET_NAMES = [
@@ -294,6 +298,7 @@ def export_pdf(
                     chart, title=title, color_scheme="color"
                 )
         except Exception:
+            logger.exception("SVG generation failed, using fallback")
             chart_svg = "<p>Chart SVG not available</p>"
 
     page1_html = _chart_html(chart, chart_svg, panchanga, title)
@@ -361,6 +366,7 @@ def export_html(
                 chart, title=title, color_scheme="color"
             )
         except Exception:
+            logger.exception("SVG generation failed, using fallback")
             chart_svg = ""
 
     html = _chart_html(chart, chart_svg, kwargs.get("panchanga"), title)

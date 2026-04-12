@@ -9,7 +9,10 @@ User can share a sanitised chart summary (no raw scores) with the practitioner.
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -79,7 +82,7 @@ def build_chart_summary(
             active_md = md.lord
             active_ad = ad.lord
         except Exception:
-            pass
+            logger.exception("Failed to compute current dasha for chart summary")
 
     # Notable features (plain language)
     notable = []
@@ -93,7 +96,7 @@ def build_chart_summary(
                     f"in {st.sign_name} (House {st.house})"
                 )
     except Exception:
-        pass
+        logger.exception("Failed to compute stelliums for chart summary")
 
     try:
         from src.calculations.planet_chains import compute_mutual_receptions
@@ -101,7 +104,7 @@ def build_chart_summary(
         for mr in compute_mutual_receptions(chart):
             notable.append(f"Mutual reception: {mr.planet1}–{mr.planet2}")
     except Exception:
-        pass
+        logger.exception("Failed to compute mutual receptions for chart summary")
 
     # Confidence notes
     conf_notes = []

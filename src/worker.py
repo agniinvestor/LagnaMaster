@@ -331,7 +331,7 @@ def generate_pdf_async(self, chart_id: int) -> dict:
                 socket_connect_timeout=3,
             )
             r.setex(redis_key, 3600, pdf_bytes)
-        except Exception:
+        except Exception:  # ACCEPT: Redis unavailable — result still returned via Celery
             pass  # Redis unavailable — result still returned via Celery backend
 
         return {

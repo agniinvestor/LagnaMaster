@@ -307,6 +307,7 @@ with st.sidebar:
                 st.session_state["_ayan"] = ayan_val
                 st.success(f"Chart #{cid} computed ✓")
             except Exception as e:
+                logger.exception("Failed to compute chart")
                 st.error(f"Error: {e}")
 
     st.session_state["show_history"] = st.checkbox(
@@ -418,6 +419,7 @@ with tab_chart:
                     "Lagna", f"{chart.lagna_sign} {chart.lagna_degree_in_sign:.2f}°"
                 )
         except Exception as e:
+            logger.exception("Failed to compute Panchanga")
             st.warning(f"Panchanga: {e}")
 
         st.markdown("---")
@@ -473,6 +475,7 @@ with tab_chart:
             if pushkara_flags:
                 st.caption("✨ = Pushkara Navamsha")
         except Exception as _e:
+            logger.exception("Failed to render planet table")
             st.warning(f"Planet table: {_e}")
 
     # Navamsha D9
@@ -486,6 +489,7 @@ with tab_chart:
             )
             nav["lagna"] = lagna_d9
         except Exception as e:
+            logger.exception("Failed to compute Navamsha D9")
             st.warning(f"D9: {e}")
 
     # Shadbala
@@ -507,6 +511,7 @@ with tab_chart:
                 )
             st.dataframe(sb_rows, hide_index=True, use_container_width=True)
         except Exception as e:
+            logger.exception("Failed to compute Shadbala")
             st.warning(f"Shadbala: {e}")
 
     # Monte Carlo
@@ -543,6 +548,7 @@ with tab_chart:
                             f"{mc.n_samples} samples over ±{mc.window_minutes} min"
                         )
                     except Exception as e:
+                        logger.exception("Failed to run Monte Carlo sensitivity")
                         st.error(f"Monte Carlo failed: {e}")
 
     # PDF download
@@ -567,6 +573,7 @@ with tab_chart:
                     mime="application/pdf",
                 )
             except Exception as e:
+                logger.exception("Failed to generate PDF report")
                 st.error(f"PDF generation failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -623,6 +630,7 @@ with tab_yogas:
                         )
                         st.caption(y.description)
     except Exception as e:
+        logger.exception("Failed to detect yogas")
         st.error(f"Yoga detection failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -666,6 +674,7 @@ with tab_av:
                     row[p] = pt2.bindus[i]
             st.dataframe(full_rows, hide_index=True, use_container_width=True)
     except Exception as e:
+        logger.exception("Failed to compute Ashtakavarga")
         st.error(f"Ashtakavarga failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -714,6 +723,7 @@ with tab_dasha:
             ]
             st.dataframe(ad_rows, hide_index=True, use_container_width=True)
     except Exception as e:
+        logger.exception("Failed to compute Vimshottari Dasha")
         st.error(f"Vimshottari Dasha failed: {e}")
 
     # ── Chara Dasha ───────────────────────────────────────────────────────────
@@ -760,6 +770,7 @@ with tab_dasha:
                 )
             st.dataframe(cd_rows, hide_index=True, use_container_width=True)
         except Exception as e:
+            logger.exception("Failed to compute Chara Dasha")
             st.error(f"Chara Dasha failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -799,6 +810,7 @@ with tab_transits:
             f"Natal Lagna: {gochara.natal_lagna_sign}"
         )
     except Exception as e:
+        logger.exception("Failed to compute transits (Gochara)")
         st.error(f"Transit calculation failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -861,6 +873,7 @@ with tab_varga:
                 st.dataframe(all_rows, hide_index=True, use_container_width=True)
 
         except Exception as e:
+            logger.exception("Failed to compute Varga Charts")
             st.error(f"Varga Charts failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -921,6 +934,7 @@ with tab_vimshopak:
                 "Grade: Excellent ≥15 | Good ≥10 | Average ≥6 | Weak ≥3 | Very Weak <3"
             )
         except Exception as e:
+            logger.exception("Failed to compute Vimshopak Bala")
             st.error(f"Vimshopak Bala failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -981,6 +995,7 @@ with tab_kp:
             st.dataframe(sig_rows, hide_index=True, use_container_width=True)
             st.caption("Pilot: whole-sign house cusps (0° of each sign)")
         except Exception as e:
+            logger.exception("Failed to compute KP Analysis")
             st.error(f"KP Analysis failed: {e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -1017,6 +1032,7 @@ with tab_annual:
                     )
                     st.session_state["_varsha_report"] = vr
                 except Exception as e:
+                    logger.exception("Failed to compute Varshaphala")
                     st.error(f"Varshaphala failed: {e}")
 
         vr = st.session_state.get("_varsha_report")
@@ -1096,6 +1112,7 @@ with tab_kundali:
                     st.session_state["_kundali_result"] = result
                     st.session_state["_chart_b"] = chart_b
                 except Exception as e:
+                    logger.exception("Failed to compute Kundali Milan")
                     st.error(f"Kundali Milan failed: {e}")
 
         kr = st.session_state.get("_kundali_result")
@@ -1150,6 +1167,7 @@ with tab_kundali:
                             height=540,
                         )
             except Exception as _kr_e:
+                logger.exception("Failed to display Kundali Milan results")
                 st.error(f"Kundali display error: {_kr_e}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -1218,6 +1236,7 @@ with tab_muhurta:
                         )
                         st.session_state["_mh_report"] = mh_report
                     except Exception as e:
+                        logger.exception("Failed to scan Muhurta")
                         st.error(f"Muhurta scan failed: {e}")
 
         mh_r = st.session_state.get("_mh_report")
@@ -1414,4 +1433,5 @@ with tab_confidence:
                 st.info(note)
 
     except Exception as _conf_err:
+        logger.exception("Failed to compute confidence model")
         st.error(f"Confidence model error: {_conf_err}")

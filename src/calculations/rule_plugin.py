@@ -97,7 +97,7 @@ def apply_all_plugins(chart) -> list[PluginYogaResult]:
                     description=f"Plugin yoga: {name}",
                 )
             )
-        except Exception as e:
+        except Exception as e:  # ACCEPT: captures error in result object
             results.append(
                 PluginYogaResult(
                     name=name,

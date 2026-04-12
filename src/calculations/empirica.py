@@ -20,10 +20,13 @@ Public API
 
 from __future__ import annotations
 import contextlib
-from dataclasses import dataclass, field, asdict
+import logging
 import sqlite3
 import uuid
+from dataclasses import dataclass, field, asdict
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 _EVENT_TYPES = {
     "Career",
@@ -133,6 +136,7 @@ def get_events(chart_id: str, path: str | Path = "data/empirica.db") -> list[dic
             ).fetchall()
         return [dict(r) for r in rows]
     except Exception:
+        logger.exception("Failed to retrieve events for chart %s", chart_id)
         return []
 
 
@@ -166,6 +170,7 @@ def compute_accuracy(path: str | Path = "data/empirica.db") -> AccuracyReport:
                 for r in conn.execute("SELECT * FROM empirica_events").fetchall()
             ]
     except Exception:
+        logger.exception("Failed to load events for accuracy computation")
         return AccuracyReport(0, 0, 0.5, [], {}, {}, {})
 
     if not all_events:

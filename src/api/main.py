@@ -12,6 +12,7 @@ Endpoints:
 """
 
 from __future__ import annotations
+import logging
 import os as _os
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
@@ -38,6 +39,8 @@ from src.api.models import (
 from src.ephemeris import compute_chart
 from src.scoring import score_chart
 from src.db_pg import init_db, save_chart, get_chart, list_charts
+
+logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
@@ -328,6 +331,7 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
 
         chart_svg = generate_south_indian_svg(chart, title=title, color_scheme="color")
     except Exception:
+        logger.exception("SVG chart generation failed")
         chart_svg = ""
 
     try:
@@ -339,6 +343,7 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
 
         panchanga = compute_panchanga(sun_lon, moon_lon, datetime.datetime.now())
     except Exception:
+        logger.exception("Panchanga computation failed")
         panchanga = None
 
     scores = score_chart(chart)
@@ -364,6 +369,7 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
                 filename=f"lagnamaster_chart_{chart_id}.pdf",
             )
     except Exception:
+        logger.exception("PDF export failed, falling back to HTML")
         pass
 
     # HTML fallback
@@ -626,7 +632,7 @@ def _run_analysis(name: str, fn, *args, **kwargs):
         if hasattr(result, "__dict__"):
             return {k: v for k, v in result.__dict__.items() if not k.startswith("_")}
         return result
-    except Exception as e:
+    except Exception as e:  # ACCEPT: captures error in analysis result dict
         return {"error": str(e)}
 
 

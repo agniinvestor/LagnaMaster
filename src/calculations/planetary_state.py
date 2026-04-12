@@ -15,8 +15,11 @@ Sources:
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 # ─── Parivartana Yoga ────────────────────────────────────────────────────────
 
@@ -334,7 +337,7 @@ def compute_mandi_gulika(
             "gulika": round(gulika_lon, 4),
         }
     except Exception:
-        pass
+        logger.exception("rise_trans computation failed, using fallback")
 
     # Fallback: 15°/hr approximation if swe.rise_trans unavailable
     if sunrise_lon is None:

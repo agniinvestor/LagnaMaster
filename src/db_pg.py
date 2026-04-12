@@ -246,13 +246,13 @@ def health_check() -> dict:
                 with conn.cursor() as cur:
                     cur.execute("SELECT 1")
             return {"backend": "postgres", "ok": True}
-        except Exception as exc:
+        except Exception as exc:  # ACCEPT: health_check returns structured error
             return {"backend": "postgres", "ok": False, "error": str(exc)}
     else:
         try:
             _sqlite_db.list_charts(limit=1)
             return {"backend": "sqlite", "ok": True}
-        except Exception as exc:
+        except Exception as exc:  # ACCEPT: health_check returns structured error
             return {"backend": "sqlite", "ok": False, "error": str(exc)}
 
 

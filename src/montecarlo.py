@@ -1,10 +1,13 @@
 """Monte Carlo birth time sensitivity analysis (Session 11)."""
 
 from __future__ import annotations
+import logging
 import random
 import statistics
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -60,7 +63,7 @@ def _worker(args):
             md, _ = current_dasha(ds)
             ml = md.lord
         except Exception:
-            pass
+            logger.exception("Failed to compute dasha in Monte Carlo worker")
     return {
         "lagna_sign": c.lagna_sign,
         "md_lord": ml,

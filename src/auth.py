@@ -13,13 +13,13 @@ try:
     import bcrypt
 
     _BC = True
-except BaseException:
+except ImportError:
     _BC = False
 try:
     import jwt as _jwt
 
     _JW = True
-except BaseException:
+except ImportError:
     _JW = False
 
 def _get_jwt_secret() -> str:

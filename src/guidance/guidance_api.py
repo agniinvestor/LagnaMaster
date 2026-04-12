@@ -8,8 +8,11 @@ POST /guidance → GuidanceResponse
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass, field
 from datetime import date
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -60,6 +63,7 @@ def get_guidance(
         primary_h = dlpi.primary_house or 1
         score = dlpi.house_scores.get(primary_h, 0.0)
     except Exception:
+        logger.exception("Failed to compute domain LPI")
         score = 0.0
 
     try:
@@ -70,6 +74,7 @@ def get_guidance(
         promise_strength = promise.promise_strength
         timing = "Future"
     except Exception:
+        logger.exception("Failed to compute house promise")
         promise_strength = "Moderate"
         timing = "Future"
 
@@ -82,7 +87,7 @@ def get_guidance(
         if mr:
             timing = mr.manifestation_timing
     except Exception:
-        pass
+        logger.exception("Failed to compute full promise")
 
     try:
         from src.calculations.confidence_model import compute_confidence
@@ -92,6 +97,7 @@ def get_guidance(
         hc = conf.houses.get(ph2)
         confidence_label = hc.confidence_label if hc else "Moderate"
     except Exception:
+        logger.exception("Failed to compute confidence")
         confidence_label = "Moderate"
 
     try:
@@ -99,6 +105,7 @@ def get_guidance(
 
         dom = dom_theme(chart, dashas, on_date)
     except Exception:
+        logger.exception("Failed to compute dominant theme")
         dom = ""
 
     active_dasha = ""
@@ -111,7 +118,7 @@ def get_guidance(
             active_dasha = md.lord
             dasha_activated = True
         except Exception:
-            pass
+            logger.exception("Failed to compute current dasha")
 
     # ── Build content ─────────────────────────────────────────────────────────
     from src.guidance.explainability_tiers import explain

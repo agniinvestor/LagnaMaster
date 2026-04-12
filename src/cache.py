@@ -204,5 +204,5 @@ def health_check() -> dict:
             "ok": True,
             "version": info.get("redis_version", "unknown"),
         }
-    except Exception as exc:
+    except Exception as exc:  # ACCEPT: health_check returns structured error dict
         return {"backend": "redis", "ok": False, "reason": str(exc)}

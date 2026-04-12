@@ -19,8 +19,11 @@ Source: Audit J-2: "When ENGINE_VERSION increments, no automated test checks
 
 from __future__ import annotations
 import json
+import logging
 from pathlib import Path
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 SNAP_PATH = Path("tests/fixtures/snap_v3.json")
 ENGINE_VERSION = "v3.0.0"
@@ -115,7 +118,7 @@ def compute_snapshot(
             result["charts"][chart_id] = scores
             print(f"  SNAP {chart_id}: {scores}")
         except Exception as exc:
-            print(f"  ERR {chart_id}: {exc}")
+            logger.error(f"ERR {chart_id}: {exc}")
             result["charts"][chart_id] = {}
 
     return result

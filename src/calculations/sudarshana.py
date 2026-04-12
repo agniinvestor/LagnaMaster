@@ -242,7 +242,7 @@ def compute_dasha_pravesh(
             note=f"{planet} returns to natal longitude {natal_lon:.2f}° on {date_str}",
         )
 
-    except Exception as e:
+    except Exception as e:  # ACCEPT: captures error in result object
         return DashaPraveshResult(
             planet=planet,
             query_year=query_year,
