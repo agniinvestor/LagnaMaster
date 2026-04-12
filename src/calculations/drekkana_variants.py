@@ -16,30 +16,18 @@ Sources:
 
 from __future__ import annotations
 from src.data.constants import SIGN_NAMES
-
+from src.calculations.varga import _d3_sign_index
 
 
 def parasara_drekkana(longitude: float) -> int:
     """
     Parasara Drekkana (D3) — standard Parashari method.
-    1st drekkana (0°-10°): same sign
-    2nd drekkana (10°-20°): 5th sign from natal sign
-    3rd drekkana (20°-30°): 9th sign from natal sign
+    Delegates to canonical varga._d3_sign_index.
 
     Source: PVRNR · BPHS Ch.6; standard Parashari practice
     Use for: siblings, courage, vitality, longevity hints
     """
-    lon = longitude % 360
-    sign = int(lon / 30)
-    deg_in_sign = lon % 30
-    drekkana_part = int(deg_in_sign / 10)  # 0, 1, or 2
-
-    if drekkana_part == 0:
-        return sign
-    elif drekkana_part == 1:
-        return (sign + 4) % 12  # 5th sign
-    else:
-        return (sign + 8) % 12  # 9th sign
+    return _d3_sign_index(longitude)
 
 
 def jagannatha_drekkana(longitude: float) -> int:

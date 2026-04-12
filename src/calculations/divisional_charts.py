@@ -25,7 +25,16 @@ Public API
 from __future__ import annotations
 from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
 from src.calculations.dignity import OWN_SIGNS as _OWN_LIST, _NAISARGIKA
-from src.calculations.varga import _d9_sign_index as _d9
+from src.calculations.varga import (
+    _d2_sign_index as _hora,
+    _d3_sign_index as _d3,
+    _d4_sign_index as _d4,
+    _d7_sign_index as _d7,
+    _d9_sign_index as _d9,
+    _d10_sign_index as _d10,
+    _d12_sign_index as _d12,
+    _d60_sign_index as _d60,
+)
 from dataclasses import dataclass
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.6 v.1-22", "session": "S318"}
@@ -74,31 +83,7 @@ def _dignity_pct(planet: str, sign_idx: int) -> float:
     return 0.25  # neutral
 
 
-# ── Divisional sign formulas ──────────────────────────────────────────────────
-def _d_sign(longitude: float, n: int) -> int:
-    """Generic Dn sign index for divisions that start from same-sign Aries."""
-    si = int(longitude / 30) % 12
-    div = int((longitude % 30) * n / 30) % n
-    return (si * n + div) % 12
-
-
-def _hora(longitude: float) -> int:
-    si = int(longitude / 30) % 12
-    deg = longitude % 30
-    # Odd sign: 0-15° = Leo, 15-30° = Cancer
-    # Even sign: 0-15° = Cancer, 15-30° = Leo
-    if si % 2 == 0:  # odd (Aries, Gemini...)
-        return 4 if deg < 15 else 3
-    else:
-        return 3 if deg < 15 else 4
-
-
-def _d4(longitude: float) -> int:
-    """D4 Chaturthamsha: kendras from sign (BPHS). k=0→same, k=1→+3, k=2→+6, k=3→+9."""
-    si = int(longitude / 30) % 12
-    k = int((longitude % 30) / 7.5)
-    return (si + k * 3) % 12
-
+# ── Divisional sign formulas (D16+ only; D2-D12,D60 imported from varga.py) ──
 
 def _d16(longitude: float) -> int:
     """D16 Shodasamsa: Movable→Aries, Fixed→Leo, Mutable→Sagittarius (BPHS Ch.6 v.16)."""
@@ -175,54 +160,6 @@ def _d45(longitude: float) -> int:
     modality = si % 3  # 0=movable, 1=fixed, 2=mutable
     bases = {0: 0, 1: 4, 2: 8}  # Aries, Leo, Sagittarius
     return (bases[modality] + div) % 12
-
-
-def _d60(longitude: float) -> int:
-    """D60 Shashtyamsha: odd signs→Aries(k%12), even signs→Virgo(5+k)%12 (BPHS)."""
-    si = int(longitude / 30) % 12
-    k = int((longitude % 30) * 2)  # 0-59
-    k = min(k, 59)
-    if si % 2 == 0:  # odd sign
-        return k % 12
-    else:  # even sign
-        return (5 + k) % 12
-
-
-
-
-def _d10(longitude: float) -> int:
-    """D10 Dashamsha: odd signs from self, even signs from 9th (BPHS)."""
-    si = int(longitude / 30) % 12
-    k = int((longitude % 30) / 3)
-    k = min(k, 9)
-    if si % 2 == 0:  # odd sign
-        return (si + k) % 12
-    else:  # even sign
-        return (si + 9 + k) % 12
-
-
-def _d3(longitude: float) -> int:
-    """D3 Drekkana: trikona from sign (BPHS). k=0→same, k=1→5th, k=2→9th."""
-    si = int(longitude / 30) % 12
-    k = int((longitude % 30) / 10)
-    return (si + k * 4) % 12
-
-
-def _d7(longitude: float) -> int:
-    """D7 Saptamsha: odd signs from self, even signs from 7th (BPHS)."""
-    si = int(longitude / 30) % 12
-    k = int((longitude % 30) * 7 / 30)
-    k = min(k, 6)
-    if si % 2 == 0:  # odd sign
-        return (si + k) % 12
-    else:  # even sign
-        return (si + 6 + k) % 12
-
-
-def _d12(longitude: float) -> int:
-    si = int(longitude / 30) % 12
-    div = int((longitude % 30) * 12 / 30)
-    return (si + div) % 12
 
 
 @dataclass

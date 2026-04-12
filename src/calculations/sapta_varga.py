@@ -46,7 +46,14 @@ Data classes
 from __future__ import annotations
 from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from src.calculations.dignity import EXALT_SIGN as _EXALT, DEBIL_SIGN as _DEBIL, OWN_SIGNS, _NAISARGIKA
-from src.calculations.varga import _d9_sign_index as _d9_si
+from src.calculations.varga import (
+    _d2_sign_index as _d2_si,
+    _d3_sign_index as _d3_si,
+    _d7_sign_index as _d7_si,
+    _d9_sign_index as _d9_si,
+    _d10_sign_index as _d10_si,
+    _d12_sign_index as _d12_si,
+)
 from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
@@ -151,43 +158,8 @@ def _dignity_points(planet: str, sign_index: int, weight: float) -> float:
     return _DIGNITY_FRACTION[label] * weight
 
 
-# ── varga sign resolvers (inline — avoids heavy import of varga.py) ──────────
-
-
 def _d1_si(lon: float) -> int:
     return int(lon / 30) % 12
-
-
-def _d2_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    deg = lon % 30
-    return (4 if deg < 15.0 else 3) if (si % 2 == 0) else (3 if deg < 15.0 else 4)
-
-
-def _d3_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    k = int((lon % 30) / 10)
-    return (si + k * 4) % 12
-
-
-def _d7_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    k = min(int((lon % 30) * 7 / 30), 6)
-    return (si + k) % 12 if (si % 2 == 0) else (si + 6 + k) % 12
-
-
-
-
-def _d10_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    k = min(int((lon % 30) / 3), 9)
-    return (si + k) % 12 if (si % 2 == 0) else (si + 9 + k) % 12
-
-
-def _d12_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    k = min(int((lon % 30) / 2.5), 11)
-    return (si + k) % 12
 
 
 _VARGA_FN = {
