@@ -55,7 +55,7 @@ def compute_amsa_level(planet: str, chart) -> tuple[int, str]:
         from src.calculations.divisional_charts import compute_divisional_signs
 
         div = compute_divisional_signs(chart)
-    except Exception:
+    except ImportError:
         return (0, "No amsa")
 
     _EXALT_SI = {
@@ -102,7 +102,7 @@ def compute_amsa_level(planet: str, chart) -> tuple[int, str]:
                 si = getattr(varga_map, planet)
             else:
                 si = None
-        except Exception:
+        except (AttributeError, KeyError, TypeError):
             si = None
         if si is None and dv == "D1":
             pos = chart.planets.get(planet)
@@ -144,28 +144,25 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     affliction_free = True
     from src.calculations.functional_roles import compute_functional_roles
 
-    try:
-        fr = compute_functional_roles(chart)
-        func_malefics = fr.functional_malefics | fr.dusthana_lords
+    fr = compute_functional_roles(chart)
+    func_malefics = set(fr.functional_malefics) | set(fr.dusthana_lords)
 
-        for p in yoga_planets:
-            pos = chart.planets.get(p)
-            if not pos:
-                continue
-            afflictors = [
-                a
-                for a in func_malefics
-                if a != p
-                and chart.planets.get(a)
-                and chart.planets[a].sign_index == pos.sign_index
-            ]
-            if afflictors:
-                affliction_free = False
-                weaknesses.append(
-                    f"{p} afflicted by functional malefic(s): {afflictors}"
-                )
-    except Exception:
-        pass
+    for p in yoga_planets:
+        pos = chart.planets.get(p)
+        if not pos:
+            continue
+        afflictors = [
+            a
+            for a in func_malefics
+            if a != p
+            and chart.planets.get(a)
+            and chart.planets[a].sign_index == pos.sign_index
+        ]
+        if afflictors:
+            affliction_free = False
+            weaknesses.append(
+                f"{p} afflicted by functional malefic(s): {afflictors}"
+            )
 
     # Condition 2: Close conjunction (within 6°)
     from src.calculations.orb_strength import yoga_conjunction_strength, _circular_diff
@@ -222,7 +219,7 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
         from src.calculations.dignity import compute_all_dignities
 
         dignities = compute_all_dignities(chart)
-    except Exception:
+    except ImportError:
         dignities = {}
 
     for p in yoga_planets:
@@ -285,38 +282,35 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
 def check_yoga_affliction(planet: str, chart) -> list[str]:
     """Return list of afflictions on a planet (functional malefics, combust, debil)."""
     issues = []
-    try:
-        from src.calculations.functional_roles import compute_functional_roles
+    from src.calculations.functional_roles import compute_functional_roles
 
-        fr = compute_functional_roles(chart)
-        pos = chart.planets.get(planet)
-        if not pos:
-            return issues
-        afflictors = [
-            a
-            for a in fr.functional_malefics
-            if a != planet
-            and chart.planets.get(a)
-            and chart.planets[a].sign_index == pos.sign_index
-        ]
-        if afflictors:
-            issues.append(f"Conjunct functional malefic(s): {afflictors}")
-        from src.calculations.dignity import compute_all_dignities
+    fr = compute_functional_roles(chart)
+    pos = chart.planets.get(planet)
+    if not pos:
+        return issues
+    afflictors = [
+        a
+        for a in fr.functional_malefics
+        if a != planet
+        and chart.planets.get(a)
+        and chart.planets[a].sign_index == pos.sign_index
+    ]
+    if afflictors:
+        issues.append(f"Conjunct functional malefic(s): {afflictors}")
+    from src.calculations.dignity import compute_all_dignities
 
-        dig = compute_all_dignities(chart).get(planet)
-        if dig and dig.combust:
-            issues.append("Combust")
-        _DEBIL = {
-            "Sun": 6,
-            "Moon": 7,
-            "Mars": 3,
-            "Mercury": 11,
-            "Jupiter": 9,
-            "Venus": 5,
-            "Saturn": 0,
-        }
-        if _DEBIL.get(planet) == pos.sign_index:
-            issues.append("Debilitated")
-    except Exception:
-        pass
+    dig = compute_all_dignities(chart).get(planet)
+    if dig and dig.combust:
+        issues.append("Combust")
+    _DEBIL = {
+        "Sun": 6,
+        "Moon": 7,
+        "Mars": 3,
+        "Mercury": 11,
+        "Jupiter": 9,
+        "Venus": 5,
+        "Saturn": 0,
+    }
+    if _DEBIL.get(planet) == pos.sign_index:
+        issues.append("Debilitated")
     return issues

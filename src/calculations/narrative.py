@@ -66,7 +66,7 @@ def generate_narrative(lpi_result, chart, dashas=None, on_date=None) -> Narrativ
 
         md, ad = current_dasha(dashas or [], on_date)
         dasha_str = f"{md.lord} MD / {ad.lord} AD"
-    except Exception:
+    except ImportError:
         dasha_str = "Dasha unavailable"
 
     _DOMAIN_HOUSE = {

@@ -38,7 +38,7 @@ def _dasha_wt(planets, dashas, on_date):
 
         md, ad = current_dasha(dashas, on_date)
         return 1.0 if any(p in {md.lord, ad.lord} for p in planets) else 0.5
-    except Exception:
+    except ImportError:
         return 0.5
 
 

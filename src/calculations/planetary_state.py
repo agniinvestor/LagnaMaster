@@ -271,7 +271,7 @@ def compute_mandi_gulika(
             weekday = birth_dt.weekday()  # 0=Monday
         else:
             return {}
-    except Exception:
+    except AttributeError:
         return {}
 
     # Weekday lord index in Jyotish sequence (Saturn's portion = Gulika)

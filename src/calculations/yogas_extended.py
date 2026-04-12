@@ -45,7 +45,7 @@ def _yoga(
                 dw = 1.0
             else:
                 dw = 0.5
-        except Exception:
+        except ImportError:
             dw = 0.5
     return YogaResult(
         name=name,

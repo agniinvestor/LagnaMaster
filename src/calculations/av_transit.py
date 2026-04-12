@@ -76,7 +76,7 @@ def planet_transit_quality(
         av = compute_ashtakavarga(natal_chart)
         planet_av = av.planet_av.get(planet, None)  # BUG-040 fix: was getattr(av, planet.lower())
         rekhas = planet_av.bindus[transit_si] if planet_av else 4
-    except Exception:
+    except ImportError:
         rekhas = 4
 
     if rekhas >= 6:
@@ -135,7 +135,7 @@ def compute_transit_av_score(
                 for p in planets_7
                 if p in t_chart.planets
             }
-        except Exception:
+        except ImportError:
             transit_longitudes = {}
 
     # Per-planet transit quality
@@ -155,7 +155,7 @@ def compute_transit_av_score(
         for h in range(1, 13):
             si = (lagna_si + h - 1) % 12
             house_sav[h] = av.sarva.bindus.get(si, 0) if hasattr(av, "sarva") else 0
-    except Exception:
+    except (ImportError, AttributeError):
         house_sav = {h: 28 for h in range(1, 13)}
 
     strong = [h for h, r in house_sav.items() if r >= 30]

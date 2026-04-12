@@ -257,7 +257,7 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
         from src.calculations.vargas import compute_varga_sign
         d9_si = compute_varga_sign(chart.planets[planet].longitude, 9)
         is_odd_d9 = d9_si % 2 == 0
-    except Exception:
+    except (ImportError, ValueError):
         is_odd_d9 = is_odd_rasi  # fallback: assume same as Rasi
 
     if planet in MALE_PLANETS:
@@ -637,7 +637,7 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     for varga_n in SAPTAVARGA_LIST:
         try:
             varga_sign = compute_varga_sign(longitude, varga_n)
-        except Exception:
+        except (ValueError, KeyError):
             continue
 
         # Determine relationship-based virupas in this varga (BPHS Ch.27 v.2-4)
@@ -691,7 +691,7 @@ def _get_saptavargaja_virupas(
             from src.calculations.panchadha_maitri import panchadha_relation
             rel = panchadha_relation(planet, lord, chart)
             return V.get(rel, V["Sama"])
-        except Exception:
+        except (ImportError, KeyError):
             pass
 
     # Fallback: simple Naisargika if chart not available

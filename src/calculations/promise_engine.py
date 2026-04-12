@@ -52,7 +52,7 @@ def compute_house_promise(chart, house: int) -> PromiseLevel:
     try:
         ax = score_axis(chart, chart.lagna_sign_index, "D1", "parashari")
         score = ax.scores.get(house, 0.0)
-    except Exception:
+    except (ValueError, TypeError):
         score = 0.0
 
     key_factors = []
@@ -115,7 +115,7 @@ def compute_full_promise(
             md, ad = current_dasha(dashas, on_date)
             active_md_lord = md.lord
             active_ad_lord = ad.lord
-        except Exception:
+        except ImportError:
             pass
 
     from src.calculations.house_lord import compute_house_map
@@ -142,7 +142,7 @@ def compute_full_promise(
             transit_supported = (
                 h in tav.strong_natal_houses or tav.house_sav.get(h, 0) >= 28
             )
-        except Exception:
+        except ImportError:
             pass
 
         # Manifestation probability

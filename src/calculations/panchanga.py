@@ -364,7 +364,7 @@ def compute_navamsha_chart(chart):
         result = {p: signs["D9"] for p, signs in dmap.planets.items()}
         result["lagna"] = dmap.lagna["D9"]
         return result
-    except Exception:
+    except (ImportError, KeyError, AttributeError):
         return None
 
 

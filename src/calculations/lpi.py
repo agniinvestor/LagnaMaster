@@ -115,7 +115,7 @@ def _dasha_activation(chart, dashas, on_date: date, house: int) -> float:
         if ad_house == house:
             act += 0.25
         return act
-    except Exception:
+    except (ImportError, ValueError, IndexError):
         return 0.0
 
 
@@ -129,7 +129,7 @@ def _dasha_modifier(chart, dashas, on_date: date, house: int) -> float:
         hmap = compute_house_map(chart)
         if hmap.planet_house.get(md.lord) == house:
             return 1.15
-    except Exception:
+    except (ImportError, IndexError):
         pass
     return 1.0
 
@@ -154,7 +154,7 @@ def _gochar_pressure(chart, on_date: date, house: int) -> float:
                 g.sade_sati_phase, 0
             )
         return max(-2.0, min(2.0, score))
-    except Exception:
+    except ImportError:
         return 0.0
 
 

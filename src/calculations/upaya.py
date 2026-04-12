@@ -186,7 +186,7 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
 
         digs = compute_all_dignities(chart)
         canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
-    except Exception:
+    except ImportError:
         return []
 
     upayas = []
@@ -214,7 +214,7 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
                     or dig.level == DignityLevel.DEEP_DEBIL
                 ):
                     affliction = "debilitated"
-            except Exception:
+            except AttributeError:
                 pass
         if planet in canonical_malefics:
             if not affliction:

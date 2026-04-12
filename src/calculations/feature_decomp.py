@@ -176,7 +176,7 @@ def _extract_bhavesh_dignity(house: int, house_si: int, chart) -> RuleFeature:
             if bhavesh in digs:
                 dl = digs[bhavesh].dignity
                 raw = DIGNITY_SCORE.get(dl, 0.0)
-        except Exception:
+        except ImportError:
             raw = 0.0
 
     return RuleFeature("bhavesh_dignity", _normalise_dignity(raw), "R04", house)
@@ -278,7 +278,7 @@ def _extract_combust_score(house: int, house_si: int, chart) -> RuleFeature:
             val = -0.5
         else:
             val = 0.0
-    except Exception:
+    except ImportError:
         val = 0.0
 
     return RuleFeature("combust_score", val, "R19", house)
@@ -468,7 +468,7 @@ def _extract_pushkara_nav(house: int, house_si: int, chart) -> RuleFeature:
         from src.calculations.pushkara_navamsha import is_pushkara_navamsha
         pos = chart.planets[bhavesh]
         val = 1.0 if is_pushkara_navamsha(pos.sign_index, pos.degree_in_sign) else 0.0
-    except Exception:
+    except ImportError:
         val = 0.0
     return RuleFeature("pushkara_nav", val, "R21", house)
 
@@ -513,7 +513,7 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
         from src.calculations.ashtakavarga import compute_ashtakavarga
         av = compute_ashtakavarga(chart)
         av_bindus = {si: av.sarva_ashtakavarga.get(si, 0) for si in range(12)}
-    except Exception:
+    except (ImportError, AttributeError):
         av_bindus = None
 
     sign_planets = _build_sign_planets(chart, lagna_si)
@@ -534,7 +534,7 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
         _roles = compute_functional_roles(_fake)
         is_fb = _roles.is_functional_benefic
         is_fm = _roles.is_functional_malefic
-    except Exception:
+    except (ImportError, AttributeError):
         is_fb = lambda p: False  # noqa: E731
         is_fm = lambda p: False  # noqa: E731
 

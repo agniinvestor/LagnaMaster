@@ -845,7 +845,7 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                 sb = compute_shadbala(planet_spec.title(), chart)
                 total = getattr(sb, "total", 0.0)
                 normalized = min(1.0, max(0.0, total / 1.0)) if total else 0.0
-            except Exception:
+            except (ImportError, AttributeError):
                 # Shadbala may need birth_dt — if it fails, condition can't be evaluated
                 return False, 0
             if threshold == "weak" and normalized >= 0.5:
@@ -1430,7 +1430,7 @@ def evaluate_chart(chart) -> RuleFiringResult:
     try:
         from src.corpus.snapshot import corpus_hash
         c_hash = corpus_hash()
-    except Exception:
+    except ImportError:
         c_hash = ""
 
     result = RuleFiringResult(corpus_hash=c_hash)

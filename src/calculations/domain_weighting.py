@@ -158,7 +158,7 @@ def compute_domain_lpi(
         sl = axes.sl.scores if axes.sl else {}
         d9 = axes.d9.scores if axes.d9 else {}
         d10 = axes.d10.scores if axes.d10 else {}
-    except Exception:
+    except ImportError:
         d1 = cl = sl = d9 = d10 = {}
 
     # Dasha modifier
@@ -172,7 +172,7 @@ def compute_domain_lpi(
             md_h = compute_house_map(chart).planet_house.get(md.lord, 0)
             if md_h:
                 dasha_boost[md_h] = d1.get(md_h, 0) * 0.15
-        except Exception:
+        except ImportError:
             pass
 
     house_scores = {}

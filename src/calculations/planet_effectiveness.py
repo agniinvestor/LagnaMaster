@@ -54,7 +54,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
         if sb and sb.total > 0:
             # Normalize: avg = 400 Virupas, range ~0–800
             shadbala_f = min(1.0, max(0.0, sb.total / 600.0))
-    except Exception:
+    except ImportError:
         pass
 
     # 2. AV rekhas
@@ -69,7 +69,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
             if planet_av:
                 rekhas = planet_av.bindus.get(pos.sign_index, 4)
                 av_f = rekhas / 8.0
-    except Exception:
+    except ImportError:
         pass
 
     # 3. Avastha (baaladi × sayanadi)
@@ -81,7 +81,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
         pa = av2.planets.get(planet)
         if pa:
             avastha_f = min(1.5, pa.combined_modifier) / 1.5
-    except Exception:
+    except ImportError:
         pass
 
     # 4. Dig Bala
@@ -91,7 +91,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
 
         db = compute_dig_bala(chart)
         dig_f = db[planet].score if planet in db else 0.5
-    except Exception:
+    except ImportError:
         pass
 
     # 5. Amsa level
@@ -101,7 +101,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
 
         count, _ = compute_amsa_level(planet, chart)
         amsa_f = min(1.0, count / 5.0)  # 5 = Simhasanamsa = distinguished
-    except Exception:
+    except ImportError:
         pass
 
     # 6. Combustion
@@ -112,7 +112,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
         dig = compute_all_dignities(chart).get(planet)
         if dig and dig.combust:
             combust_p = 0.5
-    except Exception:
+    except ImportError:
         pass
 
     # 7. Graha Yuddha
@@ -124,7 +124,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
         losers = {w.loser for w in wars}
         if planet in losers:
             yuddha_p = 0.5
-    except Exception:
+    except ImportError:
         pass
 
     # Weighted combination (PVRNR: no single measure dominates)

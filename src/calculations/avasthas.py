@@ -268,7 +268,7 @@ def compute_sayanadi(
         from src.calculations.varga import compute_varga_sign
         d9_si = compute_varga_sign(lon, 9)
         n = (d9_si % 9) + 1  # 1-9 within the navamsa cycle
-    except Exception:
+    except ImportError:
         n = int((lon % 30) / 3.333) + 1  # fallback
 
     # a: birth nakshatra (Moon's nakshatra)

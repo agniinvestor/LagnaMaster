@@ -175,7 +175,7 @@ def compute_amsayu(chart) -> float:
                 d9_si = (
                     chart.planets[planet].sign_index if planet in chart.planets else 0
                 )
-        except Exception:
+        except (KeyError, AttributeError, TypeError):
             d9_si = chart.planets[planet].sign_index if planet in chart.planets else 0
         if d9_si is None:
             total += years * 0.5

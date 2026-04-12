@@ -62,7 +62,7 @@ def compute_varga_agreement(chart, school: str = "parashari") -> VargaAgreementR
 
     try:
         axes = score_all_axes(chart, school)
-    except Exception:
+    except (ValueError, TypeError):
         # Fallback: all diverge
         houses = {
             h: HouseAgreement(h, 0, 0, 0, "○", "Low", "Score unavailable")

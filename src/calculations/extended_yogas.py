@@ -40,7 +40,7 @@ def _is_dasha_active(planet: str, dashas, on_date) -> bool:
 
         md, ad = current_dasha(dashas, on_date)
         return planet in {md.lord, ad.lord}
-    except Exception:
+    except (ImportError, IndexError):
         return False
 
 

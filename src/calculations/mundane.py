@@ -77,7 +77,7 @@ def analyze_mundane_chart(
 
         ax = score_axis(chart, chart.lagna_sign_index, "D1", "parashari")
         scores = ax.scores
-    except Exception:
+    except ImportError:
         scores = {h: 0.0 for h in range(1, 13)}
 
     # Top themes (strong houses)
@@ -130,5 +130,5 @@ def compress_vimshottari(
                 }
             )
         return compressed
-    except Exception:
+    except ImportError:
         return []

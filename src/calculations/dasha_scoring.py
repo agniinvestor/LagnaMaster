@@ -218,7 +218,7 @@ def apply_dasha_scoring(
                     moon_lon = chart.planets["Moon"].longitude
                     nak_idx = int(moon_lon * 3 / 40) % 27
                     md_lord = _DASHA_LORDS[nak_idx % 9]
-        except Exception:
+        except (ImportError, TypeError):
             # Fallback: birth nakshatra lord
             if "Moon" in chart.planets:
                 _DASHA_LORDS = ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"]

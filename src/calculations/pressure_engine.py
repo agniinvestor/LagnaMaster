@@ -258,7 +258,7 @@ def transit_load(chart, on_date: date) -> tuple[float, str]:
 
     try:
         gochara = compute_gochara(chart, on_date)
-    except Exception:
+    except (ValueError, TypeError):
         return 1.0, "Transit computation unavailable"
 
     load = 1.0
@@ -351,7 +351,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
         elif jup_sb.total < 150:
             resilience -= 0.2
             notes.append(f"Weak Jupiter ({jup_sb.total:.0f} Virupas)")
-    except Exception:
+    except (ValueError, TypeError):
         pass
 
     # Yogakaraka in dasha
@@ -360,7 +360,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
         if md.lord in roles.yogakarakas or ad.lord in roles.yogakarakas:
             resilience += 0.25
             notes.append("Yogakaraka dasha active")
-    except Exception:
+    except (ValueError, TypeError):
         pass
 
     # Jupiter transiting kendra from natal Moon
@@ -373,7 +373,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
             if dist in {1, 4, 7, 10}:
                 resilience += 0.3
                 notes.append("Jupiter in kendra from natal Moon (transit)")
-    except Exception:
+    except (ValueError, TypeError):
         pass
 
     note = "; ".join(notes) if notes else "Standard resilience"

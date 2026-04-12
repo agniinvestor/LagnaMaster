@@ -133,7 +133,7 @@ def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
         from src.calculations.varga import compute_varga_sign
 
         return compute_varga_sign(ak_lon, 9)
-    except Exception:
+    except ImportError:
         # Fallback
         si = int(ak_lon / 30) % 12
         pada = int((ak_lon % 30) * 9 / 30)
@@ -159,7 +159,7 @@ def is_swamsha(chart, chara_result: CharaKarakaResult) -> bool:
         from src.calculations.varga import compute_varga_sign
 
         d9_si = compute_varga_sign(ak_lon, 9)
-    except Exception:
+    except ImportError:
         return False
 
     from src.calculations.dignity import EXALT_SIGN, OWN_SIGNS

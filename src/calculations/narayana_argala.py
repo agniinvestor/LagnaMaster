@@ -129,6 +129,6 @@ def narayana_dasha_argala_modifier(chart, on_date=None) -> float:
         if current:
             result = compute_argala_on_sign(current.sign_index, chart)
             return result.net_modifier
-    except Exception:
+    except ImportError:
         pass
     return 0.0

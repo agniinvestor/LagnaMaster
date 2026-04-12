@@ -45,7 +45,7 @@ def _dasha_weight(planets: list[str], dashas, on_date: date) -> float:
         md, ad = current_dasha(dashas, on_date)
         if any(p in {md.lord, ad.lord} for p in planets):
             return 1.0
-    except Exception:
+    except ImportError:
         pass
     return 0.5
 

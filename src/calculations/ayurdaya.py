@@ -88,7 +88,7 @@ def compute_amsayu(chart) -> float:
         lon = chart.planets[planet].longitude
         try:
             d9_si = compute_varga_sign(lon, 9)
-        except Exception:
+        except (ValueError, TypeError):
             continue
         # Full years if exalted in D9, proportional otherwise
         from src.calculations.dignity import EXALT_SIGN, OWN_SIGNS

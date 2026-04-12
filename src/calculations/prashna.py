@@ -106,7 +106,7 @@ def analyze_prashna(
 
         ax = score_axis(chart, chart.lagna_sign_index, "D1", "parashari")
         key_score = ax.scores.get(key_house, 0.0)
-    except Exception:
+    except ImportError:
         key_score = 0.0
 
     # Lagna strength

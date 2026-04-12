@@ -73,7 +73,7 @@ def compute_dominance_factors(
     try:
         axes = score_all_axes(chart, "parashari")
         d1_scores = axes.d1.scores if axes.d1 else {}
-    except Exception:
+    except ImportError:
         d1_scores = {}
 
     factors = []
@@ -145,7 +145,7 @@ def compute_dominance_factors(
                         overrides=[f"yogas involving {planet}"],
                     )
                 )
-    except Exception:
+    except ImportError:
         pass
 
     # Severe affliction: functional malefic conjunct within tight orb
@@ -193,7 +193,7 @@ def compute_dominance_factors(
                 overrides=["static natal promise for this period"],
             )
             factors.append(dasha_priority)
-        except Exception:
+        except ImportError:
             pass
 
     # ── Classify houses ───────────────────────────────────────────────────────

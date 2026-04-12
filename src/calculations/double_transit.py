@@ -89,7 +89,7 @@ def _get_transit_position(planet: str, on_date: date) -> float | None:
         )
         pos = transit_chart.planets.get(planet)
         return pos.longitude if pos else None
-    except Exception:
+    except (KeyError, AttributeError):
         return None
 
 

@@ -55,7 +55,7 @@ def _house_score_from_sign(si: int, chart, school: str = "parashari") -> float:
         # Find which house has this sign
         h = (si - lagna_si) % 12 + 1
         return ax.scores.get(h, 0.0)
-    except Exception:
+    except (ImportError, AttributeError):
         return 0.0
 
 
@@ -67,7 +67,7 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
         arudha_all = compute_all_arudha_padas(chart)
         al_pada = arudha_all.padas.get(house)
         al_si = al_pada.sign_index if al_pada else chart.lagna_sign_index
-    except Exception:
+    except (AttributeError, KeyError):
         al_si = chart.lagna_sign_index
 
     # Actual score (reality)
@@ -77,7 +77,7 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
         lagna_si = chart.lagna_sign_index
         ax = score_axis(chart, lagna_si, "D1", "parashari")
         actual_score = ax.scores.get(house, 0.0)
-    except Exception:
+    except (ImportError, AttributeError):
         actual_score = 0.0
 
     # AL-based score: score of AL sign as a reference

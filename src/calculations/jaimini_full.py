@@ -74,7 +74,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
             karakas = karakas_raw
         else:
             karakas = {p: r for p, r in karakas_raw}
-    except Exception:
+    except (ValueError, TypeError):
         karakas = {}
 
     arudha = compute_all_arudha_padas(chart)
@@ -140,7 +140,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
                 "Jaimini Sutra 2.1.12",
             )
         )
-    except Exception:
+    except (ValueError, AttributeError):
         pass
 
     # AL and 7th from AL — relationship quality
@@ -214,7 +214,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
                 source="Jaimini Sutra 4.2",
             )
         )
-    except Exception:
+    except (ImportError, TypeError):
         pass
     return yogas
 
@@ -228,7 +228,7 @@ def compute_karakamsha_scores(chart) -> dict[int, float]:
         kk = compute_karakamsha(chart)
         ax = score_axis(chart, kk.ak_d9_sign_index, "Karakamsha", "jaimini")
         return ax.scores
-    except Exception:
+    except (ValueError, TypeError):
         return {h: 0.0 for h in range(1, 13)}
 
 
@@ -271,7 +271,7 @@ def compute_jaimini_longevity(chart) -> JaiminiLongevity:
             ak = next((p for p, r in karakas_raw.items() if r == "AK"), "Sun")
         else:
             ak = next((p for p, r in karakas_raw if r == "AK"), "Sun")
-    except Exception:
+    except (ValueError, TypeError):
         ak = "Sun"
     ak_si = chart.planets[ak].sign_index
     h8_from_ak_si = (ak_si + 7) % 12

@@ -125,7 +125,7 @@ def apply_score_plugins(chart, house: int) -> list[PluginScoreResult]:
                         description=reg["description"],
                     )
                 )
-        except Exception:
+        except (KeyError, AttributeError):
             pass
     return results
 
@@ -167,6 +167,6 @@ def _gajakesari_bvr(chart) -> bool:
 
         dig = compute_all_dignities(chart).get("Jupiter")
         not_afflicted = not (dig and dig.combust)
-    except Exception:
+    except ImportError:
         not_afflicted = True
     return in_kendra and not_afflicted

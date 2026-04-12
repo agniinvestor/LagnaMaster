@@ -648,7 +648,7 @@ def compute_dignity(
         try:
             nb_result = _check_neecha_bhanga(planet, chart)
             nb_count = nb_result.neecha_bhanga_count
-        except Exception:
+        except (KeyError, ValueError, TypeError):
             pass
 
     # Core dignity level

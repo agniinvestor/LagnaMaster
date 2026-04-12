@@ -293,7 +293,7 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
 
             try:
                 ys = compute_yoga_strength(yoga_name, planets, chart)
-            except Exception:
+            except (ValueError, TypeError):
                 ys = None
             results.append(
                 NamedYogaResult(

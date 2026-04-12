@@ -166,7 +166,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
                     True,
                 )
             )
-    except Exception:
+    except ImportError:
         pass
 
     # ── 7. Score extremes ────────────────────────────────────────────────────
@@ -196,7 +196,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
                             False,
                         )
                     )
-    except Exception:
+    except (ValueError, TypeError):
         pass
 
     from src.calculations.multi_axis_scoring import score_all_axes

@@ -473,7 +473,7 @@ def score_axis(
     try:
         av = compute_ashtakavarga(chart)
         av_bindus = {si: av.sarva.bindus[si] for si in range(12)}
-    except Exception:
+    except (ValueError, TypeError):
         av_bindus = None
 
     scores = {}
@@ -503,7 +503,7 @@ def score_axis(
                 h: school_score_adjustment(scores[h], [], school, strict=True)
                 for h in scores
             }
-        except Exception:
+        except ImportError:
             pass
 
     signs = [

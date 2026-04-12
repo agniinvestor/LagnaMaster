@@ -103,21 +103,21 @@ def score_chart_v3(
 
     try:
         kk = compute_karakamsha(chart)
-    except Exception:
+    except (ValueError, TypeError):
         kk = None
 
     from src.calculations.house_score import compute_house_scores
 
     try:
         house_dists = compute_house_scores(chart, school)
-    except Exception:
+    except (ValueError, TypeError):
         house_dists = {}
 
     from src.calculations.feature_decomp import extract_features
 
     try:
         feat_vec = extract_features(chart, school)
-    except Exception:
+    except (ValueError, TypeError):
         feat_vec = None
 
     return ChartScoresV3(
@@ -169,7 +169,7 @@ def score_chart_with_dasha(chart, query_date=None, base_scores=None):
 
         report = apply_dasha_scoring(base_scores, chart, query_date)
         return {h: report.score_for_house(h) for h in range(1, 13)}
-    except Exception:
+    except ImportError:
         return base_scores
 
 

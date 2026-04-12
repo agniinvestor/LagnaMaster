@@ -520,5 +520,5 @@ def get_nbry_yogas(chart):
         from src.calculations.shadbala_patches import extract_nbry_yogas
 
         return extract_nbry_yogas(chart)
-    except Exception:
+    except ImportError:
         return []

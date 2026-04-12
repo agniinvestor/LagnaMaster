@@ -284,7 +284,7 @@ def compute_triple_concordance(
 
         d9_chart = _PseudoChart()
         d9_str = house_strength(houses[0], d9_chart)
-    except Exception:
+    except (ImportError, ValueError, TypeError):
         d9_str = "Unknown"
 
     # Domain varga

@@ -149,7 +149,7 @@ def compute_karakamsha(chart) -> KarakamshaResult:
             ak_d9_si = d9_map.D9.get(ak_planet, 0)
         else:
             ak_d9_si = chart.lagna_sign_index
-    except Exception:
+    except (KeyError, AttributeError):
         ak_d9_si = chart.lagna_sign_index
     frame = _build_frame("Karakamsha", ak_d9_si, chart)
     return KarakamshaResult(
