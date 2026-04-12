@@ -52,7 +52,7 @@ st.set_page_config(
 
 # ── core imports ──────────────────────────────────────────────────────────────
 from src.ephemeris import compute_chart  # noqa: E402
-from src.scoring import score_chart  # noqa: E402
+from src.scoring import score_chart, HOUSE_DOMAIN as _HOUSE_DOMAINS  # noqa: E402
 from src.db import init_db, save_chart, list_charts, get_chart  # noqa: E402
 from src.calculations.dignity import compute_all_dignities  # noqa: E402
 from src.calculations.yogas import detect_yogas  # noqa: E402
@@ -164,20 +164,6 @@ _PLANETS = [
     "Rahu",
     "Ketu",
 ]
-_HOUSE_DOMAINS = {
-    1: "Self & Vitality",
-    2: "Wealth & Family",
-    3: "Courage & Skills",
-    4: "Home & Happiness",
-    5: "Intellect & Children",
-    6: "Challenges",
-    7: "Relationships",
-    8: "Transformation",
-    9: "Fortune & Dharma",
-    10: "Career & Status",
-    11: "Gains & Income",
-    12: "Liberation & Loss",
-}
 _RATING_COLOUR = {
     "Excellent": "🟢",
     "Strong": "🟢",

@@ -10,6 +10,7 @@ Session 113 fix: nakshatra index float error
 
 from __future__ import annotations
 from src.data.constants import SIGN_NAMES
+from src.calculations.varga import _d9_sign_index
 from dataclasses import dataclass
 
 NAKSHATRA_NAMES = [
@@ -112,11 +113,6 @@ def nakshatra_index(longitude: float) -> int:
     return min(idx, 26)
 
 
-def _d9_sign_index(longitude: float) -> int:
-    """D9 navamsha sign from sidereal longitude (Parasara formula)."""
-    si = int(longitude / 30) % 12
-    pada = int((longitude % 30) * 9 / 30)
-    return (_D9_START[si % 4] + pada) % 12
 
 
 def nakshatra_position(longitude: float) -> NakshatraPosition:

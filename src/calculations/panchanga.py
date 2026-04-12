@@ -15,7 +15,7 @@ Source: BPHS, standard Vedic almanac (Panchang).
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime
-from src.data.constants import WEEKDAY_LORDS
+from src.data.constants import NAKSHATRA_NAMES as _NAKSHATRA_NAMES, WEEKDAY_LORDS
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS standard Panchang", "session": "S317"}
 
@@ -35,35 +35,6 @@ _TITHI_NAMES = [
     "Trayodashi",
     "Chaturdashi",
     "Purnima/Amavasya",
-]
-_NAKSHATRA_NAMES = [
-    "Ashwini",
-    "Bharani",
-    "Krittika",
-    "Rohini",
-    "Mrigashira",
-    "Ardra",
-    "Punarvasu",
-    "Pushya",
-    "Ashlesha",
-    "Magha",
-    "Purva Phalguni",
-    "Uttara Phalguni",
-    "Hasta",
-    "Chitra",
-    "Swati",
-    "Vishakha",
-    "Anuradha",
-    "Jyeshtha",
-    "Mula",
-    "Purva Ashadha",
-    "Uttara Ashadha",
-    "Shravana",
-    "Dhanishtha",
-    "Shatabhisha",
-    "Purva Bhadrapada",
-    "Uttara Bhadrapada",
-    "Revati",
 ]
 _YOGA_NAMES = [
     "Vishkamba",

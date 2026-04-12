@@ -63,12 +63,11 @@ def jagannatha_drekkana(longitude: float) -> int:
     deg_in_sign = lon % 30
     part = int(deg_in_sign / 10)  # 0, 1, or 2
 
-    _MOVABLE = {0, 3, 6, 9}
-    _FIXED = {1, 4, 7, 10}
+    from src.data.constants import CARDINAL_SIGNS, FIXED_SIGNS
 
-    if sign in _MOVABLE:
+    if sign in CARDINAL_SIGNS:
         base = 0  # Aries
-    elif sign in _FIXED:
+    elif sign in FIXED_SIGNS:
         base = 4  # Leo
     else:
         base = 8  # Sagittarius

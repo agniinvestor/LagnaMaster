@@ -18,18 +18,18 @@ Source: BPHS Ch.35; B.V. Raman "Three Hundred Important Combinations" (intro);
 """
 
 from __future__ import annotations
-from src.data.constants import KENDRA_HOUSES, SEVEN_PLANETS
+from src.data.constants import AIR_SIGNS, CARDINAL_SIGNS, EARTH_SIGNS, FIRE_SIGNS, FIXED_SIGNS, KENDRA_HOUSES, MUTABLE_SIGNS, SEVEN_PLANETS, WATER_SIGNS
 from dataclasses import dataclass, field
 
 
-# Sign classifications
-_MOVABLE = {0, 3, 6, 9}  # Ar, Cn, Li, Cp
-_FIXED = {1, 4, 7, 10}  # Ta, Le, Sc, Aq
-_DUAL = {2, 5, 8, 11}  # Ge, Vi, Sg, Pi
-_FIRE = {0, 4, 8}
-_EARTH = {1, 5, 9}
-_AIR = {2, 6, 10}
-_WATER = {3, 7, 11}
+# Sign classifications — from canonical constants
+_MOVABLE = CARDINAL_SIGNS
+_FIXED = FIXED_SIGNS
+_DUAL = MUTABLE_SIGNS
+_FIRE = FIRE_SIGNS
+_EARTH = EARTH_SIGNS
+_AIR = AIR_SIGNS
+_WATER = WATER_SIGNS
 _ODD = {0, 2, 4, 6, 8, 10}
 _EVEN = {1, 3, 5, 7, 9, 11}
 

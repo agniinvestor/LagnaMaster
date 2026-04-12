@@ -17,10 +17,7 @@ Source: Jaimini Sutras Adhyaya 1 Pada 1 v.15-20
 """
 
 from __future__ import annotations
-
-_MOVABLE = {0, 3, 6, 9}  # Aries, Cancer, Libra, Capricorn
-_FIXED = {1, 4, 7, 10}  # Taurus, Leo, Scorpio, Aquarius
-_DUAL = {2, 5, 8, 11}  # Gemini, Virgo, Sagittarius, Pisces
+from src.data.constants import CARDINAL_SIGNS as _MOVABLE, FIXED_SIGNS as _FIXED
 
 _ALL = set(range(12))
 
