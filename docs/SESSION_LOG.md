@@ -737,3 +737,24 @@ Root cause of 103 CI failures identified and fixed:
   - **Lessons:** L017-L020. Plan anchoring, premature closure (3rd instance), "test-only" is a question not a status, removing silent catches exposes real bugs.
   - **Honest assessment:** Claimed Phase -1 "substantially complete" — user corrected. 12.7% of src/ is unreachable dead weight. 14,815 tests pass but unknown fraction test dead code. `/codebase-surgery` command created to resolve.
   - 14,815 tests, ruff clean, constants clean, import boundaries clean
+
+### S325 — Codebase Surgery
+- Resolved all dead files (12 deleted, 1,355 lines), wired 80 test-only modules into production
+- Fixed 54 silent exception handlers (8 ACCEPT remain)
+- **Critical finding:** scoring.py and corpus are completely disconnected — rule_firing.py bridge exists but uncalled
+- `/health-assessment` and `/health-check` commands created
+- 14,811 tests, 280 src/ files, zero unreachable
+
+### S326 — Health Assessment + PROJECT_STRATEGY.md
+- Produced `docs/PROJECT_STRATEGY.md` (603 lines) — single golden source
+- Full diagnostic: 30 duplication clusters, corpus-engine disconnect confirmed
+- Sequenced work: W0 (consolidate) -> W1 (wire) -> W2 (validate) -> W3 (encode)
+- OB-3 baseline: median rho = 0.42
+
+### W0 — Engine Consolidation (Phases 1-4)
+- **Phase 1:** Scoring engine split RESOLVED. scoring.py is thin wrapper (553->148 lines), multi_axis_scoring.evaluate_house_detailed() is canonical. Functional benefics everywhere.
+- **Phase 2:** 3 aspect function duplicates consolidated (feature_decomp, scoring_patches, rule_firing -> canonical sources)
+- **Phase 3:** 21 duplicate dignity/friendship/sign-lord tables across 12 files replaced with imports from dignity.py/constants.py (~300 lines removed)
+- **Phase 4:** Sign type constants (5 files), navamsha D9 (nakshatra.py), nakshatra names (panchanga.py), house domains (app.py) consolidated
+- **Totals:** 24 files, -722 lines, OB-3 rho unchanged (0.42). W1 unblocked.
+- `/consolidation-session-2` command created for remaining clusters

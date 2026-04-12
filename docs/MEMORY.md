@@ -25,13 +25,15 @@ When in doubt, read that file to reconstruct state.
 
 ### Test Status
 - **14,811 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **654 V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system.
+- **W0 consolidation:** scoring engine split RESOLVED (scoring.py -> thin wrapper, evaluate_house_detailed canonical). 722 lines removed across 24 files. OB-3 rho unchanged (0.42). W1 (wire corpus -> scoring) is UNBLOCKED.
 - S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete
 - S318: deep audit 104 bugs found, **104/104 CLOSED** across 40+ commits
 - S319: BUG-089-093 fixes + or_group validation + 37 new rules across 8 chapters
 - S323: constants.py golden source, 79 files refactored, validate_constants.py
 - S324: C03+C20 fixed, 2 new condition primitives, 84 silent handlers narrowed, MODULE_REGISTRY + import_boundary_check + invariants.py, 7 dead modules deleted
 - **S325 (codebase surgery):** 12 dead files deleted (1,355 lines), 80 test-only files wired into production (0 unreachable), 54 silent handlers fixed (8 ACCEPT remain), 1 trivial assertion fixed. **280 src/ files, 122,036 lines. Zero unreachable. Zero ghost tests.**
-- **⚠️ CRITICAL FINDING (S325):** scoring.py (22 hardcoded rules) and src/corpus/ (7,466 encoded rules) are completely disconnected. rule_firing.py bridges them but is not called by any scoring path. Encoding more rules has zero effect on chart scores until the bridge is wired.
+- **⚠️ CRITICAL FINDING (S325):** scoring.py and src/corpus/ (7,466 encoded rules) are completely disconnected. rule_firing.py bridges them but is not called by any scoring path. Encoding more rules has zero effect on chart scores until the bridge is wired.
+- **W0 RESOLVED (scoring engine split):** scoring.py now delegates to multi_axis_scoring.evaluate_house_detailed(). One canonical 26-rule engine with functional benefics. The scoring side of the bridge is now unified — W1 (wiring corpus into it) can proceed.
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -139,7 +141,10 @@ When in doubt, read that file to reconstruct state.
 - **S318 (Final Sweep):** 20 code bugs + 3 security issues fixed via 6 parallel agents. Shadbala (Tribhaga/Drekkana/Hora/Chesta/Yuddha Bala), divisional chart formulas (D3/D4/D7/D10/D16/D20/D24/D45/D60), kundali milan (Yoni/Maitri verified already correct), computation fixes (Jupiter aspect off-by-one, Arudha Pada +10, orb_strength actual aspects, KP weekday), graded aspect strengths, moolatrikona degree bounds, JWT secret hardening, CORS restriction, version update. 14564 tests (+34), 32 new regression tests.
 - **S318 (Ch.19 Encoding):** BUG-094 resolved — Ch.19 re-encoded from 6→18 rules, sloka_count 7→15. All short-life combinations (v.8-13) and long-life yogas (v.14-15) now encoded. 4 health_sensitive rules with safety_tier=restricted. Also fixed under-encoding in v.3 (split into Saturn + 10th lord paths) and v.4-7 (split 2 merged rules into 5 proper rules). V2 scorecard: 0 errors, 0 warnings.
 - **S318 COMPLETE: 99/104 bugs fixed.** 5 corpus data bugs (BUG-089-093) remain — run `/corpus-data-fixes` to resolve.
-- **Next:** `/corpus-data-fixes` to close BUG-089-093, then S319
+- **S325 (Codebase Surgery):** 12 dead files deleted (1,355 lines), 80 test-only modules wired, 54 silent handlers fixed. 280 src/ files, zero unreachable.
+- **S326 (Health Assessment):** PROJECT_STRATEGY.md produced. 30 duplication clusters inventoried. W0->W1->W2->W3 critical path established.
+- **W0 (Engine Consolidation):** Scoring engine split RESOLVED. scoring.py (553->148 lines) now delegates to evaluate_house_detailed(). 12 files' dignity/friendship tables consolidated. 722 lines removed across 24 files. OB-3 rho unchanged (0.42). `/consolidation-session-2` created for remaining clusters.
+- **Next:** W1 — wire inference.py output into scoring_v3.py (the #1 priority). Or `/consolidation-session-2` for remaining duplication cleanup.
 
 ---
 

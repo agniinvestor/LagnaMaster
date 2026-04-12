@@ -1,3 +1,6 @@
+> **HISTORICAL REFERENCE** — Superseded by `docs/PROJECT_STRATEGY.md` Section 2 (2026-04-12).
+> This document describes the original 3-layer convergence model. For current architecture, read PROJECT_STRATEGY.md.
+
 # ARCHITECTURE.md — LagnaMaster Technical Architecture
 > **Update this file when modules are added, wired, or refactored.**
 > Ground truth for function signatures, data classes, and implementation details.
@@ -56,8 +59,8 @@ src/calculations/            12 Jyotish modules
   gochara.py                 Transit analysis: GocharaReport, Sade Sati, AV bindus
   panchanga.py               5-limb almanac: Tithi/Vara/Nakshatra/Yoga/Karana + D9
         ↓
-src/scoring.py               22 BPHS rules × 12 houses → score in [-10, +10]
-src/multi_axis_scoring.py    Extended scoring — school gates, war loser penalty (S187)
+src/scoring.py               Thin wrapper → ChartScores/HouseScore/RuleResult API (W0)
+src/multi_axis_scoring.py    Canonical 26-rule engine: evaluate_house_detailed() (W0)
 src/scoring_v3.py            Dasha-sensitized multi-axis scores D1/D9/D10/CL/SL (S187)
         ↓
 src/db_pg.py                 PostgreSQL routing + SQLite fallback (S188)
@@ -274,9 +277,11 @@ Public API: `compute_kala_bala(jd_ut, lat, lon_geo, planet_longitudes, birth_yea
 
 ---
 
-### src/scoring.py — 22-Rule Engine
+### src/scoring.py — Thin Wrapper (W0 refactored)
 
-**22 Rules (WC = counted at 0.5× weight):**
+**NOTE (W0):** scoring.py is now a thin wrapper around `multi_axis_scoring.evaluate_house_detailed()`. All rule evaluation lives in multi_axis_scoring.py. scoring.py preserves the ChartScores/HouseScore/RuleResult public API.
+
+**26 Rules (WC = counted at 0.5x weight):**
 
 | Rule | Weight | Description | WC? |
 |------|--------|-------------|-----|

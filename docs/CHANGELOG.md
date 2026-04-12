@@ -1902,3 +1902,73 @@ Three-phase session: (1) spot-checked S319 bug fixes against PDF, (2) closed or_
 
 ### Follow-up
 `/health-assessment` — produce docs/PROJECT_STRATEGY.md as the single golden source for all sessions
+
+## S326 — 2026-04-12 — Health Assessment + PROJECT_STRATEGY.md
+
+**Commits:** see S325 tail (health-assessment produced PROJECT_STRATEGY.md)
+**Tests:** 14,811 passing / 210 skipped / 0 lint errors
+
+### What was built
+- `docs/PROJECT_STRATEGY.md`: 603-line golden source document — single authoritative document for project state, architecture, work items, and decisions
+- Full diagnostic: corpus-engine disconnect confirmed, 30 duplication clusters inventoried, W0-W17 work items sequenced by dependency
+- OB-3 baseline established: median rho = 0.42 across 4,832 AA+A charts
+
+### Three-Lens Notes
+- **Tech:** One document replaces 10+ overlapping status docs. Dependency DAG clarifies critical path: W0 (consolidate) then W1 (wire) then W2 (validate) then W3 (encode)
+- **Astrology:** No encoding. Diagnostic only.
+- **Research:** OB-3 baseline now documented per-house (H10 Famous rho=+0.405, H07 Marriage rho=+0.449, H05 Kids rho=+0.448)
+
+## W0 — 2026-04-12 — Engine Consolidation (Phases 1-4)
+
+**Commits:** af1d9afd through 0bb575de (4 refactor commits + 1 docs commit)
+**Tests:** 14,811 passing / 210 skipped / 0 lint errors
+**OB-3:** median rho = 0.42 (unchanged from baseline)
+
+### What was refactored (4 phases, 24 files, -722 lines)
+
+**Phase 1 (W0-1): Scoring engine split RESOLVED**
+- `scoring.py`: 553 -> 148 lines, now thin wrapper calling `evaluate_house_detailed()`
+- `multi_axis_scoring.py`: canonical 26-rule engine (R01-R24 + D6 Avastha + WL War Loser)
+- Switched to functional benefic/malefic classification (BPHS Ch.34)
+- Aligned R16 weight (-1.00 -> -0.75), R22 (planet-specific -> flat +0.25)
+- Added R13/R16 mitigation per BPHS Ch.11, R23 SAV, D6 avastha, WL war loser to scoring.py output
+
+**Phase 2 (W0-2): Aspect calculations consolidated**
+- `feature_decomp._aspects()` -> imports from multi_axis_scoring
+- `scoring_patches.get_aspect_strength()` -> delegates to sputa_drishti
+- `rule_firing._planet_aspects_house()` -> delegates to multi_axis_scoring._aspects
+
+**Phase 3 (W0-3): Dignity/friendship tables consolidated (12 files)**
+- Sign lords: house_lord, bhava_bala, kp, planetary_state, sapta_varga (5 copies -> 1)
+- Exaltation: yogas, stronger_of_two, lagnesh_strength, jaimini_full, sapta_varga (5 -> 1)
+- Debilitation: lagnesh_strength, sapta_varga (2 -> 1)
+- Own signs: yogas, stronger_of_two, jaimini_full, sapta_varga, planetary_state, divisional_charts (6 -> 1)
+- Naisargika friendship: shadbala_patches, sapta_varga, divisional_charts (3 -> 1)
+
+**Phase 4 (W0-4): Remaining duplicates**
+- Sign type constants: nabhasa_yogas, jaimini_rashi_drishti, drekkana_variants -> constants.py
+- Navamsha D9: nakshatra.py -> imports from varga.py
+- Nakshatra names: panchanga.py -> imports from constants.py
+- House domains: app.py -> imports from scoring.py
+
+### Behavioral changes (all BPHS-correct)
+- scoring.py now uses functional benefics (was natural) — changes which planets trigger R02/R09
+- R16 weight -0.75 (was -1.00 in scoring.py)
+- R22 retrograde flat +0.25 per Phaladeepika (was planet-specific in scoring.py)
+- R13 mitigation per BPHS Ch.11 note (b) applied
+- R16 exemption per BPHS Ch.11 note (c) applied
+- Rule count per house: 23 -> 26 (added R23, D6, WL)
+
+### What was NOT resolved
+- panchanga.py D9 formula disagrees with varga.py (180/360 degrees — correctness bug to investigate)
+- Longevity (longevity.py vs ayurdaya.py), Vimshopaka, Nabhasa, Chara karakas, Karakamsha
+- rule_firing.py dead code (_SPECIAL_ASPECTS, local dignity tables)
+- Result type consolidation (HouseScore collision, 6 yoga types)
+
+### Three-Lens Notes
+- **Tech:** 722 lines removed, 24 files changed. One canonical rule evaluation function. OB-3 rho unchanged.
+- **Astrology:** Functional benefics now used everywhere (BPHS Ch.34 correct). No more natural-vs-functional disagreement.
+- **Research:** OB-3 confirms the behavioral changes are neutral at scale — functional benefics shift individual charts but cancel across 4,832 diverse charts.
+
+### Follow-up
+`/consolidation-session-2` — resolve remaining clusters (D9 formula, longevity, vimshopaka, dead code)
