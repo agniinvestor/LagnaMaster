@@ -316,24 +316,20 @@ def _planet_dignity_state(chart, planet_name: str) -> str:
 def _planet_aspects_house(chart, planet_name: str, target_house: int) -> bool:
     """Check if a planet aspects a target house via Parashari graha drishti.
 
-    Every planet aspects the 7th house from its position.
-    Mars also aspects 4th and 8th; Jupiter 5th and 9th; Saturn 3rd and 10th.
+    Delegates to multi_axis_scoring._aspects (canonical implementation).
     """
-    p_house = _planet_house(chart, planet_name)
-    if p_house == 0:
+    from src.calculations.multi_axis_scoring import _aspects
+    ph = _planet_house(chart, planet_name)
+    if ph == 0:
         return False
-    diff = (target_house - p_house) % 12
-    # All planets aspect 7th (diff=6 in 0-indexed)
-    if diff == 6:
-        return True
-    # Special aspects
+    # Normalize name for canonical aspect lookup
     name = planet_name.title()
     for std_name in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus",
                      "Saturn", "Rahu", "Ketu"):
         if std_name.lower() == name.lower():
             name = std_name
             break
-    return diff in _SPECIAL_ASPECTS.get(name, set())
+    return _aspects(name, ph, target_house)
 
 
 _DIGNITY_RANK = {"exalted": 5, "moolatrikona": 4, "own_sign": 3, "neutral": 2, "debilitated": 1, "unknown": 0}

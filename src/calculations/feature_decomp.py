@@ -329,13 +329,7 @@ def _extract_bhavesh_house_type(
 
 # ── S197 extractors ──────────────────────────────────────────────────────────
 
-def _aspects(planet: str, p_house: int, t_house: int) -> bool:
-    """Basic aspect check (mirrors multi_axis_scoring)."""
-    diff = (t_house - p_house) % 12
-    if diff == 6:
-        return True
-    extras = {"Mars": {3, 7}, "Jupiter": {4, 8}, "Saturn": {2, 9}}  # BPHS Ch.26 v.5: Mars 4th+8th
-    return diff in extras.get(planet, set())
+from src.calculations.multi_axis_scoring import _aspects  # canonical aspect check
 
 
 def _extract_benefic_net_score(

@@ -14,7 +14,6 @@ into the existing scoring_v3.py without a full rewrite.
 
 from __future__ import annotations
 from math import tanh
-from src.data.constants import SPECIAL_ASPECTS
 from dataclasses import dataclass
 from typing import Optional
 
@@ -25,30 +24,11 @@ from typing import Optional
 #   Mars 4th+8th, Jupiter 5th+9th, Saturn 3rd+10th
 
 # Base partial aspects common to all planets
-_BASE_ASPECTS: dict[int, float] = {
-    3: 0.25,   # 1/4 aspect
-    4: 0.75,   # 3/4 aspect
-    5: 0.50,   # 1/2 aspect
-    7: 1.00,   # full aspect
-    8: 0.75,   # 3/4 aspect
-    9: 0.50,   # 1/2 aspect
-    10: 0.25,  # 1/4 aspect
-}
-
-
-
 def get_aspect_strength(aspector: str, houses_away: int) -> float:
-    """
-    Returns the fractional strength of an aspect per BPHS Ch.26 v.2-5.
+    """Delegate to canonical sputa_drishti implementation."""
+    from src.calculations.sputa_drishti import get_aspect_strength as _canonical
+    return _canonical(aspector, houses_away)
 
-    houses_away: 1-12, where 7 = opposition (full aspect for all planets).
-    Base aspects apply to ALL planets: 3rd/10th=0.25, 5th/9th=0.50, 4th/8th=0.75, 7th=1.0
-    Special aspects (Mars 4/8, Jupiter 5/9, Saturn 3/10) are full (1.0).
-    """
-    # Special aspects override to full strength
-    if houses_away in SPECIAL_ASPECTS.get(aspector, set()):
-        return 1.0
-    return _BASE_ASPECTS.get(houses_away, 0.0)
 
 
 def aspect_hits(aspector_house: int, target_house: int) -> int:
