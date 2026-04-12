@@ -1,6 +1,7 @@
 """Jaimini Chara Dasha — sign-based predictive cycle (Session 14)."""
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
@@ -18,20 +19,6 @@ _SIGN_NAMES = [
     "Aquarius",
     "Pisces",
 ]
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _MAIN_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 _ODD_SIGNS = {0, 2, 4, 6, 8, 10}
 
@@ -48,7 +35,7 @@ class CharaDashaEntry:
 
 
 def _sld(si, chart):
-    lord = _SIGN_LORD[si]
+    lord = SIGN_LORDS[si]
     lp = chart.planets.get(lord)
     if lp is None:
         return 1

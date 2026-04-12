@@ -24,20 +24,6 @@ from datetime import date
 
 from src.calculations.extended_yogas import YogaResult
 
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 
 def _planet_houses(chart) -> dict[str, int]:

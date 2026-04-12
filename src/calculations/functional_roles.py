@@ -24,25 +24,11 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS
+from src.data.constants import NATURAL_BENEFICS, SIGN_LORDS
 from dataclasses import dataclass, field
 from typing import Optional
 
 # Sign lord map (0=Aries … 11=Pisces)
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 # Natural benefics and malefics
 
@@ -122,7 +108,7 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     house_lords = {}
     for h in range(1, 13):
         sign_idx = (lsi + h - 1) % 12
-        house_lords[h] = _SIGN_LORD[sign_idx]
+        house_lords[h] = SIGN_LORDS[sign_idx]
 
     roles = FunctionalRoles(
         lagna_sign=chart.lagna_sign,
@@ -200,6 +186,6 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     roles.badhaka_house = bh
     roles.badhaka_sign_index = bsi
     roles.badhaka_sign = _SIGNS[bsi]
-    roles.badhaka_lord = _SIGN_LORD[bsi]
+    roles.badhaka_lord = SIGN_LORDS[bsi]
 
     return roles

@@ -27,6 +27,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
 _CONJ_ORB_FULL = 15.0  # beyond this = no conjunction
@@ -112,22 +113,8 @@ def association_strength(p1: str, p2: str, chart) -> AssociationStrength:
         q = "Absent"
 
     # Parivartana: each planet in sign owned by the other
-    _SIGN_LORD = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    lord1 = _SIGN_LORD[pos1.sign_index % 12]
-    lord2 = _SIGN_LORD[pos2.sign_index % 12]
+    lord1 = SIGN_LORDS[pos1.sign_index % 12]
+    lord2 = SIGN_LORDS[pos2.sign_index % 12]
     parivartana = lord1 == p2 and lord2 == p1
 
     return AssociationStrength(

@@ -14,6 +14,7 @@ Usage:
     .venv/bin/python tools/diff_engine.py [--charts-only CHART_ID,...]
 """
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 
 import argparse
 import json
@@ -32,10 +33,6 @@ from tools.diff_engine_core import Verdict, diff_field  # noqa: E402
 from tools.normalize_outputs import normalize_longitude, normalize_sign, normalize_nakshatra  # noqa: E402
 
 # Sign → lord mapping (standard Parashari)
-_SIGN_LORDS = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury",
-    6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter",
-}
 
 # Nakshatra names for index-to-name conversion
 _NAK_NAMES = [
@@ -125,7 +122,7 @@ def _extract_lm_values(chart, birth_data: dict | None = None) -> dict:
     # Phase 2: house lords
     for h in range(1, 13):
         sign_idx = (chart.lagna_sign_index + h - 1) % 12
-        values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
+        values[f"house_{h}_lord"] = SIGN_LORDS[sign_idx]
 
     # Phase 1: Panchangam
     if birth_data:
@@ -283,7 +280,7 @@ def _extract_pjh_values(pjh: dict) -> dict:
     # Phase 2: house lords
     for h in range(1, 13):
         sign_idx = (lagna_sign_index + h - 1) % 12
-        values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
+        values[f"house_{h}_lord"] = SIGN_LORDS[sign_idx]
 
     # Phase 1: Panchangam
     panch = pjh.get("panchangam")

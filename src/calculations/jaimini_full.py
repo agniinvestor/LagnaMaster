@@ -16,6 +16,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -32,20 +33,6 @@ _SIGNS = [
     "Aquarius",
     "Pisces",
 ]
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _EXALT_SI = {
     "Sun": 0,
     "Moon": 1,
@@ -183,7 +170,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
 
     # UL and its lord — marriage quality
     ul_si = arudha.upapada.sign_index
-    ul_lord = _SIGN_LORD[ul_si]
+    ul_lord = SIGN_LORDS[ul_si]
     ul_lord_pos = chart.planets.get(ul_lord)
     ul_good = False
     if ul_lord_pos:
@@ -288,7 +275,7 @@ def compute_jaimini_longevity(chart) -> JaiminiLongevity:
         ak = "Sun"
     ak_si = chart.planets[ak].sign_index
     h8_from_ak_si = (ak_si + 7) % 12
-    maheshvara = _SIGN_LORD[h8_from_ak_si]
+    maheshvara = SIGN_LORDS[h8_from_ak_si]
 
     # Rudra: stronger of H8 lord and H12 lord (by house position)
     lord8 = hmap.house_lord[7]

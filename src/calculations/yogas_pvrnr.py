@@ -10,6 +10,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 from datetime import date
 
@@ -185,21 +186,7 @@ def detect_pvrnr_yogas(
     lagnesh_h = ph.get(lagnesh, 0)
     moon_si = chart.planets["Moon"].sign_index if "Moon" in chart.planets else 0
     lagnesh_with_moon = lagnesh_h == ph.get("Moon", 0)
-    _SIGN_LORD = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    moon_dispositor = _SIGN_LORD[moon_si % 12]
+    moon_dispositor = SIGN_LORDS[moon_si % 12]
     dispositor_strong = ph.get(moon_dispositor, 0) in _STRONG
     pushkala = lagnesh_with_moon and dispositor_strong
     y(

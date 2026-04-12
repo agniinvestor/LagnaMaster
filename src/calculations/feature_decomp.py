@@ -39,15 +39,9 @@ Classical sources
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA
 
 
-# ── Sign-lord map (0=Aries … 11=Pisces) ──────────────────────────────────────
-_SIGN_LORD: dict[int, str] = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-    5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-    9: "Saturn", 10: "Saturn", 11: "Jupiter",
-}
 
 # House-type placement scores for bhavesh (R04 house placement aspect)
 _HOUSE_TYPE_SCORE: dict[int, float] = {
@@ -172,7 +166,7 @@ def _extract_bhavesh_dignity(house: int, house_si: int, chart) -> RuleFeature:
     1.0 = deep exaltation, -1.0 = deep debilitation.
     Source: PVRNR BPHS Ch.47 — bhavesh dignity determines house promise.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     raw = 0.0  # neutral default
 
     if bhavesh in chart.planets:
@@ -194,7 +188,7 @@ def _extract_dig_bala(house: int, house_si: int, chart, frame_lagna_si: int) -> 
     1.0 if bhavesh occupies its Dig Bala house in this frame, else 0.0.
     Source: BPHS Ch.3 — planets gain full directional strength in specific houses.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     bala_house = DIG_BALA_PEAK.get(bhavesh)
     if bala_house is None or bhavesh not in chart.planets:
         return RuleFeature("dig_bala", 0.0, "R20", house)
@@ -266,7 +260,7 @@ def _extract_combust_score(house: int, house_si: int, chart) -> RuleFeature:
     -1.0 = combust AND retrograde (worst).
     Source: BPHS Ch.3 v.51-59; Phaladeepika Ch.2 — combustion reduces planet significations.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     if bhavesh not in chart.planets:
         return RuleFeature("combust_score", 0.0, "R19", house)
 
@@ -298,7 +292,7 @@ def _extract_retrograde_score(house: int, house_si: int, chart) -> RuleFeature:
     Sun/Moon never retrograde → 0.0.
     Source: Phaladeepika Ch.2 v.9; BPHS Ch.3 — vakra (retrograde) planets behave unusually.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     if bhavesh not in chart.planets:
         return RuleFeature("retrograde_score", 0.0, "R22", house)
 
@@ -324,7 +318,7 @@ def _extract_bhavesh_house_type(
     1.0 = H1 (kendra + trikona), 0.75 = kendra, 0.9 = trikona, 0.1 = dusthana.
     Source: BPHS Ch.11 — house of bhavesh placement determines house promise.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     if bhavesh not in chart.planets:
         return RuleFeature("bhavesh_house_type", 0.3, "R04", house)  # neutral default
 
@@ -354,7 +348,7 @@ def _extract_benefic_net_score(
              + 0.5*fb_aspects_bhavesh) / 5.0  → [0, 1]
     Source: PVRNR BPHS — benefic placement, aspect, and association all count.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     p_house = {p: (pos.sign_index - frame_lagna_si) % 12 + 1
                for p, pos in chart.planets.items()}
     bh_house = p_house.get(bhavesh, house)
@@ -391,7 +385,7 @@ def _extract_malefic_net_score(
              + 0.5*fm_aspects_bhavesh) / 5.0  → [0, 1]
     Source: PVRNR BPHS — malefic association and aspect reduce house promise.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     p_house = {p: (pos.sign_index - frame_lagna_si) % 12 + 1
                for p, pos in chart.planets.items()}
     bh_house = p_house.get(bhavesh, house)
@@ -467,7 +461,7 @@ def _extract_pushkara_nav(house: int, house_si: int, chart) -> RuleFeature:
     0.0 = not in Pushkara Navamsha.
     Source: BPHS — planets in Pushkara Navamsha confer special benefic results.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     if bhavesh not in chart.planets:
         return RuleFeature("pushkara_nav", 0.0, "R21", house)
     try:
@@ -486,7 +480,7 @@ def _extract_war_loser(house: int, house_si: int, chart) -> RuleFeature:
      0.0 = not a war loser.
     Source: Saravali Ch.4 v.18-22 — war-losing planet loses its significations.
     """
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
     war_losers = getattr(chart, "planetary_war_losers", set()) or set()
     val = -1.0 if bhavesh in war_losers else 0.0
     return RuleFeature("war_loser", val, "YUDDHA", house)

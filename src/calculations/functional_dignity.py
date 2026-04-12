@@ -18,22 +18,9 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
-_SIGN_LORDS = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
@@ -48,7 +35,7 @@ _DUAL_LAGNAS = {2, 5, 8, 11}  # Gemini, Virgo, Sag, Pisces
 
 def _house_lords(lagna_si: int) -> dict[int, str]:
     """Map {house_number: lord} for a given Lagna sign."""
-    return {h: _SIGN_LORDS[(lagna_si + h - 1) % 12] for h in range(1, 13)}
+    return {h: SIGN_LORDS[(lagna_si + h - 1) % 12] for h in range(1, 13)}
 
 
 def _houses_ruled_by(planet: str, lagna_si: int) -> list[int]:
@@ -56,7 +43,7 @@ def _houses_ruled_by(planet: str, lagna_si: int) -> list[int]:
     houses = []
     for h in range(1, 13):
         sign = (lagna_si + h - 1) % 12
-        if _SIGN_LORDS[sign] == planet:
+        if SIGN_LORDS[sign] == planet:
             houses.append(h)
     return houses
 
@@ -207,7 +194,7 @@ def _get_badhaka_lord(lagna_si: int) -> str:
     else:
         badhaka_house = 7
     badhaka_sign = (lagna_si + badhaka_house - 1) % 12
-    return _SIGN_LORDS[badhaka_sign]
+    return SIGN_LORDS[badhaka_sign]
 
 
 def badhakesh(lagna_sign_index: int) -> str:

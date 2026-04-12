@@ -23,7 +23,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -40,20 +40,6 @@ _SIGNS = [
     "Aquarius",
     "Pisces",
 ]
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 
 @dataclass
@@ -188,7 +174,7 @@ def compute_arudha(chart, house: int) -> int:
     """
     lsi = chart.lagna_sign_index
     house_si = (lsi + house - 1) % 12  # sign of the house
-    lord = _SIGN_LORD[house_si]
+    lord = SIGN_LORDS[house_si]
     lord_pos = chart.planets.get(lord)
     if lord_pos is None:
         return house_si  # fallback
@@ -215,7 +201,7 @@ def compute_arudha_lagna(chart) -> ArudhaResult:
       Exception: if AL falls on Lagna sign or 7th from Lagna, move 10 signs forward.
     """
     lsi = chart.lagna_sign_index
-    lagna_lord = _SIGN_LORD[lsi]
+    lagna_lord = SIGN_LORDS[lsi]
     ll_pos = chart.planets.get(lagna_lord)
     if ll_pos is None:
         ll_si = lsi  # fallback

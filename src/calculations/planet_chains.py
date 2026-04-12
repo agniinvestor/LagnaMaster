@@ -18,22 +18,9 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
@@ -157,7 +144,7 @@ def compute_dispositor_chain(
         if not pos:
             break
         si = pos.sign_index
-        dispositor = _SIGN_LORD[si % 12]
+        dispositor = SIGN_LORDS[si % 12]
 
         # Check if current planet is in its own sign (self-disposed)
         _OWN = {
@@ -187,7 +174,7 @@ def compute_dispositor_chain(
     if len(chain) == 2:
         final_pos = chart.planets.get(final)
         if final_pos:
-            final_disp = _SIGN_LORD[final_pos.sign_index % 12]
+            final_disp = SIGN_LORDS[final_pos.sign_index % 12]
             is_mutual = final_disp == chain[0]
 
     if is_self:
@@ -245,8 +232,8 @@ def compute_mutual_receptions(chart) -> list[MutualReception]:
             pos2 = chart.planets.get(p2)
             if not pos1 or not pos2:
                 continue
-            lord1 = _SIGN_LORD[pos1.sign_index % 12]
-            lord2 = _SIGN_LORD[pos2.sign_index % 12]
+            lord1 = SIGN_LORDS[pos1.sign_index % 12]
+            lord2 = SIGN_LORDS[pos2.sign_index % 12]
             if lord1 == p2 and lord2 == p1:
                 seen.add((p1, p2))
                 _OWN = {

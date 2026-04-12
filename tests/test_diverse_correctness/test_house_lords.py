@@ -1,12 +1,9 @@
 """Phase 2: House lord correctness across diverse charts."""
+from src.data.constants import SIGN_LORDS
 import pytest
 
 pytestmark = pytest.mark.phase2
 
-_SIGN_LORDS = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury",
-    6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter",
-}
 
 
 class TestHouseLords:
@@ -17,7 +14,7 @@ class TestHouseLords:
             if not verdict or verdict["status"] != "agreement":
                 continue
             sign_idx = (computed_chart.lagna_sign_index + h - 1) % 12
-            lm_lord = _SIGN_LORDS[sign_idx]
+            lm_lord = SIGN_LORDS[sign_idx]
             assert lm_lord == verdict["pjh"], (
                 f"H{h}: LM={lm_lord} vs PJH={verdict['pjh']}"
             )

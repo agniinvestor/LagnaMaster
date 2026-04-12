@@ -11,7 +11,7 @@ Usage:
     # result.feature_vector(): dict of ML-ready features
 """
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 
 from dataclasses import dataclass, field
 from src.calculations.dignity import MOOLTRIKONA_RANGES as _MT_RANGES
@@ -245,11 +245,6 @@ def _normalize_planet_name(name: str) -> str:
 
 
 # ── Sign lords (0=Aries → Mars, 1=Taurus → Venus, etc.) ──────────────────────
-_SIGN_LORDS = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon",
-    4: "Sun", 5: "Mercury", 6: "Venus", 7: "Mars",
-    8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter",
-}
 
 # ── Exaltation/debilitation/own signs (from dignity.py, duplicated for perf) ──
 _EXALT_SIGN = {
@@ -282,7 +277,7 @@ def _lord_of_house(chart, house_num: int) -> str:
       house 1 = lagna sign, house 2 = lagna sign + 1, etc.
     """
     sign_index = (chart.lagna_sign_index + house_num - 1) % 12
-    return _SIGN_LORDS.get(sign_index, "")
+    return SIGN_LORDS.get(sign_index, "")
 
 
 def _planet_dignity_state(chart, planet_name: str) -> str:
@@ -950,7 +945,7 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
 
             derived_si = compute_arudha(chart, base_house)
             target_si = (derived_si + offset - 1) % 12
-            lord = _SIGN_LORDS.get(target_si, "")
+            lord = SIGN_LORDS.get(target_si, "")
 
             if not lord or not _find_planet(chart, lord):
                 return False, 0
@@ -980,7 +975,7 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             # Step 2: Find sign at lord_offset from derived point
             target_si = (derived_si + lord_offset - 1) % 12
             # Step 3: Lord of that sign
-            lord = _SIGN_LORDS[target_si]
+            lord = SIGN_LORDS[target_si]
             lord_pos = _find_planet(chart, lord)
             if not lord_pos:
                 return False, 0
@@ -1178,7 +1173,7 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             house = cond.get("house", 1)
             nature = cond.get("nature", "benefic")  # "benefic"|"malefic"
             house_si = (chart.lagna_sign_index + house - 1) % 12
-            lord = _SIGN_LORDS[house_si]
+            lord = SIGN_LORDS[house_si]
             if nature == "benefic" and is_natural_malefic(lord, chart):
                 return False, 0
             if nature == "malefic" and not is_natural_malefic(lord, chart):

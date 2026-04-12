@@ -14,25 +14,12 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 from typing import Optional
+from src.data.constants import SIGN_LORDS
 
 # ─── Conditional Dasha Applicability ─────────────────────────────────────────
 
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
-_SIGN_LORDS = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 
 def compute_applicable_dashas(chart) -> dict:
@@ -252,24 +239,10 @@ def compute_triple_concordance(
     # D1 indication: is the relevant house lord well-placed?
     from src.calculations.dignity import compute_dignity
 
-    _SIGN_LORDS_LOCAL = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
 
     def house_strength(h: int, ref_chart) -> str:
         lord_sign = (ref_chart.lagna_sign_index + h - 1) % 12
-        lord = _SIGN_LORDS_LOCAL.get(lord_sign, "Jupiter")
+        lord = SIGN_LORDS.get(lord_sign, "Jupiter")
         if lord not in ref_chart.planets:
             return "Unknown"
         d = compute_dignity(lord, ref_chart)

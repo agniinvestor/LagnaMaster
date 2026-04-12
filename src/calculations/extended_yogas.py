@@ -15,24 +15,10 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 from dataclasses import dataclass
 from datetime import date
 
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _EXALT = {
     "Sun": 0,
     "Moon": 1,
@@ -292,9 +278,9 @@ def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
             )
             continue
         # Check 3 cancellation conditions
-        dispositor = _SIGN_LORD[debil_si]
+        dispositor = SIGN_LORDS[debil_si]
         disp_house = hmap.planet_house.get(dispositor, 0)
-        exalt_lord = _SIGN_LORD[_EXALT.get(p, debil_si)]
+        exalt_lord = SIGN_LORDS[_EXALT.get(p, debil_si)]
         exalt_lord_house = hmap.planet_house.get(exalt_lord, 0)
         from src.calculations.panchanga import compute_navamsha_chart
 

@@ -19,22 +19,9 @@ India 1947: Venus (Lagnesh) in H3 (neutral), neutral dignity → 0.00 ✓
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _EXALT_SI = {
     "Sun": 0,
     "Moon": 1,
@@ -76,7 +63,7 @@ class LagneshStrengthResult:
 def compute_lagnesh_strength(chart) -> LagneshStrengthResult:
     """Compute the Lagnesh global modifier."""
     lagna_si = chart.lagna_sign_index
-    lagnesh = _SIGN_LORD[lagna_si % 12]
+    lagnesh = SIGN_LORDS[lagna_si % 12]
 
     from src.calculations.house_lord import compute_house_map
 

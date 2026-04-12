@@ -24,6 +24,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
 _EXALT_SI = {
@@ -143,21 +144,7 @@ def stronger_sign(si1: int, si2: int, chart) -> int:
     Used for Narayana Dasha start (lagna vs 7th house).
     Strength of a sign = strength of its lord.
     """
-    _SIGN_LORD = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    lord1 = _SIGN_LORD[si1 % 12]
-    lord2 = _SIGN_LORD[si2 % 12]
+    lord1 = SIGN_LORDS[si1 % 12]
+    lord2 = SIGN_LORDS[si2 % 12]
     winner = stronger_planet(lord1, lord2, chart)
     return si1 if winner == lord1 else si2

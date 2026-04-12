@@ -11,6 +11,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
@@ -94,22 +95,8 @@ def compute_special_lagnas(
         "Rahu": 18,
         "Ketu": 7,
     }
-    _SIGN_LORDS = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
 
-    moon_lord = _SIGN_LORDS.get(moon_si, "Moon")
+    moon_lord = SIGN_LORDS.get(moon_si, "Moon")
     lord_period = _LORDS_PERIOD.get(moon_lord, 10)
     sree_lon = (moon_lon + lord_period * 30) % 360
     sree_lagna = int(sree_lon / 30) % 12
@@ -119,8 +106,8 @@ def compute_special_lagnas(
     # Source: Hora Makaranda
     lagna_h9_sign = (lagna_si + 8) % 12
     moon_h9_sign = (moon_si + 8) % 12
-    lagna_h9_lord = _SIGN_LORDS.get(lagna_h9_sign, "Jupiter")
-    moon_h9_lord = _SIGN_LORDS.get(moon_h9_sign, "Jupiter")
+    lagna_h9_lord = SIGN_LORDS.get(lagna_h9_sign, "Jupiter")
+    moon_h9_lord = SIGN_LORDS.get(moon_h9_sign, "Jupiter")
     indu_total = (
         _LORDS_PERIOD.get(lagna_h9_lord, 10) + _LORDS_PERIOD.get(moon_h9_lord, 10)
     ) % 12
@@ -137,7 +124,7 @@ def compute_special_lagnas(
     # Arudha of 12th house
     # Source: Jaimini Sutras (Arudha Lagna formula)
     h12_sign = (lagna_si + 11) % 12
-    h12_lord = _SIGN_LORDS.get(h12_sign, "Jupiter")
+    h12_lord = SIGN_LORDS.get(h12_sign, "Jupiter")
     if h12_lord in chart.planets:
         lord_si = chart.planets[h12_lord].sign_index
         dist = (lord_si - h12_sign) % 12

@@ -25,7 +25,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
-from src.data.constants import DIG_BALA_PEAK, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -108,20 +108,6 @@ _WEIGHTS = {
 _YK_MULT = {"parashari": 1.5, "kp": 1.5, "jaimini": 1.25}
 _WC_RULES = {"R03", "R05", "R07", "R14"}
 
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _DUSTHANA = {6, 8, 12}
@@ -178,7 +164,7 @@ def _score_one_house(
     W = _WEIGHTS[school]
     YKM = _YK_MULT[school]
     house_si = (frame_lagna_si + house - 1) % 12
-    bhavesh = _SIGN_LORD[house_si]
+    bhavesh = SIGN_LORDS[house_si]
 
     # planet→house mapping in this frame
     p_house = {
@@ -480,9 +466,9 @@ def score_axis(
     yogakaraka = yogakaraka_for_lagna(frame_lagna_si)
 
     # Build dusthana/kendra/trikona lord sets for this frame
-    dusthana_lords = {_SIGN_LORD[(frame_lagna_si + h - 1) % 12] for h in _DUSTHANA}
-    kendra_lords = {_SIGN_LORD[(frame_lagna_si + h - 1) % 12] for h in _KENDRA}
-    trikona_lords = {_SIGN_LORD[(frame_lagna_si + h - 1) % 12] for h in _TRIKONA}
+    dusthana_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _DUSTHANA}
+    kendra_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _KENDRA}
+    trikona_lords = {SIGN_LORDS[(frame_lagna_si + h - 1) % 12] for h in _TRIKONA}
 
     is_fb, is_fm = _make_frame_funcs(frame_lagna_si, chart, school)
 

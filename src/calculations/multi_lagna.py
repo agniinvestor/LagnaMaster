@@ -19,6 +19,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -37,20 +38,6 @@ _SIGNS = [
     "Pisces",
 ]
 _SIGN_IDX = {s: i for i, s in enumerate(_SIGNS)}
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 # Yogakaraka per lagna — from CALC_YogakarakaMap (workbook-verified)
 _YOGAKARAKA = {
@@ -88,7 +75,7 @@ class LagnaFrame:
 
 def _build_frame(name: str, ref_si: int, chart) -> LagnaFrame:
     house_sign = [(ref_si + h) % 12 for h in range(12)]
-    house_lord = [_SIGN_LORD[si] for si in house_sign]
+    house_lord = [SIGN_LORDS[si] for si in house_sign]
     planet_house = {}
     for p, pos in chart.planets.items():
         h = (pos.sign_index - ref_si) % 12 + 1
@@ -170,7 +157,7 @@ def compute_karakamsha(chart) -> KarakamshaResult:
         ak_d1_sign=_SIGNS[ak_d1_si],
         ak_d9_sign=_SIGNS[ak_d9_si],
         ak_d9_sign_index=ak_d9_si,
-        karakamsha_lord=_SIGN_LORD[ak_d9_si],
+        karakamsha_lord=SIGN_LORDS[ak_d9_si],
         frame=frame,
     )
 

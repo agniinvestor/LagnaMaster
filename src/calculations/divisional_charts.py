@@ -23,6 +23,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -39,20 +40,6 @@ _SIGNS = [
     "Aquarius",
     "Pisces",
 ]
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
 
 # Dignity lookups
 _EXALT = {
@@ -107,7 +94,7 @@ def _dignity_pct(planet: str, sign_idx: int) -> float:
         return 0.75
     if sign_idx in _OWN.get(planet, set()):
         return 1.0
-    lord = _SIGN_LORD[sign_idx]
+    lord = SIGN_LORDS[sign_idx]
     if lord in _NAT_FRIEND.get(planet, set()):
         return 0.5
     if lord in _NAT_ENEMY.get(planet, set()):
