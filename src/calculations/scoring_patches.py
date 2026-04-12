@@ -135,21 +135,8 @@ def check_kemadruma(chart) -> KemadrumaResult:
     cancel3 = moon_si in (1, 3)
 
     # ── Cancellation 4: Lagna lord conjoined Moon ──
-    _SIGN_LORDS_SP = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    lagna_lord = _SIGN_LORDS_SP.get(lagna_si)
+    from src.data.constants import SIGN_LORDS
+    lagna_lord = SIGN_LORDS.get(lagna_si)
     cancel4 = (
         lagna_lord is not None
         and lagna_lord in chart.planets
