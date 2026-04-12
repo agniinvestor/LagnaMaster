@@ -5,18 +5,18 @@
 
 ---
 
-## Status (2026-04-12 S323 audit)
+## Status (2026-04-12 S324 update)
 
 | Stage | Description | Status | Notes |
 |-------|-------------|--------|-------|
-| 1 | Fix wrong formulas (42 bugs) | **~75% done** | C01,C02,C04,C05,C06,C07,C08,C09 fixed. C03 (D9 lagna), C13-C15 (div charts) remain. scoring_v2.py + avastha.py deleted (eliminated their bugs). |
-| 2 | Tag verification levels | **Not started** | |
-| 3 | Module registry + enforcer | **Partial** | `tools/validate_constants.py` built in S323. Full `MODULE_REGISTRY.py` not created. |
-| 4 | Silent exception handlers | **Not started** | 143 handlers identified in S318. |
+| 1 | Fix wrong formulas (42 bugs) | **~95% done** | S324: C03+C20 fixed. C13-C15 already fixed S318. Only C19 remains (not in main). |
+| 2 | Tag verification levels | **Partial** | S324: 9 canonical modules tagged. 103 untagged (mechanical, not blocking). |
+| 3 | Module registry + enforcer | **DONE** | S324: MODULE_REGISTRY.py + import_boundary_check.py. Both pass clean. |
+| 4 | Silent exception handlers | **~84% done** | S324: 84/100 narrowed. 16 ACCEPT cases remain. Uncovered hidden TypeError. |
 | 5 | Consolidate to canonical primitives | **DONE** | S323: constants.py golden source, 79 files refactored, ~1,830 net lines removed. |
-| 6 | Delete dead code (~22,692 lines) | **~6% done** | S323 deleted 5 dead modules (1,392 lines). ~21K lines remain. |
-| 7 | Wire missing connections | **Not started** | Dignity not wired into scoring. score_all_axes not deprecated. |
-| 8 | Runtime invariant checker | **Not started** | |
+| 6 | Delete dead code (~22,692 lines) | **~10% done** | S323: 1,392 lines. S324: 941 lines. Remaining ~11K are test-only. |
+| 7 | Wire missing connections | **DONE** | S324: R24 verified firing. 2 new condition primitives. score_all_axes deprecated. |
+| 8 | Runtime invariant checker | **DONE** | S324: src/invariants.py (5 invariants) wired into compute_chart(). |
 
 **Execution was out of order:** S323 did Stage 5 first (highest encoding-impact). Stages 1-4 partially done through S317-S322 bug fix sessions. Plan should be re-evaluated — remaining stages 2, 4, 6, 8 are quality improvements that don't block encoding.
 

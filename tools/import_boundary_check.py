@@ -35,6 +35,8 @@ def _get_layer(module_path: str) -> int:
         return 3
     if module_path.startswith("src.corpus."):
         return 4
+    if module_path == "src.invariants":
+        return 2  # invariants are a core data-level module
     if module_path in ("src.scoring",) or module_path.startswith("src.scoring."):
         return 5
     if module_path.startswith("src.api.") or module_path.startswith("src.ui."):
