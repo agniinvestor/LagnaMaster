@@ -208,10 +208,9 @@ Before implementing any astrological calculation, check this map. If it exists, 
 
 | Calculation | Canonical module | Delegates/imports from it |
 |---|---|---|
-| **Constants: signs, nakshatras, exaltation, lords** | `src/data/constants.py` | nakshatra.py, rule_firing.py, ishta_kashta.py, longevity.py |
-| **Dignity (exalt/debil/own/MT/combustion)** | `src/calculations/dignity.py` | rule_firing.py, divisional_charts.py, sapta_varga.py |
-| **D9 Navamsha formula** | `src/calculations/varga.py:_d9_sign_index` | nakshatra.py, sapta_varga.py, divisional_charts.py |
-| **All varga sign computations (D1–D60)** | `src/calculations/varga.py` | divisional_charts.py, sapta_varga.py |
+| **Constants: signs, nakshatras, exaltation, lords** | `src/data/constants.py` | nakshatra.py, rule_firing.py, ishta_kashta.py, longevity.py, scoring_patches.py |
+| **Dignity (exalt/debil/own/MT/combustion/uchcha bala)** | `src/calculations/dignity.py` | rule_firing.py, divisional_charts.py, sapta_varga.py, ishta_kashta.py |
+| **All varga sign computations (D2–D12, D60)** | `src/calculations/varga.py` | divisional_charts.py, sapta_varga.py, drekkana_variants.py, nakshatra.py |
 | **Scoring (house score, rule evaluation)** | `src/calculations/multi_axis_scoring.py` | scoring.py (thin wrapper) |
 | **Aspect strength (sputa drishti)** | `src/calculations/sputa_drishti.py` | scoring_patches.py, rule_firing.py |
 | **Chara Karakas (7/8 planet ranking)** | `src/calculations/chara_karaka_config.py` | chara_karak.py (wraps as list[CharaKarak]) |
@@ -223,6 +222,10 @@ Before implementing any astrological calculation, check this map. If it exists, 
 | **Vimshopaka (16-varga Shodasavarga)** | `src/calculations/divisional_charts.py` | scoring_v3.py |
 | **Vimshopak (7-varga Sapta Varga)** | `src/calculations/sapta_varga.py` | app.py (UI) |
 | **Derived house arithmetic** | `src/calculations/derived_house.py` | (all bhavat-bhavam goes here) |
+| **Functional malefics (hardcoded per-lagna table)** | `src/calculations/functional_dignity.py:KNOWN_FUNCTIONAL_MALEFICS` | multi_axis_scoring.py, pressure_engine.py, dominance_engine.py, upaya.py |
+| **Functional roles (dynamic computation)** | `src/calculations/functional_roles.py:compute_functional_roles` | multi_axis_scoring.py, pressure_engine.py, yoga_fructification.py |
+| **House map (whole-sign)** | `src/calculations/house_lord.py:compute_house_map` | (many consumers; multi_lagna._build_frame is the multi-lagna variant) |
+| **Yoga result type** | `src/calculations/extended_yogas.py:YogaResult` | yogas_graha.py, yogas_extended.py, rule_plugin.py, yoga_strength.py |
 | **Source text registry** | `src/corpus/source_texts.py` | v2_builder.py |
 | **Rule schema (V2)** | `docs/RULE_CONTRACT_V2.md` | v2_builder.py enforces |
 
