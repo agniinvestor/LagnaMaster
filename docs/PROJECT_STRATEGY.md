@@ -263,9 +263,9 @@ The older 3-layer convergence model (ARCHITECTURE.md + PREDICTION_PIPELINE.md) a
 - Vimshopaka: divisional_charts.py (16-varga Shodasavarga) vs sapta_varga.py (7-varga Sapta) — different classical systems
 - Tarabala/Chandrabala: transit_quality_advanced.py (detailed analytical) vs muhurtha_complete.py (binary muhurtha) — different use cases, both have callers
 
-**Remaining known issues (not duplication — separate work items):**
-- Graha yuddha algorithm: production uses longitude-based winner (simplified), BPHS/Saravali specifies latitude-based. Correctness fix deferred to a BPHS verification session.
-- Yoga result types: 5 remain (YogaResult, NabhasaYoga, PluginYogaResult, RajYogaResult, NamedYogaResult). GrahaYogaResult unified into YogaResult (W0-17). RajYogaResult is structurally different (has kendra_lord/trikona_lord). NabhasaYoga has group/result instead of score. Further unification has diminishing returns.
+**All W0 items resolved.** Remaining items are structurally different types, not duplications:
+- Graha yuddha: fixed to use latitude-based winner per BPHS Ch.28 (W0-18)
+- Yoga result types reduced 6→3: YogaResult (canonical), NabhasaYoga (domain-specific fields), RajYogaResult (structurally different). GrahaYogaResult/PluginYogaResult/NamedYogaResult unified into YogaResult (W0-17, W0-19).
 
 **Canonical Source Map** added to CLAUDE.md (W0-15) — prevents future duplication by making canonical modules discoverable at session start.
 
