@@ -265,8 +265,7 @@ The older 3-layer convergence model (ARCHITECTURE.md + PREDICTION_PIPELINE.md) a
 
 **Remaining known issues (not duplication — separate work items):**
 - Graha yuddha algorithm: production uses longitude-based winner (simplified), BPHS/Saravali specifies latitude-based. Correctness fix deferred to a BPHS verification session.
-- Yoga result types (6 types): structural similarity but different fields. Low priority cosmetic issue.
-- HouseScore name collision: scoring.py vs house_score.py use same name for different concepts. Low priority rename.
+- Yoga result types: 5 remain (YogaResult, NabhasaYoga, PluginYogaResult, RajYogaResult, NamedYogaResult). GrahaYogaResult unified into YogaResult (W0-17). RajYogaResult is structurally different (has kendra_lord/trikona_lord). NabhasaYoga has group/result instead of score. Further unification has diminishing returns.
 
 **Canonical Source Map** added to CLAUDE.md (W0-15) — prevents future duplication by making canonical modules discoverable at session start.
 
