@@ -1,6 +1,9 @@
 # Test Diversification: 360-Chart Verified Correctness System — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): SUBSTANTIALLY COMPLETE.**
+> tools/select_360.py, tools/diff_engine.py, tests/fixtures/verified_360.json all exist.
+> 16 test files in tests/test_diverse_correctness/. 14,806 tests passing.
+> Remaining gaps (if any): verify golden-50 tagging, check PyJHora cross-validation coverage.
 
 **Goal:** Replace the India-1947-monoculture test suite with a 360-chart, PyJHora-cross-validated parallel correctness system.
 

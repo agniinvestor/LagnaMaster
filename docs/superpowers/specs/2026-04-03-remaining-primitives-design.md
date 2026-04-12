@@ -1,5 +1,6 @@
 # Design Spec: Remaining Primitives (Track 7)
 
+> **Status (2026-04-12):** NOT IMPLEMENTED. planet_count, sign_rising, planet_hemmed not in taxonomy. Build on-demand during encoding.
 **Date:** 2026-04-03
 **Session:** S313 (governance)
 **Status:** Spec only — implementation deferred until yoga chapters (Ch.34-42)

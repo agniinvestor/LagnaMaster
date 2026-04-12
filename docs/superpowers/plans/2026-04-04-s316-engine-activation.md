@@ -1,6 +1,13 @@
 # S316 Engine Activation — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): PARTIALLY COMPLETE.**
+> Condition primitives: 4 of 6 types evaluated in rule_firing.py (`planet_in_house_from`,
+> `upagraha_in_house` done; `planet_in_derived_house`, `planet_in_sign_type` NOT in rule_firing).
+> derived_house.py: EXISTS (15 lines, `resolve_house()` function).
+> Compound conditions: `_check_compound_conditions()` exists in rule_firing.py.
+> Modifier execution, conflict resolution, context accumulator: PARTIALLY built (5 references
+> in rule_firing.py). Full modifier execution pipeline: NOT verified.
+> ExecutionTrace: EXISTS in rule_firing.py.
 
 **Goal:** Close all 20 open items — primitives, engine features, schema changes, governance decisions, open loops — making the engine execute modifiers, resolve conflicts, and support all condition types.
 

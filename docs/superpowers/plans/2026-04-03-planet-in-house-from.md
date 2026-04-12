@@ -1,6 +1,8 @@
 # `planet_in_house_from` Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): COMPLETE.**
+> In taxonomy (VALID_CONDITION_PRIMITIVES), validated by v2_builder.py, evaluated by rule_firing.py.
+> Used in 5 chapter files (Ch.13, 16, 17, 18, 30). Migration of workarounds: done during encoding.
 
 **Goal:** Add a `planet_in_house_from` condition primitive that evaluates "planet A in Nth house from planet B" and migrate 9 existing workarounds to use it.
 

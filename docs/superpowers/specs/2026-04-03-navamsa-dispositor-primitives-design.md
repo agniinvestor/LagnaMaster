@@ -1,5 +1,6 @@
 # Design Spec: Navamsa + Dispositor Condition Primitives
 
+> **Status (2026-04-12):** PARTIALLY IMPLEMENTED. `dispositor_condition` in taxonomy.py. `navamsa_placement` not yet added. Build when encoding hits navamsa-heavy chapters.
 **Date:** 2026-04-03
 **Session:** S313 (governance)
 **Status:** Approved

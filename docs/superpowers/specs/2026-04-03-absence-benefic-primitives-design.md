@@ -1,5 +1,6 @@
 # Design Spec: Absence + Benefic Classification Primitives
 
+> **Status (2026-04-12):** NOT IMPLEMENTED. No taxonomy/builder/engine support. Build when encoding hits chapters needing these (e.g., "no planet in house" conditions).
 **Date:** 2026-04-03
 **Session:** S313 (governance)
 **Status:** Approved

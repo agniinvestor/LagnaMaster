@@ -1,6 +1,8 @@
 # Legacy Migration Audit System — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): PARTIALLY COMPLETE.**
+> migration_tags.py exists (src/corpus/). migration_audit.py exists (tools/, 420 lines).
+> migration_registry.py: NOT created. Per-chapter audit state gating: NOT wired.
 
 **Goal:** Build a tool that validates V2 encoding covers all V1 legacy signal before excluding legacy rules from the execution corpus.
 

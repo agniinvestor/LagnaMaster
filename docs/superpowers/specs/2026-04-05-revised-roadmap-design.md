@@ -1,5 +1,6 @@
 # Revised LagnaMaster Roadmap — Signal Optimization Era
 
+> **Status (2026-04-12):** Roadmap revision spec. Partially superseded by actual session history (S317-S323 deviated from original plan). Current ground truth is docs/ROADMAP.md + this status audit.
 **Date:** 2026-04-05
 **Session:** S316 (governance)
 **Status:** Approved

@@ -1,5 +1,6 @@
 # Diagnostic Scoring Equation — Phase 2 Core
 
+> **Status (2026-04-12):** DESIGN ONLY. Phase 2 deliverable. diagnostic_scorer.py was DELETED in S323 (dead code). New scoring architecture deferred.
 **Date:** 2026-04-05
 **Session:** S316 (governance)
 **Status:** Draft — requires review before implementation

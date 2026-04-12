@@ -1,9 +1,16 @@
 # LagnaMaster Canonical Architecture — v11
 
 **Date:** 2026-04-07 (S318)
-**Status:** Architecture specification
+**Status:** Architecture specification — Phase -1 partially executed (S317-S323)
 **Supersedes:** v10 (migration plan), v9 (graph schema)
 **Score target:** 100/100 on 20-criteria review
+
+> **Implementation status (2026-04-12 S323 audit):**
+> - Stage 5 (consolidation) COMPLETE — `src/data/constants.py` golden source, 79 files refactored
+> - Stage 1 (formula fixes) ~75% done — 12/16 critical bugs fixed, scoring_v2 + avastha deleted
+> - Stage 6 (dead code) ~6% done — 5 modules deleted (1,392 lines of 22,692)
+> - Stages 2, 3, 4, 7, 8 not started
+> - Net effect: -1,830 lines, 14,806 tests passing, ruff clean
 
 ---
 

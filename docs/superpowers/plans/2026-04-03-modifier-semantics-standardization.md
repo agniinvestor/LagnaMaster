@@ -1,6 +1,9 @@
 # Modifier Semantics Standardization Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): PARTIALLY COMPLETE.**
+> VALID_MODIFIER_EFFECTS, VALID_MODIFIER_TARGETS, VALID_MODIFIER_STRENGTHS in taxonomy.py.
+> Builder validates modifier structure (8 references in v2_builder.py).
+> Migration script for existing 89 modifiers: NOT done. Per-chapter migration: NOT done.
 
 **Goal:** Migrate 89 modifiers across 16 chapters from 3 ambiguous effect labels to a strict 5-effect taxonomy with enforced effect-target constraints.
 

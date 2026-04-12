@@ -5,6 +5,23 @@
 
 ---
 
+## Status (2026-04-12 S323 audit)
+
+| Stage | Description | Status | Notes |
+|-------|-------------|--------|-------|
+| 1 | Fix wrong formulas (42 bugs) | **~75% done** | C01,C02,C04,C05,C06,C07,C08,C09 fixed. C03 (D9 lagna), C13-C15 (div charts) remain. scoring_v2.py + avastha.py deleted (eliminated their bugs). |
+| 2 | Tag verification levels | **Not started** | |
+| 3 | Module registry + enforcer | **Partial** | `tools/validate_constants.py` built in S323. Full `MODULE_REGISTRY.py` not created. |
+| 4 | Silent exception handlers | **Not started** | 143 handlers identified in S318. |
+| 5 | Consolidate to canonical primitives | **DONE** | S323: constants.py golden source, 79 files refactored, ~1,830 net lines removed. |
+| 6 | Delete dead code (~22,692 lines) | **~6% done** | S323 deleted 5 dead modules (1,392 lines). ~21K lines remain. |
+| 7 | Wire missing connections | **Not started** | Dignity not wired into scoring. score_all_axes not deprecated. |
+| 8 | Runtime invariant checker | **Not started** | |
+
+**Execution was out of order:** S323 did Stage 5 first (highest encoding-impact). Stages 1-4 partially done through S317-S322 bug fix sessions. Plan should be re-evaluated — remaining stages 2, 4, 6, 8 are quality improvements that don't block encoding.
+
+---
+
 ## Stage Reordering (from v11 original)
 
 The original v11 spec had MODULE_REGISTRY as Stage 7. This is needed by Stage 5 (consolidation). The AST lint rule was implicit in Stage 3. Corrected ordering:

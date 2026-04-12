@@ -1,6 +1,8 @@
 # Domain Taxonomy Normalization Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Status (2026-04-12 S323 audit): MOSTLY COMPLETE.**
+> PRIMARY_DOMAINS + DOMAIN_NORMALIZATION constants in taxonomy.py. RuleRecord has primary_domain field.
+> Builder validates and normalizes domains. Migration of existing chapters: unclear — verify per-chapter.
 
 **Goal:** Normalize 497 rules from 15 flat domains to 8 primary domains with deterministic selection, prediction-level domain normalization, and computed outcome_domains.
 

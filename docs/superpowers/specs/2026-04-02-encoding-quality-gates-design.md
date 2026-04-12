@@ -1,5 +1,6 @@
 # Encoding Quality Gates — Design Spec
 
+> **Status (2026-04-12):** DESIGN ONLY — no implementation plan created. Quality gates partially enforced by v2_builder.py validation + tools/v2_scorecard.py.
 > **Date:** 2026-04-02
 > **Context:** S309-S312 session audit revealed 9 distinct principle violations,
 > all caused by convenience bias — choosing the fast path over the correct path,

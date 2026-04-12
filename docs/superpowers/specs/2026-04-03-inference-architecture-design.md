@@ -1,5 +1,6 @@
 # Design Spec: Inference Architecture (Track 5)
 
+> **Status (2026-04-12):** NOT IMPLEMENTED. Deferred to Phase 2 (engine rebuild). Modifier execution partially exists in rule_firing.py but full inference pipeline is future work.
 **Date:** 2026-04-03
 **Session:** S313 (governance)
 **Status:** Spec only — implementation deferred to dedicated session
