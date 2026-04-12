@@ -20,22 +20,13 @@ Public API
 
 from __future__ import annotations
 from src.data.constants import KENDRA_HOUSES, TRIKONA_HOUSES
-from dataclasses import dataclass
+from src.calculations.extended_yogas import YogaResult
 from datetime import date
 
 _STRONG = KENDRA_HOUSES | TRIKONA_HOUSES
 
-
-@dataclass
-class GrahaYogaResult:
-    name: str
-    planets: list[str]
-    present: bool
-    score: float
-    weighted_score: float
-    description: str
-    source: str
-    dasha_weight: float
+# Backward compatibility alias
+GrahaYogaResult = YogaResult
 
 
 def _dasha_weight(planets: list[str], dashas, on_date: date) -> float:
@@ -65,8 +56,9 @@ def detect_graha_yogas(
     def yoga(name, planets, present, score, desc, source):
         dw = _dasha_weight(planets, dashas, on_date) if dashas else 0.5
         results.append(
-            GrahaYogaResult(
+            YogaResult(
                 name=name,
+                yoga_type="Graha",
                 planets=planets,
                 present=present,
                 score=score,

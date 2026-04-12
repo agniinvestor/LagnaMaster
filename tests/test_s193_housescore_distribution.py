@@ -47,7 +47,7 @@ def _india_chart():
 
 def test_dataclass_fields():
     """HouseScore must expose house, score, mean, std, p10, p90 as attributes."""
-    from src.calculations.house_score import HouseScore
+    from src.calculations.house_score import HouseScoreDistribution as HouseScore
 
     hs = HouseScore(house=1, score=1.5, mean=1.5, std=0.3, p10=1.1, p90=1.9)
 
@@ -66,7 +66,7 @@ def test_dataclass_fields():
 
 def test_dataclass_serializes_to_json():
     """HouseScore.to_dict() must produce a JSON-serialisable dict with all fields."""
-    from src.calculations.house_score import HouseScore
+    from src.calculations.house_score import HouseScoreDistribution as HouseScore
 
     hs = HouseScore(house=4, score=-0.5, mean=-0.5, std=0.2, p10=-0.76, p90=-0.24)
     d = hs.to_dict()
@@ -90,7 +90,7 @@ def test_dataclass_serializes_to_json():
 
 def test_distribution_has_mean_std_p10_p90():
     """HouseScore must carry mean, std, p10, p90 as numeric attributes."""
-    from src.calculations.house_score import HouseScore
+    from src.calculations.house_score import HouseScoreDistribution as HouseScore
 
     hs = HouseScore(house=7, score=2.0, mean=2.0, std=0.5, p10=1.36, p90=2.64)
 
@@ -108,7 +108,7 @@ def test_distribution_has_mean_std_p10_p90():
 
 def test_distribution_range_valid():
     """p10 <= mean <= p90 must hold for any HouseScore."""
-    from src.calculations.house_score import HouseScore
+    from src.calculations.house_score import HouseScoreDistribution as HouseScore
 
     for score in (-3.0, -1.0, 0.0, 1.5, 4.0):
         hs = HouseScore(
@@ -138,7 +138,7 @@ def test_score_returns_house_dict():
     assert isinstance(result, dict), "Expected dict"
     assert set(result.keys()) == set(range(1, 13)), "Must have keys 1–12"
 
-    from src.calculations.house_score import HouseScore
+    from src.calculations.house_score import HouseScoreDistribution as HouseScore
 
     for house, hs in result.items():
         assert isinstance(hs, HouseScore), f"House {house} value is not HouseScore"

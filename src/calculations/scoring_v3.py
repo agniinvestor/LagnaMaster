@@ -35,7 +35,7 @@ class ChartScoresV3:
     lpi: object = None  # LPIResult
     vimshopaka: object = None  # VimshopakaBala
     avasthas: object = None  # AvasthaReportV2
-    house_distributions: dict = field(default_factory=dict)  # dict[int, HouseScore]
+    house_distributions: dict = field(default_factory=dict)  # dict[int, HouseScoreDistribution]
     feature_vector: object = None  # ChartFeatureVector (S200 / G22 Phase 6)
     raja_yogas: list = field(default_factory=list)
     viparita_yogas: list = field(default_factory=list)

@@ -1,15 +1,15 @@
 """
 src/calculations/house_score.py — Session 193
 
-HouseScore distribution dataclass: replaces bare float in house-score dicts.
+HouseScoreDistribution distribution dataclass: replaces bare float in house-score dicts.
 
 Each house score now carries a point estimate *plus* a distribution summary
 (mean, std, p10, p90) derived from birth-time uncertainty propagation.
 
 Public API
 ----------
-  HouseScore                          — dataclass
-  compute_house_scores(chart)         — dict[int, HouseScore]
+  HouseScoreDistribution                          — dataclass
+  compute_house_scores(chart)         — dict[int, HouseScoreDistribution]
 
 Source
 ------
@@ -23,9 +23,10 @@ from dataclasses import dataclass
 
 
 @dataclass
-class HouseScore:
+class HouseScoreDistribution:
     """
     House score with distribution parameters.
+    (Renamed from HouseScore to avoid collision with scoring.py:HouseScore)
 
     Invariant: p10 <= mean <= p90
     """
@@ -49,9 +50,9 @@ class HouseScore:
         }
 
 
-def _build_house_score(house: int, ci) -> HouseScore:
+def _build_house_score(house: int, ci) -> HouseScoreDistribution:
     """
-    Convert a ConfidenceInterval into a HouseScore.
+    Convert a ConfidenceInterval into a HouseScoreDistribution.
 
     The CI lower/upper bounds represent approximately a 95 % interval, so:
       std  ≈ half_width / 1.96
@@ -64,7 +65,7 @@ def _build_house_score(house: int, ci) -> HouseScore:
     z10 = 1.2816  # norm.ppf(0.90) ≈ 1.2816
     p10 = round(mean - z10 * std, 4)
     p90 = round(mean + z10 * std, 4)
-    return HouseScore(
+    return HouseScoreDistribution(
         house=house,
         score=round(mean, 4),
         mean=round(mean, 4),
@@ -74,21 +75,21 @@ def _build_house_score(house: int, ci) -> HouseScore:
     )
 
 
-def compute_house_scores(chart, school: str = "parashari") -> dict[int, HouseScore]:
+def compute_house_scores(chart, school: str = "parashari") -> dict[int, HouseScoreDistribution]:
     """
-    Compute HouseScore distribution for all 12 houses of *chart*.
+    Compute HouseScoreDistribution distribution for all 12 houses of *chart*.
 
     Steps:
       1. Score D1 axis via multi_axis_scoring.score_all_axes()
       2. Propagate birth-time uncertainty via confidence_model
-      3. Build HouseScore for each house from the resulting intervals
+      3. Build HouseScoreDistribution for each house from the resulting intervals
 
     Args:
         chart:   BirthChart
         school:  scoring school ("parashari" / "kp" / "jaimini")
 
     Returns:
-        dict[int, HouseScore]  — keys 1 … 12
+        dict[int, HouseScoreDistribution]  — keys 1 … 12
     """
     from src.calculations.multi_axis_scoring import score_all_axes
     from src.calculations.confidence_model import (
@@ -102,7 +103,7 @@ def compute_house_scores(chart, school: str = "parashari") -> dict[int, HouseSco
     flags = compute_uncertainty_flags(chart)
     intervals = compute_confidence_intervals(d1_scores, flags)
 
-    result: dict[int, HouseScore] = {}
+    result: dict[int, HouseScoreDistribution] = {}
     for ci in intervals:
         result[ci.house] = _build_house_score(ci.house, ci)
 
