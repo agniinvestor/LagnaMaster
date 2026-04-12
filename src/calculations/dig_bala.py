@@ -22,17 +22,7 @@ Verified against CALC_DigBala:
 
 from __future__ import annotations
 from dataclasses import dataclass
-
-# Primary peak house for each planet (1-based)
-_DIG_BALA_PEAK = {
-    "Sun": 10,
-    "Moon": 4,
-    "Mars": 10,
-    "Mercury": 1,
-    "Jupiter": 1,
-    "Venus": 4,
-    "Saturn": 7,
-}
+from src.data.constants import DIG_BALA_PEAK
 
 
 @dataclass
@@ -61,7 +51,7 @@ def compute_dig_bala(chart) -> dict[str, DigBalaResult]:
     hmap = compute_house_map(chart)
     results = {}
 
-    for planet, peak in _DIG_BALA_PEAK.items():
+    for planet, peak in DIG_BALA_PEAK.items():
         current = hmap.planet_house.get(planet, 1)
         # Circular minimum distance (houses 1–12)
         diff = abs(peak - current)

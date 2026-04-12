@@ -39,7 +39,7 @@ Classical sources
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from src.data.constants import GENTLE_SIGNS
+from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, STHIRA_KARAKA
 
 
 # ── Sign-lord map (0=Aries … 11=Pisces) ──────────────────────────────────────
@@ -69,12 +69,6 @@ _NAT_BENEFIC_SET = frozenset({"Jupiter", "Venus", "Mercury", "Moon"})
 _NAT_MALEFIC_SET = frozenset({"Sun", "Mars", "Saturn", "Rahu", "Ketu"})
 
 # R20 — Dig Bala: planet → house of directional strength
-_DIG_BALA: dict[str, int] = {
-    "Sun": 10, "Mars": 10,
-    "Moon": 4, "Venus": 4,
-    "Mercury": 1, "Jupiter": 1,
-    "Saturn": 7,
-}
 
 # Dignity score → normalised [-1, 1]
 # Raw DIGNITY_SCORE max is 2.0 (DEEP_EXALT), min is -1.5 (DEBIL)
@@ -203,7 +197,7 @@ def _extract_dig_bala(house: int, house_si: int, chart, frame_lagna_si: int) -> 
     Source: BPHS Ch.3 — planets gain full directional strength in specific houses.
     """
     bhavesh = _SIGN_LORD[house_si]
-    bala_house = _DIG_BALA.get(bhavesh)
+    bala_house = DIG_BALA_PEAK.get(bhavesh)
     if bala_house is None or bhavesh not in chart.planets:
         return RuleFeature("dig_bala", 0.0, "R20", house)
 
@@ -426,13 +420,6 @@ def _extract_malefic_net_score(
     return RuleFeature("malefic_net_score", round(min(1.0, score / 5.0), 4), "R09-R14", house)
 
 
-_STHIR_KARAK: dict[int, set[str]] = {
-    1: {"Sun"}, 2: {"Jupiter"}, 3: {"Mars"}, 4: {"Moon", "Venus"},
-    5: {"Jupiter"}, 6: {"Mars", "Saturn"}, 7: {"Venus"}, 8: {"Saturn"},
-    9: {"Sun", "Jupiter"}, 10: {"Sun", "Mercury", "Saturn"},
-    11: {"Jupiter"}, 12: {"Saturn"},
-}
-
 
 def _extract_karak_score(
     house: int, house_si: int, chart, frame_lagna_si: int
@@ -445,7 +432,7 @@ def _extract_karak_score(
     Source: BPHS Ch.32 — Naisargika Karakatva (natural significators).
     """
     _DUSTHANA_SET = {6, 8, 12}
-    karakas = _STHIR_KARAK.get(house, set())
+    karakas = STHIRA_KARAKA.get(house, set())
     if not karakas:
         return RuleFeature("karak_score", 0.0, "R17/R18", house)
 

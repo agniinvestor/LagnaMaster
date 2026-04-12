@@ -8,7 +8,7 @@ Source: LEGEND_ScoringRules + SCORE_H1..H12 (Excel).
 
 from __future__ import annotations
 from dataclasses import dataclass, field
-from src.data.constants import GENTLE_SIGNS
+from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, STHIRA_KARAKA
 from src.ephemeris import BirthChart
 from src.calculations.house_lord import (
     compute_house_map,
@@ -39,21 +39,6 @@ HOUSE_DOMAIN = {
     12: "Liberation & Loss",
 }
 
-# Sthir (fixed) Karakas per house (BPHS Ch.10 / REF_Planets col K)
-STHIR_KARAK: dict[int, list[str]] = {
-    1: ["Sun"],
-    2: ["Jupiter"],
-    3: ["Mars"],
-    4: ["Moon", "Venus"],  # BUG-052: was [Moon] only; Venus = vehicles/comforts
-    5: ["Jupiter"],
-    6: ["Mars", "Saturn"],
-    7: ["Venus"],
-    8: ["Saturn"],
-    9: ["Jupiter", "Sun"],  # BUG-053: was [Jupiter] only; Sun = father karaka
-    10: ["Sun", "Mercury", "Saturn"],  # BUG-054: removed Jupiter; BPHS Ch.32 v34 H10=Mercury
-    11: ["Jupiter"],
-    12: ["Saturn"],
-}
 
 # Scoring weights (LEGEND_ScoringRules)
 W = {
@@ -168,21 +153,6 @@ def _paap_kartari(sign_idx: int, house_map: HouseMap, chart: BirthChart) -> bool
         for name, p in chart.planets.items()
     )
     return prev_malefic and next_malefic
-
-
-# ---------------------------------------------------------------------------
-# Dig Bala peak houses (from shadbala module)
-# ---------------------------------------------------------------------------
-
-_DIG_BALA_PEAK_HOUSE: dict[str, list[int]] = {
-    "Sun": [10],
-    "Moon": [4],
-    "Mars": [10],
-    "Mercury": [1],
-    "Jupiter": [1],
-    "Venus": [4],
-    "Saturn": [7],
-}
 
 
 # ---------------------------------------------------------------------------
@@ -487,7 +457,7 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
         # --- R17/R18: Sthir Karak in Kendra/Trikon or Dusthana ---
         r17_score = 0.0
         r18_score = 0.0
-        for karak in STHIR_KARAK.get(house, []):
+        for karak in STHIRA_KARAKA.get(house, []):
             if karak in chart.planets:
                 kh = house_map.planet_house[karak]
                 if is_kendra(kh) or is_trikona(kh):
@@ -524,8 +494,8 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
 
         # --- R20: Bhavesh in Dig Bala house ---
         r20_score = 0.0
-        if bhavesh in _DIG_BALA_PEAK_HOUSE:
-            if bhavesh_house in _DIG_BALA_PEAK_HOUSE[bhavesh]:
+        if bhavesh in DIG_BALA_PEAK:
+            if bhavesh_house == DIG_BALA_PEAK[bhavesh]:
                 r20_score = W["R20"]
         rules.append(
             RuleResult(

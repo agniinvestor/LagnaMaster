@@ -25,6 +25,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
+from src.data.constants import DIG_BALA_PEAK, STHIRA_KARAKA
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -126,33 +127,7 @@ _NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _DUSTHANA = {6, 8, 12}
-_DIG_BALA = {
-    "Sun": 10,
-    "Mars": 10,
-    "Moon": 4,
-    "Venus": 4,
-    "Mercury": 1,
-    "Jupiter": 1,
-    "Saturn": 7,
-}
 
-# R17/R18 — Naisargika (natural) karakas per house (BPHS Ch.32; Phala Deepika Ch.2)
-# R17: karaka in or aspecting own house  → +W["R17"]
-# R18: karaka in dusthana from its own signified house → +W["R18"] (negative weight)
-_STHIR_KARAK: dict[int, set[str]] = {
-    1:  {"Sun"},
-    2:  {"Jupiter"},
-    3:  {"Mars"},
-    4:  {"Moon", "Venus"},
-    5:  {"Jupiter"},
-    6:  {"Mars", "Saturn"},
-    7:  {"Venus"},
-    8:  {"Saturn"},
-    9:  {"Sun", "Jupiter"},
-    10: {"Sun", "Mercury", "Saturn"},
-    11: {"Jupiter"},
-    12: {"Saturn"},
-}
 
 # D10 formula: sign = (si*10 + floor(deg/3)) % 12  for odd sign
 # D9 uses existing panchanga._d9_sign_index
@@ -353,7 +328,7 @@ def _score_one_house(
 
     # R17 sthir karak in or aspecting its signified house (BPHS Ch.32)
     # R18 sthir karak in dusthana FROM its signified house
-    for karak in _STHIR_KARAK.get(house, set()):
+    for karak in STHIRA_KARAKA.get(house, set()):
         if karak not in chart.planets:
             continue
         karak_si = chart.planets[karak].sign_index
@@ -374,7 +349,7 @@ def _score_one_house(
         total += W["R19"]
 
     # R20 dig bala
-    if _DIG_BALA.get(bhavesh) == bh_house:
+    if DIG_BALA_PEAK.get(bhavesh) == bh_house:
         total += W["R20"]
 
     # R21 pushkara navamsha (simple: bhavesh degree check)

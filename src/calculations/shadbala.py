@@ -21,6 +21,7 @@ from dataclasses import dataclass  # noqa: F401
 from math import sqrt  # noqa: F401
 from datetime import datetime  # noqa: F401
 from typing import Optional  # noqa: F401
+from src.data.constants import DIG_BALA_PEAK
 
 # ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -36,17 +37,6 @@ NAISARGIKA_BALA: dict[str, float] = {
     "Saturn": 8.57,
 }
 
-# Dig Bala peak house for each planet
-# Source: BPHS Ch.27 v.12-15
-DIG_BALA_PEAK_HOUSE: dict[str, int] = {
-    "Sun": 10,  # H10 = 10th house
-    "Mars": 10,
-    "Moon": 4,
-    "Venus": 4,
-    "Mercury": 1,
-    "Jupiter": 1,
-    "Saturn": 7,
-}
 
 # Saptavargaja Bala Virupas — BPHS Ch.27 v.2-4 (p.265, Santhanam Vol 1)
 # Uses 7-level compound (Panchadha) relationship, NOT simple dignity.
@@ -224,10 +214,10 @@ def compute_dig_bala(planet: str, chart) -> float:
     Formula: 60 * (180 - arc_distance_from_peak_cusp) / 180
     Source: BPHS Ch.27 v.12-15
     """
-    if planet not in DIG_BALA_PEAK_HOUSE:
+    if planet not in DIG_BALA_PEAK:
         return 0.0
 
-    peak_house = DIG_BALA_PEAK_HOUSE[planet]
+    peak_house = DIG_BALA_PEAK[planet]
     lagna_lon = chart.lagna
 
     # Cusp longitude of peak house (whole-sign: house N starts at lagna + (N-1)*30)
