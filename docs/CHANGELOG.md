@@ -1799,3 +1799,55 @@ Three-phase session: (1) spot-checked S319 bug fixes against PDF, (2) closed or_
 - **Tech:** 14776 tests (+182 from baseline), ruff clean, or_group validation now catches silent errors
 - **Astrology:** Disease rules now cover all 7 classical planets. Male/female planet sign-gender logic encoded. Spouse appearance/association rules per BPHS Ch.18.
 - **Research:** S318 deep audit gap inventory ~41 rules → 37 filled this session. 8 remaining gaps: Ch.17 Rahu/Ketu disease rules (agent wrongly excluded — verse p.155 lists them explicitly), Ch.14 Saturn/Rahu male planet variant (needs investigation), Ch.12 possible 4th gap (may not exist), Ch.13 4 aspect-path rules (engine limitation — `planet_aspecting` can't resolve lord positions). Prompt `/s319-close-remaining-gaps` created to resolve.
+
+---
+
+## S324 — 2026-04-12 — Phase -1: Stop the Bleed (Partial)
+
+**Commits:** 7680bfb4, d329955b, a57137d7, 89a337e0, dfde3e81, 83ea15aa, b7f66219, cd28a3da
+**Tests:** 14,815 passing / 210 skipped / 0 lint errors
+
+### What was built
+- `src/MODULE_REGISTRY.py`: 26-module canonical ownership registry with 6-layer architecture
+- `tools/import_boundary_check.py`: AST-based import boundary enforcer (292 modules, 9 known exceptions)
+- `src/invariants.py`: 5 runtime invariants (INV-1 through INV-5) wired into compute_chart()
+- `.claude/commands/codebase-surgery.md`: data-driven prompt for resolving dead code
+
+### What was wired
+- `planet_in_sign_type` condition primitive → rule_firing.py (5 rules across Ch.12,14,16,18)
+- `planet_in_derived_house` condition primitive → rule_firing.py (63 rules across Ch.29,30)
+- Runtime invariants → compute_chart() in ephemeris.py
+
+### Bugs fixed
+- C03: D9 lagna used D1 lagna in multi_axis_scoring.py (30% of composite score affected)
+- C20: SAV Ekadhipatya Shodhana result discarded in ashtakavarga.py
+- Hidden TypeError in yoga_fructification.py: `list | list` operator (uncovered by removing silent handler)
+- 84 silent `except Exception` handlers narrowed to specific types across 40 files in src/calculations/
+
+### New invariants
+- INV-1: Planet sign_index in [0,11], longitude in [0,360)
+- INV-2: 12 signs, each with one lord from SIGN_LORDS
+- INV-3: Dignity states must be valid enum values
+- INV-4: 7-9 planets required (7 classical + Rahu/Ketu)
+- INV-5: Lagna sign_index must match lagna longitude
+
+### Three-Lens Notes
+- **Tech:** Import boundary enforcement operational. 9 verification tags on canonical modules. Invariant checker catches corrupt charts at source. BUT: 79 files (15,567 lines) have zero production importers. 77 silent handlers remain in UI/API/worker. Test count inflated by ~3,000 tests on unreachable code.
+- **Astrology:** 2 new condition primitives enable 68 corpus rules that were previously un-evaluable. Dignity (R24) confirmed firing across all 12 houses. Arudha pada-based rule evaluation now operational.
+- **Research:** Honest codebase health metrics established: 12.7% of src/ is dead weight. "14,815 tests pass" is necessary but not sufficient — unknown fraction test dead modules. `/codebase-surgery` session needed before encoding resumes.
+
+### Lessons learned
+- L017: Don't execute stale plans — diagnose first
+- L018: "Test-only" is a question, not a status
+- L019: Silent exception handlers outside your comfort zone still matter
+- L020: Removing a silent catch IS the fix — it exposes the real bug
+
+### What was NOT done (honest accounting)
+- 77 silent exception handlers in UI/API/worker layers (21 in app.py alone)
+- 79 zero-importer files unresolved (68 test-only, 11 truly dead)
+- Modifier migration (89 modifiers → 5-effect taxonomy) — encoding-session work
+- Legacy migration registry — not wired
+- 103 modules without _VERIFICATION tags
+
+### Follow-up
+`/codebase-surgery` — resolve every dead file, silent handler, and ghost test before encoding resumes

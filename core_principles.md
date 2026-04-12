@@ -32,6 +32,12 @@
 
 15. **The user manages sessions and tokens** — don't propose stopping, don't cite context pressure, don't suggest deferring to a later conversation. Do the work. Let the user decide when to stop. *(L008, L009)*
 
+16. **Diagnose before executing** — a plan is a hypothesis written at a point in time. The codebase is the truth NOW. Before executing any plan: run diagnostics, compare assumptions against reality, re-scope. Discovering that work is already done is not the same as doing work. *(L017)*
+
+17. **Every file gets a verdict** — "test-only" is a question, not a status. When a module has zero production importers, it's either (a) a wiring bug, (b) a future feature to archive, or (c) dead code to delete. Deferring the decision is the same as accepting dead code. *(L018)*
+
+18. **Coverage means all layers** — finishing one layer of a cross-cutting task and marking the task complete is dishonest. If you fixed calculations/ but not UI/API/worker, say so. Report what you did AND what remains. *(L019)*
+
 ---
 
 ## The 14-Question Encoding Checklist

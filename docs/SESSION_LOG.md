@@ -723,3 +723,17 @@ Root cause of 103 CI failures identified and fixed:
   - 37 new rules across Ch.12(+3), Ch.13(+1), Ch.14(+9), Ch.15(+4), Ch.16(+3), Ch.17(+6), Ch.18(+9), Ch.23(+2)
   - 14776 tests, ruff clean, 5 parallel encoding agents (2 batches)
   - 8 remaining gaps: 2 encodable (Ch.17 Rahu/Ketu — agent wrongly excluded), 1 investigate (Ch.14), 1 maybe-not-real (Ch.12), 4 engine limitation (Ch.13 aspect paths)
+- S323: Governance — canonical constants consolidation
+  - constants.py golden source for 27 constant groups, 79 files refactored
+  - validate_constants.py built as pre-commit guard
+  - 5 dead modules deleted (1,392 lines), ~1,830 net lines removed
+  - 14,806 tests passing, ruff clean
+- S324: Governance — Phase -1 stop the bleed (partial)
+  - **Bugs fixed:** C03 (D9 lagna = D1 lagna in multi_axis_scoring.py), C20 (SAV Ekadhipatya discarded in ashtakavarga.py). Hidden TypeError in yoga_fructification.py uncovered by removing silent handler.
+  - **Condition primitives:** planet_in_sign_type + planet_in_derived_house added to rule_firing.py (10 new tests). Enables 68 corpus rules across Ch.12,14,16,18,29,30.
+  - **Silent exceptions:** 84/100 handlers narrowed in src/calculations/ (40 files). 77 remain in UI/API/worker layers (not addressed).
+  - **Dead code:** 7 modules deleted (941 lines). 79 files (15,567 lines) still have zero production importers — 68 are test-only (unresolved).
+  - **Infrastructure:** src/MODULE_REGISTRY.py (26 modules, 6 layers), tools/import_boundary_check.py (AST-based). 9 _VERIFICATION tags on canonical modules. src/invariants.py (5 runtime invariants) wired into compute_chart().
+  - **Lessons:** L017-L020. Plan anchoring, premature closure (3rd instance), "test-only" is a question not a status, removing silent catches exposes real bugs.
+  - **Honest assessment:** Claimed Phase -1 "substantially complete" — user corrected. 12.7% of src/ is unreachable dead weight. 14,815 tests pass but unknown fraction test dead code. `/codebase-surgery` command created to resolve.
+  - 14,815 tests, ruff clean, constants clean, import boundaries clean

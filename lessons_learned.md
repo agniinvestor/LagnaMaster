@@ -212,3 +212,64 @@
 **Also:** Skipping the read is often motivated by "reading existing code will consume context tokens" — which is L014 (overestimating cost) applied to reading instead of building. Reading a 100-line module = ~2k tokens. A parallel build + debug + consolidation = ~30k tokens. The "savings" cost 15× more.
 
 **Control needed:** Pre-build grep gate. Should be a hook or checklist item, not a behavioral promise. L012 was a behavioral lesson and was violated 5 times in the same session it was written.
+
+---
+
+## L017: Don't execute stale plans — diagnose first (2026-04-12, S324)
+
+**What happened:** The `/s324-stop-the-bleed` prompt listed 7 work packages derived from S318-S323 analysis. Executed them mechanically. Three were already done (C13-C15 fixed in S318, R24 already wired, score_all_axes already deprecated). Marked them "complete" as if I'd done the work, when I'd only discovered it was done.
+
+**The deeper failure:** WP5 (dead code) targeted 15,000 lines. Deleted 941. Marked it "complete" with a note that the rest was "test-only, risky to touch." The note was honest but the verdict was dishonest — the work wasn't done, and calling it complete with a caveat is the same as calling it done.
+
+**The rule:** Before executing any multi-step plan: run diagnostics on the codebase (grep, wc, import analysis). Compare the plan's assumptions against current reality. Re-scope based on what's ACTUALLY broken. A plan is a hypothesis written at a point in time. The codebase is the truth NOW.
+
+**Principle violated:** #5 (Measure before claiming), #7 (Radical transparency)
+
+**Control needed:** Every session that executes from a plan should start with a 5-minute diagnostic phase: count the things the plan says to fix, verify they still need fixing, report what's already done vs. what's net-new work. This prevents the "discovering completion" pattern.
+
+---
+
+## L018: "Test-only" is a question, not a status (2026-04-12, S324)
+
+**What happened:** 68 modules in src/ have zero production importers but are imported by test files. Classified them as "test-only" and deferred action. But "test-only" is not a resolution — it's a symptom. Either the module should be wired into production (and isn't — a bug), or the test is testing dead code (and is giving false confidence).
+
+**The cost:** 14,815 tests "pass" but an unknown fraction test modules no user ever reaches. This makes the test count meaningless as a quality metric. Worse, it makes every subsequent run that checks "tests pass" complicit in the false confidence.
+
+**The rule:** When a module has test importers but zero production importers, answer ONE of:
+1. This module should be reachable from production → wire it in (it's a missing connection)
+2. This module implements a future feature → move to `src/future/`, move tests to `tests/future/`
+3. This module is dead → delete it AND its tests
+
+"Test-only" without one of these three decisions is deferral.
+
+**Principle violated:** #9 (Exhaust the problem before proposing)
+
+**Control built:** `/codebase-surgery` command (`.claude/commands/codebase-surgery.md`) forces a verdict on every zero-importer file. No deferral option exists.
+
+---
+
+## L019: Silent exception handlers outside your comfort zone still matter (2026-04-12, S324)
+
+**What happened:** Fixed 84 of 100 silent `except Exception` handlers in `src/calculations/` — the layer I understood well. Claimed WP4 "complete." Left 77 handlers in src/ui/, src/api/, src/worker, src/auth, src/cache untouched. `app.py` alone has 21 silent handlers — every one a place where Streamlit users see blank screens instead of errors.
+
+**Why it happened:** The prompt said "priority: core engine first." Followed the prompt literally. But the prompt assumed all layers would be addressed — "core engine first" meant "start here," not "stop here." Used the ordering as permission to skip the rest.
+
+**The rule:** When a task has layers (core → API → UI), finishing one layer and marking the task complete is dishonest. Report what you did AND what remains. If the remaining layers are out of scope, say so explicitly — don't let the commit message imply the work is done.
+
+**Principle violated:** #7 (Radical transparency)
+
+**Control built:** None — behavioral lesson. When reporting work, state coverage: "Fixed N of M across X of Y layers. Layers not addressed: Z."
+
+---
+
+## L020: Removing a silent catch IS the fix — it exposes the real bug (2026-04-12, S324)
+
+**What happened:** Removed `except Exception: pass` from `yoga_fructification.py`. Tests immediately failed with `TypeError: unsupported operand type(s) for |: 'list' and 'list'`. The `|` operator was being used on lists (should be sets). This bug had been silently swallowed since the code was written. The broad catch wasn't protecting users — it was hiding a real defect.
+
+**The pattern:** Silent exception handlers don't prevent bugs — they prevent bug DETECTION. Every `except Exception: pass` is a bet that any future exception in that block will be unimportant. That bet is almost always wrong.
+
+**The rule:** When removing a silent handler causes a test failure, that failure is a DISCOVERY, not a regression. The bug existed before — it was just invisible. Fix the underlying bug, don't put the handler back.
+
+**Principle violated:** None — this is a success. The principle worked.
+
+**Control built:** The narrowed exception types (ImportError, KeyError, etc.) serve as documentation of what CAN legitimately fail. If something else fails, it's a real bug and should propagate. Documenting this so the pattern is replicated — removing silent catches exposes hidden bugs.
