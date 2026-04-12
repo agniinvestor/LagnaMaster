@@ -6,7 +6,6 @@ Source: CALC_CharaKarak (Excel), Jaimini Sutram 1.1.5-7.
 """
 
 from __future__ import annotations
-from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 from src.ephemeris import BirthChart
 
@@ -48,27 +47,25 @@ def compute_chara_karakas(chart: BirthChart) -> list[CharaKarak]:
     Rank the 7 classical planets (Sun-Saturn) by degree within sign.
     Highest degree = Atmakaraka. Rahu/Ketu excluded.
     Returns list of 7 CharaKarak objects sorted rank 1→7.
-    """
-    classical = list(SEVEN_PLANETS)
-    ranked = sorted(
-        [
-            (name, chart.planets[name].degree_in_sign)
-            for name in classical
-            if name in chart.planets
-        ],
-        key=lambda x: x[1],
-        reverse=True,  # highest degree first = AK
-    )
 
+    Delegates to chara_karaka_config.compute_chara_karakas for the ranking,
+    then wraps the result as list[CharaKarak] for backward compatibility.
+    """
+    from src.calculations.chara_karaka_config import compute_chara_karakas as _canonical
+
+    ckr = _canonical(chart)  # CharaKarakaResult with assignments dict
+    # Rebuild ranked list from assignments (karaka_name -> planet)
     result = []
-    for rank, (planet, degree) in enumerate(ranked, start=1):
+    for rank, (karak_name, planet) in enumerate(ckr.assignments.items(), start=1):
+        if rank > 7:
+            break
         result.append(
             CharaKarak(
                 rank=rank,
                 karak_name=_KARAK_NAMES[rank - 1],
                 abbreviation=_KARAK_ABBR[rank - 1],
                 planet=planet,
-                degree_in_sign=degree,
+                degree_in_sign=ckr.degrees.get(planet, 0.0),
                 signification=_KARAK_SIGNIFICATION[rank - 1],
             )
         )
