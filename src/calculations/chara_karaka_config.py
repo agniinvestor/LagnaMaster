@@ -13,6 +13,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 from enum import Enum
 
@@ -35,8 +36,7 @@ KARAKA_NAMES_8 = KARAKA_NAMES_7[:-1] + [
 
 # 7-karaka: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn
 # 8-karaka: adds Rahu (uses 360 - Rahu's longitude to get degree in sign)
-PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
-PLANETS_8 = PLANETS_7 + ["Rahu"]
+PLANETS_8 = list(SEVEN_PLANETS) + ["Rahu"]
 
 
 class KarakaSystem(str, Enum):
@@ -88,7 +88,7 @@ def compute_chara_karakas(
         planets = PLANETS_8
         names = KARAKA_NAMES_8
     else:
-        planets = PLANETS_7
+        planets = SEVEN_PLANETS
         names = KARAKA_NAMES_7
 
     # Get degree in sign for each planet

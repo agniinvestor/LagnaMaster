@@ -19,7 +19,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, SEVEN_PLANETS
 from dataclasses import dataclass
 
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
@@ -57,7 +57,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
     # ── 1. All 7 planets in one hemisphere ───────────────────────────────────
     visible_h = {7, 8, 9, 10, 11, 12}
     invisible_h = {1, 2, 3, 4, 5, 6}
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     p_houses = [ph.get(p, 0) for p in planets_7 if ph.get(p, 0) > 0]
     if all(h in visible_h for h in p_houses):
         exceptions.append(

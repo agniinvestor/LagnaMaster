@@ -19,7 +19,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS
+from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS
 from datetime import date
 
 from src.calculations.extended_yogas import YogaResult
@@ -63,7 +63,7 @@ def _yoga(
 # ── Nabhasa yogas ─────────────────────────────────────────────────────────────
 def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     ph = _planet_houses(chart)
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     occupied = set(ph.get(p) for p in planets_7 if ph.get(p))
     results = []
 

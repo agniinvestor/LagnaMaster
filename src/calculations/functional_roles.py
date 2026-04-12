@@ -24,7 +24,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, SIGN_LORDS
+from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS, SIGN_LORDS
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -138,7 +138,7 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     roles.kendradhipati_planets = [p for p in kd_candidates if p in NATURAL_BENEFICS]
 
     # Functional classification per planet (7 grahas)
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     for planet in planets_7:
         owned = [h for h, lord in house_lords.items() if lord == planet]
         dusthana_owned = [h for h in owned if h in {6, 8, 12}]

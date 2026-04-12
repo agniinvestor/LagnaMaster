@@ -18,10 +18,9 @@ Source: BPHS Ch.35; B.V. Raman "Three Hundred Important Combinations" (intro);
 """
 
 from __future__ import annotations
-from src.data.constants import KENDRA_HOUSES
+from src.data.constants import KENDRA_HOUSES, SEVEN_PLANETS
 from dataclasses import dataclass, field
 
-_PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
 # Sign classifications
 _MOVABLE = {0, 3, 6, 9}  # Ar, Cn, Li, Cp
@@ -46,14 +45,14 @@ class NabhasaYoga:
 
 
 def _occupied_signs(chart) -> set[int]:
-    return {chart.planets[p].sign_index for p in _PLANETS_7 if p in chart.planets}
+    return {chart.planets[p].sign_index for p in SEVEN_PLANETS if p in chart.planets}
 
 
 def _occupied_houses(chart) -> set[int]:
     from src.calculations.house_lord import compute_house_map
 
     hmap = compute_house_map(chart)
-    return {hmap.planet_house[p] for p in _PLANETS_7 if p in hmap.planet_house}
+    return {hmap.planet_house[p] for p in SEVEN_PLANETS if p in hmap.planet_house}
 
 
 def detect_nabhasa_yogas(chart) -> list[NabhasaYoga]:

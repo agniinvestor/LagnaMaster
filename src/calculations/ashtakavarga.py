@@ -16,10 +16,9 @@ Sources:
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from dataclasses import dataclass
 
-_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
 # ─── Dual-ruled sign pairs (for Ekadhipatya Shodhana) ───────────────────────
 # {planet: (sign_index_1, sign_index_2)}
@@ -214,7 +213,7 @@ def _compute_raw_bindus(target_planet: str, chart) -> list[int]:
     bindus = [0] * 12
     contributor_positions = {}
 
-    for planet in _PLANETS:
+    for planet in SEVEN_PLANETS:
         if planet in chart.planets:
             contributor_positions[planet] = chart.planets[planet].sign_index
     contributor_positions["Lagna"] = chart.lagna_sign_index
@@ -240,7 +239,7 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
     """
     planet_tables: dict[str, AshtakavargaTable] = {}
 
-    for planet in _PLANETS:
+    for planet in SEVEN_PLANETS:
         # Step 1: raw bindus
         raw = _compute_raw_bindus(planet, chart)
 
@@ -258,7 +257,7 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
         )
 
     # Sarva: sum of all 7 RAW BAV tables (BUG-065: was using post-Shodhana bindus)
-    sarva_raw = [sum(planet_tables[p].raw_bindus[i] for p in _PLANETS) for i in range(12)]
+    sarva_raw = [sum(planet_tables[p].raw_bindus[i] for p in SEVEN_PLANETS) for i in range(12)]
     sarva_after_trikona = trikona_shodhana(sarva_raw)
     # Ekadhipatya on Sarva — all dual-ruled pairs
     sarva_reduced = list(sarva_after_trikona)
@@ -341,9 +340,9 @@ def compute_ashtakavarga_raw(chart) -> dict:
     """Returns pre-Shodhana bindu totals keyed by planet name.
     Use compute_ashtakavarga() for the correct post-Shodhana values."""
     result = {}
-    for planet in _PLANETS:
+    for planet in SEVEN_PLANETS:
         raw = _compute_raw_bindus(planet, chart)
         result[planet] = {"bindus": raw, "total": sum(raw)}
-    sarva = [sum(result[p]["bindus"][i] for p in _PLANETS) for i in range(12)]
+    sarva = [sum(result[p]["bindus"][i] for p in SEVEN_PLANETS) for i in range(12)]
     result["Sarva"] = {"bindus": sarva, "total": sum(sarva)}
     return result

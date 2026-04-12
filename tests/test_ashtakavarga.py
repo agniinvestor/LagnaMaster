@@ -8,12 +8,12 @@ Tests for the Ashtakavarga bindu computation.
 import pytest
 from tests.fixtures import INDIA_1947
 from src.ephemeris import compute_chart, SIGNS
+from src.data.constants import SEVEN_PLANETS
 from src.calculations.ashtakavarga import (
     compute_ashtakavarga,
     AshtakavargaChart,
     AshtakavargaTable,
     FIXED_TOTALS_RAW,
-    _PLANETS,
 )
 
 
@@ -47,10 +47,10 @@ class TestAshtakavargaStructure:
         assert isinstance(india_av, AshtakavargaChart)
 
     def test_has_seven_planet_tables(self, india_av):
-        assert set(india_av.planet_av.keys()) == set(_PLANETS)
+        assert set(india_av.planet_av.keys()) == set(SEVEN_PLANETS)
 
     def test_each_table_has_12_bindus(self, india_av):
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             table = india_av.planet_av[p]
             assert len(table.bindus) == 12, f"{p}: expected 12 bindus"
 
@@ -58,18 +58,18 @@ class TestAshtakavargaStructure:
         assert len(india_av.sarva.bindus) == 12
 
     def test_all_planet_tables_are_AshtakavargaTable(self, india_av):
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             assert isinstance(india_av.planet_av[p], AshtakavargaTable)
         assert isinstance(india_av.sarva, AshtakavargaTable)
 
     def test_planet_table_has_correct_planet_name(self, india_av):
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             assert india_av.planet_av[p].planet == p
         assert india_av.sarva.planet == "Sarva"
 
     def test_bindus_in_valid_range(self, india_av):
         """Each planet table has bindus 0–8 (8 contributors max)."""
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             for b in india_av.planet_av[p].bindus:
                 assert 0 <= b <= 8, f"{p}: bindu {b} out of range"
 
@@ -90,7 +90,7 @@ class TestFixedTotals:
         The sum of bindus per planet table is chart-independent
         (determined only by the benefic-house tables, not by planet positions).
         """
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             table = india_av.planet_av[p]
             raw = sum(table.raw_bindus)
             assert abs(raw - FIXED_TOTALS_RAW[p]) <= 4, (
@@ -100,7 +100,7 @@ class TestFixedTotals:
     def test_sarva_total_equals_sum_of_planet_raw_totals(self, india_av):
         # BUG-065: SAV must be sum of RAW BAVs, not post-Shodhana bindus
         for si in range(12):
-            expected_sign = sum(india_av.planet_av[p].raw_bindus[si] for p in _PLANETS)
+            expected_sign = sum(india_av.planet_av[p].raw_bindus[si] for p in SEVEN_PLANETS)
             assert india_av.sarva.raw_bindus[si] == expected_sign, (
                 f"Sign {si}: sarva.raw={india_av.sarva.raw_bindus[si]}, sum={expected_sign}"
             )
@@ -112,7 +112,7 @@ class TestFixedTotals:
         """
         chart2 = compute_chart(1957, 8, 15, 12.0, 28.6139, 77.2090, 5.5, "lahiri")
         av2 = compute_ashtakavarga(chart2)
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             raw2 = sum(av2.planet_av[p].raw_bindus)
             assert abs(raw2 - FIXED_TOTALS_RAW[p]) <= 4, (
                 f"{p}: chart2 raw={raw2}, expected={FIXED_TOTALS_RAW[p]} (±4 tol)"
@@ -128,12 +128,12 @@ class TestSarvaConsistency:
     def test_sarva_equals_sum_of_planet_raw_bindus(self, india_av):
         """Sarva[sign] must equal sum of all 7 planet RAW bindus (BUG-065)."""
         for si in range(12):
-            expected = sum(india_av.planet_av[p].raw_bindus[si] for p in _PLANETS)
+            expected = sum(india_av.planet_av[p].raw_bindus[si] for p in SEVEN_PLANETS)
             actual = india_av.sarva.raw_bindus[si]
             assert actual == expected, f"{SIGNS[si]}: sarva={actual}, sum={expected}"
 
     def test_for_planet_accessor_matches_planet_av(self, india_av):
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             assert india_av.for_planet(p) is india_av.planet_av[p]
 
 
@@ -175,13 +175,13 @@ class TestIndia1947Values:
         assert 0 <= b <= 8
 
     def test_bindu_for_sign_name_matches_index(self, india_av):
-        for planet in _PLANETS:
+        for planet in SEVEN_PLANETS:
             table = india_av.planet_av[planet]
             for si, sign_name in enumerate(SIGNS):
                 assert table.bindu_for_sign_name(sign_name) == table.bindus[si]
 
     def test_bindu_for_sign_index_matches(self, india_av):
-        for planet in _PLANETS:
+        for planet in SEVEN_PLANETS:
             table = india_av.planet_av[planet]
             for si in range(12):
                 assert table.bindu_for_sign(si) == table.bindus[si]
@@ -194,7 +194,7 @@ class TestIndia1947Values:
 
 class TestStrengthRatings:
     def test_planet_strength_categories(self, india_av):
-        for planet in _PLANETS:
+        for planet in SEVEN_PLANETS:
             table = india_av.planet_av[planet]
             for si in range(12):
                 rating = table.strength(si)
@@ -277,6 +277,6 @@ class TestDeterminism:
     def test_same_chart_produces_same_av(self, india_chart):
         av1 = compute_ashtakavarga(india_chart)
         av2 = compute_ashtakavarga(india_chart)
-        for p in _PLANETS:
+        for p in SEVEN_PLANETS:
             assert av1.planet_av[p].bindus == av2.planet_av[p].bindus
         assert av1.sarva.bindus == av2.sarva.bindus

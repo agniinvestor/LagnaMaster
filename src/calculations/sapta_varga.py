@@ -44,7 +44,7 @@ Data classes
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -204,8 +204,7 @@ _SIGN_LORD: list[str] = [
     "Jupiter",  # Pisces 11
 ]
 
-_PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
-_ALL_PLANETS = _PLANETS_7 + ["Rahu", "Ketu"]
+_ALL_PLANETS = list(SEVEN_PLANETS) + ["Rahu", "Ketu"]
 
 
 # ── dignity determination ─────────────────────────────────────────────────────
@@ -216,7 +215,7 @@ def _sign_dignity(planet: str, sign_index: int) -> str:
     Return the dignity label for `planet` placed in `sign_index`.
     Rahu/Ketu always return "Neutral" (no classical exalt/own/debil in Parashari).
     """
-    if planet not in _PLANETS_7:
+    if planet not in SEVEN_PLANETS:
         return "Neutral"
 
     si = sign_index % 12

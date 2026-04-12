@@ -15,7 +15,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import DEBILITATION_SIGN, DUSTHANA_HOUSES, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
+from src.data.constants import DEBILITATION_SIGN, DUSTHANA_HOUSES, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS, SIGN_LORDS
 from dataclasses import dataclass
 from datetime import date
 
@@ -232,7 +232,7 @@ def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
 
     hmap = compute_house_map(chart)
     results = []
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
 
     for p in planets_7:
         pos = chart.planets.get(p)

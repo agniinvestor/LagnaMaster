@@ -20,6 +20,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date
+from src.data.constants import SEVEN_PLANETS
 
 import swisseph as swe
 
@@ -165,7 +166,6 @@ def compute_gochara(
     # Ashtakavarga for natal chart (used for AV bindus at transit sign)
     av = compute_ashtakavarga(natal_chart)
     # Only 7 planets have AV tables
-    _AV_PLANETS = {"Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"}
 
     transit_planets: dict[str, TransitPlanet] = {}
     for planet_name, (lon, speed) in transit_pos.items():
@@ -175,7 +175,7 @@ def compute_gochara(
         natal_house = _whole_sign_house(si, lagna_si)
 
         av_bindus = -1  # Rahu/Ketu have no AV table
-        if planet_name in _AV_PLANETS:
+        if planet_name in SEVEN_PLANETS:
             av_bindus = av.planet_av[planet_name].bindus[si]
 
         transit_planets[planet_name] = TransitPlanet(

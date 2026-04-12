@@ -1,11 +1,10 @@
 """Jaimini Chara Dasha — sign-based predictive cycle (Session 14)."""
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS, SIGN_NAMES
+from src.data.constants import SEVEN_PLANETS, SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
-_MAIN_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 _ODD_SIGNS = {0, 2, 4, 6, 8, 10}
 
 
@@ -31,7 +30,7 @@ def _sld(si, chart):
 def _dy(si, chart):
     ph = [
         p
-        for p in _MAIN_PLANETS
+        for p in SEVEN_PLANETS
         if chart.planets.get(p) and chart.planets[p].sign_index == si
     ]
     return max(1, min(12, len(ph) + _sld(si, chart)))
@@ -40,14 +39,14 @@ def _dy(si, chart):
 def _pis(si, chart):
     return [
         p
-        for p in _MAIN_PLANETS
+        for p in SEVEN_PLANETS
         if chart.planets.get(p) and chart.planets[p].sign_index == si
     ]
 
 
 def _atmakaraka(chart):
     return max(
-        _MAIN_PLANETS,
+        SEVEN_PLANETS,
         key=lambda p: chart.planets[p].degree_in_sign if chart.planets.get(p) else -1,
     )
 

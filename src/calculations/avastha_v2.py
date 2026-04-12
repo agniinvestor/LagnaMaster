@@ -5,6 +5,7 @@ Lajjitadi from avasthas.py replaces the ad-hoc Sayanadi modifier.
 """
 
 from __future__ import annotations
+from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 
 from src.calculations.avasthas import (
@@ -81,7 +82,7 @@ class AvasthaReportV2:
 
 
 def compute_avasthas_v2(chart) -> AvasthaReportV2:
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     result = {}
     for p in planets_7:
         pos = chart.planets.get(p)

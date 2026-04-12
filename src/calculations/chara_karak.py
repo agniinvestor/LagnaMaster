@@ -6,6 +6,7 @@ Source: CALC_CharaKarak (Excel), Jaimini Sutram 1.1.5-7.
 """
 
 from __future__ import annotations
+from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 from src.ephemeris import BirthChart
 
@@ -48,7 +49,7 @@ def compute_chara_karakas(chart: BirthChart) -> list[CharaKarak]:
     Highest degree = Atmakaraka. Rahu/Ketu excluded.
     Returns list of 7 CharaKarak objects sorted rank 1→7.
     """
-    classical = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    classical = list(SEVEN_PLANETS)
     ranked = sorted(
         [
             (name, chart.planets[name].degree_in_sign)

@@ -23,7 +23,7 @@ This is included as a "practitioner-expected" feature with appropriate disclaime
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from dataclasses import dataclass
 
 
@@ -42,7 +42,6 @@ _KS_NAMES = [
     "Sheshnaag",
 ]
 
-_PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
 
 @dataclass
@@ -90,7 +89,7 @@ def compute_kala_sarpa(chart) -> KalaSarpaResult:
     # Count planets between Rahu and Ketu (going forward in zodiac from Rahu)
     inside = []
     outside = []
-    for planet in _PLANETS_7:
+    for planet in SEVEN_PLANETS:
         pos = chart.planets.get(planet)
         if not pos:
             continue

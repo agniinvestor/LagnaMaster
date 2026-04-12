@@ -27,7 +27,7 @@ New in Session 19
 - Tabs 7-11 (S12, S15-S18) all new
 """
 
-from src.data.constants import NATURAL_BENEFICS
+from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS
 import logging  # noqa: E402
 import sys  # noqa: E402
 import os  # noqa: E402
@@ -61,7 +61,7 @@ from src.calculations.vimshottari_dasa import (  # noqa: E402
     current_dasha,
     nakshatra_of_moon,
 )
-from src.calculations.ashtakavarga import compute_ashtakavarga, _PLANETS as _AV_PLANETS  # noqa: E402
+from src.calculations.ashtakavarga import compute_ashtakavarga  # noqa: E402
 from src.calculations.shadbala import compute_shadbala  # noqa: E402
 from src.calculations.gochara import compute_gochara  # noqa: E402
 from src.calculations.panchanga import compute_panchanga, compute_navamsha_chart  # noqa: E402
@@ -643,7 +643,7 @@ with tab_av:
         st.bar_chart(sarva_data.set_index("Sign")["Bindus"])
 
         # Per-planet grids
-        selected_planet = st.selectbox("Planet", _AV_PLANETS, key="av_planet")
+        selected_planet = st.selectbox("Planet", SEVEN_PLANETS, key="av_planet")
         pt = av.for_planet(selected_planet)
         av_rows = []
         for si, sign in enumerate(_SIGNS):
@@ -660,7 +660,7 @@ with tab_av:
         # Full table
         with st.expander("📊 Full Ashtakavarga Table"):
             full_rows = [{"Sign": s} for s in _SIGNS]
-            for p in _AV_PLANETS:
+            for p in SEVEN_PLANETS:
                 pt2 = av.for_planet(p)
                 for i, row in enumerate(full_rows):
                     row[p] = pt2.bindus[i]

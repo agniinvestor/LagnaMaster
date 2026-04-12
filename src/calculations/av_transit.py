@@ -25,6 +25,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 from datetime import date
 
@@ -111,7 +112,7 @@ def compute_transit_av_score(
     if transit_date is None:
         transit_date = date.today()
 
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
 
     # Get transit positions
     if transit_longitudes is None:

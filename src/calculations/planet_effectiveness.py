@@ -23,6 +23,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SEVEN_PLANETS
 from dataclasses import dataclass
 
 
@@ -164,5 +165,5 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
 
 
 def compute_all_effectiveness(chart) -> dict[str, PlanetEffectiveness]:
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     return {p: compute_planet_effectiveness(p, chart) for p in planets_7}

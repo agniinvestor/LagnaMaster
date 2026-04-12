@@ -18,7 +18,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import SEVEN_PLANETS, SIGN_LORDS
 from dataclasses import dataclass
 
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
@@ -220,7 +220,7 @@ def compute_mutual_receptions(chart) -> list[MutualReception]:
 
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
-    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+    planets_7 = list(SEVEN_PLANETS)
     seen = set()
     receptions = []
 

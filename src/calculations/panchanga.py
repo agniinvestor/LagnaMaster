@@ -15,6 +15,7 @@ Source: BPHS, standard Vedic almanac (Panchang).
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime
+from src.data.constants import WEEKDAY_LORDS
 
 _TITHI_NAMES = [
     "Pratipada",
@@ -113,7 +114,6 @@ _VARA_NAMES = [
     "Friday",
     "Saturday",
 ]
-_VARA_LORDS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
 # Auspicious/inauspicious yogas from Nakshatra × Vara combinations
 _AMRITA_SIDDHI = {  # (Vara_index, Nakshatra_0indexed) combinations
@@ -218,7 +218,7 @@ def compute_panchanga(
     # Python: Mon=0…Sun=6 → Jyotish: Sun=0…Sat=6
     vara_jyotish = (vara + 1) % 7
     vara_name = _VARA_NAMES[vara_jyotish]
-    vara_lord = _VARA_LORDS[vara_jyotish]
+    vara_lord = WEEKDAY_LORDS[vara_jyotish]
 
     # Nakshatra: every 13.333° = one nakshatra
     nak_raw = moon_lon * 27 / 360
