@@ -15,7 +15,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import DEBILITATION_SIGN, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
+from src.data.constants import DEBILITATION_SIGN, DUSTHANA_HOUSES, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 from dataclasses import dataclass
 from datetime import date
 
@@ -177,7 +177,7 @@ def detect_viparita_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     for name, src_house, desc, src in viparita:
         lord = hmap.house_lord[src_house - 1]
         lord_house = hmap.planet_house.get(lord, 0)
-        present = lord_house in DUSTHANA
+        present = lord_house in DUSTHANA_HOUSES
         dw = 1.0 if _is_dasha_active(lord, dashas, on_date) else 0.5
         score = 2.0 if present else 0.0
         results.append(
@@ -223,8 +223,6 @@ def detect_viparita_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     )
     return results
 
-
-DUSTHANA = {6, 8, 12}
 
 
 def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
