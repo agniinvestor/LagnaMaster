@@ -26,18 +26,13 @@ from dataclasses import dataclass
 from typing import Callable
 import functools
 
+from src.calculations.extended_yogas import YogaResult
+
 _YOGA_REGISTRY: dict[str, dict] = {}
 _SCORER_REGISTRY: dict[str, dict] = {}
 
-
-@dataclass
-class PluginYogaResult:
-    name: str
-    source: str
-    present: bool
-    score: float
-    description: str
-    plugin_note: str = "Custom/extended rule — not core classical engine"
+# Backward compatibility alias
+PluginYogaResult = YogaResult
 
 
 @dataclass
@@ -88,22 +83,31 @@ def apply_all_plugins(chart) -> list[PluginYogaResult]:
     for name, reg in _YOGA_REGISTRY.items():
         try:
             present = reg["fn"](chart)
+            score = reg["score"] if present else 0.0
             results.append(
-                PluginYogaResult(
+                YogaResult(
                     name=name,
+                    yoga_type="Plugin",
+                    planets=[],
                     source=reg["source"],
                     present=bool(present),
-                    score=reg["score"] if present else 0.0,
+                    score=score,
+                    dasha_weight=1.0,
+                    weighted_score=score,
                     description=f"Plugin yoga: {name}",
                 )
             )
         except Exception as e:  # ACCEPT: captures error in result object
             results.append(
-                PluginYogaResult(
+                YogaResult(
                     name=name,
+                    yoga_type="Plugin",
+                    planets=[],
                     source=reg["source"],
                     present=False,
                     score=0.0,
+                    dasha_weight=1.0,
+                    weighted_score=0.0,
                     description=f"Plugin error: {e}",
                 )
             )

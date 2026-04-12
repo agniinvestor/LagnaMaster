@@ -16,6 +16,9 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
 
+from src.calculations.extended_yogas import YogaResult
+
+
 # ─── Yoga Strength Gradient ───────────────────────────────────────────────────
 
 
@@ -123,14 +126,33 @@ def compute_yoga_strength(
 # ─── Missing Named Yogas ──────────────────────────────────────────────────────
 
 
-@dataclass
-class NamedYogaResult:
-    name: str
-    present: bool
-    strength: Optional[YogaStrength]
-    planets: list[str]
-    description: str
-    source: str
+# Backward compatibility alias
+NamedYogaResult = YogaResult
+
+
+def _named_yoga(
+    name: str,
+    present: bool,
+    strength: Optional[YogaStrength],
+    planets: list[str],
+    description: str,
+    source: str,
+) -> YogaResult:
+    """Build a YogaResult from named yoga detection, embedding strength into score."""
+    score = strength.strength_score if strength else (1.0 if present else 0.0)
+    label = strength.strength_label if strength else ""
+    desc = f"{description} [{label}]" if label else description
+    return YogaResult(
+        name=name,
+        yoga_type="Named",
+        planets=planets,
+        present=present,
+        score=round(score * 3.0, 2),  # scale 0-1 → 0-3 to match other yoga scores
+        dasha_weight=1.0,
+        weighted_score=round(score * 3.0, 2),
+        description=desc,
+        source=source,
+    )
 
 
 def detect_amala_yoga(chart) -> Optional[NamedYogaResult]:
@@ -159,7 +181,7 @@ def detect_amala_yoga(chart) -> Optional[NamedYogaResult]:
     # No malefics in H10 from either Lagna or Moon
     if all_h10 and not any(p in natural_malefics for p in all_h10):
         benefics_present = [p for p in all_h10 if p in natural_benefics]
-        return NamedYogaResult(
+        return _named_yoga(
             name="Amala Yoga",
             present=True,
             strength=compute_yoga_strength("Amala Yoga", benefics_present, chart),
@@ -195,7 +217,7 @@ def detect_vasumati_yoga(chart) -> Optional[NamedYogaResult]:
 
     if benefics_in_chart and (all_in_upachaya_lagna or all_in_upachaya_moon):
         ref = "Lagna" if all_in_upachaya_lagna else "Moon"
-        return NamedYogaResult(
+        return _named_yoga(
             name="Vasumati Yoga",
             present=True,
             strength=compute_yoga_strength("Vasumati Yoga", benefics_in_chart, chart),
@@ -240,7 +262,7 @@ def detect_mahabhagya_yoga(
             met = sum(1 for si in (lagna_si, sun_si, moon_si) if not is_odd_sign(si))
         if met == 2:
             condition_desc = "Partial Mahabhagya (2/3 conditions)"
-            return NamedYogaResult(
+            return _named_yoga(
                 name="Partial Mahabhagya Yoga",
                 present=True,
                 strength=None,
@@ -251,7 +273,7 @@ def detect_mahabhagya_yoga(
         return None
 
     if condition:
-        return NamedYogaResult(
+        return _named_yoga(
             name="Mahabhagya Yoga",
             present=True,
             strength=compute_yoga_strength("Mahabhagya Yoga", ["Sun", "Moon"], chart),
@@ -296,7 +318,7 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
             except (ValueError, TypeError):
                 ys = None
             results.append(
-                NamedYogaResult(
+                _named_yoga(
                     name=yoga_name,
                     present=True,
                     strength=ys,
@@ -345,7 +367,7 @@ def detect_chamara_yoga(chart) -> Optional[NamedYogaResult]:
     if asp_str == 0:
         return None
 
-    return NamedYogaResult(
+    return _named_yoga(
         name="Chamara Yoga",
         present=True,
         strength=compute_yoga_strength("Chamara Yoga", [lagna_lord, "Jupiter"], chart),
