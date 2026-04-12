@@ -24,6 +24,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -44,8 +45,6 @@ _SIGN_LORD = {
 }
 
 # Natural benefics and malefics
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 # Badhaka house by lagna sign type
@@ -150,7 +149,7 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     # Kendradhipati dosha: natural benefics owning kendras (H4, H7, H10)
     # H1 lordship does not give KD dosha; H4/H7/H10 do for natural benefics
     kd_candidates = {house_lords[h] for h in [4, 7, 10]}
-    roles.kendradhipati_planets = [p for p in kd_candidates if p in _NAT_BENEFIC]
+    roles.kendradhipati_planets = [p for p in kd_candidates if p in NATURAL_BENEFICS]
 
     # Functional classification per planet (7 grahas)
     planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
@@ -178,7 +177,7 @@ def compute_functional_roles(chart) -> FunctionalRoles:
 
         # Pure kendra lord (no trikona) — KD dosha for nat benefics
         if kendra_owned and not trikona_owned and not dusthana_owned:
-            if planet in _NAT_BENEFIC:
+            if planet in NATURAL_BENEFICS:
                 roles.functional_neutrals.append(planet)  # KD weakens but not malefic
             else:
                 roles.functional_neutrals.append(planet)
@@ -190,7 +189,7 @@ def compute_functional_roles(chart) -> FunctionalRoles:
             continue
 
         # Default to natural classification
-        if planet in _NAT_BENEFIC:
+        if planet in NATURAL_BENEFICS:
             roles.functional_benefics.append(planet)
         else:
             roles.functional_malefics.append(planet)

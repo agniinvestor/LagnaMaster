@@ -25,10 +25,9 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 @dataclass
@@ -90,12 +89,12 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
     mals_36 = [
         p
         for p, pos in chart.planets.items()
-        if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_MALEFIC
+        if pos.sign_index in {h3_from_al, h6_from_al} and p in NATURAL_MALEFICS
     ]
     bens_36 = [
         p
         for p, pos in chart.planets.items()
-        if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_BENEFIC
+        if pos.sign_index in {h3_from_al, h6_from_al} and p in NATURAL_BENEFICS
     ]
 
     # Conflict type

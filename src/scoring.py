@@ -8,7 +8,7 @@ Source: LEGEND_ScoringRules + SCORE_H1..H12 (Excel).
 
 from __future__ import annotations
 from dataclasses import dataclass, field
-from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
 from src.ephemeris import BirthChart
 from src.calculations.house_lord import (
     compute_house_map,
@@ -73,16 +73,14 @@ WC_RULES = {"R03", "R05", "R07", "R14"}  # half weight in aggregate
 # Planet classification helpers
 # ---------------------------------------------------------------------------
 
-_NATURAL_BENEFIC = {"Moon", "Mercury", "Jupiter", "Venus"}
-_NATURAL_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 def _is_benefic(planet: str, chart: BirthChart) -> bool:
-    return planet in _NATURAL_BENEFIC
+    return planet in NATURAL_BENEFICS
 
 
 def _is_malefic(planet: str, chart: BirthChart) -> bool:
-    return planet in _NATURAL_MALEFIC
+    return planet in NATURAL_MALEFICS
 
 
 def _is_yogakaraka(planet: str, lagna_sign_idx: int) -> bool:

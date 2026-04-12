@@ -19,12 +19,11 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS
 from datetime import date
 
 from src.calculations.extended_yogas import YogaResult
 
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _SIGN_LORD = {
     0: "Mars",
     1: "Venus",
@@ -142,13 +141,13 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     # Mala — benefics in kendras (1,4,7,10)
     kendra_houses = {1, 4, 7, 10}
     benefics_in_kendra = all(
-        ph.get(p, 0) in kendra_houses for p in _NAT_BENEFIC if p in ph
+        ph.get(p, 0) in kendra_houses for p in NATURAL_BENEFICS if p in ph
     )
     results.append(
         _yoga(
             "Mala Yoga",
             "Nabhasa",
-            list(_NAT_BENEFIC),
+            list(NATURAL_BENEFICS),
             benefics_in_kendra,
             2.5 if benefics_in_kendra else 0.0,
             "All benefics in Kendra houses",
@@ -285,7 +284,7 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     # Adhi Yoga — benefics in 6/7/8 from Moon
     benefic_678 = [
         p
-        for p in _NAT_BENEFIC
+        for p in NATURAL_BENEFICS
         if ph.get(p, 0) in {(moon_h + h - 1 - 1) % 12 + 1 for h in [6, 7, 8]}
     ]
     adhi = len(benefic_678) >= 2

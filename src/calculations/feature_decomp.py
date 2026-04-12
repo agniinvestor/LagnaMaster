@@ -39,7 +39,7 @@ Classical sources
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, GENTLE_SIGNS, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
 
 
 # ── Sign-lord map (0=Aries … 11=Pisces) ──────────────────────────────────────
@@ -65,8 +65,6 @@ _OUTER_PLANETS = {"Jupiter", "Saturn"}
 _INNER_PLANETS = {"Mercury", "Venus", "Mars"}
 
 # Natural benefics / malefics for kartari (natural, not functional)
-_NAT_BENEFIC_SET = frozenset({"Jupiter", "Venus", "Mercury", "Moon"})
-_NAT_MALEFIC_SET = frozenset({"Sun", "Mars", "Saturn", "Rahu", "Ketu"})
 
 # R20 — Dig Bala: planet → house of directional strength
 
@@ -243,12 +241,12 @@ def _extract_kartari_score(
     prev_pl = sign_planets.get(prev_si, [])
     next_pl = sign_planets.get(next_si, [])
     shubh = (
-        any(p in _NAT_BENEFIC_SET for p in prev_pl)
-        and any(p in _NAT_BENEFIC_SET for p in next_pl)
+        any(p in NATURAL_BENEFICS for p in prev_pl)
+        and any(p in NATURAL_BENEFICS for p in next_pl)
     )
     paap = (
-        any(p in _NAT_MALEFIC_SET for p in prev_pl)
-        and any(p in _NAT_MALEFIC_SET for p in next_pl)
+        any(p in NATURAL_MALEFICS for p in prev_pl)
+        and any(p in NATURAL_MALEFICS for p in next_pl)
     )
     if shubh:
         val = 1.0

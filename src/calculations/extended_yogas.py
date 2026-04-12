@@ -15,6 +15,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 from datetime import date
 
@@ -357,8 +358,6 @@ class RasiDrishtiMap:
         return self.house_aspects.get(house, {}).get("net", 0.0)
 
 
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 def compute_rasi_drishti(chart) -> RasiDrishtiMap:
@@ -380,9 +379,9 @@ def compute_rasi_drishti(chart) -> RasiDrishtiMap:
         malefics = []
         for asi in aspecting_signs:
             for p in sign_pl.get(asi, []):
-                if p in _NAT_BENEFIC:
+                if p in NATURAL_BENEFICS:
                     benefics.append(p)
-                if p in _NAT_MALEFIC:
+                if p in NATURAL_MALEFICS:
                     malefics.append(p)
         net = len(benefics) * 0.5 - len(malefics) * 0.5
         result[h] = {

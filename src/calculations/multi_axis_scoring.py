@@ -25,7 +25,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
-from src.data.constants import DIG_BALA_PEAK, STHIRA_KARAKA
+from src.data.constants import DIG_BALA_PEAK, NATURAL_BENEFICS, NATURAL_MALEFICS, STHIRA_KARAKA
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -122,8 +122,6 @@ _SIGN_LORD = {
     10: "Saturn",
     11: "Jupiter",
 }
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _DUSTHANA = {6, 8, 12}
@@ -155,11 +153,11 @@ def _kartari(house_si: int, sign_planets: dict) -> tuple[bool, bool]:
     next_si = (house_si + 1) % 12
     prev_pl = sign_planets.get(prev_si, [])
     next_pl = sign_planets.get(next_si, [])
-    shubh = any(p in _NAT_BENEFIC for p in prev_pl) and any(
-        p in _NAT_BENEFIC for p in next_pl
+    shubh = any(p in NATURAL_BENEFICS for p in prev_pl) and any(
+        p in NATURAL_BENEFICS for p in next_pl
     )
-    paap = any(p in _NAT_MALEFIC for p in prev_pl) and any(
-        p in _NAT_MALEFIC for p in next_pl
+    paap = any(p in NATURAL_MALEFICS for p in prev_pl) and any(
+        p in NATURAL_MALEFICS for p in next_pl
     )
     return shubh, paap
 

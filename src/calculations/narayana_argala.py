@@ -23,10 +23,9 @@ Net activation modifier range: −0.5 to +0.5
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 _ARGALA_HOUSES = {2: 0.5, 4: 0.5, 11: 0.5, 5: 0.25}  # relative strength
 _VIRODHA_HOUSES = {12: 2, 10: 4, 3: 11, 9: 5}  # cancels argala from which house
@@ -74,9 +73,9 @@ def compute_argala_on_sign(sign_index: int, chart) -> ArgalaOnSign:
         house_from_sign = (pos.sign_index - sign_index) % 12 + 1
 
         if house_from_sign in _ARGALA_HOUSES:
-            if planet in _NAT_BENEFIC:
+            if planet in NATURAL_BENEFICS:
                 argala_benefics.append(planet)
-            elif planet in _NAT_MALEFIC:
+            elif planet in NATURAL_MALEFICS:
                 argala_malefics.append(planet)
 
         virodha_cancels = _VIRODHA_HOUSES.get(house_from_sign)

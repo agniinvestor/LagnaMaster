@@ -19,6 +19,7 @@ Lagna cell is highlighted in indigo.
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS
 from src.ephemeris import BirthChart, SIGNS
 
 # ── Layout constants ──────────────────────────────────────────────────────────
@@ -58,8 +59,7 @@ _PLANET_ABBR: dict[str, str] = {
 }
 
 # Natural benefics displayed in green, malefics in dark red
-_BENEFIC = {"Moon", "Mercury", "Jupiter", "Venus"}
-_P_COLOR = {p: "#1a7a1a" if p in _BENEFIC else "#8b0000" for p in _PLANET_ABBR}
+_P_COLOR = {p: "#1a7a1a" if p in NATURAL_BENEFICS else "#8b0000" for p in _PLANET_ABBR}
 
 # Theme
 _BG = "#F9F6FF"

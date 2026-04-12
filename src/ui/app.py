@@ -27,6 +27,7 @@ New in Session 19
 - Tabs 7-11 (S12, S15-S18) all new
 """
 
+from src.data.constants import NATURAL_BENEFICS
 import logging  # noqa: E402
 import sys  # noqa: E402
 import os  # noqa: E402
@@ -163,8 +164,6 @@ _PLANETS = [
     "Rahu",
     "Ketu",
 ]
-_BENEFICS = {"Jupiter", "Venus", "Moon", "Mercury"}
-_MALEFICS = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _HOUSE_DOMAINS = {
     1: "Self & Vitality",
     2: "Wealth & Family",
@@ -460,7 +459,7 @@ with tab_chart:
                 combust = "💥" if is_combust else ""
                 retro = "℞" if pp.is_retrograde else ""
                 pk = "✨" if pushkara_flags.get(p) else ""
-                colour = "🟢" if p in _BENEFICS else "🔴"
+                colour = "🟢" if p in NATURAL_BENEFICS else "🔴"
                 rows.append(
                     {
                         "": colour,

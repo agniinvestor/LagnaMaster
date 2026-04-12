@@ -11,12 +11,11 @@ Usage:
     # result.feature_vector(): dict of ML-ready features
 """
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 
 from dataclasses import dataclass, field
 from src.calculations.dignity import MOOLTRIKONA_RANGES as _MT_RANGES
 
-_MALEFICS = ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
-_BENEFICS = ("Jupiter", "Venus", "Mercury", "Moon")
 
 
 def _is_moon_waning(chart) -> bool:
@@ -365,9 +364,9 @@ def _check_with_bindings(conditions: list[dict], chart, context: dict | None = N
 
     # Resolve candidate list
     if planet_spec == "any_benefic":
-        candidates = list(_BENEFICS)
+        candidates = list(NATURAL_BENEFICS)
     elif planet_spec == "any_malefic":
-        candidates = list(_MALEFICS)
+        candidates = list(NATURAL_MALEFICS)
     else:
         candidates = [planet_spec.title()]
 
@@ -565,9 +564,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
 
             # Resolve planet → may be multiple (any_malefic, etc.)
             if planet_spec == "any_malefic":
-                candidates = list(_MALEFICS)
+                candidates = list(NATURAL_MALEFICS)
             elif planet_spec == "any_benefic":
-                candidates = list(_BENEFICS)
+                candidates = list(NATURAL_BENEFICS)
             elif planet_spec.startswith("lord_of_"):
                 lh = int(planet_spec.split("_")[-1])
                 lord = _lord_of_house(chart, lh)
@@ -600,9 +599,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             # BUG-035 fix: check ALL houses in list, not just first
             target_houses = target_house if isinstance(target_house, list) else [target_house]
             if planet_spec == "any_benefic":
-                candidates = list(_BENEFICS)
+                candidates = list(NATURAL_BENEFICS)
             elif planet_spec == "any_malefic":
-                candidates = list(_MALEFICS)
+                candidates = list(NATURAL_MALEFICS)
             else:
                 candidates = [planet_spec.strip().title()]
             valid = [c for c in candidates if _find_planet(chart, c)]
@@ -616,9 +615,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             # BUG-036 fix: check ALL houses in list, not just first
             target_houses = target_house if isinstance(target_house, list) else [target_house]
             if planet_spec == "any_benefic":
-                candidates = list(_BENEFICS)
+                candidates = list(NATURAL_BENEFICS)
             elif planet_spec == "any_malefic":
-                candidates = list(_MALEFICS)
+                candidates = list(NATURAL_MALEFICS)
             else:
                 candidates = [planet_spec.strip().title()]
             valid = [c for c in candidates if _find_planet(chart, c)]

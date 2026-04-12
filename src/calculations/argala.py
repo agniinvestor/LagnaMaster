@@ -23,6 +23,7 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 
 _SIGNS = [
@@ -53,8 +54,6 @@ _SIGN_LORD = {
     10: "Saturn",
     11: "Jupiter",
 }
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 @dataclass
@@ -109,8 +108,8 @@ def compute_argala(chart, reference_house: int = 1) -> ArgalaResult:
         if not arg_planets and not vir_planets:
             continue
 
-        benefics = [p for p in arg_planets if p in _NAT_BENEFIC]
-        malefics = [p for p in arg_planets if p in _NAT_MALEFIC]
+        benefics = [p for p in arg_planets if p in NATURAL_BENEFICS]
+        malefics = [p for p in arg_planets if p in NATURAL_MALEFICS]
         vir_count = len(vir_planets)
         arg_count = len(arg_planets)
 
@@ -234,8 +233,8 @@ def compute_arudha_lagna(chart) -> ArudhaResult:
 
     # Planets in AL sign
     al_planets = [p for p, pos in chart.planets.items() if pos.sign_index == al_si]
-    malefics_on_al = [p for p in al_planets if p in _NAT_MALEFIC]
-    benefics_on_al = [p for p in al_planets if p in _NAT_BENEFIC]
+    malefics_on_al = [p for p in al_planets if p in NATURAL_MALEFICS]
+    benefics_on_al = [p for p in al_planets if p in NATURAL_BENEFICS]
 
     if malefics_on_al and not benefics_on_al:
         condition = "Afflicted"

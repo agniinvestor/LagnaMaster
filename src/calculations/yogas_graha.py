@@ -22,7 +22,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 
-_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
 _KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _STRONG = _KENDRA | _TRIKONA
