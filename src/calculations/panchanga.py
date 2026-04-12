@@ -17,6 +17,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from src.data.constants import WEEKDAY_LORDS
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS standard Panchang", "session": "S317"}
+
 _TITHI_NAMES = [
     "Pratipada",
     "Dwitiya",

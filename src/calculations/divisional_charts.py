@@ -26,6 +26,8 @@ from __future__ import annotations
 from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
 from dataclasses import dataclass
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.6 v.1-22", "session": "S318"}
+
 _SIGNS = [
     "Aries",
     "Taurus",

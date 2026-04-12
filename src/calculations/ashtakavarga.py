@@ -19,6 +19,7 @@ from __future__ import annotations
 from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from dataclasses import dataclass
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.66-72", "session": "S317"}
 
 # ─── Dual-ruled sign pairs (for Ekadhipatya Shodhana) ───────────────────────
 # {planet: (sign_index_1, sign_index_2)}

@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from src.ephemeris import BirthChart
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.3 v.47-48", "session": "S317"}
 
 # Classical sign lords (index 0=Aries…11=Pisces)
 _SIGN_LORD = [

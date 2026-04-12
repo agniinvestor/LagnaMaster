@@ -249,7 +249,7 @@ def compute_chart(
         speed=-abs(rahu.speed),
     )
 
-    return BirthChart(
+    chart = BirthChart(
         jd_ut=jd_ut,
         ayanamsha_name=ayanamsha_key,
         ayanamsha_value=ayanamsha_val,
@@ -259,6 +259,17 @@ def compute_chart(
         lagna_degree_in_sign=lagna_deg,
         planets=planets_out,  # noqa: F841
     )
+
+    # Runtime invariant check (Stage 8) — catch bugs at source
+    from src.invariants import check_invariants
+    violations = check_invariants(chart)
+    if violations:
+        import logging
+        logger = logging.getLogger(__name__)
+        for v in violations:
+            logger.error(f"Chart invariant violation: {v}")
+
+    return chart
 
 
 # Topocentric Moon correction S136

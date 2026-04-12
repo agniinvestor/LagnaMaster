@@ -15,6 +15,7 @@ Sources:
 from __future__ import annotations
 from dataclasses import dataclass
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.26 v.1-10", "session": "S317"}
 
 # ─── BPHS Ch.26 v.6-8 Drishti Kona (speculum-based) ────────────────────────
 # Piecewise linear function verified against the Speculum of Aspectual Values

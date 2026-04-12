@@ -26,6 +26,8 @@ from __future__ import annotations
 from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
 from dataclasses import dataclass
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.31 v.1-14", "session": "S317"}
+
 _SIGNS = [
     "Aries",
     "Taurus",

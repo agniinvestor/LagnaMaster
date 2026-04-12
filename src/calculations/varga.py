@@ -41,6 +41,8 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     pass
 
+_VERIFICATION = {"level": "cross_validated", "reference": "Cross-validated against divisional_charts.py", "session": "S318"}
+
 # ── constants ────────────────────────────────────────────────────────────────
 
 SIGNS = [

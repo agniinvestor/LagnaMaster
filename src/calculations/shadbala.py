@@ -23,6 +23,8 @@ from datetime import datetime  # noqa: F401
 from typing import Optional  # noqa: F401
 from src.data.constants import DIG_BALA_PEAK, NAISARGIKA_BALA
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.27 v.1-38", "session": "S317"}
+
 # ─── Constants ───────────────────────────────────────────────────────────────
 
 # Naisargika (Natural) Bala — fixed hierarchy, never changes

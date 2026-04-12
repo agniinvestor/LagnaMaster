@@ -27,6 +27,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
+_VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.3 v.2-9, Ch.49 v.12-18", "session": "S317"}
+
 # ─── Dignity Level ──────────────────────────────────────────────────────────
 
 
