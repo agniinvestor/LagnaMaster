@@ -19,7 +19,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS
+from src.data.constants import NATURAL_BENEFICS
 from datetime import date
 
 from src.calculations.extended_yogas import YogaResult
@@ -62,130 +62,25 @@ def _yoga(
 
 # ── Nabhasa yogas ─────────────────────────────────────────────────────────────
 def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
-    ph = _planet_houses(chart)
-    planets_7 = list(SEVEN_PLANETS)
-    occupied = set(ph.get(p) for p in planets_7 if ph.get(p))
+    """Delegate to canonical nabhasa_yogas.py (32 yogas) and wrap as YogaResult."""
+    from src.calculations.nabhasa_yogas import detect_nabhasa_yogas as _canonical
+
+    canonical = _canonical(chart)
     results = []
-
-    # Rajju — all in movable signs (Aries/Cancer/Libra/Capricorn = sign_index % 3 == 0)
-    all_movable = all(
-        chart.planets[p].sign_index % 3 == 0
-        for p in planets_7 if p in chart.planets
-    )
-    results.append(
-        _yoga(
-            "Rajju Yoga",
-            "Nabhasa",
-            planets_7,
-            all_movable,
-            3.0 if all_movable else 0.0,
-            "All 7 planets in movable signs",
-            "BPHS Ch.35 v.1",
-            dashas,
-            on_date,
+    for ny in canonical:
+        results.append(
+            _yoga(
+                ny.name,
+                "Nabhasa",
+                ny.planets_involved,
+                ny.present,
+                2.0 if ny.present else 0.0,
+                ny.result,
+                f"BPHS Ch.35 ({ny.group})",
+                dashas,
+                on_date,
+            )
         )
-    )
-
-    # Musala — all in fixed signs (Taurus/Leo/Scorpio/Aquarius = sign_index % 3 == 1)
-    all_fixed = all(
-        chart.planets[p].sign_index % 3 == 1
-        for p in planets_7 if p in chart.planets
-    )
-    results.append(
-        _yoga(
-            "Musala Yoga",
-            "Nabhasa",
-            planets_7,
-            all_fixed,
-            2.0 if all_fixed else 0.0,
-            "All 7 planets in fixed signs",
-            "BPHS Ch.35 v.2",
-            dashas,
-            on_date,
-        )
-    )
-
-    # Nala — all in dual signs (Gemini/Virgo/Sagittarius/Pisces = sign_index % 3 == 2)
-    all_dual = all(
-        chart.planets[p].sign_index % 3 == 2
-        for p in planets_7 if p in chart.planets
-    )
-    results.append(
-        _yoga(
-            "Nala Yoga",
-            "Nabhasa",
-            planets_7,
-            all_dual,
-            2.0 if all_dual else 0.0,
-            "All 7 planets in dual signs",
-            "BPHS Ch.35 v.3",
-            dashas,
-            on_date,
-        )
-    )
-
-    # Mala — benefics in kendras (1,4,7,10)
-    kendra_houses = {1, 4, 7, 10}
-    benefics_in_kendra = all(
-        ph.get(p, 0) in kendra_houses for p in NATURAL_BENEFICS if p in ph
-    )
-    results.append(
-        _yoga(
-            "Mala Yoga",
-            "Nabhasa",
-            list(NATURAL_BENEFICS),
-            benefics_in_kendra,
-            2.5 if benefics_in_kendra else 0.0,
-            "All benefics in Kendra houses",
-            "BPHS Ch.35 v.8",
-            dashas,
-            on_date,
-        )
-    )
-
-    # Sarpa — all planets in dusthana (6,8,12), only malefics in kendra
-    all_dusthana = all(ph.get(p, 0) in {6, 8, 12} for p in planets_7 if p in ph)
-    results.append(
-        _yoga(
-            "Sarpa Yoga",
-            "Nabhasa",
-            planets_7,
-            all_dusthana,
-            -3.0 if all_dusthana else 0.0,
-            "All planets in dusthana — severe misfortune",
-            "BPHS Ch.35 v.9",
-            dashas,
-            on_date,
-        )
-    )
-
-    # Sankhya: count how many signs are occupied (1-7)
-    n_signs = len(occupied)
-    sankhya_names = {
-        1: "Gola",
-        2: "Yugma",
-        3: "Shoola",
-        4: "Kedara",
-        5: "Pasha",
-        6: "Dama",
-        7: "Veena",
-    }
-    sname = sankhya_names.get(n_signs, "Unknown")
-    sankhya_good = n_signs in {4, 5, 6, 7}
-    results.append(
-        _yoga(
-            f"{sname} Yoga (Sankhya)",
-            "Nabhasa",
-            planets_7,
-            True,
-            1.5 if sankhya_good else 0.5,
-            f"Planets occupy {n_signs} sign(s) — {sname}",
-            "BPHS Ch.35 v.10-17",
-            dashas,
-            on_date,
-        )
-    )
-
     return results
 
 
