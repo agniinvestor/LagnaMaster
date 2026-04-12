@@ -13,6 +13,35 @@
 9. **Exhaust the problem before proposing** — when analysing gaps, designing controls, or planning work, assume your first pass is incomplete. Push yourself to find what you're missing before presenting. The user should not have to repeatedly ask "is that everything?" to get a thorough answer.
 10. **Close the feedback loop** — when a mistake happens, it must flow through: Pattern → Lesson (lessons_learned.md) → Principle update (if systemic) → Control built (code enforcement) → Governance framework updated. A lesson without a corresponding control is an open loop. An open loop WILL recur.
 
+## Quality Standards (enforced at every tool call)
+
+- NEVER skip steps, cut corners, or artificially cap output. When encoding rules or performing audits, be exhaustive — do not summarize, truncate, or batch-shortcut. If you're tempted to skip something, flag it explicitly instead.
+- When asked to do N things, do ALL N things. Do not stop at a subset and claim completion.
+- Every rule must have ALL required fields per the V2 schema. Empty fields = incomplete work.
+
+## Honesty & Confidence Calibration
+
+- Do NOT overstate completeness or confidence. If coverage is partial, say so with specific numbers.
+- Never inflate self-scores. Show actual numbers and gaps, not optimistic summaries.
+- Before claiming any task is "done," list what was NOT checked and what might be missing.
+- If uncertain about coverage, say "I checked X of Y" — never "this looks comprehensive" without evidence.
+- Do not dismiss audit flags prematurely. Every flag requires investigation before closure.
+
+## Review Protocol
+
+- Never commit or finalize work that requires GPT review without completing that review step first.
+- Never skip maker-checker gates. If a review step exists in the workflow, it is mandatory.
+- Show ALL rules/items during review, not summaries. Summarized reviews hide errors.
+- When presenting work for review, include: (1) what was done, (2) what was NOT done, (3) known gaps.
+
+## Completion Checklist (mandatory before claiming "done")
+
+Before reporting any task as complete, answer ALL of these:
+1. What specific items were produced? (count, not description)
+2. What was NOT checked or completed?
+3. What is the evidence that the work is correct? (test results, not assertion)
+4. Were all workflow gates followed? (list each gate and its status)
+
 ## Session Types (NEVER MIX)
 
 **Governance session:** Build controls, update protocols, add lessons, write tools. No encoding.
@@ -83,7 +112,9 @@ The builder also blocks on entity_target mismatches, mixed-entity rules, and pre
 **At session START:**
 1. Read `lessons_learned.md` — check if any pattern is relevant to today's work
 2. Read `core_principles.md` — refresh the decision-making constraints
-3. Verify all controls exist for the work you're about to do (Principle #4)
+3. Read `tools/INDEX.md` — know what tools exist. Do NOT rebuild existing tools.
+4. Read `docs/RULE_CONTRACT_V2.md` — the canonical V2 schema (encoding/audit sessions)
+5. Verify all controls exist for the work you're about to do (Principle #4)
 
 **At session END:**
 1. Did any rework happen this session? (amend commits, fix commits, re-encoding) → Add lesson
@@ -178,3 +209,7 @@ A session is shipped when:
   explicitly targets scoring recalibration (breaks regression snapshots)
 - Do not `git add -A` — always add specific files to avoid committing stale scripts
 - Do not skip the pre-push hook (`--no-verify`)
+- Do not create new tools without checking `tools/INDEX.md` first — if a tool exists, use it
+- Do not define rule fields outside `docs/RULE_CONTRACT_V2.md` — it is the single source of truth
+- Do not guess corpus structure — check `docs/CORPUS_MANIFEST.json` for file inventory
+- Do not rebuild infrastructure that exists. Read INDEX.md. If confused, grep before writing.

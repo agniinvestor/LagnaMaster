@@ -1,0 +1,68 @@
+# Pre-commit hooks for LagnaMaster
+#
+# Install: pip install pre-commit && pre-commit install
+# Run manually: pre-commit run --all-files
+#
+# This config does NOT duplicate:
+#   - .git/hooks/pre-push (full pytest + ruff + docs currency) — installed by tools/install_hooks.py
+#   - .github/workflows/ci.yml (lint job + TID251 + full test suite)
+#
+# This config adds the PREVENTION layer that catches issues BEFORE commit:
+#   - Rule schema validation (validate_rules.py)
+#   - Corpus file linting (ruff on staged files only — fast)
+#   - Deferral language blocking
+
+repos:
+  # Ruff — fast lint on staged files only (full suite runs at pre-push)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.9
+    hooks:
+      - id: ruff
+        args: [check, --select, "E,F,W", --ignore, "E501,E402,E701,E702,F401"]
+        types: [python]
+
+  # Local hooks — project-specific validation
+  - repo: local
+    hooks:
+      # Validate corpus rules against V2 schema (staged files only)
+      - id: validate-rules
+        name: Validate corpus rules (V2 schema)
+        entry: .venv/bin/python tools/validate_rules.py --staged
+        language: system
+        pass_filenames: false
+        files: ^src/corpus/bphs_.*\.py$
+        stages: [pre-commit]
+
+      # Validate commit message format
+      - id: validate-commit-msg
+        name: Validate commit message format
+        entry: .venv/bin/python tools/validate_commits.py
+        language: system
+        stages: [commit-msg]
+
+      # Block deferral language in code
+      - id: no-deferral-language
+        name: Block deferral language in commits
+        entry: .venv/bin/python -c "import sys,re;files=[open(f).read() for f in sys.argv[1:]];matches=[f'{sys.argv[i+1]}:{m.group()}' for i,c in enumerate(files) for m in re.finditer(r'(?i)(TODO|FIXME|will fix later|next session|hack|temporary)', c)];sys.exit(1) if matches and [print(f'  DEFERRAL: {m}') for m in matches] else None"
+        language: system
+        types: [python]
+        stages: [pre-commit]
+
+      # Verify verse audit exists for any corpus chapter being committed
+      - id: require-verse-audit
+        name: Require verse audit file for corpus chapters
+        entry: .venv/bin/python -c "
+import sys, re, os
+for f in sys.argv[1:]:
+    m = re.search(r'bphs_ch(\d+)', f)
+    if m:
+        ch = m.group(1)
+        audit = f'data/verse_audits/ch{ch}_audit.json'
+        if not os.path.exists(audit):
+            print(f'  BLOCKED: {f} has no verse audit at {audit}')
+            print(f'  Gate 1 violation: encode without audit is forbidden.')
+            sys.exit(1)
+"
+        language: system
+        files: ^src/corpus/bphs_.*\.py$
+        stages: [pre-commit]

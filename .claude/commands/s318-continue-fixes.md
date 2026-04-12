@@ -149,17 +149,69 @@ For the 143 silent handlers broadly: configure ruff BLE001 strictly. Fix the wor
 | BUG-103 | List-valued conditions never tested → write test for rule_firing |
 | BUG-104 | D9 cross-validation no-op → fix try/except in test_varga.py |
 
-## Execution Protocol
+## Execution Protocol — Autonomous Fix Loop
 
-1. Read `docs/s318_deep_audit.md` for full bug details (the DEDUPLICATED MASTER BUG LIST section has all 104 with exact file:line references)
+Read these first, then enter the loop:
+1. Read `docs/s318_deep_audit.md` for full bug details (DEDUPLICATED MASTER BUG LIST has all 104 with exact file:line references)
 2. Read `lessons_learned.md` and `core_principles.md`
-3. Fix bugs in priority order: BUG-081 (dignity wiring) first, then remaining categories
-4. After each fix: `.venv/bin/pytest tests/ -q --tb=short -x`
-5. After each batch: `.venv/bin/ruff check src/ tests/`
-6. Commit format: `fix(S318): BUG-NNN description — BPHS Ch.N v.M`
-7. If a fix causes >5 unrelated test failures, stop and investigate
-8. For missing features (BUG-043 through BUG-049): add KNOWN_GAP comments, don't build new features
-9. For corpus fixes (BUG-089 through BUG-096): these are encoding session work, not formula fixes. Note them but defer to encoding sessions unless trivial.
+3. Read `tools/INDEX.md` — use existing tools, do not rebuild
+
+Then run this loop for each bug, in priority order (BUG-081 first, then categories 2-8):
+
+### Step 1: Pick Next Bug
+- Follow the priority order in this document: BUG-081 (dignity wiring) first
+- Then Category 2 (missing features — KNOWN_GAP comments only)
+- Then Category 3 (data table errors)
+- Then Category 4 (silent failures)
+- Then Category 5 (dead code deletion)
+- Then Category 6 (architecture flaws)
+- Then Category 7 (corpus data — defer non-trivial to encoding sessions)
+- Then Category 8 (test gaps)
+
+### Step 2: Diagnose
+- Read the exact file:line from `docs/s318_deep_audit.md`
+- Read the source code around that location
+- Identify the ROOT CAUSE — not the symptom
+
+### Step 3: Fix
+- Fix ONLY the root cause
+- NO refactoring, NO doc updates, NO tangential changes, NO "while I'm here" improvements
+- ONE bug per cycle (batch related bugs in same file if trivial, e.g., BUG-052-054)
+- For missing features (BUG-043 through BUG-049): add `# KNOWN_GAP: BUG-NNN — description` comments only. Do NOT build new features.
+- For corpus fixes (BUG-089 through BUG-096): defer to encoding sessions unless trivial (< 5 lines)
+
+### Step 4: Verify
+- Run the specific test file: `.venv/bin/pytest tests/path/to/test.py -x --tb=short`
+- Then run full suite: `.venv/bin/pytest tests/ -q --tb=short -x`
+- Then lint: `.venv/bin/ruff check src/ tests/`
+- Same error twice with different cause: investigate deeper, do NOT move on
+- Fix causes >5 unrelated test failures: STOP and report to user
+
+### Step 5: Commit
+```
+fix(S318): BUG-NNN — [one-line root cause description]
+
+Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>
+```
+
+### Step 6: Log & Continue
+- Update `fixes_log.md` (create if missing): `| BUG-NNN | file.py:line | root cause | FIXED |`
+- Return to Step 1 for the next bug
+- Stop after 15 fix cycles OR when all bugs in the current category are clear
+
+### Stop Conditions
+- 15 fix cycles completed → report progress, ask user to continue
+- Same test fails twice with different errors → STOP, report regression
+- Fix causes >5 unrelated failures → STOP, investigate
+- All 69 bugs cleared → report final tally
+
+## Completion Report (mandatory when loop ends)
+
+1. Bugs fixed this session: list each BUG-NNN with one-line description
+2. Bugs remaining: count per category
+3. Tests: before vs after (pass/fail/skip counts)
+4. Regressions introduced: any (should be 0)
+5. Deferred items: bugs punted to encoding sessions with reason
 
 ## Key Files
 
@@ -168,6 +220,7 @@ For the 143 silent handlers broadly: configure ruff BLE001 strictly. Fix the wor
 - Execution plan: `docs/superpowers/specs/2026-04-07-v11-execution-plan.md`
 - BPHS Vol 1: `BPHS-Santhanam-Vol-1.pdf`
 - BPHS Vol 2: `BPHS-Santhanam-Vol-2.pdf`
+- Tools index: `tools/INDEX.md`
 
 ## Session Type
 

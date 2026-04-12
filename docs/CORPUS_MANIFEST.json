@@ -1,0 +1,2161 @@
+{
+  "generated_by": "tools/generate_manifest.py",
+  "summary": {
+    "total_files": 136,
+    "total_rules": 7352,
+    "v2_rules": 7352,
+    "v1a_rules": 0,
+    "sources": [
+      "BPHS",
+      "BhavarthaRatnakara",
+      "Brihat Jataka",
+      "ChandraKalaNadi",
+      "General Jyotish",
+      "JaiminiSutras",
+      "JatakaParijata",
+      "KP",
+      "LaghuParashari",
+      "LalKitab",
+      "Phaladeepika",
+      "Saravali",
+      "SarvarthaChintamani",
+      "UttaraKalamrita"
+    ]
+  },
+  "files": [
+    {
+      "file": "ashtakavarga_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.19",
+        "Ch.66",
+        "Ch.67",
+        "Ch.68",
+        "Ch.69",
+        "Ch.70",
+        "Ch.71",
+        "Ch.72",
+        "Ch.73",
+        "Ch.74",
+        "Ch.75",
+        "Ch.76"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhava_phala_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.19",
+        "Ch.20",
+        "Ch.21",
+        "Ch.22",
+        "Ch.4",
+        "Ch.7"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_1.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.2"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_2.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.3",
+        "Ch.4"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_3.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.5",
+        "Ch.6"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_4.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.7",
+        "Ch.8"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_5.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bhavartha_ratnakara_6.py",
+      "rule_count": 130,
+      "source": "BhavarthaRatnakara",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.12"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_1b_houses_1.py",
+      "rule_count": 85,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_1b_houses_2.py",
+      "rule_count": 75,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.19"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_1b_houses_3.py",
+      "rule_count": 63,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.20",
+        "Ch.21",
+        "Ch.22",
+        "Ch.23"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_aspects.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.48",
+        "Ch.49",
+        "Ch.50"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_bhava_exhaustive.py",
+      "rule_count": 120,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.19",
+        "Ch.20",
+        "Ch.21",
+        "Ch.22"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_bhava_karakas.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.11",
+        "Ch.32"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_dasha_results.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.51",
+        "Ch.52",
+        "Ch.53"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_dhana_yoga.py",
+      "rule_count": 25,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.42",
+        "Ch.43",
+        "Ch.44"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_dignities_ext.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.45",
+        "Ch.46",
+        "Ch.47"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_extended.py",
+      "rule_count": 31,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.15",
+        "Ch.16",
+        "Ch.24",
+        "Ch.26",
+        "Ch.27",
+        "Ch.28",
+        "Ch.3",
+        "Ch.32",
+        "Ch.34",
+        "Ch.47",
+        "Ch.50",
+        "Ch.6"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_bhava_complete.py",
+      "rule_count": 108,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.23",
+        "Ch.24",
+        "Ch.25",
+        "Ch.26",
+        "Ch.27",
+        "Ch.28",
+        "Ch.29",
+        "Ch.30",
+        "Ch.31"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_characteristics.py",
+      "rule_count": 100,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.25",
+        "Ch.26",
+        "Ch.27",
+        "Ch.28",
+        "Ch.29",
+        "Ch.3",
+        "Ch.30",
+        "Ch.32",
+        "Ch.33",
+        "Ch.34",
+        "Ch.4",
+        "Ch.46",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_rashis_p1.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.17",
+        "Ch.18"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_rashis_p2.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.19",
+        "Ch.20"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_rashis_p3.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.21",
+        "Ch.22"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_graha_rashis_p4.py",
+      "rule_count": 36,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.23",
+        "Ch.45",
+        "Ch.46"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h11_h12.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.34",
+        "Ch.35"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h1_h2.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.24",
+        "Ch.25"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h3_h4.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.26",
+        "Ch.27"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h5_h6.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.28",
+        "Ch.29"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h7_h8.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.30",
+        "Ch.31"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_lords_h9_h10.py",
+      "rule_count": 24,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.32",
+        "Ch.33"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_nakshatra_rules_p1.py",
+      "rule_count": 28,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.3",
+        "Ch.4"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_nakshatra_rules_p2.py",
+      "rule_count": 26,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.5"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_raja_yoga.py",
+      "rule_count": 25,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.39",
+        "Ch.40",
+        "Ch.41"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_special_lagnas.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.57",
+        "Ch.58",
+        "Ch.59",
+        "Ch.60"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch12.py",
+      "rule_count": 22,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.12"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "general",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch13.py",
+      "rule_count": 26,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.13"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch14.py",
+      "rule_count": 22,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.14"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "father",
+        "general",
+        "mother",
+        "native",
+        "siblings",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch15.py",
+      "rule_count": 14,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.15"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "mother",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch16.py",
+      "rule_count": 32,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.16"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "children",
+        "general",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch17.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.17"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "children",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch18.py",
+      "rule_count": 42,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.18"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "general",
+        "native",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch19.py",
+      "rule_count": 6,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.19"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch20.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.20"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "father",
+        "general",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch21.py",
+      "rule_count": 20,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.21"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch22.py",
+      "rule_count": 10,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.22"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch23.py",
+      "rule_count": 10,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.23"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "general",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch24a.py",
+      "rule_count": 56,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.24"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "children",
+        "native",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch24b.py",
+      "rule_count": 50,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.24"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "children",
+        "mother",
+        "native",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch24c.py",
+      "rule_count": 52,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.24"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "children",
+        "general",
+        "native",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch25.py",
+      "rule_count": 85,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.25"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "general",
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch29.py",
+      "rule_count": 40,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.29"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch30.py",
+      "rule_count": 46,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.30"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native",
+        "siblings",
+        "spouse"
+      ]
+    },
+    {
+      "file": "bphs_v2_ch31.py",
+      "rule_count": 17,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.31"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_varga_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.6",
+        "Ch.7"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_yoga_exhaustive.py",
+      "rule_count": 150,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.35",
+        "Ch.36",
+        "Ch.37",
+        "Ch.38",
+        "Ch.39",
+        "Ch.40",
+        "Ch.41",
+        "Ch.42",
+        "Ch.43",
+        "Ch.44",
+        "Ch.45",
+        "Ch.46",
+        "Ch.47",
+        "Ch.48",
+        "Ch.49",
+        "Ch.50",
+        "Ch.51",
+        "Ch.52",
+        "Ch.53",
+        "Ch.54",
+        "Ch.55",
+        "Ch.56"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "bphs_yogas_basic.py",
+      "rule_count": 25,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.36",
+        "Ch.37",
+        "Ch.38"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "brihat_jataka_exhaustive.py",
+      "rule_count": 120,
+      "source": "Brihat Jataka",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.19",
+        "Ch.2",
+        "Ch.20",
+        "Ch.21",
+        "Ch.22",
+        "Ch.23",
+        "Ch.24",
+        "Ch.25",
+        "Ch.3",
+        "Ch.4",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "brihat_jataka_ext.py",
+      "rule_count": 30,
+      "source": "Brihat Jataka",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.14",
+        "Ch.15",
+        "Ch.19",
+        "Ch.2",
+        "Ch.4"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "brihat_jataka_rules.py",
+      "rule_count": 26,
+      "source": "Brihat Jataka",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.15",
+        "Ch.2 v.16",
+        "Ch.2 v.17",
+        "Ch.2 v.4",
+        "Ch.2 v.5",
+        "Ch.2 v.6",
+        "Ch.3 v.1-5",
+        "Ch.3 v.6",
+        "Ch.6",
+        "Ch.7 v.1",
+        "Ch.7 v.10",
+        "Ch.7 v.11",
+        "Ch.7 v.12",
+        "Ch.7 v.2",
+        "Ch.7 v.3",
+        "Ch.7 v.4",
+        "Ch.7 v.5",
+        "Ch.7 v.6",
+        "Ch.7 v.7",
+        "Ch.7 v.8",
+        "Ch.7 v.9",
+        "Ch.8 v.1-3"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "chandra_kala_nadi_rules.py",
+      "rule_count": 120,
+      "source": "ChandraKalaNadi",
+      "version": "1B_V2",
+      "chapters": [
+        "Dasha_Results",
+        "Gochara",
+        "Medical",
+        "Moon_Nakshatras",
+        "Nadi_Yogas",
+        "Philosophy",
+        "Planet_Combinations",
+        "Special_Principles",
+        "Synthesis"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "concordance_map.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "condition_fingerprint.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "corpus_audit.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "dasha_systems_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Adhyaya_2",
+        "Adhyaya_3",
+        "Ch.4",
+        "Ch.46",
+        "Ch.47",
+        "Ch.48",
+        "Ch.49",
+        "Ch.50",
+        "Ch.51",
+        "Ch.52",
+        "Ch.53",
+        "Ch.54",
+        "Ch.55",
+        "Ch.56",
+        "Ch.57",
+        "Ch.58",
+        "Ch.59",
+        "Ch.60",
+        "Ch.61",
+        "Ch.62",
+        "Ch.63",
+        "Ch.64",
+        "Ch.8"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "direction_fixes.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "encoding_gate.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "existing_rules.py",
+      "rule_count": 23,
+      "source": "General Jyotish",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.2 v.9",
+        "Ch.3",
+        "Ch.3 v.51-59",
+        "Ch.32",
+        "Ch.47",
+        "Ch.6",
+        "Ch.66",
+        "General"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "extractor_base.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "feature_freeze.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "feature_registry.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "graha_phala_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.2",
+        "Ch.23",
+        "Ch.24",
+        "Ch.25",
+        "Ch.26",
+        "Ch.27",
+        "Ch.28",
+        "Ch.29",
+        "Ch.3",
+        "Ch.30",
+        "Ch.31"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "jaimini_sutras_exhaustive.py",
+      "rule_count": 150,
+      "source": "JaiminiSutras",
+      "version": "1B_V2",
+      "chapters": [
+        "Adhyaya_1",
+        "Adhyaya_2",
+        "Adhyaya_3",
+        "Adhyaya_4"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "jaimini_sutras_rules.py",
+      "rule_count": 30,
+      "source": "JaiminiSutras",
+      "version": "1B_V2",
+      "chapters": [
+        "Adhyaya_1",
+        "Adhyaya_2",
+        "Adhyaya_3",
+        "Adhyaya_4",
+        "Ch.24"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "jataka_parijata_exhaustive.py",
+      "rule_count": 150,
+      "source": "JatakaParijata",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.2",
+        "Ch.3",
+        "Ch.4",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "jataka_parijata_ext.py",
+      "rule_count": 30,
+      "source": "JatakaParijata",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11",
+        "Ch.12",
+        "Ch.2",
+        "Ch.4",
+        "Ch.7"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "jataka_parijata_rules.py",
+      "rule_count": 17,
+      "source": "JatakaParijata",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10 v.1",
+        "Ch.10 v.4",
+        "Ch.11 v.2",
+        "Ch.12 v.1",
+        "Ch.13 v.1",
+        "Ch.14 v.3",
+        "Ch.15 v.1",
+        "Ch.16 v.2",
+        "Ch.6 v.1",
+        "Ch.6 v.5",
+        "Ch.6 v.8",
+        "Ch.7 v.1",
+        "Ch.7 v.6",
+        "Ch.8 v.2",
+        "Ch.8 v.5",
+        "Ch.9 v.1",
+        "Ch.9 v.8"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "kp_sublord_rules.py",
+      "rule_count": 30,
+      "source": "KP",
+      "version": "1B_V2",
+      "chapters": [
+        "Reader_Vol1",
+        "Reader_Vol2",
+        "Reader_Vol3",
+        "Reader_Vol4",
+        "Reader_Vol5",
+        "Reader_Vol6"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "laghu_parashari_bcd.py",
+      "rule_count": 45,
+      "source": "LaghuParashari",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.4\u20135"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "laghu_parashari_ef.py",
+      "rule_count": 64,
+      "source": "LaghuParashari",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.5\u20136"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "laghu_parashari_functional.py",
+      "rule_count": 108,
+      "source": "LaghuParashari",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1\u20132"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "lagna_extended_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "lal_kitab_rules.py",
+      "rule_count": 120,
+      "source": "LalKitab",
+      "version": "1B_V2",
+      "chapters": [
+        "Age_Results",
+        "Andha_Planets",
+        "House_Principles",
+        "Pakka_Ghar",
+        "Philosophy",
+        "Planets_In_Houses",
+        "Remedies",
+        "Rin_Karma",
+        "Special_Combinations",
+        "Special_Principles",
+        "Synthesis"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "migration_registry.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "migration_tags.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "modifier_extractor.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "phala_deepika_ext.py",
+      "rule_count": 30,
+      "source": "Phaladeepika",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.13",
+        "Ch.14",
+        "Ch.20",
+        "Ch.5",
+        "Ch.6",
+        "Ch.8"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "phaladeepika_exhaustive.py",
+      "rule_count": 120,
+      "source": "Phaladeepika",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.2",
+        "Ch.3",
+        "Ch.4",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "phaladeepika_rules.py",
+      "rule_count": 21,
+      "source": "Phaladeepika",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.19",
+        "Ch.2",
+        "Ch.2 v.1-5",
+        "Ch.2 v.10-15",
+        "Ch.2 v.16-20",
+        "Ch.2 v.30-35",
+        "Ch.2 v.6",
+        "Ch.2 v.9",
+        "Ch.26",
+        "Ch.3",
+        "Ch.6 v.3",
+        "Ch.6 v.4",
+        "Ch.7",
+        "Ch.7 v.5"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "phase1a_deprecation.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "planet_archetypes.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "planet_normalization.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "saravali_conjunctions_1.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.15",
+        "Ch.16",
+        "Ch.16-17"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_2.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.16-17",
+        "Ch.17",
+        "Ch.17-18"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_3.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.17-18",
+        "Ch.18",
+        "Ch.18-19"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_4.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.19",
+        "Ch.19-20"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_5.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.20",
+        "Ch.20-21"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_6.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.21",
+        "Ch.21-22"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_7.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.21-22",
+        "Ch.22",
+        "Ch.22-23"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_conjunctions_8.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.23",
+        "Ch.24"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_1.py",
+      "rule_count": 68,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.34"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_2.py",
+      "rule_count": 60,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.35"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_3.py",
+      "rule_count": 57,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.36"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_4.py",
+      "rule_count": 57,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.37"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_5.py",
+      "rule_count": 60,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.38"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_6.py",
+      "rule_count": 56,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.39"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_7.py",
+      "rule_count": 57,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.40"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_houses_8.py",
+      "rule_count": 81,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.41-42"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_1.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.25"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_2.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.26"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_3.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.27"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_4.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.28"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_5.py",
+      "rule_count": 142,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.29"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_6.py",
+      "rule_count": 159,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.30"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_7.py",
+      "rule_count": 141,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.31"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_signs_8.py",
+      "rule_count": 130,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.32-33"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_1.py",
+      "rule_count": 45,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1-5"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_2.py",
+      "rule_count": 32,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.6-8"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_3.py",
+      "rule_count": 30,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.9-10"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_4.py",
+      "rule_count": 38,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.11-14"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_5.py",
+      "rule_count": 30,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.43-48"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_6.py",
+      "rule_count": 28,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.49-53"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_7.py",
+      "rule_count": 23,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.54-60"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_8.py",
+      "rule_count": 20,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.61-65"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "saravali_special_9.py",
+      "rule_count": 24,
+      "source": "Saravali",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.66-68"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "sarvartha_chintamani_exhaustive.py",
+      "rule_count": 150,
+      "source": "SarvarthaChintamani",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.2",
+        "Ch.3",
+        "Ch.4",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "shadbala_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.1",
+        "Ch.2",
+        "Ch.27",
+        "Ch.28",
+        "Ch.29",
+        "Ch.30",
+        "Ch.31",
+        "Ch.32",
+        "Ch.33",
+        "Ch.34",
+        "Ch.35",
+        "Ch.36",
+        "Ch.37",
+        "Ch.38"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "snapshot.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "source_texts.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "taxonomy.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "temporal_window.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "transit_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.90"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "uttara_kalamrita_exhaustive.py",
+      "rule_count": 150,
+      "source": "UttaraKalamrita",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.10",
+        "Ch.11",
+        "Ch.12",
+        "Ch.13",
+        "Ch.14",
+        "Ch.15",
+        "Ch.16",
+        "Ch.17",
+        "Ch.18",
+        "Ch.19",
+        "Ch.2",
+        "Ch.20",
+        "Ch.21",
+        "Ch.22",
+        "Ch.23",
+        "Ch.24",
+        "Ch.3",
+        "Ch.4",
+        "Ch.5",
+        "Ch.6",
+        "Ch.7",
+        "Ch.8",
+        "Ch.9"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "uttara_kalamrita_ext.py",
+      "rule_count": 30,
+      "source": "UttaraKalamrita",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.4",
+        "Ch.5",
+        "Ch.6"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "uttara_kalamrita_rules.py",
+      "rule_count": 17,
+      "source": "UttaraKalamrita",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.2 v.1",
+        "Ch.2 v.4",
+        "Ch.3 v.1",
+        "Ch.4 v.1",
+        "Ch.4 v.3",
+        "Ch.4 v.5",
+        "Ch.5 v.1",
+        "Ch.5 v.8",
+        "Ch.6 v.2",
+        "Ch.7 v.1",
+        "Ch.7 v.2",
+        "Ch.7 v.3",
+        "Ch.7 v.4",
+        "Ch.7 v.5",
+        "Ch.7 v.6",
+        "Ch.8 v.1",
+        "Ch.9 v.2"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    },
+    {
+      "file": "v2_builder.py",
+      "rule_count": 0,
+      "source": "",
+      "version": "utility",
+      "chapters": [],
+      "has_v2_schema": false
+    },
+    {
+      "file": "yoga_extended_rules.py",
+      "rule_count": 30,
+      "source": "BPHS",
+      "version": "1B_V2",
+      "chapters": [
+        "Ch.12",
+        "Ch.35",
+        "Ch.36",
+        "Ch.37",
+        "Ch.38",
+        "Ch.39",
+        "Ch.40",
+        "Ch.41",
+        "Ch.42",
+        "Ch.43",
+        "Ch.44",
+        "Ch.45",
+        "Ch.6"
+      ],
+      "has_v2_schema": true,
+      "entity_targets": [
+        "native"
+      ]
+    }
+  ]
+}

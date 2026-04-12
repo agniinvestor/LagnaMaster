@@ -3,9 +3,10 @@
 tools/install_hooks.py — Install LagnaMaster git hooks
 
 Sets up:
-  .git/hooks/pre-push   — unified quality gate (tests + ruff + docs currency)
+  .git/hooks/pre-push    — unified quality gate (tests + ruff + docs currency)
+  .git/hooks/commit-msg  — commit message format validation
 
-Run once after cloning or after tools/pre_push_hook.sh is updated:
+Run once after cloning or after hook scripts are updated:
     .venv/bin/python3 tools/install_hooks.py
 """
 import shutil
@@ -16,6 +17,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HOOKS_DIR = ROOT / ".git" / "hooks"
 TOOLS_DIR = ROOT / "tools"
+
+
+def _make_executable(path: Path):
+    current = path.stat().st_mode
+    path.chmod(current | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
 
 
 def install():
@@ -32,19 +38,27 @@ def install():
         sys.exit(1)
 
     shutil.copy2(src, dst)
-    # Make executable
-    current = dst.stat().st_mode
-    dst.chmod(current | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
-    print(f"  ✅  Installed: {dst}")
+    _make_executable(dst)
+    print(f"  Installed: {dst}")
     print(f"      Source:    {src}")
+
+    # commit-msg hook — validates commit message format
+    commit_msg_dst = HOOKS_DIR / "commit-msg"
+    commit_msg_script = f"""#!/bin/sh
+# LagnaMaster commit-msg hook — validates commit format
+# Installed by tools/install_hooks.py
+.venv/bin/python tools/validate_commits.py "$1"
+"""
+    commit_msg_dst.write_text(commit_msg_script)
+    _make_executable(commit_msg_dst)
+    print(f"  Installed: {commit_msg_dst}")
     print()
-    print("The pre-push hook will now run automatically on every git push:")
-    print("  1. Full test suite (pytest)")
-    print("  2. Ruff lint (0 errors required)")
-    print("  3. Docs currency (MEMORY.md test count must match live count)")
+    print("Hooks installed:")
+    print("  pre-push:   full test suite + ruff + docs currency")
+    print("  commit-msg: commit message format validation")
     print()
     print("To bypass in an emergency (do not use routinely):")
-    print("  git push --no-verify")
+    print("  git commit --no-verify / git push --no-verify")
 
 
 if __name__ == "__main__":

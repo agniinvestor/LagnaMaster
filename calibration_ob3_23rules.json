@@ -1,0 +1,153 @@
+{
+  "engine_version": "v3.0.0",
+  "n_charts": 4832,
+  "rodden_filter": [
+    "AA",
+    "A"
+  ],
+  "correlations": [
+    {
+      "house": 10,
+      "category": "Notable : Famous : Top 5%",
+      "n_positive": 325,
+      "n_total": 4832,
+      "spearman_rho": 0.4067
+    },
+    {
+      "house": 10,
+      "category": "Notable : Awards : Vocational",
+      "n_positive": 228,
+      "n_total": 4832,
+      "spearman_rho": 0.431
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Politics : Public office",
+      "n_positive": 303,
+      "n_total": 4832,
+      "spearman_rho": 0.4119
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Entertainment : Actor",
+      "n_positive": 679,
+      "n_total": 4832,
+      "spearman_rho": 0.3095
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Entertain/Music : Vocal",
+      "n_positive": 375,
+      "n_total": 4832,
+      "spearman_rho": 0.3808
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Long life",
+      "n_positive": 499,
+      "n_total": 4832,
+      "spearman_rho": 0.3662
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Accident",
+      "n_positive": 44,
+      "n_total": 4832,
+      "spearman_rho": 0.4887
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Suicide",
+      "n_positive": 50,
+      "n_total": 4832,
+      "spearman_rho": 0.4813
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Short life",
+      "n_positive": 0,
+      "n_total": 4832,
+      "spearman_rho": 0.5003
+    },
+    {
+      "house": 7,
+      "category": "Family : Relationship : Marriage more th",
+      "n_positive": 185,
+      "n_total": 4832,
+      "spearman_rho": 0.4459
+    },
+    {
+      "house": 7,
+      "category": "Family : Relationship : Divorce",
+      "n_positive": 6,
+      "n_total": 4832,
+      "spearman_rho": 0.4996
+    },
+    {
+      "house": 5,
+      "category": "Family : Parenting : Kids more than 3",
+      "n_positive": 175,
+      "n_total": 4832,
+      "spearman_rho": 0.4423
+    },
+    {
+      "house": 5,
+      "category": "Family : Parenting : No children",
+      "n_positive": 0,
+      "n_total": 4832,
+      "spearman_rho": 0.5002
+    },
+    {
+      "house": 9,
+      "category": "Vocation : Education : Teacher",
+      "n_positive": 260,
+      "n_total": 4832,
+      "spearman_rho": 0.4282
+    },
+    {
+      "house": 9,
+      "category": "Vocation : Writers : Textbook",
+      "n_positive": 228,
+      "n_total": 4832,
+      "spearman_rho": 0.4258
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Columnist",
+      "n_positive": 204,
+      "n_total": 4832,
+      "spearman_rho": 0.4388
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Fiction",
+      "n_positive": 173,
+      "n_total": 4832,
+      "spearman_rho": 0.4498
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Playwright",
+      "n_positive": 155,
+      "n_total": 4832,
+      "spearman_rho": 0.4537
+    }
+  ],
+  "house_summary": {
+    "1": 0.4591,
+    "3": 0.4474,
+    "5": 0.4713,
+    "7": 0.4728,
+    "9": 0.427,
+    "10": 0.388
+  },
+  "recommendations": [
+    "H01: \u03c1=+0.459 \u2014 acceptable signal",
+    "H03: \u03c1=+0.447 \u2014 acceptable signal",
+    "H05: \u03c1=+0.471 \u2014 acceptable signal",
+    "H07: \u03c1=+0.473 \u2014 acceptable signal",
+    "H09: \u03c1=+0.427 \u2014 acceptable signal",
+    "H10: \u03c1=+0.388 \u2014 acceptable signal"
+  ],
+  "methodology": "Spearman \u03c1 between score_all_axes() house score and binary ADB category label (1=category present, 0=absent). AA+A Rodden ratings only."
+}

@@ -1,0 +1,121 @@
+{
+  "engine": "V2_600_rules",
+  "correlations": [
+    {
+      "house": 10,
+      "category": "Notable : Famous : Top 5%",
+      "n_positive": 325,
+      "rho": 0.4203
+    },
+    {
+      "house": 10,
+      "category": "Notable : Awards : Vocational",
+      "n_positive": 228,
+      "rho": 0.4587
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Politics : Public office",
+      "n_positive": 303,
+      "rho": 0.4253
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Entertainment : Actor",
+      "n_positive": 679,
+      "rho": 0.3314
+    },
+    {
+      "house": 10,
+      "category": "Vocation : Entertain/Music : Vocal",
+      "n_positive": 375,
+      "rho": 0.4123
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Long life",
+      "n_positive": 499,
+      "rho": 0.3775
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Accident",
+      "n_positive": 44,
+      "rho": 0.4951
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Suicide",
+      "n_positive": 50,
+      "rho": 0.4909
+    },
+    {
+      "house": 1,
+      "category": "Personal : Death : Short life",
+      "n_positive": 0,
+      "rho": 0.5082
+    },
+    {
+      "house": 7,
+      "category": "Family : Relationship : Marriage more th",
+      "n_positive": 185,
+      "rho": 0.4632
+    },
+    {
+      "house": 7,
+      "category": "Family : Relationship : Divorce",
+      "n_positive": 6,
+      "rho": 0.5178
+    },
+    {
+      "house": 5,
+      "category": "Family : Parenting : Kids more than 3",
+      "n_positive": 175,
+      "rho": 0.4711
+    },
+    {
+      "house": 5,
+      "category": "Family : Parenting : No children",
+      "n_positive": 0,
+      "rho": 0.5183
+    },
+    {
+      "house": 9,
+      "category": "Vocation : Education : Teacher",
+      "n_positive": 260,
+      "rho": 0.4378
+    },
+    {
+      "house": 9,
+      "category": "Vocation : Writers : Textbook",
+      "n_positive": 228,
+      "rho": 0.4549
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Columnist",
+      "n_positive": 204,
+      "rho": 0.4567
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Fiction",
+      "n_positive": 173,
+      "rho": 0.4666
+    },
+    {
+      "house": 3,
+      "category": "Vocation : Writers : Playwright",
+      "n_positive": 155,
+      "rho": 0.4665
+    }
+  ],
+  "house_summary": {
+    "10": 0.4096,
+    "1": 0.4679,
+    "7": 0.4905,
+    "5": 0.4947,
+    "9": 0.4464,
+    "3": 0.4633
+  }
+}
