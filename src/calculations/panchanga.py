@@ -341,9 +341,3 @@ def compute_navamsha_chart(chart):
         return None
 
 
-def _d9_sign_index(lon: float) -> int:
-    sign = int(lon / 30) % 12
-    deg_in_sign = lon % 30
-    pada = int(deg_in_sign / (30 / 9))
-    is_odd = sign % 2 == 0
-    return (sign * 9 + pada) % 12 if is_odd else (sign * 9 + pada + 9) % 12

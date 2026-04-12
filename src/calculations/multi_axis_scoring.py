@@ -114,7 +114,7 @@ _GENTLE_SIGNS = {3, 1, 6, 11, 8}  # Cancer, Taurus, Libra, Pisces, Sagittarius
 
 
 # D10 formula: sign = (si*10 + floor(deg/3)) % 12  for odd sign
-# D9 uses existing panchanga._d9_sign_index
+# D9 uses varga._d9_sign_index (canonical implementation)
 
 
 def _d10_sign(longitude: float) -> int:
