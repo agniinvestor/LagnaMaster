@@ -213,8 +213,8 @@ class TestStrengthRatings:
         for si in range(12):
             rating = india_av.sarva.strength(si)
             assert rating in {"Strong", "Average", "Weak"}
-            # strength() uses post-Shodhana bindus with standard thresholds
-            b = india_av.sarva.raw_bindus[si]
+            # strength() uses post-Shodhana bindus (Ekadhipatya applied)
+            b = india_av.sarva.bindus[si]
             if b >= 5:
                 assert rating == "Strong"
             elif b == 4:

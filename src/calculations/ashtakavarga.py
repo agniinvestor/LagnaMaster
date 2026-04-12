@@ -271,8 +271,8 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
     sarva_table = AshtakavargaTable(
         planet="Sarva",
         raw_bindus=sarva_raw,
-        bindus=sarva_raw,  # use raw for interpretation; over-reduction stored separately
-        total=sum(sarva_raw),
+        bindus=sarva_reduced,
+        total=sum(sarva_reduced),
     )
 
     return AshtakavargaChart(planet_av=planet_tables, sarva=sarva_table)

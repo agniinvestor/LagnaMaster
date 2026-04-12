@@ -534,11 +534,9 @@ def score_all_axes(
     cl_si = chart.planets["Moon"].sign_index
     sl_si = chart.planets["Sun"].sign_index
 
-    # D9 lagna: D9 sign of D1 lagna
-    compute_navamsha_chart(chart)
-    d9_lagna_si = (
-        chart.lagna_sign_index
-    )  # DivisionalMap has no .get(); use D1 lagna as D9 reference
+    # D9 lagna: actual navamsha lagna from D1 lagna longitude
+    d9_map = compute_navamsha_chart(chart)
+    d9_lagna_si = d9_map["lagna"] if d9_map and "lagna" in d9_map else chart.lagna_sign_index
 
     # D10 lagna: Dashamsha sign of D1 lagna
     d10_lagna_si = _d10_sign(chart.lagna)
