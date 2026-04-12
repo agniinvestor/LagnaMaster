@@ -24,13 +24,14 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **14,815 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **652+ V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system.
+- **14,811 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **654 V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system.
 - S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete
 - S318: deep audit 104 bugs found, **104/104 CLOSED** across 40+ commits
 - S319: BUG-089-093 fixes + or_group validation + 37 new rules across 8 chapters
 - S323: constants.py golden source, 79 files refactored, validate_constants.py
 - S324: C03+C20 fixed, 2 new condition primitives, 84 silent handlers narrowed, MODULE_REGISTRY + import_boundary_check + invariants.py, 7 dead modules deleted
-- **⚠️ CAVEAT:** 79 src/ files (15,567 lines, 12.7%) have zero production importers. ~3,000 tests may validate unreachable code. Follow-up: `/codebase-surgery`
+- **S325 (codebase surgery):** 12 dead files deleted (1,355 lines), 80 test-only files wired into production (0 unreachable), 54 silent handlers fixed (8 ACCEPT remain), 1 trivial assertion fixed. **280 src/ files, 122,036 lines. Zero unreachable. Zero ghost tests.**
+- **⚠️ CRITICAL FINDING (S325):** scoring.py (22 hardcoded rules) and src/corpus/ (7,466 encoded rules) are completely disconnected. rule_firing.py bridges them but is not called by any scoring path. Encoding more rules has zero effect on chart scores until the bridge is wired.
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas

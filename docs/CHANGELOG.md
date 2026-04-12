@@ -1851,3 +1851,54 @@ Three-phase session: (1) spot-checked S319 bug fixes against PDF, (2) closed or_
 
 ### Follow-up
 `/codebase-surgery` — resolve every dead file, silent handler, and ghost test before encoding resumes
+
+## S325 — 2026-04-12 — Codebase Surgery + Health Assessment Prompt
+
+**Commits:** df01aaa9 through 2007f411 (15 commits)
+**Tests:** 14,811 passing / 210 skipped / 0 lint errors / ruff clean
+
+### What was built
+- `tools/reachability_analysis.py`: AST-based transitive reachability from 3 entry points
+- `prompts/codebase_health_assessment.md`: 863-line diagnostic prompt (v9) for producing PROJECT_STRATEGY.md
+- `.claude/commands/health-assessment.md`: slash command — run ONCE to create golden source document
+- `.claude/commands/health-check.md`: slash command — run REPEATEDLY to update diagnostics
+
+### What was wired
+- 3 API routers (auth, empirica, school) → main.py via include_router
+- 3 guidance modules (educational_layer, practitioner_handoff, reflection_prompts) → guidance_api.py
+- 65 calculation modules → main.py via new `/charts/{id}/analysis` endpoint
+- cache.py, regression_snap.py → main.py analysis endpoint
+- corpus_audit.py → tools/v2_scorecard.py (TOOLS_INFRA)
+
+### What was deleted
+- 12 dead files (1,355 lines): MODULE_REGISTRY.py, 9 corpus infra files, reports/__init__.py, api/main_v2.py
+
+### Silent handlers fixed
+- 54 handlers fixed across 16 files (app.py 20, guidance_api 6, auth 2 narrowed, practitioner_handoff 3, montecarlo 1, pdf_export 2, varshaphala 4, planetary_state 1, empirica 2, api/main.py 3, regression_snap 1)
+- 8 ACCEPT handlers documented with comments
+
+### Ghost tests
+- 4 tests removed (tested deleted main_v2.py)
+- 1 trivial `assert True` replaced with real assertion
+
+### Critical finding
+- **scoring.py and src/corpus/ are completely disconnected.** The 22-rule hardcoded engine and the 7,466-rule corpus share zero import paths. rule_firing.py exists as a bridge but is not called by any scoring path. Encoding more rules has zero effect on chart scores.
+
+### Three-Lens Notes
+- **Tech:** 292→280 src/ files, 122,821→122,036 lines (-785). Zero unreachable files (was 94). Zero ghost tests. 8 silent handlers (was 78). Reachability: 276 production + 4 tools-infra = 280/280.
+- **Astrology:** No encoding done. No new rules. This was pure infrastructure surgery.
+- **Research:** The corpus→engine disconnect is the highest-priority strategic finding. Until rule_firing.py is wired into scoring_v3.py, the corpus is inert data.
+
+### Lessons learned
+- Document sprawl (10+ overlapping docs) causes sessions to miss critical context. Solution: `/health-assessment` produces PROJECT_STRATEGY.md as single golden source.
+- "Test-only" modules were 80 real calculation modules that needed production wiring, not deletion.
+- The corpus→engine disconnect was invisible because each session optimized for its own deliverable without checking end-to-end flow.
+
+### What was NOT done
+- PROJECT_STRATEGY.md itself (the `/health-assessment` prompt creates it — not yet run)
+- Modifier migration (encoding-session work)
+- Concordance scoring (depends on corpus→engine bridge)
+- OB-3 calibration rerun (measures hardcoded rules until bridge is wired)
+
+### Follow-up
+`/health-assessment` — produce docs/PROJECT_STRATEGY.md as the single golden source for all sessions
