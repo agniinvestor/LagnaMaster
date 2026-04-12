@@ -14,6 +14,7 @@ into the existing scoring_v3.py without a full rewrite.
 
 from __future__ import annotations
 from math import tanh
+from src.data.constants import SPECIAL_ASPECTS
 from dataclasses import dataclass
 from typing import Optional
 
@@ -34,12 +35,6 @@ _BASE_ASPECTS: dict[int, float] = {
     10: 0.25,  # 1/4 aspect
 }
 
-# Special aspects override base to full (1.0)
-_SPECIAL_ASPECT_OVERRIDES: dict[str, set[int]] = {
-    "Mars": {4, 8},
-    "Jupiter": {5, 9},
-    "Saturn": {3, 10},
-}
 
 
 def get_aspect_strength(aspector: str, houses_away: int) -> float:
@@ -51,7 +46,7 @@ def get_aspect_strength(aspector: str, houses_away: int) -> float:
     Special aspects (Mars 4/8, Jupiter 5/9, Saturn 3/10) are full (1.0).
     """
     # Special aspects override to full strength
-    if houses_away in _SPECIAL_ASPECT_OVERRIDES.get(aspector, set()):
+    if houses_away in SPECIAL_ASPECTS.get(aspector, set()):
         return 1.0
     return _BASE_ASPECTS.get(houses_away, 0.0)
 

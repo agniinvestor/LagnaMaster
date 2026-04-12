@@ -8,6 +8,7 @@ Source: LEGEND_ScoringRules + SCORE_H1..H12 (Excel).
 
 from __future__ import annotations
 from dataclasses import dataclass, field
+from src.data.constants import GENTLE_SIGNS
 from src.ephemeris import BirthChart
 from src.calculations.house_lord import (
     compute_house_map,
@@ -89,9 +90,6 @@ WC_RULES = {"R03", "R05", "R07", "R14"}  # half weight in aggregate
 
 _NATURAL_BENEFIC = {"Moon", "Mercury", "Jupiter", "Venus"}
 _NATURAL_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-# Gentle (even/feminine) signs per BPHS — 0-indexed:
-# Taurus=1, Cancer=3, Virgo=5, Scorpio=7, Capricorn=9, Pisces=11
-_GENTLE_SIGN_IDX = {1, 3, 5, 7, 9, 11}
 
 
 def _is_benefic(planet: str, chart: BirthChart) -> bool:
@@ -281,7 +279,7 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
         rules: list[RuleResult] = []
 
         # --- R01: Shubh (Gentle) Rashi in house ---
-        r01_score = W["R01"] if house_sign_idx in _GENTLE_SIGN_IDX else 0.0
+        r01_score = W["R01"] if house_sign_idx in GENTLE_SIGNS else 0.0
         rules.append(
             RuleResult(
                 "R01", "Gentle sign in house", r01_score, triggered=r01_score != 0

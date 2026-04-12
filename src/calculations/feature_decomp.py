@@ -39,6 +39,8 @@ Classical sources
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from src.data.constants import GENTLE_SIGNS
+
 
 # ── Sign-lord map (0=Aries … 11=Pisces) ──────────────────────────────────────
 _SIGN_LORD: dict[int, str] = {
@@ -46,12 +48,6 @@ _SIGN_LORD: dict[int, str] = {
     5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
     9: "Saturn", 10: "Saturn", 11: "Jupiter",
 }
-
-# R01 — gentle signs = even/feminine signs per BPHS (Taurus, Cancer, Virgo,
-# Scorpio, Capricorn, Pisces = sign indices 1,3,5,7,9,11)
-# BUG-051 fix: was {3,1,6,11,8} (wrong — included Virgo/6 as gentle but
-# used wrong sign indices). Corrected to match scoring.py canonical set.
-_GENTLE_SIGNS: frozenset[int] = frozenset({1, 3, 5, 7, 9, 11})
 
 # House-type placement scores for bhavesh (R04 house placement aspect)
 _HOUSE_TYPE_SCORE: dict[int, float] = {
@@ -174,7 +170,7 @@ def _extract_gentle_sign(house: int, house_si: int) -> RuleFeature:
     1.0 if house sign is Cancer/Taurus/Libra/Pisces/Sagittarius, else 0.0.
     Source: BPHS Ch.11 — Saumya (gentle) signs give benefic results.
     """
-    val = 1.0 if house_si in _GENTLE_SIGNS else 0.0
+    val = 1.0 if house_si in GENTLE_SIGNS else 0.0
     return RuleFeature("gentle_sign", val, "R01", house)
 
 

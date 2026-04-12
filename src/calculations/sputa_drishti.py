@@ -46,14 +46,6 @@ def bphs_drishti_virupas(arc_degrees: float) -> float:
     return (300.0 - a) / 2.0  # 60→0 (180-300)
 
 
-# Special aspect houses where Mars/Jupiter/Saturn get full (60 virupa) strength
-# BPHS Ch.26 v.9-12
-_SPECIAL_ASPECT_HOUSES: dict[str, set[int]] = {
-    "Mars": {4, 8},      # 4th and 8th from aspector
-    "Jupiter": {5, 9},   # 5th and 9th
-    "Saturn": {3, 10},   # 3rd and 10th
-}
-
 
 def _saturn_special_drishti(arc: float) -> float:
     """BPHS Ch.26 v.9-10: Saturn's special aspect computation.
