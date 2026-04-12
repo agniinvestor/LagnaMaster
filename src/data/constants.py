@@ -109,6 +109,17 @@ EXALTATION_DEGREE: dict[str, float] = {
     "Jupiter": 5.0, "Venus": 27.0, "Saturn": 20.0,
 }
 
+# Absolute zodiac longitudes for exaltation/debilitation (= sign*30 + degree)
+# Used by Uchcha Bala (ishta_kashta.py) and Pindayu (longevity.py)
+EXALTATION_LON: dict[str, int] = {
+    "Sun": 10, "Moon": 33, "Mars": 298, "Mercury": 165,
+    "Jupiter": 95, "Venus": 357, "Saturn": 200,
+}
+DEBILITATION_LON: dict[str, int] = {
+    "Sun": 190, "Moon": 213, "Mars": 118, "Mercury": 345,
+    "Jupiter": 275, "Venus": 177, "Saturn": 20,
+}
+
 # ─── I. Moolatrikona ranges ─────────────────────────────────────────────────
 # Re-exported from dignity.py which has the degree-bounded ranges.
 # Format: (sign_index, start_degree, end_degree)

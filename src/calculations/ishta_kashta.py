@@ -15,24 +15,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import math
 
-_EXALT_LON = {
-    "Sun": 10,
-    "Moon": 33,
-    "Mars": 298,
-    "Mercury": 165,
-    "Jupiter": 95,
-    "Venus": 357,
-    "Saturn": 200,
-}
-_DEBIL_LON = {
-    "Sun": 190,
-    "Moon": 213,
-    "Mars": 118,
-    "Mercury": 345,
-    "Jupiter": 275,
-    "Venus": 177,
-    "Saturn": 20,
-}
+from src.data.constants import EXALTATION_LON as _EXALT_LON
 
 # Mean motion (degrees/day) for Cheshta Bala
 _MEAN_MOTION = {
