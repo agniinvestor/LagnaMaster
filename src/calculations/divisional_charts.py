@@ -25,6 +25,7 @@ Public API
 from __future__ import annotations
 from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
 from src.calculations.dignity import OWN_SIGNS as _OWN_LIST, _NAISARGIKA
+from src.calculations.varga import _d9_sign_index as _d9
 from dataclasses import dataclass
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.6 v.1-22", "session": "S318"}
@@ -187,7 +188,6 @@ def _d60(longitude: float) -> int:
         return (5 + k) % 12
 
 
-from src.calculations.varga import _d9_sign_index as _d9
 
 
 def _d10(longitude: float) -> int:

@@ -46,6 +46,7 @@ Data classes
 from __future__ import annotations
 from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from src.calculations.dignity import EXALT_SIGN as _EXALT, DEBIL_SIGN as _DEBIL, OWN_SIGNS, _NAISARGIKA
+from src.calculations.varga import _d9_sign_index as _d9_si
 from src.data.constants import SIGN_LORDS
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
@@ -175,7 +176,6 @@ def _d7_si(lon: float) -> int:
     return (si + k) % 12 if (si % 2 == 0) else (si + 6 + k) % 12
 
 
-from src.calculations.varga import _d9_sign_index as _d9_si
 
 
 def _d10_si(lon: float) -> int:
