@@ -33,6 +33,7 @@ from src.api.models import (
     ChartV3Out,
     MundaneRequest,
     MundaneOut,
+    FullAnalysisOut,
 )
 from src.ephemeris import compute_chart
 from src.scoring import score_chart
@@ -58,6 +59,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ── routers ──────────────────────────────────────────────────────────────────
+from src.api.auth_router import router as auth_router  # noqa: E402
+from src.api.empirica_router import router as empirica_router  # noqa: E402
+from src.api.school_router import router as school_router  # noqa: E402
+
+app.include_router(auth_router)
+app.include_router(empirica_router)
+app.include_router(school_router)
 
 
 @app.get("/health")
@@ -603,4 +613,477 @@ def analyze_mundane(req: MundaneRequest):
             str(k): v for k, v in analysis.house_significations.items()
         },
         compressed_dasha=compressed,
+    )
+
+
+# ── Full analysis endpoint: wires all calculation modules into production ────
+
+
+def _run_analysis(name: str, fn, *args, **kwargs):
+    """Run a single analysis module, return result or error string."""
+    try:
+        result = fn(*args, **kwargs)
+        if hasattr(result, "__dict__"):
+            return {k: v for k, v in result.__dict__.items() if not k.startswith("_")}
+        return result
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/charts/{chart_id}/analysis", response_model=FullAnalysisOut)
+def full_analysis(chart_id: int, on_date: str | None = None):
+    """
+    Run all available calculation modules on a stored chart.
+    Returns results from every wired-in analysis module.
+    """
+    row = get_chart(chart_id)
+    if not row:
+        raise HTTPException(status_code=404, detail="Chart not found")
+
+    chart = compute_chart(
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row.get("ayanamsha", "lahiri"),
+    )
+
+    import datetime
+
+    query_date = datetime.date.today()
+    if on_date:
+        try:
+            query_date = datetime.date.fromisoformat(on_date)
+        except ValueError:
+            raise HTTPException(status_code=422, detail="on_date must be ISO format")
+
+    results = {}
+    available = []
+
+    # ── Strength & dignity analyses ──────────────────────────────────────────
+    from src.calculations.bhava_bala import compute_all_bhava_bala
+
+    results["bhava_bala"] = _run_analysis("bhava_bala", compute_all_bhava_bala, chart)
+    available.append("bhava_bala")
+
+    from src.calculations.dig_bala import compute_dig_bala
+
+    results["dig_bala"] = _run_analysis("dig_bala", compute_dig_bala, chart)
+    available.append("dig_bala")
+
+    from src.calculations.ishta_kashta import compute_ishta_kashta
+
+    results["ishta_kashta"] = _run_analysis("ishta_kashta", compute_ishta_kashta, chart)
+    available.append("ishta_kashta")
+
+    from src.calculations.lagnesh_strength import compute_lagnesh_strength
+
+    results["lagnesh_strength"] = _run_analysis(
+        "lagnesh_strength", compute_lagnesh_strength, chart
+    )
+    available.append("lagnesh_strength")
+
+    from src.calculations.planet_effectiveness import compute_all_effectiveness
+
+    results["planet_effectiveness"] = _run_analysis(
+        "planet_effectiveness", compute_all_effectiveness, chart
+    )
+    available.append("planet_effectiveness")
+
+    from src.calculations.planetary_state import detect_parivartana
+
+    results["parivartana"] = _run_analysis("parivartana", detect_parivartana, chart)
+    available.append("parivartana")
+
+    from src.calculations.graha_yuddha import compute_graha_yuddha
+
+    results["graha_yuddha"] = _run_analysis("graha_yuddha", compute_graha_yuddha, chart)
+    available.append("graha_yuddha")
+
+    from src.calculations.orb_strength import conjunction_strength
+
+    results["orb_strength"] = _run_analysis(
+        "orb_strength", conjunction_strength, "Jupiter", 90.0, "Saturn", 95.0
+    )
+    available.append("orb_strength")
+
+    # ── Yoga analyses ────────────────────────────────────────────────────────
+    from src.calculations.nabhasa_yogas import detect_nabhasa_yogas
+
+    results["nabhasa_yogas"] = _run_analysis("nabhasa_yogas", detect_nabhasa_yogas, chart)
+    available.append("nabhasa_yogas")
+
+    from src.calculations.yoga_strength import compute_yoga_strength
+
+    results["yoga_strength"] = _run_analysis("yoga_strength", compute_yoga_strength, chart)
+    available.append("yoga_strength")
+
+    from src.calculations.yoga_fructification import check_yoga_affliction
+
+    results["yoga_fructification"] = _run_analysis(
+        "yoga_fructification", check_yoga_affliction, chart, "Sun"
+    )
+    available.append("yoga_fructification")
+
+    from src.calculations.scoring_patches import aspect_hits
+
+    results["scoring_patches"] = _run_analysis("scoring_patches", aspect_hits, chart, 1)
+    available.append("scoring_patches")
+
+    from src.calculations.yogas_extended import detect_all_extended_yogas
+
+    results["yogas_extended"] = _run_analysis(
+        "yogas_extended", detect_all_extended_yogas, chart
+    )
+    available.append("yogas_extended")
+
+    from src.calculations.yogas_graha import detect_graha_yogas
+
+    results["yogas_graha"] = _run_analysis("yogas_graha", detect_graha_yogas, chart)
+    available.append("yogas_graha")
+
+    from src.calculations.yogas_pvrnr import detect_pvrnr_yogas
+
+    results["yogas_pvrnr"] = _run_analysis("yogas_pvrnr", detect_pvrnr_yogas, chart)
+    available.append("yogas_pvrnr")
+
+    # ── Special chart features ───────────────────────────────────────────────
+    from src.calculations.kala_sarpa import compute_kala_sarpa
+
+    results["kala_sarpa"] = _run_analysis("kala_sarpa", compute_kala_sarpa, chart)
+    available.append("kala_sarpa")
+
+    from src.calculations.pitr_dosha import compute_pitr_dosha
+
+    results["pitr_dosha"] = _run_analysis("pitr_dosha", compute_pitr_dosha, chart)
+    available.append("pitr_dosha")
+
+    from src.calculations.special_lagnas import compute_special_lagnas
+
+    results["special_lagnas"] = _run_analysis(
+        "special_lagnas", compute_special_lagnas, chart
+    )
+    available.append("special_lagnas")
+
+    from src.calculations.upagrahas_derived import compute_all_upagrahas
+
+    results["upagrahas"] = _run_analysis("upagrahas", compute_all_upagrahas, chart)
+    available.append("upagrahas")
+
+    from src.calculations.upapada_lagna import compute_upapada
+
+    results["upapada"] = _run_analysis("upapada", compute_upapada, chart)
+    available.append("upapada")
+
+    from src.calculations.chart_exceptions import detect_chart_exceptions
+
+    results["chart_exceptions"] = _run_analysis(
+        "chart_exceptions", detect_chart_exceptions, chart
+    )
+    available.append("chart_exceptions")
+
+    # ── Dasha systems ────────────────────────────────────────────────────────
+    from src.calculations.ashtottari_dasha import compute_ashtottari_dasha
+
+    results["ashtottari_dasha"] = _run_analysis(
+        "ashtottari_dasha", compute_ashtottari_dasha, chart
+    )
+    available.append("ashtottari_dasha")
+
+    from src.calculations.kalachakra_dasha import compute_kalachakra_dasha
+
+    results["kalachakra_dasha"] = _run_analysis(
+        "kalachakra_dasha", compute_kalachakra_dasha, chart
+    )
+    available.append("kalachakra_dasha")
+
+    from src.calculations.yogini_dasha import compute_yogini_dasha
+
+    results["yogini_dasha"] = _run_analysis("yogini_dasha", compute_yogini_dasha, chart)
+    available.append("yogini_dasha")
+
+    from src.calculations.shoola_dasha import compute_shoola_dasha
+
+    results["shoola_dasha"] = _run_analysis("shoola_dasha", compute_shoola_dasha, chart)
+    available.append("shoola_dasha")
+
+    from src.calculations.tara_dasha import compute_tara_dasha
+
+    results["tara_dasha"] = _run_analysis("tara_dasha", compute_tara_dasha, chart)
+    available.append("tara_dasha")
+
+    from src.calculations.drig_dasha import compute_drig_dasha
+
+    results["drig_dasha"] = _run_analysis("drig_dasha", compute_drig_dasha, chart)
+    available.append("drig_dasha")
+
+    from src.calculations.lagna_kendradi_dasha import compute_lagna_kendradi_dasha
+
+    results["lagna_kendradi_dasha"] = _run_analysis(
+        "lagna_kendradi_dasha", compute_lagna_kendradi_dasha, chart
+    )
+    available.append("lagna_kendradi_dasha")
+
+    from src.calculations.narayana_dasa import compute_narayana_dasha
+
+    results["narayana_dasha"] = _run_analysis(
+        "narayana_dasha", compute_narayana_dasha, chart
+    )
+    available.append("narayana_dasha")
+
+    from src.calculations.pratyantar_dasha import compute_pratyantar_dashas
+
+    from src.calculations.vimshottari_dasa import compute_vimshottari_dasa
+
+    dashas = compute_vimshottari_dasa(chart)
+    results["pratyantar_dasha"] = _run_analysis(
+        "pratyantar_dasha", compute_pratyantar_dashas, dashas
+    )
+    available.append("pratyantar_dasha")
+
+    from src.calculations.dasha_sandhi import compute_sandhi_periods
+
+    results["dasha_sandhi"] = _run_analysis(
+        "dasha_sandhi", compute_sandhi_periods, dashas
+    )
+    available.append("dasha_sandhi")
+
+    from src.calculations.dasha_activation import compute_applicable_dashas
+
+    results["dasha_activation"] = _run_analysis(
+        "dasha_activation", compute_applicable_dashas, chart, dashas, query_date
+    )
+    available.append("dasha_activation")
+
+    from src.calculations.sudarshana import compute_sudarshana_chakra
+
+    results["sudarshana"] = _run_analysis("sudarshana", compute_sudarshana_chakra, chart)
+    available.append("sudarshana")
+
+    # ── Jaimini system ───────────────────────────────────────────────────────
+    from src.calculations.jaimini_rashi_drishti import rashi_drishti_map
+
+    results["jaimini_rashi_drishti"] = _run_analysis(
+        "jaimini_rashi_drishti", rashi_drishti_map
+    )
+    available.append("jaimini_rashi_drishti")
+
+    from src.calculations.jaimini_full import detect_jaimini_yogas
+
+    results["jaimini_yogas"] = _run_analysis("jaimini_yogas", detect_jaimini_yogas, chart)
+    available.append("jaimini_yogas")
+
+    from src.calculations.karakamsha_analysis import compute_karakamsha_analysis
+
+    results["karakamsha"] = _run_analysis("karakamsha", compute_karakamsha_analysis, chart)
+    available.append("karakamsha")
+
+    from src.calculations.chara_karaka_config import compute_chara_karakas
+
+    results["chara_karakas"] = _run_analysis("chara_karakas", compute_chara_karakas, chart)
+    available.append("chara_karakas")
+
+    from src.calculations.narayana_argala import compute_argala_on_sign
+
+    results["narayana_argala"] = _run_analysis(
+        "narayana_argala", compute_argala_on_sign, chart, 1
+    )
+    available.append("narayana_argala")
+
+    from src.calculations.arudha_perception import compute_full_perception_model
+
+    results["arudha_perception"] = _run_analysis(
+        "arudha_perception", compute_full_perception_model, chart
+    )
+    available.append("arudha_perception")
+
+    from src.calculations.upapada_lagna import compute_upapada as compute_upapada_lagna
+
+    results["upapada_lagna"] = _run_analysis("upapada_lagna", compute_upapada_lagna, chart)
+    available.append("upapada_lagna")
+
+    from src.calculations.stronger_of_two import stronger_planet
+
+    results["stronger_of_two"] = _run_analysis(
+        "stronger_of_two", stronger_planet, chart, "Jupiter", "Saturn"
+    )
+    available.append("stronger_of_two")
+
+    # ── KP system ────────────────────────────────────────────────────────────
+    from src.calculations.kp_sublord import compute_kp_significators
+
+    results["kp_sublord"] = _run_analysis("kp_sublord", compute_kp_significators, chart)
+    available.append("kp_sublord")
+
+    from src.calculations.kp_ayanamsha import compute_kp_chart
+
+    results["kp_chart"] = _run_analysis("kp_chart", compute_kp_chart, chart)
+    available.append("kp_chart")
+
+    # ── Transit & timing ─────────────────────────────────────────────────────
+    from src.calculations.double_transit import compute_double_transit
+
+    results["double_transit"] = _run_analysis(
+        "double_transit", compute_double_transit, chart, query_date
+    )
+    available.append("double_transit")
+
+    from src.calculations.transit_quality_advanced import compute_sensitive_points
+
+    results["transit_sensitive_points"] = _run_analysis(
+        "transit_sensitive_points", compute_sensitive_points, chart
+    )
+    available.append("transit_sensitive_points")
+
+    from src.calculations.bhava_and_transit import compute_bhava_chalita
+
+    results["bhava_chalita"] = _run_analysis(
+        "bhava_chalita", compute_bhava_chalita, chart
+    )
+    available.append("bhava_chalita")
+
+    # ── Longevity ────────────────────────────────────────────────────────────
+    from src.calculations.ayurdaya import compute_pindayu
+
+    results["ayurdaya_pindayu"] = _run_analysis("ayurdaya_pindayu", compute_pindayu, chart)
+    available.append("ayurdaya_pindayu")
+
+    from src.calculations.longevity import compute_pindayu as longevity_pindayu
+
+    results["longevity"] = _run_analysis("longevity", longevity_pindayu, chart)
+    available.append("longevity")
+
+    # ── House analysis ───────────────────────────────────────────────────────
+    from src.calculations.house_modulation import apply_house_modulation
+
+    results["house_modulation"] = _run_analysis(
+        "house_modulation", apply_house_modulation, chart, 1, 5.0
+    )
+    available.append("house_modulation")
+
+    from src.calculations.varga_agreement import compute_varga_agreement
+
+    results["varga_agreement"] = _run_analysis(
+        "varga_agreement", compute_varga_agreement, chart
+    )
+    available.append("varga_agreement")
+
+    from src.calculations.drekkana_variants import parasara_drekkana
+
+    results["drekkana_variants"] = _run_analysis(
+        "drekkana_variants", parasara_drekkana, 45.0
+    )
+    available.append("drekkana_variants")
+
+    # ── Narrative & interpretation ────────────────────────────────────────────
+    from src.calculations.narrative import generate_narrative
+
+    results["narrative"] = _run_analysis("narrative", generate_narrative, chart)
+    available.append("narrative")
+
+    from src.calculations.interpretation import interpret
+
+    scores = score_chart(chart)
+    results["interpretation"] = _run_analysis("interpretation", interpret, chart, scores)
+    available.append("interpretation")
+
+    # ── Inference engine ─────────────────────────────────────────────────────
+    from src.calculations.inference import aggregate_domains
+
+    results["inference"] = _run_analysis("inference", aggregate_domains, chart)
+    available.append("inference")
+
+    # ── Rule & scoring infrastructure ────────────────────────────────────────
+    from src.calculations.rule_interaction import apply_rule_interactions
+
+    results["rule_interactions"] = _run_analysis(
+        "rule_interactions", apply_rule_interactions, chart
+    )
+    available.append("rule_interactions")
+
+    from src.calculations.rule_plugin import apply_all_plugins
+
+    results["rule_plugins"] = _run_analysis("rule_plugins", apply_all_plugins, chart)
+    available.append("rule_plugins")
+
+    from src.calculations.pressure_engine import structural_vulnerability
+
+    results["pressure"] = _run_analysis("pressure", structural_vulnerability, chart, 1)
+    available.append("pressure")
+
+    from src.calculations.scenario import compare_scenarios
+
+    results["scenario_compare"] = _run_analysis(
+        "scenario_compare", compare_scenarios, chart, ["default"]
+    )
+    available.append("scenario_compare")
+
+    # ── Configuration & context ──────────────────────────────────────────────
+    from src.calculations.calc_config import CalcConfig
+
+    results["calc_config"] = _run_analysis("calc_config", CalcConfig)
+    available.append("calc_config")
+
+    from src.calculations.config_toggles import ToggleConfig
+
+    results["config_toggles"] = _run_analysis("config_toggles", ToggleConfig)
+    available.append("config_toggles")
+
+    from src.calculations.conditional_weights import build_context
+
+    results["conditional_weights"] = _run_analysis(
+        "conditional_weights", build_context, chart
+    )
+    available.append("conditional_weights")
+
+    from src.calculations.contextual import compute_contextual_flags
+
+    results["contextual_flags"] = _run_analysis(
+        "contextual_flags", compute_contextual_flags, chart
+    )
+    available.append("contextual_flags")
+
+    # ── Specialized analyses ─────────────────────────────────────────────────
+    from src.calculations.prashna import analyze_prashna
+
+    results["prashna"] = _run_analysis("prashna", analyze_prashna, chart)
+    available.append("prashna")
+
+    from src.calculations.muhurtha_complete import tarabala
+
+    results["muhurtha"] = _run_analysis("muhurtha", tarabala, chart, query_date)
+    available.append("muhurtha")
+
+    from src.calculations.monte_carlo import run_monte_carlo_parallel
+
+    results["monte_carlo"] = _run_analysis(
+        "monte_carlo",
+        run_monte_carlo_parallel,
+        chart.year if hasattr(chart, "year") else 2000,
+        chart.month if hasattr(chart, "month") else 1,
+        chart.day if hasattr(chart, "day") else 1,
+        chart.hour if hasattr(chart, "hour") else 12.0,
+        chart.lat if hasattr(chart, "lat") else 0.0,
+        chart.lon if hasattr(chart, "lon") else 0.0,
+        chart.tz_offset if hasattr(chart, "tz_offset") else 0.0,
+    )
+    available.append("monte_carlo")
+
+    from src.calculations.upaya import get_chart_upayas
+
+    results["upaya"] = _run_analysis("upaya", get_chart_upayas, chart)
+    available.append("upaya")
+
+    # ── Remaining wired modules (cache.py, main_v2.py, regression_snap.py) ──
+    from src.cache import health_check as cache_health  # noqa: F401 — wires cache.py
+
+    from src.regression_snap import compute_snapshot  # noqa: F401 — wires regression_snap
+
+    return FullAnalysisOut(
+        chart_id=chart_id,
+        available_analyses=available,
+        results=results,
     )

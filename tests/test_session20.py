@@ -325,48 +325,4 @@ class TestCacheKeyBuilders:
         assert c.make_scores_key(1) != c.make_scores_key(2)
 
 
-# ──────────────────────────────────────────────────────────────────────────────
-# API v2 health endpoint — always includes db + cache status
-# ──────────────────────────────────────────────────────────────────────────────
-
-
-class TestApiV2Health:
-    @pytest.fixture(autouse=True)
-    def client(self, tmp_path):
-        os.environ.pop("PG_DSN", None)
-        os.environ["REDIS_URL"] = ""
-
-        import src.db as sqlite_db
-        import src.db_pg as pg
-        import src.cache as c
-
-        sqlite_db.DB_PATH = str(tmp_path / "test_api.db")
-        pg._pool = None
-        pg._USE_PG = False
-        c._client = None
-        c._disabled = False
-
-        from fastapi.testclient import TestClient
-        from src.api.main_v2 import app
-
-        pg.init_db()
-        self._client = TestClient(app)
-
-    def test_health_returns_200(self):
-        r = self._client.get("/health")
-        assert r.status_code == 200
-
-    def test_health_has_db_and_cache_keys(self):
-        r = self._client.get("/health")
-        body = r.json()
-        assert "db" in body
-        assert "cache" in body
-        assert "version" in body
-
-    def test_health_db_backend_is_sqlite(self):
-        r = self._client.get("/health")
-        assert r.json()["db"]["backend"] == "sqlite"
-
-    def test_health_cache_not_ok_without_redis(self):
-        r = self._client.get("/health")
-        assert r.json()["cache"]["ok"] is False
+# TestApiV2Health removed — src/api/main_v2.py deleted (duplicate of main.py)

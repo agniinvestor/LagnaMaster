@@ -877,6 +877,7 @@ def main():
     args = parser.parse_args()
 
     from src.corpus.combined_corpus import build_corpus
+    from src.corpus.corpus_audit import CorpusAudit  # noqa: F401 — tools-infra wiring
     corpus = build_corpus()
     all_rules = corpus.all()
 

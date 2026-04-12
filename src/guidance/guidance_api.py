@@ -152,6 +152,21 @@ def get_guidance(
 
     sts(score)
 
+    # ── Educational layer (L2+) ────────────────────────────────────────────────
+    from src.guidance.educational_layer import get_educational_content  # noqa: F401
+
+    _edu = get_educational_content(domain) if depth in ("L2", "L3") else []
+
+    # ── Reflection prompts ───────────────────────────────────────────────────
+    from src.guidance.reflection_prompts import get_reflection_prompt  # noqa: F401
+
+    _reflection = get_reflection_prompt(domain, content.l1.timing_label)
+
+    # ── Practitioner handoff check ───────────────────────────────────────────
+    from src.guidance.practitioner_handoff import should_recommend_practitioner  # noqa: F401
+
+    _recommend = should_recommend_practitioner(chart, dashas, on_date)
+
     return GuidanceResponse(
         domain=domain,
         heading=content.l1.heading,

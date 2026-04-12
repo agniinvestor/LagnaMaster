@@ -197,3 +197,11 @@ class ChartV3Out(BaseModel):
     raja_yogas: list = []
     viparita_yogas: list = []
     neecha_bhanga: list = []
+
+
+class FullAnalysisOut(BaseModel):
+    """Comprehensive chart analysis combining all available calculation modules."""
+
+    chart_id: int
+    available_analyses: list[str]
+    results: dict
