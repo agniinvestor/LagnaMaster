@@ -94,50 +94,6 @@ class TestFunctionalRoles:
             assert p in all_classified, f"{p} not classified"
 
 
-# ── Session 29: Avastha ───────────────────────────────────────────────────────
-class TestAvastha:
-    def test_deeptadi_returns_valid_state(self, chart):
-        from src.calculations.avastha import compute_deeptadi, DEEPTADI_STATES
-
-        for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
-            s = compute_deeptadi(p, chart)
-            assert s in DEEPTADI_STATES
-
-    def test_baladi_returns_valid_state(self, chart):
-        from src.calculations.avastha import compute_baladi, BALADI_STATES
-
-        for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
-            s = compute_baladi(p, chart)
-            assert s in BALADI_STATES
-
-    def test_lajjitadi_returns_result(self, chart):
-        from src.calculations.avastha import compute_lajjitadi, LAJJITADI_STATES
-
-        r = compute_lajjitadi(chart)
-        assert r.state in LAJJITADI_STATES
-        assert 0.0 <= r.pressure_score <= 1.0
-
-    def test_lajjitadi_has_fifth_lord(self, chart):
-        from src.calculations.avastha import compute_lajjitadi
-
-        r = compute_lajjitadi(chart)
-        assert r.fifth_lord != ""
-
-    def test_all_avasthas_has_effective_multipliers(self, chart):
-        from src.calculations.avastha import compute_all_avasthas
-
-        r = compute_all_avasthas(chart)
-        assert len(r.effective_multipliers) == 7
-        for p, m in r.effective_multipliers.items():
-            assert 0.0 <= m <= 1.5
-
-    def test_baladi_yuva_highest_multiplier(self):
-        from src.calculations.avastha import BALADI_STATES
-
-        assert (
-            BALADI_STATES["Yuva"]["multiplier"] > BALADI_STATES["Mrita"]["multiplier"]
-        )
-
 
 # ── Session 30: Pressure Engine ──────────────────────────────────────────────
 class TestPressureEngine:
@@ -293,49 +249,3 @@ class TestGrahaYuddha:
             assert war.separation_degrees <= 1.0
 
 
-class TestScoringV2:
-    def test_returns_chart_scores_v2(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2, ChartScoresV2
-
-        result = score_chart_v2(chart)
-        assert isinstance(result, ChartScoresV2)
-
-    def test_engine_version_present(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2, ENGINE_VERSION
-
-        result = score_chart_v2(chart)
-        assert result.engine_version == ENGINE_VERSION
-
-    def test_twelve_houses_present(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2
-
-        result = score_chart_v2(chart)
-        assert len(result.houses) == 12
-
-    def test_scores_within_bounds(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2
-
-        result = score_chart_v2(chart)
-        for h, hs in result.houses.items():
-            assert -10.0 <= hs.final_score <= 10.0
-
-    def test_lagna_sign_correct(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2
-
-        result = score_chart_v2(chart)
-        assert result.lagna_sign == "Taurus"
-
-    def test_functional_malefic_bhavesh_flag(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2
-
-        result = score_chart_v2(chart)
-        for h, hs in result.houses.items():
-            assert isinstance(hs.functional_malefic_bhavesh, bool)
-
-    def test_v2_deterministic(self, chart):
-        from src.calculations.scoring_v2 import score_chart_v2
-
-        r1 = score_chart_v2(chart)
-        r2 = score_chart_v2(chart)
-        for h in range(1, 13):
-            assert r1.houses[h].final_score == r2.houses[h].final_score

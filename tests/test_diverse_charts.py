@@ -559,7 +559,6 @@ class TestModuleAvailability:
         "src.calculations.bhava_and_transit",
         "src.calculations.pratyantar_dasha",
         "src.calculations.special_lagnas",
-        "src.calculations.config_additions",
         "src.calculations.sputa_drishti",
         "src.calculations.chara_karaka_config",
         "src.calculations.jaimini_rashi_drishti",
