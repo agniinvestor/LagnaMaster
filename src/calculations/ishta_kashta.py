@@ -15,7 +15,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import math
 
-from src.data.constants import EXALTATION_LON as _EXALT_LON
+from src.calculations.dignity import get_uchcha_bala as _uchcha_bala
 
 # Mean motion (degrees/day) for Cheshta Bala
 _MEAN_MOTION = {
@@ -27,19 +27,6 @@ _MEAN_MOTION = {
     "Venus": 1.2000,
     "Saturn": 0.0335,
 }
-
-
-def _uchcha_bala(planet: str, longitude: float) -> float:
-    """Uchcha Bala: 0–60 Virupas based on distance from exaltation/debilitation."""
-    exalt = _EXALT_LON.get(planet)
-    if exalt is None:
-        return 30.0  # Rahu/Ketu: neutral
-    # Angular distance from exaltation (shorter arc)
-    diff = abs(longitude - exalt) % 360
-    if diff > 180:
-        diff = 360 - diff
-    # At exaltation → 60, at debilitation → 0
-    return max(0.0, min(60.0, 60.0 - (diff / 180.0) * 60.0))
 
 
 def _cheshta_bala(planet: str, speed: float) -> float:
