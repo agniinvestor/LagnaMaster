@@ -714,8 +714,8 @@ class TestParivartana:
 
 class TestGrahaYuddha:
     def test_no_war_when_planets_far_apart(self):
-        """Planets >1° apart have no war."""
-        from src.calculations.planetary_state import detect_graha_yuddha
+        """Planets in different signs have no war."""
+        from src.calculations.graha_yuddha import compute_graha_yuddha
 
         chart = make_chart(
             0.0,
@@ -729,17 +729,16 @@ class TestGrahaYuddha:
             Rahu=40.0,
             Ketu=220.0,
         )
-        assert len(detect_graha_yuddha(chart)) == 0
+        assert len(compute_graha_yuddha(chart)) == 0
 
     def test_war_within_one_degree(self):
-        """Mars and Venus within 0.5° = planetary war."""
-        from src.calculations.planetary_state import detect_graha_yuddha
+        """Mars and Venus within 0.5° in same sign = planetary war."""
+        from src.calculations.graha_yuddha import compute_graha_yuddha
 
-        # Use latitude difference to trigger war
         chart = make_chart(0.0)
         chart.planets = {
-            "Mars": make_planet(10.0, latitude=0.3),
-            "Venus": make_planet(10.4, latitude=0.5),  # lon diff < 1°, lat diff < 1°
+            "Mars": make_planet(10.0),
+            "Venus": make_planet(10.4),  # same sign (Aries), degree diff < 1°
             "Moon": make_planet(90.0),
             "Mercury": make_planet(180.0),
             "Jupiter": make_planet(270.0),
@@ -748,8 +747,7 @@ class TestGrahaYuddha:
             "Rahu": make_planet(40.0),
             "Ketu": make_planet(220.0),
         }
-        results = detect_graha_yuddha(chart)
-        # With lat diff < 1 and lon diff < 1: war should be detected
+        results = compute_graha_yuddha(chart)
         assert len(results) >= 1
 
 

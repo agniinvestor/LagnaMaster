@@ -183,9 +183,9 @@ class TestGrahaYuddha:
         assert diff >= 1.0, f"Expected no war (diff >= 1°), got {diff:.2f}°"
 
     def test_war_detection_function_available(self):
-        from src.calculations.planetary_state import detect_graha_yuddha
+        from src.calculations.graha_yuddha import compute_graha_yuddha
 
-        assert callable(detect_graha_yuddha)
+        assert callable(compute_graha_yuddha)
 
 
 # ─── Parivartana tests ─────────────────────────────────────────────────────────
