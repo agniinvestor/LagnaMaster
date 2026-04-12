@@ -471,38 +471,113 @@ Answer each honestly. If the answer is unflattering, say so. No hedging.
 
 ---
 
-## Output format
+## Output: THE deliverable
 
-### Section 1: Diagnostic Dashboard
-All numbers from Phase 0 in a single table. Two rows highlighted:
-- **Corpus→Engine connection**: CONNECTED / DISCONNECTED
-- **Convergence layers operational**: N/3
+The diagnostic findings (Phases 0-4) are intermediate work. The DELIVERABLE is a single document that replaces the current document sprawl.
 
-### Section 2: Strategic Juxtaposition
-The Phase 2 table. Contradictions in bold. Severity rated: CRITICAL / HIGH / MEDIUM / LOW.
+### The problem this session solves
 
-### Section 3: The Verdict
-One paragraph. What is the RIGHT next step. What is the cost of being wrong. What is the cost of doing nothing.
+There are currently 10+ documents that partially describe the project state, architecture, and next steps:
+- `docs/ARCHITECTURE.md` (older 3-layer convergence model)
+- `docs/PREDICTION_PIPELINE.md` (older 10-layer build model)
+- `docs/superpowers/specs/2026-04-07-canonical-architecture-v11.md` (latest architecture)
+- `docs/superpowers/specs/2026-04-07-v11-execution-plan.md` (latest execution plan)
+- `docs/ROADMAP.md` (legacy session-based roadmap)
+- `docs/GUARDRAILS.md` (24 guardrails)
+- `docs/RULE_CONTRACT_V2.md` (encoding schema)
+- `docs/ENCODING_GRANULARITY.md` (rule definition)
+- `docs/MEMORY.md` (state tracker)
+- `lessons_learned.md` (18+ lessons)
+- `core_principles.md` (10+ principles)
 
-### Section 4: Uncomfortable Answers
-Numbered answers to Phase 4. No more than 3 sentences each. Lead with the answer, then the evidence.
+A new session reads 3 of these and misses the 4th that has the actual answer. They overlap, contradict, and none is authoritative. The following session starts from scratch reading stale documents.
 
-### Section 5: If I'm wrong
-State the strongest argument AGAINST your recommendation. What evidence would change your mind?
+### What you will produce: `docs/PROJECT_STRATEGY.md`
 
-### Section 6: Completion checklist
-1. Every diagnostic run (with exit code or result summary)
-2. Every document read (with key finding)
-3. What was NOT checked
-4. What assumptions this depends on
+One document. The golden source. Every subsequent session reads THIS instead of 10 partial documents. It contains:
+
+**Section 1: Where we are (diagnostic facts, dated)**
+
+A dashboard table with every metric from Phase 0. Updated by subsequent sessions when diagnostics are re-run. Includes:
+- Test count, lint status, reachability, silent handlers
+- Corpus maturity (L0-L5 distribution, V2 completeness)
+- Architecture link status (the 7-link chain verdict table from Phase 0e)
+- v11 stage status (the 8-stage verified table from Phase 0f)
+- v11 20-criteria score (updated from 55/100 to current actual)
+- Date of last verification for each metric
+
+**Section 2: What the system is (architecture, ONE version)**
+
+Reconcile v11 and the convergence model into ONE coherent description:
+- The 5-layer pipeline (v11) — what each layer does
+- How the 3 convergence layers (PREDICTION_PIPELINE) map onto the 5 layers
+- Which parts are Phase C (now) vs Phase A/B (later) — DECIDED, not debated
+- The canonical primitives model — the list, their sources, their verification status
+- The scoring engine — what it actually evaluates today, what it's designed to evaluate
+
+This section REPLACES: ARCHITECTURE.md, PREDICTION_PIPELINE.md, the v11 spec's architecture sections.
+
+**Section 3: What the system needs (the work, prioritized)**
+
+Not a 1000-session roadmap. A prioritized list of concrete work items, each with:
+- What it is (1 sentence)
+- Why it matters (what breaks or stays broken without it)
+- What it depends on (prerequisites)
+- What it unblocks (what becomes possible after)
+- Estimated effort (sessions, not hours)
+- Status (NOT STARTED / IN PROGRESS / DONE)
+
+This section REPLACES: ROADMAP.md session tables, v11 execution plan stages, the various "next steps" scattered across docs.
+
+**Section 4: How to do the work (process, ONE version)**
+
+- The encoding protocol (from CLAUDE.md, consolidated)
+- The 5 gates
+- The session start/end protocol
+- Quality standards (from core_principles + lessons_learned, deduplicated)
+- What tools to run and when
+
+This section REPLACES: the encoding protocol in CLAUDE.md (which references this section instead of duplicating it), lessons_learned process entries, core_principles process entries.
+
+**Section 5: What to watch out for (lessons and guardrails, consolidated)**
+
+- Lessons learned (from lessons_learned.md) — kept, but with stale/resolved ones marked
+- Guardrails (from GUARDRAILS.md) — kept, with actual enforcement status
+- Core principles — kept, with code enforcement cross-references
+
+This section REPLACES: lessons_learned.md as standalone, GUARDRAILS.md as standalone, core_principles.md as standalone. (Those files can remain but point to PROJECT_STRATEGY.md as the golden source.)
+
+**Section 6: What we decided and why (decision log)**
+
+Every strategic decision from the uncomfortable questions (Phase 4), with reasoning:
+- Is the 25K target realistic? → DECISION + reasoning
+- Are L1 rules useful? → DECISION + reasoning
+- Is the corpus connected to the engine? → FINDING + what we're doing about it
+- Which architecture model governs? → DECISION + reasoning
+
+This section captures WHY so subsequent sessions don't re-litigate settled questions.
+
+### What you will NOT produce
+
+- A plan with session numbers. Session numbering is an implementation detail.
+- A document longer than 1500 lines. If it's longer, it's not consolidated — it's accumulated.
+- A document that requires reading other documents to understand. This IS the other document.
+- Aspirational descriptions of things that don't exist. Every claim in Sections 1-2 is backed by a diagnostic command that verifies it.
+
+### After writing PROJECT_STRATEGY.md
+
+1. Update CLAUDE.md's "At session START" protocol: replace the 5-file read list with `Read docs/PROJECT_STRATEGY.md`
+2. Add a header to each superseded doc pointing to PROJECT_STRATEGY.md as the golden source
+3. Do NOT delete the old docs — they have historical value. But they are no longer authoritative.
 
 ---
 
 ## Ground rules
 
-- **No encoding.** This is a measurement session.
-- **No new code.** This is a diagnostic session.
-- **No optimism.** If the picture is bad, say so.
-- **No deferral.** Every question gets an answer in this session.
-- **Numbers before narratives.** Run the tool, then talk.
-- **Contradictions are findings.** If MEMORY.md says X and the diagnostic shows Y, that IS the output.
+- **No encoding.** This is a measurement + synthesis session.
+- **No new features.** This is a diagnostic + document session.
+- **No optimism.** If the picture is bad, say so in PROJECT_STRATEGY.md.
+- **No deferral.** Every question gets a DECISION, written into Section 6.
+- **Numbers before narratives.** Run the tool, then write.
+- **Contradictions are findings.** If MEMORY.md says X and the diagnostic shows Y, PROJECT_STRATEGY.md records Y with evidence.
+- **One document to rule them all.** If information exists in PROJECT_STRATEGY.md AND another doc, the other doc is stale. PROJECT_STRATEGY.md wins.
