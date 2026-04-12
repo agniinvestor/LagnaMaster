@@ -187,11 +187,7 @@ def _d60(longitude: float) -> int:
         return (5 + k) % 12
 
 
-def _d9(longitude: float) -> int:
-    _D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
-    si = int(longitude / 30) % 12
-    pada = int((longitude % 30) * 9 / 30)
-    return (_D9_START[si % 4] + pada) % 12
+from src.calculations.varga import _d9_sign_index as _d9
 
 
 def _d10(longitude: float) -> int:

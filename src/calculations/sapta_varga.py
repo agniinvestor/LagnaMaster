@@ -175,13 +175,7 @@ def _d7_si(lon: float) -> int:
     return (si + k) % 12 if (si % 2 == 0) else (si + 6 + k) % 12
 
 
-_D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
-
-
-def _d9_si(lon: float) -> int:
-    si = int(lon / 30) % 12
-    pada = int((lon % 30) * 9 / 30)
-    return (_D9_START[si % 4] + pada) % 12
+from src.calculations.varga import _d9_sign_index as _d9_si
 
 
 def _d10_si(lon: float) -> int:
