@@ -58,24 +58,8 @@ def compute_amsa_level(planet: str, chart) -> tuple[int, str]:
     except ImportError:
         return (0, "No amsa")
 
-    _EXALT_SI = {
-        "Sun": 0,
-        "Moon": 1,
-        "Mars": 9,
-        "Mercury": 5,
-        "Jupiter": 3,
-        "Venus": 11,
-        "Saturn": 6,
-    }
-    _OWN = {
-        "Sun": {4},
-        "Moon": {3},
-        "Mars": {0, 7},
-        "Mercury": {2, 5},
-        "Jupiter": {8, 11},
-        "Venus": {1, 6},
-        "Saturn": {9, 10},
-    }
+    from src.data.constants import EXALTATION_SIGN as _EXALT_SI, OWN_SIGNS
+    _OWN = {p: set(s) for p, s in OWN_SIGNS.items()}
     _MOOLT = {
         "Sun": 4,
         "Moon": 1,
@@ -187,33 +171,8 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
 
     # Condition 3: Not combust, debilitated, or inimical
     dignity_adequate = True
-    _EXALT_SI = {
-        "Sun": 0,
-        "Moon": 1,
-        "Mars": 9,
-        "Mercury": 5,
-        "Jupiter": 3,
-        "Venus": 11,
-        "Saturn": 6,
-    }
-    _DEBIL_SI = {
-        "Sun": 6,
-        "Moon": 7,
-        "Mars": 3,
-        "Mercury": 11,
-        "Jupiter": 9,
-        "Venus": 5,
-        "Saturn": 0,
-    }
-    _OWN = {
-        "Sun": {4},
-        "Moon": {3},
-        "Mars": {0, 7},
-        "Mercury": {2, 5},
-        "Jupiter": {8, 11},
-        "Venus": {1, 6},
-        "Saturn": {9, 10},
-    }
+    from src.data.constants import DEBILITATION_SIGN as _DEBIL_SI, OWN_SIGNS
+    _OWN = {p: set(s) for p, s in OWN_SIGNS.items()}
 
     try:
         from src.calculations.dignity import compute_all_dignities

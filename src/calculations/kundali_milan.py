@@ -2,36 +2,9 @@
 
 from __future__ import annotations
 from dataclasses import dataclass
+from src.data.constants import NAKSHATRA_NAMES
 
-NAKSHATRAS = [
-    "Ashwini",
-    "Bharani",
-    "Krittika",
-    "Rohini",
-    "Mrigashira",
-    "Ardra",
-    "Punarvasu",
-    "Pushya",
-    "Ashlesha",
-    "Magha",
-    "Purva Phalguni",
-    "Uttara Phalguni",
-    "Hasta",
-    "Chitra",
-    "Swati",
-    "Vishakha",
-    "Anuradha",
-    "Jyeshtha",
-    "Mula",
-    "Purva Ashadha",
-    "Uttara Ashadha",
-    "Shravana",
-    "Dhanishtha",
-    "Shatabhisha",
-    "Purva Bhadrapada",
-    "Uttara Bhadrapada",
-    "Revati",
-]
+NAKSHATRAS = list(NAKSHATRA_NAMES)
 _VARNA = {
     "Cancer": 0,
     "Scorpio": 0,

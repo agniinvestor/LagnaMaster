@@ -124,24 +124,9 @@ def compute_amsayu(chart) -> float:
         "Venus": 21,
         "Saturn": 20,
     }
-    _OWN = {
-        "Sun": {4},
-        "Moon": {3},
-        "Mars": {0, 7},
-        "Mercury": {2, 5},
-        "Jupiter": {8, 11},
-        "Venus": {1, 6},
-        "Saturn": {9, 10},
-    }
-    _EXALT_SI = {
-        "Sun": 0,
-        "Moon": 1,
-        "Mars": 9,
-        "Mercury": 5,
-        "Jupiter": 3,
-        "Venus": 11,
-        "Saturn": 6,
-    }
+    from src.data.constants import EXALTATION_SIGN, OWN_SIGNS
+    _OWN = {p: set(s) for p, s in OWN_SIGNS.items()}
+    _EXALT_SI = EXALTATION_SIGN
 
     total = 0.0
     for planet, years in _PLANET_YEARS.items():

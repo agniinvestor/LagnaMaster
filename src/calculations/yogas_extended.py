@@ -259,24 +259,8 @@ def detect_dhana_yogas_ext(chart, dashas=None, on_date=None) -> list[YogaResult]
     results = []
 
     # Lakshmi Yoga: Venus + 9th lord both in own/exalt signs in kendra/trikona
-    _EXALT_SI = {
-        "Sun": 0,
-        "Moon": 1,
-        "Mars": 9,
-        "Mercury": 5,
-        "Jupiter": 3,
-        "Venus": 11,
-        "Saturn": 6,
-    }
-    _OWN = {
-        "Sun": {4},
-        "Moon": {3},
-        "Mars": {0, 7},
-        "Mercury": {2, 5},
-        "Jupiter": {8, 11},
-        "Venus": {1, 6},
-        "Saturn": {9, 10},
-    }
+    from src.data.constants import EXALTATION_SIGN as _EXALT_SI, OWN_SIGNS
+    _OWN = {p: set(s) for p, s in OWN_SIGNS.items()}
 
     def is_strong(p):
         pos = chart.planets.get(p)
