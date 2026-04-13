@@ -91,50 +91,9 @@ def _pancha_mahapurusha(chart: BirthChart, hmap) -> list[Yoga]:
 
 
 def _raj_yogas(chart: BirthChart, hmap) -> list[Yoga]:
-    """
-    Kendra lord (H1/4/7/10) + Trikona lord (H1/5/9) in the same sign.
-    H1 lord is both kendra and trikona — creates yoga only when paired with
-    another pure kendra or pure trikona lord.
-    Dusthana lord (H6/8/12) involvement invalidates the yoga.
-    """
-    kendra_houses = {1, 4, 7, 10}
-    trikona_houses = {1, 5, 9}
-    dusthana_lords = {hmap.house_lord[h - 1] for h in (6, 8, 12)}
-
-    yogas = []
-    seen = set()
-
-    for kh in kendra_houses:
-        for th in trikona_houses:
-            if kh == th:
-                continue
-            k_lord = hmap.house_lord[kh - 1]
-            t_lord = hmap.house_lord[th - 1]
-            if k_lord == t_lord:
-                continue
-            # Skip if either lord also rules a dusthana (weakens yoga)
-            if k_lord in dusthana_lords or t_lord in dusthana_lords:
-                continue
-            # Yoga forms if they conjunct (same sign)
-            if chart.planets[k_lord].sign_index == chart.planets[t_lord].sign_index:
-                pair = tuple(sorted([k_lord, t_lord]))
-                if pair in seen:
-                    continue
-                seen.add(pair)
-                ph = _planet_house(k_lord, hmap)
-                yogas.append(
-                    Yoga(
-                        name="Raj Yoga",
-                        category="Raj",
-                        nature="benefic",
-                        planets=list(pair),  # noqa: F841
-                        description=(
-                            f"{k_lord} (H{kh} lord) + {t_lord} (H{th} lord) conjunct in H{ph} "
-                            f"→ authority, career success, recognition"
-                        ),
-                    )
-                )
-    return yogas
+    # Raj Yoga: canonical in scoring_patches.detect_raj_yogas
+    # (conjunction + exchange + aspect, with combustion and dusthana cancellation checks)
+    return []
 
 
 # ── Dhana Yogas ────────────────────────────────────────────────────────────────
@@ -182,85 +141,12 @@ def _dhana_yogas(chart: BirthChart, hmap) -> list[Yoga]:
 
 def _lunar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
     yogas = []
-    moon_si = chart.planets["Moon"].sign_index
     moon_h = _planet_house("Moon", hmap)
 
-    # ── Gajakesari: Jupiter in kendra from Moon ──
+    # Gajakesari, Chandra-Mangala, Adhi Yoga: canonical in yogas_graha.py / yogas_extended.py
+    # Kemadruma: canonical in scoring_patches.py (3 conditions + 4 cancellations)
+
     jup_h = _planet_house("Jupiter", hmap)
-    dist = _wrap(jup_h - moon_h + 1)  # houses from Moon to Jupiter
-    if dist in {1, 4, 7, 10}:
-        yogas.append(
-            Yoga(
-                name="Gajakesari Yoga",
-                category="Lunar",
-                nature="benefic",
-                planets=["Moon", "Jupiter"],
-                description=(
-                    f"Jupiter in H{jup_h} is H{dist} from Moon (H{moon_h}) — "
-                    f"wisdom, prosperity, fame, generous character"
-                ),
-            )
-        )
-
-    # ── Chandra-Mangala: Moon-Mars conjunction ──
-    mars_si = chart.planets["Mars"].sign_index
-    if moon_si == mars_si:
-        yogas.append(
-            Yoga(
-                name="Chandra-Mangala Yoga",
-                category="Lunar",
-                nature="mixed",
-                planets=["Moon", "Mars"],  # noqa: F841
-                description=(
-                    f"Moon + Mars conjunct in H{moon_h} → "
-                    f"drive, wealth through effort, potential emotional volatility"
-                ),
-            )
-        )
-
-    # ── Adhi Yoga: Jupiter/Venus/Mercury in H6/H7/H8 from Moon ──
-    adhi_planets = []
-    for planet in ("Jupiter", "Venus", "Mercury"):
-        p_h = _planet_house(planet, hmap)
-        dist2 = _wrap(p_h - moon_h + 1)
-        if dist2 in {6, 7, 8}:
-            adhi_planets.append(planet)
-    if len(adhi_planets) >= 2:
-        yogas.append(
-            Yoga(
-                name="Adhi Yoga",
-                category="Lunar",
-                nature="benefic",
-                planets=adhi_planets,
-                description=(
-                    f"{', '.join(adhi_planets)} in H6/H7/H8 from Moon → "
-                    f"leadership, comfort, longevity, defeat of enemies"
-                ),
-            )
-        )
-
-    # ── Kemadruma (negative): Moon has no planet in adjacent sign (H2/H12 from Moon) ──
-    prev_si = (moon_si - 1) % 12
-    next_si = (moon_si + 1) % 12
-    non_luminaries = [
-        p for p in chart.planets if p not in ("Sun", "Moon", "Rahu", "Ketu")
-    ]
-    adjacent_planets = [
-        p for p in non_luminaries if chart.planets[p].sign_index in (prev_si, next_si)
-    ]
-    if not adjacent_planets:
-        yogas.append(
-            Yoga(
-                name="Kemadruma Yoga",
-                category="Negative",
-                nature="malefic",
-                planets=["Moon"],
-                description=(
-                    f"Moon in H{moon_h} has no planets in adjacent signs — "
-                    f"isolation, hardship, instability (mitigated if Moon is in kendra or aspects benefics)"
-                ),
-            )
-        )
 
     # ── Shakata Yoga (negative): Moon in H6/H8/H12 from Jupiter ──
     dist3 = _wrap(moon_h - jup_h + 1)
@@ -285,86 +171,9 @@ def _lunar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
 
 
 def _solar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
-    yogas = []
-    sun_si = chart.planets["Sun"].sign_index
-    sun_h = _planet_house("Sun", hmap)
-
-    # ── Budha-Aditya: Sun + Mercury conjunct (not combust within 3°) ──
-    merc_si = chart.planets["Mercury"].sign_index
-    if sun_si == merc_si:
-        # Check if Mercury is close enough to be severely combust (within 3°)
-        orb = abs(
-            chart.planets["Sun"].degree_in_sign
-            - chart.planets["Mercury"].degree_in_sign
-        )
-        if orb > 3.0:
-            yogas.append(
-                Yoga(
-                    name="Budha-Aditya Yoga",
-                    category="Solar",
-                    nature="benefic",
-                    planets=["Sun", "Mercury"],
-                    description=(
-                        f"Sun + Mercury conjunct in H{sun_h} (orb {orb:.1f}°) → "
-                        f"sharp intellect, communication skills, political acumen"
-                    ),
-                )
-            )
-
-    # ── Vesi/Vasi/Ubhayachari ──
-    prev_si = (sun_si - 1) % 12
-    next_si = (sun_si + 1) % 12
-    planets_before = [
-        p
-        for p, pos in chart.planets.items()
-        if p not in ("Sun", "Moon", "Rahu", "Ketu") and pos.sign_index == prev_si
-    ]
-    planets_after = [
-        p
-        for p, pos in chart.planets.items()
-        if p not in ("Sun", "Moon", "Rahu", "Ketu") and pos.sign_index == next_si
-    ]
-    if planets_before and planets_after:
-        yogas.append(
-            Yoga(
-                name="Ubhayachari Yoga",
-                category="Solar",
-                nature="benefic",
-                planets=planets_before + planets_after,
-                description=(
-                    "Planets on both sides of Sun → "
-                    "royal bearing, balanced and authoritative personality"
-                ),
-            )
-        )
-    elif planets_after:
-        yogas.append(
-            Yoga(
-                name="Vesi Yoga",
-                category="Solar",
-                nature="benefic",
-                planets=planets_after,
-                description=(
-                    f"{', '.join(planets_after)} in H{_wrap(sun_h + 1)} (2nd from Sun) → "
-                    f"wealthy, virtuous, good memory"
-                ),
-            )
-        )
-    elif planets_before:
-        yogas.append(
-            Yoga(
-                name="Vasi Yoga",
-                category="Solar",
-                nature="benefic",
-                planets=planets_before,  # noqa: F841
-                description=(
-                    f"{', '.join(planets_before)} in H{_wrap(sun_h - 1)} (12th from Sun) → "
-                    f"industrious, respected, favours from authority"
-                ),
-            )
-        )
-
-    return yogas
+    # Budhaditya: canonical in yogas_graha.py (with combust filter)
+    # Vesi/Vasi/Ubhayachari: canonical in yogas_extended.detect_surya_yogas
+    return []
 
 
 # ── Special Yogas ──────────────────────────────────────────────────────────────

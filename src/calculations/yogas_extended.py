@@ -145,22 +145,7 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
         )
     )
 
-    # Kemadruma — no planet 2nd or 12th from Moon (and no planet with Moon)
-    moon_cotenants = [p for p in non_luminaries if ph.get(p) == moon_h]
-    kemadruma = not sunapha and not anapha and not moon_cotenants
-    results.append(
-        _yoga(
-            "Kemadruma Yoga",
-            "Chandra",
-            ["Moon"],
-            kemadruma,
-            -2.0 if kemadruma else 0.0,
-            "Moon isolated — misfortune, struggles",
-            "BPHS Ch.37 v.4",
-            dashas,
-            on_date,
-        )
-    )
+    # Kemadruma: canonical in scoring_patches.check_kemadruma (3 conditions + 4 cancellations)
 
     # Adhi Yoga — benefics in 6/7/8 from Moon
     benefic_678 = [
@@ -323,28 +308,7 @@ def detect_dhana_yogas_ext(chart, dashas=None, on_date=None) -> list[YogaResult]
         )
     )
 
-    # Mahabhagya: Day birth+Sun/Moon/Lagna in odd signs (male)
-    #             Night birth+Sun/Moon/Lagna in even signs (female)
-    sun_si = chart.planets["Sun"].sign_index
-    moon_si = chart.planets["Moon"].sign_index
-    lag_si = chart.lagna_sign_index
-    all_odd = all(
-        si % 2 == 0 for si in [sun_si, moon_si, lag_si]
-    )  # odd sign = even index
-    mahabhagya = all_odd
-    results.append(
-        _yoga(
-            "Mahabhagya Yoga",
-            "Dhana",
-            ["Sun", "Moon"],
-            mahabhagya,
-            4.0 if mahabhagya else 0.0,
-            "Sun, Moon, Lagna all in odd signs — great fortune",
-            "BPHS Ch.38 v.2",
-            dashas,
-            on_date,
-        )
-    )
+    # Mahabhagya: canonical in yoga_strength.detect_mahabhagya_yoga (gender+day/night aware)
 
     return results
 

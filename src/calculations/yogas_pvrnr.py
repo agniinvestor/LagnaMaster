@@ -80,22 +80,7 @@ def detect_pvrnr_yogas(
         "PVRNR p125",
     )
 
-    # Amala Yoga (p125): only natural benefics in H10 from lagna or Moon
-    h10_planets = [p for p in chart.planets if ph.get(p) == 10]
-    moon_h = ph.get("Moon", 0)
-    h10_from_moon = ((moon_h + 9 - 1) % 12) + 1 if moon_h else 0
-    h10m_planets = [p for p in chart.planets if ph.get(p) == h10_from_moon]
-    amala_lagna = h10_planets and all(p in _NAT_BENEF for p in h10_planets)
-    amala_moon = h10m_planets and all(p in _NAT_BENEF for p in h10m_planets)
-    amala = amala_lagna or amala_moon
-    y(
-        "Amala Yoga",
-        list(_NAT_BENEF),
-        amala,
-        2.5 if amala else 0.0,
-        "Only benefics in H10 from lagna or Moon — everlasting fame, virtuous",
-        "PVRNR p125",
-    )
+    # Amala Yoga: canonical in yoga_strength.detect_amala_yoga (H10 from lagna AND Moon, sign-index based)
 
     # Sankha Yoga (p126): (Lagnesh strong) + (5th/6th lords mutual kendra)
     lagnesh = hmap.house_lord[0]
@@ -115,18 +100,7 @@ def detect_pvrnr_yogas(
         "PVRNR p126",
     )
 
-    # Vasumati Yoga (p128): benefics in upachaya houses (3,6,10,11)
-    upachaya = {3, 6, 10, 11}
-    upachaya_benefics = [p for p in _NAT_BENEF if ph.get(p, 0) in upachaya]
-    vasumati = len(upachaya_benefics) >= 2
-    y(
-        "Vasumati Yoga",
-        list(upachaya_benefics),
-        vasumati,
-        1.5 * len(upachaya_benefics) if vasumati else 0.0,
-        f"Benefics {upachaya_benefics} in upachaya houses — wealthy, prosperous",
-        "PVRNR p128",
-    )
+    # Vasumati Yoga: canonical in yoga_strength.detect_vasumati_yoga (ALL benefics, strict)
 
     # Lagnaadhi Yoga (p129): benefics in H7 and H8 from lagna, no malefic conjoining
     h7_pl = [p for p in chart.planets if ph.get(p) == 7]

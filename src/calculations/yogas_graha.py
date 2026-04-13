@@ -69,10 +69,13 @@ def detect_graha_yogas(
             )
         )
 
-    # ── Budhaditya — Sun + Mercury conjunct ────────────────────────────────────
+    # ── Budhaditya — Sun + Mercury conjunct (not combust within 3°) ─────────
     budha = chart.planets.get("Mercury")
     sun = chart.planets.get("Sun")
-    budhaditya = bool(budha and sun and budha.sign_index == sun.sign_index)
+    same_sign = bool(budha and sun and budha.sign_index == sun.sign_index)
+    # Combust filter: Mercury within 3° of Sun negates the yoga (BPHS Ch.68)
+    combust = same_sign and abs(budha.longitude - sun.longitude) < 3.0 if same_sign else False
+    budhaditya = same_sign and not combust
     yoga(
         "Budhaditya Yoga",
         ["Sun", "Mercury"],

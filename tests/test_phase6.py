@@ -176,7 +176,7 @@ class TestExtendedYogas:
         from src.calculations.yogas_extended import detect_chandra_yogas
 
         r = detect_chandra_yogas(chart, dashas, ON_DATE)
-        assert len(r) >= 5
+        assert len(r) >= 4  # Kemadruma moved to scoring_patches (canonical)
 
     def test_surya_yogas_returns_list(self, chart, dashas):
         from src.calculations.yogas_extended import detect_surya_yogas
@@ -188,17 +188,15 @@ class TestExtendedYogas:
         from src.calculations.yogas_extended import detect_dhana_yogas_ext
 
         r = detect_dhana_yogas_ext(chart, dashas, ON_DATE)
-        assert len(r) >= 4
+        assert len(r) >= 3  # Mahabhagya moved to yoga_strength (canonical, gender-aware)
 
     def test_india_kemadruma_or_not(self, chart, dashas):
         """1947 chart: Moon in Cancer with other planets — check Kemadruma."""
-        from src.calculations.yogas_extended import detect_chandra_yogas
+        from src.calculations.scoring_patches import check_kemadruma
 
-        r = detect_chandra_yogas(chart, dashas, ON_DATE)
-        kemadruma = next((y for y in r if y.name == "Kemadruma Yoga"), None)
-        assert kemadruma is not None
+        result = check_kemadruma(chart)
         # Moon in Cancer H3 — has planets nearby
-        assert not kemadruma.present  # should NOT be Kemadruma (planets adjacent)
+        assert not result.is_kemadruma  # should NOT be Kemadruma (planets adjacent)
 
     def test_all_extended_total(self, chart, dashas):
         from src.calculations.yogas_extended import detect_all_extended_yogas

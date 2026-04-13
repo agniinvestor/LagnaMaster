@@ -82,13 +82,17 @@ class TestIndia1947Yogas:
         pg = next(y for y in india_yogas if y.name == "Pancha-Graha Yoga")
         assert len(pg.planets) == 5
 
-    def test_gajakesari_yoga_present(self, india_yogas):
+    def test_gajakesari_yoga_present(self, india_chart):
         """Jupiter in Libra (H6 from Taurus lagna) = H4 from Moon (Cancer=H3) → Gajakesari."""
-        yoga_names = [y.name for y in india_yogas]
-        assert "Gajakesari Yoga" in yoga_names
+        from src.calculations.yogas_graha import detect_graha_yogas
+        r = detect_graha_yogas(india_chart)
+        yoga_names = [y.name for y in r]
+        assert "Gaja Kesari Yoga" in yoga_names
 
-    def test_gajakesari_involves_moon_jupiter(self, india_yogas):
-        gk = next(y for y in india_yogas if y.name == "Gajakesari Yoga")
+    def test_gajakesari_involves_moon_jupiter(self, india_chart):
+        from src.calculations.yogas_graha import detect_graha_yogas
+        r = detect_graha_yogas(india_chart)
+        gk = next(y for y in r if y.name == "Gaja Kesari Yoga")
         assert "Moon" in gk.planets
         assert "Jupiter" in gk.planets
 
