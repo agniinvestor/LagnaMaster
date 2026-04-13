@@ -12,6 +12,8 @@
 8. **Source fidelity** — record what the text says, not what you think it means. Interpretation goes in commentary, never in predictions or structured fields.
 9. **Exhaust the problem before proposing** — when analysing gaps, designing controls, or planning work, assume your first pass is incomplete. Push yourself to find what you're missing before presenting. The user should not have to repeatedly ask "is that everything?" to get a thorough answer.
 10. **Close the feedback loop** — when a mistake happens, it must flow through: Pattern → Lesson (lessons_learned.md) → Principle update (if systemic) → Control built (code enforcement) → Governance framework updated. A lesson without a corresponding control is an open loop. An open loop WILL recur.
+11. **Richer over simpler** — when two implementations diverge, the one with more BPHS conditions, more edge cases, more verse citations is canonical. Never downgrade a rich model to match a simple one. Upgrade the simple one.
+12. **Predictions over numbers** — the system's output is verse-cited predictions a practitioner can read and verify, not house scores. Every architectural decision should be evaluated against: "does this help produce better predictions?"
 
 ## Quality Standards (enforced at every tool call)
 
