@@ -192,36 +192,56 @@ def _lord_of_house(chart, house_num: int) -> str:
 
 
 def _planet_dignity_state(chart, planet_name: str) -> str:
-    """Return the dignity state of a planet: exalted|debilitated|own_sign|moolatrikona|neutral.
+    """Return the dignity state of a planet using the full dignity.compute_dignity model.
 
-    Simplified check using sign position. For full dignity with neecha bhanga,
-    combustion etc., use dignity.compute_dignity().
+    Returns: exalted|debilitated|own_sign|moolatrikona|neecha_bhanga|friend_sign|enemy_sign|neutral|unknown
+
+    Delegates to dignity.compute_dignity (canonical, 20+ field DignityResult with
+    neecha bhanga, combustion, cazimi, degree-bounded moolatrikona, etc.).
     """
+    from src.calculations.dignity import compute_dignity, DignityLevel
+
     p = _find_planet(chart, planet_name)
     if not p:
         return "unknown"
     name = p.name if hasattr(p, "name") else planet_name
-    # Standardize name for table lookup
     for std_name in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus",
                      "Saturn", "Rahu", "Ketu"):
         if std_name.lower() == name.lower():
             name = std_name
             break
-    si = p.sign_index
-    deg = p.degree_in_sign if hasattr(p, "degree_in_sign") else (p.longitude % 30)
-    # BUG-037 fix: check MT BEFORE exaltation (with degree ranges — BPHS Ch.3 v.51-54)
-    # MT takes priority when planet is in its MT sign AND within degree range
-    if name in _MT_RANGES:
-        mt_si, mt_lo, mt_hi = _MT_RANGES[name]
-        if si == mt_si and mt_lo <= deg < mt_hi:
-            return "moolatrikona"
-    if name in _EXALT_SIGN and si == _EXALT_SIGN[name]:
-        return "exalted"
-    if name in _DEBIL_SIGN and si == _DEBIL_SIGN[name]:
-        return "debilitated"
-    if name in _OWN_SIGNS and si in _OWN_SIGNS[name]:
-        return "own_sign"
-    return "neutral"
+
+    try:
+        dig = compute_dignity(name, chart)
+    except (ValueError, TypeError, KeyError, AttributeError):
+        # Fallback for incomplete chart objects (e.g., test mocks without longitude)
+        si = p.sign_index
+        deg = p.degree_in_sign if hasattr(p, "degree_in_sign") else 15.0
+        if name in _MT_RANGES:
+            mt_si, mt_lo, mt_hi = _MT_RANGES[name]
+            if si == mt_si and mt_lo <= deg < mt_hi:
+                return "moolatrikona"
+        if name in _EXALT_SIGN and si == _EXALT_SIGN[name]:
+            return "exalted"
+        if name in _DEBIL_SIGN and si == _DEBIL_SIGN[name]:
+            return "debilitated"
+        if name in _OWN_SIGNS and si in _OWN_SIGNS[name]:
+            return "own_sign"
+        return "neutral"
+
+    _LEVEL_TO_STATE = {
+        DignityLevel.DEEP_EXALT: "exalted",
+        DignityLevel.EXALT: "exalted",
+        DignityLevel.NEECHA_BHANGA_RAJA: "neecha_bhanga",
+        DignityLevel.NEECHA_BHANGA: "neecha_bhanga",
+        DignityLevel.MOOLTRIKONA: "moolatrikona",
+        DignityLevel.OWN_SIGN: "own_sign",
+        DignityLevel.FRIEND_SIGN: "friend_sign",
+        DignityLevel.NEUTRAL: "neutral",
+        DignityLevel.ENEMY_SIGN: "enemy_sign",
+        DignityLevel.DEBIL: "debilitated",
+    }
+    return _LEVEL_TO_STATE.get(dig.dignity, "neutral")
 
 
 def _planet_aspects_house(chart, planet_name: str, target_house: int) -> bool:

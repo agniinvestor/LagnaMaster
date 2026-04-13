@@ -83,8 +83,8 @@ def test_planet_house_india_1947():
 
 def test_planet_dignity_state():
     chart = _india_1947()
-    # Jupiter in Virgo — not exalted, not debilitated, not own sign
-    assert _planet_dignity_state(chart, "Jupiter") == "neutral"
+    # Jupiter in Virgo — Mercury's sign, Jupiter considers Mercury enemy → enemy_sign
+    assert _planet_dignity_state(chart, "Jupiter") == "enemy_sign"
     # Moon in Cancer — own sign
     assert _planet_dignity_state(chart, "Moon") == "own_sign"
 
