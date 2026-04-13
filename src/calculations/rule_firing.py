@@ -714,7 +714,10 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             matched_house = matched_house or ref_house
 
         elif ctype == "functional_benefic":
-            from src.calculations.functional_dignity import compute_functional_classifications
+            from src.calculations.functional_dignity import (
+                KNOWN_FUNCTIONAL_MALEFICS,
+                KNOWN_YOGAKARAKAS,
+            )
             planet_spec = cond.get("planet", "")
             classification = cond.get("classification", "")
             if planet_spec.startswith("lord_of_"):
@@ -723,19 +726,28 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             if not planet_spec or not _find_planet(chart, planet_spec.title()):
                 return False, 0
             planet_name = planet_spec.title()
-            fc = compute_functional_classifications(chart.lagna_sign_index)
-            entry = fc.get(planet_name)
-            if not entry:
+            # Use BPHS Ch.34 verse-verified tables (same source as scoring engine)
+            malefic_set = set(KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, []))
+            yogakaraka_list = KNOWN_YOGAKARAKAS.get(chart.lagna_sign_index, [])
+            is_fb = planet_name in yogakaraka_list or (planet_name not in malefic_set and planet_name not in ("Rahu", "Ketu"))
+            is_fm = planet_name in malefic_set
+            is_yk = planet_name in yogakaraka_list
+            # Maraka: lords of H2 and H7
+            maraka_lords = {SIGN_LORDS[(chart.lagna_sign_index + 1) % 12],
+                           SIGN_LORDS[(chart.lagna_sign_index + 6) % 12]}
+            # Badhaka: imported from canonical source
+            from src.calculations.functional_dignity import badhakesh
+            is_badhaka = planet_name == badhakesh(chart.lagna_sign_index)
+
+            if classification == "benefic" and not is_fb:
                 return False, 0
-            if classification == "benefic" and not entry.is_functional_benefic:
+            elif classification == "malefic" and not is_fm:
                 return False, 0
-            elif classification == "malefic" and not entry.is_functional_malefic:
+            elif classification == "yogakaraka" and not is_yk:
                 return False, 0
-            elif classification == "yogakaraka" and not entry.is_yogakaraka:
+            elif classification == "maraka" and planet_name not in maraka_lords:
                 return False, 0
-            elif classification == "maraka" and not entry.is_maraka:
-                return False, 0
-            elif classification == "badhaka" and not entry.is_badhaka:
+            elif classification == "badhaka" and not is_badhaka:
                 return False, 0
 
         elif ctype == "dynamic_karaka":
