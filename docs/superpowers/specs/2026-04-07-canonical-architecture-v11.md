@@ -1,3 +1,9 @@
+> **HISTORICAL REFERENCE** — Superseded by `docs/ARCHITECTURE_CURRENT_VS_TARGET.md` (2026-04-13).
+> All 20 quality criteria absorbed into the target architecture. For current state, read that document.
+> v11's contributions: 5-tier ordering (Q1), verification tags (Q3), configurable traceability (Q4),
+> module registry (Q5), three version axes (Q6), runtime invariants (Q7), data sensitivity (Q8),
+> performance benchmark (Q9), reproducibility (Q10), observability (Q11), evolvability (Q12).
+
 # LagnaMaster Canonical Architecture — v11
 
 **Date:** 2026-04-07 (S318)

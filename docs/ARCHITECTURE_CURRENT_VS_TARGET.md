@@ -1,7 +1,19 @@
-# LagnaMaster Architecture — Current vs Target
+# LagnaMaster Architecture — Golden Source
 
-> Generated 2026-04-13 from W0 consolidation session.
-> Based on 112-module audit, full data flow trace, and architectural review.
+> **This document is the single authoritative architecture reference.**
+> Supersedes: v11 spec (absorbed), ARCHITECTURE.md (legacy), PREDICTION_PIPELINE.md (aspirational).
+> Generated 2026-04-13. Based on 112-module audit, full data flow trace, and architectural review.
+> Incorporates v11's 20 engineering quality criteria where they strengthen the design.
+
+---
+
+## PURPOSE
+
+A pipeline that turns birth data into **verse-cited predictions** — not numbers, not scores — that a practitioner can read, verify against source texts, and trust. The system improves over time through empirical feedback from every chart analyzed.
+
+**Phase C (now):** Encode classical texts as computable rules. Validate by reading predictions, not by checking rho.
+**Phase A (S800+):** Practitioner query interface. 20Q verification. Life event capture.
+**Phase B (S1400+):** Empirical calibration. Per-rule accuracy. Chart archetypes. Prediction language ML.
 
 ---
 
@@ -479,14 +491,155 @@ USER
 
 ---
 
+## ENGINEERING QUALITY CRITERIA (absorbed from v11)
+
+These cross-cutting concerns apply to ALL layers. They are not features — they are properties the system must maintain as it grows. Each has an exit criterion and enforcement mechanism.
+
+### Q1. Derived Facts Tier Ordering (v11 §4)
+
+ChartContext (Layer 2) computes derived facts in a strict dependency order:
+
+```
+Tier 1: Positions + Conventions (from Layer 1)
+Tier 2: Lordships, House classification (from Tier 1)
+Tier 3: Aspects, Conjunction, Combustion, Friendship (from Tiers 1-2)
+Tier 4: Dignity, Avasthas (from Tiers 1-3)
+Tier 5: Shadbala, Functional roles, Bhava Bala (from Tiers 1-4)
+```
+
+**Enforcement:** Within `build_chart_context()`, computation follows this order. No Tier N result may depend on a Tier N+1 result. Module registry maps each module to its tier.
+
+**Exit criterion:** `build_chart_context()` computes in tier order. No circular dependencies.
+
+### Q2. Robustness — Zero Silent Handlers (v11 §2)
+
+Every `except` block either logs with context and re-raises, or handles with a documented sentinel (e.g., `None`, never a plausible default like 66.0 years or 1.0).
+
+**Current:** 8 silent handlers remain (down from 143 in S318).
+**Exit criterion:** Zero silent exception handlers in `src/`. Ruff BLE001 clean.
+
+### Q3. Verification Tags (v11 §7)
+
+Every canonical primitive module has `_VERIFICATION = {"level": "bphs_pdf" | "formula_compared" | "unverified", "reference": "BPHS Ch.X v.Y", "session": "SNNN"}`.
+
+**Current:** 9 modules tagged, 104 untagged.
+**Enforcement:** A module tagged `unverified` cannot be the canonical source for any concept. The Canonical Source Map (CLAUDE.md) lists only verified sources.
+**Exit criterion:** 100% of canonical sources tagged. Zero `unverified` canonical sources.
+
+### Q4. Traceability with Configurable Depth (v11 §9)
+
+Every prediction traces from output to verse citation. Trace depth is configurable:
+- **Minimal:** rule_id + verse + direction
+- **Standard:** + condition values (planet positions, dignity levels, house placements)
+- **Full:** + every intermediate computation (aspect strengths, shadbala components)
+
+**Enforcement:** Every EvalResult includes `conditions_met[]`. Aggregation (Layer 5a) preserves individual results — never discards. Output includes both aggregate and contributing rules.
+**Exit criterion:** Any prediction decomposes to individual rule firings in one function call. India 1947 fixture: every prediction traceable to verse.
+
+### Q5. Module Registry (v11 §6, §10)
+
+Every module in `src/calculations/` registered in `src/MODULE_REGISTRY.py` with:
+- Layer and tier assignment
+- One-sentence purpose
+- Canonical source for which concept(s)
+- 500-line trigger for review (not a hard limit)
+
+**Enforcement:** CI validates import directions against registry. New modules must be registered before merge.
+**Exit criterion:** 100% of `src/calculations/` registered. Zero cross-layer upward imports.
+
+### Q6. Three Version Axes (v11 §19)
+
+Every output includes:
+1. **Corpus version** — which rules were used (git commit hash of corpus files)
+2. **Schema version** — output format version (bumped on breaking changes)
+3. **Weight version** — which calibration weights were applied
+
+**Enforcement:** `ChartScoresV3` (and its successor) includes all three versions. Any past prediction reproducible by specifying versions.
+**Exit criterion:** All three version axes tracked in output. Reproduction test: same chart + same versions = identical output.
+
+### Q7. Runtime Invariant Checking (v11 §20)
+
+Lightweight invariant checks run after Layer 2 (ChartContext), before Layer 3 (rule evaluation):
+- Every planet in exactly one sign and one house
+- Every house has exactly one lord
+- Aspect strength non-negative
+- Dignity level is a valid enum value
+- No contradictory rule conditions
+
+**Current:** `src/invariants.py` exists, called from `ephemeris.py`.
+**Enforcement:** Invariant checker runs on every chart. Development: raises. Production: logs and continues.
+**Exit criterion:** Zero violations on India 1947 fixture. Checker catches wrong planet count, duplicate lordships, negative aspects.
+
+### Q8. Data Sensitivity (v11 §13)
+
+Birth data (date, time, location) is personally identifiable.
+- Stored separately from computed results
+- Retention policy functional (not broken like the current `last_accessed` bug)
+- No birth data in log output
+- CORS restricted, JWT from environment variable
+
+**Exit criterion:** Retention policy works (test-verified). No PII in logs. Auth tokens not hardcoded.
+
+### Q9. Performance (v11 §16)
+
+Single chart computation < 200ms end-to-end (all rules, all layers).
+ChartContext eliminates 135+ redundant computations — expected to significantly improve current latency.
+
+**Enforcement:** `tools/benchmark_chart.py` measures per-layer timing. Any layer >50ms triggers investigation.
+**Exit criterion:** Benchmark < 200ms. Benchmark runs in CI.
+
+### Q10. Reproducibility (v11 §11)
+
+Same birth data + same config + same corpus version + same weight version = identical output. No randomness. No ambient state.
+
+**Enforcement:** All computation is pure functions. Three version axes (Q6) enable exact reproduction. Snapshot test: India 1947 produces deterministic JSON, tested in CI.
+**Exit criterion:** Two runs of same chart produce byte-identical JSON.
+
+### Q11. Observability (v11 §12)
+
+Every canonical primitive logs at DEBUG level: what it computed, from what inputs. Always available — not added during debugging.
+
+**Enforcement:** RuleResult trace (Q4) provides rule-level observability. No silent exceptions (Q2).
+**Exit criterion:** Any incorrect output diagnosable from existing logs + rule trace without code changes.
+
+### Q12. Evolvability (v11 §8)
+
+Adding a new text = add rules that import existing primitives. No new computation modules.
+Adding a new school = add school-specific modules where that school differs from Parashari.
+
+**Enforcement:** New text checklist: verse audit → encode with existing primitives → tag with source.
+New school checklist: identify differing concepts → school-specific modules → register.
+**Exit criterion:** New text requires zero computation layer changes. Tested by ≥1 non-BPHS text.
+
+### Q13. Knowledge Preservation (v11 §15)
+
+The corpus is the product. Every rule preserves: source text, chapter, verse, original claim (verse audit), structured conditions, prediction. Losing any makes the rule less valuable.
+
+**Enforcement:** Verse audit files required before encoding (CLAUDE.md Gate 1-2). Builder validates provenance fields (T1-1 through T1-5). Verse audit version-controlled alongside rules.
+**Exit criterion:** 100% of rules have complete provenance. Verse audits exist for all encoded chapters.
+
+### Q14. Developer Experience (v11 §10)
+
+Three workflows, each with clear entry/exit:
+- **Encoding:** Read CLAUDE.md → 5 gates → ship
+- **Bug fixing:** Find canonical source → fix there → tests pass → all consumers fixed
+- **Adding a text:** Follow checklist → import existing primitives → encode rules
+
+**Enforcement:** CLAUDE.md protocol, Canonical Source Map, v2_scorecard.py, ruff + pytest hooks.
+**Exit criterion:** New session productive within 15 minutes of reading CLAUDE.md. No tribal knowledge required.
+
+---
+
 ## GAP ANALYSIS: CURRENT → TARGET
+
+### Structural Gaps
 
 | #  | Layer | Current | Target | Build phase | Effort |
 |----|-------|---------|--------|-------------|--------|
-| G1 | 2 | 135+ redundant computations | ChartContext (1×) | Phase C | 2 sessions |
+| G1 | 2 | 135+ redundant computations | ChartContext with tier ordering (Q1) | Phase C | 2 sessions |
 | G2 | 3 | 26 rules hardcoded in Python | All rules in corpus as data | Phase C | 2 sessions |
-| G3 | 3 | 2 engines, 2 output types | 1 engine, 1 EvalResult type | Phase C | 2 sessions |
-| G4 | 3 | Weights hardcoded in _WEIGHTS | Weight store (versioned data) | Phase C | 1 session |
+| G3 | 3 | 2 engines, 2 output types | 1 engine, 1 EvalResult type with traceability (Q4) | Phase C | 2 sessions |
+| G4 | 3 | Weights hardcoded in _WEIGHTS | Weight store (versioned data, version axis Q6) | Phase C | 1 session |
 | G5 | 4 | Rules fire independently | Convergence across D1/D9/D10/dasha/transit | Phase C | 3 sessions |
 | G6 | 5 | No timing beyond "dasha period" | Temporal probability P(event\|year) | Phase C/A | 3 sessions |
 | G7 | 6 | Output = bag of numbers | Narrative life-phase synthesis | Phase A | 3 sessions |
@@ -495,29 +648,71 @@ USER
 | G10 | 8 | No feedback loop | Event store + calibration engine | Phase A/B | 5 sessions |
 | G11 | 8 | No rule evolution | Versioned rules with empirical additions | Phase B | 2 sessions |
 | G12 | 8 | No chart archetypes | Cluster discovery from outcomes | Phase B | 3 sessions |
-| G13 | - | No user/auth | Multi-user with shared engine | Phase A | 2 sessions |
-|    | | | | **Total** | **~31 sessions** |
+| G13 | - | No user/auth | Multi-user with shared engine (Q8 data sensitivity) | Phase A | 2 sessions |
+
+### Engineering Quality Gaps (from v11 criteria)
+
+| #  | Criterion | Current | Target | Build phase | Effort |
+|----|-----------|---------|--------|-------------|--------|
+| Q1 | Tier ordering | No computation order | 5-tier DAG in ChartContext | Phase C (with G1) | included |
+| Q2 | Robustness | 8 silent handlers remain | Zero silent handlers | Phase C | <1 session |
+| Q3 | Verification tags | 9/112 modules tagged | 100% canonical sources tagged | Phase C | 1 session |
+| Q4 | Traceability | No trace from output to verse | Configurable depth (min/std/full) | Phase C (with G3) | included |
+| Q5 | Module registry | Canonical Source Map in CLAUDE.md | MODULE_REGISTRY.py with CI enforcement | Phase C | 1 session |
+| Q6 | Three version axes | No versioning | corpus_version + schema_version + weight_version | Phase C (with G4) | included |
+| Q7 | Runtime invariants | invariants.py exists | Runs on every chart, before rule eval | Phase C | <1 session |
+| Q8 | Data sensitivity | allow_origins=["*"], broken retention | CORS restricted, PII separated, retention works | Phase A (with G13) | included |
+| Q9 | Performance | Unknown (no benchmark) | <200ms per chart, benchmark in CI | Phase C | <1 session |
+| Q10 | Reproducibility | Not tested | Same inputs = byte-identical output, snapshot test | Phase C | <1 session |
+| Q11 | Observability | Ad-hoc logging | DEBUG logging in all canonical primitives | Phase C | 1 session |
+| Q12 | Evolvability | No checklists | New text/school checklists, tested by ≥1 non-BPHS | Phase C | 1 session |
+| Q13 | Knowledge preservation | Verse audits exist for 20 chapters | 100% of encoded chapters have verse audits | Ongoing | — |
+| Q14 | Developer experience | CLAUDE.md protocol exists | 15-minute productive start, no tribal knowledge | Phase C | — |
+
+### Summary
+
+| Category | Gaps | Total effort |
+|----------|------|-------------|
+| Structural (G1-G13) | 13 gaps | ~31 sessions |
+| Quality (Q1-Q14) | 14 criteria, ~8 need work | ~6 sessions |
+| **Combined** | **27 items** | **~37 sessions** |
+
+---
 
 ## BUILD ORDER
 
 ```
-PHASE C FOUNDATION (G1-G5, ~10 sessions):
-  G1: ChartContext
-   → G2: Migrate R01-R24 to corpus
-   → G3: Unified evaluation engine
-   → G4: Weight store schema
-   → G5: Convergence layer (multi-signal confirmation)
-   → Event store SCHEMA (tables only, no engine yet)
+PHASE C FOUNDATION (~16 sessions):
 
-PHASE A PRACTITIONER TOOL (G6-G9 + G13, ~11 sessions):
-  G13: User/auth/session
-   → G8: 20Q verification
-   → G9: Life event capture
-   → G6: Temporal probability
-   → G7: Narrative synthesis
-   → G10: Feedback loop (event store + basic calibration)
+  Block 1 — Core Pipeline (G1-G4, Q1, Q4, Q6):
+    G1+Q1: ChartContext with 5-tier ordering
+     → G2: Migrate R01-R24 to corpus as V2 records
+     → G3+Q4: Unified evaluation engine with EvalResult traceability
+     → G4+Q6: Weight store schema with three version axes
+     → Event store SCHEMA (tables only, no engine yet)
 
-PHASE B RESEARCH PLATFORM (G10-G12, ~10 sessions):
+  Block 2 — Prediction Quality (G5, G6):
+    G5: Convergence layer (multi-signal confirmation across D1/D9/D10/dasha/transit)
+    G6: Temporal probability (overlay 7 timing systems → P(event|year))
+
+  Block 3 — Engineering Quality (Q2, Q3, Q5, Q7, Q9, Q10, Q11, Q12):
+    Q2: Fix remaining 8 silent handlers
+    Q3: Tag all canonical source modules with _VERIFICATION
+    Q5: Build MODULE_REGISTRY.py with CI enforcement
+    Q7: Wire runtime invariant checker before rule evaluation
+    Q9: Create benchmark_chart.py, establish <200ms baseline
+    Q10: Snapshot test for India 1947 (deterministic JSON)
+    Q11: Add DEBUG logging to all canonical primitives
+    Q12: Write new text / new school checklists
+
+PHASE A PRACTITIONER TOOL (~11 sessions):
+  G13+Q8: User/auth/session + data sensitivity
+   → G8: 20Q chart-person verification
+   → G9: Life event capture + outcome anchoring
+   → G7: Narrative life-phase synthesis
+   → G10: Feedback loop (event store → basic calibration)
+
+PHASE B RESEARCH PLATFORM (~10 sessions):
   G10: Full calibration engine (Bayesian weight updates)
    → G11: Rule evolution (empirical condition discovery)
    → G12: Chart archetype clustering
