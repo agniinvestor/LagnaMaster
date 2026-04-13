@@ -32,18 +32,10 @@ from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, OWN_SIGNS as _OWN_
 _OWN = {p: set(s) for p, s in _OWN_LIST.items()}
 
 
-# Rasi aspect: movable aspects all fixed except adjacent; fixed aspects all movable except adjacent; dual aspects all dual
-def _rasi_aspects(si: int) -> set[int]:
-    """Signs aspected by sign si via rasi drishti."""
-    movable = {0, 3, 6, 9}
-    fixed = {1, 4, 7, 10}
-    dual = {2, 5, 8, 11}
-    if si in movable:
-        return fixed - {(si + 1) % 12}
-    elif si in fixed:
-        return movable - {(si - 1) % 12}
-    else:
-        return dual - {si}
+def _rasi_aspects(si: int) -> frozenset[int]:
+    """Signs aspected by sign si via Jaimini rashi drishti (canonical)."""
+    from src.calculations.jaimini_rashi_drishti import rashi_drishti
+    return rashi_drishti(si)
 
 
 @dataclass
@@ -84,16 +76,9 @@ def planet_strength_score(planet: str, chart) -> PlanetStrengthScore:
     if _EXALT_SI.get(planet) == si or si in _OWN.get(planet, set()):
         dignity_score = 2
     else:
-        _MOOLT = {
-            "Sun": 4,
-            "Moon": 1,
-            "Mars": 0,
-            "Mercury": 5,
-            "Jupiter": 8,
-            "Venus": 6,
-            "Saturn": 9,
-        }
-        dignity_score = 1 if _MOOLT.get(planet) == si else 0
+        from src.calculations.dignity import MOOLTRIKONA_RANGES
+        mt_sign = MOOLTRIKONA_RANGES.get(planet, (None,))[0]
+        dignity_score = 1 if mt_sign == si else 0
 
     # #3: exalted cotenants
     exalted_cotenants = sum(
