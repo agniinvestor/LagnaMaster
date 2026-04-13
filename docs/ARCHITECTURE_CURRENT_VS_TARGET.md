@@ -705,8 +705,9 @@ After G1:  Q9 ────────── (benchmark <200ms)                 
                                                             │                     │
 After G4:  Event store SCHEMA ──────────────────────────────┼→ G9 (life events)   │
                                                             │                     │
-After G3:  Resume BPHS encoding (Ch.26+) ──────────────────→│                     │
-           (encoding now produces verifiable predictions)   │                     │
+After G6:  Resume BPHS encoding (Ch.26+) ──────────────────→│                     │
+           (encoding produces full predictions: convergence │                     │
+            + timing + traceability — verifiable e2e)       │                     │
                                                             │                     │
                                                      G13+Q8 ┼── (user/auth/GDPR) │
                                                          G8 ┼── (20Q)            │
@@ -763,7 +764,9 @@ CRITICAL PATH:
   ├─ Overlays: Vimshottari, Chara, Yogini dashas + transits + varshaphala
   ├─ Output: P(event|year) distribution per prediction, peak_window, timing_confidence
   ├─ Exit: predictions have timing, not just "during Jupiter dasha"
-  └─ Blocks: G7 (narrative needs timed predictions to sequence into life phases)
+  ├─ Blocks: G7 (narrative needs timed predictions to sequence into life phases)
+  └─ UNBLOCKS: BPHS encoding resumes here — e2e pipeline produces verifiable
+     predictions with convergence + timing + verse traceability
 
   G7: Narrative synthesis (Phase A)
   ├─ Produces: narrate(timed_predictions) → NarrativeReport
