@@ -91,7 +91,7 @@ def score_chart_v3(
         sensitized = score_chart_with_dasha(chart, on_date, dict(axes.d1.scores))
         axes.d1.scores.update(sensitized)
 
-    lpi = compute_lpi(chart, dashas, on_date, school)
+    lpi = compute_lpi(chart, dashas, on_date, school, precomputed_axes=axes)
     vim = compute_vimshopaka(chart)
     avs = compute_avasthas_v2(chart)
     raja = detect_raja_dhana_yogas(chart, dashas, on_date)

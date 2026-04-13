@@ -163,6 +163,7 @@ def compute_lpi(
     dashas: list,
     on_date: Optional[date] = None,
     school: str = "parashari",
+    precomputed_axes=None,
 ) -> LPIResult:
     if on_date is None:
         on_date = date.today()
@@ -170,7 +171,7 @@ def compute_lpi(
     from src.calculations.multi_axis_scoring import score_all_axes
     from src.calculations.multi_lagna import compute_all_arudha_padas
 
-    axes = score_all_axes(chart, school)
+    axes = precomputed_axes if precomputed_axes is not None else score_all_axes(chart, school)
     arudha = compute_all_arudha_padas(chart)
 
     _HOUSE_DOMAIN = {}
