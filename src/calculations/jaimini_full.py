@@ -16,7 +16,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS, SIGN_NAMES
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, SIGN_NAMES
 from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, OWN_SIGNS as _OWN_LIST
 from dataclasses import dataclass
 
@@ -100,7 +100,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
         benefics_5_9 = [
             p
             for p in h5_planets + h9_planets
-            if p in {"Jupiter", "Venus", "Mercury", "Moon"}
+            if p in NATURAL_BENEFICS
         ]
         gyana = bool(benefics_5_9)
         yogas.append(
@@ -124,10 +124,10 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
         if chart.planets[p].sign_index == al7_si and p != "Ketu"
     ]
     al7_benefics = [
-        p for p in al7_planets if p in {"Jupiter", "Venus", "Mercury", "Moon"}
+        p for p in al7_planets if p in NATURAL_BENEFICS
     ]
     al7_malefics = [
-        p for p in al7_planets if p in {"Saturn", "Mars", "Rahu", "Ketu", "Sun"}
+        p for p in al7_planets if p in NATURAL_MALEFICS
     ]
     al_quality = len(al7_benefics) - len(al7_malefics)
     yogas.append(

@@ -707,21 +707,8 @@ def _get_saptavargaja_virupas(
 
 
 def _simple_sign_lord(sign_index: int) -> Optional[str]:
-    lords = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    return lords.get(sign_index)
+    from src.data.constants import SIGN_LORDS
+    return SIGN_LORDS.get(sign_index)
 
 
 # ─── Ishta / Kashta Bala ─────────────────────────────────────────────────────

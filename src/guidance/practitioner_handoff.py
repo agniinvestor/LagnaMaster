@@ -51,26 +51,12 @@ def build_chart_summary(
     if on_date is None:
         on_date = _date.today()
 
-    _SIGNS = [
-        "Aries",
-        "Taurus",
-        "Gemini",
-        "Cancer",
-        "Leo",
-        "Virgo",
-        "Libra",
-        "Scorpio",
-        "Sagittarius",
-        "Capricorn",
-        "Aquarius",
-        "Pisces",
-    ]
-
-    lagna = _SIGNS[chart.lagna_sign_index % 12]
+    from src.data.constants import SIGN_NAMES
+    lagna = SIGN_NAMES[chart.lagna_sign_index % 12]
     moon_si = chart.planets.get("Moon")
     sun_si = chart.planets.get("Sun")
-    moon_sign = _SIGNS[moon_si.sign_index % 12] if moon_si else "Unknown"
-    sun_sign = _SIGNS[sun_si.sign_index % 12] if sun_si else "Unknown"
+    moon_sign = SIGN_NAMES[moon_si.sign_index % 12] if moon_si else "Unknown"
+    sun_sign = SIGN_NAMES[sun_si.sign_index % 12] if sun_si else "Unknown"
 
     active_md = "Unknown"
     active_ad = "Unknown"
