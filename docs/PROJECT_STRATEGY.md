@@ -308,7 +308,7 @@ Consolidate engines  ──→  Wire corpus → scoring  ──→  Validate wit
 
 | # | Item | Why it matters | Depends on | Unblocks | Effort | Status |
 |---|------|---------------|-----------|----------|--------|--------|
-| W0 | **Consolidate duplicate calculation engines** | 30 duplication clusters resolved. ~1,120 lines removed, 43 files, 15 commits. 2 BPHS bugs fixed (ayurdaya Pindayu/Nisargayu, chandrabala H5). Canonical Source Map in CLAUDE.md. | None | W1 | — | **DONE** |
+| W0 | **Consolidate engines + unify computational primitives** | 112/112 modules audited. ~1,100 net lines removed, 64 files, 39 commits. All duplication resolved. 3 bugs fixed (ayurdaya formulas, chandrabala H5, upapada exception). 3 computational divergences unified (natural malefic → dignity.is_natural_malefic, dignity → dignity.compute_dignity, functional roles → KNOWN_FUNCTIONAL_MALEFICS table). Overlap analysis: corpus+hardcoded rules are complementary, not conflicting (12/26 hardcoded rules have zero corpus equivalent). Canonical Source Map in CLAUDE.md. | None | W1 | — | **DONE** |
 | W1 | **Wire inference.py output into scoring_v3.py** | Without this, 654 V2 rules are inert data. The corpus→engine chain exists (Links 1-2) but terminates before scoring. This is the single highest-leverage fix. | W0 | W2, W3, all encoding | 1-2 sessions | NOT STARTED |
 | W2 | **Run OB-3 with corpus-aware scoring, compare to baseline** | Measures whether 654 rules improve ρ over 22 hardcoded rules. If ρ improves, the architecture works. If not, the rules are wrong. | W1 | W3 (go/no-go) | 1 session | NOT STARTED |
 | W3 | **Resume BPHS encoding (Ch.26+)** | Only productive AFTER W1+W2 confirm corpus rules improve scores | W2 (positive result) | Corpus growth | Ongoing | BLOCKED |
