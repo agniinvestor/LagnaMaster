@@ -41,6 +41,8 @@ Before reporting any task as complete, answer ALL of these:
 2. What was NOT checked or completed?
 3. What is the evidence that the work is correct? (test results, not assertion)
 4. Were all workflow gates followed? (list each gate and its status)
+5. For audits/consolidation: what percentage of relevant files were READ at logic level (not grepped)? If <100%, list what was skipped and why.
+6. For claims of "all X resolved": what would prove you wrong? Have you checked for that?
 
 ## Session Types (NEVER MIX)
 
@@ -110,11 +112,12 @@ The builder also blocks on entity_target mismatches, mixed-entity rules, and pre
 ## Session Protocol (MANDATORY)
 
 **At session START:**
-1. Read `docs/PROJECT_STRATEGY.md` — the golden source for project state, architecture, work items, and decisions
-2. Read `tools/INDEX.md` — know what tools exist. Do NOT rebuild existing tools.
-3. If encoding: read `docs/RULE_CONTRACT_V2.md` — the canonical V2 schema
-4. Check `lessons_learned.md` for patterns relevant to today's work
-5. Verify all controls exist for the work you're about to do (Principle #4)
+1. Read `docs/ARCHITECTURE_CURRENT_VS_TARGET.md` — the golden source for architecture, gaps, build order, and quality criteria
+2. Read `docs/PROJECT_STRATEGY.md` — project state and diagnostics
+3. Read `tools/INDEX.md` — know what tools exist. Do NOT rebuild existing tools.
+4. If encoding: read `docs/RULE_CONTRACT_V2.md` — the canonical V2 schema
+5. Check `lessons_learned.md` for patterns relevant to today's work
+6. Verify all controls exist for the work you're about to do (Principle #4)
 
 **At session END:**
 1. Did any rework happen this session? (amend commits, fix commits, re-encoding) → Add lesson
