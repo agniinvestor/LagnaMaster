@@ -45,33 +45,19 @@ class UpapadaAnalysis:
 
 
 def compute_upapada(chart) -> UpapadaAnalysis:
-    """Compute Upapada Lagna and its analysis."""
+    """Compute Upapada Lagna and its analysis.
+
+    Delegates arudha sign computation to argala.compute_arudha (canonical).
+    """
     from src.calculations.house_lord import compute_house_map
+    from src.calculations.argala import compute_arudha
 
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
     lagna_si = chart.lagna_sign_index
 
-    # 12th house sign
-    twelfth_si = (lagna_si + 11) % 12
-    twelfth_lord = hmap.house_lord[11]
-    lord_pos = chart.planets.get(twelfth_lord)
-
-    if lord_pos is None:
-        # Fallback
-        ul_si = (twelfth_si + 11) % 12
-    else:
-        lord_si = lord_pos.sign_index
-        # Count from 12th house to 12th lord
-        count = (lord_si - twelfth_si) % 12 + 1
-        # UL = count same distance from 12th lord
-        ul_si = (lord_si + count - 1) % 12
-
-    # Jaimini arudha exception: if UL falls on H12 sign or 7th from it (H6),
-    # add 10 signs (0-based: +9). Source: Jaimini Sutras; Sanjay Rath.
-    seventh_from_h12 = (twelfth_si + 6) % 12
-    if ul_si == twelfth_si or ul_si == seventh_from_h12:
-        ul_si = (ul_si + 9) % 12
+    # Upapada = Arudha of H12 (canonical computation with Jaimini exception)
+    ul_si = compute_arudha(chart, 12)
     ul_from_lagna = (ul_si - lagna_si) % 12 + 1
 
     ul_lord = hmap.house_lord[(ul_si - lagna_si) % 12]

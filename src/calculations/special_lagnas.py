@@ -120,20 +120,9 @@ def compute_special_lagnas(
     pranapada_lon = (sun_lon + elapsed_ghatis * 4) % 360
     pranapada = int(pranapada_lon / 30) % 12
 
-    # ── Upapada Lagna (A12) ──
-    # Arudha of 12th house
-    # Source: Jaimini Sutras (Arudha Lagna formula)
-    h12_sign = (lagna_si + 11) % 12
-    h12_lord = SIGN_LORDS.get(h12_sign, "Jupiter")
-    if h12_lord in chart.planets:
-        lord_si = chart.planets[h12_lord].sign_index
-        dist = (lord_si - h12_sign) % 12
-        upapada_si = (lord_si + dist) % 12
-        # Special rule: if upapada falls on same sign as H12 or its 7th, shift 10
-        if upapada_si == h12_sign or upapada_si == (h12_sign + 6) % 12:
-            upapada_si = (upapada_si + 9) % 12
-    else:
-        upapada_si = h12_sign
+    # ── Upapada Lagna (A12) — delegates to canonical argala.compute_arudha ──
+    from src.calculations.argala import compute_arudha
+    upapada_si = compute_arudha(chart, 12)
 
     return SpecialLagnas(
         hora_lagna=hora_lagna,
