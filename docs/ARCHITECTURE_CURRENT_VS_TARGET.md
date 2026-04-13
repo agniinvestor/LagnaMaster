@@ -634,55 +634,49 @@ Three workflows, each with clear entry/exit:
 
 ### Structural Gaps
 
-| #  | Layer | Current | Target | Build phase | Effort |
-|----|-------|---------|--------|-------------|--------|
-| G1 | 2 | 135+ redundant computations | ChartContext with tier ordering (Q1) | Phase C | 2 sessions |
-| G2 | 3 | 26 rules hardcoded in Python | All rules in corpus as data | Phase C | 2 sessions |
-| G3 | 3 | 2 engines, 2 output types | 1 engine, 1 EvalResult type with traceability (Q4) | Phase C | 2 sessions |
-| G4 | 3 | Weights hardcoded in _WEIGHTS | Weight store (versioned data, version axis Q6) | Phase C | 1 session |
-| G5 | 4 | Rules fire independently | Convergence across D1/D9/D10/dasha/transit | Phase C | 3 sessions |
-| G6 | 5 | No timing beyond "dasha period" | Temporal probability P(event\|year) | Phase C/A | 3 sessions |
-| G7 | 6 | Output = bag of numbers | Narrative life-phase synthesis | Phase A | 3 sessions |
-| G8 | 7 | No 20Q | Chart-person verification | Phase A | 2 sessions |
-| G9 | 7 | No life event capture | Outcome anchoring | Phase A | 1 session |
-| G10 | 8 | No feedback loop | Event store + calibration engine | Phase A/B | 5 sessions |
-| G11 | 8 | No rule evolution | Versioned rules with empirical additions | Phase B | 2 sessions |
-| G12 | 8 | No chart archetypes | Cluster discovery from outcomes | Phase B | 3 sessions |
-| G13 | - | No user/auth | Multi-user with shared engine (Q8 data sensitivity) | Phase A | 2 sessions |
+| #  | Layer | Current | Target | Phase |
+|----|-------|---------|--------|-------|
+| G1 | 2 | 135+ redundant computations | ChartContext with tier ordering (Q1) | C |
+| G2 | 3 | 26 rules hardcoded in Python | All rules in corpus as data | C |
+| G3 | 3 | 2 engines, 2 output types | 1 engine, 1 EvalResult type with traceability (Q4) | C |
+| G4 | 3 | Weights hardcoded in _WEIGHTS | Weight store (versioned data, version axis Q6) | C |
+| G5 | 4 | Rules fire independently | Convergence across D1/D9/D10/dasha/transit | C |
+| G6 | 5 | No timing beyond "dasha period" | Temporal probability P(event\|year) | C/A |
+| G7 | 6 | Output = bag of numbers | Narrative life-phase synthesis | A |
+| G8 | 7 | No 20Q | Chart-person verification | A |
+| G9 | 7 | No life event capture | Outcome anchoring | A |
+| G10 | 8 | No feedback loop | Event store + calibration engine | A/B |
+| G11 | 8 | No rule evolution | Versioned rules with empirical additions | B |
+| G12 | 8 | No chart archetypes | Cluster discovery from outcomes | B |
+| G13 | - | No user/auth | Multi-user with shared engine (Q8 data sensitivity) | A |
 
 ### Engineering Quality Gaps (from v11 criteria)
 
-| #  | Criterion | Current | Target | Build phase | Effort |
-|----|-----------|---------|--------|-------------|--------|
-| Q1 | Tier ordering | No computation order | 5-tier DAG in ChartContext | Phase C (with G1) | included |
-| Q2 | Robustness | 8 silent handlers remain | Zero silent handlers | Phase C | <1 session |
-| Q3 | Verification tags | 9/112 modules tagged | 100% canonical sources tagged | Phase C | 1 session |
-| Q4 | Traceability | No trace from output to verse | Configurable depth (min/std/full) | Phase C (with G3) | included |
-| Q5 | Module registry | Canonical Source Map in CLAUDE.md | MODULE_REGISTRY.py with CI enforcement | Phase C | 1 session |
-| Q6 | Three version axes | No versioning | corpus_version + schema_version + weight_version | Phase C (with G4) | included |
-| Q7 | Runtime invariants | invariants.py exists | Runs on every chart, before rule eval | Phase C | <1 session |
-| Q8 | Data sensitivity | allow_origins=["*"], broken retention | CORS restricted, PII separated, retention works | Phase A (with G13) | included |
-| Q9 | Performance | Unknown (no benchmark) | <200ms per chart, benchmark in CI | Phase C | <1 session |
-| Q10 | Reproducibility | Not tested | Same inputs = byte-identical output, snapshot test | Phase C | <1 session |
-| Q11 | Observability | Ad-hoc logging | DEBUG logging in all canonical primitives | Phase C | 1 session |
-| Q12 | Evolvability | No checklists | New text/school checklists, tested by ≥1 non-BPHS | Phase C | 1 session |
-| Q13 | Knowledge preservation | Verse audits exist for 20 chapters | 100% of encoded chapters have verse audits | Ongoing | — |
-| Q14 | Developer experience | CLAUDE.md protocol exists | 15-minute productive start, no tribal knowledge | Phase C | — |
-
-### Summary
-
-| Category | Gaps | Total effort |
-|----------|------|-------------|
-| Structural (G1-G13) | 13 gaps | ~31 sessions |
-| Quality (Q1-Q14) | 14 criteria, ~8 need work | ~6 sessions |
-| **Combined** | **27 items** | **~37 sessions** |
+| #  | Criterion | Current | Target | Phase |
+|----|-----------|---------|--------|-------|
+| Q1 | Tier ordering | No computation order | 5-tier DAG in ChartContext | C (with G1) |
+| Q2 | Robustness | 8 silent handlers remain | Zero silent handlers | C |
+| Q3 | Verification tags | 9/112 modules tagged | 100% canonical sources tagged | C |
+| Q4 | Traceability | No trace from output to verse | Configurable depth (min/std/full) | C (with G3) |
+| Q5 | Module registry | Canonical Source Map in CLAUDE.md | MODULE_REGISTRY.py with CI enforcement | C |
+| Q6 | Three version axes | No versioning | corpus_version + schema_version + weight_version | C (with G4) |
+| Q7 | Runtime invariants | invariants.py exists | Runs on every chart, before rule eval | C |
+| Q8 | Data sensitivity | allow_origins=["*"], broken retention | CORS restricted, PII separated, retention works | A (with G13) |
+| Q9 | Performance | Unknown (no benchmark) | <200ms per chart, benchmark in CI | C |
+| Q10 | Reproducibility | Not tested | Same inputs = byte-identical output, snapshot test | C |
+| Q11 | Observability | Ad-hoc logging | DEBUG logging in all canonical primitives | C |
+| Q12 | Evolvability | No checklists | New text/school checklists, tested by ≥1 non-BPHS | C |
+| Q13 | Knowledge preservation | Verse audits exist for 20 chapters | 100% of encoded chapters have verse audits | Ongoing |
+| Q14 | Developer experience | CLAUDE.md protocol exists | 15-minute productive start, no tribal knowledge | C |
 
 ---
 
 ## BUILD ORDER
 
+Sequenced by dependency, not by effort. Each block must be correct before the next starts.
+
 ```
-PHASE C FOUNDATION (~16 sessions):
+PHASE C FOUNDATION:
 
   Block 1 — Core Pipeline (G1-G4, Q1, Q4, Q6):
     G1+Q1: ChartContext with 5-tier ordering
@@ -705,14 +699,14 @@ PHASE C FOUNDATION (~16 sessions):
     Q11: Add DEBUG logging to all canonical primitives
     Q12: Write new text / new school checklists
 
-PHASE A PRACTITIONER TOOL (~11 sessions):
+PHASE A PRACTITIONER TOOL:
   G13+Q8: User/auth/session + data sensitivity
    → G8: 20Q chart-person verification
    → G9: Life event capture + outcome anchoring
    → G7: Narrative life-phase synthesis
    → G10: Feedback loop (event store → basic calibration)
 
-PHASE B RESEARCH PLATFORM (~10 sessions):
+PHASE B RESEARCH PLATFORM:
   G10: Full calibration engine (Bayesian weight updates)
    → G11: Rule evolution (empirical condition discovery)
    → G12: Chart archetype clustering
