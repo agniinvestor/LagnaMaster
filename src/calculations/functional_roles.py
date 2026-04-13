@@ -24,7 +24,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS, SIGN_LORDS, SIGN_NAMES
+from src.data.constants import NATURAL_BENEFICS, SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -88,7 +88,16 @@ _SIGNS = list(SIGN_NAMES)
 
 
 def compute_functional_roles(chart) -> FunctionalRoles:
-    """Compute the complete functional role matrix for the chart's lagna."""
+    """Compute the complete functional role matrix for the chart's lagna.
+
+    Delegates core classification to functional_dignity.compute_functional_classifications
+    (canonical BPHS Ch.34 implementation) and wraps into FunctionalRoles dataclass.
+    """
+    from src.calculations.functional_dignity import (
+        compute_functional_classifications,
+        badhakesh,
+    )
+
     lsi = chart.lagna_sign_index
 
     # Build house-lord map (whole-sign)
@@ -97,82 +106,44 @@ def compute_functional_roles(chart) -> FunctionalRoles:
         sign_idx = (lsi + h - 1) % 12
         house_lords[h] = SIGN_LORDS[sign_idx]
 
+    # Delegate to canonical classification
+    fc = compute_functional_classifications(lsi)
+
     roles = FunctionalRoles(
         lagna_sign=chart.lagna_sign,
         lagna_sign_index=lsi,
         house_lords=house_lords,
     )
 
-    # Dusthana lords (H6, H8, H12)
+    # Map FunctionalClassification results to FunctionalRoles lists
+    for planet, cls in fc.items():
+        if planet in ("Rahu", "Ketu"):
+            continue  # handled below
+        if cls.is_yogakaraka:
+            roles.functional_benefics.append(planet)
+        elif cls.classification == "benefic":
+            roles.functional_benefics.append(planet)
+        elif cls.classification == "malefic":
+            roles.functional_malefics.append(planet)
+        else:
+            roles.functional_neutrals.append(planet)
+
+    roles.yogakarakas = [p for p, c in fc.items() if c.is_yogakaraka]
+    roles.yogakaraka = roles.yogakarakas[0] if len(roles.yogakarakas) == 1 else None
+    roles.maraka_lords = list({p for p, c in fc.items() if c.is_maraka})
     roles.dusthana_lords = list({house_lords[6], house_lords[8], house_lords[12]})
 
-    # Maraka lords (H2, H7)
-    roles.maraka_lords = list({house_lords[2], house_lords[7]})
-
-    # Yogakaraka: planet that simultaneously rules a kendra AND a trikona
-    # (H1 counts as both; exclude H1-only lords)
-    kendra_lords = {house_lords[h] for h in [1, 4, 7, 10]}
-    trikona_lords = {house_lords[h] for h in [1, 5, 9]}
-    yk_set = (kendra_lords & trikona_lords) - {
-        house_lords[1]
-    }  # H1 excluded (always both)
-    roles.yogakarakas = sorted(yk_set)
-    roles.yogakaraka = roles.yogakarakas[0] if len(roles.yogakarakas) == 1 else None
-
     # Kendradhipati dosha: natural benefics owning kendras (H4, H7, H10)
-    # H1 lordship does not give KD dosha; H4/H7/H10 do for natural benefics
     kd_candidates = {house_lords[h] for h in [4, 7, 10]}
     roles.kendradhipati_planets = [p for p in kd_candidates if p in NATURAL_BENEFICS]
 
-    # Functional classification per planet (7 grahas)
-    planets_7 = list(SEVEN_PLANETS)
-    for planet in planets_7:
-        owned = [h for h, lord in house_lords.items() if lord == planet]
-        dusthana_owned = [h for h in owned if h in {6, 8, 12}]
-        kendra_owned = [h for h in owned if h in {1, 4, 7, 10}]
-        trikona_owned = [h for h in owned if h in {1, 5, 9}]
-        [h for h in owned if h in {3, 6, 10, 11}]
-
-        # Yogakaraka — strongly benefic
-        if planet in roles.yogakarakas:
-            roles.functional_benefics.append(planet)
-            continue
-
-        # Primary dusthana lord (owns ONLY dusthanas) — malefic
-        if dusthana_owned and not (set(owned) - {6, 8, 12}):
-            roles.functional_malefics.append(planet)
-            continue
-
-        # Trikona lord (H5 or H9) without dusthana — benefic
-        if any(h in {5, 9} for h in trikona_owned) and not dusthana_owned:
-            roles.functional_benefics.append(planet)
-            continue
-
-        # Pure kendra lord (no trikona) — KD dosha for nat benefics
-        if kendra_owned and not trikona_owned and not dusthana_owned:
-            if planet in NATURAL_BENEFICS:
-                roles.functional_neutrals.append(planet)  # KD weakens but not malefic
-            else:
-                roles.functional_neutrals.append(planet)
-            continue
-
-        # Mixed ownership including dusthana — generally malefic
-        if dusthana_owned:
-            roles.functional_malefics.append(planet)
-            continue
-
-        # Default to natural classification
-        if planet in NATURAL_BENEFICS:
-            roles.functional_benefics.append(planet)
-        else:
-            roles.functional_malefics.append(planet)
-
     # Badhaka
+    bh_lord = badhakesh(lsi)
     bh = _badhaka_house(lsi)
     bsi = (lsi + bh - 1) % 12
     roles.badhaka_house = bh
     roles.badhaka_sign_index = bsi
     roles.badhaka_sign = _SIGNS[bsi]
-    roles.badhaka_lord = SIGN_LORDS[bsi]
+    roles.badhaka_lord = bh_lord
 
     return roles
