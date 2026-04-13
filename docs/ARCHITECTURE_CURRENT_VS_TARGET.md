@@ -671,9 +671,133 @@ Three workflows, each with clear entry/exit:
 
 ---
 
-## BUILD ORDER
+## BUILD ORDER + DEPENDENCY MAP
 
 Sequenced by dependency, not by effort. Each block must be correct before the next starts.
+Items on the same row can be worked in parallel. Arrows (→) mean "blocks".
+
+```
+DEPENDENCY GANTT
+════════════════
+
+                          PHASE C                           │  PHASE A            │ PHASE B
+                          (Foundation)                      │  (Practitioner)     │ (Research)
+                                                            │                     │
+CRITICAL PATH (serial — each blocks the next):              │                     │
+──────────────────────────────────────────────              │                     │
+                                                            │                     │
+W0 ✅ ─→ G1+Q1 ──→ G2 ──→ G3+Q4 ──→ G4+Q6 ──→ G5 ──→ G6 ─┼→ G7 ──→ G10 ───────┼→ G11 ──→ G12
+Done     ChartCtx  Rules   Unified   Weight    Convrgn Temp │  Narrative Feedback │  Rule     Archetypes
+         tier ord  to data engine    store     layer   prob │  synthesis loop     │  evolution
+                                                            │                     │
+PARALLEL TRACKS (can proceed alongside critical path):      │                     │
+──────────────────────────────────────────────              │                     │
+                                                            │                     │
+After W0:  Q2 ────────── (fix 8 silent handlers)            │                     │
+           Q3 ────────── (verification tags)                │                     │
+           Q5 ────────── (MODULE_REGISTRY.py)               │                     │
+           Q7 ────────── (runtime invariants)               │                     │
+           Q11 ─────────  (DEBUG logging)                   │                     │
+           Q12 ─────────  (evolvability checklists)         │                     │
+                                                            │                     │
+After G1:  Q9 ────────── (benchmark <200ms)                 │                     │
+           Q10 ─────────  (reproducibility snapshot)        │                     │
+                                                            │                     │
+After G4:  Event store SCHEMA ──────────────────────────────┼→ G9 (life events)   │
+                                                            │                     │
+After G3:  Resume BPHS encoding (Ch.26+) ──────────────────→│                     │
+           (encoding now produces verifiable predictions)   │                     │
+                                                            │                     │
+                                                     G13+Q8 ┼── (user/auth/GDPR) │
+                                                         G8 ┼── (20Q)            │
+                                                            │                     │
+
+
+DETAILED VIEW — WHAT EACH ITEM PRODUCES:
+════════════════════════════════════════
+
+CRITICAL PATH:
+
+  G1+Q1: ChartContext with 5-tier ordering
+  ├─ Produces: build_chart_context() → ChartContext dataclass
+  ├─ Contains: house_map, dignities, func_roles, avasthas, ashtakavarga, vargas, shadbala
+  ├─ Tier order enforced: positions → lordships → aspects → dignity → shadbala
+  ├─ Exit: 135 redundant calls → 1 call. All downstream accepts ctx= parameter.
+  └─ Blocks: G2 (rules need ChartContext to evaluate against)
+
+  G2: Migrate R01-R24 to corpus
+  ├─ Produces: 26 new V2 rule records in src/corpus/
+  ├─ Each with: structured conditions, verse citation, predictions[], weight_key
+  ├─ multi_axis_scoring.py evaluate_house_detailed() deleted or becomes thin wrapper
+  ├─ Exit: zero hardcoded rules in Python. All rules are data.
+  └─ Blocks: G3 (unified engine needs all rules in one format)
+
+  G3+Q4: Unified evaluation engine
+  ├─ Produces: evaluate_all_rules(ctx, corpus, weights) → list[EvalResult]
+  ├─ EvalResult: rule_id, house, direction, magnitude, verse, predictions[],
+  │              conditions_met[] (Q4 traceability), confidence
+  ├─ One engine evaluates ALL rules. No parallel paths.
+  ├─ Exit: scoring.py, multi_axis_scoring.py, rule_firing.py, inference.py
+  │        → single evaluate_all_rules() function
+  └─ Blocks: G4 (engine needs weights store to read from)
+
+  G4+Q6: Weight store
+  ├─ Produces: weight_store.py with versioned weight table
+  ├─ Format: {rule_id: {base_weight, empirical_weight, n, ci, contexts{}}}
+  ├─ Three version axes in output: corpus_version, schema_version, weight_version
+  ├─ Initial weights: base_weight from encoding, empirical_weight = base (no data yet)
+  ├─ Exit: _WEIGHTS dict deleted. Engine reads from store.
+  └─ Blocks: G5 (convergence needs weighted rule results)
+
+  G5: Convergence layer
+  ├─ Produces: converge(eval_results, ctx) → list[ConvergedPrediction]
+  ├─ For each prediction: count independent confirmations across:
+  │    natal (D1/D9/D10/D12), temporal (MD/AD/PAD), transit (gochara/double),
+  │    yoga (specific combinations)
+  ├─ Contra-indicators counted separately (not netted against)
+  ├─ Exit: predictions carry convergence_score + confirmation_sources[]
+  └─ Blocks: G6 (temporal layer operates on converged predictions)
+
+  G6: Temporal probability
+  ├─ Produces: time_project(converged, ctx) → list[TimedPrediction]
+  ├─ Overlays: Vimshottari, Chara, Yogini dashas + transits + varshaphala
+  ├─ Output: P(event|year) distribution per prediction, peak_window, timing_confidence
+  ├─ Exit: predictions have timing, not just "during Jupiter dasha"
+  └─ Blocks: G7 (narrative needs timed predictions to sequence into life phases)
+
+  G7: Narrative synthesis (Phase A)
+  ├─ Produces: narrate(timed_predictions) → NarrativeReport
+  ├─ Life phases from dasha sequence, interaction effects across houses,
+  │  absence analysis (dormant houses), overall arc
+  └─ Blocks: G10 (feedback needs predictions to collect feedback against)
+
+  G10: Feedback loop (Phase A/B)
+  ├─ Produces: event store + basic calibration engine
+  ├─ Warm path: append feedback events. Cold path: batch weight recalculation.
+  └─ Blocks: G11, G12 (rule evolution and archetypes need outcome data)
+
+  G11: Rule evolution (Phase B)
+  ├─ Produces: versioned rules with empirical condition additions
+  └─ Blocks: G12 (archetypes use refined rules)
+
+  G12: Chart archetypes (Phase B)
+  └─ Produces: cluster analysis, per-archetype accuracy profiles
+
+
+PARALLEL TRACKS (independent of critical path):
+
+  Q2:  Fix 8 silent handlers → zero. Independent.
+  Q3:  Tag canonical modules with _VERIFICATION. Independent.
+  Q5:  MODULE_REGISTRY.py. Independent (strengthens G1-G3 but doesn't block them).
+  Q7:  Runtime invariants before rule eval. Depends on G1 (needs ChartContext).
+  Q9:  Benchmark. Depends on G1 (measures ChartContext improvement).
+  Q10: Reproducibility snapshot. Depends on G3 (needs unified output format).
+  Q11: DEBUG logging. Independent.
+  Q12: Evolvability checklists. Independent.
+  Q13+Q8: User/auth. Independent of core pipeline. Required before G8, G9.
+  G8:  20Q. Depends on G13 (needs user sessions).
+  G9:  Life events. Depends on G13 + event store schema (from G4).
+```
 
 ```
 PHASE C FOUNDATION:
