@@ -5,7 +5,8 @@ Upapada Lagna (UL) — the Arudha of the 12th house.
 Source: PVRNR Ch.9 p97-104; B.V. Raman "How to Judge a Horoscope".
 
 UL = Count as many signs from the 12th lord as the 12th lord is from the 12th house.
-     Exception: if UL falls in 1st or 7th from AL, shift by 10 signs.
+     Exception: if UL falls in H12 or 7th from H12 (H6), shift by 10 signs.
+     (Standard Jaimini arudha exception: same house or 7th from base house.)
 
 UL signifies: marriage, spouse's quality, the public perception of one's marriage.
 
@@ -66,11 +67,12 @@ def compute_upapada(chart) -> UpapadaAnalysis:
         # UL = count same distance from 12th lord
         ul_si = (lord_si + count - 1) % 12
 
-    # Exception: if UL is 1st or 7th from Lagna, add 10
-    ul_from_lagna = (ul_si - lagna_si) % 12 + 1
-    if ul_from_lagna in {1, 7}:
+    # Jaimini arudha exception: if UL falls on H12 sign or 7th from it (H6),
+    # add 10 signs (0-based: +9). Source: Jaimini Sutras; Sanjay Rath.
+    seventh_from_h12 = (twelfth_si + 6) % 12
+    if ul_si == twelfth_si or ul_si == seventh_from_h12:
         ul_si = (ul_si + 9) % 12
-        ul_from_lagna = (ul_si - lagna_si) % 12 + 1
+    ul_from_lagna = (ul_si - lagna_si) % 12 + 1
 
     ul_lord = hmap.house_lord[(ul_si - lagna_si) % 12]
     ul_lord_house = ph.get(ul_lord, 0)
