@@ -223,9 +223,18 @@ Before implementing any astrological calculation, check this map. If it exists, 
 | **Vimshopak (7-varga Sapta Varga)** | `src/calculations/sapta_varga.py` | app.py (UI) |
 | **Derived house arithmetic** | `src/calculations/derived_house.py` | (all bhavat-bhavam goes here) |
 | **Functional malefics (hardcoded per-lagna table)** | `src/calculations/functional_dignity.py:KNOWN_FUNCTIONAL_MALEFICS` | multi_axis_scoring.py, pressure_engine.py, dominance_engine.py, upaya.py |
+| **Functional classification (canonical BPHS Ch.34)** | `src/calculations/functional_dignity.py:compute_functional_classifications` | functional_roles.py (wraps as FunctionalRoles) |
 | **Functional roles (dynamic computation)** | `src/calculations/functional_roles.py:compute_functional_roles` | multi_axis_scoring.py, pressure_engine.py, yoga_fructification.py |
 | **House map (whole-sign)** | `src/calculations/house_lord.py:compute_house_map` | (many consumers; multi_lagna._build_frame is the multi-lagna variant) |
+| **Naisargika friendship** | `src/calculations/dignity.py:_NAISARGIKA` | panchadha_maitri.py (delegates for naisargika_relation) |
+| **Neecha Bhanga (6 conditions)** | `src/calculations/dignity.py:compute_dignity` | extended_yogas.py (delegates for detect_neecha_bhanga) |
+| **Arudha Pada (generic)** | `src/calculations/argala.py:compute_arudha` | upapada_lagna.py, special_lagnas.py |
 | **Yoga result type** | `src/calculations/extended_yogas.py:YogaResult` | yogas_graha.py, yogas_extended.py, rule_plugin.py, yoga_strength.py |
+| **Gajakesari/Budhaditya/Chandra-Mangala** | `src/calculations/yogas_graha.py` | (canonical graha yoga detections) |
+| **Vesi/Vasi/Ubhayachari/Adhi** | `src/calculations/yogas_extended.py` | (canonical surya/chandra yoga detections) |
+| **Kemadruma/Raj Yoga** | `src/calculations/scoring_patches.py` | (canonical, with full conditions + cancellations) |
+| **Amala/Vasumati/Mahabhagya** | `src/calculations/yoga_strength.py` | (canonical, with strength grading) |
+| **Rashi Drishti (Jaimini)** | `src/calculations/jaimini_rashi_drishti.py` | stronger_of_two.py |
 | **Source text registry** | `src/corpus/source_texts.py` | v2_builder.py |
 | **Rule schema (V2)** | `docs/RULE_CONTRACT_V2.md` | v2_builder.py enforces |
 
