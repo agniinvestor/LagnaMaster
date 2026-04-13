@@ -483,23 +483,29 @@ _SIGNS = list(SIGN_NAMES)
 
 
 def _make_frame_funcs(frame_lagna_si: int, chart, school: str):
-    """Return is_func_benefic / is_func_malefic for any frame."""
-    from src.calculations.functional_roles import compute_functional_roles
-    from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
+    """Return is_func_benefic / is_func_malefic for any frame.
 
-    import types
-    fake = types.SimpleNamespace(
-        lagna_sign_index=frame_lagna_si,
-        lagna_sign=_SIGNS[frame_lagna_si],
-        planets=chart.planets,
+    Uses KNOWN_FUNCTIONAL_MALEFICS (BPHS Ch.34 verse-verified table) as the
+    canonical source for both benefic and malefic classification. This ensures
+    consistency — the same data drives both checks.
+    """
+    from src.calculations.functional_dignity import (
+        KNOWN_FUNCTIONAL_MALEFICS,
+        KNOWN_YOGAKARAKAS,
     )
-    roles = compute_functional_roles(fake)
-    malefic_list = KNOWN_FUNCTIONAL_MALEFICS.get(frame_lagna_si, [])
+
+    malefic_set = set(KNOWN_FUNCTIONAL_MALEFICS.get(frame_lagna_si, []))
+    yogakaraka_list = KNOWN_YOGAKARAKAS.get(frame_lagna_si, [])
+
+    def is_func_benefic(planet: str) -> bool:
+        if planet in yogakaraka_list:
+            return True
+        return planet not in malefic_set and planet not in ("Rahu", "Ketu")
 
     def is_func_malefic(planet: str) -> bool:
-        return planet in malefic_list
+        return planet in malefic_set
 
-    return roles.is_functional_benefic, is_func_malefic
+    return is_func_benefic, is_func_malefic
 
 
 def _prepare_frame_context(chart, frame_lagna_si: int, school: str):
