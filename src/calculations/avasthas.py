@@ -14,6 +14,7 @@ Ch.11 references Baaladi + Jagradadi for house evaluation:
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 from enum import Enum
 
@@ -172,7 +173,7 @@ def compute_lajjitadi(planet: str, chart) -> LajjitadiAvastha | None:
 
     # Mudita: friendly sign + benefic conjunction/aspect or conjunct Jupiter
     if rel == "Friend" or lord == planet:
-        benefics = {"Jupiter", "Venus", "Mercury", "Moon"}
+        benefics = NATURAL_BENEFICS
         if any(p in benefics for p in cotenants) or "Jupiter" in cotenants:
             return LajjitadiAvastha.MUDITA
 
@@ -185,14 +186,14 @@ def compute_lajjitadi(planet: str, chart) -> LajjitadiAvastha | None:
     # Trushita: watery sign + enemy aspect, no benefic
     watery_signs = {3, 7, 11}  # Cancer, Scorpio, Pisces
     if si in watery_signs:
-        benefics = {"Jupiter", "Venus", "Mercury", "Moon"}
+        benefics = NATURAL_BENEFICS
         has_benefic = any(p in benefics for p in cotenants)
         if not has_benefic:
             return LajjitadiAvastha.TRUSHITA
 
     # Kshobhita: conjunct Sun + malefic aspect/conjunction
     if "Sun" in cotenants:
-        malefics = {"Mars", "Saturn", "Rahu", "Ketu"}
+        malefics = NATURAL_MALEFICS
         if any(p in malefics for p in cotenants):
             return LajjitadiAvastha.KSHOBHITA
 

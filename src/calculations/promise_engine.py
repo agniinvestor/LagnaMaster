@@ -70,8 +70,9 @@ def compute_house_promise(chart, house: int) -> PromiseLevel:
 
     # Benefics/malefics in the house
     in_house = [p for p, h in ph.items() if h == house]
-    bens = [p for p in in_house if p in {"Jupiter", "Venus", "Mercury", "Moon"}]
-    mals = [p for p in in_house if p in {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}]
+    from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+    bens = [p for p in in_house if p in NATURAL_BENEFICS]
+    mals = [p for p in in_house if p in NATURAL_MALEFICS]
     if bens:
         key_factors.append(f"Benefics in house: {bens}")
     if mals:

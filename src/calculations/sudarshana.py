@@ -12,6 +12,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 from typing import Optional
 
@@ -61,8 +62,8 @@ def _build_wheel(reference_si: int, reference: str) -> SudarshanWheel:
 
 def _house_quality(sign: int, planets_in_signs: dict[int, list[str]]) -> str:
     """Simple quality: 'strong' if benefic planet present, else 'neutral'."""
-    benefics = {"Jupiter", "Venus", "Moon", "Mercury"}
-    malefics = {"Saturn", "Mars", "Sun", "Rahu", "Ketu"}
+    benefics = NATURAL_BENEFICS
+    malefics = NATURAL_MALEFICS
     planets = planets_in_signs.get(sign, [])
     if any(p in benefics for p in planets):
         return "benefic"

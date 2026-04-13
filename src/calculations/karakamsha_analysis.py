@@ -13,7 +13,7 @@ Sources:
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_NAMES
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_NAMES
 from dataclasses import dataclass
 
 # ─── Ishta Devata (Chosen Deity) from Karakamsha ─────────────────────────────
@@ -167,8 +167,8 @@ def compute_upapada_analysis(chart, upapada_sign: int) -> UpakadaResult:
     ]
 
     # Spouse quality from planets
-    benefics = {"Jupiter", "Venus", "Moon", "Mercury"}
-    malefics = {"Saturn", "Mars", "Sun", "Rahu", "Ketu"}
+    benefics = NATURAL_BENEFICS
+    malefics = NATURAL_MALEFICS
 
     benefic_influence = [p for p in (in_upapada + aspecting) if p in benefics]
     malefic_influence = [p for p in (in_upapada + aspecting) if p in malefics]

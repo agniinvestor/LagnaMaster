@@ -19,11 +19,11 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, SEVEN_PLANETS
+from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS
 from dataclasses import dataclass
+_NAT_BENEF = NATURAL_BENEFICS
+_NAT_MALEF = NATURAL_MALEFICS
 
-_NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-_NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 
 
 @dataclass

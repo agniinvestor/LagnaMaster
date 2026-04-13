@@ -13,6 +13,7 @@ Sources:
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
 from typing import Optional
 
@@ -166,8 +167,8 @@ def detect_amala_yoga(chart) -> Optional[NamedYogaResult]:
     h10_from_lagna = (lagna_si + 9) % 12
     h10_from_moon = (moon_si + 9) % 12
 
-    natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    natural_benefics = NATURAL_BENEFICS
+    natural_malefics = NATURAL_MALEFICS
 
     planets_h10_lagna = [
         p for p, pd in chart.planets.items() if pd.sign_index == h10_from_lagna

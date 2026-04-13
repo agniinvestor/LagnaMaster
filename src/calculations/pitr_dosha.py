@@ -19,9 +19,10 @@ Severity: Strong / Moderate / Mild / Not present
 """
 
 from __future__ import annotations
+from src.data.constants import NATURAL_MALEFICS
 from dataclasses import dataclass
+_NAT_MALEF = NATURAL_MALEFICS
 
-_NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 _DISCLAIMER = (
     "Pitr Dosha is a modern practitioner convention, not defined "
     "in classical texts (BPHS, Parashara). Included as a practitioner-"

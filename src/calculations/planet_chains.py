@@ -18,11 +18,11 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SEVEN_PLANETS, SIGN_LORDS, SIGN_NAMES
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS, SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass
+_NAT_BENEF = NATURAL_BENEFICS
+_NAT_MALEF = NATURAL_MALEFICS
 
-_NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 @dataclass

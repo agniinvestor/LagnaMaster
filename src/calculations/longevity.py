@@ -220,9 +220,9 @@ def detect_balarishta(chart) -> list[str]:
     if lagnesh_h in {6, 8, 12}:
         results.append(f"Lagnesh in H{lagnesh_h} — weakened vitality")
 
-    _NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-    h1_malefics = [p for p in _NAT_MALEFIC if hmap.planet_house.get(p) == 1]
-    h8_malefics = [p for p in _NAT_MALEFIC if hmap.planet_house.get(p) == 8]
+    from src.data.constants import NATURAL_MALEFICS
+    h1_malefics = [p for p in NATURAL_MALEFICS if hmap.planet_house.get(p) == 1]
+    h8_malefics = [p for p in NATURAL_MALEFICS if hmap.planet_house.get(p) == 8]
     if h1_malefics and h8_malefics:
         results.append(
             f"Malefics in H1 ({h1_malefics}) and H8 ({h8_malefics}) — Arishta"

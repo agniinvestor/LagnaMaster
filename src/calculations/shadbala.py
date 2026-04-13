@@ -21,7 +21,7 @@ from dataclasses import dataclass  # noqa: F401
 from math import sqrt  # noqa: F401
 from datetime import datetime  # noqa: F401
 from typing import Optional  # noqa: F401
-from src.data.constants import DIG_BALA_PEAK, NAISARGIKA_BALA
+from src.data.constants import DIG_BALA_PEAK, NAISARGIKA_BALA, NATURAL_MALEFICS
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.27 v.1-38", "session": "S317"}
 
@@ -322,7 +322,7 @@ def compute_kala_bala(
             elongation / 180.0 if elongation <= 180 else (360 - elongation) / 180.0
         )
         # Benefics strong in waxing (Shukla), malefics in waning (Krishna)
-        malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+        malefics = NATURAL_MALEFICS
         if planet in malefics:
             paksha_frac = 1.0 - paksha_frac
         components["paksha"] = round(60.0 * paksha_frac, 3)
