@@ -812,3 +812,80 @@ def get_dignity_with_war_override(planet: str, chart):
     if planet in war_losers:
         return "GRAHA_YUDDHA_DEBIL"  # treat as effectively debilitated
     return None  # no override
+
+
+# ── Chart-conditional natural benefic/malefic (BPHS Ch.3 v.11) ──────────────
+
+
+def _is_moon_waning(chart) -> bool:
+    """Check if Moon is waning (Krishna Paksha — elongation from Sun > 180°)."""
+    moon = chart.planets.get("Moon")
+    sun = chart.planets.get("Sun")
+    if moon and sun:
+        return (moon.longitude - sun.longitude) % 360 > 180
+    return False
+
+
+def is_natural_malefic(planet: str, chart=None) -> bool:
+    """BPHS Ch.3 v.11 (p.27-28): conditional benefic/malefic for Moon and Mercury.
+
+    Moon: malefic if waning (Krishna Paksha). BUT: "Should the Moon be conjunct
+      a benefic or aspected by a benefic, she turns a benefic, even if waning."
+    Mercury: malefic if conjunct a malefic. BUT: "If waning Moon and Mercury
+      are together, both are benefics" (mutual rescue — p.28).
+    Others: static classification.
+
+    When chart is None, falls back to static classification (Moon/Mercury = benefic).
+    """
+    if planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu"):
+        return True
+    if planet in ("Jupiter", "Venus"):
+        return False
+
+    if chart is None:
+        return False  # default benefic for Moon/Mercury without chart
+
+    if planet == "Moon":
+        if not _is_moon_waning(chart):
+            return False  # waxing = benefic
+        # Waning Moon: check if conjunct a benefic (turns benefic per p.27)
+        moon = chart.planets.get("Moon")
+        if moon:
+            default_benefics = {"Mercury", "Jupiter", "Venus"}
+            for p, pos in chart.planets.items():
+                if p != "Moon" and p in default_benefics and pos.sign_index == moon.sign_index:
+                    return False  # waning Moon rescued by benefic conjunction
+        return True  # waning, no benefic rescue
+
+    if planet == "Mercury":
+        merc = chart.planets.get("Mercury")
+        if not merc:
+            return False
+        closest_planet = None
+        closest_dist = 999.0
+        for p, pos in chart.planets.items():
+            if p == "Mercury" or pos.sign_index != merc.sign_index:
+                continue
+            if p == "Moon":
+                continue  # mutual rescue — Moon never contaminates Mercury
+            dist = abs(merc.longitude - pos.longitude)
+            if dist > 180:
+                dist = 360 - dist
+            if dist < closest_dist:
+                closest_dist = dist
+                closest_planet = p
+        if closest_planet is None:
+            return False  # no conjunction → default benefic
+        war_losers = getattr(chart, "planetary_war_losers", set())
+        if closest_planet in war_losers and "Mercury" not in war_losers:
+            return False
+        if "Mercury" in war_losers and closest_planet not in war_losers:
+            return closest_planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
+        return closest_planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
+
+    return False
+
+
+def is_natural_benefic(planet: str, chart=None) -> bool:
+    """Inverse of is_natural_malefic. BPHS Ch.3 v.11."""
+    return not is_natural_malefic(planet, chart)

@@ -24,7 +24,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
-from src.data.constants import DIG_BALA_PEAK, DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, SIGN_NAMES, STHIRA_KARAKA, TRIKONA_HOUSES
+from src.data.constants import DIG_BALA_PEAK, DUSTHANA_HOUSES, KENDRA_HOUSES, SIGN_LORDS, SIGN_NAMES, STHIRA_KARAKA, TRIKONA_HOUSES
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -140,16 +140,19 @@ def _aspects(planet: str, p_house: int, t_house: int) -> bool:
     return diff in _SPECIAL.get(planet, set())
 
 
-def _kartari(house_si: int, sign_planets: dict) -> tuple[bool, bool]:
+def _kartari(house_si: int, sign_planets: dict, chart=None) -> tuple[bool, bool]:
+    """Shubha/Paapa Kartari. Uses chart-conditional BPHS Ch.3 v.11 classification
+    when chart is provided (waning Moon = malefic, combust Mercury = malefic)."""
+    from src.calculations.dignity import is_natural_benefic, is_natural_malefic
     prev_si = (house_si - 1) % 12
     next_si = (house_si + 1) % 12
     prev_pl = sign_planets.get(prev_si, [])
     next_pl = sign_planets.get(next_si, [])
-    shubh = any(p in NATURAL_BENEFICS for p in prev_pl) and any(
-        p in NATURAL_BENEFICS for p in next_pl
+    shubh = any(is_natural_benefic(p, chart) for p in prev_pl) and any(
+        is_natural_benefic(p, chart) for p in next_pl
     )
-    paap = any(p in NATURAL_MALEFICS for p in prev_pl) and any(
-        p in NATURAL_MALEFICS for p in next_pl
+    paap = any(is_natural_malefic(p, chart) for p in prev_pl) and any(
+        is_natural_malefic(p, chart) for p in next_pl
     )
     return shubh, paap
 
@@ -220,7 +223,7 @@ def evaluate_house_detailed(
         bh_rx = chart.planets[bhavesh].is_retrograde
 
     bh_war_loser = bhavesh in getattr(chart, "planetary_war_losers", set())
-    shubh_k, paap_k = _kartari(house_si, sign_pl)
+    shubh_k, paap_k = _kartari(house_si, sign_pl, chart)
 
     # Aspect helpers
     fb_aspects_house = [
