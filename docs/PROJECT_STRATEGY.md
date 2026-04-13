@@ -295,101 +295,40 @@ The older 3-layer convergence model (ARCHITECTURE.md + PREDICTION_PIPELINE.md) a
 
 ### 3.1 The Critical Path
 
+> **SUPERSEDED:** The W0/W1/W2/W3 work item model was replaced on 2026-04-13 by the
+> full architecture redesign in `docs/ARCHITECTURE_CURRENT_VS_TARGET.md`.
+> That document is the golden source for all work planning.
+
+**W0 is DONE** (45 commits, 66 files, 1,096 net lines removed). All computational
+primitives unified. All duplication resolved. Three divergences between rule_firing
+and scoring engine fixed (natural malefic, dignity, functional classification).
+
+**The new critical path** (from ARCHITECTURE_CURRENT_VS_TARGET.md):
+
 ```
-Consolidate engines  ──→  Wire corpus → scoring  ──→  Validate with OB-3  ──→  Encode
-       (W0)                      (W1)                       (W2)                (W3+)
+G1 → G2 → G3 → G4 → G5 → G6 → Resume encoding
+ChartCtx  Rules   Unified  Weight  Convergence  Temporal
+          to data engine   store   layer        probability
 ```
 
-**Everything below is ordered by this dependency chain.** Items that don't block the critical path are marked with their urgency.
+Encoding resumes after G6 — when the e2e pipeline produces verse-cited predictions
+with convergence confirmation, timing, and traceability. Not before.
 
-### 3.2 Work Items (dependency-ordered)
+See `docs/ARCHITECTURE_CURRENT_VS_TARGET.md` for:
+- Full 8-layer target architecture
+- 13 structural gaps + 14 engineering quality criteria
+- Dependency Gantt chart with critical path and parallel tracks
+- Detailed exit criteria per item
 
-#### CRITICAL PATH (blocks all encoding ROI)
-
-| # | Item | Why it matters | Depends on | Unblocks | Effort | Status |
-|---|------|---------------|-----------|----------|--------|--------|
-| W0 | **Consolidate engines + unify computational primitives** | 112/112 modules audited. ~1,100 net lines removed, 64 files, 39 commits. All duplication resolved. 3 bugs fixed (ayurdaya formulas, chandrabala H5, upapada exception). 3 computational divergences unified (natural malefic → dignity.is_natural_malefic, dignity → dignity.compute_dignity, functional roles → KNOWN_FUNCTIONAL_MALEFICS table). Overlap analysis: corpus+hardcoded rules are complementary, not conflicting (12/26 hardcoded rules have zero corpus equivalent). Canonical Source Map in CLAUDE.md. | None | W1 | — | **DONE** |
-| W1 | **Wire inference.py output into scoring_v3.py** | Without this, 654 V2 rules are inert data. The corpus→engine chain exists (Links 1-2) but terminates before scoring. This is the single highest-leverage fix. | W0 | W2, W3, all encoding | 1-2 sessions | NOT STARTED |
-| W2 | **Run OB-3 with corpus-aware scoring, compare to baseline** | Measures whether 654 rules improve ρ over 22 hardcoded rules. If ρ improves, the architecture works. If not, the rules are wrong. | W1 | W3 (go/no-go) | 1 session | NOT STARTED |
-| W3 | **Resume BPHS encoding (Ch.26+)** | Only productive AFTER W1+W2 confirm corpus rules improve scores | W2 (positive result) | Corpus growth | Ongoing | BLOCKED |
-
-#### HIGH PRIORITY (non-blocking but high value)
-
-| # | Item | Why it matters | Depends on | Effort | Status |
-|---|------|---------------|-----------|--------|--------|
-| W4 | Fix 24 condition_modifier_audit flags | Medium-confidence flags in existing V2 rules — potential encoding errors | None | 1 session | NOT STARTED |
-| W5 | Fix 9 Shadbala gaps (Saptavargaja, Chesta, Ayana first) | Shadbala feeds dignity + strength, which feeds scoring. Wrong Shadbala = wrong scores | None | 2-3 sessions | NOT STARTED |
-| W6 | Wire promise_engine into scoring_v3 | Promise/Capacity/Delivery (Layer II) is built but unwired. Wiring it adds structural convergence | W1 | 1 session | NOT STARTED |
-| W7 | Re-encode 5 L2 rules to L3 | 5 Saravali rules with quality gaps (no commentary, non-canonical signal groups) | None | <1 session | NOT STARTED |
-
-#### MEDIUM PRIORITY (quality improvements)
-
-| # | Item | Why it matters | Depends on | Effort | Status |
-|---|------|---------------|-----------|--------|--------|
-| W8 | Tag remaining 104 modules with `_VERIFICATION` | Quality audit trail, non-blocking | None | 2-3 sessions | 8% done |
-| W9 | Fix remaining 8 silent exception handlers | Down from 143, diminishing returns | None | <1 session | 94% done |
-| W10 | Reduce 45 TODO/FIXME markers in src/ | Code hygiene | None | 1-2 sessions | NOT STARTED |
-| W11 | Consolidate root MEMORY.md into docs/MEMORY.md | Root version is stale (S160 era). Merge unique content, delete or redirect root | None | <1 session | NOT STARTED |
-| W12 | Consolidate root CHANGELOG.md into docs/CHANGELOG.md | Same issue as W11 | None | <1 session | NOT STARTED |
-
-#### LOW PRIORITY / PHASE A-B (defer)
-
-| # | Item | Why it matters | Depends on | Effort | Status |
-|---|------|---------------|-----------|--------|--------|
-| W13 | Build concordance into scoring | L4 concordance is computed in rule_firing but unused. Needs multiple texts encoding same verses | W3 (enough cross-text rules) | 2+ sessions | NOT STARTED |
-| W14 | Enforce guardrails G05-G15 in code | Consumer safety — but no consumers exist yet | Phase A | 3-5 sessions | NOT STARTED |
-| W15 | Build Layer III (empirical feedback) | Bayesian posteriors, outcome tracking | Phase B | 10+ sessions | NOT STARTED |
-| W16 | 20Q personality verification (Build L2) | User verification protocol | Phase A | 5+ sessions | NOT STARTED |
-| W17 | Birth time sensitivity model (Build L1) | Monte Carlo confidence intervals | Phase A | 3+ sessions | NOT STARTED |
-
-### 3.3 STOP List (explicitly do NOT do)
+### 3.2 STOP List
 
 | Item | Why NOT |
 |------|---------|
-| Wire corpus before consolidation (W1 before W0) | **BLOCKER REMOVED** (W0 complete). All duplication clusters resolved. W1 is unblocked. |
-| Encode more BPHS chapters before W0+W1+W2 | Rules are inert until the corpus→scoring bridge is wired. Encoding without wiring adds to a library no one reads. |
-| Re-encode 6,807 L1 rules to L3 | Same reason — and the volume (6,807 rules) makes this a multi-month effort that produces zero value until W1 |
-| Build guardrail enforcement (G05-G15) | These gate consumer-facing features. No consumers exist. Effort is premature |
-| Build convergence Layer III (Bayesian) | Phase B concern (S1400+). No outcome data to calibrate against |
-| Write more governance documents | 126 .md files exist. The problem is connection, not documentation |
-| Update ROADMAP.md with new session numbers | PROJECT_STRATEGY.md replaces session-numbered roadmaps. Work items here are sequenced by dependency, not session number |
-| Build 20Q, birth-time sensitivity, or chart clusters | Phase A/B concerns. Foundation must work first |
-| Refactor ARCHITECTURE.md or PREDICTION_PIPELINE.md | This document supersedes both. They remain for historical reference |
-
-### 3.4 Dependency DAG (visual)
-
-```
-               ┌──────────┐
-               │W0: Consol│
-               │idate     │
-               │engines   │
-               └────┬─────┘
-                    │
-               ┌────▼─────┐
-               │ W1: Wire │
-               │ corpus   │
-               │ →scoring │
-               └────┬─────┘
-                    │
-               ┌────▼─────┐
-               │ W2: OB-3 │
-               │ validate │
-               └────┬─────┘
-                    │
-         ┌──────────┼──────────┐
-         │          │          │
-    ┌────▼───┐ ┌───▼────┐ ┌──▼───┐
-    │W3: BPHS│ │W6: Wire│ │W13:  │
-    │encoding│ │promise │ │concor│
-    │Ch.26+  │ │engine  │ │dance │
-    └────────┘ └────────┘ └──────┘
-
-Independent (can start now, parallel with W0):
-  W4: Fix 24 audit flags
-  W5: Fix Shadbala gaps
-  W7: Fix 5 L2→L3 rules
-  W8-W12: Quality improvements
-```
+| Encode BPHS chapters before G6 complete | Pipeline must produce verifiable predictions (convergence + timing + verse trace) before encoding resumes. "Does it fire?" is not validation. |
+| Tactical wire (inference→scoring) without ChartContext | Adds another parallel result to a flat dispatcher. Doesn't fix 135× recomputation or two-engine split. |
+| Build Phase A features before Phase C pipeline | No user concept, no predictions to show. Foundation must produce predictions first. |
+| Build Phase B calibration before Phase A feedback | No outcome data to calibrate against without user feedback. |
+| Write more governance/planning documents | ARCHITECTURE_CURRENT_VS_TARGET.md is the golden source. Don't fragment it. |
 
 ---
 
