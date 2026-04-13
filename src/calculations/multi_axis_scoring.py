@@ -127,11 +127,17 @@ def _d10_sign(longitude: float) -> int:
 
 
 def _aspects(planet: str, p_house: int, t_house: int) -> bool:
+    """Binary aspect check: does planet in p_house aspect t_house?
+
+    Uses the simple Parashari model: 7th for all, plus Mars 4th/8th,
+    Jupiter 5th/9th, Saturn 3rd/10th (BPHS Ch.26 v.5).
+    For graded aspect strength, use sputa_drishti.get_aspect_strength().
+    """
     diff = (t_house - p_house) % 12
-    if diff == 6:
+    if diff == 6:  # 7th house (0-indexed)
         return True
-    extras = {"Mars": {3, 7}, "Jupiter": {4, 8}, "Saturn": {2, 9}}  # BPHS Ch.26 v.5
-    return diff in extras.get(planet, set())
+    _SPECIAL = {"Mars": {3, 7}, "Jupiter": {4, 8}, "Saturn": {2, 9}}
+    return diff in _SPECIAL.get(planet, set())
 
 
 def _kartari(house_si: int, sign_planets: dict) -> tuple[bool, bool]:
