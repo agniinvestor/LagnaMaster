@@ -15,7 +15,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import DEBILITATION_SIGN, DUSTHANA_HOUSES, EXALTATION_SIGN, NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS, SIGN_LORDS
+from src.data.constants import DUSTHANA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS
 from dataclasses import dataclass
 from datetime import date
 
@@ -226,64 +226,36 @@ def detect_viparita_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
 
 
 def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
+    """Detect Neecha Bhanga for all 7 planets. Delegates to dignity.py (6 conditions)."""
     if on_date is None:
         on_date = date.today()
-    from src.calculations.house_lord import compute_house_map, is_kendra
+    from src.calculations.dignity import DignityLevel, compute_all_dignities
 
-    hmap = compute_house_map(chart)
+    dignities = compute_all_dignities(chart)
     results = []
-    planets_7 = list(SEVEN_PLANETS)
 
-    for p in planets_7:
-        pos = chart.planets.get(p)
-        if not pos:
+    for p in SEVEN_PLANETS:
+        dig = dignities.get(p)
+        if not dig:
             continue
-        debil_si = DEBILITATION_SIGN.get(p)
-        if pos.sign_index != debil_si:
-            results.append(
-                YogaResult(
-                    name=f"NB: {p}",
-                    yoga_type="NeechaBhanga",
-                    planets=[p],
-                    present=False,
-                    score=0.0,
-                    dasha_weight=0.5,
-                    weighted_score=0.0,
-                    description=f"{p} not debilitated",
-                    source="BPHS Ch.30",
-                )
-            )
-            continue
-        # Check 3 cancellation conditions
-        dispositor = SIGN_LORDS[debil_si]
-        disp_house = hmap.planet_house.get(dispositor, 0)
-        exalt_lord = SIGN_LORDS[EXALTATION_SIGN.get(p, debil_si)]
-        exalt_lord_house = hmap.planet_house.get(exalt_lord, 0)
-        from src.calculations.panchanga import compute_navamsha_chart
-
-        d9_map = compute_navamsha_chart(chart)
-        p_d9_si = d9_map.get(p, -1)
-        exalt_in_d9 = p_d9_si == EXALTATION_SIGN.get(p, -1)
-
-        cond1 = is_kendra(disp_house)
-        cond2 = is_kendra(exalt_lord_house)
-        cond3 = exalt_in_d9
-        present = cond1 or cond2 or cond3
+        is_debil = dig.dignity == DignityLevel.DEBIL
+        nb = dig.neecha_bhanga if is_debil else False
+        nb_count = dig.neecha_bhanga_count if is_debil else 0
         dw = 1.0 if _is_dasha_active(p, dashas, on_date) else 0.5
-        score = 3.0 if present else 0.0
+        score = min(3.0, nb_count * 1.0) if nb else 0.0
         results.append(
             YogaResult(
                 name=f"NB: {p}",
                 yoga_type="NeechaBhanga",
                 planets=[p],
-                present=present,  # noqa: F841
+                present=nb,
                 score=score,
                 dasha_weight=dw,
                 weighted_score=round(score * dw, 2),
                 description=(
-                    f"Neecha Bhanga: cond1={cond1} cond2={cond2} d9={cond3}"
-                    if present
-                    else f"{p} debilitated, no cancellation"
+                    f"Neecha Bhanga: {nb_count}/6 conditions met"
+                    if nb
+                    else f"{p} {'debilitated, no cancellation' if is_debil else 'not debilitated'}"
                 ),
                 source="BPHS Ch.30; Uttara Kalamrita Ch.4",
             )

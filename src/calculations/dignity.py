@@ -741,21 +741,8 @@ def _friendship_dignity(planet: str, sign_index: int, chart) -> DignityLevel:
 
 
 def _get_sign_lord(sign_index: int) -> Optional[str]:
-    LORDS = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    return LORDS.get(sign_index)
+    from src.data.constants import SIGN_LORDS
+    return SIGN_LORDS.get(sign_index)
 
 
 def get_uchcha_bala(planet: str, longitude: float) -> float:

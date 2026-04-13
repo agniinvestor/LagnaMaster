@@ -24,31 +24,6 @@ Scoring weights (CALC_PanchadhaMaitri §4):
 from __future__ import annotations
 from dataclasses import dataclass
 
-_NAT_FRIEND_DICT = {
-    "Sun": {"Moon", "Mars", "Jupiter"},
-    "Moon": {"Sun", "Mercury"},
-    "Mars": {"Sun", "Moon", "Jupiter"},
-    "Mercury": {"Sun", "Venus"},
-    "Jupiter": {"Sun", "Moon", "Mars"},
-    "Venus": {"Mercury", "Saturn"},
-    "Saturn": {"Mercury", "Venus"},
-    # BPHS Ch.3 notes (p.41, Santhanam Vol 1)
-    "Rahu": {"Jupiter", "Venus", "Saturn"},
-    "Ketu": {"Mars", "Venus", "Saturn"},
-}
-_NAT_ENEMY_DICT = {
-    "Sun": {"Venus", "Saturn"},
-    "Moon": set(),
-    "Mars": {"Mercury"},
-    "Mercury": {"Moon"},
-    "Jupiter": {"Mercury", "Venus"},
-    "Venus": {"Sun", "Moon"},
-    "Saturn": {"Sun", "Moon", "Mars"},
-    # BPHS Ch.3 notes (p.41, Santhanam Vol 1)
-    "Rahu": {"Sun", "Moon", "Mars"},
-    "Ketu": {"Sun", "Moon"},
-}
-
 _TATKALIK_FRIEND_HOUSES = {2, 3, 4, 10, 11, 12}  # from P1's house
 
 _PANCHADHA_WEIGHTS = {
@@ -61,12 +36,12 @@ _PANCHADHA_WEIGHTS = {
 
 
 def naisargika_relation(p1: str, p2: str) -> str:
-    """Return 'Friend', 'Neutral', or 'Enemy' (permanent Naisargika)."""
-    if p2 in _NAT_FRIEND_DICT.get(p1, set()):
-        return "Friend"
-    if p2 in _NAT_ENEMY_DICT.get(p1, set()):
-        return "Enemy"
-    return "Neutral"
+    """Return 'Friend', 'Neutral', or 'Enemy' (permanent Naisargika).
+
+    Delegates to dignity._NAISARGIKA — the canonical friendship table.
+    """
+    from src.calculations.dignity import _NAISARGIKA
+    return _NAISARGIKA.get((p1, p2), "Neutral")
 
 
 def tatkalik_relation(p1: str, p2: str, chart) -> str:

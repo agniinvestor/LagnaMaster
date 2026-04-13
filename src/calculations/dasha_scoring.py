@@ -34,21 +34,8 @@ class DashaScoreModifier:
 
 
 def _sign_lord(sign_index: int) -> str:
-    _SL = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    return _SL.get(sign_index % 12, "Jupiter")
+    from src.data.constants import SIGN_LORDS
+    return SIGN_LORDS.get(sign_index % 12, "Jupiter")
 
 
 def _house_lord(house: int, lagna_si: int) -> str:
@@ -57,26 +44,7 @@ def _house_lord(house: int, lagna_si: int) -> str:
 
 def _house_from_lord(planet: str, lagna_si: int) -> list[int]:
     """Houses ruled by a planet given Lagna."""
-    result = []
-    _SL = {
-        0: "Mars",
-        1: "Venus",
-        2: "Mercury",
-        3: "Moon",
-        4: "Sun",
-        5: "Mercury",
-        6: "Venus",
-        7: "Mars",
-        8: "Jupiter",
-        9: "Saturn",
-        10: "Saturn",
-        11: "Jupiter",
-    }
-    for h in range(1, 13):
-        si = (lagna_si + h - 1) % 12
-        if _SL.get(si) == planet:
-            result.append(h)
-    return result
+    return [h for h in range(1, 13) if _sign_lord((lagna_si + h - 1) % 12) == planet]
 
 
 def _houses_6_8_12_from_house(house: int) -> set[int]:
