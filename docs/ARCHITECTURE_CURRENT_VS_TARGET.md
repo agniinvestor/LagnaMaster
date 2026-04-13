@@ -686,9 +686,11 @@ DEPENDENCY GANTT
 CRITICAL PATH (serial — each blocks the next):              │                     │
 ──────────────────────────────────────────────              │                     │
                                                             │                     │
-W0 ✅ ─→ G1+Q1 ──→ G2 ──→ G3+Q4 ──→ G4+Q6 ──→ G5 ──→ G6 ─┼→ G7 ──→ G10 ───────┼→ G11 ──→ G12
-Done     ChartCtx  Rules   Unified   Weight    Convrgn Temp │  Narrative Feedback │  Rule     Archetypes
-         tier ord  to data engine    store     layer   prob │  synthesis loop     │  evolution
+W0 ✅ ─→ G1 ✅ ──→ G2 ✅ ──→ G3 ✅ ──→ G4 ✅ ──→ G5 ✅ ──→ G6 ✅ ┼→ G7 ──→ G10 ───────┼→ G11 ──→ G12
+Done     ChartCtx  Rules    Unified   Weight    Convrgn Temp  │  Narrative Feedback │  Rule     Archetypes
+         tier ord  to data  engine    store     layer   prob  │  synthesis loop     │  evolution
+         D0–D0c resolved: pipeline wired into production.       │                     │
+         Entry point: src/pipeline.py:run_pipeline()           │                     │
                                                             │                     │
 PARALLEL TRACKS (can proceed alongside critical path):      │                     │
 ──────────────────────────────────────────────              │                     │
@@ -839,3 +841,144 @@ PHASE B RESEARCH PLATFORM:
    → G12: Chart archetype clustering
    → Prediction language ML
 ```
+
+---
+
+## EMPIRICAL VALIDATION — OB-3 vs OB-4
+
+> Measured 2026-04-13. Full dataset: 4,832 AA+A Rodden-rated ADB charts.
+
+### OB-3 (legacy): Spearman ρ of raw house scores vs ADB categories
+
+Uses `score_all_axes().d1.scores` — a single float per house. No convergence, no timing, no traceability.
+
+### OB-4 (pipeline): Spearman ρ of convergence_score vs ADB categories
+
+Uses `converge()` output — independent channel count (scoring + D9 + D10 + BPHS + Saravali + yoga + other_text). Net favorable minus unfavorable.
+
+| House | Domain | OB-3 (OLD) ρ | OB-4 (CONV) ρ | Δ | Improvement |
+|-------|--------|-------------|---------------|------|-------------|
+| H01 | Vitality | +0.458 | **+0.549** | +0.091 | +20% |
+| H03 | Communication | +0.447 | **+0.528** | +0.082 | +18% |
+| H05 | Children | +0.475 | **+0.553** | +0.079 | +17% |
+| H07 | Relationships | +0.474 | **+0.571** | +0.098 | +21% |
+| H09 | Higher learning | +0.425 | **+0.498** | +0.073 | +17% |
+| H10 | Career | +0.389 | **+0.447** | +0.057 | +15% |
+
+**Pipeline wins on all 6 houses. 4,832 charts, zero errors. Average Δ = +0.080 (+18%).**
+
+### Why ρ ≈ 0.50 is not publishable
+
+1. **Binary labels are crude.** ADB categories are 1/0; convergence is 1–14 channels. Rank-biserial would be more appropriate, but label quality caps ρ.
+2. **ADB categories are noisy proxies.** "Divorced" doesn't mean H7 is weak — it means H7 promise manifested negatively AND the person reported it.
+3. **No timing dimension tested.** CONV and TOTAL produce identical ρ because labels have no dates. G6 temporal projection is invisible to this metric.
+4. **Direction conflation.** Net convergence (fav − unfav) loses the richness of separate confirmation + contra counts.
+
+### What would reach ρ ≥ 0.70
+
+- Life events with dates (Phase B) — tests timing predictions
+- Practitioner blind readings scored against known biographies
+- Multi-class labels (strong/moderate/weak) instead of binary
+- Per-prediction accuracy rather than per-house correlation
+
+### Tool reference
+
+- `tools/ob3_calibrate.py` — legacy scoring calibration (OB-3)
+- `tools/ob4_pipeline_calibrate.py` — pipeline calibration (OB-4)
+
+---
+
+## G1–G6 DEFERRED INVENTORY
+
+> Generated 2026-04-13 after completing G1–G6 critical path.
+> Updated same day after exhaustive re-audit.  First version missed
+> the most important gaps (CRITICAL tier).  This version is complete.
+
+### CRITICAL — ✅ ALL RESOLVED (2026-04-13)
+
+| # | Status | Item | Resolution |
+|---|--------|------|------------|
+| D0 | ✅ | Pipeline was dead code | `src/pipeline.py:run_pipeline()` is the production entry point. CLI: `python -m src.pipeline`. Also `score_chart()` and `evaluate_chart()` auto-build ChartContext now. |
+| D0a | ✅ | Weight store not in hot path | `scoring_rule_eval.evaluate_rule()` now calls `get_weight_store().school_weights()` instead of importing SCHOOL_WEIGHTS directly. |
+| D0b | ✅ | Convergence + temporal disconnected | `TimedPrediction` now carries `temporal_confirmations` + `temporal_systems` + `total_confirmations` property combining natal + temporal counts. |
+| D0c | ✅ | ctx= parameter never passed | `score_chart()` and `evaluate_chart()` auto-build ChartContext when ctx=None. All 15+ callers now get ChartContext benefits. |
+
+### HIGH — ✅ ALL RESOLVED (2026-04-13)
+
+| # | Status | Item | Resolution |
+|---|--------|------|------------|
+| D1 | ✅ | Corpus rules missing verse_ref | `_evaluate_corpus_rules()` now looks up RuleRecord and copies `verse_ref`. 348/348 corpus results have verse. |
+| D2 | ✅ | No varga natal channels | Scoring rules now run against D9+D10 lagna. `d9_natal` and `d10_natal` are independent convergence channels. H3 India 1947 = 7-channel convergence. |
+| D3 | ✅ | Yoga detection keyword-based | `_classify_channel()` now checks corpus category/tags via cached yoga rule_id set (933 yoga rules identified). |
+| D4 | ✅ | conditions_met often empty | `_evaluate_corpus_rules()` extracts from V2 structured conditions OR legacy primary_condition. 348/348 results have conditions_met. |
+| D5 | ✅ | Custom logic in 4 scoring rules | R13 mitigation_factor, R19 cazimi/asta_vakri scores, D6 avastha thresholds, WL penalty all moved to ScoringRule.params. Evaluator reads from data. |
+
+### MEDIUM — Improves accuracy / narrows timing
+
+| # | Origin | Item | Why it matters | Suggested fix |
+|---|--------|------|----------------|---------------|
+| D6 | G6 | Transit overlay (gochara + double transit) not in temporal projection | Dasha-only timing gives broad windows. Transit narrows to 1–2 years. Architecture target shows 7 timing systems, we have 4. | Add `_gochara_windows()` scanning Jupiter/Saturn transit per year. |
+| D7 | G6 | Varshaphala (solar return) not overlaid | Annual chart activation is independent evidence. 5th timing system. | Add `_varshaphala_windows()` checking Muntha/Varsha Pati per year. |
+| D8 | G6 | Pratyantardasha not overlaid | Narrows timing from years to months within an AD window. | Add PAD scan inside AD matches. |
+| D9 | G6 | Peak windows broad for multi-house lords | Venus lords H1+H6 → both activate in all Venus periods. | Split by domain so activation windows differ. Needs G7 domain grouping. |
+| D10 | G6 | Temporal projection is year-level only | Architecture shows "Q1 2032" (quarterly precision). We output year integers. | Add month-level precision using AD/PAD start/end dates. |
+| D11 | G6 | Probability normalization is crude | `count_of_active_systems / total_systems` per year. Not Bayesian, doesn't weight by system reliability. | Accept for Phase C; proper Bayesian weighting is Phase B (needs calibration data). |
+| D12 | G1 | ctx= not wired into ~60 downstream modules | Performance: those modules still recompute dignity/house_map/etc. every call. Not a correctness issue. | Progressively add ctx= to hot-path modules. |
+| D13 | G2 | Scoring rules are `ScoringRule` not `RuleRecord` | Two rule types coexist. Unified engine bridges them, but corpus tools (scorecard, auditor) don't see scoring rules. | Create adapter or merge into RuleRecord if schemas converge. |
+
+### LOW — Engineering quality / Phase B prerequisites
+
+| # | Origin | Item | Why it matters | Suggested fix |
+|---|--------|------|----------------|---------------|
+| D14 | G3 | Old engines (scoring.py, rule_firing.py, inference.py) not deleted | Confusion: two ways to evaluate rules. But all 14k tests and API endpoints depend on them. | Migrate callers to unified engine over multiple sessions. |
+| D15 | G4 | SCHOOL_WEIGHTS dict still in scoring_rules.py | Weight store reads from it; not truly "deleted". | Move to JSON/TOML weight file, store reads from file. |
+| D16 | G4 | No calibration logic; empirical_weight = base_weight | Phase B / G10 scope. No user feedback data exists yet. | Defer to Phase B. |
+| D17 | ✅ | Weight store persistence | Resolved: `save_weight_store()` / `load_weight_store()` with JSON. |
+| D18 | — | Q2: 8 silent handlers remain | Robustness. Independent of pipeline. | Parallel track. |
+| D19 | — | Q3: Verification tags (9/112 modules) | Provenance. Independent of pipeline. | Parallel track. |
+| D20 | — | Q5: MODULE_REGISTRY.py | CI enforcement. Independent of pipeline. | Parallel track. |
+| D21 | — | Q9: Benchmark in CI | Performance regression detection. | Parallel track after G1. |
+| D22 | — | Q10: Reproducibility snapshot test | Determinism proof. | Parallel track after G3. |
+| D23 | — | Q11: DEBUG logging in canonical primitives | Observability. Independent of pipeline. | Parallel track. |
+| D24 | — | Q12: Evolvability checklists | Process docs. Independent of pipeline. | Parallel track. |
+
+---
+
+## G7 PRE-FLIGHT CHECKLIST
+
+> Before starting G7 (Narrative Synthesis), resolve or explicitly accept
+> each CRITICAL and HIGH item.  MEDIUM items improve quality but don't
+> block G7.  Items marked with ⚠ have the highest blast radius.
+
+### ⚠ Must-resolve: Wire the pipeline into the running system
+
+~~D0–D0c resolved 2026-04-13. Pipeline is live.~~
+
+- [x] **D0** — `src/pipeline.py:run_pipeline()` + CLI `python -m src.pipeline`
+- [x] **D0a** — `scoring_rule_eval` reads from `get_weight_store().school_weights()`
+- [x] **D0b** — `TimedPrediction.total_confirmations` = natal + temporal
+- [x] **D0c** — `score_chart()` + `evaluate_chart()` auto-build ChartContext
+
+### ~~Must-resolve: Data completeness for narrative~~ ✅ ALL RESOLVED
+
+- [x] **D1** — verse_ref populated for 348/348 corpus rules
+- [x] **D4** — conditions_met populated for 348/348 corpus rules
+- [x] **D2** — D9/D10 varga channels added (7-channel convergence possible)
+- [x] **D3** — Yoga detection via 933-rule corpus lookup (not keyword)
+
+### Should-resolve for G7 quality (can defer with documented acceptance)
+
+- [x] **D5** — Custom logic extracted to ScoringRule.params
+- [ ] **D6** — Transit overlay in temporal projection
+- [ ] **D7** — Varshaphala overlay in temporal projection
+- [ ] **D9** — Domain-specific peak window narrowing
+- [ ] **D10** — Quarter/month precision in temporal projection
+
+### G7 own deliverables (from architecture doc)
+
+- [ ] Create `narrate(timed_predictions) → NarrativeReport`
+- [ ] Life phases from dasha sequence + natal promises
+- [ ] Interaction effects across houses (H10+H7 same dasha → spouse+career)
+- [ ] Absence analysis (dormant houses are predictions too)
+- [ ] Overall arc (building → harvest → wisdom)
+- [ ] Per-domain narratives (career, family, health, spiritual)

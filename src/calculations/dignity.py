@@ -23,9 +23,12 @@ Sources:
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.3 v.2-9, Ch.49 v.12-18", "session": "S317"}
 
@@ -651,7 +654,7 @@ def compute_dignity(
             nb_result = _check_neecha_bhanga(planet, chart)
             nb_count = nb_result.neecha_bhanga_count
         except (KeyError, ValueError, TypeError):
-            pass
+            logger.warning("Neecha Bhanga check failed for %s — treating as no cancellation", planet, exc_info=True)
 
     # Core dignity level
     dignity = _get_dignity_level(

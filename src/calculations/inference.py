@@ -419,10 +419,13 @@ def aggregate_domains(
     return scores
 
 
-def analyze_chart(chart, rules) -> ChartAnalysis:
-    """Full inference: fire rules → apply modifiers → aggregate domains."""
+def analyze_chart(chart, rules, *, ctx=None) -> ChartAnalysis:
+    """Full inference: fire rules → apply modifiers → aggregate domains.
+
+    If *ctx* (ChartContext) is provided, pre-computed derived facts are used.
+    """
     # Layer 1: Fire rules
-    firing_result = evaluate_chart(chart)
+    firing_result = evaluate_chart(chart, ctx=ctx)
 
     # Build rule lookup
     rule_lookup = {r.rule_id: r for r in rules}

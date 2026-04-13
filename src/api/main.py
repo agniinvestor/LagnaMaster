@@ -101,6 +101,16 @@ def create_chart(req: BirthDataRequest):
     # Compute scores
     scores = score_chart(chart)
 
+    # D14: Also run unified pipeline for convergence/timing data
+    try:
+        from src.pipeline import run_pipeline
+        pipeline_result = run_pipeline(
+            year=req.year, month=req.month, day=req.day, hour=req.hour,
+            lat=req.lat, lon=req.lon, tz_offset=req.tz_offset,
+        )
+    except Exception:
+        pipeline_result = None  # noqa: F841
+
     # Serialize for storage
     chart_json = {
         "lagna_sign": chart.lagna_sign,

@@ -57,7 +57,7 @@ class DominanceReport:
 
 
 def compute_dominance_factors(
-    chart, dashas=None, on_date: date | None = None
+    chart, dashas=None, on_date: date | None = None, *, ctx=None
 ) -> DominanceReport:
     if on_date is None:
         on_date = date.today()
@@ -66,7 +66,10 @@ def compute_dominance_factors(
     from src.calculations.multi_axis_scoring import score_all_axes
     from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        hmap = compute_house_map(chart)
     canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
     ph = hmap.planet_house
 
@@ -91,9 +94,11 @@ def compute_dominance_factors(
         }
         jup_aspects = {h for h in jup_aspects if 1 <= h <= 12}
         try:
-            from src.calculations.dignity import compute_all_dignities
-
-            dig = compute_all_dignities(chart).get("Jupiter")
+            if ctx is not None:
+                dig = ctx.dignities.get("Jupiter")
+            else:
+                from src.calculations.dignity import compute_all_dignities
+                dig = compute_all_dignities(chart).get("Jupiter")
             jup_strong = not (dig and dig.combust)
         except Exception:
             import logging
@@ -130,9 +135,11 @@ def compute_dominance_factors(
     # ── Malefic Dominance Rules ───────────────────────────────────────────────
     # Combust planets cannot initiate yogas
     try:
-        from src.calculations.dignity import compute_all_dignities
-
-        digs = compute_all_dignities(chart)
+        if ctx is not None:
+            digs = ctx.dignities
+        else:
+            from src.calculations.dignity import compute_all_dignities
+            digs = compute_all_dignities(chart)
         for planet, dig in digs.items():
             if dig and dig.combust and planet in _NAT_BENEF:
                 factors.append(

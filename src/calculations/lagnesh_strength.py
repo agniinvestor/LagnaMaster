@@ -40,14 +40,16 @@ class LagneshStrengthResult:
         )
 
 
-def compute_lagnesh_strength(chart) -> LagneshStrengthResult:
+def compute_lagnesh_strength(chart, *, ctx=None) -> LagneshStrengthResult:
     """Compute the Lagnesh global modifier."""
     lagna_si = chart.lagna_sign_index
     lagnesh = SIGN_LORDS[lagna_si % 12]
 
-    from src.calculations.house_lord import compute_house_map
-
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        from src.calculations.house_lord import compute_house_map
+        hmap = compute_house_map(chart)
     house = hmap.planet_house.get(lagnesh, 1)
 
     # Dignity of Lagnesh in D1

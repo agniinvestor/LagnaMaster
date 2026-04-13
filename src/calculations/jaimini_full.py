@@ -18,7 +18,10 @@ Public API
 from __future__ import annotations
 from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, SIGN_NAMES
 from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, OWN_SIGNS as _OWN_LIST
+import logging
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 
 _SIGNS = list(SIGN_NAMES)
 
@@ -113,7 +116,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
             )
         )
     except (ValueError, AttributeError):
-        pass
+        logger.debug("Karakamsha Gyana Yoga detection failed", exc_info=True)
 
     # AL and 7th from AL — relationship quality
     al_si = arudha.arudha_lagna.sign_index
@@ -186,8 +189,10 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
                 source="Jaimini Sutra 4.2",
             )
         )
-    except (ImportError, TypeError):
-        pass
+    except ImportError:
+        pass  # chara_karak module not available
+    except TypeError:
+        logger.debug("Bandhu Yoga detection failed due to TypeError", exc_info=True)
     return yogas
 
 

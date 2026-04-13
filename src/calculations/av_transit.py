@@ -112,9 +112,9 @@ def compute_transit_av_score(
                 month=transit_date.month,
                 day=transit_date.day,
                 hour=12.0,
-                lat=getattr(birth, "lat", 28.6139),
-                lon=getattr(birth, "lon", 77.2090),
-                tz_offset=getattr(birth, "tz_offset", 5.5),
+                lat=getattr(birth, "lat", 0.0),
+                lon=getattr(birth, "lon", 0.0),
+                tz_offset=getattr(birth, "tz_offset", 0.0),
                 ayanamsha=getattr(birth, "ayanamsha", "lahiri"),
             )
             transit_longitudes = {

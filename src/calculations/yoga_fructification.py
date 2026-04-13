@@ -117,7 +117,7 @@ class FructificationResult:
     verdict: str  # "Full"/"Partial"/"Weak"/"Minimal"
 
 
-def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationResult:
+def yoga_fructification_score(yoga_planets: list[str], chart, *, ctx=None) -> FructificationResult:
     """
     Evaluate whether a yoga will actually deliver its full results.
     PVRNR p147: three explicit conditions.
@@ -126,9 +126,11 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
 
     # Condition 1: Free from functional malefic afflictions
     affliction_free = True
-    from src.calculations.functional_roles import compute_functional_roles
-
-    fr = compute_functional_roles(chart)
+    if ctx is not None:
+        fr = ctx.functional_roles
+    else:
+        from src.calculations.functional_roles import compute_functional_roles
+        fr = compute_functional_roles(chart)
     func_malefics = set(fr.functional_malefics) | set(fr.dusthana_lords)
 
     for p in yoga_planets:
@@ -175,9 +177,11 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     _OWN = {p: set(s) for p, s in OWN_SIGNS.items()}
 
     try:
-        from src.calculations.dignity import compute_all_dignities
-
-        dignities = compute_all_dignities(chart)
+        if ctx is not None:
+            dignities = ctx.dignities
+        else:
+            from src.calculations.dignity import compute_all_dignities
+            dignities = compute_all_dignities(chart)
     except ImportError:
         dignities = {}
 
@@ -238,12 +242,14 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     )
 
 
-def check_yoga_affliction(planet: str, chart) -> list[str]:
+def check_yoga_affliction(planet: str, chart, *, ctx=None) -> list[str]:
     """Return list of afflictions on a planet (functional malefics, combust, debil)."""
     issues = []
-    from src.calculations.functional_roles import compute_functional_roles
-
-    fr = compute_functional_roles(chart)
+    if ctx is not None:
+        fr = ctx.functional_roles
+    else:
+        from src.calculations.functional_roles import compute_functional_roles
+        fr = compute_functional_roles(chart)
     pos = chart.planets.get(planet)
     if not pos:
         return issues
@@ -256,9 +262,11 @@ def check_yoga_affliction(planet: str, chart) -> list[str]:
     ]
     if afflictors:
         issues.append(f"Conjunct functional malefic(s): {afflictors}")
-    from src.calculations.dignity import compute_all_dignities
-
-    dig = compute_all_dignities(chart).get(planet)
+    if ctx is not None:
+        dig = ctx.dignities.get(planet)
+    else:
+        from src.calculations.dignity import compute_all_dignities
+        dig = compute_all_dignities(chart).get(planet)
     if dig and dig.combust:
         issues.append("Combust")
     _DEBIL = {

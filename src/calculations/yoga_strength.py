@@ -13,11 +13,14 @@ Sources:
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+import logging
 from dataclasses import dataclass
 from typing import Optional
 
 from src.calculations.extended_yogas import YogaResult
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+
+logger = logging.getLogger(__name__)
 
 
 # ─── Yoga Strength Gradient ───────────────────────────────────────────────────
@@ -317,6 +320,7 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
             try:
                 ys = compute_yoga_strength(yoga_name, planets, chart)
             except (ValueError, TypeError):
+                logger.debug("Yoga strength computation failed for %s", yoga_name, exc_info=True)
                 ys = None
             results.append(
                 _named_yoga(

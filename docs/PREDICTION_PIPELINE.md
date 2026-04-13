@@ -1,3 +1,8 @@
+> **HISTORICAL REFERENCE** — Superseded by `docs/ARCHITECTURE_CURRENT_VS_TARGET.md` (2026-04-14).
+> The new architecture (G1-G6) replaces this 10-layer model. 5/8 new layers are operational.
+> For current status: `docs/PROJECT_STRATEGY.md`. For architecture: `docs/ARCHITECTURE_CURRENT_VS_TARGET.md`.
+> Pipeline entry point: `src/pipeline.py:run_pipeline()`. Calibration: `tools/ob4_pipeline_calibrate.py`.
+
 # PREDICTION_PIPELINE.md — The 10-Layer Prediction Quality Architecture
 > Each layer is a concrete architectural difference from competitors — not a feature claim.
 > Source: LagnaMaster_Appendix_S20_S22.docx (Section 20).

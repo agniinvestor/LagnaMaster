@@ -4,7 +4,6 @@
 Walks AST imports starting from entry points, reports unreachable files.
 """
 import ast
-import os
 import sys
 from pathlib import Path
 from collections import defaultdict
@@ -157,7 +156,7 @@ def main():
     # Classify
     entry_point_set = {p.resolve() for p in ENTRY_POINTS}
 
-    print(f"=== REACHABILITY ANALYSIS ===")
+    print("=== REACHABILITY ANALYSIS ===")
     print(f"Total src/ .py files: {len(all_files)}")
     print(f"Reachable from entry points: {len(reachable)}")
     print(f"Unreachable: {len(unreachable)}")

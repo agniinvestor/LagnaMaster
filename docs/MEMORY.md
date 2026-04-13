@@ -24,8 +24,9 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **14,811 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, **654 V2 rules** (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system.
-- **W0 consolidation:** scoring engine split RESOLVED (scoring.py -> thin wrapper, evaluate_house_detailed canonical). 722 lines removed across 24 files. OB-3 rho unchanged (0.42). W1 (wire corpus -> scoring) is UNBLOCKED.
+- **14,917 passing**, 210 skipped, 0 lint errors. G1-G6 pipeline complete. OB-4: convergence ρ +18% over OB-3 across 4,832 charts. Pipeline entry: `python -m src.pipeline`.
+- **G1-G6 build:** ChartContext, unified engine (26 scoring + 7,466 corpus rules), convergence (7 channels), temporal projection (7 timing systems). All deferred items D0-D24 resolved except D16 (calibration — Phase B).
+- **W0 consolidation:** scoring engine split RESOLVED. 722 lines removed. OB-3 ρ unchanged (serves as regression baseline).
 - S317: BPHS foundation audit (Ch.3/11/26/27/34/45/49), 14 bugs fixed, Tier 0 complete
 - S318: deep audit 104 bugs found, **104/104 CLOSED** across 40+ commits
 - S319: BUG-089-093 fixes + or_group validation + 37 new rules across 8 chapters

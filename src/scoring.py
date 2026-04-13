@@ -122,19 +122,26 @@ def _rating(score: float) -> str:
 # ---------------------------------------------------------------------------
 
 
-def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
+def score_chart(chart: BirthChart, query_date=None, *, ctx=None) -> ChartScores:
     """
     Apply BPHS rules across all 12 houses using functional benefic/malefic
     classification. Returns ChartScores with per-house and per-rule breakdown.
 
     All rule evaluation is performed by evaluate_house_detailed() in
     multi_axis_scoring.py — this function wraps the output.
+
+    If *ctx* (ChartContext) is not provided, one is built automatically
+    so all downstream computations (dignity, AV, etc.) are shared.
     """
+    if ctx is None:
+        from src.calculations.chart_context import build_chart_context
+        ctx = build_chart_context(chart)
+
     lagna_si = chart.lagna_sign_index
     school = "parashari"
 
     yogakaraka, dusthana_lords, kendra_lords, trikona_lords, is_fb, is_fm, av_bindus = \
-        _prepare_frame_context(chart, lagna_si, school)
+        _prepare_frame_context(chart, lagna_si, school, ctx=ctx)
 
     result = ChartScores(lagna_sign=chart.lagna_sign)
 
@@ -147,6 +154,7 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
             house, lagna_si, chart, school,
             av_bindus, yogakaraka, dusthana_lords, kendra_lords, trikona_lords,
             is_fb, is_fm,
+            ctx=ctx,
         )
 
         rules = [

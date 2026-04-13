@@ -26,7 +26,9 @@ from src.calculations.extended_yogas import YogaResult
 
 
 
-def _planet_houses(chart) -> dict[str, int]:
+def _planet_houses(chart, *, ctx=None) -> dict[str, int]:
+    if ctx is not None:
+        return ctx.house_map.planet_house
     from src.calculations.house_lord import compute_house_map
 
     return compute_house_map(chart).planet_house
@@ -85,8 +87,8 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
 
 
 # ── Chandra (Moon) yogas ──────────────────────────────────────────────────────
-def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
-    ph = _planet_houses(chart)
+def detect_chandra_yogas(chart, dashas=None, on_date=None, *, ctx=None) -> list[YogaResult]:
+    ph = _planet_houses(chart, ctx=ctx)
     moon_h = ph.get("Moon", 0)
     results = []
 
@@ -172,8 +174,8 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
 
 
 # ── Surya (Sun) yogas ─────────────────────────────────────────────────────────
-def detect_surya_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
-    ph = _planet_houses(chart)
+def detect_surya_yogas(chart, dashas=None, on_date=None, *, ctx=None) -> list[YogaResult]:
+    ph = _planet_houses(chart, ctx=ctx)
     sun_h = ph.get("Sun", 0)
     results = []
 
@@ -236,11 +238,13 @@ def detect_surya_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
 
 
 # ── Additional Dhana / Duryoga / Daridra ─────────────────────────────────────
-def detect_dhana_yogas_ext(chart, dashas=None, on_date=None) -> list[YogaResult]:
-    ph = _planet_houses(chart)
-    from src.calculations.house_lord import compute_house_map
-
-    hmap = compute_house_map(chart)
+def detect_dhana_yogas_ext(chart, dashas=None, on_date=None, *, ctx=None) -> list[YogaResult]:
+    ph = _planet_houses(chart, ctx=ctx)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        from src.calculations.house_lord import compute_house_map
+        hmap = compute_house_map(chart)
     results = []
 
     # Lakshmi Yoga: Venus + 9th lord both in own/exalt signs in kendra/trikona
@@ -313,12 +317,12 @@ def detect_dhana_yogas_ext(chart, dashas=None, on_date=None) -> list[YogaResult]
     return results
 
 
-def detect_all_extended_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
+def detect_all_extended_yogas(chart, dashas=None, on_date=None, *, ctx=None) -> list[YogaResult]:
     if on_date is None:
         on_date = date.today()
     return (
         detect_nabhasa_yogas(chart, dashas, on_date)
-        + detect_chandra_yogas(chart, dashas, on_date)
-        + detect_surya_yogas(chart, dashas, on_date)
-        + detect_dhana_yogas_ext(chart, dashas, on_date)
+        + detect_chandra_yogas(chart, dashas, on_date, ctx=ctx)
+        + detect_surya_yogas(chart, dashas, on_date, ctx=ctx)
+        + detect_dhana_yogas_ext(chart, dashas, on_date, ctx=ctx)
     )

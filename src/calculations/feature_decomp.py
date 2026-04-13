@@ -161,7 +161,7 @@ def _extract_gentle_sign(house: int, house_si: int) -> RuleFeature:
     return RuleFeature("gentle_sign", val, "R01", house)
 
 
-def _extract_bhavesh_dignity(house: int, house_si: int, chart) -> RuleFeature:
+def _extract_bhavesh_dignity(house: int, house_si: int, chart, *, ctx=None) -> RuleFeature:
     """
     R04 (continuous): Dignity of the bhavesh (house lord) normalised to [-1, 1].
     1.0 = deep exaltation, -1.0 = deep debilitation.
@@ -173,7 +173,10 @@ def _extract_bhavesh_dignity(house: int, house_si: int, chart) -> RuleFeature:
     if bhavesh in chart.planets:
         try:
             from src.calculations.dignity import compute_all_dignities, DIGNITY_SCORE
-            digs = compute_all_dignities(chart)
+            if ctx is not None:
+                digs = ctx.dignities
+            else:
+                digs = compute_all_dignities(chart)
             if bhavesh in digs:
                 dl = digs[bhavesh].dignity
                 raw = DIGNITY_SCORE.get(dl, 0.0)
@@ -252,7 +255,7 @@ def _extract_kartari_score(
     return RuleFeature("kartari_score", val, "R08/R12", house)
 
 
-def _extract_combust_score(house: int, house_si: int, chart) -> RuleFeature:
+def _extract_combust_score(house: int, house_si: int, chart, *, ctx=None) -> RuleFeature:
     """
     R19: Combustion score for the bhavesh.
     +0.5 = cazimi (within 1° of Sun — actually strengthened).
@@ -266,8 +269,11 @@ def _extract_combust_score(house: int, house_si: int, chart) -> RuleFeature:
         return RuleFeature("combust_score", 0.0, "R19", house)
 
     try:
-        from src.calculations.dignity import compute_all_dignities
-        digs = compute_all_dignities(chart)
+        if ctx is not None:
+            digs = ctx.dignities
+        else:
+            from src.calculations.dignity import compute_all_dignities
+            digs = compute_all_dignities(chart)
         dig = digs.get(bhavesh)
         if dig is None:
             return RuleFeature("combust_score", 0.0, "R19", house)
@@ -482,7 +488,7 @@ def _extract_war_loser(house: int, house_si: int, chart) -> RuleFeature:
 
 # ── Top-level extractor ───────────────────────────────────────────────────────
 
-def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
+def extract_features(chart, school: str = "parashari", *, ctx=None) -> ChartFeatureVector:
     """
     Extract continuous feature vectors for all 12 houses of *chart*.
 
@@ -504,8 +510,11 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
     # Pre-compute Ashtakavarga for all houses
     av_bindus: dict | None = None
     try:
-        from src.calculations.ashtakavarga import compute_ashtakavarga
-        av = compute_ashtakavarga(chart)
+        if ctx is not None:
+            av = ctx.ashtakavarga
+        else:
+            from src.calculations.ashtakavarga import compute_ashtakavarga
+            av = compute_ashtakavarga(chart)
         av_bindus = {si: av.sarva_ashtakavarga.get(si, 0) for si in range(12)}
     except (ImportError, AttributeError):
         av_bindus = None
@@ -514,18 +523,21 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
 
     # S197: functional benefic/malefic callables for this lagna
     try:
-        import types
-        from src.calculations.functional_roles import compute_functional_roles
-        _SIGN_NAMES = [
-            "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-            "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-        ]
-        _fake = types.SimpleNamespace(
-            lagna_sign_index=lagna_si,
-            lagna_sign=_SIGN_NAMES[lagna_si],
-            planets=chart.planets,
-        )
-        _roles = compute_functional_roles(_fake)
+        if ctx is not None:
+            _roles = ctx.functional_roles
+        else:
+            import types
+            from src.calculations.functional_roles import compute_functional_roles
+            _SIGN_NAMES = [
+                "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+                "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+            ]
+            _fake = types.SimpleNamespace(
+                lagna_sign_index=lagna_si,
+                lagna_sign=_SIGN_NAMES[lagna_si],
+                planets=chart.planets,
+            )
+            _roles = compute_functional_roles(_fake)
         is_fb = _roles.is_functional_benefic
         is_fm = _roles.is_functional_malefic
     except (ImportError, AttributeError):
@@ -538,12 +550,12 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
         features = [
             # S195
             _extract_gentle_sign(h, house_si),
-            _extract_bhavesh_dignity(h, house_si, chart),
+            _extract_bhavesh_dignity(h, house_si, chart, ctx=ctx),
             _extract_dig_bala(h, house_si, chart, lagna_si),
             _extract_sav_bindus_norm(h, house_si, av_bindus),
             # S196
             _extract_kartari_score(h, house_si, sign_planets),
-            _extract_combust_score(h, house_si, chart),
+            _extract_combust_score(h, house_si, chart, ctx=ctx),
             _extract_retrograde_score(h, house_si, chart),
             _extract_bhavesh_house_type(h, house_si, chart, lagna_si),
             # S197

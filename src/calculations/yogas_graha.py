@@ -42,14 +42,16 @@ def _dasha_weight(planets: list[str], dashas, on_date: date) -> float:
 
 
 def detect_graha_yogas(
-    chart, dashas=None, on_date: date | None = None
+    chart, dashas=None, on_date: date | None = None, *, ctx=None
 ) -> list[GrahaYogaResult]:
     if on_date is None:
         on_date = date.today()
 
-    from src.calculations.house_lord import compute_house_map
-
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        from src.calculations.house_lord import compute_house_map
+        hmap = compute_house_map(chart)
     ph = hmap.planet_house
     results = []
 

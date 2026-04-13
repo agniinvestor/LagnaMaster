@@ -25,8 +25,11 @@ Public API
 """
 
 from __future__ import annotations
+import logging
 from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 
 
 
@@ -68,6 +71,7 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
         al_pada = arudha_all.padas.get(house)
         al_si = al_pada.sign_index if al_pada else chart.lagna_sign_index
     except (AttributeError, KeyError):
+        logger.debug("Arudha pada lookup failed for house %d, using lagna", house, exc_info=True)
         al_si = chart.lagna_sign_index
 
     # Actual score (reality)

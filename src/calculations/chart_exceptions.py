@@ -19,8 +19,11 @@ Public API
 """
 
 from __future__ import annotations
+import logging
 from src.data.constants import DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SEVEN_PLANETS
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 _NAT_BENEF = NATURAL_BENEFICS
 _NAT_MALEF = NATURAL_MALEFICS
 
@@ -197,7 +200,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
                         )
                     )
     except (ValueError, TypeError):
-        pass
+        logger.debug("Score extremes check failed in chart_exceptions", exc_info=True)
 
     from src.calculations.multi_axis_scoring import score_all_axes
 

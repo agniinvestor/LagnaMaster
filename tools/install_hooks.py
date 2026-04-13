@@ -44,7 +44,7 @@ def install():
 
     # commit-msg hook — validates commit message format
     commit_msg_dst = HOOKS_DIR / "commit-msg"
-    commit_msg_script = f"""#!/bin/sh
+    commit_msg_script = """#!/bin/sh
 # LagnaMaster commit-msg hook — validates commit format
 # Installed by tools/install_hooks.py
 .venv/bin/python tools/validate_commits.py "$1"

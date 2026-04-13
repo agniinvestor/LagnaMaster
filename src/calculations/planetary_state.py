@@ -152,8 +152,8 @@ def compute_mandi_gulika(
     sunrise_lon: Optional[float] = None,
     day_duration_hours: float = 12.0,
     is_day_birth: bool = True,
-    lat: float = 28.6139,
-    lon: float = 77.2090,
+    lat: float = 0.0,
+    lon: float = 0.0,
 ) -> dict[str, float]:
     """Compute Mandi and Gulika longitudes.
 

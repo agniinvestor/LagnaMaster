@@ -174,7 +174,7 @@ class RajYogaResult:
 
 
 def check_raj_yoga_pair(
-    kendra_lord: str, trikona_lord: str, chart
+    kendra_lord: str, trikona_lord: str, chart, *, ctx=None
 ) -> Optional[RajYogaResult]:
     """
     Check Raj Yoga between a specific Kendra lord and Trikona lord.
@@ -216,9 +216,13 @@ def check_raj_yoga_pair(
 
     # Combust check
     for lord in (kendra_lord, trikona_lord):
-        from src.calculations.dignity import compute_dignity
-
-        d = compute_dignity(lord, chart)
+        if ctx is not None:
+            d = ctx.dignities.get(lord)
+            if d is None:
+                continue
+        else:
+            from src.calculations.dignity import compute_dignity
+            d = compute_dignity(lord, chart)
         if d.combust and not d.cazimi:
             is_cancelled = True
             cancel_reason = f"{lord} is combust"
@@ -254,14 +258,17 @@ def check_raj_yoga_pair(
     )
 
 
-def detect_raj_yogas(chart) -> list[RajYogaResult]:
+def detect_raj_yogas(chart, *, ctx=None) -> list[RajYogaResult]:
     """
     Detect all Raj Yogas in the chart.
     Source: BPHS Ch.36 v.1-15
     """
     from src.calculations.house_lord import compute_house_map, SIGN_LORDS
 
-    hmap = compute_house_map(chart)  # noqa: F841
+    if ctx is not None:
+        hmap = ctx.house_map  # noqa: F841
+    else:
+        hmap = compute_house_map(chart)  # noqa: F841
     lagna_si = chart.lagna_sign_index
 
     kendras = [1, 4, 7, 10]

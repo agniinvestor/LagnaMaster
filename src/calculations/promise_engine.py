@@ -45,7 +45,7 @@ class ManifestationResult:
     explanation: str
 
 
-def compute_house_promise(chart, house: int) -> PromiseLevel:
+def compute_house_promise(chart, house: int, *, ctx=None) -> PromiseLevel:
     """Compute natal promise for a house."""
     from src.calculations.multi_axis_scoring import score_axis
 
@@ -56,9 +56,11 @@ def compute_house_promise(chart, house: int) -> PromiseLevel:
         score = 0.0
 
     key_factors = []
-    from src.calculations.house_lord import compute_house_map
-
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        from src.calculations.house_lord import compute_house_map
+        hmap = compute_house_map(chart)
     ph = hmap.planet_house
     lord = hmap.house_lord[house - 1]
     lord_house = ph.get(lord, 0)
@@ -100,7 +102,7 @@ def compute_house_promise(chart, house: int) -> PromiseLevel:
 
 
 def compute_full_promise(
-    chart, dashas=None, on_date: date | None = None
+    chart, dashas=None, on_date: date | None = None, *, ctx=None
 ) -> dict[int, ManifestationResult]:
     if on_date is None:
         on_date = date.today()
@@ -119,13 +121,15 @@ def compute_full_promise(
         except ImportError:
             pass
 
-    from src.calculations.house_lord import compute_house_map
-
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        from src.calculations.house_lord import compute_house_map
+        hmap = compute_house_map(chart)
     ph = hmap.planet_house
 
     for h in range(1, 13):
-        promise = compute_house_promise(chart, h)
+        promise = compute_house_promise(chart, h, ctx=ctx)
         lord = hmap.house_lord[h - 1]
 
         # Dasha activation

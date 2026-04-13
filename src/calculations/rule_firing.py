@@ -191,13 +191,15 @@ def _lord_of_house(chart, house_num: int) -> str:
     return SIGN_LORDS.get(sign_index, "")
 
 
-def _planet_dignity_state(chart, planet_name: str) -> str:
+def _planet_dignity_state(chart, planet_name: str, *, ctx=None) -> str:
     """Return the dignity state of a planet using the full dignity.compute_dignity model.
 
     Returns: exalted|debilitated|own_sign|moolatrikona|neecha_bhanga|friend_sign|enemy_sign|neutral|unknown
 
     Delegates to dignity.compute_dignity (canonical, 20+ field DignityResult with
     neecha bhanga, combustion, cazimi, degree-bounded moolatrikona, etc.).
+
+    If *ctx* (ChartContext) is provided, uses pre-computed dignities.
     """
     from src.calculations.dignity import compute_dignity, DignityLevel
 
@@ -212,7 +214,10 @@ def _planet_dignity_state(chart, planet_name: str) -> str:
             break
 
     try:
-        dig = compute_dignity(name, chart)
+        if ctx is not None and name in ctx.dignities:
+            dig = ctx.dignities[name]
+        else:
+            dig = compute_dignity(name, chart)
     except (ValueError, TypeError, KeyError, AttributeError):
         # Fallback for incomplete chart objects (e.g., test mocks without longitude)
         si = p.sign_index
@@ -318,7 +323,7 @@ def _check_with_bindings(conditions: list[dict], chart, context: dict | None = N
     return False, 0
 
 
-def _check_compound_conditions(conditions: list[dict], chart, context: dict | None = None) -> tuple[bool, int]:
+def _check_compound_conditions(conditions: list[dict], chart, context: dict | None = None, *, ctx=None) -> tuple[bool, int]:
     """Evaluate a list of computable primitive conditions (AND logic).
 
     Each condition dict has a "type" key. All must be true for the rule to fire.
@@ -400,7 +405,7 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                 planet = _lord_of_house(chart, house_num)
             if not planet:
                 return False, 0
-            actual_dignity = _planet_dignity_state(chart, planet)
+            actual_dignity = _planet_dignity_state(chart, planet, ctx=ctx)
             if target_dignity == "strong":
                 # "strong" = exalted, own_sign, or moolatrikona
                 if actual_dignity not in ("exalted", "own_sign", "moolatrikona"):
@@ -1241,12 +1246,14 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
     return True, matched_house
 
 
-def _check_rule_fires(rule, chart) -> tuple[bool, int, dict | None]:
+def _check_rule_fires(rule, chart, *, ctx=None) -> tuple[bool, int, dict | None]:
     """Check if a rule's primary_condition is satisfied by this chart.
 
     Returns (fires: bool, house: int, context: dict | None).
     House is 0 for non-house-specific rules.
     Context is populated only for V2 rules; legacy paths return None.
+
+    If *ctx* (ChartContext) is provided, pre-computed derived facts are used.
     """
     pc = rule.primary_condition
     if not pc:
@@ -1258,7 +1265,7 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int, dict | None]:
     conditions = pc.get("conditions", [])
     if isinstance(conditions, list) and conditions and isinstance(conditions[0], dict) and "type" in conditions[0]:
         context: dict = {"conditions": {}, "aggregates": {}, "gates": {}}
-        fires, house = _check_compound_conditions(conditions, chart, context=context)
+        fires, house = _check_compound_conditions(conditions, chart, context=context, ctx=ctx)
         return fires, house, context
 
     planet = pc.get("planet", "")
@@ -1354,12 +1361,18 @@ def _is_activated(rule, chart, dasha_context=None) -> bool:
     return True
 
 
-def evaluate_chart(chart) -> RuleFiringResult:
+def evaluate_chart(chart, *, ctx=None) -> RuleFiringResult:
     """Evaluate all Phase 1B corpus rules against a chart.
 
     Returns a RuleFiringResult with fired rules, house summaries,
     and an ML-ready feature vector.
+
+    If *ctx* (ChartContext) is not provided, one is built automatically.
     """
+    if ctx is None:
+        from src.calculations.chart_context import build_chart_context
+        ctx = build_chart_context(chart)
+
     from src.corpus.combined_corpus import build_corpus
 
     corpus = build_corpus()
@@ -1379,7 +1392,7 @@ def evaluate_chart(chart) -> RuleFiringResult:
         if not _is_activated(rule, chart):
             result.skipped_rules.append(SkippedRule(rule_id=rule.rule_id, reason="not_activated"))
             continue
-        fires, house, ctx = _check_rule_fires(rule, chart)
+        fires, house, rule_ctx = _check_rule_fires(rule, chart, ctx=ctx)
         if not fires:
             # Tier 3 Item 1: audit trail for skipped rules
             reason = "condition_not_met"
@@ -1415,23 +1428,23 @@ def evaluate_chart(chart) -> RuleFiringResult:
             predictions=getattr(rule, "predictions", []),
             signal_group=getattr(rule, "signal_group", ""),
             health_sensitive=getattr(rule, "health_sensitive", False),
-            context=ctx,
+            context=rule_ctx,
         )
         result.fired_rules.append(fired)
 
         # BB chain enrichment: derived_house_chains contribute to context
-        if hasattr(rule, "derived_house_chains") and rule.derived_house_chains and ctx:
+        if hasattr(rule, "derived_house_chains") and rule.derived_house_chains and rule_ctx:
             from src.calculations.derived_house import resolve_house
-            ctx.setdefault("aggregates", {})
-            ctx["aggregates"].setdefault("bb_houses", [])
-            ctx["aggregates"].setdefault("bb_strength", 0.0)
+            rule_ctx.setdefault("aggregates", {})
+            rule_ctx["aggregates"].setdefault("bb_houses", [])
+            rule_ctx["aggregates"].setdefault("bb_strength", 0.0)
             for chain in rule.derived_house_chains:
                 steps = chain if isinstance(chain, list) else [chain]
                 current = steps[0].get("from", 1) if steps else 1
                 for step in steps:
                     current = resolve_house(current, step.get("offset", 1))
-                ctx["aggregates"]["bb_houses"].append(current)
-                ctx["aggregates"]["bb_strength"] += 0.2
+                rule_ctx["aggregates"]["bb_houses"].append(current)
+                rule_ctx["aggregates"]["bb_strength"] += 0.2
 
     result.total_fired = len(result.fired_rules)
 

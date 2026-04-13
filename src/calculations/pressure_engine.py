@@ -43,9 +43,12 @@ Public API
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -91,7 +94,7 @@ def _label(score: float) -> str:
 # ── Component 1: Structural Vulnerability ────────────────────────────────────
 
 
-def structural_vulnerability(chart) -> tuple[float, list[str]]:
+def structural_vulnerability(chart, *, ctx=None) -> tuple[float, list[str]]:
     """
     Natal baseline pressure score [0..10].
     Higher = more vulnerable chart structure.
@@ -108,8 +111,12 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
     roles = compute_functional_roles(chart)
     # Use BPHS-verified canonical malefics instead of functional_roles computation
     canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
-    hmap = compute_house_map(chart)
-    digs = compute_all_dignities(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+        digs = ctx.dignities
+    else:
+        hmap = compute_house_map(chart)
+        digs = compute_all_dignities(chart)
 
     # Moon condition (most important psychological indicator)
     moon_pos = chart.planets.get("Moon")
@@ -187,7 +194,7 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
 # ── Component 2: Dasha Activation Weight ─────────────────────────────────────
 
 
-def dasha_activation_weight(chart, dashas: list, on_date: date) -> tuple[float, str]:
+def dasha_activation_weight(chart, dashas: list, on_date: date, *, ctx=None) -> tuple[float, str]:
     """
     How much does the current dasha period amplify natal vulnerability? [0..2]
     """
@@ -197,7 +204,10 @@ def dasha_activation_weight(chart, dashas: list, on_date: date) -> tuple[float, 
     from src.calculations.functional_dignity import KNOWN_FUNCTIONAL_MALEFICS
 
     roles = compute_functional_roles(chart)
-    hmap = compute_house_map(chart)
+    if ctx is not None:
+        hmap = ctx.house_map
+    else:
+        hmap = compute_house_map(chart)
     canonical_malefics = KNOWN_FUNCTIONAL_MALEFICS.get(chart.lagna_sign_index, [])
 
     try:
@@ -352,7 +362,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
             resilience -= 0.2
             notes.append(f"Weak Jupiter ({jup_sb.total:.0f} Virupas)")
     except (ValueError, TypeError):
-        pass
+        logger.debug("Shadbala for Jupiter unavailable in resilience_factor", exc_info=True)
 
     # Yogakaraka in dasha
     try:
@@ -361,7 +371,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
             resilience += 0.25
             notes.append("Yogakaraka dasha active")
     except (ValueError, TypeError):
-        pass
+        logger.debug("Dasha lookup failed in resilience_factor", exc_info=True)
 
     # Jupiter transiting kendra from natal Moon
     try:
@@ -374,7 +384,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
                 resilience += 0.3
                 notes.append("Jupiter in kendra from natal Moon (transit)")
     except (ValueError, TypeError):
-        pass
+        logger.debug("Gochara lookup failed in resilience_factor", exc_info=True)
 
     note = "; ".join(notes) if notes else "Standard resilience"
     return max(0.5, min(resilience, 2.0)), note

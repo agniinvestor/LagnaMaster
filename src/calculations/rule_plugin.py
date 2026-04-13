@@ -22,11 +22,14 @@ API:
 """
 
 from __future__ import annotations
+import functools
+import logging
 from dataclasses import dataclass
 from typing import Callable
-import functools
 
 from src.calculations.extended_yogas import YogaResult
+
+logger = logging.getLogger(__name__)
 
 _YOGA_REGISTRY: dict[str, dict] = {}
 _SCORER_REGISTRY: dict[str, dict] = {}
@@ -130,7 +133,7 @@ def apply_score_plugins(chart, house: int) -> list[PluginScoreResult]:
                     )
                 )
         except (KeyError, AttributeError):
-            pass
+            logger.warning("Score plugin '%s' failed for house %d", name, house, exc_info=True)
     return results
 
 

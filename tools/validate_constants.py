@@ -97,7 +97,7 @@ def main() -> int:
     for path, lineno, text, desc in sorted(violations):
         print(f"  {path}:{lineno}  [{desc}]")
         print(f"    {text}")
-    print(f"\nAll astrological constants must be defined in src/data/constants.py.")
+    print("\nAll astrological constants must be defined in src/data/constants.py.")
     return 1
 
 

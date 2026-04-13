@@ -41,7 +41,7 @@ class PlanetEffectiveness:
     label: str  # "Highly effective"/"Effective"/"Moderate"/"Weak"/"Ineffective"
 
 
-def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
+def compute_planet_effectiveness(planet: str, chart, *, ctx=None) -> PlanetEffectiveness:
     """Compute multi-factor effectiveness for one planet."""
 
     # 1. Shadbala
@@ -60,9 +60,11 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
     # 2. AV rekhas
     av_f = 0.5
     try:
-        from src.calculations.ashtakavarga import compute_ashtakavarga
-
-        av = compute_ashtakavarga(chart)
+        if ctx is not None:
+            av = ctx.ashtakavarga
+        else:
+            from src.calculations.ashtakavarga import compute_ashtakavarga
+            av = compute_ashtakavarga(chart)
         pos = chart.planets.get(planet)
         if pos:
             planet_av = getattr(av, planet.lower(), None)
@@ -107,9 +109,11 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
     # 6. Combustion
     combust_p = 1.0
     try:
-        from src.calculations.dignity import compute_all_dignities
-
-        dig = compute_all_dignities(chart).get(planet)
+        if ctx is not None:
+            dig = ctx.dignities.get(planet)
+        else:
+            from src.calculations.dignity import compute_all_dignities
+            dig = compute_all_dignities(chart).get(planet)
         if dig and dig.combust:
             combust_p = 0.5
     except ImportError:
@@ -164,6 +168,6 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
     )
 
 
-def compute_all_effectiveness(chart) -> dict[str, PlanetEffectiveness]:
+def compute_all_effectiveness(chart, *, ctx=None) -> dict[str, PlanetEffectiveness]:
     planets_7 = list(SEVEN_PLANETS)
-    return {p: compute_planet_effectiveness(p, chart) for p in planets_7}
+    return {p: compute_planet_effectiveness(p, chart, ctx=ctx) for p in planets_7}

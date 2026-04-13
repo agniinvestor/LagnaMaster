@@ -26,8 +26,11 @@ signal from the main engine. It does NOT override the natal promise engine.
 """
 
 from __future__ import annotations
+import logging
 from dataclasses import dataclass
 from datetime import date
+
+logger = logging.getLogger(__name__)
 
 _DOMAINS = {"marriage": 7, "career": 10, "wealth": 2, "general": 1}
 
@@ -90,6 +93,7 @@ def _get_transit_position(planet: str, on_date: date) -> float | None:
         pos = transit_chart.planets.get(planet)
         return pos.longitude if pos else None
     except (KeyError, AttributeError):
+        logger.debug("Transit position lookup failed for %s", planet, exc_info=True)
         return None
 
 

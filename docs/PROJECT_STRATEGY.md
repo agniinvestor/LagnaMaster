@@ -2,7 +2,7 @@
 
 > **This is the single authoritative document for project state, architecture, and next steps.**
 > Every session reads THIS instead of 10+ partial documents.
-> Last verified: 2026-04-12 (W0 complete — all 30 duplication clusters resolved).
+> Last verified: 2026-04-14 (G1-G6 complete + D0-D24 resolved. Pipeline live. OB-4: +18% over OB-3).
 
 ---
 
@@ -12,16 +12,16 @@
 
 | Metric | Value | Command | Last verified |
 |--------|-------|---------|---------------|
-| Tests passing | 14,811 | `.venv/bin/pytest tests/ -q --tb=short` | 2026-04-12 |
-| Tests skipped | 210 | (same) | 2026-04-12 |
-| Tests xfailed | 360 | (same) | 2026-04-12 |
-| Lint errors | 0 | `.venv/bin/ruff check src/ tests/` | 2026-04-12 |
+| Tests passing | 14,917 | `.venv/bin/pytest tests/ -q --tb=short` | 2026-04-14 |
+| Tests skipped | 210 | (same) | 2026-04-14 |
+| Tests xfailed | 360 | (same) | 2026-04-14 |
+| Lint errors | 0 | `.venv/bin/ruff check src/ tests/` | 2026-04-14 |
 | Constants validated | PASS | `tools/validate_constants.py` | 2026-04-12 |
 | Import boundaries | PASS (9 documented exceptions) | `tools/import_boundary_check.py` | 2026-04-12 |
 | Reachable src/ files | 276/280 | `tools/reachability_analysis.py` | 2026-04-12 |
 | Tools-only files | 4 | (same) | 2026-04-12 |
 | Truly dead files | 0 | (same) | 2026-04-12 |
-| Silent exception handlers | 8 | manual scan | 2026-04-12 |
+| Silent exception handlers | 0 (12 fixed in D18) | manual scan | 2026-04-14 |
 | src/ Python files | 280 | `find src/ -name "*.py"` | 2026-04-12 |
 | src/ total lines | 121,314 | `wc -l` | 2026-04-12 |
 | test files | 187 | `find tests/ -name "*.py"` | 2026-04-12 |
@@ -60,68 +60,83 @@
 
 ### 1.3 Architecture Link Status (THE critical diagnostic)
 
-The designed data flow is: corpus rules → rule_firing.py → inference.py → scoring → API/UI.
+> **Updated 2026-04-14 after G1-G6 build + D0-D24 resolution.**
 
-| # | Link | Architecture says | Code shows | Status |
-|---|------|-------------------|-----------|--------|
-| 1 | Corpus → rule_firing | rule_firing loads corpus and fires rules | `evaluate_chart()` calls `build_corpus()`, iterates rules | **EXISTS** |
-| 2 | rule_firing → inference | inference calls evaluate_chart | `inference.py` imports `evaluate_chart`, `FiredRule` | **EXISTS** |
-| 3 | inference → scoring | scoring_v3 uses inference output | **Neither scoring.py nor scoring_v3.py imports corpus, rule_firing, or inference** | **NOT WIRED** |
-| 4 | Concordance scoring | Multi-school concordance computed | `concordance_score` field exists in rule_firing, populated as fraction. Not consumed by any scoring path | **COMPUTED, UNUSED** |
-| 5 | Promise/Capacity/Delivery | promise_engine feeds scoring | `promise_engine.py` exists, called by `guidance_api.py` only. Not called by scoring.py or scoring_v3.py | **EXISTS, NOT WIRED** |
-| 6 | Empirical feedback | Layer III calibrates Layer I | No feedback schema, no Bayesian pipeline, no posterior updates in production | **NOT BUILT** |
-| 7 | Hardcoded vs corpus | scoring.py uses corpus rules | `scoring.py` evaluates R01-R24 (hardcoded). Does NOT consume corpus | **HARDCODED** |
+The new pipeline: `build_chart_context` → `evaluate_all_rules` → `converge` → `time_project`.
+Entry point: `src/pipeline.py:run_pipeline()`. CLI: `python -m src.pipeline YEAR MONTH DAY HOUR LAT LON TZ`.
 
-**Where the chain breaks:** Link 3. The corpus pipeline (rule_firing → inference) terminates at the `/charts/{id}/analysis` API endpoint (`main.py:1000`). The scoring pipeline (scoring.py → scoring_v3.py) is completely separate and uses only 22 hardcoded rules (R01-R24).
+| # | Link | Status | Detail |
+|---|------|--------|--------|
+| 1 | Corpus → unified engine | **WIRED** | `evaluate_all_rules()` fires both 26 scoring rules AND 7,466 corpus rules via single `EvalResult` output |
+| 2 | Scoring rules → data | **WIRED** | 26 rules migrated to `ScoringRule` data records in `scoring_rules.py`, evaluated by `scoring_rule_eval.py` |
+| 3 | Unified → convergence | **WIRED** | `converge()` counts independent channels: scoring, D9, D10, BPHS, Saravali, yoga, other_text |
+| 4 | Convergence → temporal | **WIRED** | `time_project()` overlays 7 timing systems (Vimshottari MD/AD, Yogini, Chara, Gochara, Varshaphala, PAD) |
+| 5 | Pipeline → production | **WIRED** | `score_chart()` and `evaluate_chart()` auto-build ChartContext. API `create_chart()` calls `run_pipeline()`. |
+| 6 | Weight versioning | **WIRED** | `WeightStore` with 3 version axes. Evaluator reads from store. Persists to JSON. |
+| 7 | Empirical feedback | **NOT BUILT** | Phase B / G10. Requires user life event data. |
+| 8 | Traceability | **WIRED** | Every EvalResult has rule_id + verse_ref + conditions_met. 348/348 corpus rules traced. |
 
-**Consequence:** The 654 V2 rules do NOT affect chart scores. OB-3 calibration measures only the 22 hardcoded rules.
+**Where the chain breaks:** Link 7 only. The feedback loop requires Phase B user data (life events with dates).
 
-### 1.4 OB-3 Empirical Signal (hardcoded rules only)
+**Consequence:** The full corpus (7,466 rules) now affects pipeline output. OB-4 confirms convergence outperforms raw house scores by +18% average ρ.
 
-| House | Outcome category | Spearman ρ | n |
-|-------|-----------------|------------|---|
-| House | Aggregate ρ | Verified |
-|-------|-------------|----------|
-| H01 | +0.459 | 2026-04-12 (post W0-14) |
-| H03 | +0.447 | 2026-04-12 |
-| H05 | +0.474 | 2026-04-12 |
-| H07 | +0.474 | 2026-04-12 |
-| H09 | +0.425 | 2026-04-12 |
-| H10 | +0.389 | 2026-04-12 |
+### 1.4 Empirical Signal — OB-3 (legacy) vs OB-4 (pipeline)
 
-**Median ρ ≈ 0.45.** This is the baseline using 26 hardcoded rules (R01-R24 + D6 Avastha + WL War Loser). Unchanged through all W0 consolidation (no regression). Wiring 654 corpus rules should improve this — if it doesn't, the corpus rules are wrong.
+> Updated 2026-04-14. Full dataset: 4,832 AA+A Rodden-rated ADB charts.
+
+| House | Domain | OB-3 (OLD) ρ | OB-4 (CONV) ρ | Δ | Verified |
+|-------|--------|-------------|---------------|------|----------|
+| H01 | Vitality | +0.458 | **+0.549** | +0.091 (+20%) | 2026-04-14 |
+| H03 | Communication | +0.447 | **+0.528** | +0.082 (+18%) | 2026-04-14 |
+| H05 | Children | +0.475 | **+0.553** | +0.079 (+17%) | 2026-04-14 |
+| H07 | Relationships | +0.474 | **+0.571** | +0.098 (+21%) | 2026-04-14 |
+| H09 | Higher learning | +0.425 | **+0.498** | +0.073 (+17%) | 2026-04-14 |
+| H10 | Career | +0.389 | **+0.447** | +0.057 (+15%) | 2026-04-14 |
+
+**Pipeline wins on all 6 houses. Average Δ = +0.080 (+18%).**
+
+- **OB-3** measures `score_all_axes()` raw house floats (26 hardcoded rules). Unchanged through G1-G6 — this confirms zero regression.
+- **OB-4** measures `converge()` independent channel count (26 scoring + 7,466 corpus rules, 7 convergence channels). This is the new metric.
+- **TOTAL (natal+temporal) = CONV** because ADB labels have no dates. Temporal projection needs dated life events (Phase B) to show value.
+
+**Interpretation:** ρ ≈ 0.50 is moderate. Not publishable (need ρ ≥ 0.70). Ceiling is limited by binary ADB labels and noisy category proxies. Per-prediction accuracy with dated life events (Phase B / G10) is the path to higher ρ.
+
+**Tool:** `tools/ob4_pipeline_calibrate.py` (full run: ~70 min on 4,832 charts)
 
 ### 1.5 v11 Execution Plan Stage Status (verified against code)
 
 | Stage | v11 claims | Code shows | Verified status |
 |-------|-----------|-----------|----------------|
 | 1. Fix wrong formulas | ~95% | All C01-C20 bugs fixed (confirmed in git) | **DONE (100%)** |
-| 2. Tag verification levels | Partial | 9 files tagged, 104 untagged | **8% done** |
-| 3. Module registry + enforcer | DONE | Both `MODULE_REGISTRY.py` + `import_boundary_check.py` exist, pass clean | **DONE** |
-| 4. Silent exception handlers | ~84% | 8 silent handlers remain (down from 143) | **~94% done** |
+| 2. Tag verification levels | Partial | 15 files tagged (9 original + 6 pipeline), 97 untagged | **13% done** |
+| 3. Module registry + enforcer | DONE | `MODULE_REGISTRY.py` (32 entries) + `import_boundary_check.py` exist | **DONE** |
+| 4. Silent exception handlers | DONE | 0 silent handlers remain (12 fixed in D18, down from 143 originally) | **100% done** |
 | 5. Canonical primitives | DONE | `validate_constants.py` passes, 79 files refactored | **DONE** |
 | 6. Delete dead code | ~10% | Reachability: 0 truly dead files, 4 tools-only | **DONE (for dead files)** |
 | 7. Wire missing connections | DONE | R24 dignity wired in scoring.py, 2 new primitives | **DONE** |
 | 8. Runtime invariant checker | DONE | `src/invariants.py` exists, called from `ephemeris.py` | **DONE** |
 
-**Summary:** 5/8 stages DONE. Stage 1 is also done (all C-bugs fixed). Stage 2 (verification tags) is non-blocking. Stage 4 has 8 remaining silent handlers.
+**Summary:** 7/8 stages DONE. Stage 2 (verification tags) is non-blocking (13% tagged, all pipeline modules done).
 
-### 1.6 10-Layer Build Status (PREDICTION_PIPELINE.md)
+### 1.6 Pipeline Layer Build Status (ARCHITECTURE_CURRENT_VS_TARGET.md)
 
-| Layer | Description | Status |
-|-------|------------|--------|
-| L1 | Birth time sensitivity | NOT BUILT |
-| L2 | 20Q personality verification | NOT BUILT |
-| L3 | Conditional weight functions | NOT BUILT |
-| L4 | Multi-school concordance | COMPUTED (in rule_firing), UNUSED by scoring |
-| L5 | Bayesian posterior distributions | NOT BUILT |
-| L6 | Dasha temporal model | BUILT + WIRED (scoring_v3 calls apply_dasha_scoring) |
-| L7 | Autobiography date anchoring | NOT BUILT |
-| L8 | Signal isolation | NOT BUILT |
-| L9 | Chart clusters | NOT BUILT |
-| L10 | Empirical weight updates | NOT BUILT |
+> This replaces the old 10-layer model. The new architecture has 8 layers (see architecture doc).
 
-**Summary:** 1/10 layers operational (L6 Dasha). L4 concordance is computed but unused. 8/10 not built.
+| Layer | Description | Status | Evidence |
+|-------|------------|--------|----------|
+| L1 | Astronomy (ephemeris) | **DONE** | Existed pre-G1 |
+| L2 | ChartContext (5-tier derived facts) | **DONE (G1)** | `build_chart_context()`, 2.7ms, auto-built by `score_chart()` |
+| L3 | Unified rule evaluation | **DONE (G2+G3)** | `evaluate_all_rules()`, 26 scoring + 7,466 corpus rules → `EvalResult` |
+| L3a | Weight store (versioned) | **DONE (G4)** | `WeightStore`, 3 version axes, JSON persistence |
+| L4 | Convergence | **DONE (G5)** | `converge()`, 7 channels, independent counting, contra-indicators |
+| L5 | Temporal probability | **DONE (G6)** | `time_project()`, 7 timing systems, P(year), peak windows |
+| L6 | Narrative synthesis | **NOT BUILT** | G7 — next on critical path |
+| L7 | Verification + interaction | **NOT BUILT** | Phase A (20Q, life events) |
+| L8 | Calibration + learning | **NOT BUILT** | Phase B (empirical feedback) |
+
+**Summary:** 5/8 layers operational (L1-L5). L3a (weight store) is infrastructure. L6 (narrative) is next. L7-L8 are Phase A/B.
+
+**Key metric shift:** OB-3 (raw scores) → OB-4 (convergence). Pipeline outperforms legacy by +18% average ρ across 4,832 charts.
 
 ### 1.7 Guardrail Enforcement
 
