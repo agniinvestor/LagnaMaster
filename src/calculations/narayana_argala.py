@@ -23,7 +23,7 @@ Net activation modifier range: −0.5 to +0.5
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_NAMES
 from dataclasses import dataclass
 
 
@@ -47,21 +47,7 @@ def compute_argala_on_sign(sign_index: int, chart) -> ArgalaOnSign:
     Compute Argala/Virodha on a given sign (0-based index).
     Used for Narayana Dasha sign activation modifier.
     """
-    _SIGNS = [
-        "Aries",
-        "Taurus",
-        "Gemini",
-        "Cancer",
-        "Leo",
-        "Virgo",
-        "Libra",
-        "Scorpio",
-        "Sagittarius",
-        "Capricorn",
-        "Aquarius",
-        "Pisces",
-    ]
-    sign_name = _SIGNS[sign_index % 12]
+    sign_name = SIGN_NAMES[sign_index % 12]
 
     # Count planets in Argala positions relative to this sign
     argala_benefics = []

@@ -18,7 +18,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SEVEN_PLANETS, SIGN_LORDS
+from src.data.constants import SEVEN_PLANETS, SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass
 
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
@@ -59,20 +59,7 @@ class MutualReception:
     strength: str  # "Strong" (own+own) / "Partial"
 
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 
 def compute_stelliums(chart) -> list[Stellium]:

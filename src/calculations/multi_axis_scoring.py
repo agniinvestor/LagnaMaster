@@ -24,7 +24,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass
 from typing import Optional
-from src.data.constants import DIG_BALA_PEAK, DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, STHIRA_KARAKA, TRIKONA_HOUSES
+from src.data.constants import DIG_BALA_PEAK, DUSTHANA_HOUSES, KENDRA_HOUSES, NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, SIGN_NAMES, STHIRA_KARAKA, TRIKONA_HOUSES
 
 # ── School weight tables (REF_SchoolConfig) ───────────────────────────────────
 _WEIGHTS = {
@@ -470,10 +470,7 @@ class MultiAxisScores:
         )
 
 
-_SIGNS = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 
 def _make_frame_funcs(frame_lagna_si: int, chart, school: str):

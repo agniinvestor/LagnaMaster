@@ -23,7 +23,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import EXALTATION_SIGN, SIGN_LORDS
+from src.data.constants import EXALTATION_SIGN, SIGN_LORDS, SIGN_NAMES
 from src.calculations.dignity import OWN_SIGNS as _OWN_LIST, _NAISARGIKA
 from src.calculations.varga import (
     _d2_sign_index as _hora,
@@ -39,20 +39,7 @@ from dataclasses import dataclass
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.6 v.1-22", "session": "S318"}
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 # Dignity lookups — from canonical sources
 

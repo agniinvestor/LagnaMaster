@@ -23,25 +23,12 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS
+from src.data.constants import NATURAL_BENEFICS, NATURAL_MALEFICS, SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass
 
 _VERIFICATION = {"level": "bphs_pdf", "reference": "BPHS Ch.31 v.1-14", "session": "S317"}
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 
 @dataclass

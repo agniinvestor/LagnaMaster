@@ -19,24 +19,11 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import SIGN_LORDS, SIGN_NAMES
 from dataclasses import dataclass, field
 from typing import Optional
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 _SIGN_IDX = {s: i for i, s in enumerate(_SIGNS)}
 
 # Yogakaraka per lagna — from CALC_YogakarakaMap (workbook-verified)

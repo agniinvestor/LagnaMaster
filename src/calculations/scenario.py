@@ -17,23 +17,11 @@ Public API
 """
 
 from __future__ import annotations
+from src.data.constants import SIGN_NAMES
 from dataclasses import dataclass
 import copy
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 
 @dataclass

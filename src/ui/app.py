@@ -27,7 +27,7 @@ New in Session 19
 - Tabs 7-11 (S12, S15-S18) all new
 """
 
-from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS
+from src.data.constants import NATURAL_BENEFICS, SEVEN_PLANETS, SIGN_NAMES
 import logging  # noqa: E402
 import sys  # noqa: E402
 import os  # noqa: E402
@@ -139,20 +139,7 @@ except ImportError:
     _HAS_MUHURTA = False
 
 # ── constants ──────────────────────────────────────────────────────────────────
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 _PLANETS = [
     "Sun",
     "Moon",

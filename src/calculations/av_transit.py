@@ -25,7 +25,7 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SEVEN_PLANETS
+from src.data.constants import SEVEN_PLANETS, SIGN_NAMES
 from dataclasses import dataclass
 from datetime import date
 
@@ -50,20 +50,7 @@ class TransitAVReport:
     active_favorable: list[str]  # planets in favorable transit signs
 
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 
 def planet_transit_quality(

@@ -16,24 +16,11 @@ Public API
 """
 
 from __future__ import annotations
-from src.data.constants import SIGN_LORDS
+from src.data.constants import SIGN_LORDS, SIGN_NAMES
 from src.calculations.dignity import EXALT_SIGN as _EXALT_SI, OWN_SIGNS as _OWN_LIST
 from dataclasses import dataclass
 
-_SIGNS = [
-    "Aries",
-    "Taurus",
-    "Gemini",
-    "Cancer",
-    "Leo",
-    "Virgo",
-    "Libra",
-    "Scorpio",
-    "Sagittarius",
-    "Capricorn",
-    "Aquarius",
-    "Pisces",
-]
+_SIGNS = list(SIGN_NAMES)
 
 _OWN = {p: set(s) for p, s in _OWN_LIST.items()}
 
