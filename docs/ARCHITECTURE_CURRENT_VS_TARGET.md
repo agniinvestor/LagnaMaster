@@ -916,39 +916,145 @@ formulas, Jaimini rules, transit logic, strength calculations — all were
 written from secondary references or translator summaries, never compared
 line-by-line against the source slokas.
 
+Tests prove code runs without errors.  Tests do NOT prove correctness
+against the classical texts.  A yoga detection function can pass all
+tests while implementing the wrong conditions — because the tests were
+written from the same secondary source as the code, not from the primary
+text.
+
 ### G8 MANDATORY GATE: Verify before wiring
 
+**Three session types.  NEVER MIX.**
+
+| Session type | What happens | Output | Cannot mix with |
+|--------------|-------------|--------|-----------------|
+| **Verification** | Read primary source text (PDF), compare against module code function-by-function, document every discrepancy | Verse audit file + discrepancy list + _VERIFICATION tag | Architecture, encoding, wiring |
+| **Fix + Wire** | Fix bugs found in verification, wire verified module into pipeline, test on golden_50 | Code changes + pipeline integration + tests | Verification, encoding |
+| **Encoding** | Populate predictions[] for fired rules with empty claims | Updated corpus files | Architecture, verification, wiring |
+
+### Verification session protocol (per module)
+
 ```
-For each module group (G8a through G8e):
-  1. READ the relevant BPHS/source chapter verses
-  2. COMPARE each function against the verse claims
-  3. TAG the module with _VERIFICATION = {"level": "bphs_pdf", ...}
-  4. FIX any discrepancies found
-  5. ONLY THEN wire into the pipeline
+BEFORE the session:
+  - Identify the primary source chapters for this module
+  - Have the PDF open (data/classical_texts/ or external)
+  - Read CLAUDE.md session protocol
 
-This is the same Gate 1-2 process used for corpus encoding,
-applied to computation modules.
+DURING the session:
+
+  Step 1: INVENTORY
+    - List every public function in the module
+    - For each function, identify the claimed source verse(s)
+      (from docstring, comments, or variable names)
+    - If no source is cited → flag as "ungrounded implementation"
+
+  Step 2: VERSE-BY-VERSE COMPARISON
+    For each function:
+    a) Read the corresponding sloka(s) from the primary source PDF
+    b) List every condition the verse states:
+       - Which planets?
+       - Which houses/signs?
+       - From which lagna (ascendant, Moon, Sun)?
+       - What exceptions or qualifiers?
+       - What commentary does the translator add?
+    c) Compare against what the code implements:
+       - Missing conditions (verse says X, code doesn't check X)
+       - Extra conditions (code checks Y, verse doesn't say Y)
+       - Wrong conditions (verse says "7th house", code checks 8th)
+       - Wrong planet set (verse says "benefics", code uses natural
+         benefics when it should be functional benefics, or vice versa)
+       - Wrong lagna reference (verse counts from Moon, code counts
+         from ascendant)
+    d) Document each discrepancy in the verse audit file
+
+  Step 3: EDGE CASE AUDIT
+    - Are Rahu/Ketu handled? (many classical rules predate their inclusion)
+    - Are retrograde planets handled per the verse?
+    - Are combustion conditions checked where the verse requires them?
+    - Are sign-specific exceptions implemented? (e.g., "except in Cancer")
+    - Are dignity conditions checked? (e.g., "if strong" = exalted/own sign)
+
+  Step 4: CROSS-REFERENCE
+    - Does Saravali state the same conditions as BPHS for this yoga?
+    - If texts disagree, document the divergence
+    - Check: does the code follow one text consistently, or mix sources?
+
+  Step 5: TAG
+    - Add _VERIFICATION to the module with:
+      level: "bphs_pdf" | "formula_compared" | "partial_check"
+      reference: specific chapter and verse range
+      discrepancies_found: count
+      discrepancies_fixed: count
+      session: session ID
 ```
 
-**Verification order (by risk × impact):**
+### Module verification EXIT CHECKLIST
 
-| Priority | Modules | Source chapters | Why first |
-|----------|---------|-----------------|-----------|
-| 1 | yogas_extended, yogas_graha | BPHS Ch.35-36, Saravali Ch.15-20 | Yogas are the highest-value convergence signal |
-| 2 | nabhasa_yogas | BPHS Ch.35 | 32 specific yogas with precise conditions |
-| 3 | bhava_bala, ishta_kashta | BPHS Ch.27-28 | House/planet strength weights everything |
-| 4 | gochara, double_transit | BPHS Ch.64-65, transit theory | Transit analysis must be correct for current-period |
-| 5 | jaimini_full, chara_karak | Jaimini Sutras | Entirely different framework — high error risk |
-| 6 | confidence_model | Not text-based — verify against statistical theory | Birth time sensitivity is mathematical, not textual |
-| 7 | Remaining modules | Various | Lower impact on core predictions |
+A module is verified when ALL of the following are true:
 
-**Estimated effort:** Each module group requires 1 verification session
-(read source, compare, tag, fix). Total: ~7 sessions before G8 wiring
-is complete.
+- [ ] Every public function has an identified source verse (or is documented as "derived/composite")
+- [ ] Every verse condition has been compared against the code implementation
+- [ ] Missing conditions are either implemented or documented as "deferred with reason"
+- [ ] Extra conditions (not in verse) are either removed or documented as "translator commentary" or "practitioner convention"
+- [ ] Wrong conditions are fixed
+- [ ] Rahu/Ketu handling documented (included/excluded per text)
+- [ ] Retrograde handling documented
+- [ ] Lagna reference (ascendant vs Moon vs Sun) verified per verse
+- [ ] Verse audit file created: `data/verse_audits/module_name_audit.json`
+- [ ] `_VERIFICATION` tag added with accurate level and discrepancy counts
+- [ ] Existing tests updated if any were testing wrong conditions
+- [ ] New tests added for conditions found in verses but not previously tested
 
-**What this means for the roadmap:** G8 is NOT "just wiring." It is:
-verify → fix → wire → test. The verification step is the bottleneck,
-not the wiring.
+**A module that fails any of these checks is NOT cleared for pipeline wiring.**
+
+### Fix + Wire session EXIT CHECKLIST
+
+A module group is wired when ALL of the following are true:
+
+- [ ] All modules in the group carry `_VERIFICATION = "bphs_pdf"` or `"formula_compared"`
+- [ ] All discrepancies from verification are fixed (count: found = fixed)
+- [ ] Module output is integrated into the pipeline (convergence channel, temporal system, or narrative enrichment)
+- [ ] Golden_50 diverse tests pass for the new integration (50 charts × all 12 lagnas)
+- [ ] OB-4 re-run shows no regression (convergence ρ stable or improved)
+- [ ] Narrative output includes the new signal (visible in `python -m src.pipeline` output)
+- [ ] What would prove this wiring is wrong? (falsification check answered)
+
+### Encoding session EXIT CHECKLIST
+
+A claims enrichment session is complete when:
+
+- [ ] Target rules identified (rules that fire frequently but have empty predictions[])
+- [ ] Source verses read for each target rule
+- [ ] predictions[] populated with: entity, claim, domain, direction, magnitude
+- [ ] Claims are SOURCE TEXT claims, not interpretations (principle #8: source fidelity)
+- [ ] v2_scorecard.py passes on modified files
+- [ ] Full test suite passes
+- [ ] Percentage of fired rules with claims tracked (current: ~20%, target: >80%)
+
+### Verification priority order (by risk × impact)
+
+| Priority | Modules | Source | Verification type |
+|----------|---------|--------|-------------------|
+| 1 | yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas | BPHS Ch.35-36, Saravali Ch.15-20 | Verse-by-verse: each yoga has specific multi-planet conditions |
+| 2 | bhava_bala, ishta_kashta | BPHS Ch.27-28 | Formula comparison: mathematical formulas with specific weights |
+| 3 | gochara, double_transit, av_transit, bhava_and_transit, transit_quality_advanced | BPHS Ch.64-65, KN Rao transit theory | Mixed: some formulaic, some interpretive |
+| 4 | chara_karak, jaimini_full, karakamsha_analysis | Jaimini Sutras (multiple commentators) | HIGH RISK: sutras are cryptic, commentators disagree. Must document which commentary is followed. |
+| 5 | sapta_varga, divisional_charts | BPHS Ch.6-8 | Formula: varga computation is mathematical. Partially verified already. |
+| 6 | dasha_activation, ashtottari_dasha | BPHS Ch.46-47 | Mixed: some formulaic (period calculation), some interpretive (activation conditions) |
+| 7 | graha_yuddha, sudarshana, muhurtha_complete, special_lagnas | Various chapters | Mixed: each module references different chapters |
+| 8 | scoring_patches, yoga_strength, shadbala_patches, multi_lagna, dig_bala | Various | Composite: these aggregate from other modules, verify the aggregation logic |
+| 9 | confidence_model | Statistical theory (not text-based) | Mathematical: verify uncertainty propagation formulas, not verses |
+
+### What Claude CANNOT verify
+
+- Sanskrit originals — can only compare against English translations (Santhanam, Raman, etc.)
+- Cases where translators disagree — must document the divergence, not pick a side
+- Practitioner conventions not stated in text — must flag as "convention, not verse"
+- Whether the chosen translation is the best one for a given verse
+
+**A practitioner review is required for Priority 4 (Jaimini) and recommended
+for Priority 1 (yogas).** Claude can do the mechanical comparison for
+formula-based modules (Priority 2, 5, 6, 9).
 
 ---
 
@@ -1121,28 +1227,26 @@ G8f (claims enrichment) — parallel, encoding sessions
 
 G8a must come first (the current D9/D10 evaluation is structurally wrong).
 
-### Key insight: VERIFY → FIX → WIRE → TEST
+### G8 process: three session types, NEVER mixed
 
-Every G8 sub-item follows the same 4-step process:
+Each sub-item proceeds through **verification sessions** first, then
+**fix+wire sessions**, with **encoding sessions** running in parallel
+for G8h only.  See "Verification session protocol" and "EXIT CHECKLISTS"
+above for the detailed per-session process.
 
-1. **VERIFY** — read the source text chapters, compare against module logic
-2. **FIX** — correct any discrepancies found
-3. **WIRE** — connect verified module into pipeline convergence/temporal/narrative
-4. **TEST** — run against golden_50 diverse charts, verify no regressions
+**No module enters the pipeline without passing the Module Verification
+EXIT CHECKLIST.**
 
-**Do NOT skip step 1.** Wiring unverified modules into production is building
-on assumptions. The 28 modules have tests but zero verse verification.
-
-| Item | Module(s) that already exist | What "wiring" means |
-|------|------------------------------|---------------------|
-| G8a | `sapta_varga.compute_vimshopak()`, `varga.py` | Fix: use actual varga planet positions instead of D1 with swapped lagna |
-| G8b | `yogas_extended`, `yogas_graha`, `yogas_pvrnr`, `nabhasa_yogas` | Add yoga detection results as convergence channel |
-| G8c | `bhava_bala`, `ishta_kashta`, `compute_vimshopaka()`, `compute_vimshopak()` | Multiply convergence by planet/house strength scores |
-| G8d | `gochara`, `double_transit`, `av_transit`, `bhava_and_transit` | Feed transit analysis into temporal projection for current period |
-| G8e | `chara_karak`, `jaimini_full`, `karakamsha_analysis` | Add Jaimini framework as independent convergence channel |
-| G8f | `vimshottari_dasa` (AD data exists with dates) | Generate per-AD narrative within each MD life phase |
-| G8g | `ctx.vargas` (D2/D3/D4/D7/D9/D10/D12 all computed) | Map domain→varga, check house lord dignity in relevant varga |
-| G8h | Corpus `predictions[]` field (schema exists) | Encoding sessions to populate empty claim fields |
+| Item | Modules | Verification type | Then wire as |
+|------|---------|-------------------|-------------|
+| G8a | sapta_varga, varga, divisional_charts | Formula comparison (BPHS Ch.6-8). Partially verified already. | Fix: use actual varga planet positions instead of D1 with swapped lagna |
+| G8b | yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas | Verse-by-verse (BPHS Ch.35-36, Saravali Ch.15-20). **Practitioner review recommended.** | Yoga detection results as convergence channel |
+| G8c | bhava_bala, ishta_kashta, shadbala_patches, dig_bala | Formula comparison (BPHS Ch.27-28). Mathematical — Claude can verify. | Convergence weighting by planet/house strength |
+| G8d | gochara, double_transit, av_transit, bhava_and_transit, transit_quality_advanced | Mixed (BPHS Ch.64-65, KN Rao). Some formulaic, some interpretive. | Transit analysis into temporal projection + current period |
+| G8e | chara_karak, jaimini_full, karakamsha_analysis | HIGH RISK (Jaimini Sutras — cryptic, commentators disagree). **Practitioner review required.** | Jaimini framework as independent convergence channel |
+| G8f | vimshottari_dasa (AD data already exists) | Already verified (vimshottari is in ChartContext). No verification session needed. | AD-level narrative depth within each MD life phase |
+| G8g | ctx.vargas (D2/D3/D4/D7/D9/D10/D12) | Depends on G8a verification of varga computation. | Domain-specific divisional analysis (D9→marriage, D10→career) |
+| G8h | Corpus predictions[] field | **Encoding sessions** (separate from verification). Source text → claims. | NL template enrichment for empty-claim rules |
 
 ---
 
@@ -1307,19 +1411,30 @@ Uses `converge()` output — independent channel count (scoring + D9 + D10 + BPH
 
 ### Phase C.5 Practitioner Depth — NEXT
 
-Each G8 item follows: VERIFY source text → FIX discrepancies → WIRE into pipeline → TEST on golden_50.
-28 modules have tests but ZERO verse verification. Verification is the bottleneck.
+28 modules have tests but **ZERO verse verification**. Verification is
+the bottleneck.  See "G8 MANDATORY GATE" section for the full protocol
+and EXIT CHECKLISTS.  Three session types, NEVER mixed.
 
-- [ ] G8a: Fix varga evaluation — VERIFY sapta_varga.py + varga.py against BPHS Ch.6-8, then fix D9/D10 to use actual planet positions
-- [ ] G8b: VERIFY yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas against BPHS Ch.35-36 + Saravali Ch.15-20, then wire into convergence
-- [ ] G8c: VERIFY bhava_bala, ishta_kashta against BPHS Ch.27-28, then wire into convergence weighting
-- [ ] G8d: VERIFY gochara, double_transit, av_transit against BPHS Ch.64-65, then wire into temporal projection
-- [ ] G8e: VERIFY chara_karak, jaimini_full against Jaimini Sutras, then wire as alternative channel
-- [ ] G8f: AD-level narrative depth (wiring — AD data already verified via vimshottari_dasa)
-- [ ] G8g: Domain-specific divisional analysis (D9→marriage, D10→career, D7→children)
-- [ ] G8h: Claims enrichment (encoding sessions for empty predictions[])
-- [ ] G14: Wire confidence_model.py into pipeline (verify against statistical theory, not text)
-- [ ] G15: Safety filtering (enforce guardrails G01/G02/G05, suppress health_sensitive claims)
+**Each item below requires passing BOTH the Module Verification EXIT
+CHECKLIST AND the Fix+Wire EXIT CHECKLIST before it is marked done.**
+
+| Item | Status | Verification | Fix+Wire |
+|------|--------|-------------|----------|
+| G8a (varga fix) | NOT STARTED | [ ] Module verification checklist passed for sapta_varga, varga, divisional_charts | [ ] Fix+wire checklist passed |
+| G8b (yogas) | NOT STARTED | [ ] Module verification checklist passed for yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas. **Practitioner review recommended.** | [ ] Fix+wire checklist passed |
+| G8c (strength) | NOT STARTED | [ ] Module verification checklist passed for bhava_bala, ishta_kashta, shadbala_patches, dig_bala | [ ] Fix+wire checklist passed |
+| G8d (transit) | NOT STARTED | [ ] Module verification checklist passed for gochara, double_transit, av_transit, bhava_and_transit, transit_quality_advanced | [ ] Fix+wire checklist passed |
+| G8e (Jaimini) | NOT STARTED | [ ] Module verification checklist passed for chara_karak, jaimini_full, karakamsha_analysis. **Practitioner review required.** | [ ] Fix+wire checklist passed |
+| G8f (AD depth) | NOT STARTED | No verification needed (vimshottari already verified) | [ ] Fix+wire checklist passed |
+| G8g (domain vargas) | BLOCKED by G8a | Depends on G8a varga verification | [ ] Fix+wire checklist passed |
+| G8h (claims) | NOT STARTED | N/A — encoding session type | [ ] Encoding session checklist: >80% of fired rules have claims |
+
+**G14 and G15 follow after G8:**
+
+| Item | Status | Gate |
+|------|--------|------|
+| G14 (birth time sensitivity) | NOT STARTED | [ ] confidence_model.py verified against statistical theory. [ ] Wired into pipeline. [ ] NarrativeReport carries sensitivity warnings. |
+| G15 (safety filtering) | NOT STARTED | [ ] 129 health_sensitive rules suppressed/flagged in narrative. [ ] Guardrails G01/G02/G05 enforced in all NL templates. [ ] No unfiltered death/longevity claims in user-facing output. |
 
 ### Phase A Practitioner Tool — BLOCKED by G15
 
