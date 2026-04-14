@@ -37,7 +37,9 @@ Read this at session start. Do NOT rebuild any tool that already exists here.
 | `diff_engine.py` | Full cross-validation pipeline: LagnaMaster vs PyJHora field-by-field |
 | `diff_engine_core.py` | Core diff engine with normalization and classification |
 | `diff_report.py` | Aggregate reporting and health dashboard metrics across validations |
-| `ob3_calibrate.py` | Empirical scoring calibration using 5,063 ADB charts |
+| `ob3_calibrate.py` | Legacy scoring calibration: Spearman ρ of house scores vs ADB categories (4,832 charts) |
+| `ob4_pipeline_calibrate.py` | Pipeline calibration: convergence ρ vs ADB categories. Compares OLD (score_all_axes) vs NEW (converge). Full run ~70min. |
+| `benchmark_chart.py` | Per-layer timing benchmark for single chart computation (Q9) |
 | `normalize_outputs.py` | Normalization layer for cross-engine comparison before diffing |
 | `classification.py` | Reclassify cross-engine disagreements into systematic or random |
 | `vedastro_cross_validate.py` | Cross-validate LagnaMaster positions against VedAstro REST API |
@@ -82,8 +84,11 @@ Read this at session start. Do NOT rebuild any tool that already exists here.
 **Decision tree: "Which tool do I use?"**
 
 - Starting a session? → `start_session.py`
+- Running the full pipeline? → `python -m src.pipeline YEAR MONTH DAY HOUR LAT LON TZ`
 - Encoding a chapter? → `verse_audit.py` (Gate 1) → encode → `v2_scorecard.py` (Gate 4) → `validate_rules.py` (pre-commit)
 - Auditing the corpus? → `corpus_audit.py` (broad) or `condition_modifier_audit.py` (specific)
+- Measuring prediction quality? → `ob4_pipeline_calibrate.py` (convergence) or `ob3_calibrate.py` (legacy scores)
+- Benchmarking performance? → `benchmark_chart.py`
 - Cross-validating positions? → `diff_engine.py` (vs PyJHora) or `vedastro_cross_validate.py` (vs VedAstro)
 - Checking for rework? → `rework_detector.py` (pre-commit) or `rework_counter.py` (history scan)
 - Importing chart data? → `adb_scraper.py` or `adb_xml_importer.py`

@@ -1,5 +1,11 @@
 # ROADMAP.md — LagnaMaster Complete Phase Roadmap
 > **Update this file when sessions complete, phases gate, or session plans change.**
+> Last updated: 2026-04-14.
+>
+> **Current state:** G1-G7 (pipeline foundation) complete. G8 (practitioner depth) scoped,
+> blocked on practitioner review. See `docs/ARCHITECTURE_CURRENT_VS_TARGET.md` for G-item
+> details and `docs/PRACTITIONER_REVIEW_CHECKLIST.md` for the teacher review document.
+> Pipeline entry: `python -m src.pipeline`. Calibration: `tools/ob4_pipeline_calibrate.py`.
 
 ---
 

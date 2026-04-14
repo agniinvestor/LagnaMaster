@@ -1,3 +1,6 @@
+> **HISTORICAL REFERENCE** — Consolidated into `docs/PROJECT_STRATEGY.md` Section 3 (2026-04-12).
+> For current work items and priorities, read PROJECT_STRATEGY.md.
+
 # v11 Execution Plan — Session Contracts, Tool Specs, Testing Strategy
 
 **Companion to:** `2026-04-07-canonical-architecture-v11.md`

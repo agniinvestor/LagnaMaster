@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–262 complete — March 2026)
+## Actual Current State (updated 2026-04-14 — G1-G7 + G8 scoped)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
