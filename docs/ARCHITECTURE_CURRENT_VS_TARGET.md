@@ -1134,6 +1134,132 @@ formula-based modules (Priority 2, 5, 6, 9).
 > depth.  Without G8, the system produces structurally correct but
 > analytically shallow output that no practitioner would trust.
 
+### The real gap (discovered via practitioner pre-review)
+
+The system is **text-complete but workflow-incomplete**.
+
+It has modules for nearly everything a practitioner checks — argala,
+upapada, arudha, dispositor chains, avasthas, badhaka, maraka, 140+
+yogas, 32 nabhasa yogas, full shadbala, nakshatra analysis.
+
+**But it treats all signals as parallel and additive.** A practitioner
+treats them as **hierarchical with gating, overrides, and context-dependent
+interpretation.**
+
+The difference:
+
+| Our pipeline | A practitioner |
+|-------------|----------------|
+| Counts channels: "5 signals agree" | Gates: "Does the promise exist? No → stop" |
+| Adds yoga + dasha + transit into one score | Hierarchy: promise → confirmation → activation |
+| Same logic for every question | Event-specific workflows (marriage ≠ career ≠ health) |
+| Planet strength is one of many signals | Planet condition is a unified assessment that gates everything |
+| Karakas are house-level (Sthira Karaka) | Karakas are a separate lens: Venus for marriage, Jupiter for children, always checked independently |
+| Convergence = count of text sources | Convergence = natal promise confirmed in divisional + activated by dasha + triggered by transit |
+
+### What G8 must actually build
+
+**Not more modules. A reasoning architecture.**
+
+**G8-R1: Promise Gating Layer**
+The natal promise must exist before timing is checked. If D1 shows no
+promise for an event (weak house + afflicted karaka + no supporting yoga),
+the system should suppress that prediction regardless of dasha/transit.
+
+```
+GATE 1: Does the chart promise this event?
+  - House lord placement + dignity
+  - Karaka condition
+  - Supporting yogas
+  → NO PROMISE → suppress prediction
+  → WEAK PROMISE → conditional prediction with caveat
+  → STRONG PROMISE → proceed to confirmation
+
+GATE 2: Is the promise confirmed in relevant varga?
+  - D9 for marriage/dharma
+  - D10 for career
+  - D7 for children
+  → NOT CONFIRMED → weaken prediction
+  → CONFIRMED → proceed to activation
+
+GATE 3: Is there dasha activation?
+  - House lord in MD/AD
+  - Karaka in MD/AD
+  → NOT ACTIVE → "promise exists but not yet ripe"
+  → ACTIVE → proceed to transit trigger
+
+GATE 4: Is there a transit trigger?
+  - Double transit over the house
+  - Jupiter/Saturn aspect
+  → NOT TRIGGERED → "activation window without trigger"
+  → TRIGGERED → "event likely in this window"
+```
+
+**G8-R2: Karaka Lens Layer**
+Every prediction checked from TWO perspectives:
+  - House lord (Parashari default)
+  - Naisargika karaka (Venus→marriage, Jupiter→children, Sun→authority)
+Both must support for high confidence. If they diverge → mixed signal.
+
+**G8-R3: Unified Planet State Model**
+Before any prediction, each planet's condition is assessed holistically:
+  - Sign dignity (exalted → debilitated)
+  - House placement (kendra/trikona → dusthana)
+  - Aspects received (benefic → malefic)
+  - Combustion state
+  - Retrograde state
+  - Avastha (Baladi + Jagradadi + Lajjitadi)
+  - Graha yuddha (planetary war)
+  - Dispositor chain (who ultimately controls this planet?)
+
+This produces a single `PlanetState` assessment per planet that gates
+all downstream interpretation.
+
+**G8-R4: Event-Specific Workflows**
+Replace the generic "evaluate all rules → converge → narrate" with
+predefined evaluation pipelines per life domain:
+
+Marriage workflow:
+  1. 7th house + 7th lord
+  2. Venus (naisargika karaka) condition
+  3. Upapada Lagna
+  4. D9 navamsha (7th from D9 lagna, Venus in D9)
+  5. Darakaraka (Jaimini)
+  6. Dasha of 7th lord or Venus
+  7. Double transit over 7th house
+  8. Argala on 7th house
+
+Career workflow:
+  1. 10th house + 10th lord
+  2. Sun (authority), Saturn (service), Mercury (commerce) karakas
+  3. D10 dashamsha (10th from D10 lagna)
+  4. Amala yoga / career yogas
+  5. Dasha of 10th lord
+  6. Double transit over 10th house
+
+Each workflow has its own gating sequence and priority order.
+
+**G8-R5: Override and Heuristic Rules**
+Practitioner heuristics that override computed results:
+  - Strong Jupiter protects even in difficult placements
+  - Afflicted Moon destabilizes the entire reading
+  - Saturn delays but does not deny (for Saturn-functional-benefic lagnas)
+  - Strong yogakaraka overrides minor afflictions
+
+These must come from practitioner review (Section 8.4 of the checklist)
+and be encoded as explicit override conditions, not buried in scoring weights.
+
+### G8 is BLOCKED by practitioner review
+
+The G8-R1 through G8-R5 items describe WHAT to build, but the specific
+gating thresholds, override conditions, and workflow sequences MUST come
+from the practitioner checklist (docs/PRACTITIONER_REVIEW_CHECKLIST.md).
+
+**G8 cannot be built correctly without the teacher's feedback on Sections
+8.4 through 8.9.** The previous G8 sub-items (G8a-G8h) remain valid as
+module verification tasks, but the reasoning architecture (G8-R1 through
+G8-R5) is the real work and requires practitioner input.
+
 ### The problem
 
 A practitioner reading our current output would immediately flag:

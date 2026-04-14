@@ -255,10 +255,81 @@ Please mark each question: ✅ correct / ❌ wrong / ⚠️ partially correct / 
 - [ ] Our system counts "how many independent signals confirm a prediction" — D1 analysis, D9 confirmation, corpus text evidence, yoga presence, timing activation. A prediction confirmed by 5 independent signals is stronger than one confirmed by 2. Is this how you evaluate in practice?
 - [ ] When natal promise (D1) is strong but D9 does not confirm — how do you interpret this? Weakened promise? Delayed manifestation? Different domain?
 
-**8.4 What are we missing entirely?**
-- [ ] Are there standard practitioner checks we haven't mentioned at all?
-- [ ] What would you check first that we haven't listed?
-- [ ] What common mistakes do software implementations of Jyotish make?
+**8.4 Practitioner Decision Workflow (MOST IMPORTANT SECTION)**
+
+Our system currently treats all signals (yogas, dashas, transits, strength)
+as **parallel and additive** — it counts how many signals agree. A pre-review
+suggests this is wrong. Practitioners think **hierarchically** — some checks
+gate others, some override others, and the ORDER of evaluation matters.
+
+**Please describe your actual workflow:**
+
+- [ ] Do you follow a fixed sequence when reading a chart? What is it? (e.g., "lagna lord first, then Moon, then karaka, then yogas, then dasha")
+- [ ] What do you check FIRST before anything else?
+- [ ] What must be TRUE in the natal chart before you even look at timing? (the "natal promise" gate)
+- [ ] If the natal promise is absent (e.g., weak 7th house + afflicted Venus + no yoga for marriage) — do you still predict marriage during a relevant dasha? Or do you say "no promise, no event regardless of timing"?
+- [ ] What conditions cause you to IGNORE an otherwise valid yoga?
+- [ ] What factors OVERRIDE others? (e.g., "strong Jupiter protects even in bad placements", "afflicted Moon destabilizes the entire chart")
+- [ ] Which 3-5 signals matter MOST for:
+  - Marriage?
+  - Career?
+  - Wealth?
+  - Health?
+  - Children?
+- [ ] What do you NEVER rely on alone? (e.g., "yogas alone mean nothing without dasha activation")
+- [ ] What are your "shortcut heuristics" not found in any textbook?
+- [ ] Which things do Jyotish software packages typically get wrong?
+- [ ] Do you always check from BOTH lagna AND Moon? Or only specific things from Moon?
+
+**8.5 Karaka-Based Analysis**
+
+Our system focuses on house lords. Pre-review suggests karaka analysis
+is equally important but we treat it as secondary.
+
+- [ ] For marriage: do you check Venus (naisargika karaka for marriage) as a SEPARATE lens alongside 7th lord? What specifically do you check about Venus?
+- [ ] For children: do you check Jupiter separately? 5th from Jupiter?
+- [ ] For career: do you check Sun (authority), Saturn (service), Mercury (commerce) as separate karakas?
+- [ ] "Check the house from the karaka" — e.g., 7th from Venus for marriage refinement. Is this standard practice? How much weight vs 7th from lagna?
+- [ ] Chara karakas (Jaimini) — Darakaraka for spouse, Putrakaraka for children. Do you use these alongside Parashari karakas? Or only in Jaimini analysis?
+
+**8.6 Unified Planet Condition Assessment**
+
+We check combustion, dignity, retrograde, aspects, etc. as separate flags.
+Pre-review says practitioners synthesize these into a single "planet condition."
+
+- [ ] When you assess a planet, do you form a single mental assessment (e.g., "this Jupiter is strong" or "this Venus is afflicted")? What factors go into that?
+- [ ] What is the hierarchy? (e.g., "dignity > placement > aspects > combustion"?)
+- [ ] Is a debilitated planet in a good house better or worse than an exalted planet in a dusthana?
+- [ ] How do avasthas (Baladi, Jagradadi, Lajjitadi) factor in? Are they a tiebreaker, a primary indicator, or rarely used?
+
+**8.7 Event-Specific Workflows**
+
+Pre-review suggests practitioners use predefined evaluation sequences
+for specific life questions, not a general-purpose system.
+
+- [ ] For a marriage question, what is your EXACT sequence of checks? (all steps, in order)
+- [ ] For a career question, what is your EXACT sequence? 
+- [ ] For health/longevity concerns, what is your EXACT sequence?
+- [ ] Are these sequences fixed or do they vary by chart?
+- [ ] At what point in the sequence do you STOP and say "this event is unlikely"?
+
+**8.8 What we have but may not be using correctly**
+
+Our codebase already computes all of these. We need to know if we're
+using them at the right point in the analysis, with the right weight:
+
+- [ ] **Argala** (intervention from 2nd/4th/11th, obstruction from 12th/10th/3rd) — when in your workflow do you check argala? Is it critical or supplementary?
+- [ ] **Arudha Lagna** (material perception) — when do you use it? For which questions?
+- [ ] **Upapada Lagna** — how central is this to marriage analysis? Can you skip it?
+- [ ] **Dispositor chains** — how much weight? Do you trace the full chain or just one step?
+- [ ] **Nakshatra lord** — beyond dasha calculation, how much does nakshatra character matter?
+- [ ] **Badhaka** — how often does badhaka lord/house explain otherwise puzzling obstacles?
+- [ ] **Maraka** — beyond death, how do you use maraka lords for health events?
+
+**8.9 What are we missing entirely?**
+- [ ] After reading all the above, what standard practitioner checks have we STILL not mentioned?
+- [ ] What would a client find obviously wrong in our output?
+- [ ] What is the single most common error in Jyotish software that frustrates practitioners?
 
 ---
 
