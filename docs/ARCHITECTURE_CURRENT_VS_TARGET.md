@@ -992,18 +992,43 @@ DURING the session:
 
 A module is verified when ALL of the following are true:
 
-- [ ] Every public function has an identified source verse (or is documented as "derived/composite")
+**Source text comparison:**
+- [ ] Every public function has an identified source verse (or is documented as "derived/composite" with justification)
 - [ ] Every verse condition has been compared against the code implementation
 - [ ] Missing conditions are either implemented or documented as "deferred with reason"
-- [ ] Extra conditions (not in verse) are either removed or documented as "translator commentary" or "practitioner convention"
+- [ ] Extra conditions (not in verse) are either removed or documented as "translator commentary" or "practitioner convention" — with the specific commentary cited
 - [ ] Wrong conditions are fixed
-- [ ] Rahu/Ketu handling documented (included/excluded per text)
-- [ ] Retrograde handling documented
-- [ ] Lagna reference (ascendant vs Moon vs Sun) verified per verse
+- [ ] Orb/degree thresholds verified against verse (e.g., conjunction = same sign? or within N degrees? which N?)
+- [ ] Rahu/Ketu handling documented (included/excluded per text, with verse citation)
+- [ ] Retrograde handling documented (does the verse mention retrograde? does the code check it?)
+- [ ] Combustion handling documented (where relevant)
+- [ ] Lagna reference (ascendant vs Moon vs Sun) verified per verse for EVERY function
+- [ ] Sign-specific exceptions verified (e.g., "except in own sign", "only for movable signs")
+
+**Ambiguity resolution:**
+- [ ] Where the verse is genuinely ambiguous, the chosen interpretation is documented with: which translator, which commentary, and why
+- [ ] Where translators disagree (e.g., Santhanam vs Raman), both interpretations are documented and the code follows ONE consistently — stated in the audit file
+- [ ] "Practitioner convention" items (not in any text but widely practiced) are flagged separately from verse-based items
+
+**Dependency chain:**
+- [ ] All modules this module CALLS are identified
+- [ ] If a dependency module is unverified, that is documented as a risk (the verification is conditional on the dependency being correct)
+- [ ] Constants used (from src/data/constants.py) are verified against the text (e.g., exaltation degrees, sign lordships)
+
+**Cross-validation against reference:**
+- [ ] Module output compared against PyJHora reference data for at least 10 diverse charts (from verified_360)
+- [ ] Discrepancies between LagnaMaster and PyJHora are documented and categorized: (a) our bug, (b) PyJHora bug, (c) different interpretation, (d) different methodology
+- [ ] If >20% of charts show discrepancies for a function, that function is flagged for deeper investigation before clearing
+
+**Artifacts:**
 - [ ] Verse audit file created: `data/verse_audits/module_name_audit.json`
-- [ ] `_VERIFICATION` tag added with accurate level and discrepancy counts
+- [ ] `_VERIFICATION` tag added with: level, reference, discrepancies_found, discrepancies_fixed, pyjhora_discrepancy_rate, session
 - [ ] Existing tests updated if any were testing wrong conditions
 - [ ] New tests added for conditions found in verses but not previously tested
+- [ ] Tests include at least 3 diverse charts (different lagnas) — not just India 1947
+
+**Review:**
+- [ ] Verification findings reviewed (maker-checker). For Priority 1-4 modules: practitioner review. For Priority 5-9: self-review with documented reasoning.
 
 **A module that fails any of these checks is NOT cleared for pipeline wiring.**
 
@@ -1011,25 +1036,66 @@ A module is verified when ALL of the following are true:
 
 A module group is wired when ALL of the following are true:
 
-- [ ] All modules in the group carry `_VERIFICATION = "bphs_pdf"` or `"formula_compared"`
-- [ ] All discrepancies from verification are fixed (count: found = fixed)
+**Prerequisites:**
+- [ ] All modules in the group carry `_VERIFICATION = "bphs_pdf"` or `"formula_compared"` with all Module Verification checklist items passed
+- [ ] All discrepancies from verification are fixed (count: found = fixed, or remaining deferred with documented reason)
+
+**Integration:**
 - [ ] Module output is integrated into the pipeline (convergence channel, temporal system, or narrative enrichment)
+- [ ] Integration point is documented: which pipeline layer, what data flows where
+
+**Regression testing:**
 - [ ] Golden_50 diverse tests pass for the new integration (50 charts × all 12 lagnas)
-- [ ] OB-4 re-run shows no regression (convergence ρ stable or improved)
+- [ ] Full test suite passes (14,900+ tests)
+- [ ] OB-4 re-run shows no regression (convergence ρ stable or improved per house)
+- [ ] Before/after comparison documented: for 5 sample charts, list which predictions changed direction (favorable↔unfavorable) and whether each change is expected or suspicious
+- [ ] No prediction flips direction WITHOUT a clear explanation traceable to the newly wired module
+
+**Narrative impact:**
 - [ ] Narrative output includes the new signal (visible in `python -m src.pipeline` output)
-- [ ] What would prove this wiring is wrong? (falsification check answered)
+- [ ] NL templates correctly render the new data (no empty fields, no "None" in output)
+
+**Falsification:**
+- [ ] "What would prove this wiring is wrong?" answered with a specific, testable claim
+- [ ] That claim has been tested
 
 ### Encoding session EXIT CHECKLIST
 
 A claims enrichment session is complete when:
 
 - [ ] Target rules identified (rules that fire frequently but have empty predictions[])
-- [ ] Source verses read for each target rule
+- [ ] Source verses read for each target rule from the PRIMARY source PDF
 - [ ] predictions[] populated with: entity, claim, domain, direction, magnitude
 - [ ] Claims are SOURCE TEXT claims, not interpretations (principle #8: source fidelity)
+- [ ] Claims follow granularity definition in `docs/ENCODING_GRANULARITY.md` (one claim per independently verifiable prediction)
+- [ ] Maker-checker review completed (Gate 2 from CLAUDE.md encoding protocol)
 - [ ] v2_scorecard.py passes on modified files
 - [ ] Full test suite passes
-- [ ] Percentage of fired rules with claims tracked (current: ~20%, target: >80%)
+- [ ] Percentage of fired rules with claims tracked and reported (current: ~20%)
+
+### G8 system-level acceptance test
+
+G8 as a whole is NOT complete until:
+
+- [ ] Every G8 sub-item (G8a through G8h) has passed its respective checklist
+- [ ] Pipeline coverage is >60% (currently 30% — 12/40 modules)
+- [ ] OB-4 re-run on full 4,832 charts shows improvement over baseline (+18% avg ρ from G1-G7)
+- [ ] Narrative output for 5 sample charts reviewed by practitioner and rated "structurally sound" (not necessarily perfect — but no obvious errors a practitioner would immediately flag)
+- [ ] All modules in the pipeline carry `_VERIFICATION` tags
+- [ ] No module with `_VERIFICATION = "partial_check"` is in the hot path (convergence scoring or temporal projection)
+
+### When verification finds a module is fundamentally wrong
+
+If verification reveals that a module implements a completely different
+interpretation than what the source text says (not just missing conditions
+but wrong framework), the protocol is:
+
+1. **Do NOT wire it.** Flag as `_VERIFICATION = {"level": "failed", ...}`
+2. **Document the discrepancy** in the verse audit file with full detail
+3. **Assess scope:** Is it a few functions (patch) or the entire module (rewrite)?
+4. **If patch:** Fix in the next fix+wire session. Clear the module verification checklist after fix.
+5. **If rewrite:** Create a new module. The old one stays as-is (not wired). The rewrite goes through the full encoding protocol (Gate 0-4 from CLAUDE.md).
+6. **Never half-wire a failed module.** Either it passes verification fully or it stays out of the pipeline.
 
 ### Verification priority order (by risk × impact)
 
