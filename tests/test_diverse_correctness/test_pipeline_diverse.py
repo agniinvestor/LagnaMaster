@@ -15,6 +15,7 @@ from src.ephemeris import compute_chart
 from src.calculations.chart_context import build_chart_context, ChartContext
 from src.calculations.unified_engine import evaluate_all_rules, UnifiedResult
 from src.calculations.convergence import converge
+from src.calculations.narrative import NarrativeReport, narrate
 from src.calculations.temporal_projection import time_project
 
 
@@ -143,3 +144,44 @@ class TestTemporalDiverse:
         for t in timed:
             assert t.total_confirmations >= 1
             assert t.temporal_confirmations >= 0
+
+
+# ---------------------------------------------------------------------------
+# G7: Narrative synthesis works for all charts
+# ---------------------------------------------------------------------------
+
+class TestNarrativeDiverse:
+    def test_narrates_without_error(self, ctx, chart_and_bd):
+        _, birth_date = chart_and_bd
+        ur = evaluate_all_rules(ctx)
+        conv = converge(ur.results, ctx)
+        timed = time_project(conv, ctx, birth_date=birth_date)
+        report = narrate(timed, ctx)
+        assert isinstance(report, NarrativeReport)
+
+    def test_has_9_life_phases(self, ctx, chart_and_bd):
+        _, birth_date = chart_and_bd
+        ur = evaluate_all_rules(ctx)
+        conv = converge(ur.results, ctx)
+        timed = time_project(conv, ctx, birth_date=birth_date)
+        report = narrate(timed, ctx)
+        assert len(report.life_phases) == 9
+
+    def test_has_overall_arc(self, ctx, chart_and_bd):
+        _, birth_date = chart_and_bd
+        ur = evaluate_all_rules(ctx)
+        conv = converge(ur.results, ctx)
+        timed = time_project(conv, ctx, birth_date=birth_date)
+        report = narrate(timed, ctx)
+        assert report.overall_arc
+        assert isinstance(report.overall_arc, str)
+
+    def test_has_four_domain_narratives(self, ctx, chart_and_bd):
+        _, birth_date = chart_and_bd
+        ur = evaluate_all_rules(ctx)
+        conv = converge(ur.results, ctx)
+        timed = time_project(conv, ctx, birth_date=birth_date)
+        report = narrate(timed, ctx)
+        assert len(report.per_domain_narratives) == 4
+        for name in ("career", "family", "health", "spiritual"):
+            assert name in report.per_domain_narratives

@@ -21,6 +21,7 @@ from datetime import date
 
 from src.calculations.chart_context import ChartContext, build_chart_context
 from src.calculations.convergence import ConvergedPrediction, converge
+from src.calculations.narrative import NarrativeReport, narrate
 from src.calculations.temporal_projection import TimedPrediction, time_project
 from src.calculations.unified_engine import UnifiedResult, evaluate_all_rules
 from src.calculations.weight_store import VersionInfo
@@ -46,6 +47,9 @@ class PipelineResult:
 
     # Layer 4+5: convergence + timing
     predictions: list[TimedPrediction]
+
+    # Layer 6: narrative synthesis (G7)
+    narrative: NarrativeReport
 
     # Reproducibility (Q6)
     version: VersionInfo
@@ -97,12 +101,16 @@ def run_pipeline(
     # Layer 5: Temporal projection (G6)
     timed = time_project(conv, ctx, birth_date=birth_date)
 
+    # Layer 6: Narrative synthesis (G7)
+    report = narrate(timed, ctx, eval_results=unified.results)
+
     return PipelineResult(
         chart=chart,
         ctx=ctx,
         scores=scores,
         unified=unified,
         predictions=timed,
+        narrative=report,
         version=unified.version,
     )
 
@@ -143,12 +151,30 @@ def _cli():
     print()
 
     print("Top converged predictions:")
-    for p in result.predictions[:10]:
-        systems = list({w.system for w in p.contributing_systems})
+    for p in result.predictions[:6]:
         print(f"  H{p.house:2d} {p.direction:12s}  "
               f"conv={p.convergence_score} contra={p.contra_score}  "
-              f"peak={p.peak_window}  conf={p.timing_confidence:.2f}  "
-              f"strength={p.strength_label}  systems={systems}")
+              f"peak={p.peak_window}  conf={p.timing_confidence:.2f}")
+
+    # Narrative
+    n = result.narrative
+    print(f"\nNARRATIVE (arc: {n.overall_arc})")
+    print()
+    for phase in n.life_phases:
+        if phase.activated_houses:
+            doms = ", ".join(f"{d.domain}({d.direction[0]})" for d in phase.domain_summaries[:3])
+            print(f"  {phase.lord:8s} ({phase.start_year}-{phase.end_year}) "
+                  f"{phase.label:12s} {phase.dominant_direction:12s} | {doms}")
+    if n.interaction_effects:
+        print(f"\n  Interactions: {len(n.interaction_effects)}")
+        for ie in n.interaction_effects[:3]:
+            print(f"    H{ie.houses} {ie.dasha_lord}: {ie.description}")
+    if n.absence_analysis:
+        print(f"\n  Dormant houses: {[a.house for a in n.absence_analysis]}")
+    print("\n  Domains: ", end="")
+    for name, dn in n.per_domain_narratives.items():
+        print(f"{name}={dn.overall_direction} ", end="")
+    print()
 
 
 if __name__ == "__main__":

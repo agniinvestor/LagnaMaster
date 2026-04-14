@@ -828,11 +828,19 @@ PHASE C FOUNDATION:
     Q11: Add DEBUG logging to all canonical primitives
     Q12: Write new text / new school checklists
 
+PHASE C.5 — PRACTITIONER DEPTH (G8):
+  G8: Deepen analysis to practitioner quality (see G8 spec below)
+       G8a: Proper varga chart evaluation
+       G8b: Domain-specific divisional analysis
+       G8c: AD-level narrative depth
+       G8d: Current period transit analysis
+       G8e: Vimshopak strength integration
+       G8f: Claims enrichment
+
 PHASE A PRACTITIONER TOOL:
   G13+Q8: User/auth/session + data sensitivity
-   → G8: 20Q chart-person verification
+   → G8_20Q: 20Q chart-person verification (formerly G8)
    → G9: Life event capture + outcome anchoring
-   → G7: Narrative life-phase synthesis
    → G10: Feedback loop (event store → basic calibration)
 
 PHASE B RESEARCH PLATFORM:
@@ -841,6 +849,345 @@ PHASE B RESEARCH PLATFORM:
    → G12: Chart archetype clustering
    → Prediction language ML
 ```
+
+---
+
+## UPDATED BUILD ORDER (post G1-G7)
+
+```
+PHASE C.5 — Practitioner Depth + Safety:
+
+  G8 (wire 28 unused modules) → G14 (birth time sensitivity) → G15 (safety filter)
+  → G13 (user/auth) → Phase A
+
+  G8a: Fix varga evaluation (actual D9/D10 planet positions)    ← BUG FIX
+  G8b: Wire yoga modules (yogas_extended, yogas_graha,          ← WIRING
+       yogas_pvrnr, nabhasa_yogas) into convergence
+  G8c: Wire strength modules (bhava_bala, ishta_kashta,         ← WIRING
+       vimshopak, shadbala_patches) into convergence weighting
+  G8d: Wire transit modules (gochara, double_transit,           ← WIRING
+       av_transit, bhava_and_transit) into temporal projection
+  G8e: Wire Jaimini modules (chara_karak, jaimini_full,         ← WIRING
+       karakamsha_analysis) as alternative framework channel
+  G8f: AD-level narrative depth                                 ← WIRING
+  G8g: Domain-specific divisional analysis (D9→marriage, etc.)  ← WIRING
+  G8h: Claims enrichment (encoding sessions)                    ← ENCODING
+
+  G14: Wire confidence_model.py into pipeline                   ← WIRING
+       Birth time sensitivity warnings in NarrativeReport
+       Lagna boundary, nakshatra cusp, dasha uncertainty flags
+
+  G15: Safety filtering in narrative                            ← WIRING
+       Suppress/flag health_sensitive claims (129 rules)
+       Enforce guardrails G01 (no "prediction"), G02 (no death timing),
+       G05 (no "certificate")
+```
+
+### Pipeline coverage problem
+
+The pipeline currently uses **12 of 40** computation modules (30%).
+28 modules compute useful astrological data that the pipeline ignores:
+
+| Category | Unused modules | Value |
+|----------|---------------|-------|
+| Yoga detection | yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas, yoga_strength | HIGH — 140+ yoga types, independent confirmation |
+| Strength | bhava_bala, dig_bala, ishta_kashta, shadbala_patches, divisional_charts, sapta_varga | HIGH — planet/house viability scores |
+| Transit | gochara, double_transit, av_transit, bhava_and_transit, transit_quality_advanced | HIGH — current period analysis |
+| Jaimini | chara_karak, jaimini_full, karakamsha_analysis | HIGH — alternative framework |
+| Dasha | dasha_activation, ashtottari_dasha | MEDIUM — dasha selection + alternative |
+| Special | graha_yuddha, sudarshana, muhurtha_complete, special_lagnas | MEDIUM — edge cases |
+| Safety | confidence_model | CRITICAL — birth time sensitivity |
+| Multi-lagna | multi_lagna (partially used) | MEDIUM — secondary frames |
+
+All of these EXIST and have tests. But **NONE have been verified against
+source texts.** Tests prove the code runs without errors — they do not
+prove the code implements what BPHS/Saravali/Jataka Parijata actually say.
+
+### Verification status of the 28 modules
+
+**BPHS-verified (verse audit completed, safe to wire):** 0 of 28.
+
+Only 8 modules in the entire codebase carry `_VERIFICATION = "bphs_pdf"`:
+house_lord, dignity, shadbala, ashtakavarga, sputa_drishti, divisional_charts,
+varga, argala. These are already in the pipeline via ChartContext.
+
+**The 28 modules proposed for G8 have ZERO verse verification.** The yoga
+formulas, Jaimini rules, transit logic, strength calculations — all were
+written from secondary references or translator summaries, never compared
+line-by-line against the source slokas.
+
+### G8 MANDATORY GATE: Verify before wiring
+
+```
+For each module group (G8a through G8e):
+  1. READ the relevant BPHS/source chapter verses
+  2. COMPARE each function against the verse claims
+  3. TAG the module with _VERIFICATION = {"level": "bphs_pdf", ...}
+  4. FIX any discrepancies found
+  5. ONLY THEN wire into the pipeline
+
+This is the same Gate 1-2 process used for corpus encoding,
+applied to computation modules.
+```
+
+**Verification order (by risk × impact):**
+
+| Priority | Modules | Source chapters | Why first |
+|----------|---------|-----------------|-----------|
+| 1 | yogas_extended, yogas_graha | BPHS Ch.35-36, Saravali Ch.15-20 | Yogas are the highest-value convergence signal |
+| 2 | nabhasa_yogas | BPHS Ch.35 | 32 specific yogas with precise conditions |
+| 3 | bhava_bala, ishta_kashta | BPHS Ch.27-28 | House/planet strength weights everything |
+| 4 | gochara, double_transit | BPHS Ch.64-65, transit theory | Transit analysis must be correct for current-period |
+| 5 | jaimini_full, chara_karak | Jaimini Sutras | Entirely different framework — high error risk |
+| 6 | confidence_model | Not text-based — verify against statistical theory | Birth time sensitivity is mathematical, not textual |
+| 7 | Remaining modules | Various | Lower impact on core predictions |
+
+**Estimated effort:** Each module group requires 1 verification session
+(read source, compare, tag, fix). Total: ~7 sessions before G8 wiring
+is complete.
+
+**What this means for the roadmap:** G8 is NOT "just wiring." It is:
+verify → fix → wire → test. The verification step is the bottleneck,
+not the wiring.
+
+---
+
+## G8: PRACTITIONER DEPTH — Detailed Specification
+
+> The exam question: "How do you enhance depth of analysis to make the
+> model ready for Phase A?  What needs to be done to Phase C to align
+> with practitioner approach?"
+>
+> G1-G7 built the pipeline skeleton.  G8 fills it with practitioner-level
+> depth.  Without G8, the system produces structurally correct but
+> analytically shallow output that no practitioner would trust.
+
+### The problem
+
+A practitioner reading our current output would immediately flag:
+
+1. **"You only looked at the rashi chart."** — We run D1 scoring rules
+   with D9/D10 lagna sign, but planets stay in their D1 signs.  In reality,
+   a planet in Aries in D1 might be in Sagittarius in D9.  Lordships change
+   completely.  Our "D9 channel" is fake — it's D1 with a different starting
+   point, not an actual navamsha analysis.
+
+2. **"Where is the navamsha confirmation?"** — The practitioner's core
+   method is: D1 shows the promise, D9 confirms it.  If Jupiter lords H10
+   in D1 but is debilitated in D9, the career promise is weakened.  We don't
+   check this.
+
+3. **"You give me a 16-year window."** — MD-level timing is useless for
+   practical guidance.  A client wants to know "when in the next 2-3 years"
+   not "sometime during your Jupiter period."
+
+4. **"What about right now?"** — Every consultation starts with the current
+   period.  We have no transit-against-natal analysis for a specific date.
+
+5. **"You have the verses but your predictions are generic."** — Only 46 of
+   231 fired corpus rules carry claim text.  The narrative templates are
+   blank for 80% of rules.
+
+### G8a: Proper Varga Chart Evaluation
+
+**Current state:** `_evaluate_scoring_rules()` runs D1 scoring rules with
+`frame_lagna_si=d9.varga_lagna_sign_index`.  This swaps the ascendant but
+planets remain in D1 signs.  It's structurally wrong.
+
+**What exists in codebase:** `ctx.vargas.tables['D9'].planets[name].varga_sign_index`
+gives the ACTUAL D9 sign for each planet.  `compute_vimshopaka()` gives 16-varga
+dignity.  `compute_vimshopak()` gives 7-varga dignity with per-division breakdown.
+
+**What to build:**
+- `build_varga_context(ctx, division='D9') → VargaContext` — builds a lightweight
+  context with house_map, lordships, and dignities computed from the ACTUAL varga
+  planet positions (not D1 positions with swapped lagna)
+- For each house prediction, check: does the house lord's dignity in the relevant
+  varga CONFIRM or WEAKEN the D1 promise?
+- Vargottama detection: planet in same sign in D1 and D9 = strong confirmation
+- Replace the current fake D9/D10 scoring with real varga evaluation
+
+**Exit:** Convergence channel "d9_natal" means actual D9 dignity check, not
+D1 rules with D9 lagna.
+
+### G8b: Domain-Specific Divisional Analysis
+
+**Practitioner method:** Each life domain has a specific varga chart:
+
+| Domain | Varga | What to check |
+|--------|-------|---------------|
+| Marriage/dharma | D9 (Navamsha) | H7 lord dignity, Venus condition, upapada |
+| Career | D10 (Dashamsha) | H10 lord dignity, karaka placement, yogas |
+| Children | D7 (Saptamsha) | H5 lord dignity, Jupiter condition |
+| Property/vehicles | D4 (Chaturthamsha) | H4 lord dignity, Mars/Venus condition |
+| Wealth | D2 (Hora) | H2 lord dignity, Jupiter/Venus in hora |
+| Siblings | D3 (Drekkana) | H3 lord dignity, Mars condition |
+| Parents | D12 (Dwadashamsha) | H9/H4 lords, Sun/Moon dignity |
+
+**What to build:**
+- Map each outcome_domain from the corpus to its relevant divisional chart
+- For each ConvergedPrediction, check the relevant varga as independent evidence
+- Add per-varga confirmation to the convergence layer as named channels
+  (e.g., "d9_marriage", "d10_career" instead of generic "d9_natal")
+
+**Exit:** Each domain narrative says "confirmed in D9" or "weakened in D10"
+with specific planet-in-sign evidence.
+
+### G8c: AD-Level Narrative Depth
+
+**Current state:** Narrative shows 9 life phases (one per Mahadasha, 6-19 years).
+Timing uses year-level peak windows.
+
+**What to build:**
+- Within each LifePhase, break into AD sub-periods (9 per MD, each 1-3 years)
+- AD lord activates the houses it LORDS — this is the specific timing mechanism
+- For each AD, list which houses activate and what claims apply
+- `AdSubPeriod` dataclass: lord, start, end, activated_houses, domain_summaries, text
+- LifePhase.sub_periods: list[AdSubPeriod]
+
+**Practitioner method:** "During Jupiter MD / Venus AD (2031-2033), Venus activates
+H1 and H6 (as their lord), while Jupiter's H8 and H11 lordship sets the backdrop.
+Marriage likely in this window because Venus lords the 7th from Moon in D9."
+
+**Exit:** Narrative includes AD-level predictions with 1-3 year precision.
+
+### G8d: Current Period Transit Analysis
+
+**Current state:** Gochara windows in temporal projection use orbital period
+approximation.  No analysis of current transits against the natal chart.
+
+**What exists:** `compute_gochara(natal_chart, transit_date) → GocharaReport`
+gives exact transit positions with natal house mapping.  `detect_double_transit_yoga()`
+checks Jupiter+Saturn aspects for specific domains.
+
+**What to build:**
+- `analyze_current_period(ctx, query_date) → CurrentPeriodReport`
+- Identifies: current MD, current AD, current PAD
+- Computes: Jupiter transit house, Saturn transit house, Rahu transit house
+- Checks: double transit activating specific houses
+- Detects: Sade Sati (Saturn ±1 sign from natal Moon)
+- Maps: which natal promises are CURRENTLY being activated by transit
+
+**Exit:** Pipeline can answer "what is happening right now for this chart?"
+
+### G8e: Vimshopak Strength Integration
+
+**Current state:** Convergence counts channels but doesn't weight by planet
+strength.  A planet with Vimshopak score 15/20 is treated the same as one
+with 5/20.
+
+**What exists:** `compute_vimshopaka()` (16-varga, scores 0-20) and
+`compute_vimshopak()` (7-varga, with per-division dignity breakdown).
+
+**What to build:**
+- For each house prediction, multiply convergence by the house lord's
+  Vimshopak strength (normalized 0-1)
+- A house lorded by a planet with Vimshopak 15/20 gets 0.75× weight
+  multiplier on its convergence score
+- This differentiates between "5 weak channels confirm" and "3 strong
+  channels confirm" — the latter is more reliable
+
+**Exit:** ConvergedPrediction carries a strength-weighted convergence
+score alongside the raw channel count.
+
+### G8f: Claims Enrichment
+
+**Current state:** Only 46 of 231 fired corpus rules have populated
+`predictions[]`.  The remaining 185 rules fire (conditions met, direction
+known) but contribute no claim text to the narrative.
+
+**This is NOT an architecture task — it's an encoding task.** But it's the
+single biggest bottleneck for narrative quality.  The NL templates can only
+be as rich as the claims data.
+
+**What to do:**
+- Run the pipeline on 50 golden charts
+- For each rule that fires but has empty predictions[], identify the source
+  chapter and verse
+- In the next encoding session, populate predictions[] for these rules
+- Priority: rules that fire most frequently across the 50 charts
+
+**Exit:** >80% of fired corpus rules have populated predictions[].
+
+### G8 Build Order
+
+```
+G8a (fix varga evaluation) → G8b (domain-specific vargas) → G8e (vimshopak)
+                                                          ↘
+G8c (AD-level depth) ─────────────────────────────────────→ G8d (current transits)
+                                                          ↗
+G8f (claims enrichment) — parallel, encoding sessions
+```
+
+G8a must come first (the current D9/D10 evaluation is structurally wrong).
+
+### Key insight: VERIFY → FIX → WIRE → TEST
+
+Every G8 sub-item follows the same 4-step process:
+
+1. **VERIFY** — read the source text chapters, compare against module logic
+2. **FIX** — correct any discrepancies found
+3. **WIRE** — connect verified module into pipeline convergence/temporal/narrative
+4. **TEST** — run against golden_50 diverse charts, verify no regressions
+
+**Do NOT skip step 1.** Wiring unverified modules into production is building
+on assumptions. The 28 modules have tests but zero verse verification.
+
+| Item | Module(s) that already exist | What "wiring" means |
+|------|------------------------------|---------------------|
+| G8a | `sapta_varga.compute_vimshopak()`, `varga.py` | Fix: use actual varga planet positions instead of D1 with swapped lagna |
+| G8b | `yogas_extended`, `yogas_graha`, `yogas_pvrnr`, `nabhasa_yogas` | Add yoga detection results as convergence channel |
+| G8c | `bhava_bala`, `ishta_kashta`, `compute_vimshopaka()`, `compute_vimshopak()` | Multiply convergence by planet/house strength scores |
+| G8d | `gochara`, `double_transit`, `av_transit`, `bhava_and_transit` | Feed transit analysis into temporal projection for current period |
+| G8e | `chara_karak`, `jaimini_full`, `karakamsha_analysis` | Add Jaimini framework as independent convergence channel |
+| G8f | `vimshottari_dasa` (AD data exists with dates) | Generate per-AD narrative within each MD life phase |
+| G8g | `ctx.vargas` (D2/D3/D4/D7/D9/D10/D12 all computed) | Map domain→varga, check house lord dignity in relevant varga |
+| G8h | Corpus `predictions[]` field (schema exists) | Encoding sessions to populate empty claim fields |
+
+---
+
+## G14: BIRTH TIME SENSITIVITY GATE
+
+> `src/calculations/confidence_model.py` already computes everything needed.
+> This is a wiring task.
+
+**What exists:**
+- `compute_uncertainty_flags(chart)` → lagna_near_sign_boundary, moon_near_nakshatra_cusp, dasha_lord_uncertain, sign_boundary_planets
+- `compute_confidence_intervals()` → per-house confidence with birth_time_uncertainty propagation
+- `compute_chart_confidence()` → complete confidence report
+
+**What to wire:**
+- Call `compute_uncertainty_flags()` in `build_chart_context()` or `run_pipeline()`
+- Add `sensitivity_warnings: list[str]` to `NarrativeReport`
+- If lagna within 1° of sign boundary → prominent warning: "Birth time sensitivity HIGH — predictions may change with ±5 minute birth time adjustment"
+- If Moon near nakshatra cusp → warning: "Dasha sequence may differ with slight birth time change"
+- Per-house confidence flags in narrative
+
+**Exit:** Every NarrativeReport carries birth time sensitivity warnings. Unstable predictions are flagged.
+
+---
+
+## G15: SAFETY FILTERING IN NARRATIVE
+
+> 129 corpus rules are `health_sensitive=True` / `safety_tier="restricted"`.
+> 6 CRITICAL guardrails (G01, G02, G03, G05, G07, G08) are NOT enforced.
+
+**What exists:**
+- `RuleRecord.health_sensitive: bool` — flagged during encoding
+- `RuleRecord.safety_tier: str` — "standard" | "restricted" | "research_only"
+- `docs/GUARDRAILS.md` — 6 CRITICAL items defined but not implemented
+
+**What to wire:**
+- In `narrate()`, filter claims from `health_sensitive` rules:
+  - `safety_tier="restricted"` → suppress from narrative text, add to separate `restricted_findings` list
+  - `safety_tier="research_only"` → exclude entirely
+- Language guardrails in NL templates:
+  - G01: Replace "prediction" with "indication" or "tendency" in all output text
+  - G02: Health/death timing → "health attention period" not "death likely"
+  - G05: Replace "certificate" with "sensitivity analysis"
+- Add `NarrativeReport.safety_notes: list[str]` for practitioner-only restricted findings
+
+**Exit:** No user-facing output contains unfiltered health/death claims. Guardrails G01/G02/G05 enforced in all NL templates.
 
 ---
 
@@ -944,41 +1291,45 @@ Uses `converge()` output — independent channel count (scoring + D9 + D10 + BPH
 
 ---
 
-## G7 PRE-FLIGHT CHECKLIST
+## COMPLETION STATUS (2026-04-14)
 
-> Before starting G7 (Narrative Synthesis), resolve or explicitly accept
-> each CRITICAL and HIGH item.  MEDIUM items improve quality but don't
-> block G7.  Items marked with ⚠ have the highest blast radius.
+### Phase C Foundation — ✅ COMPLETE
 
-### ⚠ Must-resolve: Wire the pipeline into the running system
+- [x] G1: ChartContext (5-tier, ctx= auto-built)
+- [x] G2: Rules to data (26 ScoringRule records)
+- [x] G3: Unified engine (EvalResult, evaluate_all_rules)
+- [x] G4: Weight store (7,467 rules, 3 version axes, JSON persistence)
+- [x] G5: Convergence (7 channels, independent counting)
+- [x] G6: Temporal projection (7 timing systems, P(year))
+- [x] G7: Narrative synthesis (life phases, interactions, absences, arcs, NL templates with claims)
+- [x] D0-D5: Pipeline wired into production, data completeness
+- [x] D6-D24: All deferred items resolved except D16 (Phase B)
 
-~~D0–D0c resolved 2026-04-13. Pipeline is live.~~
+### Phase C.5 Practitioner Depth — NEXT
 
-- [x] **D0** — `src/pipeline.py:run_pipeline()` + CLI `python -m src.pipeline`
-- [x] **D0a** — `scoring_rule_eval` reads from `get_weight_store().school_weights()`
-- [x] **D0b** — `TimedPrediction.total_confirmations` = natal + temporal
-- [x] **D0c** — `score_chart()` + `evaluate_chart()` auto-build ChartContext
+Each G8 item follows: VERIFY source text → FIX discrepancies → WIRE into pipeline → TEST on golden_50.
+28 modules have tests but ZERO verse verification. Verification is the bottleneck.
 
-### ~~Must-resolve: Data completeness for narrative~~ ✅ ALL RESOLVED
+- [ ] G8a: Fix varga evaluation — VERIFY sapta_varga.py + varga.py against BPHS Ch.6-8, then fix D9/D10 to use actual planet positions
+- [ ] G8b: VERIFY yogas_extended, yogas_graha, yogas_pvrnr, nabhasa_yogas against BPHS Ch.35-36 + Saravali Ch.15-20, then wire into convergence
+- [ ] G8c: VERIFY bhava_bala, ishta_kashta against BPHS Ch.27-28, then wire into convergence weighting
+- [ ] G8d: VERIFY gochara, double_transit, av_transit against BPHS Ch.64-65, then wire into temporal projection
+- [ ] G8e: VERIFY chara_karak, jaimini_full against Jaimini Sutras, then wire as alternative channel
+- [ ] G8f: AD-level narrative depth (wiring — AD data already verified via vimshottari_dasa)
+- [ ] G8g: Domain-specific divisional analysis (D9→marriage, D10→career, D7→children)
+- [ ] G8h: Claims enrichment (encoding sessions for empty predictions[])
+- [ ] G14: Wire confidence_model.py into pipeline (verify against statistical theory, not text)
+- [ ] G15: Safety filtering (enforce guardrails G01/G02/G05, suppress health_sensitive claims)
 
-- [x] **D1** — verse_ref populated for 348/348 corpus rules
-- [x] **D4** — conditions_met populated for 348/348 corpus rules
-- [x] **D2** — D9/D10 varga channels added (7-channel convergence possible)
-- [x] **D3** — Yoga detection via 933-rule corpus lookup (not keyword)
+### Phase A Practitioner Tool — BLOCKED by G15
 
-### Should-resolve for G7 quality (can defer with documented acceptance)
+- [ ] G13+Q8: User/auth/session
+- [ ] G8_20Q: 20Q chart-person verification
+- [ ] G9: Life event capture
+- [ ] G10: Feedback loop + calibration
 
-- [x] **D5** — Custom logic extracted to ScoringRule.params
-- [ ] **D6** — Transit overlay in temporal projection
-- [ ] **D7** — Varshaphala overlay in temporal projection
-- [ ] **D9** — Domain-specific peak window narrowing
-- [ ] **D10** — Quarter/month precision in temporal projection
+### Phase B Research Platform — BLOCKED by G10
 
-### G7 own deliverables (from architecture doc)
-
-- [ ] Create `narrate(timed_predictions) → NarrativeReport`
-- [ ] Life phases from dasha sequence + natal promises
-- [ ] Interaction effects across houses (H10+H7 same dasha → spouse+career)
-- [ ] Absence analysis (dormant houses are predictions too)
-- [ ] Overall arc (building → harvest → wisdom)
-- [ ] Per-domain narratives (career, family, health, spiritual)
+- [ ] G10: Full calibration engine
+- [ ] G11: Rule evolution
+- [ ] G12: Chart archetypes

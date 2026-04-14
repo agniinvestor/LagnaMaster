@@ -347,6 +347,7 @@ class TestAvasthaV2:
 
 
 class TestNarrative:
+    @pytest.mark.xfail(reason="G7: narrative.py replaced with pipeline-aware narrate(). Old generate_narrative removed.")
     def test_narrative_12_houses(self, chart, dashas):
         from src.calculations.lpi import compute_lpi
         from src.calculations.narrative import generate_narrative
@@ -355,6 +356,7 @@ class TestNarrative:
         nr = generate_narrative(lpi, chart, dashas, ON_DATE)
         assert len(nr.houses) == 12
 
+    @pytest.mark.xfail(reason="G7: narrative.py replaced with pipeline-aware narrate(). Old generate_narrative removed.")
     def test_narrative_domain_summaries(self, chart, dashas):
         from src.calculations.lpi import compute_lpi
         from src.calculations.narrative import generate_narrative
